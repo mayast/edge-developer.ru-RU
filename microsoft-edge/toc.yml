@@ -5,7 +5,7 @@
     - name: Специальные возможности
       href: accessibility.md
       items:
-        - name: Проектирование
+        - name: Разработка
           href: accessibility/design.md
         - name: Сборка
           href: accessibility/build.md
@@ -236,6 +236,8 @@
               href: devtools-guide-chromium/customize/dark-theme.md
             - name: Изменение размещения
               href: devtools-guide-chromium/customize/placement.md
+            - name: Язык браузера
+              href: devtools-guide-chromium/customize/localization.md
     - name: Девтулс (Еджехтмл)
       href: devtools-guide.md
       items:
@@ -411,7 +413,7 @@
               href: extensions/guides/creating-an-extension.md
             - name: Отладка расширений
               href: extensions/guides/debugging-extensions.md
-            - name: Проектирование
+            - name: Разработка
               href: extensions/guides/design.md
             - name: Интернационализацией
               href: extensions/guides/internationalization.md
