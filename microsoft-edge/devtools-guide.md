@@ -3,7 +3,7 @@ description: Знакомство со средствами разработчи
 title: Инструменты разработчика Microsoft EDGE (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: Microsoft EDGE, веб-разработка, инструменты д
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 localization_priority: Priority
-ms.openlocfilehash: 1abc01af5c1b058687d9ba1402911d4367b6e2b3
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 56edfa3aa39fc20d37d95fb8fde029a702732336
+ms.sourcegitcommit: 985cfb79a64951afd5beb7981b26afbed30a8972
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571787"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "10629506"
 ---
 # Инструменты разработчика Microsoft EDGE (EdgeHTML)  
 
@@ -28,7 +28,11 @@ DevTools Microsoft Edge \ (EdgeHTML \) создаются с помощью [Typ
 
 ## Основные инструменты  
 
-![Microsoft Edge \ (EdgeHTML \) DevTools][ImageDevtoolsEdgehtml]  
+:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Microsoft EDGE (EdgeHTML) DevTools":::
+   Microsoft EDGE (EdgeHTML) DevTools
+:::image-end:::
+
+<!--![Microsoft Edge \(EdgeHTML\) DevTools][ImageDevtoolsEdgehtml]  -->  
 
 Microsoft Edge \ (EdgeHTML \) DevTools включает следующие возможности:  
 
@@ -45,8 +49,8 @@ Microsoft Edge \ (EdgeHTML \) DevTools включает следующие во�
 Отправляйте [Отзывы и запросы функций](#feedback)!  
 
 > [!TIP]
-> [Тестирование в Microsoft Edge \ (EdgeHTML \) бесплатно из любого браузера][BrowserstackEdgehtml]:  
-> С помощью [BrowserStack][BrowserstackEdgehtml] вы можете предоставить бесплатные интерактивные и автоматизированные тесты в Microsoft Edge \ (EdgeHTML \).  
+> [Тестирование в Microsoft Edge \ (EdgeHTML \) бесплатно из любого браузера][BrowserstackEdgehtml].  
+> Группа Microsoft EDGE, сопоставленная с [BrowserStack][BrowserstackEdgehtml] , для предоставления бесплатных и автоматизированных тестов в Microsoft Edge \ (EdgeHTML \).  
 
 ## Приложение Microsoft Store  
 
@@ -54,9 +58,13 @@ Microsoft Edge \ (EdgeHTML \) DevTools включает следующие во�
 
 ### Локальная отладка  
 
-Чтобы выполнить отладку страницы локально, просто запустите приложение Microsoft Edge DevTools.  На **локальной** панели средства выбора отобразятся все активные процессы содержимого EdgeHTML, включая открытые вкладки браузера EDGE, запуск [PWAs][PwasEdgehtmlIndex] \ (`WWAHost.exe` процессы \) и [WebView][HostingWebview] элементов управления.  Щелкните требуемый конечный объект, чтобы прикрепить и открыть новый экземпляр вкладки DevTools.  
+Чтобы выполнить отладку страницы локально, просто запустите приложение Microsoft Edge DevTools.  На **локальной** панели средства выбора отображаются все активные процессы содержимого EdgeHTML, включая открытые вкладки браузера EDGE, запуск [PWAs][PwasEdgehtmlIndex] \ (`WWAHost.exe` процессы \) и [WebView][HostingWebview] элементов управления.  Выберите требуемый целевой объект, чтобы прикрепить и открыть новый экземпляр вкладки DevTools.  
 
-![Локальная панель приложения DevTools][ImageDevtoolsGuideEdgehtmlChooselocal]  
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Локальная панель приложения DevTools":::
+   Локальная панель приложения DevTools
+:::image-end:::
+
+<!--![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  -->  
 
 ### Удаленная отладка  
 
@@ -64,15 +72,17 @@ Microsoft Edge \ (EdgeHTML \) DevTools включает следующие во�
 
 Чтобы приступить к работе, ознакомьтесь с разделом [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] в документах [протоколов DevTools][DevtoolsProtocolEdgehtmlIndex] .  
 
-![Удаленная панель приложения DevTools][DevtoolsGuideEdgehtmlRemote]  
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="Удаленная панель приложения DevTools":::
+   Удаленная панель приложения DevTools
+:::image-end:::
 
-## Отзыв  
-
-Пожалуйста, отправьте нам свой отзыв, чтобы мы могли дальше усовершенствовать Microsoft Edge \ (EdgeHTML \) DevTools!  Просто откройте инструменты (`F12`) и нажмите кнопку [Отправить отзыв](#microsoft-edge-edgehtml-developer-tools) .  
-
-Станьте участником программы [предварительной оценки Windows][WindowsInsiderProgram] , чтобы ознакомиться с [новейшими возможностями, выпущенными в DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Используйте приложение центра обратной связи Windows для публикации, отправки по голосованию, отслеживания и получения поддержки общих вариантов и проблем с Windows.  
+<!--![DevTools app Remote panel][ImageDevtoolsGuideEdgehtmlRemote]  -->  
 
 ## Общие сочетания клавиш  
+
+> [!IMPORTANT]
+> Все сочетания клавиш были проверены в последней версии Windows.  
+> Если вы не можете использовать ярлык, обновите свою копию Windows.  
 
 Эти сочетания клавиш управляют основным окном DevTools и должны работать во всех средствах.  
 
@@ -105,13 +115,19 @@ Microsoft Edge \ (EdgeHTML \) DevTools включает следующие во�
 | Обновить страницу | `Ctrl`+`Shift`+`F5`, `Ctrl`+`R` |  
 
 > [!NOTE]
-> При отладке и приостановке в точке останова сначала обновляется действие " **страница** ", а затем среда выполнения.
+> При отладке и приостановке в точке останова, при **обновлении действия страницы** сначала возобновляется среда выполнения.  
+
+## Отзыв  
+
+Пожалуйста, отправьте свой отзыв, чтобы помочь вам улучшить Microsoft Edge \ (EdgeHTML \) DevTools!  Просто откройте инструменты \ (`F12`\) и нажмите кнопку [Отправить отзыв](#microsoft-edge-edgehtml-developer-tools) .  
+
+Станьте участником программы [предварительной оценки Windows][WindowsInsiderProgram] , чтобы ознакомиться с [новейшими возможностями, выпущенными в DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Используйте приложение центра обратной связи Windows для публикации, отправки по голосованию, отслеживания и получения поддержки общих вариантов и проблем с Windows.  
 
 <!-- image links  -->  
 
-[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft EDGE (EdgeHTML) DevTools"  
-[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "Локальная панель приложения DevTools"  
-[DevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "Удаленная панель приложения DevTools"  
+<!--[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) DevTools"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app Local panel"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  -->  
 
 <!-- links  -->  
 
