@@ -1,0 +1,287 @@
+### YamlMime:Hub
+title: Документация по Microsoft Edge
+summary: Обзор ресурсов документации для Microsoft Edge.
+brand: m365
+metadata:
+  title: Документация по Microsoft Edge
+  description: Сведения о Microsoft Edge для разработчиков, ИТ администраторы и конечные пользователи браузера; включая DevTools, расширения, PWAs, и другие устройства.
+  ms.topic: hub-page
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 04/23/2020
+  localization_priority: Priority
+  ms.openlocfilehash: c3839c0302f183420a24199b242e46ab05955920
+  ms.sourcegitcommit: 715d24bde15d756428e865919369e80e5540a857
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "10655590"
+highlightedContent:
+  items:
+  - title: Скачать Microsoft EDGE (официальный стабильный канал)
+    itemType: download
+    url: https://www.microsoft.com/edge
+  - title: Скачать Microsoft Edge Insider Channels
+    itemType: download
+    url: https://www.microsoft.com/edge/business/download
+  - title: Что нового
+    itemType: whats-new
+    url: https://www.microsoftedgeinsider.com/whats-new
+productDirectory:
+  title: Microsoft Edge для предприятий
+  items:
+  - title: Дополнительные сведения о Microsoft Edge на предприятии
+    imageSrc: /media/common/i_learn-about.svg
+    links:
+    - url: /deployedge/microsoft-edge-channels
+      text: Обзор каналов Microsoft Edge
+    - url: /deployedge/edge-ie-mode
+      text: Использование корпоративных возможностей
+  - title: Развертывание и обновление Microsoft Edge
+    imageSrc: /media/common/i_reference.svg
+    links:
+    - url: /deployedge/microsoft-edge-video-deploy
+      text: Видео — развертывание Microsoft Edge
+    - url: /configmgr/apps/deploy-use/deploy-edge
+      text: Развертывание в Windows
+    - url: /intune/apps/apps-edge-macos
+      text: Развертывание в macOS
+  - title: Настройка Microsoft Edge
+    imageSrc: /media/common/i_reference.svg
+    links:
+    - url: /deployedge/configure-microsoft-edge
+      text: Настройка Microsoft Edge в Windows и macOS
+    - url: /deployedge/edge-default-browser
+      text: Установка Microsoft Edge в качестве браузера по умолчанию
+  - title: Управление безопасностью и конфиденциальностью
+    imageSrc: /media/common/i_reference.svg
+    links:
+    - url: /deployedge/security-overview
+      text: Безопасность
+    - url: /deployedge/microsoft-edge-privacy-policy
+      text: Конфиденциальность
+  - title: Справочник по политикам
+    imageSrc: /media/common/i_policy.svg
+    links:
+    - url: /deployedge/microsoft-edge-policies
+      text: Справочник по политикам браузера
+    - url: /deployedge/microsoft-edge-update-policies
+      text: Справочник по политикам обновления
+  - title: Общение с корпоративным сообществом
+    imageSrc: /media/common/i_support.svg
+    links:
+    - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
+      text: Сообщество Enterprise Tech (для участников программы предварительной оценки)
+  - title: Расширения для предприятий
+    imageSrc: /media/common/i_extensions.svg
+    links:
+    - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
+      text: Соответствие шаблонам
+    - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
+      text: Размещение и обновление
+conceptualContent:
+  title: Microsoft Edge для разработчиков
+  summary: DevTools, расширения и веб-приложения на разных платформах
+  items:
+  - title: Начало работы с DevTools
+    links:
+    - url: /microsoft-edge/devtools-guide-chromium
+      itemType: reference
+      text: Общие сведения о DevTools
+    - url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+      itemType: reference
+      text: Новые возможности
+    - url: /microsoft-edge/devtools-guide-chromium/open
+      itemType: reference
+      text: Открыть DevTools
+    - url: /microsoft-edge/devtools-guide-chromium/beginners/html
+      itemType: reference
+      text: DevTools для начинающих
+    - url: /microsoft-edge/devtools-guide-chromium/css/index
+      itemType: reference
+      text: CSS
+    - url: /microsoft-edge/devtools-guide-chromium/css/print-preview
+      itemType: reference
+      text: Рекомендации
+    - url: /microsoft-edge/devtools-guide-chromium/resources/index
+      itemType: reference
+      text: Ресурсы
+  - title: Индивидуальные руководства по инструментам
+    links:
+    - url: /microsoft-edge/devtools-guide-chromium/console/index
+      itemType: reference
+      text: Console (консоль),
+    - url: /microsoft-edge/devtools-guide-chromium/network/index
+      itemType: reference
+      text: Сеть
+    - url: /microsoft-edge/devtools-guide-chromium/storage/cookies
+      itemType: reference
+      text: Хранилище
+    - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+      itemType: reference
+      text: Меню команд
+    - url: /microsoft-edge/devtools-guide-chromium/javascript/index
+      itemType: reference
+      text: JavaScript
+    - url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
+      itemType: reference
+      text: Производительность
+    - url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
+      itemType: reference
+      text: Удаленная отладка
+    - url: /microsoft-edge/devtools-guide-chromium/security/index
+      itemType: reference
+      text: Безопасность
+  - title: Настройка DevTools
+    links:
+    - url: /microsoft-edge/devtools-guide-chromium/customize/index
+      itemType: reference
+      text: Обзор
+    - url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
+      itemType: reference
+      text: Темная тема
+    - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
+      itemType: reference
+      text: Рабочие области
+    - url: /microsoft-edge/devtools-guide-chromium/shortcuts
+      itemType: reference
+      text: Сочетания клавиш
+  - title: Тестирование автоматизации &
+    links:
+    - text: Специальные возможности
+      itemType: reference
+      url: /microsoft-edge/accessibility
+    - text: Протокол DevTools (Chromium)
+      itemType: reference
+      url: /microsoft-edge/devtools-protocol-chromium
+    - text: Chromium
+      itemType: reference
+      url: /microsoft-edge/webdriver-chromium
+    - text: Puppeteer
+      itemType: reference
+      url: /microsoft-edge/puppeteer
+    - text: Взаимодействие (совместимость сайтов)
+      itemType: reference
+      url: /microsoft-edge/web-platform/site-impacting-changes
+    - text: Подсказка
+      itemType: reference
+      url: https://webhint.io/docs/user-guide
+    - text: Анализ производительности
+      itemType: reference
+      url: /microsoft-edge/performance-analysis
+  - title: Общие сведения о расширениях
+    links:
+    - url: /microsoft-edge/extensions-chromium/index
+      itemType: reference
+      text: Общие сведения о расширениях
+  - title: 'Расширения: учебник "Приступая к работе"'
+    links:
+    - url: /microsoft-edge/extensions-chromium/getting-started/index
+      itemType: reference
+      text: Учебник "Приступая к работе"
+    - url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+      itemType: reference
+      text: Создание простого расширения — часть 1
+    - url: /microsoft-edge/extensions-chromium/getting-started/part2-content-scripts
+      itemType: reference
+      text: Создание простого расширения — часть 2
+  - title: 'Расширения: руководство для разработчиков'
+    links:
+    - url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+      itemType: reference
+      text: Расширение Chromium порта в Microsoft Edge
+    - url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+      itemType: reference
+      text: Альтернативные способы распространения расширений
+    - url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
+      itemType: reference
+      text: Собственный обмен сообщениями
+  - title: 'Расширения: публикация в Microsoft Store'
+    links:
+    - url: /microsoft-edge/extensions-chromium/publish/publish-extension
+      itemType: reference
+      text: Процесс публикации на пошаговом уровне
+    - url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+      itemType: reference
+      text: Открыть учетную запись разработчика
+    - url: /microsoft-edge/extensions-chromium/publish/upload-video
+      itemType: reference
+      text: Загрузить видео на YouTube
+    - url: /microsoft-edge/extensions-chromium/publish/update
+      itemType: reference
+      text: Обновление списка расширений
+    - url: /microsoft-edge/extensions-chromium/publish/manage-settings
+      itemType: reference
+      text: Управление параметрами учетной записи
+  - title: 'Расширения: политики надстроек Microsoft Edge'
+    links:
+    - url: /microsoft-edge/extensions-chromium/store-policies/csp
+      itemType: reference
+      text: Политика безопасности контента
+    - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
+      itemType: reference
+      text: Политики разработчика каталога надстроек Microsoft Edge
+  - title: Прогрессивные веб-приложения
+    links:
+    - url: /microsoft-edge/progressive-web-apps-chromium/index
+      itemType: reference
+      text: Общие сведения (Chromium)
+    - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+      itemType: reference
+      text: Использование DevTools с прогрессивными веб-приложениями
+  - title: WebView2
+    links:
+    - url: /microsoft-edge/webview2/index
+      itemType: reference
+      text: Обзор
+    - url: /microsoft-edge/webview2/gettingstarted/win32
+      itemType: reference
+      text: Начало работы с WebView2
+    - url: /microsoft-edge/webview2/webview2-api-reference
+      itemType: reference
+      text: Справочные материалы
+additionalContent:
+  sections:
+  - items:
+    - title: Справочные материалы
+      links:
+      - text: Строка агента пользователя Microsoft Edge
+        url: /microsoft-edge/web-platform/user-agent-string
+      - text: Состояние платформы
+        url: https://developer.microsoft.com/microsoft-edge/platform/status
+      - text: Visual Studio Code
+        url: /microsoft-edge/visual-studio-code/index
+      - url: /microsoft-edge/privacy-whitepaper
+        text: Конфиденциальный документ
+    - title: Документация по старым версиям Microsoft Edge
+      links:
+      - text: Руководство по разработке (EdgeHTML)
+        url: /microsoft-edge/dev-guide
+      - text: DevTools (EdgeHTML)
+        url: /microsoft-edge/devtools-guide
+      - text: Протокол DevTools (EdgeHTML)
+        url: /microsoft-edge/devtools-protocol/index
+      - text: Расширения (EdgeHTML)
+        url: /microsoft-edge/extensions/index
+      - text: Начало работы с PWAs (EdgeHTML)
+        url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
+      - text: Размещение среды выполнения JavaScript
+        url: /microsoft-edge/hosting/javascript-runtime-hosting
+      - text: Руководство для разработчиков WebVR
+        url: /microsoft-edge/webvr/index
+      - text: Среда выполнения Windows (WinRT)
+        url: /microsoft-edge/windows-runtime
+  - title: Справка & поддержки
+    items:
+    - title: Поддержка сообщества
+      summary: Получайте советы и ответы от сообщества экспертов через StackOverflow.
+      url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+    - title: Получение справки по бесплатному телефону с помощью приложения
+      summary: Корпорация Майкрософт обязуется обеспечивать работу приложений в Microsoft Edge.  Если у вас возникли проблемы с бизнес-приложениями или веб-сайтами в последней версии Microsoft Edge, корпорация Майкрософт поможет вам устранить их без дополнительной платы. Ознакомьтесь со сведениями о требованиях к приемлемости.
+      url: https://aka.ms/AppAssureEdge
+    - title: Служба поддержки Майкрософт для бизнеса
+      summary: Если вашей компании нужна немедленная техническая поддержка Microsoft EDGE, поддержка 1:1 от корпорации Майкрософт доступна по нескольким планам, которые помогут вам получить необходимый вам уровень поддержки.
+      url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
+    - title: Поддержка конечных пользователей
+      summary: Доступны полезные ресурсы поддержки для конечных пользователей.
+      url: https://support.microsoft.com/microsoft-edge
