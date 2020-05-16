@@ -453,6 +453,12 @@
       items:
         - name: Начало работы с PWA (Чромиум)
           href: progressive-web-apps-chromium/get-started.md
+        - name: Сценарии автономной работы
+          href: progressive-web-apps-chromium/offline.md
+        - name: Рабочие процессы служб
+          href: progressive-web-apps-chromium/serviceworker.md
+        - name: Манифесты веб-приложения
+          href: progressive-web-apps-chromium/webappmanifests.md
     - name: Прогрессивные веб-приложения (Еджехтмл)
       href: progressive-web-apps-edgehtml/index.md
       items:
