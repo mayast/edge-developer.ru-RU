@@ -94,13 +94,13 @@
                   href: devtools-guide-chromium/css/print-preview.md
         - name: Текстовое
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: devtools-guide-chromium/console/index.md
             - name: Сообщения журнала
               href: devtools-guide-chromium/console/log.md
             - name: Запуск JavaScript
               href: devtools-guide-chromium/console/javascript.md
-            - name: Справочные материалы
+            - name: Справка
               href: devtools-guide-chromium/console/reference.md
             - name: Справочные материалы по API
               href: devtools-guide-chromium/console/api.md
@@ -114,7 +114,7 @@
               href: devtools-guide-chromium/network/index.md
             - name: Руководство по сетевым проблемам
               href: devtools-guide-chromium/network/issues.md
-            - name: Справочные материалы
+            - name: Справка
               href: devtools-guide-chromium/network/reference.md
         - name: Хранение
           items:
@@ -136,7 +136,7 @@
           href: devtools-guide-chromium/command-menu/index.md
         - name: Модель для мобильных устройств
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: devtools-guide-chromium/device-mode/index.md
             - name: Имитация и тестирование других браузеров
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -182,7 +182,7 @@
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Скорость оптимизации веб-сайта
               href: devtools-guide-chromium/speed/get-started.md
-            - name: Обзор
+            - name: Общие сведения
               href: devtools-guide-chromium/rendering-tools/index.md
             - name: Справочные материалы по анализу производительности
               href: devtools-guide-chromium/evaluate-performance/reference.md
@@ -192,7 +192,7 @@
               href: devtools-guide-chromium/rendering-tools/js-runtime.md
         - name: Специальные возможности
           items:
-            - name: Справочные материалы
+            - name: Справка
               href: devtools-guide-chromium/accessibility/reference.md
             - name: Навигация по Девтулс с помощью технологии поддержки
               href: devtools-guide-chromium/accessibility/navigation.md
@@ -212,7 +212,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Память
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Общие сведения о терминологии памяти
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -232,7 +232,7 @@
           href: devtools-guide-chromium/resources/index.md
         - name: Customizer (Настройщик)
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: devtools-guide-chromium/customize/index.md
             - name: Темная тема
               href: devtools-guide-chromium/customize/dark-theme.md
@@ -450,6 +450,9 @@
       href: privacy-whitepaper.md
     - name: Прогрессивные веб-приложения (Чромиум)
       href: progressive-web-apps-chromium/index.md
+      items:
+        - name: Начало работы с PWA (Чромиум)
+          href: progressive-web-apps-chromium/get-started.md
     - name: Прогрессивные веб-приложения (Еджехтмл)
       href: progressive-web-apps-edgehtml/index.md
       items:
