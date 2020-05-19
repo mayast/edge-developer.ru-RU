@@ -8,13 +8,17 @@
       href: gettingstarted/wpf.md
     - name: Windows Forms
       href: gettingstarted/winforms.md
+- name: Концепции
+  items:
+    - name: Управление версиями
+      href: concepts/versioning.md
 - name: Заметки о выпуске
   href: releasenotes.md
 - name: Tooling
   items:
     - name: Для довода
       href: tooling/webdriver.md
-- name: Справочные материалы
+- name: Ссылки
   href: webview2-api-reference.md
   items:
     - name: Win32 C++
