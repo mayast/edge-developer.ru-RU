@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 4b64509e63acb966a95c32c4560c3ddcefebd5e4
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: bc55c5a731ab6cba8f9be15208029aad0ad5357a
+ms.sourcegitcommit: a75e062b71831ea850c85287a8d7d7ce3b55ec84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659715"
+ms.locfileid: "10659746"
 ---
 # WebView2ная схема Microsoft Edge
 
@@ -33,7 +33,7 @@ ms.locfileid: "10659715"
 3.  Общая доступность 
     *   Win32 C/C++ (Q4 2020)
     *   .NET (Q4 2020)
-    *   WinUI 3,0 (Q2 2021)
+    *   [WinUI 3,0](https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md)
 
 ## Установщик & среды выполнения WebView2
 
