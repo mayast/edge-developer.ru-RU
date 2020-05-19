@@ -10,14 +10,20 @@
       href: gettingstarted/winforms.md
 - name: Концепции
   items:
+    - name: Распространение моего приложения
+      href: concepts/distribution.md
     - name: Управление версиями
       href: concepts/versioning.md
 - name: Заметки о выпуске
   href: releasenotes.md
-- name: Tooling
+- name: План
+  href: roadmap.md
+- name: Практические руководства
   items:
-    - name: Для довода
-      href: tooling/webdriver.md
+    - name: Отладка WebView2
+      href: howto/Debug.md
+    - name: Автоматизация с помощью драйвера пограничного сервера
+      href: howto/webdriver.md
 - name: Ссылки
   href: webview2-api-reference.md
   items:

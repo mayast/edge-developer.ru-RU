@@ -3,17 +3,17 @@ description: Модели управления версиями, использ�
 title: Управление версиями Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/18/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения WPF, WPF, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "браузер", HTML Edge
-ms.openlocfilehash: 8463ce403af069cf25dbf7b08bb49d44c1e54501
-ms.sourcegitcommit: f1aa8925f7985a2bbfd951f188a8c19c97e4ff6f
+ms.openlocfilehash: 78184d3c670aa39e0a7f4a31e1216b5bc730c16e
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "10659572"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659673"
 ---
 # Сведения о версиях браузеров и WebView2  
 
@@ -22,9 +22,7 @@ WebView2 зависит от Microsoft Edge для функционирован�
 > [!NOTE]
 > WebView2 в настоящее время является предварительной версией.  Несмотря на то, что группа Microsoft Edge WebView гарантирует обратную совместимость между версиями браузеров и пакетами SDK, это не гарантирует, что некоторые более поздние версии браузера могут не поддерживать старые версии SDK.  Если между версиями браузеров и пакетами SDK есть коренные изменения, группа Microsoft Edge WebView указывает изменения в [заметках о выпуске][Webview2Releasenotes].  
 
-В будущем группа Microsoft Edge WebViews планирует изменить модель распространения.  Microsoft Edge WebView Teams, чтобы удалить прямую зависимость в браузере Microsoft Edge из WebView2.  <!--To learn more, see [WebView2 Runtime][Webview2IndexEdgeRuntime] in the [Distribution][Webview2Distibution] section.  -->  
-
-<!--todo: dd link to distribution.md after publication  -->  
+В будущем группа Microsoft Edge WebViews планирует изменить модель распространения.  Microsoft Edge WebView Teams, чтобы удалить прямую зависимость в браузере Microsoft Edge из WebView2.  Дополнительные сведения можно найти в разделе [распространение][Webview2Distibution] [среды выполнения WebView2][Webview2IndexEdgeRuntime] .  
 
 ## Экспериментальные API-интерфейсы  
 
@@ -36,8 +34,8 @@ WebView2 зависит от Microsoft Edge для функционирован�
 
 <!--links -->
 
-[Webview2Distibution]: ./distribution.md "не существует | Документы Microsoft"  
-[Webview2IndexEdgeRuntime]: ../index.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 исполняющей среды — Microsoft Edge WebView2 (Предварительная версия для разработчиков) | Документы Microsoft"  
+[Webview2Distibution]: ./distribution.md "Распространение приложений с помощью WebView2 | Документы Microsoft"  
+[Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2-распространение приложений с помощью WebView2 | Документы Microsoft"  
 [Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Экспериментальный справочник (WebView2) | Документы Microsoft"  
 [Webview2Releasenotes]: ../releasenotes.md "Заметки о выпуске для WebView2 SDK | Документы Microsoft"  
 
