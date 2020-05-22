@@ -3,17 +3,17 @@ description: Размещение веб-содержимого в прилож�
 title: Элемент управления Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, элементы управления браузером, EDGE HTML, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 184a64fde28345cd52dd6d772284f0393114ec02
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
+ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659638"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "10671640"
 ---
 # Введение в Microsoft Edge WebView2 (Предварительная версия)  
 
@@ -104,7 +104,7 @@ ms.locfileid: "10659638"
 *   .NET Core 3,0 или более поздняя версия  
 *   [WinUI 3,0](/uwp/toolkits/winui3/)  
 
-Ты Mun работать под управлением Windows 10, Windows 8,1, Windows Server 2016, Windows Server 2012 и 2012R2 или Windows Server 2008 R2.   
+Вы должны запустить Windows 10, Windows 8,1, Windows Server 2016, Windows Server 2012 или 2012R2 или Windows Server 2008 R2.   
 
 ## Дальнейшие действия  
 
