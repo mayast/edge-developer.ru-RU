@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, элементы управления браузером, EDGE HTML, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
-ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
+ms.openlocfilehash: f17de3bcb7459375617f00aec0cd2897f0859c1d
+ms.sourcegitcommit: c579181af051e2855b785263faa4001c672a929b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "10671640"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673851"
 ---
 # Введение в Microsoft Edge WebView2 (Предварительная версия)  
 
@@ -104,11 +104,20 @@ ms.locfileid: "10671640"
 *   .NET Core 3,0 или более поздняя версия  
 *   [WinUI 3,0](/uwp/toolkits/winui3/)  
 
-Вы должны запустить Windows 10, Windows 8,1, Windows Server 2016, Windows Server 2012 или 2012R2 или Windows Server 2008 R2.   
+Вы можете запускать приложения WebView2 в следующих версиях Windows.  
+
+*   Windows 10;  
+*   Windows 8.1  
+*   Windows 8  
+*   Windows 7  
+*   WindowsServer2016  
+*   Windows Server 2012  
+*   Windows Server 2012R2  
+*   Windows Server2008R2  
 
 ## Дальнейшие действия  
 
-Более подробная информация о том, как создавать и развертывать приложения WebView2, вывлекать нашу концептуальную документацию<!-- and how-to guides-->.  
+Более подробную информацию о том, как создавать и развертывать приложения WebView2, вывлекать концептуальную документацию и практические руководства.  
 
 #### Понятия  
 
