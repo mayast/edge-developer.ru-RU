@@ -3,18 +3,18 @@ description: Техническая документация по конфиде
 title: Техническая документация по конфиденциальности Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft EDGE, конфиденциальность, официальный документ, доверять
 localization_priority: Priority
-ms.openlocfilehash: 0849d51c14be78a9e261ea0fad426e126a1eea93
-ms.sourcegitcommit: c5f98907ccff78e0c615f6d664febce74cda8b68
+ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
+ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10658818"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673774"
 ---
 # Техническая документация по конфиденциальности Microsoft Edge  
 
@@ -70,9 +70,7 @@ ms.locfileid: "10658818"
 
 Шаблоны, хранящиеся на устройстве, могут быть удалены путем очистки данных кэша в разделе " **Очистить данные браузера** " в `edge://settings/privacy` .
 
-<!--  
-If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
+Если вы включите параметр **Показывать предложения из Pinterest в коллекциях**, то коллекции выполняют поиск Microsoft Bing с помощью названия коллекции, чтобы найти нужные страницы темы Pinterest.  Microsoft EDGE не отправляет данные о коллекциях в Pinterest.  Вы можете удалить предложения и прекратить поиск для страниц с разделами Pinterest, выполнив и выключив параметр `edge://settings/privacy` **Показывать предложения из Pinterest в коллекциях**.  
 
 Коллекции недоступны в режиме просмотра InPrivate или гостевого режима.  
 
@@ -187,9 +185,9 @@ Microsoft EDGE поддерживает [API географического по
 
 В правой части адресной строки Microsoft Edge указывает на то, что расположение не является общим.  
 
-![Назначение](./media/whitepaper-media/geolocation2.png)  
+![Местоположение](./media/whitepaper-media/geolocation2.png)  
 
-Если вы разрешите общий доступ к расположению на сайте, Microsoft Edge отправляет сведения о локальной сети, такие как ваш IP-адрес и проходящую точку доступа Wi-Fi, к службе расположения Microsoft.  Служба Microsoft использует эти сведения для оценки ваших координат географического положения.  После этого оценка географического положения будет предоставлена сайту, с которым вы согласились поделиться своим местоположением.  В Windows 10 Microsoft Edge использует только службу расположения Microsoft, если вы включили [параметр расположения Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
+Если вы разрешите общий доступ к расположению на сайте, Microsoft Edge отправляет сведения о локальной сети, такие как ваш IP-адрес и проходящую точку доступа Wi-Fi, к службе расположения Microsoft.  Служба Microsoft использует эти сведения для оценки ваших координат географического положения.  Оценка географического положения предоставляется на сайте, с которым вы согласились поделиться своим местоположением.  В Windows 10 Если вы включите параметр **Разрешить доступ к расположению на этом устройстве** и **Разрешить приложениям доступ к расположению** в параметрах **расположения** в параметрах **Windows** , Microsoft Edge предлагает сайты с более точным расположением.  Если вы отключите параметр **Разрешить доступ к расположению на этом устройстве** и **разрешите приложениям доступ к расположению**, для них будет указано приблизительное расположение.  Эти сведения предоставлены только сайтам, для которых вы ранее разрешили видеть ваше расположение.  [Параметр расположения Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 Новый случайный идентификатор, который используется при создании запросов к службе расположения Microsoft.  Служба расположения Microsoft EDGE не хранит ваши координаты географического положения в течение некоторого периода времени.  
 
@@ -219,7 +217,7 @@ Microsoft Edge проверяет связь службы обновления M
 
 Microsoft EDGE представляет собой упрощенный интерфейс интеграции Internet Explorer \ (IE).  Microsoft EDGE поддерживает только IE 11, режим IE и доступен только в Windows.  Эта функция доступна для организаций через групповые политики.  Администратор решает открыть список сайтов в режиме IE в Microsoft Edge.  
 
-![Назначение](./media/whitepaper-media/ie-mode.png)  
+![Местоположение](./media/whitepaper-media/ie-mode.png)  
 
 Microsoft Edge загружает список сайтов из места, определенного администратором с помощью политики, и кэширует файл, чтобы определить, какие сайты нужно открывать в режиме Internet Explorer.  В зависимости от параметров Windows или IE 11 Microsoft Edge собирает диагностические данные об использовании режима IE, например о том, какие сайты находятся в сети, данные о производительности, данные о надежности и данные об использовании компонентов.  В Windows 10 данные диагностики собираются в соответствии с параметрами диагностических данных Windows.  В Windows 8,1 сведения о веб-сайте собираются, если пользователь выбрал функцию "пролистывание вперед" или "Рекомендуемые сайты" в Internet Explorer.  Режим Internet Explorer не может следовать за тем же набором данных, который переключается в параметрах конфиденциальности и служб Microsoft Edge.  
 
