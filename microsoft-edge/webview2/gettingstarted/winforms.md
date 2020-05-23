@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WinForms, WinForms, EDGE, CoreWebView2, браузер, край HTML, Приступая к работе, Приступая к работе, .NET, Windows Forms
-ms.openlocfilehash: b2616eeed2a8e896889e2cc1a395c401a8aad435
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: e17139d9d2b556d8048fb0043b88b56430c93091
+ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654756"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "10673947"
 ---
 # Начало работы с WebView2 в приложениях для Windows Forms (Предварительная версия)  
 
@@ -23,7 +23,7 @@ ms.locfileid: "10654756"
 
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
-* [Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download/) , установленный в Windows 10, Windows 8,1 или Windows 7.  Группа Microsoft Edge WebView рекомендует использовать канал Канарские.  
+* [Канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download/) , установленный в Windows 10, Windows 8,1 или Windows 7. 
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 или более поздней версии.
 
 > [!NOTE]

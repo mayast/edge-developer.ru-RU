@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: 01d92322a85e38dab3c502e8dd76729fef8400b1
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 6e66d90c3b821ee3656466ccaf3c9a079dda5030
+ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654728"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "10673954"
 ---
 # Начало работы с WebView2 в WPF (Предварительная версия)  
 
@@ -23,7 +23,7 @@ ms.locfileid: "10654728"
 
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
-* [Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download/) , установленный в Windows 10, Windows 8,1 или Windows 7.  Группа Microsoft Edge WebView рекомендует использовать канал Канарские.  
+* [Канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download/) , установленный в Windows 10, Windows 8,1 или Windows 7. 
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 или более поздней версии.  
 
 ## Шаг 1: создание одного оконного приложения
