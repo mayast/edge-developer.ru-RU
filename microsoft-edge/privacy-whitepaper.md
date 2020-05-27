@@ -3,18 +3,18 @@ description: Техническая документация по конфиде
 title: Техническая документация по конфиденциальности Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft EDGE, конфиденциальность, официальный документ, доверять
 localization_priority: Priority
-ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
-ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
+ms.openlocfilehash: 6aba8f6c1ae7212d5af702bcf13ff9dde6b8659b
+ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673774"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "10678227"
 ---
 # Техническая документация по конфиденциальности Microsoft Edge  
 
@@ -86,7 +86,7 @@ ms.locfileid: "10673774"
 
 Диагностические данные, хранящиеся локально на устройстве, могут быть удалены из файловой системы `edge://crashes` .  
 
-Чтобы отключить сбор диагностических данных в Windows 10, перейдите к разделу **Диагностика \ & отзыв** в окне Диагностика Windows \ параметры обратной связи в &.  Для версий Microsoft EDGE на всех остальных платформах `edge://settings/privacy` отправляются и отключайте **продукты Майкрософт, отправляя отчеты о сбоях и данные о том, как использовать параметр браузера** .  Эта коллекция диагностических данных также может быть отключена для предприятий с помощью [групповых политик, которые управляются вашей организацией](/deployedge/microsoft-edge-privacy-policy).  
+Чтобы отключить сбор диагностических данных в Windows 10, перейдите к разделу **Диагностика \ & отзыв** в окне Диагностика Windows \ параметры обратной связи в &.  Для версий Microsoft EDGE на всех остальных платформах `edge://settings/privacy` отправляются и отключайте **продукты Майкрософт, отправляя отчеты о сбоях и данные о том, как использовать параметр браузера** .  Эта коллекция диагностических данных также может быть отключена для предприятий с помощью [групповых политик, которые управляются вашей организацией](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 ## Диагностические данные о том, как использовать браузер  
 
