@@ -1,0 +1,53 @@
+---
+description: Режим IE и Microsoft EDGE (Chromium) DevTools
+title: Режим Internet Explorer и DevTools
+author: robpaveza
+ms.author: ropaveza
+ms.date: 01/15/2020
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, ie11, Internet Explorer 11, режим IE
+ms.openlocfilehash: 18e5f029d277e446857ec48b9cf129149f219256
+ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "10572430"
+---
+# <span data-ttu-id="3b2a7-104">Режим Internet Explorer и DevTools</span><span class="sxs-lookup"><span data-stu-id="3b2a7-104">Internet Explorer mode and the DevTools</span></span>
+
+<span data-ttu-id="3b2a7-105">В этом документе описывается интеграция режима Internet Explorer (режим IE) с Microsoft EDGE (Chromium) DevTools.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-105">This document describes how Internet Explorer mode (IE mode) integrates with the Microsoft Edge (Chromium) DevTools.</span></span>
+
+## <span data-ttu-id="3b2a7-106">Общие сведения о режиме IE</span><span class="sxs-lookup"><span data-stu-id="3b2a7-106">Understanding IE mode</span></span>
+
+<span data-ttu-id="3b2a7-107">Режим IE — это механизм, с помощью которого компании могут определять набор веб-сайтов, которые, до этого момента, будут работать только в Internet Explorer 11.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-107">IE mode is a mechanism by which enterprises may specify a set of web sites that, until now, only worked in Internet Explorer 11.</span></span> <span data-ttu-id="3b2a7-108">Когда эти веб-сайты просматриваются в Microsoft EDGE (Chromium), на вкладке выполняется полный экземпляр браузера Internet Explorer 11 и отображаются на нем. Это позволяет предприятиям управлять совместимостью в режимах документов IE, элементов ActiveX и других устаревших компонентах, которые в настоящее время не совместимы с любыми современными веб-браузерами.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-108">When these web sites are viewed in Microsoft Edge (Chromium), a full instance of Internet Explorer 11 is running and rendered within the tab. This allows enterprises to manage compatibility for IE document modes, ActiveX controls, and other legacy components that are currently not compatible with any modern web browsers.</span></span>
+
+<span data-ttu-id="3b2a7-109">В режиме IE процесс рендеринга полностью основан на Internet Explorer 11.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-109">Within IE mode, the rendering process is entirely based in Internet Explorer 11.</span></span> <span data-ttu-id="3b2a7-110">Процесс диспетчера Microsoft EDGE (Chromium) управляет жизненным циклом процесса отрисовки, но ограничивается временем существования вкладки на данном сайте или приложении.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-110">The Microsoft Edge (Chromium) manager process manages the lifetime of the rendering process, but it is constrained to the tab's lifetime on a given site or application.</span></span> <span data-ttu-id="3b2a7-111">При отображении вкладки в режиме IE в адресной строке для указанной вкладки появляется индикатор.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-111">When a tab is rendering in IE mode, a badge appears in the address bar for the given tab:</span></span>
+
+![Значок режима IE в адресной строке](./media/ie-mode-badge.png)
+
+<span data-ttu-id="3b2a7-113">В настоящее время режим Internet Explorer доступен в Windows 10 версии 1903 (обновление может 2019), но вскоре на все поддерживаемые платформы Windows.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-113">IE mode is currently available on Windows 10 Version 1903 (May 2019 Update) but is coming soon to all supported Windows platforms.</span></span>
+
+## <span data-ttu-id="3b2a7-114">Запуск DevTools на вкладке в режиме IE</span><span class="sxs-lookup"><span data-stu-id="3b2a7-114">Launching the DevTools on a tab in IE mode</span></span>
+
+<span data-ttu-id="3b2a7-115">Если вы пытаетесь просмотреть режим документов на веб-сайте в режиме IE, вы можете щелкнуть значок в адресной строке.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-115">If you are trying to view the document mode of a web site in IE mode, you can click on the badge in the address bar.</span></span>
+
+![Просмотр режима документов с помощью эмблемы в режиме IE](./media/ie-mode-badge-doc-mode.png)
+
+<span data-ttu-id="3b2a7-117">На вкладке в режиме IE DevTools работать не будет.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-117">While on a tab in IE mode, the DevTools will not work.</span></span> <span data-ttu-id="3b2a7-118">`F12` `Ctrl` + `Shift` + `I` Вы можете запустить пустой экземпляр Microsoft EDGE (Chromium) только в том случае, если у вас есть сообщение, которое Прочитано: "средства разработчика недоступны в режиме Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-118">Pressing `F12` or `Ctrl`+`Shift`+`I` will only launch a blank instance of the Microsoft Edge (Chromium) DevTools with a message that reads: "Developer Tools are not available in Internet Explorer mode.</span></span> <span data-ttu-id="3b2a7-119">Чтобы выполнить отладку страницы, откройте ее в Internet Explorer 11. "</span><span class="sxs-lookup"><span data-stu-id="3b2a7-119">To debug the page, open it in Internet Explorer 11."</span></span> <span data-ttu-id="3b2a7-120">**Представление "источник** " запускает приложение "Блокнот", а **элемент проверки** не будет отображаться в контекстном меню в режиме Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-120">**View Source** will launch Notepad and **Inspect Element** will not be visible in the context menu in IE mode.</span></span>
+
+<span data-ttu-id="3b2a7-121">Это связано с тем, что при переходе с Chromium на Internet Explorer 11 в режиме IE некоторые компоненты в DevTools (например, сети и средства для работы с производительностью) будут разорваны.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-121">This is because a number of components in the DevTools (like the Network and Performance tools) would break when the rendering engine switches from Chromium to Internet Explorer 11 in IE mode.</span></span> <span data-ttu-id="3b2a7-122">Чтобы отправить нам отзыв, щелкните `:)` значок.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-122">To give us feedback, click the `:)` icon.</span></span>
+
+![DevTools запущен в режиме IE](./media/ie-mode-devtools.png)
+
+<span data-ttu-id="3b2a7-124">Если вы разрабатываете или сохраняете веб-сайт или приложение на базе Internet Explorer 11, рекомендуем перейти на одну и ту же страницу в Internet Explorer 11.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-124">If you are developing or maintaining an Internet Explorer 11-based web site or application, we recommend navigating to the same page in Internet Explorer 11.</span></span> <span data-ttu-id="3b2a7-125">В Windows 10 вы можете найти ярлык для Internet Explorer 11 в меню "Пуск" в разделе "Аксессуары" для Windows.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-125">On Windows 10, you can find the shortcut for Internet Explorer 11 on the Start Menu underneath Windows Accessories.</span></span> <span data-ttu-id="3b2a7-126">В Windows 7 вы можете найти Internet Explorer 11 в главном меню "Пуск".</span><span class="sxs-lookup"><span data-stu-id="3b2a7-126">On Windows 7, you can find Internet Explorer 11 on the main Start Menu.</span></span> <span data-ttu-id="3b2a7-127">Затем вы можете запустить Internet Explorer DevTools, нажав `F12` или нажав кнопку **проверить элемент** в контекстном меню.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-127">You can then launch the Internet Explorer DevTools by pressing `F12` or clicking **Inspect element** in the context menu.</span></span> <span data-ttu-id="3b2a7-128">Чтобы узнать больше о том, как использовать эти инструменты, щелкните [здесь](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).</span><span class="sxs-lookup"><span data-stu-id="3b2a7-128">To learn more about how to use those tools, click [here](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).</span></span>
+
+## <span data-ttu-id="3b2a7-129">Удаленная отладка и режим IE</span><span class="sxs-lookup"><span data-stu-id="3b2a7-129">Remote debugging and IE mode</span></span>
+
+<span data-ttu-id="3b2a7-130">Вы можете запустить Microsoft EDGE (Chromium) с включенной удаленной отладкой, которая обычно описывает такие инструменты, как Visual Studio или VS Code EDGE, из командной строки.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-130">You can launch Microsoft Edge (Chromium) with remote debugging enabled, which is typically how tools like Visual Studio or VS Code launch Edge, from the command line:</span></span>
+
+`start msedge --remote-debugging-port=9222`
+
+<span data-ttu-id="3b2a7-131">При запуске Microsoft EDGE (Chromium) с помощью этого аргумента командной строки режим IE будет недоступен.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-131">When Microsoft Edge (Chromium) is launched with this command line argument, IE mode will be unavailable.</span></span> <span data-ttu-id="3b2a7-132">Вы по-прежнему можете переходить к веб-сайтам или приложениям, которые в противном случае находятся в режиме IE, но содержимое будет отображено через Chromium, а не Internet Explorer 11.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-132">You can still navigate to web sites or applications that would otherwise be in IE mode but the content will render via Chromium, not Internet Explorer 11.</span></span> <span data-ttu-id="3b2a7-133">Вы можете ожидать, что части страниц, которые используют IE11, такие как элементы ActiveX, будут отображаться неправильно.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-133">You can expect that the parts of those pages that rely on IE11, like ActiveX controls, will not render correctly.</span></span> <span data-ttu-id="3b2a7-134">Значок "режим IE" больше не будет отображаться в адресной строке.</span><span class="sxs-lookup"><span data-stu-id="3b2a7-134">The IE mode badge will no longer appear in the address bar.</span></span>
+
+<span data-ttu-id="3b2a7-135">Режим IE останется недоступным, пока не будет полностью закрыт Microsoft EDGE (Chromium).</span><span class="sxs-lookup"><span data-stu-id="3b2a7-135">IE mode will remain unavailable until you completely close Microsoft Edge (Chromium).</span></span>

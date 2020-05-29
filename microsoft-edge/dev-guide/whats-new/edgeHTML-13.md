@@ -1,0 +1,67 @@
+---
+description: На этой странице представлены общие сведения о новых возможностях EdgeHTML 13.
+title: Новые возможности в EdgeHTML 13
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 03/05/2020
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
+ms.openlocfilehash: 8fb9d6bd78af5d595e217fa2bf210632f4c1a61f
+ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "10570883"
+---
+# <span data-ttu-id="8d85b-104">Новые возможности в EdgeHTML 13</span><span class="sxs-lookup"><span data-stu-id="8d85b-104">What's New in EdgeHTML 13</span></span>
+<span data-ttu-id="8d85b-105">Ниже приведены изменения, которые поставляются вместе с EdgeHTML 13-й системой, которая включает браузер Microsoft EDGE в [первое крупное обновление](https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/) для Windows 10 (11/2015, сборка 10586).</span><span class="sxs-lookup"><span data-stu-id="8d85b-105">Here are the changes shipped with EdgeHTML 13, the engine powering the Microsoft Edge browser in the [first major update](https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/) for Windows 10 (11/2015, Build 10586).</span></span> <span data-ttu-id="8d85b-106">Общие сведения об изменениях, внесенных в общий браузер Microsoft EDGE, приведены в [статье Знакомство с EdgeHTML 13 и первой версией платформы Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/).</span><span class="sxs-lookup"><span data-stu-id="8d85b-106">For an overview of changes to the overall Microsoft Edge browser, see [Introducing EdgeHTML 13, our first platform update for Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/).</span></span>
+
+<span data-ttu-id="8d85b-107">Ниже приведен список постоянных [https://aka.ms/devguide_edgehtml_13](https://aka.ms/devguide_edgehtml_13) изменений.</span><span class="sxs-lookup"><span data-stu-id="8d85b-107">Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_13](https://aka.ms/devguide_edgehtml_13).</span></span>
+
+## <span data-ttu-id="8d85b-108">Функции</span><span class="sxs-lookup"><span data-stu-id="8d85b-108">Features</span></span>
+
+### <span data-ttu-id="8d85b-109">CSS</span><span class="sxs-lookup"><span data-stu-id="8d85b-109">CSS</span></span>
+<span data-ttu-id="8d85b-110">"" EdgeHTML 13 поддерживает новые функции CSS, в том числе:</span><span class="sxs-lookup"><span data-stu-id="8d85b-110">'' EdgeHTML 13 supports new CSS features, including:</span></span>
+* [<span data-ttu-id="8d85b-111">Псевдо-классы для постоянство стилей CSS</span><span class="sxs-lookup"><span data-stu-id="8d85b-111">CSS Mutability Pseudo-classes</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/cssmutabilitypseudoclasses/)
+* [<span data-ttu-id="8d85b-112">Псевдо-классы с диапазоном CSS</span><span class="sxs-lookup"><span data-stu-id="8d85b-112">CSS Range Pseudo-classes</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/cssrangepseudoclasses/)
+* <span data-ttu-id="8d85b-113">[Начальные](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue/) и [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue/) Неотмененные ключевые слова CSS</span><span class="sxs-lookup"><span data-stu-id="8d85b-113">CSS [initial](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue/) and [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue/) keywords</span></span>
+
+### <span data-ttu-id="8d85b-114">Расширения зашифрованных файлов мультимедиа</span><span class="sxs-lookup"><span data-stu-id="8d85b-114">Encrypted Media Extensions</span></span>
+<span data-ttu-id="8d85b-115">Microsoft EDGE теперь поддерживает новые API-интерфейсы с непрефиксными [зашифрованными расширениями мультимедиа](https://w3.org/TR/encrypted-media/) .</span><span class="sxs-lookup"><span data-stu-id="8d85b-115">Microsoft Edge now supports the new unprefixed [Encrypted Media Extensions](https://w3.org/TR/encrypted-media/) APIs.</span></span> <span data-ttu-id="8d85b-116">Расширения для зашифрованных мультимедийных файлов (ОБНОВЛЕННОЙ) расширяют элементы видео и звука, чтобы включить защищенное содержимое с помощью управления цифровыми правами (DRM), не используя подключаемые модули. Подробнее о ОБНОВЛЕННОЙ: [зашифрованные расширения для мультимедиа](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/encrypted-media-extensions).</span><span class="sxs-lookup"><span data-stu-id="8d85b-116">Encrypted Media Extensions (EME) extends the video and audio elements to enable Digital Rights Management (DRM) protected content without using plug-ins. Read more about EME: [Encrypted Media Extensions](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/encrypted-media-extensions).</span></span>
+
+### <span data-ttu-id="8d85b-117">Графика</span><span class="sxs-lookup"><span data-stu-id="8d85b-117">Graphics</span></span>
+
+<span data-ttu-id="8d85b-118">В EdgeHTML 13 появились следующие обновленные графические элементы:</span><span class="sxs-lookup"><span data-stu-id="8d85b-118">EdgeHTML 13 introduces the following graphics updates:</span></span>
+* [<span data-ttu-id="8d85b-119">Эллипс для холста</span><span class="sxs-lookup"><span data-stu-id="8d85b-119">Canvas ellipse</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/canvas2dellipse/)
+* [<span data-ttu-id="8d85b-120">Режимы наложения «холсты»</span><span class="sxs-lookup"><span data-stu-id="8d85b-120">Canvas blending modes</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/compositingandblendingincanvas2d/)
+* [`<picture>` <span data-ttu-id="8d85b-121">элемент</span><span class="sxs-lookup"><span data-stu-id="8d85b-121">element</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/pictureelement/)
+* [<span data-ttu-id="8d85b-122">Внешнее содержимое SVG</span><span class="sxs-lookup"><span data-stu-id="8d85b-122">SVG external content</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/svgexternalcontent/)
+
+### <span data-ttu-id="8d85b-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8d85b-123">JavaScript</span></span>
+<span data-ttu-id="8d85b-124">EdgeHTML 13 содержит [существенные улучшения и поддержку новых функций в Chakra](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), а также в Microsoft EDGE, включенный в ядро JavaScript, в том числе:</span><span class="sxs-lookup"><span data-stu-id="8d85b-124">EdgeHTML 13 includes [major improvements and new feature support in Chakra](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), the JavaScript engine powering Microsoft Edge, including:</span></span>
+
+#### <span data-ttu-id="8d85b-125">Новые функции (по умолчанию)</span><span class="sxs-lookup"><span data-stu-id="8d85b-125">New features (on by default)</span></span>
+
+* <span data-ttu-id="8d85b-126">[ASM. js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) включен по умолчанию ([запись блога](https://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [демонстрация](https://dev.windows.com/microsoft-edge/testdrive/demos/chess/))</span><span class="sxs-lookup"><span data-stu-id="8d85b-126">[asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) enabled by default ([blog post](https://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [demo](https://dev.windows.com/microsoft-edge/testdrive/demos/chess/))</span></span>
+* <span data-ttu-id="8d85b-127">[Классы](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) (ES2015)</span><span class="sxs-lookup"><span data-stu-id="8d85b-127">[Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) (ES2015)</span></span>
+
+#### <span data-ttu-id="8d85b-128">Экспериментальные функции JavaScript (включены с *флагами about: flags*)</span><span class="sxs-lookup"><span data-stu-id="8d85b-128">Experimental JavaScript features (enabled with *about:flags*)</span></span>
+
+* <span data-ttu-id="8d85b-129">[Асинхронные функции](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)</span><span class="sxs-lookup"><span data-stu-id="8d85b-129">[Async functions](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)</span></span>
+* <span data-ttu-id="8d85b-130">[Оператор возведения](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) в степень (ES2016)</span><span class="sxs-lookup"><span data-stu-id="8d85b-130">[Exponentiation operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) (ES2016)</span></span>
+* <span data-ttu-id="8d85b-131">[Разструктуризация](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) (ES2015)</span><span class="sxs-lookup"><span data-stu-id="8d85b-131">[Destructuring](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) (ES2015)</span></span>
+
+### <span data-ttu-id="8d85b-132">Ввод данных пользователем</span><span class="sxs-lookup"><span data-stu-id="8d85b-132">User Input</span></span>
+<span data-ttu-id="8d85b-133">Ниже перечислены функции, представленные в EdgeHTML 13 улучшения ввода данных пользователем.</span><span class="sxs-lookup"><span data-stu-id="8d85b-133">The following features introduced in EdgeHTML 13 improve user input:</span></span>
+* [`<meter>` <span data-ttu-id="8d85b-134">элемент</span><span class="sxs-lookup"><span data-stu-id="8d85b-134">element</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement/)
+* [`oninvalid` <span data-ttu-id="8d85b-135">обработчик событий для документа и окна элемента</span><span class="sxs-lookup"><span data-stu-id="8d85b-135">event handler for the element document and window</span></span>](https://developer.microsoft.com/microsoft-edge/platform/status/oninvalideventhandler/)
+
+### <span data-ttu-id="8d85b-136">Блокировка указателя</span><span class="sxs-lookup"><span data-stu-id="8d85b-136">Pointer Lock</span></span>
+<span data-ttu-id="8d85b-137">Microsoft EDGE теперь поддерживает интерфейс API блокировки указателей (ранее называемый блокировкой мыши) для доступа к перемещению мыши, заблокирующий цель событий мыши для одного элемента, устраняя ограничения того, насколько далеко движение мыши может находиться в одном направлении, и удаляет курсор из представления.</span><span class="sxs-lookup"><span data-stu-id="8d85b-137">Microsoft Edge now supports the Pointer Lock API (previously called Mouse Lock) for access to raw mouse movement, locking the target of mouse events to a single element, eliminating limits of how far mouse movement can go in a single direction, and removing the cursor from view.</span></span> 
+
+
+## <span data-ttu-id="8d85b-138">Новые API-интерфейсы в EdgeHTML 13 "" "</span><span class="sxs-lookup"><span data-stu-id="8d85b-138">New APIs in EdgeHTML 13""""</span></span>
+
+<span data-ttu-id="8d85b-139">Ниже приведен полный список новых API-интерфейсов в EdgeHTML 13.</span><span class="sxs-lookup"><span data-stu-id="8d85b-139">Here's the full list of new APIs in EdgeHTML 13.</span></span> <span data-ttu-id="8d85b-140">Они указаны в формате **[имя интерфейса]. [ Имя API]**.</span><span class="sxs-lookup"><span data-stu-id="8d85b-140">They are listed in the format of **[interface name].[api name]**.</span></span>
+<iframe height='584' scrolling='no' title='<span data-ttu-id="8d85b-141">Новые API-интерфейсы в EdgeHTML 13</span><span class="sxs-lookup"><span data-stu-id="8d85b-141">New APIs in EdgeHTML 13</span></span>' src='//codepen.io/MicrosoftEdgeDocumentation/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'><span data-ttu-id="8d85b-142">Ознакомьтесь с <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'> новыми API-интерфейсами в EdgeHTML 13 на </a> Microsoft Edge Docs ( <a href='http://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) на <a href='http://codepen.io'> CodePen </a> .</span><span class="sxs-lookup"><span data-stu-id="8d85b-142">See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'>New APIs in EdgeHTML 13</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</span></span></iframe><span data-ttu-id="8d85b-143">""''""''""</span><span class="sxs-lookup"><span data-stu-id="8d85b-143">""''""''""</span></span>
