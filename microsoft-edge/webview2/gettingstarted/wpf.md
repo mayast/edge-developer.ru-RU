@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: 6e66d90c3b821ee3656466ccaf3c9a079dda5030
-ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
+ms.openlocfilehash: ebff559a940c54dcea18dec58170bdee1e030e9b
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "10673954"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685696"
 ---
 # Начало работы с WebView2 в WPF (Предварительная версия)  
 
@@ -24,7 +24,7 @@ ms.locfileid: "10673954"
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
 * [Канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download/) , установленный в Windows 10, Windows 8,1 или Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 или более поздней версии.  
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 или более поздней версии.  
 
 ## Шаг 1: создание одного оконного приложения
 
@@ -327,11 +327,9 @@ async void InitializeAsync()
 
 ## Дальнейшие действия  
 
-В этом пошаговом руководстве есть множество функциональных возможностей WebView2, не описанных в этом примере.  
-
-Дополнительные сведения:  
-
-* Подробные сведения о каждом API можно узнать в [справочнике по API](../reference/dotnet/0-9-515-reference-webview2.md) .  
+* Провлеките [WebView2Samplesный репозиторий](https://github.com/MicrosoftEdge/WebView2Samples) с подробным примером возможностей WebView2's
+* Дополнительные сведения об интерфейсах API для извлечения [справочных](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) данных
+* Извлечение списка [ресурсов WebView2](../index.md#next-steps) для получения дополнительных сведений о WebView2
 
 ## Знакомство с командой Microsoft Edge WebView  
 

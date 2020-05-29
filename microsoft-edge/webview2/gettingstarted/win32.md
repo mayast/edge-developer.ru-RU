@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: f62fa25dab7ee1e89f268e4b77a9c0612cac665f
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 0ab152e52b5e5d89cf493ff525ce53d9ab174e6d
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655035"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685682"
 ---
 # Начало работы с WebView2 (Предварительная версия для разработчиков)
 
@@ -219,9 +219,9 @@ nullptr);
 
 Дополнительные сведения:
 
-* [Пример извлечения API WebView2](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) для подробного примера наших возможностей SDK.
+* [Пример извлечения WEBVIEW2 API](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) для подробного примера возможностей WebView2's.
 * Извлечение [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) приложения, созданного с помощью WebView2.
-* Ознакомьтесь со статьей [справочник API](../reference/win32/0-9-488-reference-webview2.md) для получения подробных сведений об API out.  
+* Ознакомьтесь со [справочными](../reference/win32/0-9-488-reference-webview2.md) материалами по API для получения подробных сведений о нашем API.  
 
 ## Связь с командой WebView2  
 

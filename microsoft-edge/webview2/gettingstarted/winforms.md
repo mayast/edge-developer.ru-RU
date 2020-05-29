@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WinForms, WinForms, EDGE, CoreWebView2, браузер, край HTML, Приступая к работе, Приступая к работе, .NET, Windows Forms
-ms.openlocfilehash: e17139d9d2b556d8048fb0043b88b56430c93091
-ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
+ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "10673947"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685689"
 ---
 # Начало работы с WebView2 в приложениях для Windows Forms (Предварительная версия)  
 
@@ -24,7 +24,7 @@ ms.locfileid: "10673947"
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
 * [Канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download/) , установленный в Windows 10, Windows 8,1 или Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 или более поздней версии.
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 или более поздней версии.
 
 > [!NOTE]
 > Если вы разрабатываете **Microsoft Forms .NET Core 3,0 или .NET 5**, скачайте [Visual Studio (Предварительная версия)](https://visualstudio.microsoft.com/vs/preview/)
@@ -290,9 +290,12 @@ async void InitializeAsync()
 
 Поздравляем! вы создали первое приложение WebView2!  
 
-## Дальнейшие действия  
+## Дальнейшие действия 
 
-Дополнительные сведения о функциях WebView2, не описанных в этом пошаговом руководстве, приведены в статье [Справочник по API](../reference/dotnet/0-9-515-reference-webview2.md).
+* Провлеките [WebView2Samplesный репозиторий](https://github.com/MicrosoftEdge/WebView2Samples) с подробным примером возможностей WebView2's
+* Дополнительные сведения об интерфейсах API для извлечения [справочных](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) данных
+* Извлечение списка [ресурсов WebView2](../index.md#next-steps) для получения дополнительных сведений о WebView2
+
 
 ## Знакомство с командой Microsoft Edge WebView  
 
