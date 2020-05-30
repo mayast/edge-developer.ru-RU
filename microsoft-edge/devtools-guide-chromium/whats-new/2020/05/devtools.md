@@ -6,12 +6,12 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: f07639d3c5cd246704f3d489c0e59714a938f13d
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+ms.openlocfilehash: fc5dcc10ba3a79bd3f073e0e3504e551d7e23d70
+ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684907"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "10688180"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -114,7 +114,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 [#1081486][CR1081486] проблем с Chromium  
 
-### Область сведений на панели "сеть" получает фокус  
+### Область сведений на панели "сеть" теперь доступна  
 
 В Microsoft Edge 84 [область сведений][DevToolsNetworkDetails] на панели " **сеть** " теперь получает фокус при открытии ресурса в [сетевом журнале][DevToolsNetworkLog].  Это изменение позволяет средствам чтения с экрана читать и взаимодействовать с содержимым области **сведений** .  
 
