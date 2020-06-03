@@ -6,17 +6,17 @@
     - name: Использование асинхронных методов среды выполнения Windows
       href: using-windows-runtime-asynchronous-methods.md
       items:
-        - name: Специальные свойства ошибки из асинхронных методов среды выполнения Windows
+        - name: Специальные свойства ошибок из асинхронных методов среды выполнения Windows.
           href: special-error-properties-from-asynchronous-windows-runtime-methods.md
     - name: Обработка событий среды выполнения Windows в JavaScript
       href: handling-windows-runtime-events-in-javascript.md
     - name: Представление типов среды выполнения Windows в JavaScript
       href: javascript-representation-of-windows-runtime-types.md
-    - name: Представления времени выполнения Windows и представления TimeSpan
+    - name: Представления DateTime и TimeSpan среды выполнения Windows
       href: windows-runtime-datetime-and-timespan-representations.md
-    - name: Коды ошибок для приложений среды выполнения Windows с помощью JavaScript
+    - name: 'Коды ошибок для приложений среды выполнения Windows, использующих JavaScript'
       href: error-codes-for-windows-runtime-apps-using-javascript.md
-- name: Reference (WinRT)
+- name: Справочные материалы (WinRT)
   items:
-    - name: мсапп
+    - name: MSApp
       href: reference/msapp.md
