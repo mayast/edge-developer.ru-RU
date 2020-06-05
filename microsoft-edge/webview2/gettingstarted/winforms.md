@@ -3,17 +3,17 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView 2 для приложений Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/04/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WinForms, WinForms, EDGE, CoreWebView2, браузер, край HTML, Приступая к работе, Приступая к работе, .NET, Windows Forms
-ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: 1e23c96cee1e577560c2d26b96a53454533867dd
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685689"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695896"
 ---
 # Начало работы с WebView2 в приложениях для Windows Forms (Предварительная версия)  
 
@@ -27,7 +27,7 @@ ms.locfileid: "10685689"
 * [Visual Studio](https://visualstudio.microsoft.com/) 2017 или более поздней версии.
 
 > [!NOTE]
-> Если вы разрабатываете **Microsoft Forms .NET Core 3,0 или .NET 5**, скачайте [Visual Studio (Предварительная версия)](https://visualstudio.microsoft.com/vs/preview/)
+> WebView2 в настоящее время не поддерживает конструктор .NET Core 3.0 [(Предварительная версия)](https://visualstudio.microsoft.com/vs/preview/).
 
 ## Шаг 1: создание одного оконного приложения
 
@@ -35,11 +35,11 @@ ms.locfileid: "10685689"
 
 1. Откройте **Visual Studio.**
 
-2. Выберите **приложение Windows Forms .NET Framework** или **основное приложение Windows Forms .NET**и нажмите кнопку **Далее**.
+2. Выберите **приложение Windows Forms .NET Framework** и нажмите кнопку **Далее**.
 
     ![newproject](./media/winforms-newproject.png)
 
-3. Введите значения для **имени проекта** и его **местоположения**.  Выберите **.NET Framework 4.6.2** или более поздней версии или **.NET Core 3,0** или более поздней версии.  
+3. Введите значения для **имени проекта** и его **местоположения**.  Выберите **.NET Framework 4.6.2** или более поздней версии.  
 
     ![startproject](./media/winforms-startproj.png)
 

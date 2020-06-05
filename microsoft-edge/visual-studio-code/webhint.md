@@ -1,30 +1,34 @@
 ---
 description: Использование подсказки в коде Visual Studio
 title: расширение ссылки и кода
-author: hxlnt
-ms.author: raweil
-ms.date: 03/26/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, код для VS, код Visual Studio, ссылка "веб-подсказка"
-ms.openlocfilehash: d3102bf4d8d4a8bba9225d8d3f68432197f775ac
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: ec218fab8cbfb8181a0416c8e0eadc0e00412529
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572790"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695861"
 ---
-# расширение ссылки и кода
+# Расширение ссылки и кода  
 
-Используйте веб- [подсказку](https://webhint.io), настраиваемый инструмент linting, чтобы улучшить доступность, производительность, совместимость с различными браузерами, совместимость с PWA и безопасность сайта. Она проверяет ваш код на предмет рекомендаций и распространенных ошибок. Этот проект с открытым исходным кодом, изначально разработанный группой Microsoft EDGE, теперь является частью [OpenJS Foundation](https://openjsf.org/). Группа Microsoft Edge продолжает вносить вклад в веб-подсказку в сообществе в сообщество.
+Используйте веб- [подсказку][WebhintMain], настраиваемый инструмент linting, чтобы улучшить доступность, производительность, совместимость с различными браузерами, совместимость с PWA и безопасность сайта.  Она проверяет ваш код на предмет рекомендаций и распространенных ошибок. Этот проект с открытым исходным кодом, изначально разработанный группой Microsoft EDGE, теперь является частью [OpenJS Foundation][OpenjsFoundation].  Группа Microsoft Edge продолжает вносить вклад в веб-подсказку в сообществе в сообщество.  
 
-![Снимок экрана: расширение кода и ссылки на него](./media/webhint-extension.png)
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Снимок экрана: расширение кода и ссылки на него":::
+   Снимок экрана: расширение кода и ссылки на него  
+:::image-end:::
 
-Выявление и устранение проблем в HTML, CSS, JavaScript, TypeScript и т. д. Добавьте расширение веб- [подсказки для кода VS](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint). Подсказки выводятся в виде встроенных подчеркивания и обобщены на панели "проблемы".
+<!--![Screenshot of webhint VS Code extension][ImageWebhintExtension]  -->  
 
-## Конфигурация
+Выявление и устранение проблем в HTML, CSS, JavaScript, TypeScript и т. д. Добавьте расширение веб- [подсказки для кода VS][VisualstudioMarketplaceWebhint].  Подсказки выводятся в виде встроенных подчеркивания и обобщены на панели " **проблемы** ".  
 
-Это расширение использует JSON-файл [конфигурации по умолчанию](https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json) , который активирует подсказки и парсеры для HTML, CSS, шаблонов систем (JSX/целевой, радиальной и т. д.), JavaScript, TypeScript и т. д.
+## Конфигурация  
+
+Это расширение использует JSON-файл [конфигурации по умолчанию][GithubWebhintioIndexjson] , который активирует подсказки и синтаксические анализаторы для HTML, CSS, шаблонов системы \ (JSX/Целевая, угловая и т. д.), JavaScript/TypeScript и т. д.  
 
 ```json
 {
@@ -74,16 +78,39 @@ ms.locfileid: "10572790"
         "webpack-config"
     ]
 }
-```
+```  
 
-Если вы хотите, чтобы дополнительные элементы управления подсказками и парсеры были активированы, создайте локальный `.hintrc` файл для настройки веб-подсказки. Инструкции по выводу результатов из конкретных подсказок можно найти в [руководстве пользователя по этой подсказке](https://webhint.io/docs/user-guide/configuring-webhint/summary/).
+Если вы хотите, чтобы дополнительные элементы управления подсказками и парсеры были активированы, создайте локальный `.hintrc` файл для настройки веб-подсказки.  Чтобы получить справку по выводу из конкретных подсказок, ознакомьтесь с [руководством пользователя по этой подсказке][WebhintDocsUserguideConfiguringSummary].  
 
-## Отзыв
+## Связь с командой "Подсказка"  
 
-Отправьте нам отзыв, выполнив [архивацию по вопросу](https://github.com/webhintio/hint/issues/new) в [репозитории GitHub](https://github.com/webhintio/hint). 
+Отправьте отзыв, выполнив [архивацию проблем][GithubWebhintioIssuesNew] в [репозитории GitHub][GithubWebhintio]веб контрольных подсказок.  
 
-Чтобы присвоить это расширение, ознакомьтесь со статьей [руководство по расширению ссылки и расширений кода](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md).
+Чтобы присвоить это расширение, ознакомьтесь с руководством по соавтору для ссылки на ссылку [и расширение кода][GithubWebhintioExtensionVscodeContributing].  
 
-## См. также
-  - [Специальные возможности](/microsoft-edge/accessibility)
-  - [Visual Studio Code](/microsoft-edge/visual-studio-code/)
+## См. также  
+
+*   [Специальные возможности][AccessibilityIndex]  
+*   [Visual Studio Code][VisualstudiocodeIndex]  
+
+<!-- image links -->  
+
+<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint VS Code extension"  -->  
+
+<!--links -->  
+
+[AccessibilityIndex]: /microsoft-edge/accessibility "Специальные возможности | Документы Microsoft"  
+
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Код Visual Studio | Документы Microsoft"  
+
+[GithubWebhintio]: https://github.com/webhintio/hint "Подсказка | GitHub"  
+[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Всплывающая подсказка | GitHub"  
+[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index. JSON-webhintio/подсказка | GitHub"
+[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Новые проблемы — webhintio/подсказка | GitHub"  
+
+[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "Подсказка | Visual Studio Marketplace"  
+
+[OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
+
+[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Настройка подсказки | Документация по подсказкам"  
+[WebhintMain]:  https://webhint.io "Подсказка"  
