@@ -3,19 +3,22 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView2 для приложений Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: be8f475d4c1a886a92b46144f2bffde2d49dc9d4
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 986b1dc2870375243a0ee664262216105edd95a8
+ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654933"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10699502"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2Environment 
+
+> [!NOTE]
+> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.
 
 Пространство имен: Microsoft. Web. WebView2. Core \
 Сборка: Microsoft. Web. WebView2. Core. dll
@@ -58,7 +61,7 @@ ms.locfileid: "10654933"
 
 Создает среду Evergreen WebView2, используя установленную версию Edge.
 
-> открытая асинхронная задача< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)(строка browserExecutableFolder, строка userDataFolder, CoreWebView2EnvironmentOptions параметры)
+> общедоступная статическая асинхронная задача< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)(строка browserExecutableFolder, строка userDataFolder, CoreWebView2EnvironmentOptions параметры)
 
 ##### Параметры
 * `browserExecutableFolder` Относительный путь к папке, содержащей внедренный край. 

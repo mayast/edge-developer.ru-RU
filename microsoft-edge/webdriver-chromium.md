@@ -1,77 +1,69 @@
 ---
 description: Сведения о том, как протестировать веб-сайт или приложение в Microsoft EDGE, а также автоматизировать браузер с помощью Web Drive.
-title: Chromium
+title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/01/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft EDGE, веб-разработка, HTML, CSS, сценарий JavaScript, разработчик, веб-дисковод, Selenium, тестирование, инструменты, Автоматизация и тестирование
-ms.openlocfilehash: 52d1a92df1a0faa21a1f8caa780fe203ad27856e
-ms.sourcegitcommit: d39c64e0d439eb0643950248cdf2282383779225
+ms.openlocfilehash: 14537943351db144bb4839d6befbfaa62894cd85
+ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "10689677"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10699509"
 ---
-# Chromium  
+# Использование Chromium для автоматизации тестов  
 
-API веб- [накопителей][W3CWebdriver] W3C — это платформа и независимый от языка интерфейс и протокол проводной связи, позволяющая программам и сценариям управлять поведением браузера, например Microsoft Edge \ (Chromium \).  
+С помощью этого устройства разработчики могут создавать автоматические тесты, имитирующие взаимодействие с пользователем.  Проверки и имитации для модулей-накопителей отличаются от модульных тестов JavaScript по следующим причинам. 
+*   Доступ к функциям и сведениям, недоступным для JavaScript, которые выполняются в браузерах.  
+*   Более точное моделирование событий пользователей и событий на уровне операционной системы.  
+*   Управление тестированием между несколькими окнами, вкладками и веб-страницами в одном тестовом сеансе.  
+*   Запуск нескольких сеансов Microsoft EDGE на определенном компьютере.  
 
-С помощью этого устройства разработчики могут создавать автоматические тесты, имитирующие взаимодействие с пользователем.  Тесты и эмуляции веб-дисков отличаются от модульных тестов JavaScript, так как веб-дисководы имеют доступ к функциональным возможностям и сведениям, которые JavaScript запускается в браузере, а также позволяют лучше имитировать события пользователей и события на уровне операционной системы.  С помощью веб-диска можно управлять тестированием между несколькими окнами, вкладками и страницами в одном тестовом сеансе.  
-
-Вот как начать работу с веб-дисководом для Microsoft Edge \ (Chromium \).  
+В следующем разделе описано, как приступить к работе с веб-диском Microsoft Edge \ (Chromium \).  
 
 ## Установка Microsoft EDGE (Chromium)  
 
-[Установите Microsoft EDGE (Chromium)][MicrosoftEdge], если вы еще не сделали этого.  Если вы используете предварительно установленную версию Microsoft EDGE на своем компьютере, убедитесь в том, что у вас есть Microsoft Edge \ (Chromium \), а не Microsoft Edge \ (EdgeHTML \).  Чтобы быстро проверить, нужно ли загрузить `edge://settings/help` браузер и убедиться, что номер версии — V75 или более поздней.  
+Убедитесь в том, что вы установили [Microsoft EDGE (Chromium)][MicrosoftEdge].  Чтобы убедиться в том, что у вас установлен Microsoft EDGE (Chromium), перейдите `edge://settings/help` в браузер и проверьте номер версии 75 или более поздней версии.  
 
 ## Скачать драйвер Microsoft Edge  
 
-Для автоматизации каждого браузера для веб-дисковода необходим драйвер, зависящий от браузера.  Для Microsoft Edge \ (Chromium \) требуется соответствующий [драйвер Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] для сборки Microsoft EDGE, которую вы хотите протестировать или автоматизировать.  
+Чтобы приступить к автоматизации тестов, выполните указанные ниже действия, чтобы убедиться, что версия веб – диска, установленная на вашем компьютере, совпадает с вашей версией браузера.  
 
-Чтобы найти правильный номер сборки, выполните указанные ниже действия.  
-
-1.  Запуск Microsoft Edge 
-1.  Просмотреть версию Microsoft Edge \ (Chromium \).  
-    *   Перейдите к `edge://settings/help`  
-    *   Выберите `...`  >  **Параметры**  >   **о Microsoft Edge**  
-1.  Убедитесь в том, что для сборки указана нужная версия, чтобы она правильно выполнялась.  
-
-:::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="Номер сборки Microsoft Edge Канарские 14 января 2020 г.":::
-   Рисунок 1.  Номер сборки Microsoft Edge Канарские 14 января 2020 г.  
-:::image-end:::  
-
-Теперь [Загрузите соответствующую версию драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads].  
-
-:::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел "загружаемые файлы" на странице драйвера Microsoft Edge":::
-   Рисунок 2.  Раздел "загружаемые файлы" на странице [драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads]  
-:::image-end:::  
-
-> [!NOTE]
-> Microsoft Edge \ (EdgeHTML \) не работает с [драйвером Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads].  Для автоматизации Microsoft Edge \ (EdgeHTML \) необходимо загрузить [Microsoft для Microsoft Edge \ (EdgeHTML \)][Webdriver].  
+1.  Перейдите в раздел, `edge://settings/help` чтобы получить версию Edge.  
+    
+    :::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="Номер сборки Microsoft Edge Канарские 14 января 2020 г.":::
+       Рисунок 1.  Номер сборки Microsoft Edge Канарские 14 января 2020 г.
+    :::image-end:::  
+    
+1.  Перейдите на страницу [загрузки драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] и скачайте драйвер, который соответствует номеру версии Edge.  
+    
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел "загружаемые файлы" на странице драйвера Microsoft Edge":::
+       Рисунок 2.  Раздел "загружаемые файлы" на странице [драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
+    :::image-end:::  
+    
+    > [!NOTE] 
+    > Дополнительные сведения об автоматизации тестирования с помощью Microsoft EDGE (EdgeHTML) можно найти в [веб-накопителе Microsoft для Microsoft EDGE (EdgeHTML)][Webdriver].  
 
 ## Выбор языковой привязки для веб-дисков  
 
-Последним компонентом, который необходимо скачать, является драйвер клиента, зависящий от языка.  Языковая привязка преобразует код, написанный в Python, Java, C \ #, Ruby и JavaScript, в команды, которые драйвер Microsoft EDGE, [загруженный в предыдущем разделе](#download-microsoft-edge-driver) , может работать в Microsoft Edge \ (Chromium \).  
+Последний компонент, который необходимо скачать, — это языковый драйвер клиента для перевода кода \ (Python, Java, C \ #, Ruby, JavaScript \) в команды, которые драйвер Microsoft EDGE работает в Microsoft Edge \ (Chromium \).  
 
-[Скачайте выбранную вами языковую привязку веб дисков][SeleniumDownloads].  Группа Microsoft Edge настоятельно рекомендует [Selenium 4,00-alpha05][NugetPackagesSeleniumWebdriver400alpha05] или более поздней версии, так как она содержит встроенную поддержку Microsoft Edge \ (Chromium \).  Однако вы можете подключаться к Microsoft Edge \ (Chromium \) во всех более ранних версиях Selenium, включая текущую стабильную версию Selenium 3.  
+[Скачайте выбранную вами языковую привязку веб дисков][SeleniumDownloads].  Команда Microsoft Edge рекомендует [Selenium 4,00-alpha05][NugetPackagesSeleniumWebdriver400alpha05] или более поздней версии, так как она поддерживает Microsoft Edge \ (Chromium \).  Тем не менее, вы можете управлять Microsoft Edge \ (Chromium \) во всех более ранних версиях Selenium, включая текущую стабильную версию Selenium 3.  
 
 > [!IMPORTANT]
-> Если вы уже выполняли автоматизацию или тестирование Microsoft Edge \ (Chromium \), используя `ChromeDriver` и `ChromeOptions` , код веб-дисковода не запустится в Microsoft Edge V80 или более поздней версии.  Это критическое изменение, а Microsoft Edge \ (Chromium \) больше не принимает команды.  Необходимо изменить тесты, чтобы использовать `EdgeOptions` драйвер класса и [Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver].  
+> Если вы уже выполняли автоматизацию или тестирование Microsoft Edge \ (Chromium \) с использованием `ChromeDriver` и `ChromeOptions` классами, код веб-дисковода не будет работать в Microsoft Edge версии 80 или более поздней.  Чтобы устранить эту проблему, обновите тесты, чтобы использовать этот `EdgeOptions` класс и установить [драйвер Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver].  
 
 ### Использование Selenium 3  
 
-[Selenium 3][|::ref1::|] – это новейшая стабильный выпуск Selenium.  По умолчанию Selenium 3 использует старый Microsoft Edge \ (EdgeHTML \) и не имеет встроенной поддержки Microsoft Edge \ (Chromium \).  Чтобы использовать Selenium 3 с Microsoft Edge \ (Chromium \), установите пакет [инструментов Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] .  Selenium Tools for Microsoft Edge расширяет Selenium 3 с помощью обновленного драйвера, который поможет вам создавать автоматические тесты для обоих браузеров Microsoft Edge \ (EdgeHTML \) и новых Microsoft Edge \ (Chromium).  
-
-Selenium Tools for Microsoft Edge — это решение для разработчиков, которые хотят оставаться на Selenium 3 и разработчиках с существующими тестами браузера и добавлять покрытие для нового браузера Microsoft Edge \ (Chromium \) без изменения версий Selenium.  `EdgeDriver`Классы и `EdgeDriverService` включенные в них компоненты полностью совместимы с встроенными эквивалентами в Selenium и выполняют Microsoft Edge \ (EdgeHTML \) по умолчанию, поэтому эти средства можно использовать в качестве неполной замены для существующих классов EDGE в Selenium.  
-
-[Установите средства Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] , чтобы приступить к работе с Microsoft Edge \ (Chromium \) с проектом Selenium 3.  
+Если вы уже используете [Selenium 3][|::ref1::|], возможно, у вас есть тестирование браузера и хотите добавить покрытие для Microsoft Edge \ (Chromium \) без изменения версии Selenium.  Чтобы использовать [Selenium 3][|::ref2::|] для написания автоматических тестов как для Microsoft Edge \ (EdgeHTML \), так и для Microsoft Edge \ (Chromium \), установите для него пакет [средств Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] , чтобы использовать обновленный драйвер.  `EdgeDriver`Классы и `EdgeDriverService` компоненты, включенные в эти инструменты, полностью совместимы с встроенными эквивалентами в Selenium 4.  
 
 ## Использование веб-накопителя (Microsoft EDGE (Chromium))
 
-Следующие примеры выполняются с помощью либо Selenium 3, либо 4.  Для использования с Selenium 3 должны быть установлены [средства Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] .  
+Вы можете использовать следующие примеры с помощью Selenium 3 или 4.  Для использования с Selenium 3 необходимо установить пакет [средств Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] .  
 
 ### Основное использование  
 
@@ -105,7 +97,7 @@ let driver = edge.Driver.createSession();
 
 ### Управление Microsoft EDGE (Chromium)  
 
-Для использования с Microsoft Edge \ (Chromium \) вместо этого создайте новый `EdgeDriver` класс и передайте ему `EdgeOptions` объект со `UseChromium` свойством, для которого задано значение `true` .  
+Для использования с Microsoft Edge \ (Chromium \) создайте новый `EdgeDriver` класс и передайте ему `EdgeOptions` объект со `UseChromium` свойством, для которого задано значение `true` .  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -142,9 +134,12 @@ let driver = edge.Driver.createSession(options);
 
 * * *  
 
+> [!NOTE]
+> Если задано значение политики [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] `2` , [драйвер Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] не может использовать Microsoft Edge [(Chromium)][MicrosoftEdge] , так как в драйвере используется [Microsoft Edge DevTools][DevToolsMain].  Убедитесь, что вы установили для политики [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] значение " `0` или" `1` автоматизировать [Microsoft EDGE (Chromium)][MicrosoftEdge].  
+
 ### Выбор определенных двоичных файлов браузера (только Chromium)  
 
-Используйте этот `EdgeOptions` класс для выбора определенного двоичного файла.  Это полезно при тестировании [каналов предварительной версии Microsoft Edge][MicrosoftedgeinsiderDownload] , таких как Microsoft Edge Beta.  
+Вы можете использовать этот `EdgeOptions` класс с определенными двоичными объектами Microsoft EDGE (Chromium).  Например, вы можете выполнять тесты с помощью [каналов предварительной версии Microsoft Edge][MicrosoftedgeinsiderDownload] , таких как Microsoft Edge Beta.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -190,7 +185,7 @@ let driver = edge.Driver.createSession(options);
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-Если `EdgeDriver` экземпляр класса создается с помощью `EdgeOptions` класса, он автоматически создает и запускает соответствующий `EdgeDriverService` класс для Microsoft Edge \ (EdgeHTML \) или Microsoft Edge \ (Chromium \).  
+Когда `EdgeDriver` экземпляр класса создается с помощью `EdgeOptions` класса, он создает и запускает соответствующий `EdgeDriverService` класс для Microsoft Edge \ (EdgeHTML \) или Microsoft Edge \ (Chromium \).  
 
 Если вы хотите создать объект `EdgeDriverService` для Microsoft Edge \ (Chromium \) с помощью метода, создайте его `CreateChromiumService()` .  Вы можете использовать дополнительные настройки, такие как включение подробного вывода журнала в приведенном ниже коде.  
 
@@ -203,16 +198,15 @@ using (var service = EdgeDriverService.CreateChromiumService())
 }
 ```  
 
-> [!NOTE]
-> Вам не нужно предоставлять `EdgeOptions` объект при передаче `EdgeDriver` экземпляра класса `EdgeDriverService` .  Этот `EdgeDriver` класс использует параметры по умолчанию (Microsoft Edge \ (EdgeHTML \) или Microsoft Edge \ (Chromium \) в зависимости от типа предоставляемой услуги.  
-> 
-> Тем не менее, если вы хотите предоставить оба `EdgeDriverService` `EdgeOptions` класса и классы, необходимо убедиться, что оба они настроены для одной и той же версии Microsoft Edge.  Например, невозможно использовать класс по умолчанию Microsoft Edge \ (EdgeHTML \) `EdgeDriverService` и свойства Chromium в `EdgeOptions` классе.  `EdgeDriver`Класс вызывает ошибку, чтобы предотвратить использование разных версий.  
+> [!NOTE] 
+>Вам не нужно предоставлять `EdgeOptions` объект при передаче `EdgeDriverService` `EdgeDriver` экземпляру. `EdgeDriver`Класс использует параметры по умолчанию для Microsoft Edge \ (EdgeHTML \) или Microsoft Edge \ (Chromium \) в зависимости от предоставленной услуги.  
+> Тем не менее, если вы хотите предоставить `EdgeDriverService` оба `EdgeOptions` класса и классы, убедитесь, что они настроены для одной и той же версии Microsoft Edge.  Например, невозможно использовать класс по умолчанию Microsoft EDGE (EdgeHTML) `EdgeDriverService` и свойства Chromium в `EdgeOptions` классе.  `EdgeDriver`Класс вызывает ошибку, чтобы предотвратить использование разных версий.  
 
 #### [Языке](#tab/python/)  
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-При использовании Python `Edge` объект создает и управляет `EdgeService` .  Чтобы настроить `EdgeService` , передайте объекту дополнительные аргументы `Edge` .
+При использовании Python `Edge` объект создает и управляет `EdgeService` .  Чтобы настроить `EdgeService` , передайте дополнительные аргументы объекту, `Edge` как указано в приведенном ниже коде.  
 
 ```python
 service_args = ['--verbose']
@@ -224,19 +218,18 @@ driver = Edge(service_args = service_args)
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 При использовании JavaScript создайте и настройте `Service` класс с помощью `ServiceBuilder` класса.  При необходимости вы можете передать `Service` объект в объект, `Driver` который запускает и останавливает службу.  
-
-Чтобы настроить `Service` , выполните дополнительные методы в `ServiceBuilder` классе перед использованием `build()` метода, а затем передайте его `service` в методе в качестве параметра `Driver.createSession()` .  
+Чтобы настроить `Service` , выполните дополнительные методы в `ServiceBuilder` классе перед использованием `build()` метода.  Затем передается в `service` `Driver.createSession()` методе как параметр.  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
 let driver = edge.Driver.createSession(options, service);
 ```  
 
-* * *  
+* * * 
 
 ### Использование параметров, специфичных для Chromium  
 
-Использование `EdgeOptions` класса с `UseChromium` установленным свойством `true` предоставляет доступ ко всем тем же методам и свойствам, которые доступны в классе [ChromeOptions][SeleniumWebDriverChromeoptionsClass] в Selenium.  Например, как и в других браузерах Chromium, используйте `EdgeOptions.AddArguments()` метод для запуска Microsoft Edge \ (Chromium \) в [режиме бездисплейного режима][WikiHeadlessBrowser] в приведенном ниже коде.  
+Если `UseChromium` для свойства задано значение `true` , вы можете использовать `EdgeOptions` Этот класс для доступа к таким же [свойствам и методам Chromium][SeleniumWebDriverChromeoptionsClass] , что и при автоматизации других браузеров Chromium.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -270,12 +263,12 @@ options.setEdgeChromium(true);
 options.addArguments("headless");
 options.addArguments("disable-gpu");
 ```
+
 * * *  
-
 > [!NOTE]
-> [Свойства и методы, связанные с Chromium][SeleniumWebDriverChromeoptionsClass] , всегда доступны, но не имеют никакого эффекта, если `UseChromium` свойство не задано `true` .  Аналогичным образом существующие свойства и методы, предназначенные для Microsoft Edge \ (EdgeHTML \), не применяются, если `UseChromium` для свойства задано значение `true` .  
+> Если `UseChromium` свойство имеет значение `true` , вы не можете пользоваться свойствами и методами для Microsoft Edge \ (EdgeHTML \).  
 
-## Другие способы настройки устройства  
+## Дополнительные параметры установки для устройства добавления новых устройств  
 
 ### Шоколад  
 
@@ -289,7 +282,7 @@ choco install selenium-chromium-edge-driver
 
 ### Docker  
 
-Если вы используете [закрепление][DockerHub], скачайте предварительно настроенное изображение с помощью Microsoft Edge \ (Chromium \) и [Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] , которое уже установлено, выполнив следующую команду:  
+Если вы используете [закрепление][DockerHub], скачайте предварительно настроенное изображение с помощью Microsoft Edge \ (Chromium \) и [Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] , которое предустановлено, выполнив следующую команду:  
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -297,9 +290,9 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 Дополнительные сведения можно найти [в разделе контейнер в центре Dock][DockerHubMsedgedriver].  
 
-## Знакомство с командой Microsoft Edge DevTools    
+## Знакомство с командой Microsoft Edge DevTools  
 
-Группа Microsoft Edge – это информация о том, как использовать веб – диски, Selenium и Microsoft Edge!  С помощью значка **обратной связи** в Microsoft Edge DevTools или твит [@EdgeDevTools][TwitterTweetEdgeDevTools] , чтобы команда знала, что вы думаете.  
+Группа Microsoft Edge – это информация о том, как использовать веб – диски, Selenium и Microsoft Edge.  С помощью значка **обратной связи** в Microsoft Edge DevTools или твит [@EdgeDevTools][TwitterTweetEdgeDevTools] , чтобы команда знала, что вы думаете.  
 
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Значок обратной связи в Microsoft Edge DevTools":::
@@ -310,7 +303,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 <!-- links -->  
 
+[DevToolsMain]: ./devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"
 [Webdriver]: ./webdriver.md "[EdgeHTML) | Документы Microsoft"  
+
+[DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability-Microsoft Edge-Policies | Документы Microsoft"  
 
 [Chocolatey]: https://chocolatey.org "Шоколад | Шоколадное программное обеспечение"  
 [ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Драйвер Selenium Chromium Edge | Шоколад"  
