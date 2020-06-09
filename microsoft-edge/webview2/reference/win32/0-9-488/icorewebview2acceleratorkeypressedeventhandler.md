@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 5cbf358780d196168976fc0812c9845d0ec59b24
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 5f568c10f98a5375ffb0d0444b2b74b8a4e8c4c2
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654732"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697212"
 ---
-# <span data-ttu-id="7eec9-104">интерфейс ICoreWebView2AcceleratorKeyPressedEventHandler</span><span class="sxs-lookup"><span data-stu-id="7eec9-104">interface ICoreWebView2AcceleratorKeyPressedEventHandler</span></span> 
+# <span data-ttu-id="02dc8-104">интерфейс ICoreWebView2AcceleratorKeyPressedEventHandler</span><span class="sxs-lookup"><span data-stu-id="02dc8-104">interface ICoreWebView2AcceleratorKeyPressedEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="02dc8-105">Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="02dc8-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="02dc8-106">Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.</span><span class="sxs-lookup"><span data-stu-id="02dc8-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2AcceleratorKeyPressedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="7eec9-105">Вызывающий объект реализует этот интерфейс для получения события AcceleratorKeyPressed.</span><span class="sxs-lookup"><span data-stu-id="7eec9-105">The caller implements this interface to receive the AcceleratorKeyPressed event.</span></span>
+<span data-ttu-id="02dc8-107">Вызывающий объект реализует этот интерфейс для получения события AcceleratorKeyPressed.</span><span class="sxs-lookup"><span data-stu-id="02dc8-107">The caller implements this interface to receive the AcceleratorKeyPressed event.</span></span>
 
-## <span data-ttu-id="7eec9-106">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="7eec9-106">Summary</span></span>
+## <span data-ttu-id="02dc8-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="02dc8-108">Summary</span></span>
 
- <span data-ttu-id="7eec9-107">Участников</span><span class="sxs-lookup"><span data-stu-id="7eec9-107">Members</span></span>                        | <span data-ttu-id="7eec9-108">Описания</span><span class="sxs-lookup"><span data-stu-id="7eec9-108">Descriptions</span></span>
+ <span data-ttu-id="02dc8-109">Участников</span><span class="sxs-lookup"><span data-stu-id="02dc8-109">Members</span></span>                        | <span data-ttu-id="02dc8-110">Описания</span><span class="sxs-lookup"><span data-stu-id="02dc8-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="7eec9-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="7eec9-109">Invoke</span></span>](#invoke) | <span data-ttu-id="7eec9-110">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="7eec9-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="02dc8-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="02dc8-111">Invoke</span></span>](#invoke) | <span data-ttu-id="02dc8-112">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="02dc8-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="7eec9-111">Участников</span><span class="sxs-lookup"><span data-stu-id="7eec9-111">Members</span></span>
+## <span data-ttu-id="02dc8-113">Участников</span><span class="sxs-lookup"><span data-stu-id="02dc8-113">Members</span></span>
 
-#### <span data-ttu-id="7eec9-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="7eec9-112">Invoke</span></span> 
+#### <span data-ttu-id="02dc8-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="02dc8-114">Invoke</span></span> 
 
-<span data-ttu-id="7eec9-113">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="7eec9-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="02dc8-115">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="02dc8-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="7eec9-114">Открытый [вызов](#invoke)HRESULT ([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2AcceleratorKeyPressedEventArgs](icorewebview2acceleratorkeypressedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="7eec9-114">public HRESULT [Invoke](#invoke)([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2AcceleratorKeyPressedEventArgs](icorewebview2acceleratorkeypressedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="02dc8-116">Открытый [вызов](#invoke)HRESULT ([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2AcceleratorKeyPressedEventArgs](icorewebview2acceleratorkeypressedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="02dc8-116">public HRESULT [Invoke](#invoke)([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2AcceleratorKeyPressedEventArgs](icorewebview2acceleratorkeypressedeventargs.md) \* args)</span></span>
 

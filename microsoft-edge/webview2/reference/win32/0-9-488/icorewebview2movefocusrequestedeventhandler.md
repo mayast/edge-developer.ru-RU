@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: f9dcfa996058f4499daff03d8cad033ac61db4c9
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: ac2f17c621dc6ad5093bacac685e01688a663cb1
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654880"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697954"
 ---
-# <span data-ttu-id="5f334-104">интерфейс ICoreWebView2MoveFocusRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="5f334-104">interface ICoreWebView2MoveFocusRequestedEventHandler</span></span> 
+# <span data-ttu-id="d6836-104">интерфейс ICoreWebView2MoveFocusRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="d6836-104">interface ICoreWebView2MoveFocusRequestedEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="d6836-105">Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="d6836-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="d6836-106">Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.</span><span class="sxs-lookup"><span data-stu-id="d6836-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2MoveFocusRequestedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="5f334-105">Вызывающий объект реализует этот метод для получения события MoveFocusRequested.</span><span class="sxs-lookup"><span data-stu-id="5f334-105">The caller implements this method to receive the MoveFocusRequested event.</span></span>
+<span data-ttu-id="d6836-107">Вызывающий объект реализует этот метод для получения события MoveFocusRequested.</span><span class="sxs-lookup"><span data-stu-id="d6836-107">The caller implements this method to receive the MoveFocusRequested event.</span></span>
 
-## <span data-ttu-id="5f334-106">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="5f334-106">Summary</span></span>
+## <span data-ttu-id="d6836-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="d6836-108">Summary</span></span>
 
- <span data-ttu-id="5f334-107">Участников</span><span class="sxs-lookup"><span data-stu-id="5f334-107">Members</span></span>                        | <span data-ttu-id="5f334-108">Описания</span><span class="sxs-lookup"><span data-stu-id="5f334-108">Descriptions</span></span>
+ <span data-ttu-id="d6836-109">Участников</span><span class="sxs-lookup"><span data-stu-id="d6836-109">Members</span></span>                        | <span data-ttu-id="d6836-110">Описания</span><span class="sxs-lookup"><span data-stu-id="d6836-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="5f334-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="5f334-109">Invoke</span></span>](#invoke) | <span data-ttu-id="5f334-110">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="5f334-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="d6836-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="d6836-111">Invoke</span></span>](#invoke) | <span data-ttu-id="d6836-112">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="d6836-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="5f334-111">Участников</span><span class="sxs-lookup"><span data-stu-id="5f334-111">Members</span></span>
+## <span data-ttu-id="d6836-113">Участников</span><span class="sxs-lookup"><span data-stu-id="d6836-113">Members</span></span>
 
-#### <span data-ttu-id="5f334-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="5f334-112">Invoke</span></span> 
+#### <span data-ttu-id="d6836-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="d6836-114">Invoke</span></span> 
 
-<span data-ttu-id="5f334-113">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="5f334-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="d6836-115">Вызывается для предоставления средству реализации аргументов события для соответствующего события.</span><span class="sxs-lookup"><span data-stu-id="d6836-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="5f334-114">Открытый [вызов](#invoke)HRESULT ([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2MoveFocusRequestedEventArgs](icorewebview2movefocusrequestedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="5f334-114">public HRESULT [Invoke](#invoke)([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2MoveFocusRequestedEventArgs](icorewebview2movefocusrequestedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="d6836-116">Открытый [вызов](#invoke)HRESULT ([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2MoveFocusRequestedEventArgs](icorewebview2movefocusrequestedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="d6836-116">public HRESULT [Invoke](#invoke)([ICoreWebView2Controller](icorewebview2controller.md) \* sender, [ICoreWebView2MoveFocusRequestedEventArgs](icorewebview2movefocusrequestedeventargs.md) \* args)</span></span>
 

@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: fda3ab31405a7d6353af1a670a2804e973577c8e
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 22de463a0b0a6b279ffab6549526b11cbabafa51
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654826"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697226"
 ---
-# <span data-ttu-id="f006d-104">интерфейс ICoreWebView2CallDevToolsProtocolMethodCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="f006d-104">interface ICoreWebView2CallDevToolsProtocolMethodCompletedHandler</span></span> 
+# <span data-ttu-id="7c013-104">интерфейс ICoreWebView2CallDevToolsProtocolMethodCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="7c013-104">interface ICoreWebView2CallDevToolsProtocolMethodCompletedHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="7c013-105">Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="7c013-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="7c013-106">Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.</span><span class="sxs-lookup"><span data-stu-id="7c013-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2CallDevToolsProtocolMethodCompletedHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="f006d-105">Вызывающий объект реализует этот интерфейс, чтобы получать результаты выполнения CallDevToolsProtocolMethod.</span><span class="sxs-lookup"><span data-stu-id="f006d-105">The caller implements this interface to receive CallDevToolsProtocolMethod completion results.</span></span>
+<span data-ttu-id="7c013-107">Вызывающий объект реализует этот интерфейс, чтобы получать результаты выполнения CallDevToolsProtocolMethod.</span><span class="sxs-lookup"><span data-stu-id="7c013-107">The caller implements this interface to receive CallDevToolsProtocolMethod completion results.</span></span>
 
-## <span data-ttu-id="f006d-106">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="f006d-106">Summary</span></span>
+## <span data-ttu-id="7c013-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="7c013-108">Summary</span></span>
 
- <span data-ttu-id="f006d-107">Участников</span><span class="sxs-lookup"><span data-stu-id="f006d-107">Members</span></span>                        | <span data-ttu-id="f006d-108">Описания</span><span class="sxs-lookup"><span data-stu-id="f006d-108">Descriptions</span></span>
+ <span data-ttu-id="7c013-109">Участников</span><span class="sxs-lookup"><span data-stu-id="7c013-109">Members</span></span>                        | <span data-ttu-id="7c013-110">Описания</span><span class="sxs-lookup"><span data-stu-id="7c013-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="f006d-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="f006d-109">Invoke</span></span>](#invoke) | <span data-ttu-id="f006d-110">Вызывается для предоставления разработчику состояния завершения и результата соответствующего асинхронного вызова метода.</span><span class="sxs-lookup"><span data-stu-id="f006d-110">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+[<span data-ttu-id="7c013-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="7c013-111">Invoke</span></span>](#invoke) | <span data-ttu-id="7c013-112">Вызывается для предоставления разработчику состояния завершения и результата соответствующего асинхронного вызова метода.</span><span class="sxs-lookup"><span data-stu-id="7c013-112">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-## <span data-ttu-id="f006d-111">Участников</span><span class="sxs-lookup"><span data-stu-id="f006d-111">Members</span></span>
+## <span data-ttu-id="7c013-113">Участников</span><span class="sxs-lookup"><span data-stu-id="7c013-113">Members</span></span>
 
-#### <span data-ttu-id="f006d-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="f006d-112">Invoke</span></span> 
+#### <span data-ttu-id="7c013-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="7c013-114">Invoke</span></span> 
 
-<span data-ttu-id="f006d-113">Вызывается для предоставления разработчику состояния завершения и результата соответствующего асинхронного вызова метода.</span><span class="sxs-lookup"><span data-stu-id="f006d-113">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+<span data-ttu-id="7c013-115">Вызывается для предоставления разработчику состояния завершения и результата соответствующего асинхронного вызова метода.</span><span class="sxs-lookup"><span data-stu-id="7c013-115">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-> <span data-ttu-id="f006d-114">общедоступный [вызов](#invoke)HRESULT (ErrorCode HRESULT, LPCWSTR returnObjectAsJson)</span><span class="sxs-lookup"><span data-stu-id="f006d-114">public HRESULT [Invoke](#invoke)(HRESULT errorCode, LPCWSTR returnObjectAsJson)</span></span>
+> <span data-ttu-id="7c013-116">общедоступный [вызов](#invoke)HRESULT (ErrorCode HRESULT, LPCWSTR returnObjectAsJson)</span><span class="sxs-lookup"><span data-stu-id="7c013-116">public HRESULT [Invoke](#invoke)(HRESULT errorCode, LPCWSTR returnObjectAsJson)</span></span>
 
