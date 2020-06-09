@@ -3,17 +3,17 @@ description: Модели управления версиями, использ�
 title: Управление версиями Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения WPF, WPF, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "браузер", HTML Edge
-ms.openlocfilehash: 78184d3c670aa39e0a7f4a31e1216b5bc730c16e
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: cc924a146057a3c8c578ccea187e1dd63dedcbe6
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659673"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697219"
 ---
 # Сведения о версиях браузеров и WebView2  
 
@@ -26,7 +26,7 @@ WebView2 зависит от Microsoft Edge для функционирован�
 
 ## Экспериментальные API-интерфейсы  
 
-Несмотря на то, что WebView2 является предварительным просмотром, для API в пакете SDK должны оставаться одинаковыми.  В пакет SDK включены [экспериментальные API][Webview2ReferenceWin3209488Experimental] .  Пожалуйста, оцените экспериментальные API-интерфейсы и отправьте отзыв с помощью [репозитория обратной связи WebView][GithubMicrosoftedgeWebviewfeedback].  
+Несмотря на то, что WebView2 является предварительным просмотром, для API в пакете SDK должны оставаться одинаковыми.  В пакет SDK включены [экспериментальные API][Webview2ReferenceWin3209538Experimental] .  Пожалуйста, оцените экспериментальные API-интерфейсы и отправьте отзыв с помощью [репозитория обратной связи WebView][GithubMicrosoftedgeWebviewfeedback].  
 
 ### Стратегия  
 
@@ -36,7 +36,7 @@ WebView2 зависит от Microsoft Edge для функционирован�
 
 [Webview2Distibution]: ./distribution.md "Распространение приложений с помощью WebView2 | Документы Microsoft"  
 [Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2-распространение приложений с помощью WebView2 | Документы Microsoft"  
-[Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Экспериментальный справочник (WebView2) | Документы Microsoft"  
+[Webview2ReferenceWin3209538Experimental]: ../reference/win32/0-9-538-reference-webview2.md#experimental "Экспериментальный справочник (WebView2) | Документы Microsoft"  
 [Webview2Releasenotes]: ../releasenotes.md "Заметки о выпуске для WebView2 SDK | Документы Microsoft"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Общие сведения о каналах Microsoft Edge | Документы Microsoft"  

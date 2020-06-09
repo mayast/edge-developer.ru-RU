@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 0efc1656b8204b9775002db49e0e4a5734682cc4
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 4183f3a1c60bd9e2bdcff5227426db1f07c313cf
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654631"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697520"
 ---
 # интерфейс ICoreWebView2ProcessFailedEventArgs 
+
+> [!NOTE]
+> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.
 
 ```
 interface ICoreWebView2ProcessFailedEventArgs

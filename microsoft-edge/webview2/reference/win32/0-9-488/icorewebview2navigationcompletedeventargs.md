@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 21c78d88237e525f6e0ff8d9c604cd023209599c
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 83f55e19c8c8c0f2fb075ff47e95e34be27c6602
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654709"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697338"
 ---
 # интерфейс ICoreWebView2NavigationCompletedEventArgs 
+
+> [!NOTE]
+> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.
 
 ```
 interface ICoreWebView2NavigationCompletedEventArgs

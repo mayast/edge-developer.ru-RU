@@ -3,19 +3,22 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView2 для приложений Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 519ef71db87d49aaf5a8a80970ff0cda61dfebbf
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: f0ac0bf7ae3b237bca45b22ed97ec16513666922
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654711"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697555"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2Settings 
+
+> [!NOTE]
+> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.
 
 Пространство имен: Microsoft. Web. WebView2. Core \
 Сборка: Microsoft. Web. WebView2. Core. dll
@@ -29,7 +32,7 @@ ms.locfileid: "10654711"
 [AreDefaultContextMenusEnabled](#aredefaultcontextmenusenabled) | Свойство AreDefaultContextMenusEnabled используется для предотвращения отображения контекстных меню по умолчанию для пользователя в WebView.
 [AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | AreDefaultScriptDialogsEnabled используется при загрузке нового документа HTML.
 [AreDevToolsEnabled](#aredevtoolsenabled) | AreDevToolsEnabled определяет, может ли пользователь использовать контекстное меню или сочетания клавиш для открытия окна DevTools.
-[AreRemoteObjectsAllowed](#areremoteobjectsallowed) | Свойство AreRemoteObjectsAllowed используется для управления доступом к удаленным объектам на странице в WebView.
+[AreHostObjectsAllowed](#arehostobjectsallowed) | Свойство AreHostObjectsAllowed используется для управления тем, какие объекты узла доступны на странице в WebView.
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | Свойство IsBuiltInErrorPageEnabled используется для того, чтобы отключить встроенную страницу ошибки для сбоя навигации и обработки сбоя процесса рендеринга.
 [IsScriptEnabled](#isscriptenabled) | Определяет, включено ли выполнение JavaScript во всех последующих навигации в WebView.
 [IsStatusBarEnabled](#isstatusbarenabled) | IsStatusBarEnabled определяет, будет ли отображаться строка состояния.
@@ -64,11 +67,11 @@ AreDevToolsEnabled определяет, может ли пользовател�
 
 Это значение верно по умолчанию.
 
-#### AreRemoteObjectsAllowed 
+#### AreHostObjectsAllowed 
 
-Свойство AreRemoteObjectsAllowed используется для управления доступом к удаленным объектам на странице в WebView.
+Свойство AreHostObjectsAllowed используется для управления тем, какие объекты узла доступны на странице в WebView.
 
-> Открытый логический [AreRemoteObjectsAllowed](#areremoteobjectsallowed)
+> Открытый логический [AreHostObjectsAllowed](#arehostobjectsallowed)
 
 По умолчанию используется значение TRUE.
 

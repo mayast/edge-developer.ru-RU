@@ -8,20 +8,23 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: d7e38f25a3e58d21744c8631319f553f2b0962fb
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 8c0511dc0e7327ebc2f6ee3bac34f62716dff472
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654972"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697884"
 ---
-# Справочные материалы (WebView2)  
+# 0.9.515-Reference (WebView2)  
+
+> [!NOTE]
+> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../webview2-api-reference.md) для получения последней ссылки на API.
 
 Элемент управления Microsoft Edge WebView2 позволяет размещать веб-содержимое в приложении с помощью [Microsoft Edge \ (Chromium \)](https://www.microsoftedgeinsider.com) в качестве обработчика визуализации.  Дополнительные сведения можно найти в [статье Обзор Microsoft Edge WebView2](../../index.md)) и [Приступая к работе с WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-488/ICoreWebView2.md) — это удобное место для изучения данных API.  
 
-## Глобальные  
+## Глобальные настройки  
 
-*   [Глобальные](0-9-430/webview2-idl.md)  
+*   [Глобальные настройки](0-9-488/webview2-idl.md)  
 
 ## Приклад  
 *   [ICoreWebView2](0-9-488/icorewebview2.md)
@@ -82,7 +85,7 @@ ms.locfileid: "10654972"
 *   [ICoreWebView2WindowCloseRequestedEventHandler](0-9-488/icorewebview2windowcloserequestedeventhandler.md)
 *   [ICoreWebView2ZoomFactorChangedEventHandler](0-9-488/icorewebview2zoomfactorchangedeventhandler.md)
 
-### Проб
+### Экспериментальные
 
 *   [ICoreWebView2ExperimentalCompositionController](0-9-488/icorewebview2experimentalcompositioncontroller.md)
 *   [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](0-9-488/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md)

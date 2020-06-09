@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WinForms, WinForms, EDGE, CoreWebView2, браузер, край HTML, Приступая к работе, Приступая к работе, .NET, Windows Forms
-ms.openlocfilehash: 1e23c96cee1e577560c2d26b96a53454533867dd
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: 20e3d152c8384e33551d75b5baa265fa7cb7f1ec
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695896"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698227"
 ---
 # Начало работы с WebView2 в приложениях для Windows Forms (Предварительная версия)  
 
