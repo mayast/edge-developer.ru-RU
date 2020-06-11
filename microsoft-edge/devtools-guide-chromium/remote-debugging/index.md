@@ -2,16 +2,16 @@
 title: Начало работы с удаленными отладкой устройств с Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: fc7450ba2b088eee8f4005216374980096cbb067
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688165"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708538"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "10688165"
 
 # Начало работы с удаленными отладкой устройств с Android  
 
-Удаленная отладка динамического содержимого на устройстве Android с компьютера Windows или macOS.  На этой странице учебника вы узнаете, как выполнять указанные ниже действия.  
+Удаленная отладка динамического содержимого на устройстве Android с компьютера Windows или macOS.  На следующей странице учебника вы узнаете, как выполнять указанные ниже действия.  
 
 *   Настройте устройство Android для удаленной отладки и найдите его на компьютере разработчика.  
 *   Изучите и отлаживать динамический контент на устройстве с Android с компьютера для разработки.  
@@ -41,11 +41,15 @@ ms.locfileid: "10688165"
 :::image-end:::  
 -->  
 
+> [!NOTE]
+> Удаленная отладка приложения Microsoft EDGE на устройствах с iOS в настоящее время не поддерживается.  Следующее руководство специально ориентировано на удаленную отладку Microsoft EDGE на устройствах с Android.
+> Если у вас есть устройство macOS, следуйте инструкциям [по отладке Brightcove][BrightcoveSupportDebuggingMobileDevices] для удаленной отладки Microsoft EDGE на устройстве с iOS с помощью Safari.  Дополнительные сведения о средстве веб-инспектора в Safari можно найти в разделе [средства разработки веб-сайтов Safari][AppleDeveloperSafariTools].  
+
 ## Шаг 1: обнаружение устройства с Android  
 
-Рабочий процесс, описанный ниже, подходит для большинства пользователей.  Дополнительные сведения можно найти в [статье Устранение неполадок: DevTools не удается найти устройство Android](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
+Рабочий процесс, описанный ниже, подходит для большинства пользователей.  Дополнительные сведения можно найти в разделе [Устранение неполадок: DevTools не удается найти раздел устройства Android](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
 
-1.  Откройте экран **Параметры разработчика** на устройстве с Android.  Дополнительные сведения можно найти [в разделе Настройка параметров разработчика на устройстве](https://developer.android.com/studio/debug/dev-options.html).  
+1.  Откройте экран **Параметры разработчика** на устройстве с Android.  Дополнительные сведения можно найти [в разделе Настройка параметров разработчика на устройстве][AndroidDeveloperStudioDevOptions].  
 1.  Выберите **включить отладку USB**.  
 1.  На своем компьютере для разработки откройте Microsoft Edge.  
 1.  Перейдите на `edge://inspect` страницу в Microsoft Edge.  
@@ -60,7 +64,7 @@ ms.locfileid: "10688165"
        Рисунок 2.  Предупреждение о разрешении разрешения на **отладку USB** на устройстве с Android  
     :::image-end:::  
     
-1.  Если вы видите название модели устройства с Android, Microsoft Edge успешно установил подключение к устройству.  Перейдите к [действию 2](#step-2-debug-content-on-your-android-device-from-your-development-machine).  
+1.  Если вы видите название модели устройства с Android, Microsoft Edge успешно установил подключение к устройству.  Перейдите к разделу [этап 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) .  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -78,8 +82,8 @@ ms.locfileid: "10688165"
 
 Чтобы убедиться, что программное обеспечение правильно настроено, воспользуйтесь приведенными ниже советами.  
 
-*   Если на вашем компьютере разработчика установлена операционная система Windows, попробуйте установить драйверы USB для устройства с Android вручную.  Дополнительные сведения можно найти в разделе [Установка драйверов USB для OEM][AndroidUSBDrivers].  
-*   Некоторые комбинации устройств Windows и Android (особенно Samsung) требуют дополнительных настроек.  Дополнительные сведения можно найти в разделе [DevTools Devices не определяет устройство при подключении к сети] [StackOverflowDevicesNotDetected].  
+*   Если на вашем компьютере разработчика установлена операционная система Windows, попробуйте установить драйверы USB для устройства с Android вручную.  Дополнительные сведения можно найти в разделе [Установка драйверов USB для OEM][AndroidDeveloperToolsOemUsb].  
+*   Некоторые комбинации устройств Windows и Android (особенно Samsung) требуют дополнительных настроек.  Дополнительные сведения можно найти в разделе [устройства DevTools не обнаруживают устройства при подключении к сети][Stackoverflow21925992].  
 
 Приведенные ниже советы помогут вам устранить неполадки с выводом на экран **разрешение на отладку USB** на устройстве с Android.  
 
@@ -89,10 +93,10 @@ ms.locfileid: "10688165"
     > Если экраны на устройстве Android или разработчика заблокированы, сообщение может не отображаться.  
 
 *   Обновление параметров отображения для устройства Android и компьютера для разработки таким образом, чтобы все они никогда не переходили в спящий режим.  
-*   Установка режима USB для устройства с Android на PTP.  Дополнительные сведения можно найти в разделе [Galaxy S4 не показывает диалоговое окно "авторизация USB"][StackExchangeGalaxyS4DoesNotShowDialogBox].  
+*   Установка режима USB для устройства с Android на PTP.  Дополнительные сведения можно найти в разделе [Galaxy S4 не показывает диалоговое окно "авторизация USB"][StackexchangeAndroid101933].  
 *   Выберите **отозвать разрешения на отладку USB** на экране **Параметры разработчика** на устройстве с Android, чтобы сбросить его в новое состояние.  
 
-Если вы нашли решение, которое не было упомянуто на этой странице, или в разделе [DevTools Devices не обнаруживает устройство при подключении к сети] [StackOverflowDevicesNotDetected] в области переполнения стека добавьте свое решение на вопрос о переполнении стека.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+Если вы нашли решение, которое не было упомянуто на этой странице, или на [DevTools устройствах не обнаружите устройства при подключении][Stackoverflow21925992] к переполнению стека, добавьте свое решение на вопрос о переполнении стека.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
 ## Шаг 2: Отладка содержимого на устройстве с Android с компьютера для разработки  
 
@@ -149,21 +153,20 @@ ms.locfileid: "10688165"
 [ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
 [ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
-<!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-<!--[ImageEdgeInspect]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-no-targets.msft.png "Figure 1: The edge://inspect page in Microsoft Edge"  -->  
-<!--[ImageAndroidPermissionPrompt]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-android-permissions-prompt.msft.png "Figure 2: The Allow USB Debugging permission prompt on an Android device"  -->  
-<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 3: A connected remote device"  -->  
-<!-- [ImageReload]:  /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets-buttons.msft.png "Figure 4: The buttons for focusing, reloading, or closing a tab"  -->  
-<!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
-
 <!-- links -->  
 
-[AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Установка драйверов USB для OEM | Разработчики Android"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Настройка параметров разработчика на устройстве | Разработчик Android"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Установка драйверов USB для OEM | Разработчики Android"  
+
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Средства разработки веб-браузера Safari | Разработчик Apple"  
+
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Отладка на мобильных устройствах | Поддержка Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
-[StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "DevTools Devices не обнаруживает устройство при подключении к стеку с переполнением"  
 
-[StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "ADB — обмен данными в стеке для энтузиастов Android"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "ADB — обмен данными в стеке для энтузиастов Android"  
+
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "Устройства DevTools не обнаруживают устройства при подключении к стеку с переполнением"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

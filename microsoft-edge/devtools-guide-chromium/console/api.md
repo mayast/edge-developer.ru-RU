@@ -2,16 +2,16 @@
 title: Справочник по API консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: e54bae7c7c61584ccd39568f1bb54312cc2082c0
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 19545759ede4252f2e7ba21329d482f4eb96f0c6
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601756"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708518"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,11 @@ ms.locfileid: "10601756"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Справочник по API консоли  
 
+Используйте методы API консоли для записи сообщений на консоль из JavaScript.  Чтобы ознакомиться с интерактивным введением в раздел, ознакомьтесь с разделом начало [работы с сообщениями журнала на консоли][DevtoolsConsoleLog].  Удобные методы, такие как `debug()` или `monitorEvents()` доступные только в области **консоли** , приведены в [справочнике API для консольных утилит][DevtoolConsoleUtilities].  
 
-
-
-# Справочник по API консоли   
-
-  
-
-Используйте методы API консоли для записи сообщений на консоль из JavaScript.  В разделе Начало [работы с сообщениями журнала на консоли можно][DevtoolsConsoleLog] ознакомиться с интерактивным введением в раздел.  Ознакомьтесь со [справочными материалами API для консольных программ] [DevtoolConsoleUtilities] , если вы ищете удобные методы, такие как `debug()` или `monitorEvents()` доступные только на консоли.  
+---  
 
 ## затребованного  
 
@@ -56,9 +52,11 @@ const reason = 'x is expected to be less than y';
 console.assert(x < y, {x, y, reason});
 ```  
 
-> ##### Рис. 1  
-> Результат `console.assert()` примера  
-> ![Результат примера Console. Assert ()][ImageAssert]  
+:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-assert-button.msft.png":::
+   Рисунок 1: результат `console.assert()` примера  
+:::image-end:::  
+
+---  
 
 ## Сброс  
 
@@ -74,7 +72,11 @@ console.clear();
 
 Если включен [протокол Preserve][DevtoolsConsoleReferenceLevel] , метод [clear](#clear) отключен.  
 
-Дополнительные сведения: [Очистка консоли][DevtoolsConsoleReferenceClear]  
+### См. также  
+
+*   [Очистка консоли][DevtoolsConsoleReferenceClear]  
+
+---  
 
 ## счет  
 
@@ -93,9 +95,11 @@ console.count();
 console.count();
 ```  
 
-> ##### Рисунок 2  
-> Результат `console.count()` примера  
-> ![Результат примера Console. Count ()][ImageCount]  
+:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Результат примера Console. Count ()" lightbox="../media/console-demo-count-button.msft.png":::
+   Рисунок 2: результат `console.count()` примера  
+:::image-end:::  
+
+---  
 
 ## countReset  
 
@@ -110,23 +114,27 @@ console.countReset();
 console.countReset('coffee');
 ```  
 
+---  
+
 ## отладка  
 
 ```javascript
 console.debug(object [, object, ...])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала][DevtoolsConsoleReferencePersist]: `Verbose`
 
-Идентичен методу [log](#log) .  
+Совпадает с [журналом](#log) , кроме разных уровней ведения журнала.  
 
 ```javascript
 console.debug('debug');  
 ```  
 
-> ##### Рисунок3  
-> Результат `console.debug()` примера  
-> ![Результат примера Console. Debug ()][ImageDebug]  
+:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="Результат примера Console. Debug ()" lightbox="../media/console-demo-debug-button.msft.png":::
+   Рисунок 3: результат `console.debug()` примера  
+:::image-end:::  
+
+---  
 
 ## dir  
 
@@ -142,9 +150,11 @@ console.dir(object)
 console.dir(document.head);
 ```  
 
-> ##### Рисунок4  
-> Результат `console.dir()` примера  
-> ![Результат примера Console. dir ()][ImageDir]  
+:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Результат примера Console. dir ()" lightbox="../media/console-demo-dir-button.msft.png":::
+   Рисунок 4: результат `console.dir()` примера  
+:::image-end:::  
+
+---  
 
 ## dirxml  
 
@@ -160,9 +170,11 @@ console.dirxml(node)
 console.dirxml(document);
 ```  
 
-> ##### Рисунок 5  
-> Результат `console.dirxml()` примера  
-> ![Результат примера Console. DirXML ()][ImageDirXml]  
+:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Результат примера Console. DirXML ()" lightbox="../media/console-demo-dirxml-button.msft.png":::
+   На рисунке 5 показан результат примера. `console.dirxml()`  
+:::image-end:::  
+
+---  
 
 ## ошибка  
 
@@ -178,9 +190,11 @@ console.error(object [, object, ...])
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
-> ##### Рисунок6  
-> Результат `console.error()` примера  
-> ![Результат примера Console. Error ()][ImageError]  
+:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="Результат примера Console. Error ()" lightbox="../media/console-demo-error-button.msft.png":::
+   Рисунок 6: результат `console.error()` примера  
+:::image-end:::  
+
+---  
 
 ## группа  
 
@@ -200,9 +214,11 @@ console.info('Raph');
 console.groupEnd(label);
 ```  
 
-> ##### Рисунок7  
-> Результат `console.group()` примера  
-> ![Результат примера Console. Group ()][ImageGroup]  
+:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="Результат примера Console. Group ()" lightbox="../media/console-demo-group-button.msft.png":::
+   На рисунке 7 показан результат примера. `console.group()`  
+:::image-end:::  
+
+---  
 
 ## groupCollapsed  
 
@@ -212,6 +228,8 @@ console.groupCollapsed(label)
 
 То же, что и в методе [log](#log) , за исключением того, что группа изначально свернута при входе в систему на консоли.  
 
+---  
+
 ## groupEnd  
 
 ```javascript
@@ -219,6 +237,8 @@ console.groupEnd(label)
 ```  
 
 Прекращение визуальной группировки сообщений.  Просмотрите метод [группировки](#group) .  
+
+---  
 
 ## "Сведения"  
 
@@ -234,9 +254,11 @@ console.info(object [, object, ...])
 console.info('info');
 ```  
 
-> ##### Рисунок8  
-> Результат `console.info()` примера  
-> ![Результат примера console.info ()][ImageInfo]  
+:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Результат примера console.info ()" lightbox="../media/console-demo-info-button.msft.png":::
+   Рисунок 8: результат `console.info()` примера  
+:::image-end:::  
+
+---  
 
 ## выходе  
 
@@ -252,9 +274,11 @@ console.log(object [, object, ...])
 console.log('log');
 ```  
 
-> ##### Рисунок9  
-> Результат `console.log()` примера  
-> ![Результат примера Console. log ()][ImageLog]  
+:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Результат примера Console. log ()" lightbox="../media/console-demo-log-button.msft.png":::
+   На рисунке 9 показан результат примера. `console.log()`  
+:::image-end:::  
+
+---  
 
 ## таблич  
 
@@ -284,9 +308,11 @@ console.table([
 ]);
 ```  
 
-> ##### Рисунок 10  
-> Результат `console.table()` примера  
-> ![Пример использования Console. Table ()][ImageTable]  
+:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="Пример использования Console. Table ()" lightbox="../media/console-demo-table-button.msft.png":::
+   Рисунок 10: результат `console.table()` примера  
+:::image-end:::  
+
+---  
 
 ## time  
 
@@ -304,9 +330,11 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```  
 
-> ##### Рисунок11  
-> Результат `console.time()` примера  
-> ![Результат примера Console. Time ()][ImageTime]  
+:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="Результат примера Console. Time ()" lightbox="../media/console-demo-time-button.msft.png":::
+   На рисунке 11 показан результат примера. `console.time()`  
+:::image-end:::  
+
+---  
 
 ## timeEnd  
 
@@ -317,6 +345,8 @@ console.timeEnd([label])
 [Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
 
 Останавливает таймер.  Просмотрите метод [time (время](#time) ).  
+
+---  
 
 ## событий  
 
@@ -336,9 +366,11 @@ const fourth = () => { console.trace(); };
 first();
 ```  
 
-> ##### Рисунок12  
-> Результат `console.trace()` примера  
-> ![Результат примера Console. Trace ()][ImageTrace]  
+:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="Результат примера Console. Trace ()" lightbox="../media/console-demo-trace-button.msft.png":::
+   Рис. 12: результат `console.trace()` примера  
+:::image-end:::  
+
+---  
 
 ## оповещает  
 
@@ -354,29 +386,9 @@ console.warn(object [, object, ...])
 console.warn('warn');
 ```  
 
-> ##### Рисунок13  
-> Результат `console.warn()` примера  
-> ![Результат примера Console. warn ()][ImageWarn]  
-
-   
-
-  
-
-<!-- image links -->  
-
-[ImageAssert]: /microsoft-edge/devtools-guide-chromium/media/console-demo-assert-button.msft.png "Рисунок 1: результат примера Console. Assert ()"  
-[ImageCount]: /microsoft-edge/devtools-guide-chromium/media/console-demo-count-button.msft.png "Рисунок 2: результат примера Console. Count ()"  
-[ImageDebug]: /microsoft-edge/devtools-guide-chromium/media/console-demo-debug-button.msft.png "Рисунок 3: результат примера Console. Debug ()"  
-[ImageDir]: /microsoft-edge/devtools-guide-chromium/media/console-demo-dir-button.msft.png "Рисунок 4: результат примера Console. dir ()"  
-[ImageDirXml]: /microsoft-edge/devtools-guide-chromium/media/console-demo-dirxml-button.msft.png "Рисунок 5: результат примера Console. DirXML ()"  
-[ImageError]: /microsoft-edge/devtools-guide-chromium/media/console-demo-error-button.msft.png "Рисунок 6: результат примера Console. Error ()"  
-[ImageGroup]: /microsoft-edge/devtools-guide-chromium/media/console-demo-group-button.msft.png "Рисунок 7: результат примера Console. Group ()"  
-[ImageInfo]: /microsoft-edge/devtools-guide-chromium/media/console-demo-info-button.msft.png "Рисунок 8: результат примера console.info ()"  
-[ImageLog]: /microsoft-edge/devtools-guide-chromium/media/console-demo-log-button.msft.png "Рисунок 9: результат примера Console. log ()"  
-[ImageTable]: /microsoft-edge/devtools-guide-chromium/media/console-demo-table-button.msft.png "Рисунок 10: результат примера Console. Table ()"  
-[ImageTime]: /microsoft-edge/devtools-guide-chromium/media/console-demo-time-button.msft.png "Рисунок 11: результат примера Console. Time ()"  
-[ImageTrace]: /microsoft-edge/devtools-guide-chromium/media/console-demo-trace-button.msft.png "Рисунок 12: результат примера Console. Trace ()"  
-[ImageWarn]: /microsoft-edge/devtools-guide-chromium/media/console-demo-warn-button.msft.png "Рисунок 13: результат примера Console. warn ()"  
+:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="Результат примера Console. warn ()" lightbox="../media/console-demo-warn-button.msft.png":::
+   Рисунок 13: результат `console.warn()` примера  
+:::image-end:::  
 
 <!-- links -->  
 

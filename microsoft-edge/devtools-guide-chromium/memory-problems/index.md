@@ -2,16 +2,16 @@
 title: Устранение проблем с памятью
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 738ef5fe682633f3100345c922ff12c3c27a7166
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+ms.openlocfilehash: 87fee5484bbd535ee5692acfce273ed6edff5da2
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611764"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708713"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10611764"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Устранение проблем с памятью   
-
-
+# Устранение проблем с памятью  
 
 Узнайте, как использовать Microsoft EDGE и DevTools для обнаружения проблем с памятью, в том числе утечек памяти, чрезмерного объема памяти и частых сборок мусора.  
 
@@ -70,15 +64,15 @@ ms.locfileid: "10611764"
 
 1.  Нажмите `Shift` + `Esc` или перейдите в главное меню Microsoft EDGE и выберите пункт **другие инструменты**  >  **Диспетчер задач браузера** , чтобы открыть диспетчер задач браузера Microsoft Edge.  
     
-    > ##### Рис. 1  
-    > Открытие диспетчера задач браузера Microsoft Edge  
-    > ![Открытие диспетчера задач браузера Microsoft Edge][ImageTaskManager]  
+    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Открытие диспетчера задач браузера Microsoft Edge" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+       Рисунок 1: Открытие диспетчера задач браузера Microsoft Edge  
+    :::image-end:::  
     
-1.  Щелкните правой кнопкой мыши заголовок таблицы в диспетчере задач браузера Microsoft EDGE и включите **память JavaScript**.  
+1.  Наведите указатель мыши на заголовок таблицы в диспетчере задач браузера Microsoft EDGE, откройте контекстное меню \ (щелкните правой кнопкой мыши \) и включите **память JavaScript**.  
     
-    > ##### Рисунок 2  
-    > Включите память JavaScript  
-    > ![Включите память JavaScript][ImageJavascriptMemory]  
+    :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Включите память JavaScript" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
+       Рисунок 2: включение памяти JavaScript  
+    :::image-end:::  
     
 В этих двух столбцах указываются различные способы использования памяти на странице.  
 
@@ -96,7 +90,7 @@ ms.locfileid: "10611764"
 1.  [Создание записи][DevtoolsEvaluatePerformanceReferenceRecord].  
 
 > [!TIP]
-> Рекомендуется запускать и завершать запись с помощью принудительной сборки мусора.  Нажмите кнопку **собирать** мусорную сборку ![ мусора ][ImageForceGarbageCollectionIcon] при записи для принудительного сбора мусора.  
+> Рекомендуется запускать и завершать запись с помощью принудительной сборки мусора.  **collect garbage** ![ ][ImageForceGarbageCollectionIcon] При записи для принудительной сборки мусора нажмите кнопку собирать мусорную сборку мусора.  
 
 Чтобы продемонстрировать записи в памяти, Взгляните на приведенный ниже код.  
 
@@ -111,15 +105,15 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```  
 
-Каждый раз, когда была нажата кнопка, на которую ссылается код, 10000 `div` узлы добавляются в тело документа, а в `x` массив помещается строка из 1 000 000 символов `x` .  Выполнение этого кода приводит к записи на панели **производительности** , например [на рис. 3](#figure-3).  
+Каждый раз, когда была нажата кнопка, на которую ссылается код, 10000 `div` узлы добавляются в тело документа, а в `x` массив помещается строка из 1 000 000 символов `x` .  Выполнение предыдущего примера кода приводит к записи на панели **производительности** , как показано на рисунке ниже.  
 
-> ##### Рисунок3  
-> Простой рост  
-> ![Простой рост][ImageSimpleGrowth]  
+:::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="Простой рост" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
+   Рисунок 3: простое расширение  
+:::image-end:::  
 
 Прежде всего, объясните пользовательский интерфейс.  Граф **кучи** в области **обзора** \ (ниже **net**\) представляет кучу JS.  Под областью **обзора** находится панель **счетчиков** .  Здесь вы можете видеть использование памяти, разбитое на "JS-файлы" \ (то же, что и граф **кучи** в области **обзора** \), документы, узлы DOM, прослушиватели и память GPU.  Отключение CheckBox скрывает его на диаграмме.  
 
-Теперь анализ кода по сравнению с [рисунком 3](#figure-3).  Если посмотреть на счетчик Nodes \ (зеленая диаграмма \), вы сможете убедиться, что он правильно соответствует коду.  Количество узлов увеличивается на отдельных этапах.  Возможно, вы предполагаете, что каждый рост количества узлов является вызовом `grow()` .  Диаграмма кучи JS \ (синяя диаграмма \) не так проста.  В соответствии с лучшими рекомендациями, первый DIP — это принудительная сборка мусора (достигается нажатием **collect garbage** ![ кнопки "собрать мусор" для сборки мусора ][ImageForceGarbageCollectionIcon] ).  По мере выполнения записи вы можете видеть, что пики размера кучи JS.  Это является естественным и ожидаемым: код JavaScript создает узлы DOM при каждом нажатии кнопки и выполняет большое количество действий при создании строки из 1 000 000 знаков.  Ключевое описание — тот факт, что куча JS завершается быстрее, чем начало, ("начало" — это точка после принудительной сборки мусора).  В реальном мире, если вы увидели этот шаблон размера кучи JS или размера узла, возможно, он может определять утечку памяти.  
+Анализ кода по сравнению с предыдущим рисунком.  Если посмотреть на счетчик Nodes \ (зеленая диаграмма \), вы сможете убедиться, что он правильно соответствует коду.  Количество узлов увеличивается на отдельных этапах.  Возможно, вы предполагаете, что каждый рост количества узлов является вызовом `grow()` .  Диаграмма кучи JS \ (синяя диаграмма \) не так проста.  В соответствии с лучшими рекомендациями, первый DIP — это принудительная сборка мусора (достигается нажатием **collect garbage** ![ кнопки "собрать мусор" для сборки мусора ][ImageForceGarbageCollectionIcon] ).  По мере выполнения записи вы можете видеть, что пики размера кучи JS.  Это является естественным и ожидаемым: код JavaScript создает узлы DOM при каждом нажатии кнопки и выполняет большое количество действий при создании строки из 1 000 000 знаков.  Ключевое описание — тот факт, что куча JS завершается быстрее, чем начало, ("начало" — это точка после принудительной сборки мусора).  В реальном мире, если вы увидели этот шаблон размера кучи JS или размера узла, возможно, он может определять утечку памяти.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -130,49 +124,50 @@ document.getElementById('grow').addEventListener('click', grow);
 Вот простой пример отсоединенных узлов DOM.  
 
 ```javascript
-var detachedNodes;
+var detachedTree;
+
 function create() {
     var ul = document.createElement('ul');
     for (var i = 0; i < 10; i++) {
         var li = document.createElement('li');
         ul.appendChild(li);
     }
-    detachedNodes = ul;
+    detachedTree = ul;
 }
 document.getElementById('create').addEventListener('click', create);
 ```  
 
-При нажатии на кнопку, на которую ссылается код, создается `ul` узел с десятью `li` потомками.  На эти узлы ссылается код, но они не существуют в дереве DOM, поэтому каждый из них отсоединен.  
+При нажатии кнопки, на которую ссылается код, создается `ul` узел с десятью `li` потомками.  На узлы ссылается код, но они не существуют в дереве DOM, поэтому каждый из них отсоединен.  
 
 Моментальные снимки кучи — это один из способов идентифицировать отсоединенные узлы.  Как показано в названии, в снимках кучи показано, как распределяются память между объектами JS и сайтами DOM на странице в момент создания снимка.  
 
 Чтобы создать снимок, откройте DevTools и перейдите на панель **память** , установите переключатель в положение " **снимок кучи** ", а затем нажмите кнопку " **сделать снимок** ".  
 
-> ##### Рисунок4  
-> Создание снимка кучи  
-> ![Создание снимка кучи][ImageTakeHeapSnapshot]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Создание снимка кучи" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
+   Рисунок 4: создание снимка кучи  
+:::image-end:::  
 
 Для обработки и загрузки снимков может потребоваться некоторое время.  После завершения работы выберите ее в левой панели \ (снимки с именами из **кучи**).  
 
 Введите текст `Detached` в поле " **Фильтр класса** " для поиска отсоединенных деревьев DOM.  
 
-> ##### Рисунок 5  
-> Фильтрация для отсоединенных узлов  
-> ![Фильтрация для отсоединенных узлов][ImageFilteringForDetachedNodes]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Фильтрация для отсоединенных узлов" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
+   Рисунок 5: Фильтрация отсоединенных узлов  
+:::image-end:::  
 
 Разверните CARATS, чтобы разобраться в отсоединенном дереве.  
 
-> ##### Рисунок6  
-> Исследование отключенного дерева  
-> ![Исследование отключенного дерева][ImageInvestigatingDetachedTree]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="Исследование отключенного дерева" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
+   Рисунок 6: исследование отсоединенных деревьев  
+:::image-end:::  
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Щелкните узел, чтобы изучить его еще больше.  В области **объектов** вы можете просмотреть дополнительные сведения о коде, который ссылается на него.  Например, на [рис. 7](#figure-7) вы видите, что `detachedNodes` переменная ссылается на узел.  Чтобы устранить эту проблему, необходимо изучить код, использующий `detachedUNode` переменную, и убедиться, что ссылка на узел удаляется, когда он больше не нужен.
+Выберите узел, чтобы проанализировать его дальше.  В области **объектов** вы можете просмотреть дополнительные сведения о коде, который ссылается на него.  Например, на следующем рисунке показано, что `detachedNodes` переменная ссылается на узел.  Чтобы устранить эту проблему, необходимо изучить код, использующий `detachedUNode` переменную, и убедиться, что ссылка на узел удаляется, когда он больше не нужен.  
 
-> ##### Рисунок7  
-> Исследование узла  
-> ![Исследование узла][ImageInvestigatingNode]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Исследование узла" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
+   Рисунок 7: исследование узла  
+:::image-end:::  
 
 <!--todo: the allocation timeline does not appear in the DevTools in Edge  -->  
 
@@ -194,31 +189,31 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Чтобы записать Инструментарий выделения на временную шкалу, откройте DevTools, перейдите на панель **память** , выберите переключатель **Инструментирование на временной шкале** , нажмите кнопку **Пуск** , выполните действие, которое вы считаете причиной возникновения утечек памяти, и нажмите кнопку Остановить запись **профиля кучи** , ![ ][ImageStopRecordingIcon] когда закончите.  
 
-Когда вы записываете элементы, обратите внимание на то, что синие полосы отображаются на инструментальных инструментах выделения на временной шкале, как показано на [рисунке 8](#figure-8).  
+Когда вы записываете элементы, обратите внимание на то, что синие полосы отображаются на инструментировании выделения на временной шкале, как показано на рисунке ниже.  
 
-> ##### Рисунок8  
-> Новые распределения  
-> ![Новые распределения][ImageNewAllocations]  
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png" alt-text="Новые распределения" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png":::
+   Рисунок 8: новые выделения  
+:::image-end:::  
 
 Эти синие отрезки представляют новые выделения памяти.  Новые выделения памяти являются кандидатами на утечку памяти.  Вы можете изменить масштаб на панели, чтобы отфильтровать область **конструктора** , чтобы отображались только те объекты, которые были выделены в течение указанного периода времени.  
 
-> ##### Рисунок9  
-> Уменьшенная временная шкала выделения  
-> ![Уменьшенная временная шкала выделения][ImageZoomedAllocationTimeline]  
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png" alt-text="Уменьшенная временная шкала выделения" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png":::
+   Рисунок 9: уменьшенная временная шкала выделения  
+:::image-end:::  
 
-Разверните объект и щелкните значение, чтобы просмотреть дополнительные сведения в области **объектов** .  Например, на [рис. 10](#figure-10), просмотрев сведения о новом выделенном объекте, вы сможете увидеть, что он был выделен для `x` переменной в `Window` области.  
+Разверните объект и выберите значение, чтобы просмотреть дополнительные сведения в области **объектов** .  Например, на приведенном ниже рисунке показано, как просмотреть сведения о новом выделенном объекте, и вы сможете увидеть, что он был выделен для `x` переменной в `Window` области.  
 
-> ##### Рисунок 10 
-> Сведения об объекте  
-> ![Сведения об объекте][ImageObjectDetail]  
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="Сведения об объекте" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
+   Рисунок 10: сведения об объекте  
+:::image-end:::  
 
-## Изучение выделения памяти по функциям   
+## Изучение выделения памяти по функциям  
 
 Используйте тип профилирования **выборки выделения** для просмотра выделения памяти функцией JavaScript.  
 
-> ##### Рисунок11  
-> Выборка распределения записей  
-> ![Выборка распределения записей][ImageRecordAllocationSampling]  
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png" alt-text="Выборка распределения записей" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png":::
+   Рисунок 11: выборка для выделения записей  
+:::image-end:::  
 
 1.  Установите переключатель **выборка распределения** .  Если на странице есть рабочий процесс, вы можете выбрать его в качестве целевого объекта профилирования с помощью раскрывающегося меню рядом с кнопкой " **Пуск** ".  
 1.  Нажмите кнопку " **Пуск** ".  
@@ -227,39 +222,22 @@ document.getElementById('grow').addEventListener('click', grow);
 
 DevTools показывает разделение выделения памяти по функциям.  Представление по умолчанию является **большим (снизу вверх)**, в котором отображаются функции, которые выделили наибольшую область памяти сверху.  
 
-> ##### Рисунок12  
-> Выборка распределения  
->![Выборка распределения][ImageAllocationSampling]  
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="Выборка распределения" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
+   Рисунок 12: Выбор распределения  
+:::image-end:::  
 
 ## Точечные часто используемые сборки мусора  
 
 Если страница часто задерживается, возможно, у вас возникли проблемы с обсбором мусора.  
 
-Вы можете использовать либо Диспетчер задач браузера Microsoft EDGE, либо записи памяти для выявления частых сборок мусора.  В диспетчере задач браузера Microsoft Edge часто растет и падает **память** , а также значения **памяти JavaScript** , которые представляют собой частый процесс сборки мусора.  В записях производительности частые изменения (рост и отпадает) на графы JS или счетчики узлов указывают на частную сборку мусора.  
+Вы можете использовать либо Диспетчер задач браузера Microsoft EDGE, либо записи памяти для выявления частых сборок мусора.  В диспетчере задач браузера Microsoft Edge часто растет и падает **память** , а также значения **памяти JavaScript** , которые представляют собой частый процесс сборки мусора.  В записях производительности частые изменения \ (повышение и снижения) на кучу JS или счетчики узлов указывают на частную сборку мусора.  
 
 После того как вы обнаружите проблему, вы можете использовать **инструментарий выделения для записи временной шкалы** , чтобы узнать, где выделяется память, и какая функция вызывает распределение.  
 
-<!--## Feedback   -->  
-
-
-
 <!-- image links -->  
 
-[ImageForceGarbageCollectionIcon]: /microsoft-edge/devtools-guide-chromium/media/collect-garbage-icon.msft.png  
-[ImageStopRecordingIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-recording-icon.msft.png  
-
-[ImageTaskManager]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png "Рисунок 1: Открытие диспетчера задач браузера Microsoft Edge"  
-[ImageJavascriptMemory]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png "Рисунок 2: включение памяти JavaScript"  
-[ImageSimpleGrowth]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-1-performance-memory.msft.png "Рисунок 3: простое расширение"  
-[ImageTakeHeapSnapshot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png "Рисунок 4: создание снимка кучи"  
-[ImageFilteringForDetachedNodes]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png "Рисунок 5: Фильтрация отсоединенных узлов"  
-[ImageInvestigatingDetachedTree]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png "Рисунок 6: исследование отсоединенных деревьев"  
-[ImageInvestigatingNode]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png "Рисунок 7: исследование узла"  
-[ImageNewAllocations]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png "Рисунок 8: новые выделения"  
-[ImageZoomedAllocationTimeline]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png "Рисунок 9: уменьшенная временная шкала выделения"  
-[ImageObjectDetail]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png "Рисунок 10: сведения об объекте"  
-[ImageRecordAllocationSampling]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png "Рисунок 11: выборка для выделения записей"  
-[ImageAllocationSampling]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png "Рисунок 12: Выбор распределения"  
+[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png  
+[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png  
 
 <!-- links -->  
 
