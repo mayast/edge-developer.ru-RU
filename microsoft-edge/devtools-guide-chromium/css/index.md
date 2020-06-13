@@ -2,16 +2,16 @@
 title: Начало работы с просмотром и редактированием CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 1780e80259d3ed28f6735e11099ad5796c381a95
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708607"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710387"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ ms.locfileid: "10708607"
     [Примеры CSS][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > Если вы хотите [закрепить окно DevTools][DevToolsCustomizePlacement] справа от окна просмотра \ (на приведенном ниже рисунке), выберите **Настройка и управление DevTools** `...` .  В раскрывающемся меню **Настройка и управление DevTools** в разделе **закрепляемая на стороне** экрана выберите пункт **закрепить по правому**краю.  
+    > Если вы хотите [закрепить окно DevTools][DevToolsCustomizePlacement] справа от окна просмотра \ (на рисунке ниже), выберите **Настройка и управление DevTools** `...` .  В раскрывающемся меню **Настройка и управление DevTools** в разделе **закрепляемая на стороне** экрана выберите пункт **закрепить по правому**краю.  
     
 ## Просмотр CSS для элемента  
 

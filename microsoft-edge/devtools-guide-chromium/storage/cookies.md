@@ -2,16 +2,16 @@
 title: Просмотр, изменение и удаление cookie-файлов в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708957"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710373"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ ms.locfileid: "10708957"
 *   **Http**.  Если значение равно true, это поле указывает на то, что файл cookie следует использовать только по протоколу HTTP и не может быть изменен на JavaScript.  Просмотр [файлов cookie для HttpOnly][MDNHTTPCookiesSecure].  
 *   **Безопасность**.  Если значение равно true, это поле указывает на то, что файл cookie должен быть отправлен на сервер только через безопасное HTTPS-соединение.  Просмотр [защищенных файлов cookie][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Содержит `strict` или `lax` Если объект cookie использует экспериментальный атрибут [SameSite][MDNHTTPCookiesSamesite] .  
-*   **Priority (приоритет**).  Contains `low` , `medium` \ (значение по умолчанию \) или, `high` Если файл cookie использует атрибут " [приоритетные файлы cookie"][ChromiumIssue232693] .
+*   **Priority (приоритет**).  Contains `low` , `medium` \ (по умолчанию \) или, `high` Если cookie использует устаревший атрибут [приоритета cookie-файлов][ChromiumIssue232693] .
 
 ## Фильтрация файлов cookie  
 

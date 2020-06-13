@@ -2,16 +2,16 @@
 title: Новые возможности DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 7651430c581346d1f140f0a5974b8aa9bb809204
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709062"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710380"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -157,7 +157,7 @@ DevTools может эмулировать размытое видение и с
 *   [`Accept-Language`][MDNAcceptLanguage]Заголовок HTTP-запроса  
 
 > [!NOTE]
-> Обновляются `navigator.language` и `navigator.languages` не отображаются немедленно, но только после следующей перезагрузки или перемещения страницы.  Изменения в `Accept-Language` заголовке HTTP отражаются только для последующих запросов.  
+> Обновляются `navigator.language` и `navigator.languages` не отображаются немедленно, но только после следующей навигации или обновления страницы.  Изменения в `Accept-Language` заголовке HTTP отражаются только для последующих запросов.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Эмуляция языкового стандарта" lightbox="../../media/2020/03/locale.msft.png":::
    Рисунок 10: Эмуляция языкового стандарта  
