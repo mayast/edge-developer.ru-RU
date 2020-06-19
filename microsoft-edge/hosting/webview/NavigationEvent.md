@@ -3,32 +3,35 @@ description: Сведения о навигации по WebView
 title: Объект NavigationEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: 1b3c9bd8f10c1f35a5ac518a54dd78ce96e201b5
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 785e9646ff400e7ad229046c7030b51420b1d9ad
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571295"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752173"
 ---
-# <span data-ttu-id="17dab-104">Объект NavigationEvent</span><span class="sxs-lookup"><span data-stu-id="17dab-104">NavigationEvent object</span></span>
+# <span data-ttu-id="5871d-104">Объект NavigationEvent</span><span class="sxs-lookup"><span data-stu-id="5871d-104">NavigationEvent object</span></span>  
 
-<span data-ttu-id="17dab-105">Объект, представляющий событие, которое создается, когда инициируется Навигация.</span><span class="sxs-lookup"><span data-stu-id="17dab-105">An object that represents an event fired when navigation is initiated.</span></span>
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## <span data-ttu-id="17dab-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="17dab-106">Properties</span></span>
-    
-### <span data-ttu-id="17dab-107">uri</span><span class="sxs-lookup"><span data-stu-id="17dab-107">uri</span></span>
+<span data-ttu-id="5871d-105">Объект, представляющий событие, которое создается, когда инициируется Навигация.</span><span class="sxs-lookup"><span data-stu-id="5871d-105">An object that represents an event fired when navigation is initiated.</span></span>  
 
-<span data-ttu-id="17dab-108">Универсальный код ресурса (URI) целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="17dab-108">The Uniform Resource Identifier (URI) of the target.</span></span>
+## <span data-ttu-id="5871d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5871d-106">Properties</span></span>  
 
-<span data-ttu-id="17dab-109">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="17dab-109">This property is read-only.</span></span>
+### <span data-ttu-id="5871d-107">uri</span><span class="sxs-lookup"><span data-stu-id="5871d-107">uri</span></span>  
 
-```js
+<span data-ttu-id="5871d-108">Универсальный код ресурса (URI) целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="5871d-108">The Uniform Resource Identifier (URI) of the target.</span></span>  
+
+<span data-ttu-id="5871d-109">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="5871d-109">This property is read-only.</span></span>  
+
+```javascript
 var uri = NavigationEvent.uri;
-```
+```  
 
-#### <span data-ttu-id="17dab-110">Значение свойства</span><span class="sxs-lookup"><span data-stu-id="17dab-110">Property value</span></span>
-<span data-ttu-id="17dab-111">Type (тип): **DOMString**</span><span class="sxs-lookup"><span data-stu-id="17dab-111">Type: **DOMString**</span></span>
+#### <span data-ttu-id="5871d-110">Значение свойства</span><span class="sxs-lookup"><span data-stu-id="5871d-110">Property value</span></span>  
+
+<span data-ttu-id="5871d-111">Type (тип): **DOMString**</span><span class="sxs-lookup"><span data-stu-id="5871d-111">Type: **DOMString**</span></span>  
