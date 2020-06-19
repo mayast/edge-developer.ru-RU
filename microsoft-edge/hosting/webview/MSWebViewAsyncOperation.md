@@ -3,170 +3,177 @@ description: Показывает, успешно ли завершилась о
 title: Объект MSWebViewAsyncOperation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: ebb89c0fc645ebcd97357af10af2be650d8218b9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d6e03af2a0205938f19120076aa0ad622539d7e5
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571304"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752128"
 ---
-# Объект MSWebViewAsyncOperation
+# Объект MSWebViewAsyncOperation  
 
-Показывает, успешно ли завершилась операция или завершилась сбоем. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## События
+Показывает, успешно ли завершилась операция или завершилась сбоем.  
 
-### завершение
+## Мероприятия  
 
-Указывает на то, что операция завершена. 
+### завершение  
 
-```js
+Указывает на то, что операция завершена.  
+
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("complete", handler);
 MSWebViewAsyncOperation.removeEventListener("complete", handler);
-```
+```  
 
-#### Сведения о событии
+#### Сведения о событии  
 
-|            |      |
-|------------|------|
-|**Интерфейс** | **Событие**
-|**Синхронный** |Да |    
-|**Давать**     |Нет |   
-|**Отменяемая**  |Нет |        
+|  |  |  
+|:--- |:--- |  
+| **Интерфейс** | **Событие** |  
+| **Синхронный** |Да |  
+| **Давать** |Нет |   
+| **Отменяемая** |Нет |  
 
+### ошибка  
 
-### ошибка
+Указывает, что при выполнении операции произошла ошибка.  
 
-Указывает, что при выполнении операции произошла ошибка.
-
-```js
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("error", handler);
 MSWebViewAsyncOperation.removeEventListener("error", handler);
-```
+```  
 
-#### Сведения о событии
+#### Сведения о событии  
 
-|            |      |
-|------------|------|
-|**Интерфейс** | **Событие**
-|**Синхронный** |Да |    
-|**Давать**     |Нет |   
-|**Отменяемая**  |Нет |            
+|  |  |  
+|:--- |:--- |  
+| **Интерфейс** | **Событие** |  
+| **Синхронный** | Да |  
+| **Давать** | Нет |  
+| **Отменяемая** | Нет |  
 
+## Методы  
 
-## Методы
+### start  
 
-### start
+Вызывается для запуска асинхронной задачи.  
 
-Вызывается для запуска асинхронной задачи. 
-
-```js
+```javascript
 MSWebViewAsyncOperation.start();
-```
+```  
 
-### Параметры
+### Параметры  
 
-У этого метода нет параметров.
+У этого метода нет параметров.  
 
-### Возвращаемое значение
+### Возвращаемое значение  
 
-Этот метод не возвращает значение.
+Этот метод не возвращает значение.  
 
-## Свойства
+## Свойства  
 
-### ошибка
+### ошибка  
 
-Возникшая ошибка.
+Возникшая ошибка.  
 
-Это свойство доступно только для чтения.
+Это свойство доступно только для чтения.  
 
-```js
+```javascript
 var error = MSWebViewAsyncOperation.error;
-```
+```  
 
-#### Значение свойства
-Type (тип): **DOMError**
+#### Значение свойства  
 
-### OnComplete
+Type (тип): **DOMError**  
 
-Обработчик событий **Complete** . 
+### OnComplete  
 
-```js
+Обработчик событий **Complete** .  
+
+```javascript
 var oncomplete = MSWebViewAsyncOperation.oncomplete;
-```
+```  
 
-#### Значение свойства
-Тип: **EventHandler**
+#### Значение свойства  
 
-### ПриОшибке
+Тип: **EventHandler**  
 
-Обработчик событий **ошибки** . 
+### ПриОшибке  
 
-```js
+Обработчик событий **ошибки** .  
+
+```javascript
 var onerror = MSWebViewAsyncOperation.onerror;
-```
+```  
 
-#### Значение свойства
-Тип: **EventHandler**
+#### Значение свойства  
 
-### readyState
+Тип: **EventHandler**  
 
-Описывает состояние готовности объекта.
+### readyState  
 
-Это свойство доступно только для чтения.
+Описывает состояние готовности объекта.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var readyState = MSWebViewAsyncOperation.readyState;
-```
+```  
 
-#### Значение свойства
-Тип: **короткий без знака**
+#### Значение свойства  
 
-### завершил
+Тип: **короткий без знака**  
 
-Результат операции.
+### завершил  
 
-Это свойство доступно только для чтения.
+Результат операции.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var result = MSWebViewAsyncOperation.result;
-```
+```  
 
-#### Значение свойства
-Type (тип): Any
+#### Значение свойства  
 
-### target
+Type (тип): Any  
 
-Целевой объект операции. 
+### target  
 
-Это свойство доступно только для чтения.
+Целевой объект операции.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var target = MSWebViewAsyncOperation.target;
-```
+```  
 
-#### Значение свойства
-Type (тип): [ **MSHTMLWebViewElement**](../webview.md)
+#### Значение свойства  
 
-### Тип
+Type (тип): [ **MSHTMLWebViewElement**](../webview.md)  
 
-Тип операции.
+### Тип  
 
-Это свойство доступно только для чтения.
+Тип операции.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var type = MSWebViewAsyncOperation.type;
-```
+```  
 
-#### Значение свойства
-Тип: **короткий без знака**
+#### Значение свойства  
+
+Тип: **короткий без знака**  

@@ -3,40 +3,45 @@ description: ''
 title: Объект LongRunningScriptDetectedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: 6cf7af656531eea5046f7af44d4d43ff224d0f08
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 5fe90495b83ab8f95ee594d3400c8c1a26f0547e
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571310"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752154"
 ---
-# Объект LongRunningScriptDetectedEvent
+# Объект LongRunningScriptDetectedEvent  
 
-Представлена информация для [MSWebViewLongRunningScriptDetected](../webview.md#mswebviewlongrunningscriptdetected).
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Свойства
+Представлена информация для [MSWebViewLongRunningScriptDetected](../webview.md#mswebviewlongrunningscriptdetected).  
 
-### executionTime
+## Свойства  
 
-Возвращает количество миллисекунд, в течение которых элемент [WebView](../webview.md) выполнял долго выполняемый сценарий.
+### executionTime  
 
-```js
+Возвращает количество миллисекунд, в течение которых элемент [WebView](../webview.md) выполнял долго выполняемый сценарий.  
+
+```javascript
 var executionTime = LongRunningScriptDetectedEvent.executionTime;
-```
+```  
 
-#### Значение свойства
-Тип: **длинный**
+#### Значение свойства  
 
-### stopPageScriptExecution
-Останавливает выполнение долго выполняющегося сценария в элементе [WebView](../webview.md) .
+Тип: **длинный**  
 
-```js
+### stopPageScriptExecution  
+
+Останавливает выполнение долго выполняющегося сценария в элементе [WebView](../webview.md) .  
+
+```javascript
 var stopPageScriptExecution = LongRunningScriptDetectedEvent.stopPageScriptExecution;
-```
+```  
 
-#### Значение свойства
-Тип: **логический**
+#### Значение свойства  
+
+Тип: **логический**  

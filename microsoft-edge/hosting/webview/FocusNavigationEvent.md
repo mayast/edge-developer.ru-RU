@@ -3,99 +3,105 @@ description: Отправленный объект из события Focus, с
 title: Объект FocusNavigationEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: b988bcd7ff252b9972bef9a31339a34b4b58d9ee
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 88f0a4ef8834c6e851f81ee10bf4202a0429f969
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571311"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752166"
 ---
-# Объект FocusNavigationEvent
+# Объект FocusNavigationEvent  
 
-Отправленный объект из [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) , содержащего [**NavigationReason**](#navigationreason) и Location. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Методы
+Отправленный объект из [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) , содержащего [**NavigationReason**](#navigationreason) и Location.  
 
-### requestFocus
+## Методы  
 
-Вызывается для перемещения фокуса из приложения в WebView.
+### requestFocus  
 
-### Параметры
+Вызывается для перемещения фокуса из приложения в WebView.  
 
-У этого метода нет параметров.
+### Параметры  
 
-### Возвращаемое значение
+У этого метода нет параметров.  
 
-Этот метод не возвращает значение.
+### Возвращаемое значение  
 
-## Свойства
-    
-### navigationReason
+Этот метод не возвращает значение.  
 
-Перечисляемый тип **NavigationReason**, "Left", "стрелка вверх", "вправо" или "вниз". 
+## Свойства  
 
-Это свойство доступно только для чтения.
+### navigationReason  
 
-```js
+Перечисляемый тип **NavigationReason**, "Left", "стрелка вверх", "вправо" или "вниз".  
+
+Это свойство доступно только для чтения.  
+
+```javascript
 var navigationReason = FocusNavigationEvent.navigationReason;
-```
+```  
 
-#### Значение свойства
-Type (тип): **NavigationReason**
+#### Значение свойства  
 
-### originHeight
+Type (тип): **NavigationReason**  
 
-Положение начальной высоты элемента, на который будет передан фокус.
+### originHeight  
 
-Это свойство доступно только для чтения.
+Положение начальной высоты элемента, на который будет передан фокус.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var originWoriginHeightidth = FocusNavigationEvent.originHeight;
-```
+```  
 
-#### Значение свойства
-Тип: с **плавающей точкой**
+#### Значение свойства  
 
-### originLeft
+Тип: с **плавающей точкой**  
 
-Расположение элемента, на котором находится фокус, в исходном расположении слева от него.
+### originLeft  
 
-Это свойство доступно только для чтения.
+Расположение элемента, на котором находится фокус, в исходном расположении слева от него.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var originLeft = FocusNavigationEvent.originLeft;
-```
+```  
 
-#### Значение свойства
-Тип: с **плавающей точкой**
+#### Значение свойства  
 
-### originTop
+Тип: с **плавающей точкой**  
 
-Верхнее расположение элемента, на который будет наделена фокус.
+### originTop  
 
-Это свойство доступно только для чтения.
+Верхнее расположение элемента, на который будет наделена фокус.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var originTop = FocusNavigationEvent.originTop;
-```
+```  
 
-#### Значение свойства
-Тип: с **плавающей точкой**
+#### Значение свойства  
 
-### originWidth
+Тип: с **плавающей точкой**  
 
-Положение начальной ширины элемента, на который будет передан фокус.
+### originWidth  
 
-Это свойство доступно только для чтения.
+Положение начальной ширины элемента, на который будет передан фокус.  
 
-```js
+Это свойство доступно только для чтения.  
+
+```javascript
 var originWidth = FocusNavigationEvent.originWidth;
-```
+```  
 
-#### Значение свойства
-Тип: с **плавающей точкой**
+#### Значение свойства  
 
+Тип: с **плавающей точкой**  

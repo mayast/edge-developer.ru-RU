@@ -3,61 +3,66 @@ description: Определяет свойства, которые включа�
 title: Объект MSWebViewSettings
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: 0e164e7eb44edc636201f283ec4bbe866a122b8e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 147f852f8fbcb2a748c00b472814e9cc45b9c9da
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571301"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752180"
 ---
-# Объект MSWebViewSettings
+# Объект MSWebViewSettings  
 
-Определяет свойства, которые включают и отключают функции [WebView](../webview.md) .
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Свойства
+Определяет свойства, которые включают и отключают функции [WebView](../webview.md) .  
 
-### isIndexedDBEnabled
+## Свойства  
 
-Возвращает или задает значение, указывающее, разрешено ли использование IndexedDB в [WebView](../webview.md).
+### isIndexedDBEnabled  
 
-```js
+Возвращает или задает значение, указывающее, разрешено ли использование IndexedDB в [WebView](../webview.md).  
+
+```javascript
 var isIndexedDBEnabled = MSWebViewSettings.isIndexedDBEnabled;
 MSWebViewSettings.isIndexedDBEnabled = isIndexedDBEnabled;
-```
+```  
 
-#### Значение свойства
-Тип: **логический**
+#### Значение свойства  
 
-**Значение true** , если IndexedDB можно использовать в **WebView**; в противном случае — **значение false**. 
+Тип: **логический**  
 
-### isJavaScriptEnabled
+**Значение true** , если IndexedDB можно использовать в **WebView**; в противном случае — **значение false**.  
 
-Возвращает или задает значение, указывающее, разрешено ли использование JavaScript в [WebView](../webview.md).
+### isJavaScriptEnabled  
 
-```js
+Возвращает или задает значение, указывающее, разрешено ли использование JavaScript в [WebView](../webview.md).  
+
+```javascript
 var isJavaScriptEnabled = MSWebViewSettings.isJavaScriptEnabled;
 MSWebViewSettings.isJavaScriptEnabled = isJavaScriptEnabled;
-```
+```  
 
-#### Значение свойства
-Тип: **логический**
+#### Значение свойства  
 
-**Значение истина** JavaScript разрешен в [WebView](../webview.md); в противном случае — **значение false**. 
+Тип: **логический**  
 
-### isScriptNotifyAllowed
+**Значение истина** JavaScript разрешен в [WebView](../webview.md); в противном случае — **значение false**.  
 
-Возвращает или задает значение, указывающее, разрешено ли использование [ScriptNotifyEvent](ScriptNotifyEvent.md) в [WebView](../webview.md).
+### isScriptNotifyAllowed  
 
-```js
+Возвращает или задает значение, указывающее, разрешено ли использование [ScriptNotifyEvent](ScriptNotifyEvent.md) в [WebView](../webview.md).  
+
+```javascript
 var isScriptNotifyAllowed = MSWebViewSettings.isScriptNotifyAllowed;
 MSWebViewSettings.isScriptNotifyAllowed = isScriptNotifyAllowed;
-```
+```  
 
-#### Значение свойства
-Тип: **логический**
+#### Значение свойства  
 
-**Значение true** [ScriptNotifyEvent](ScriptNotifyEvent.md) разрешено в [WebView](../webview.md); в противном случае — **значение false**. 
+Тип: **логический**  
+
+**Значение true** [ScriptNotifyEvent](ScriptNotifyEvent.md) разрешено в [WebView](../webview.md); в противном случае — **значение false**.  

@@ -3,22 +3,24 @@ description: Предоставляет сведения о текущем за�
 title: Объект PermissionRequestedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: 07fccebc9e061d4ee7a85e48271aaf9c0574e1ef
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 9bb6cfdbe3cc430f109ea3a258b6c1a176b05da3
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572727"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752022"
 ---
-# Объект PermissionRequestedEvent
+# Объект PermissionRequestedEvent  
 
-Предоставляет сведения о текущем запросе разрешения.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Предоставляет сведения о текущем запросе разрешения.  
+
+```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
     const permissionRequest = permissionRequestedEventArgs.permissionRequest;
     switch (permissionRequest.type) {
@@ -54,12 +56,12 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
             break;
     }
 });
-```
+```  
 
-## Свойства
+## Свойства  
 
-### permissionRequest
+### permissionRequest  
 
-Возвращает объект **[PermissionRequest](permissionrequest.md)** , который представляет запрос на разрешение конечного пользователя, сделанный содержимым [WebView](../webview.md).
+Возвращает объект **[PermissionRequest](permissionrequest.md)** , который представляет запрос на разрешение конечного пользователя, сделанный содержимым [WebView](../webview.md).  
 
-Это свойство доступно только для чтения.
+Это свойство доступно только для чтения.  

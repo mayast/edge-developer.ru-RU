@@ -3,32 +3,35 @@ description: Сведения о навигации по WebView
 title: Объект NavigationEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, приложения для Windows 10, UWP, EDGE
-ms.openlocfilehash: 1b3c9bd8f10c1f35a5ac518a54dd78ce96e201b5
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 785e9646ff400e7ad229046c7030b51420b1d9ad
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571295"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752173"
 ---
-# Объект NavigationEvent
+# Объект NavigationEvent  
 
-Объект, представляющий событие, которое создается, когда инициируется Навигация.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Свойства
-    
-### uri
+Объект, представляющий событие, которое создается, когда инициируется Навигация.  
 
-Универсальный код ресурса (URI) целевого объекта.
+## Свойства  
 
-Это свойство доступно только для чтения.
+### uri  
 
-```js
+Универсальный код ресурса (URI) целевого объекта.  
+
+Это свойство доступно только для чтения.  
+
+```javascript
 var uri = NavigationEvent.uri;
-```
+```  
 
-#### Значение свойства
-Type (тип): **DOMString**
+#### Значение свойства  
+
+Type (тип): **DOMString**  

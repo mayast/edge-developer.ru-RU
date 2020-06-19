@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: fad5e7ce7be58ea9992dffee75da0d59aed471e7
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: 0dd4b5b0d336f4107352754e0c23e74bc83e8a5f
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710394"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752236"
 ---
-# Начало работы с WebView2 в WPF (Предварительная версия)  
+# Начало работы с WebView2 в WPF (Предварительная версия)
 
 В этой статье приступите к созданию первого приложения WebView2 и ознакомьтесь с основными возможностями [WebView2 (Предварительная версия)](../index.md).  Дополнительные сведения об отдельных API можно найти в [справочнике API](../reference/dotnet/0-9-515-reference-webview2.md).  
 

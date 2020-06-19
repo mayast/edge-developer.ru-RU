@@ -3,17 +3,17 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView2 для приложений Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: af8df8ff67a0fbe7fd4ec9308b1562b9ef987933
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699287"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751851"
 ---
 # интерфейс ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,6 +52,8 @@ IsUserInitiated имеет значение true, когда новый запр
 
 > общедоступные значения HRESULT [get_IsUserInitiated](#get_isuserinitiated)(bool * IsUserInitiated)
 
+Элементы управления WebView2 могут отображать всплывающие окна, так как блокирование всплывающих окон отключено. Чтобы заблокировать отображение всплывающих окон, не инициированных пользователем, используйте `get_IsUserInitiated` .
+
 #### get_NewWindow 
 
 Получает новое окно.
@@ -87,4 +89,3 @@ IsUserInitiated имеет значение true, когда новый запр
 > общедоступные значения HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * NewWindow)
 
 Не следует перемещаться по целевому WebView. Если задано значение NewWindow, окно верхнего уровня будет возвращено в виде открытой WindowProxy.
-

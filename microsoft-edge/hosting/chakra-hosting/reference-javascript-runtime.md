@@ -1,267 +1,153 @@
 ---
 description: API среды выполнения JavaScript (JsRT) позволяют добавлять возможности сценариев для настольных и серверных приложений, работающих под управлением Windows.
-title: Справочник (среда выполнения JavaScript) | Документы Microsoft
-ms.custom: ''
-ms.date: 01/15/2020
+title: Справочник (среда выполнения JavaScript)
+ms.date: 06/08/2020
 ms.prod: microsoft-edge
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: reference
+ms.topic: article
 ms.assetid: 0bfe50da-fd79-4e00-9458-bc667769b415
 caps.latest.revision: 9
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ''
-ms.openlocfilehash: d1215d84daa31f2338b8c7e237625d0129026bea
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7166e6cd5d64060c2939d8404e1415dc34fce17b
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571323"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752215"
 ---
-# Справочник (среда выполнения JavaScript)
+# Справочник (среда выполнения JavaScript)  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
+
 API среды выполнения JavaScript (JsRT) позволяют добавлять возможности сценариев для настольных и серверных приложений, работающих под управлением Windows.  
-  
- Если вы планируете внедрить [ChakraCore](https://github.com/Microsoft/ChakraCore) в свое приложение, обратитесь на [ChakraCore вики-сайт](https://aka.ms/corejsrtref) для ссылок на JSRT.  
-  
+
+Если вы планируете внедрить [ChakraCore](https://github.com/Microsoft/ChakraCore) в свое приложение, обратитесь на [ChakraCore вики-сайт](https://aka.ms/corejsrtref) для ссылок на JSRT.  
+
 ## В этом разделе  
- Определения typedef, константы и перечисления, поддерживающие размещение JsRT, описаны ниже.  
-  
--   [Typedef, константы и перечисления среды выполнения JavaScript](../chakra-hosting/javascript-runtime-typedefs-constants-and-enumerations.md)  
-  
- Следующие функции включают размещение JsRT:  
-  
--   [Функция JsAddRef](../chakra-hosting/jsaddref-function.md)  
-  
--   [Функция JsBooleanToBool](../chakra-hosting/jsbooleantobool-function.md)  
-  
--   [Функция JsBoolToBoolean](../chakra-hosting/jsbooltoboolean-function.md)  
-  
--   [Функция JsCallFunction](../chakra-hosting/jscallfunction-function.md)  
-  
--   [Функция JsCollectGarbage](../chakra-hosting/jscollectgarbage-function.md)  
-  
--   [Функция JsConstructObject](../chakra-hosting/jsconstructobject-function.md)  
-  
--   [Функция JsConvertValueToBoolean](../chakra-hosting/jsconvertvaluetoboolean-function.md)  
-  
--   [Функция JsConvertValueToNumber](../chakra-hosting/jsconvertvaluetonumber-function.md)  
-  
--   [Функция JsConvertValueToObject](../chakra-hosting/jsconvertvaluetoobject-function.md)  
-  
--   [Функция JsConvertValueToString](../chakra-hosting/jsconvertvaluetostring-function.md)  
-  
--   [Функция JsCreateArray](../chakra-hosting/jscreatearray-function.md)  
-  
--   [Функция JsCreateArrayBuffer](../chakra-hosting/jscreatearraybuffer-function.md)  
-  
--   [Функция JsCreateContext](../chakra-hosting/jscreatecontext-function.md)  
-  
--   [Функция JsCreateDataView](../chakra-hosting/jscreatedataview-function.md)  
-  
--   [Функция JsCreateError](../chakra-hosting/jscreateerror-function.md)  
-  
--   [Функция JsCreateExternalArrayBuffer](../chakra-hosting/jscreateexternalarraybuffer-function.md)  
-  
--   [Функция JsCreateExternalObject](../chakra-hosting/jscreateexternalobject-function.md)  
-  
--   [Функция JsCreateFunction](../chakra-hosting/jscreatefunction-function.md)  
-  
--   [Функция JsCreateNamedFunction](../chakra-hosting/jscreatenamedfunction-function.md)  
-  
--   [Функция JsCreateObject](../chakra-hosting/jscreateobject-function.md)  
-  
--   [Функция JsCreateRangeError](../chakra-hosting/jscreaterangeerror-function.md)  
-  
--   [Функция JsCreateReferenceError](../chakra-hosting/jscreatereferenceerror-function.md)  
-  
--   [Функция JsCreateRuntime](../chakra-hosting/jscreateruntime-function.md)  
-  
--   [Функция JsCreateSymbol](../chakra-hosting/jscreatesymbol-function.md)  
-  
--   [Функция JsCreateSyntaxError](../chakra-hosting/jscreatesyntaxerror-function.md)  
-  
--   [Функция JsCreateTypeError](../chakra-hosting/jscreatetypeerror-function.md)  
-  
--   [Функция JsCreateTypedArray](../chakra-hosting/jscreatetypedarray-function.md)  
-  
--   [Функция JsCreateURIError](../chakra-hosting/jscreateurierror-function.md)  
-  
--   [Функция JsDefineProperty](../chakra-hosting/jsdefineproperty-function.md)  
-  
--   [Функция JsDeleteIndexedProperty](../chakra-hosting/jsdeleteindexedproperty-function.md)  
-  
--   [Функция JsDeleteProperty](../chakra-hosting/jsdeleteproperty-function.md)  
-  
--   [Функция JsDisableRuntimeExecution](../chakra-hosting/jsdisableruntimeexecution-function.md)  
-  
--   [Функция JsDisposeRuntime](../chakra-hosting/jsdisposeruntime-function.md)  
-  
--   [Функция JsDoubleToNumber](../chakra-hosting/jsdoubletonumber-function.md)  
-  
--   [Функция JsEnableRuntimeExecution](../chakra-hosting/jsenableruntimeexecution-function.md)  
-  
--   [Функция JsEnumerateHeap](../chakra-hosting/jsenumerateheap-function.md)  
-  
--   [Функция JsEquals](../chakra-hosting/jsequals-function.md)  
-  
--   [Функция JsGetAndClearException](../chakra-hosting/jsgetandclearexception-function.md)  
-  
--   [Функция JsGetArrayBufferStorage](../chakra-hosting/jsgetarraybufferstorage-function.md)  
-  
--   [Функция JsGetContextData](../chakra-hosting/jsgetcontextdata-function.md)  
-  
--   [Функция JsGetContextOfObject](../chakra-hosting/jsgetcontextofobject-function.md)  
-  
--   [Функция JsGetCurrentContext](../chakra-hosting/jsgetcurrentcontext-function.md)  
-  
--   [Функция JsGetDataViewStorage](../chakra-hosting/jsgetdataviewstorage-function.md)  
-  
--   [Функция JsGetExtensionAllowed](../chakra-hosting/jsgetextensionallowed-function.md)  
-  
--   [Функция JsGetExternalData](../chakra-hosting/jsgetexternaldata-function.md)  
-  
--   [Функция JsGetFalseValue](../chakra-hosting/jsgetfalsevalue-function.md)  
-  
--   [Функция JsGetGlobalObject](../chakra-hosting/jsgetglobalobject-function.md)  
-  
--   [Функция JsGetIndexedPropertiesExternalData](../chakra-hosting/jsgetindexedpropertiesexternaldata-function.md)  
-  
--   [Функция JsGetIndexedProperty](../chakra-hosting/jsgetindexedproperty-function.md)  
-  
--   [Функция JsGetNullValue](../chakra-hosting/jsgetnullvalue-function.md)  
-  
--   [Функция JsGetOwnPropertyDescriptor](../chakra-hosting/jsgetownpropertydescriptor-function.md)  
-  
--   [Функция JsGetOwnPropertyNames](../chakra-hosting/jsgetownpropertynames-function.md)  
-  
--   [Функция JsGetOwnPropertySymbols](../chakra-hosting/jsgetownpropertysymbols-function.md)  
-  
--   [Функция JsGetProperty](../chakra-hosting/jsgetproperty-function.md)  
-  
--   [Функция JsGetPropertyIdFromName](../chakra-hosting/jsgetpropertyidfromname-function.md)  
-  
--   [Функция JsGetPropertyIdFromSymbol](../chakra-hosting/jsgetpropertyidfromsymbol-function.md)  
-  
--   [Функция JsGetPropertyIdType](../chakra-hosting/jsgetpropertyidtype-function.md)  
-  
--   [Функция JsGetPropertyNameFromId](../chakra-hosting/jsgetpropertynamefromid-function.md)  
-  
--   [Функция JsGetPrototype](../chakra-hosting/jsgetprototype-function.md)  
-  
--   [Функция JsGetRuntime](../chakra-hosting/jsgetruntime-function.md)  
-  
--   [Функция JsGetRuntimeMemoryLimit](../chakra-hosting/jsgetruntimememorylimit-function.md)  
-  
--   [Функция JsGetRuntimeMemoryUsage](../chakra-hosting/jsgetruntimememoryusage-function.md)  
-  
--   [Функция JsGetStringLength](../chakra-hosting/jsgetstringlength-function.md)  
-  
--   [Функция JsGetSymbolFromPropertyId](../chakra-hosting/jsgetsymbolfrompropertyid-function.md)  
-  
--   [Функция JsGetTrueValue](../chakra-hosting/jsgettruevalue-function.md)  
-  
--   [Функция JsGetTypedArrayInfo](../chakra-hosting/jsgettypedarrayinfo-function.md)  
-  
--   [Функция JsGetTypedArrayStorage](../chakra-hosting/jsgettypedarraystorage-function.md)  
-  
--   [Функция JsGetUndefinedValue](../chakra-hosting/jsgetundefinedvalue-function.md)  
-  
--   [Функция JsGetValueType](../chakra-hosting/jsgetvaluetype-function.md)  
-  
--   [Функция JsHasException](../chakra-hosting/jshasexception-function.md)  
-  
--   [Функция JsHasExternalData](../chakra-hosting/jshasexternaldata-function.md)  
-  
--   [Функция JsHasIndexedPropertiesExternalData](../chakra-hosting/jshasindexedpropertiesexternaldata-function.md)  
-  
--   [Функция JsHasIndexedProperty](../chakra-hosting/jshasindexedproperty-function.md)  
-  
--   [Функция JsHasProperty](../chakra-hosting/jshasproperty-function.md)  
-  
--   [Функция JsIdle](../chakra-hosting/jsidle-function.md)  
-  
--   [Функция JsInspectableToObject](../chakra-hosting/jsinspectabletoobject-function.md)  
-  
--   [Функция JsInstanceOf](../chakra-hosting/jsinstanceof-function.md)  
-  
--   [Функция JsIntToNumber](../chakra-hosting/jsinttonumber-function.md)  
-  
--   [Функция JsIsEnumeratingHeap](../chakra-hosting/jsisenumeratingheap-function.md)  
-  
--   [Функция JsIsRuntimeExecutionDisabled](../chakra-hosting/jsisruntimeexecutiondisabled-function.md)  
-  
--   [Функция JsNumberToDouble](../chakra-hosting/jsnumbertodouble-function.md)  
-  
--   [Функция JsNumberToInt](../chakra-hosting/jsnumbertoint-function.md)  
-  
--   [Функция JsObjectToInspectable](../chakra-hosting/jsobjecttoinspectable-function.md)  
-  
--   [Функция JsParseScript](../chakra-hosting/jsparsescript-function.md)  
-  
--   [Функция JsParseSerializedScript](../chakra-hosting/jsparseserializedscript-function.md)  
-  
--   [Функция JsParseSerializedScriptWithCallback](../chakra-hosting/jsparseserializedscriptwithcallback-function.md)  
-  
--   [Функция JsPointerToString](../chakra-hosting/jspointertostring-function.md)  
-  
--   [Функция JsPreventExtension](../chakra-hosting/jspreventextension-function.md)  
-  
--   [Функция JsProjectWinRTNamespace](../chakra-hosting/jsprojectwinrtnamespace-function.md)  
-  
--   [Функция JsRelease](../chakra-hosting/jsrelease-function.md)  
-  
--   [Функция JsRunScript](../chakra-hosting/jsrunscript-function.md)  
-  
--   [Функция JsRunSerializedScript](../chakra-hosting/jsrunserializedscript-function.md)  
-  
--   [Функция JsRunSerializedScriptWithCallback](../chakra-hosting/jsrunserializedscriptwithcallback-function.md)  
-  
--   [Функция JsSerializeScript](../chakra-hosting/jsserializescript-function.md)  
-  
--   [Функция JsSetContextData](../chakra-hosting/jssetcontextdata-function.md)  
-  
--   [Функция JsSetCurrentContext](../chakra-hosting/jssetcurrentcontext-function.md)  
-  
--   [Функция JsSetException](../chakra-hosting/jssetexception-function.md)  
-  
--   [Функция JsSetExternalData](../chakra-hosting/jssetexternaldata-function.md)  
-  
--   [Функция JsSetIndexedPropertiesToExternalData](../chakra-hosting/jssetindexedpropertiestoexternaldata-function.md)  
-  
--   [Функция JsSetIndexedProperty](../chakra-hosting/jssetindexedproperty-function.md)  
-  
--   [Функция JsSetObjectBeforeCollectCallback](../chakra-hosting/jssetobjectbeforecollectcallback-function.md)  
-  
--   [Функция JsSetProjectionEnqueueCallback](../chakra-hosting/jssetprojectionenqueuecallback-function.md)  
-  
--   [Функция JsSetPromiseContinuationCallback](../chakra-hosting/jssetpromisecontinuationcallback-function.md)  
-  
--   [Функция JsSetProperty](../chakra-hosting/jssetproperty-function.md)  
-  
--   [Функция JsSetPrototype](../chakra-hosting/jssetprototype-function.md)  
-  
--   [Функция JsSetRuntimeBeforeCollectCallback](../chakra-hosting/jssetruntimebeforecollectcallback-function.md)  
-  
--   [Функция JsSetRuntimeMemoryAllocationCallback](../chakra-hosting/jssetruntimememoryallocationcallback-function.md)  
-  
--   [Функция JsSetRuntimeMemoryLimit](../chakra-hosting/jssetruntimememorylimit-function.md)  
-  
--   [Функция JsStartDebugging](../chakra-hosting/jsstartdebugging-function.md)  
-  
--   [Функция JsStartProfiling](../chakra-hosting/jsstartprofiling-function.md)  
-  
--   [Функция JsStopProfiling](../chakra-hosting/jsstopprofiling-function.md)  
-  
--   [Функция JsStrictEquals](../chakra-hosting/jsstrictequals-function.md)  
-  
--   [Функция JsStringToPointer](../chakra-hosting/jsstringtopointer-function.md)  
-  
--   [Функция JsValueToVariant](../chakra-hosting/jsvaluetovariant-function.md)  
-  
--   [Функция JsVariantToValue](../chakra-hosting/jsvarianttovalue-function.md)  
-  
+
+Определения typedef, константы и перечисления, поддерживающие размещение JsRT, описаны ниже.  
+  
+*   [Typedef, константы и перечисления в среде выполнения JavaScript](./javascript-runtime-typedefs-constants-and-enumerations.md)  
+
+Следующие функции включают размещение JsRT:  
+
+*   [Функция JsAddRef](./jsaddref-function.md)  
+*   [Функция JsBooleanToBool](./jsbooleantobool-function.md)  
+*   [Функция JsBoolToBoolean](./jsbooltoboolean-function.md)  
+*   [Функция JsCallFunction](./jscallfunction-function.md)  
+*   [Функция JsCollectGarbage](./jscollectgarbage-function.md)  
+*   [Функция JsConstructObject](./jsconstructobject-function.md)  
+*   [Функция JsConvertValueToBoolean](./jsconvertvaluetoboolean-function.md)  
+*   [Функция JsConvertValueToNumber](./jsconvertvaluetonumber-function.md)  
+*   [Функция JsConvertValueToObject](./jsconvertvaluetoobject-function.md)  
+*   [Функция JsConvertValueToString](./jsconvertvaluetostring-function.md)  
+*   [Функция JsCreateArray](./jscreatearray-function.md)  
+*   [Функция JsCreateArrayBuffer](./jscreatearraybuffer-function.md)  
+*   [Функция JsCreateContext](./jscreatecontext-function.md)  
+*   [Функция JsCreateDataView](./jscreatedataview-function.md)  
+*   [Функция JsCreateError](./jscreateerror-function.md)  
+*   [Функция JsCreateExternalArrayBuffer](./jscreateexternalarraybuffer-function.md)  
+*   [Функция JsCreateExternalObject](./jscreateexternalobject-function.md)  
+*   [Функция JsCreateFunction](./jscreatefunction-function.md)  
+*   [Функция JsCreateNamedFunction](./jscreatenamedfunction-function.md)  
+*   [Функция JsCreateObject](./jscreateobject-function.md)  
+*   [Функция JsCreateRangeError](./jscreaterangeerror-function.md)  
+*   [Функция JsCreateReferenceError](./jscreatereferenceerror-function.md)  
+*   [Функция JsCreateRuntime](./jscreateruntime-function.md)  
+*   [Функция JsCreateSymbol](./jscreatesymbol-function.md)  
+*   [Функция JsCreateSyntaxError](./jscreatesyntaxerror-function.md)  
+*   [Функция JsCreateTypeError](./jscreatetypeerror-function.md)  
+*   [Функция JsCreateTypedArray](./jscreatetypedarray-function.md)  
+*   [Функция JsCreateURIError](./jscreateurierror-function.md)  
+*   [Функция JsDefineProperty](./jsdefineproperty-function.md)  
+*   [Функция JsDeleteIndexedProperty](./jsdeleteindexedproperty-function.md)  
+*   [Функция JsDeleteProperty](./jsdeleteproperty-function.md)  
+*   [Функция JsDisableRuntimeExecution](./jsdisableruntimeexecution-function.md)  
+*   [Функция JsDisposeRuntime](./jsdisposeruntime-function.md)  
+*   [Функция JsDoubleToNumber](./jsdoubletonumber-function.md)  
+*   [Функция JsEnableRuntimeExecution](./jsenableruntimeexecution-function.md)  
+*   [Функция JsEnumerateHeap](./jsenumerateheap-function.md)  
+*   [Функция JsEquals](./jsequals-function.md)  
+*   [Функция JsGetAndClearException](./jsgetandclearexception-function.md)  
+*   [Функция JsGetArrayBufferStorage](./jsgetarraybufferstorage-function.md)  
+*   [Функция JsGetContextData](./jsgetcontextdata-function.md)  
+*   [Функция JsGetContextOfObject](./jsgetcontextofobject-function.md)  
+*   [Функция JsGetCurrentContext](./jsgetcurrentcontext-function.md)  
+*   [Функция JsGetDataViewStorage](./jsgetdataviewstorage-function.md)  
+*   [Функция JsGetExtensionAllowed](./jsgetextensionallowed-function.md)  
+*   [Функция JsGetExternalData](./jsgetexternaldata-function.md)  
+*   [Функция JsGetFalseValue](./jsgetfalsevalue-function.md)  
+*   [Функция JsGetGlobalObject](./jsgetglobalobject-function.md)  
+*   [Функция JsGetIndexedPropertiesExternalData](./jsgetindexedpropertiesexternaldata-function.md)  
+*   [Функция JsGetIndexedProperty](./jsgetindexedproperty-function.md)  
+*   [Функция JsGetNullValue](./jsgetnullvalue-function.md)  
+*   [Функция JsGetOwnPropertyDescriptor](./jsgetownpropertydescriptor-function.md)  
+*   [Функция JsGetOwnPropertyNames](./jsgetownpropertynames-function.md)  
+*   [Функция JsGetOwnPropertySymbols](./jsgetownpropertysymbols-function.md)  
+*   [Функция JsGetProperty](./jsgetproperty-function.md)  
+*   [Функция JsGetPropertyIdFromName](./jsgetpropertyidfromname-function.md)  
+*   [Функция JsGetPropertyIdFromSymbol](./jsgetpropertyidfromsymbol-function.md)  
+*   [Функция JsGetPropertyIdType](./jsgetpropertyidtype-function.md)  
+*   [Функция JsGetPropertyNameFromId](./jsgetpropertynamefromid-function.md)  
+*   [Функция JsGetPrototype](./jsgetprototype-function.md)  
+*   [Функция JsGetRuntime](./jsgetruntime-function.md)  
+*   [Функция JsGetRuntimeMemoryLimit](./jsgetruntimememorylimit-function.md)  
+*   [Функция JsGetRuntimeMemoryUsage](./jsgetruntimememoryusage-function.md)  
+*   [Функция JsGetStringLength](./jsgetstringlength-function.md)  
+*   [Функция JsGetSymbolFromPropertyId](./jsgetsymbolfrompropertyid-function.md)  
+*   [Функция JsGetTrueValue](./jsgettruevalue-function.md)  
+*   [Функция JsGetTypedArrayInfo](./jsgettypedarrayinfo-function.md)  
+*   [Функция JsGetTypedArrayStorage](./jsgettypedarraystorage-function.md)  
+*   [Функция JsGetUndefinedValue](./jsgetundefinedvalue-function.md)  
+*   [Функция JsGetValueType](./jsgetvaluetype-function.md)  
+*   [Функция JsHasException](./jshasexception-function.md)  
+*   [Функция JsHasExternalData](./jshasexternaldata-function.md)  
+*   [Функция JsHasIndexedPropertiesExternalData](./jshasindexedpropertiesexternaldata-function.md)  
+*   [Функция JsHasIndexedProperty](./jshasindexedproperty-function.md)  
+*   [Функция JsHasProperty](./jshasproperty-function.md)  
+*   [Функция JsIdle](./jsidle-function.md)  
+*   [Функция JsInspectableToObject](./jsinspectabletoobject-function.md)  
+*   [Функция JsInstanceOf](./jsinstanceof-function.md)  
+*   [Функция JsIntToNumber](./jsinttonumber-function.md)  
+*   [Функция JsIsEnumeratingHeap](./jsisenumeratingheap-function.md)  
+*   [Функция JsIsRuntimeExecutionDisabled](./jsisruntimeexecutiondisabled-function.md)  
+*   [Функция JsNumberToDouble](./jsnumbertodouble-function.md)  
+*   [Функция JsNumberToInt](./jsnumbertoint-function.md)  
+*   [Функция JsObjectToInspectable](./jsobjecttoinspectable-function.md)  
+*   [Функция JsParseScript](./jsparsescript-function.md)  
+*   [Функция JsParseSerializedScript](./jsparseserializedscript-function.md)  
+*   [Функция JsParseSerializedScriptWithCallback](./jsparseserializedscriptwithcallback-function.md)  
+*   [Функция JsPointerToString](./jspointertostring-function.md)  
+*   [Функция JsPreventExtension](./jspreventextension-function.md)  
+*   [Функция JsProjectWinRTNamespace](./jsprojectwinrtnamespace-function.md)  
+*   [Функция JsRelease](./jsrelease-function.md)  
+*   [Функция JsRunScript](./jsrunscript-function.md)  
+*   [Функция JsRunSerializedScript](./jsrunserializedscript-function.md)  
+*   [Функция JsRunSerializedScriptWithCallback](./jsrunserializedscriptwithcallback-function.md)  
+*   [Функция JsSerializeScript](./jsserializescript-function.md)  
+*   [Функция JsSetContextData](./jssetcontextdata-function.md)  
+*   [Функция JsSetCurrentContext](./jssetcurrentcontext-function.md)  
+*   [Функция JsSetException](./jssetexception-function.md)  
+*   [Функция JsSetExternalData](./jssetexternaldata-function.md)  
+*   [Функция JsSetIndexedPropertiesToExternalData](./jssetindexedpropertiestoexternaldata-function.md)  
+*   [Функция JsSetIndexedProperty](./jssetindexedproperty-function.md)  
+*   [Функция JsSetObjectBeforeCollectCallback](./jssetobjectbeforecollectcallback-function.md)  
+*   [Функция JsSetProjectionEnqueueCallback](./jssetprojectionenqueuecallback-function.md)  
+*   [Функция JsSetPromiseContinuationCallback](./jssetpromisecontinuationcallback-function.md)  
+*   [Функция JsSetProperty](./jssetproperty-function.md)  
+*   [Функция JsSetPrototype](./jssetprototype-function.md)  
+*   [Функция JsSetRuntimeBeforeCollectCallback](./jssetruntimebeforecollectcallback-function.md)  
+*   [Функция JsSetRuntimeMemoryAllocationCallback](./jssetruntimememoryallocationcallback-function.md)  
+*   [Функция JsSetRuntimeMemoryLimit](./jssetruntimememorylimit-function.md)  
+*   [Функция JsStartDebugging](./jsstartdebugging-function.md)  
+*   [Функция JsStartProfiling](./jsstartprofiling-function.md)  
+*   [Функция JsStopProfiling](./jsstopprofiling-function.md)  
+*   [Функция JsStrictEquals](./jsstrictequals-function.md)  
+*   [Функция JsStringToPointer](./jsstringtopointer-function.md)  
+*   [Функция JsValueToVariant](./jsvaluetovariant-function.md)  
+*   [Функция JsVariantToValue](./jsvarianttovalue-function.md)  
+
 ## См. также  
- [Размещение среды выполнения JavaScript](../chakra-hosting/hosting-the-javascript-runtime.md)   
- [Размещение среды выполнения JavaScript](../javascript-runtime-hosting.md)
+
+*   [Размещение среды выполнения JavaScript](./hosting-the-javascript-runtime.md)  
+*   [Размещение среды выполнения JavaScript](../javascript-runtime-hosting.md)  
