@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, элементы управления браузером, EDGE HTML, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 1b140d9f644c7a864cac4966bb4cfdd400feeb0d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 9356da17f2db9456a9a309bc9ef06c74fbb50779
+ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697744"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "10754547"
 ---
 # Введение в Microsoft Edge WebView2 (Предварительная версия)  
 
@@ -123,13 +123,13 @@ ms.locfileid: "10697744"
 
 *   [WebView2 SDK и Microsoft Edge Versions](./concepts/versioning.md)
 *   [Распространение приложений WebView2](./concepts/distribution.md)  
+*   [Рекомендации по обеспечению безопасности для приложений WebView2](./concepts/security.md)
+*   [Управление папкой "данные пользователя" в приложениях WebView2](./concepts/userdatafolder.md)
  
 #### Практические руководства  
 
 *   [Отладка WebView2 с помощью DevTools и Visual Studio, отладка скриптов](./howto/debug.md)  
 *   [Автоматизация и отладка WebView2 с помощью Microsoft EdgeDriver](./howto/webdriver.md)  
-
-<!--todo: add how-tos when available  -->  
 
 ## Связь с командой WebView2  
 
