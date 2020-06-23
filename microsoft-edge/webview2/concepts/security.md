@@ -1,0 +1,38 @@
+---
+description: Узнайте, как разрабатывать безопасные WebView2 приложения.
+title: Рекомендации по разработке защищенных приложений WebView2
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/21/2020
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, управление браузером, EDGE HTML, безопасность
+ms.openlocfilehash: e71dbe9ad98b7156d8888da074e30a96683469d5
+ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "10755404"
+---
+# <span data-ttu-id="9f2dd-104">Рекомендации по разработке защищенных приложений WebView2</span><span class="sxs-lookup"><span data-stu-id="9f2dd-104">Best practices for developing secure WebView2 applications</span></span>
+
+<span data-ttu-id="9f2dd-105">[Элемент управления WebView2](https://docs.microsoft.com/microsoft-edge/webview2/) позволяет разработчикам размещать веб-содержимое в собственных приложениях.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-105">The [WebView2 control](https://docs.microsoft.com/microsoft-edge/webview2/) allows developers to host web content in their native applications.</span></span> <span data-ttu-id="9f2dd-106">При правильном использовании для размещения веб-содержимого предусмотрено несколько преимуществ, например использование пользовательского интерфейса в Интернете, доступ к функциям, совместное использование кода и межплатформенной платформы, и т. д.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-106">When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on.</span></span> <span data-ttu-id="9f2dd-107">Чтобы избежать уязвимостей, которые могут возникнуть при размещении веб-содержимого, не забудьте разработать приложение WebView2, чтобы точно отслеживать взаимодействие между веб-содержимым и ведущим приложением.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-107">To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.</span></span> 
+
+1. <span data-ttu-id="9f2dd-108">Считать все веб-содержимое небезопасным</span><span class="sxs-lookup"><span data-stu-id="9f2dd-108">Treat all web content as insecure</span></span>
+    - <span data-ttu-id="9f2dd-109">Проверка веб-сообщений и параметров объекта хоста перед их использованием, поскольку веб-сообщения и параметры могут быть неправильно сформированы (непреднамеренно или злонамеренно), что приводит к неожиданному поведению приложения.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-109">Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and cause the app to behave unexpectedly.</span></span>
+    - <span data-ttu-id="9f2dd-110">Всегда проверяйте источник документа, который выполняется в WebView2, и оцените надежность содержимого.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-110">Always check the origin of the document running inside WebView2 and assess the trustworthiness of the content.</span></span> 
+
+2. <span data-ttu-id="9f2dd-111">Разрабатывать конкретные веб-сообщения и взаимодействия объектов Host вместо обычных прокси.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-111">Design specific web messages and host object interactions instead of using generic proxies.</span></span>
+
+3. <span data-ttu-id="9f2dd-112">Ограничьте функциональные возможности веб-содержимого, изменив [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) или [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.NET), как описано ниже.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-112">Restrict web content functionality by modifying [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) or [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.NET) as follows:</span></span>
+    - <span data-ttu-id="9f2dd-113">`AreHostObjectsAllowed` `false` Если вы не ожидаете, что веб-содержимое получает доступ к объектам Host, выберите значение.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-113">Set `AreHostObjectsAllowed` to `false`, if you don’t expect the web content to access host objects.</span></span>
+    - <span data-ttu-id="9f2dd-114">`IsWebMessageEnabled` `false` Если вы не ожидаете, что веб-содержимое будет публиковать веб-сообщения в собственном приложении.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-114">Set `IsWebMessageEnabled` to `false`, if you don’t expect the web content to post web messages to your native application.</span></span> 
+    - <span data-ttu-id="9f2dd-115">`IsScriptEnabled` `false` Если вы не ожидаете, что веб-содержимое будет выполнять сценарии (например, при отображении статического содержимого HTML).</span><span class="sxs-lookup"><span data-stu-id="9f2dd-115">Set `IsScriptEnabled` to `false`, if you don’t expect the web content to run scripts (for example, when showing static html content).</span></span>
+    - <span data-ttu-id="9f2dd-116">`AreDefaultScriptDialogsEnabled` `false` Если вы не хотите, чтобы веб-содержимое отображалось `alert` или диалоговых окон, установите значение на `prompt` .</span><span class="sxs-lookup"><span data-stu-id="9f2dd-116">Set `AreDefaultScriptDialogsEnabled` to `false`, if you don’t expect the web content to show `alert` or `prompt` dialog boxes.</span></span>
+
+4.  <span data-ttu-id="9f2dd-117">Используйте `NavigationStarting` события и `FrameNavigationStarting` для обновления параметров на основе источника новой страницы, как описано ниже.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-117">Use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page as follows:</span></span>
+    1.  <span data-ttu-id="9f2dd-118">Чтобы не допустить Перемещение приложения на определенные страницы, используйте эти события для проверки и блокировки навигации между страницами и рамками.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-118">To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation.</span></span> 
+    2.  <span data-ttu-id="9f2dd-119">При переходе на новую страницу может потребоваться настроить значения свойств для [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) или [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.NET)), как описано выше.</span><span class="sxs-lookup"><span data-stu-id="9f2dd-119">When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) or [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.NET)\` as described above.</span></span>
+
+5. <span data-ttu-id="9f2dd-120">При переходе к новому документу используйте `ContentLoading` событие для удаления предоставленных объектов узла с помощью `RemoveHostObjectFromScript` .</span><span class="sxs-lookup"><span data-stu-id="9f2dd-120">When navigating to a new document, use the `ContentLoading` event to remove exposed host objects using `RemoveHostObjectFromScript`.</span></span> 
