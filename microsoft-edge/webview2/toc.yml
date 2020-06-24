@@ -12,6 +12,10 @@
   items:
     - name: Распространение моего приложения
       href: concepts/distribution.md
+    - name: Управление папками с данными пользователей
+      href: concepts/userdatafolder.md
+    - name: Рекомендации по безопасности
+      href: concepts/security.md
     - name: Управление версиями
       href: concepts/versioning.md
 - name: Заметки о выпуске
