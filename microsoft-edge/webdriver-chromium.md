@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft EDGE, веб-разработка, HTML, CSS, сценарий JavaScript, разработчик, веб-дисковод, Selenium, тестирование, инструменты, Автоматизация и тестирование
-ms.openlocfilehash: 14537943351db144bb4839d6befbfaa62894cd85
-ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
+ms.openlocfilehash: c60095373be337307225f28d320cae19174531a7
+ms.sourcegitcommit: 1b5dfc5a2c7130b3abc6b4545fcaaae0b0897148
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699509"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757582"
 ---
 # Использование Chromium для автоматизации тестов  
 
@@ -60,6 +60,36 @@ ms.locfileid: "10699509"
 ### Использование Selenium 3  
 
 Если вы уже используете [Selenium 3][|::ref1::|], возможно, у вас есть тестирование браузера и хотите добавить покрытие для Microsoft Edge \ (Chromium \) без изменения версии Selenium.  Чтобы использовать [Selenium 3][|::ref2::|] для написания автоматических тестов как для Microsoft Edge \ (EdgeHTML \), так и для Microsoft Edge \ (Chromium \), установите для него пакет [средств Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] , чтобы использовать обновленный драйвер.  `EdgeDriver`Классы и `EdgeDriverService` компоненты, включенные в эти инструменты, полностью совместимы с встроенными эквивалентами в Selenium 4.  
+
+Чтобы добавить в проект [инструменты Selenium для Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] и [Selenium 3][|::ref3::|] , выполните указанные ниже действия.
+
+#### [C#](#tab/c-sharp/)  
+
+<a id="selenium-tools-install"></a>  
+
+Добавьте пакеты [Microsoft. Edge. SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools] и [Selenium.][NugetPackagesSeleniumWebdriver31410] Package в проект .NET с помощью [инфраструктуры NuGet][NugetCLI] или [Visual Studio][VisualStudio].
+
+#### [Языке](#tab/python/)  
+
+<a id="selenium-tools-install"></a>  
+
+Используйте [PIP][PythonPip] для установки пакетов [msedge-Selenium-Tools][PythonSeleniumTools] и [Selenium][PythonSelenium] :
+
+```python
+pip install msedge-selenium-tools selenium==3.141
+```  
+
+#### [JavaScript](#tab/javascript/)  
+
+<a id="selenium-tools-install"></a>  
+
+Использование [NPM][JavaScript|::ref4::|] для установки пакетов [Edge-Selenium-Tools][JavaScriptSeleniumTools] и [Selenium-][JavaScriptSelenium] :
+
+```javascript
+npm install @microsoft/edge-selenium-tools selenium-webdriver
+```  
+
+* * *  
 
 ## Использование веб-накопителя (Microsoft EDGE (Chromium))
 
@@ -317,6 +347,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "Microsoft/Edge-Selenium-Tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/Selenium | GitHub"  
 
+[JavaScriptnpm]: https://www.npmjs.com/ "NPM"
+[JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/Edge-Selenium-Tools | NPM"
+[JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "Selenium-стример | NPM"
+
 [MicrosoftDeveloperEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "[Стример] | Разработчик Майкрософт"
 [MicrosoftDeveloperEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads "Загружаемые файлы — "[стример" | Разработчик Майкрософт"  
 
@@ -324,15 +358,22 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Скачайте каналы предварительной оценки Microsoft Edge"  
 
+[NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet. CommandLine | Коллекция NuGet"
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft. Edge. SeleniumTools | Коллекция NuGet"  
 [NugetPackagesSeleniumWebdriver31410]: https://www.nuget.org/packages/Selenium.WebDriver/3.141.0 "Selenium. 3.141.0 | Коллекция NuGet"  
 [NugetPackagesSeleniumWebdriver400alpha05]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha05 "Selenium. 4.0.0-alpha05 | Коллекция NuGet"  
+
+[PythonPip]: https://pypi.org/project/pip/ "точка | PyPI"
+[PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-Selenium-Tools | PyPI"
+[PythonSelenium]: https://pypi.org/project/selenium/ "Selenium | PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
 [SeleniumDownloads]: https://selenium.dev/downloads "Загрузки | Selenium"  
 [SeleniumWebDriverChromeoptionsClass]: https://www.selenium.dev/selenium/docs/api/dotnet/?topic=html/T_OpenQA_Selenium_Chrome_ChromeOptions.htm "Класс ChromeOptions-стример | Selenium"  
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Публикация твита"  
+
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "Довода"  
 

@@ -8,19 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 4a1eb48270e062838fee9223d0a6e0e59505278e
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 68a32b8e7175f2e52960e7c3a7fe16b66e5a043d
+ms.sourcegitcommit: de171a8e7ccd9f23846f3cd06519e4a0104f1c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697324"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757615"
 ---
 # Заметки о выпуске SDK для WebView2  
 
 Группа WebView2 будет предоставлять обновления [SDK WebView2][WebView2NuGetGallery] на 6 недель. Эта страница будет храниться в актуальном состоянии: объявления о продукте, дополнения и изменения поверхности API и критические изменения.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Повторно скомпилируйте приложение после обновления пакета NuGet.
+
+> [!IMPORTANT]
+> Несмотря на то, что WebView2 является предварительной версией, интерфейсы API .NET будут находиться в **предварительной версии пакета**.
 
 ## 0.9.538
 
@@ -39,7 +42,7 @@ ms.locfileid: "10697324"
   * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) сейчас [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
 * Обновленные [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) , чтобы убедиться в том, что маркеры сериализации исходного объекта узла заданы для прокси-объектов и сериализованы обратно в качестве объекта узла, передаваемого в качестве параметра обратного вызова JavaScript. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
-#### .NET
+#### .NET (Предварительная версия 0.9.538)
 
 * Выпущены примеры WebView2API для WinForms и WPF, которые являются исчерпывающими руководствами по нашему комплекту SDK. Посмотрите [репозиторий примеров WebView2](https://github.com/MicrosoftEdge/WebView2Samples).
 * Добавлена поддержка функций размещения и работы с окнами для [экспериментальных API](./concepts/versioning.md#experimental-apis)
