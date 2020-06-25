@@ -204,6 +204,12 @@
               items:
                 - name: 'Отслеживание, какой элемент имеет фокус'
                   href: devtools-guide-chromium/accessibility/focus.md
+                - name: Имитация темной и светлой цветовой схемы
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                - name: Имитация уменьшения движения
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                - name: Имитация дефектов зрения
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
         - name: Удаленная отладка
           items:
             - name: Устройства Android
