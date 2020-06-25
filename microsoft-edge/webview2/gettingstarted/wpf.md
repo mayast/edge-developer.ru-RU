@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: 0dd4b5b0d336f4107352754e0c23e74bc83e8a5f
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+ms.openlocfilehash: 9ecb80050d52d1d3b888027a728456a881d8c5ad
+ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10752236"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10767018"
 ---
 # Начало работы с WebView2 в WPF (Предварительная версия)
 
@@ -69,15 +69,16 @@ ms.locfileid: "10752236"
        NuGet
     :::image-end:::
     
-1.  Введите `Microsoft.Web.WebView2` строку поиска.  Выберите **Microsoft. Web. WebView2** из результатов поиска.  Установите **предварительную**версию пакета и нажмите кнопку **установить**.  
-    
+2.  Введите `Microsoft.Web.WebView2` строку поиска.  Выберите **Microsoft. Web. WebView2** из результатов поиска.  
+
+3. Установите флажок **включить предварительный выпуск**, выберите версию пакета **предварительной** версии и нажмите кнопку **установить**.  
+  
      ![NuGet](./media/installnuget.PNG)
     
     Все готово для начала разработки приложений с помощью API WebView2.  Нажмите кнопку `F5` , чтобы создать и запустить проект.  Запущенный проект отобразит пустое окно.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Пустое приложение":::
-       Пустое приложение
-    :::image-end:::  
+       Пустое приложение :::image-end:::  
     
 ## Шаг 3: создание отдельного WebView в файле MainWindow. XAML  
 
