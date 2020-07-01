@@ -6,12 +6,12 @@ ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: d3dbec41bc1e53b5e9001551c796e5a495dd331e
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4c930caf60af2b5e276e003378546e147c249548
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601735"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843969"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -89,11 +89,11 @@ ms.locfileid: "10601735"
     > Консоль после нажатия кнопки " **сведения о журнале** "  
     > ! [Консоль после нажатия кнопки "сведения о журнале"] [ImageLogInfo]  
     
-1.  Рядом с `Hello, Console!` сообщением в консоли щелкните **log. js: 2**.  Откроется панель источники, в которой выделена строка кода, которая привела к тому, что сообщение будет записано на консоль.  Сообщение было занесено в журнал при выполнении кода JavaScript на странице `console.log('Hello, Console!')` .
+1.  Рядом с `Hello, Console!` сообщением на консоли щелкните **log.js:2**.  Откроется панель источники, в которой выделена строка кода, которая привела к тому, что сообщение будет записано на консоль.  Сообщение было занесено в журнал при выполнении кода JavaScript на странице `console.log('Hello, Console!')` .
     
     > ##### Рисунок7  
-    > DevTools открывает панель "источники" после того, как вы щелкните **log. js: 2**  
-    > ! [DevTools открывает панель «источники» после того, как вы щелкните log. js: 2] [ImageSourceLog]  
+    > DevTools открывает панель «источники» после нажатия **log.js:2**  
+    > ! [DevTools открывает панель «источники» после нажатия кнопки log.js:2] [ImageSourceLog]  
     
 1.  Вернитесь на консоль с помощью одного из следующих рабочих процессов:  
     
@@ -166,6 +166,7 @@ ms.locfileid: "10601735"
     > ! [TypeError на консоли] [ImageConsoleLogTypeError]  
     
 1.  Щелкните раскрывающийся список **уровни журнала** и включите параметр **подробный** , если он отключен.  Подробнее о фильтрации можно узнать в следующем разделе.  Это необходимо сделать, чтобы убедиться в том, что следующее сообщение отображается в журнале.  
+    **Примечание.** Если раскрывающийся список уровни по умолчанию отключен, может потребоваться закрыть панель консоли. Отфильтровать по источнику сообщения, чтобы получить дополнительные сведения о боковой панели консоли.
     
     > ##### Рисунок16  
     > Включение **подробного** уровня ведения журнала  
@@ -274,29 +275,29 @@ ms.locfileid: "10601735"
 
 [ImageLogExample]: /microsoft-edge/devtools-guide-chromium/media/console-ars-technica-console-onload.msft.png "Рисунок 1: сообщения на консоли"  
 <!--[ImageLogSetUp1]: /microsoft-edge/devtools-guide-chromium/media/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
-[ImageDevToolsRight]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-example-Devtools-right-Console.MSFT.png "Рисунок 2: DevTools откроется справа от демо"  
-[ImageDevToolsBottom]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-example-Devtools-Bottom-Console.MSFT.png "Рисунок 3: DevTools закреплены в нижней части демона"  
-[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-example-Devtools-separate-Console-Browse.MSFT.png "Рисунок 4: браузер в отдельном окне"  
-[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-example-Devtools-separate-Console-Devtools.MSFT.png "Рисунок 5: DevTools открепляются в отдельном окне"  
-[ImageLogInfo]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-info.MSFT.png "Рисунок 6: консоль после нажатия кнопки" сведения о журнале ""  
-[ImageSourceLog]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Sources-logjs.MSFT.png "Рисунок 7: DevTools открывает панель" источники "после того, как вы щелкните log. js: 2  
-[ImageConsoleLogWarning]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-Warning.MSFT.png "Рисунок 8: консоль после нажатия кнопки" log warning "  
-[ImageStackTrace]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-Warning-Expanded.MSFT.png "Рисунок 9: трассировка стека"  
-[ImageLogError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-Error.MSFT.png "Рисунок 10: сообщение об ошибке"  
-[ImageConsoleTable]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-Table.MSFT.png "Рисунок 11: таблица на консоли"  
-[ImageConsoleLogGroup]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-Group.MSFT.png "Рисунок 12: группа сообщений на консоли"  
-[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-log-Custom.MSFT.png "Рисунок 13: сообщение с настраиваемым форматированием в консоли"  
-[ImageConsoleLogError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Cause-404.MSFT.png "Рисунок 14: ошибка 404 в консоли"  
-[ImageConsoleLogTypeError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Cause-Error.MSFT.png "Рисунок 15: TypeError на консоли"  
-[ImageVerboseLogLevel]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Cause-error-log-Levels.MSFT.png "Рисунок 16: включение подробного уровня ведения журнала"  
-[ImageConsoleLogViolation]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Cause-Violation.MSFT.png "Рисунок 17: нарушение в консоли"  
-[ImageConsoleDisablingLogError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Cause-Violation-log-Levels.MSFT.png "Рисунок 18: отключение сообщений уровня ошибки на консоли"  
-[ImageLogTextFiltering]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-ALL-messages-Text-Filter.MSFT.png "рис. 19", чтобы отфильтровать все сообщения, не содержащие Дэйв "  
-[ImageLogRegExFiltering]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-ALL-messages-Regex-Filter.MSFT.png "Рисунок 20: Фильтрация любого сообщения, не соответствующего шаблону"  
-[ImageConsoleSidebar]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-sidebar-ALL-messages.MSFT.png "Рисунок 21: Боковая панель"  
-[ImageConsoleSidebarLogSource]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-sidebar-Expanded-ALL-messages.MSFT.png "рис. 22: Просмотр источника сообщений на боковой панели"  
-[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-sidebar-User-messages.MSFT.png "Рисунок 23: Фильтрация сообщений браузера"  
-[ImageDrawerConsole]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Elements-drawer-Console-sidebar-ALL-messages.MSFT.png "Рисунок 24: вкладка" консоль "в ящике"  
+[ImageDevToolsRight]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-example-devtools-right-console.msft.png "Рисунок 2: DevTools откроется справа от демона"  
+[ImageDevToolsBottom]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-example-devtools-bottom-console.msft.png "Рисунок 3: DevTools закреплено в нижней части демона"  
+[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-example-devtools-separate-console-browse.msft.png "Рисунок 4: браузер в отдельном окне"  
+[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-example-devtools-separate-console-devtools.msft.png "Рисунок 5: DevTools открепляются в отдельном окне"  
+[ImageLogInfo]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-info.msft.png "Рисунок 6: консоль после нажатия кнопки" сведения о журнале ""  
+[ImageSourceLog]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-sources-logjs.msft.png "рис. 7: DevTools открывает панель «источники» после нажатия кнопки log.js:2»  
+[ImageConsoleLogWarning]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-warning.msft.png "Рисунок 8: консоль после нажатия кнопки" log warning "  
+[ImageStackTrace]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-warning-expanded.msft.png "Рисунок 9: трассировка стека"  
+[ImageLogError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-error.msft.png "рис. 10: сообщение об ошибке"  
+[ImageConsoleTable]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-table.msft.png "рис. 11: таблица на консоли"  
+[ImageConsoleLogGroup]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-group.msft.png "Рисунок 12: группа сообщений на консоли"  
+[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-log-custom.msft.png "Рисунок 13: сообщение с настраиваемым форматированием в консоли"  
+[ImageConsoleLogError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-cause-404.msft.png "Рисунок 14: ошибка 404 в консоли"  
+[ImageConsoleLogTypeError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-cause-error.msft.png "рис. 15: TypeError на консоли"  
+[ImageVerboseLogLevel]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-cause-error-log-levels.msft.png "Рисунок 16: включение подробного уровня ведения журнала"  
+[ImageConsoleLogViolation]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-cause-violation.msft.png "Рисунок 17: нарушение в консоли"  
+[ImageConsoleDisablingLogError]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-cause-violation-log-levels.msft.png "Рисунок 18: отключение сообщений уровня ошибки на консоли"  
+[ImageLogTextFiltering]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-all-messages-text-filter.msft.png "рис. 19. отфильтровать все сообщения, не содержащие Дэйв"  
+[ImageLogRegExFiltering]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-all-messages-regex-filter.msft.png "рис. 20: Фильтрация любого сообщения, не соответствующего шаблону"  
+[ImageConsoleSidebar]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-sidebar-all-messages.msft.png "Рисунок 21: Боковая панель"  
+[ImageConsoleSidebarLogSource]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-sidebar-expanded-all-messages.msft.png "рис. 22: Просмотр источника сообщений на боковой панели"  
+[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-sidebar-user-messages.msft.png "рис. 23: Фильтрация сообщений браузера"  
+[ImageDrawerConsole]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/console-elements-drawer-console-sidebar-all-messages.msft.png "Рисунок 24: вкладка" консоль "в ящике"  
 
 <!-- links -->  
 

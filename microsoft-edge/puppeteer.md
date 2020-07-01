@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft EDGE, веб-разработка, разработчик, инструменты, Автоматизация и тестирование
-ms.openlocfilehash: a78bdc0eb96db018818ef122c772bc9023adac46
-ms.sourcegitcommit: 4187d4c3fbf4ef99a3b8a63db8a182355c84c1f9
+ms.openlocfilehash: ccca46426a006651a417a22e54c8b528834b5f81
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601939"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844014"
 ---
 # Puppeteer  
 
@@ -36,7 +36,7 @@ yarn add puppeteer-core
 ## Запуск Microsoft Edge с puppeteer (Core)  
 
 > [!NOTE]
-> `puppeteer-core` опирается на узел v 8.9.0 или более поздней версии.  В примере ниже используется элемент `async` / `await` , который поддерживается только в node v 7.6.0 или более поздней версии.  Запустите `node -v` из командной строки, чтобы убедиться, что у вас есть совместимая версия файла Node. js.  
+> `puppeteer-core` опирается на узел v 8.9.0 или более поздней версии.  В примере ниже используется элемент `async` / `await` , который поддерживается только в node v 7.6.0 или более поздней версии.  Запустите `node -v` из командной строки, чтобы убедиться, что у вас есть совместимая версия Node.js.  
 
 `puppeteer-core` Знакомство с пользователями других платформ тестирования браузера, таких как веб- [дисковод][WebDriverEdgehtmlMain].  Вы создаете экземпляр браузера, открываете страницу, а затем управляете ею с помощью API Puppeteer.  В приведенном ниже примере кода `puppeteer-core` запускается Microsoft Edge \ (Chromium \), осуществляется переход на `https://www.microsoftedgeinsider.com` снимок экрана и сохранение его как `example.png` .  
 
@@ -57,7 +57,25 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-Измените `executablePath` этот элемент, чтобы он указывал на установленный Microsoft Edge \ (Chromium \).  Например, в macOS `executablePath` для Microsoft Edge Канарские должно быть установлено значение `/Applications/Microsoft\ Edge\ Canary.app/` .  Чтобы найти `executablePath` , перейдите к `edge://version` .  В конце необходимо сохранить изменения.  
+Измените `executablePath` этот элемент, чтобы он указывал на установленный Microsoft Edge \ (Chromium \).  Например, в macOS `executablePath` для Microsoft Edge Канарские должно быть установлено значение `/Applications/Microsoft\ Edge\ Canary.app/` .  Чтобы найти `executablePath` `edge://version` путь к **исполняемому** файлу на этой странице, найдите и скопируйте его и установите пакет [Edge-paths][npmEdgePaths] с помощью одной из указанных ниже команд.  
+
+```shell
+npm i edge-paths
+```  
+
+```shell
+yarn add edge-paths
+```  
+ 
+В примере кода ниже используется пакет [Edge-paths][npmEdgePaths] , чтобы программным образом найти путь к установке Microsoft Edge \ (Chromium \) в операционной системе.
+
+```javascript
+const edgePaths = require("edge-paths");
+
+const EDGE_PATH = edgePaths.getEdgePath();
+```
+
+И, наконец, Set `executablePath: EDGE_PATH` in `example.js` .  В конце необходимо сохранить изменения.  
 
 > [!NOTE]
 > Microsoft Edge \ (EdgeHTML \) не работает с другими приложениями `puppeteer-core` .  Чтобы продолжить работу в этом примере, необходимо установить [каналы предварительной оценки Microsoft Edge][MicrosoftedgeinsiderDownload] .  
@@ -70,7 +88,7 @@ node example.js
 
 `puppeteer-core` запускает Microsoft EDGE, переходит `https://www.microsoftedgeinsider.com` и сохраняет снимок экрана 800px x 600px страницы.  Вы можете настроить размер страницы с помощью [Page. setViewport ()][PuppeteerApipagesetviewport].  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="Пример PNG-файла, созданного примером. js":::
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="Файл example.png, созданный example.js":::
    Рисунок 1: `example.png` файл, созданный с помощью `example.js`  
 :::image-end:::  
 
@@ -126,7 +144,9 @@ node example.js
 
 [ChromiumHome]: https://www.chromium.org/Home "Chromium | Проекты Chromium"  
 
-[NodejsMain]: https://nodejs.org "Node. js"  
+[NodejsMain]: https://nodejs.org "Node.js"  
+
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "NPM | Пути к краям"
 
 [PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer и puppeteer-Core | Puppeteer"  

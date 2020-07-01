@@ -2,32 +2,32 @@
 title: Эмуляция видения deficiencies в Microsoft Edge DevTools (жалюзи цвета)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 0b608f5fe67724eee81aeb993577ee9b45cbca09
-ms.sourcegitcommit: d7fdb67df0fe73fa5ae96e5a69a847d07941d0a7
+ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10758121"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843923"
 ---
 # Эмуляция видения deficiencies
 
-В любой стране мира около 8% от мужчин и 0,5% в женщин имеется [концепция цвета][ColorblindawarenessMain] , которая обычно называется "жалюзи цветов".  [Microsoft Edge DevTools][MicrosoftEdgeDevTools] позволяет эмулировать различные известные deficiencies и предоставлять предварительный просмотр продукта для проверки.  
+Чтобы лучше удовлетворить потребности пользователей с помощью [цветовой][ColorblindawarenessMain] платформы \ (ослабление цвета \), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] позволяет имитировать определенную концепцию deficiencies.  Средство **эмуляции deficiencies** имитирует следующие категории.  
 
-| Цветовой недостатк | Сведения |  
+| Некоторая концепция цвета | Сведения |  
 |:--- |:--- |  
-| Размытое видение |  |   
-| Protanopia | Невозможность воспринимать красный индикатор. |  
-| Deuteranopia | Невозможность воспринимать зеленый свет. |  
-| Tritanopia | Невозможность воспринимать любой синий индикатор. |  
-| Achromatopsia | Невозможность воспринимать любой цвет, кроме оттенков серого. |  
+| Размытое видение | У пользователя возникли трудности с детальными сведениями. |   
+| Protanopia | Пользователь не может воспринимать красный свет. |  
+| Deuteranopia | Пользователь не может воспринимать зеленый свет. |  
+| Tritanopia | Пользователь не может воспринимать синий свет. |  
+| Achromatopsia | Пользователь не может воспринимать любой цвет, что сокращает цвет до оттенка серого. |  
 
 ## Переход к средствам отображения  
 
-Чтобы протестировать текущий веб-продукт в цвете deficiencies, откройте [инструменты рендеринга][RenderingTools].  
+Чтобы смоделировать предметный ряд, применяемый для вашего веб-продукта, откройте [инструменты для подготовки к просмотру][RenderingTools].  
 
 1.  Открытие средств рендеринга путем выбора `...` пункта меню на панели инструментов  
 1.  Выбор `More tools`  
@@ -37,37 +37,37 @@ ms.locfileid: "10758121"
        Открытие **средств рендеринга**  
     :::image-end:::  
 
-В нижней половине DevTools откроется меню **рендеринга** .  
+Меню **рендеринга** появится в ящике.  
 
-1.  Прокрутите вниз до `Emulate Vision deficiencies` пункта меню и выберите один из вариантов.  
+1.  Прокрутите вниз до `Emulate vision deficiencies` пункта меню и щелкните раскрывающееся меню, чтобы отобразить параметры.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Меню "эмулятор" deficiencies "инструменты для отрисовки"" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       Меню " **эмулятор" deficiencies** "инструменты для **отрисовки** "  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Меню "симулятор deficiencies видения" в ящике отрисовки" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       Меню " **симулятор deficiencies видения** " в ящике **отрисовки**  
     :::image-end:::  
     
-1.  Выберите один из вариантов  
+1.  Выберите один из вариантов.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Параметры меню "концепция имитации deficiencies"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        Параметры меню " **концепция имитации deficiencies** "  
     :::image-end:::  
     
-1.  Текущая страница отображается в имитации того, как она может выглядеть для пользователя с выбранным недостатком.  
-
+1.  В главном окне будет показана Эмуляция выбранного параметра, примененная к текущей странице.  
+    
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Документация по средствам разработчика Microsoft EDGE в эмуляции размытого видения" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Отображается с помощью эмуляции **размытого видения**  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Вывод на экран с помощью * * имитация размытого видения * *" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Отображение с помощью имитации **размытого видения**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Документация по средствам разработчика Microsoft EDGE в эмуляторе концепции Achromatopsia" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Отображение с помощью эмуляции **концепции Achromatopsia** :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Вывод на экран с помощью функции эмуляции * * Achromatopsia * *" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Отображение с помощью имитации **Achromatopsia** :::image-end:::  
        :::column-end:::
     :::row-end:::
     
 ## Использование меню команд  
 
-Кроме того, вы можете достичь разных эмуляций, не переходя между различными меню с помощью **меню команд**.  
+Вы также можете использовать **командное меню** для доступа к различным эмуляциям.  
 
 1.  `Control` + `Shift` + `P` Чтобы открыть меню команд, нажмите клавиши \ (Windows \) или `Command` + `Shift` + `P` \ ( **Command Menu**macOS \).  
     
@@ -77,12 +77,12 @@ ms.locfileid: "10758121"
     
 1.  Введите текст `emulate` , который вы хотите имитировать, и нажмите `Enter` .  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Различные параметры эмуляции, доступные в меню команд" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       Различные параметры эмуляции, доступные в **меню команд**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Различные варианты моделирования, доступные в меню команд" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       Различные варианты моделирования, доступные в **меню команд**  
     :::image-end:::  
     
 > [!IMPORTANT]
-> Средства эмуляции представляют собой приблизительные сведения о том, как человек с каждым недостатком может видеть ваш продукт.  У каждого человека разный, поэтому концепция deficiencies по серьезности может варьироваться от человека к человеку.  Для более эффективного удовлетворения потребностей пользователей следует избегать цветовых сочетаний, которые могут быть причиной проблем.  Средства эмуляции не полностью изменяют доступность вашего продукта, но у вас должен быть лучший первый шаг к устранению незначительных deficiencies.  
+> Средства **эмуляции deficiencies** помогают понять, как человек с каждым недостатком может видеть ваш продукт.  У каждого человека разный, поэтому концепция deficiencies по серьезности может варьироваться от человека к человеку.  Для более эффективного удовлетворения потребностей пользователей следует избегать цветовых сочетаний, которые могут быть причиной проблем.  Средства **имитации концепции deficiencies** не являются полным анализом специальных возможностей вашего продукта.  Вместо этого инструменты **эмуляции deficiencies** должны дать вам хороший первый шаг, чтобы избежать проблем.  
 
 <!-- links -->  
 
