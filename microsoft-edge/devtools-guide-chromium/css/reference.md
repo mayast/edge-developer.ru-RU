@@ -6,12 +6,12 @@ ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 005d2650a1633d49a8c6c2550c4b2c0c2e3f3be6
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601849"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843972"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -155,7 +155,6 @@ ms.locfileid: "10601849"
 ### Просмотр страницы в режиме печати   
 
 Чтобы просмотреть страницу в режиме печати, выполните указанные ниже действия.  
-
 1.  [Открытие меню команд][DevToolsCommandMenu].  
 1.  Начните вводить текст `Rendering` и выберите его `Show Rendering` .  
 1.  В раскрывающемся списке **Эмуляция мультимедиа в CSS** нажмите кнопку **Печать**.  

@@ -6,12 +6,12 @@ ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: ec8969fbf7b54512f00120ac4a253b952c55768f
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710401"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844021"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -470,8 +470,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 *   **Запрос отправлен**.  Запрос отправляется.  
 *   **Подготовка ServiceWorker**.  Браузер запускает сервисный рабочий процесс.  
 *   **Запросите ServiceWorker**.  Запрос отправляется сотруднику службы.  
-*   **Ожидание \ (TTFB \)**.  Браузер ожидает первый байт ответа.  
-  TTFB означает время для первого байта.  Это время включает 1 круговый путь задержки и время, затраченное сервером на подготовку ответа.  
+*   **Ожидание \ (TTFB \)**.  Браузер ожидает первый байт ответа.  TTFB означает время для первого байта.  Это время включает 1 круговый путь задержки и время, затраченное сервером на подготовку ответа.  
 *   **Загрузка содержимого**.  Браузер получает ответ.  
 *   **Получение push-уведомлений**.  Браузер получает данные для этого ответа через HTTP/2 серверную извещающую передачу.  
 *   **Чтение push-уведомлений**.  Браузер читает локальные данные, полученные ранее.  
