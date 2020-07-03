@@ -456,6 +456,8 @@
           href: extensions/troubleshooting.md
     - name: Размещения
       href: hosting/toc.md
+    - name: Пробные версии
+      href: origin-trials/index.md
     - name: Анализ производительности
       href: performance-analysis.md
     - name: Техническая документация по конфиденциальности
