@@ -75,7 +75,7 @@
         - name: Режим IE
           href: devtools-guide-chromium/ie-mode.md
         - name: Трехмерное представление
-          href: devtools-guide-chromium/3D-view.md
+          href: devtools-guide-chromium/3d-view/index.md
         - name: Средства разработчика для начинающих
           items:
             - name: HTML и DOM
