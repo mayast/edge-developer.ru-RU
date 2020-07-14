@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, эксперименты
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858056"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866045"
 ---
 # Экспериментальные функции  
 
@@ -48,7 +49,7 @@ ms.locfileid: "10858056"
 | [Вкладка "Включение настраиваемых сочетаний клавиш"](#enable-custom-keyboard-shortcuts-settings-tab) | 84 или более поздняя версия |
 | [Включение новых функций отладки CSS Grid](#enable-new-css-grid-debugging-features) | 85 или более поздняя версия |  
 | [Включение поддержки перемещения вкладок между панелями](#enable-support-to-move-tabs-between-panels) | 85 или более поздняя версия |  
-| [Включить подсказку](#enable-webhint) | 85 или более поздняя версия |  
+| [Включить подсказку](#enable-webhint) | 85 или более поздняя версия | 
 
 ### Вкладка "Включение настраиваемых сочетаний клавиш"
 

@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
-  localization_priority: Priority
-  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
-  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
+  ms.date: 07/10/2020
+  ms.localizationpriority: high
+  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
+  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/26/2020
-  ms.locfileid: "10678220"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "10866059"
 highlightedContent:
   items:
   - title: Скачать Microsoft EDGE (официальный стабильный канал)
@@ -76,9 +76,9 @@ productDirectory:
     imageSrc: /media/common/i_extensions.svg
     links:
     - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
-      text: Соответствие шаблонам
+      text: Сопоставление шаблонов
     - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-      text: Размещение и обновление
+      text: Хранение и обновление
 conceptualContent:
   title: Microsoft Edge для разработчиков
   summary: DevTools, расширения и веб-приложения на разных платформах
@@ -93,10 +93,10 @@ conceptualContent:
       text: Новые возможности
     - url: /microsoft-edge/devtools-guide-chromium/open
       itemType: reference
-      text: Открыть DevTools
+      text: Открыть средства разработчика
     - url: /microsoft-edge/devtools-guide-chromium/beginners/html
       itemType: reference
-      text: DevTools для начинающих
+      text: Средства разработчика для начинающих
     - url: /microsoft-edge/devtools-guide-chromium/css/index
       itemType: reference
       text: CSS
@@ -110,10 +110,10 @@ conceptualContent:
     links:
     - url: /microsoft-edge/devtools-guide-chromium/console/index
       itemType: reference
-      text: Console (консоль),
+      text: Консоль
     - url: /microsoft-edge/devtools-guide-chromium/network/index
       itemType: reference
-      text: Сеть
+      text: Network
     - url: /microsoft-edge/devtools-guide-chromium/storage/cookies
       itemType: reference
       text: Хранилище
@@ -142,7 +142,7 @@ conceptualContent:
       text: Темная тема
     - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       itemType: reference
-      text: Рабочие области
+      text: Рабочие пространства
     - url: /microsoft-edge/devtools-guide-chromium/shortcuts
       itemType: reference
       text: Сочетания клавиш
@@ -151,10 +151,10 @@ conceptualContent:
     - text: Специальные возможности
       itemType: reference
       url: /microsoft-edge/accessibility
-    - text: Протокол DevTools (Chromium)
+    - text: Протокол средств разработчика (Chromium)
       itemType: reference
       url: /microsoft-edge/devtools-protocol-chromium
-    - text: Chromium
+    - text: WebDriver (Chromium)
       itemType: reference
       url: /microsoft-edge/webdriver-chromium
     - text: Puppeteer
@@ -163,7 +163,7 @@ conceptualContent:
     - text: Взаимодействие (совместимость сайтов)
       itemType: reference
       url: /microsoft-edge/web-platform/site-impacting-changes
-    - text: Подсказка
+    - text: webhint
       itemType: reference
       url: https://webhint.io/docs/user-guide
     - text: Анализ производительности
@@ -195,7 +195,7 @@ conceptualContent:
       text: Альтернативные способы распространения расширений
     - url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
       itemType: reference
-      text: Собственный обмен сообщениями
+      text: Встроенные сообщения
   - title: 'Расширения: публикация в Microsoft Store'
     links:
     - url: /microsoft-edge/extensions-chromium/publish/publish-extension
@@ -206,10 +206,10 @@ conceptualContent:
       text: Открыть учетную запись разработчика
     - url: /microsoft-edge/extensions-chromium/publish/upload-video
       itemType: reference
-      text: Загрузить видео на YouTube
+      text: Отправка видео YouTube
     - url: /microsoft-edge/extensions-chromium/publish/update
       itemType: reference
-      text: Обновление списка расширений
+      text: Обновление перечня расширений
     - url: /microsoft-edge/extensions-chromium/publish/manage-settings
       itemType: reference
       text: Управление параметрами учетной записи
@@ -217,10 +217,10 @@ conceptualContent:
     links:
     - url: /microsoft-edge/extensions-chromium/store-policies/csp
       itemType: reference
-      text: Политика безопасности контента
+      text: Политика в отношении безопасности содержимого
     - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
       itemType: reference
-      text: Политики разработчика каталога надстроек Microsoft Edge
+      text: Политики в отношении разработчиков каталога надстроек Microsoft Edge
   - title: Прогрессивные веб-приложения
     links:
     - url: /microsoft-edge/progressive-web-apps-chromium/index
@@ -252,14 +252,14 @@ additionalContent:
       - text: Visual Studio Code
         url: /microsoft-edge/visual-studio-code/index
       - url: /microsoft-edge/privacy-whitepaper
-        text: Конфиденциальный документ
+        text: Техническая документация по конфиденциальности
     - title: Документация по старым версиям Microsoft Edge
       links:
       - text: Руководство по разработке (EdgeHTML)
         url: /microsoft-edge/dev-guide
-      - text: DevTools (EdgeHTML)
+      - text: Средства разработчика (EdgeHTML)
         url: /microsoft-edge/devtools-guide
-      - text: Протокол DevTools (EdgeHTML)
+      - text: Протокол средств разработчика (EdgeHTML)
         url: /microsoft-edge/devtools-protocol/index
       - text: Расширения (EdgeHTML)
         url: /microsoft-edge/extensions/index
@@ -267,7 +267,7 @@ additionalContent:
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
       - text: Размещение среды выполнения JavaScript
         url: /microsoft-edge/hosting/javascript-runtime-hosting
-      - text: Руководство для разработчиков WebVR
+      - text: Руководство разработчика WebVR
         url: /microsoft-edge/webvr/index
       - text: Среда выполнения Windows (WinRT)
         url: /microsoft-edge/windows-runtime
