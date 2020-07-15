@@ -3,17 +3,17 @@ description: Варианты распространения при выпуск
 title: Распространение приложения Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения WPF, WPF, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "браузер", HTML Edge
-ms.openlocfilehash: b76ebcd4ebc30e30083e742a5e84075a5c6ef779
-ms.sourcegitcommit: bb62099215e4f610f8561250fa943f58a0f836b0
+ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "10846019"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879179"
 ---
 # Распространение приложений с помощью WebView2  
 
@@ -54,7 +54,7 @@ ms.locfileid: "10846019"
 
 1.  Скачайте последнюю версию [установщика среды выполнения Evergreen WebView2][Webview2Installer].  
 1.  Включите установщик в установщик приложения или в средство обновления.  
-1.  Во время установки или обновления приложения убедитесь, что среда выполнения Evergreen WebView2 уже установлена на компьютере пользователя, используя API [GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) и проверяя, имеет ли versionInfo значение null. Если этот параметр не установлен, установщик приложений может автоматически вызвать установщик среды выполнения из процесса с повышенными привилегиями или командной строки с помощью `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+1.  Во время установки или обновления приложения убедитесь, что среда выполнения Evergreen WebView2 уже установлена на компьютере пользователя, используя API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) и проверяя, имеет ли versionInfo значение null. Если этот параметр не установлен, установщик приложений может автоматически вызвать установщик среды выполнения из процесса с повышенными привилегиями или командной строки с помощью `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 В зависимости от вашего сценария вам может потребоваться изменить описанный выше рабочий процесс.  Например, установщик приложения может загрузить установщик Evergreen WebView2 среды выполнения, вместо включения его в пакет приложения.  
 

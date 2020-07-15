@@ -1,19 +1,19 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
+title: WebView2 Win32 C++ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 9777a27c1b9252d0d1a5f91a4692b9043fffc569
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
+ms.openlocfilehash: 81b2895f652646991102af37e4da7cd99e789e10
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699206"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877519"
 ---
 # интерфейс ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler 
 

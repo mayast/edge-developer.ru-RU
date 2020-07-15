@@ -1,19 +1,19 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
+title: Microsoft. Web. WebView2. Core. CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 7d3c568c62475adb42589100c3fb6ccec6fecd49
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
+ms.openlocfilehash: f8e0ebae683e1e68d12ce541fbec922ec9c05ef4
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751879"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879011"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2 
 

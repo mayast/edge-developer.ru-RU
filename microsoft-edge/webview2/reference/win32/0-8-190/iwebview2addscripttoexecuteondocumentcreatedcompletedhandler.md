@@ -1,21 +1,21 @@
 ---
 description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+title: 0.8.355-WebView2 Win32 C++ IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE
-ms.openlocfilehash: 262add6a545f5bac53021dfe1970df1c73e7d758
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 903574f0372e9d077907b9e9d538007cb71f830f
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655000"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878675"
 ---
-# интерфейс IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler 
+# 0.8.355-Interface IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler 
 
 > [!NOTE]
 > Этот интерфейс может быть изменен или недоступен для выпусков после версии SDK 0.8.355. Ознакомьтесь со [справочной](../../../webview2-api-reference.md) информацией по последней ссылке на API.

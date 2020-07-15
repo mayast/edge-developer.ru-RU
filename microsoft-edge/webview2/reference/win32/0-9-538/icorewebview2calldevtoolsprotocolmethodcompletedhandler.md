@@ -1,19 +1,19 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
+title: WebView2 Win32 C++ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: a675bede2e1e509f3cfcc7490ac157da3f6d876c
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2CallDevToolsProtocolMethodCompletedHandler
+ms.openlocfilehash: c991e9e9520bd696c579fdca379295afe253ba5d
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699204"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877518"
 ---
 # интерфейс ICoreWebView2CallDevToolsProtocolMethodCompletedHandler 
 

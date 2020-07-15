@@ -1,21 +1,21 @@
 ---
 description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+title: 0.8.355-WebView2 Win32 C++ IWebView2WebMessageReceivedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE
-ms.openlocfilehash: 053e186aec3871b47e2eb5c6684bc00c934c3a77
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d70162803cfb2f9d1f0cfbf7e7397ee1cdbeec0e
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654739"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878192"
 ---
-# интерфейс IWebView2WebMessageReceivedEventArgs 
+# 0.8.355-Interface IWebView2WebMessageReceivedEventArgs 
 
 > [!NOTE]
 > Этот интерфейс может быть изменен или недоступен для выпусков после версии SDK 0.8.355. Ознакомьтесь со [справочной](../../../webview2-api-reference.md) информацией по последней ссылке на API.

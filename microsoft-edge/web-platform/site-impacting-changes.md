@@ -1,18 +1,18 @@
 ---
-description: На этой странице представлена сводка изменений высокого воздействия, которые могут повлиять на совместимость сайтов.
+description: Общие сведения об изменениях высокого влияния, которые могут повлиять на совместимость сайтов
 title: 'Совместимость сайта: влияние на изменения, которые поступают в Microsoft Edge'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, совместимость, веб-платформа
-ms.openlocfilehash: 7a443b36c554439c70017aeee52c92f591c566b8
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 0785544d0245827f58f3f7c71edd5a18a3d12404
+ms.sourcegitcommit: d982699ee25e8704fcaad7a15b4d8d015aef2f12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866052"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868767"
 ---
 # Совместимость сайта: влияние на изменения, которые поступают в Microsoft Edge  
 
@@ -22,11 +22,11 @@ ms.locfileid: "10866052"
 |:--- |:--- |:--- |:--- |
 | Файлы cookie по умолчанию для `SameSite=Lax` | [Chrome или Chrome + 1](#release-comments)  | Канарские V82, dev V82 | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Чтобы получить дополнительные сведения, в том числе запланированную временную шкалу в Google для этого изменения, проверьте [запись состояния платформы Chrome][ChromePlatformStatus5088147346030592].  |  
 | Политика для ссылки на источник: по умолчанию `strict-origin-when-cross-origin` | [Chrome или Chrome + 1](#release-comments)  | Канарские V79, dev V79 | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Чтобы получить дополнительные сведения, в том числе запланированную временную шкалу в Google для этого изменения, проверьте [запись состояния платформы Chrome][ChromePlatformStatus6251880185331712].  |  
-| Запрет синхронного объекта XmlHttpRequest при закрытии страницы | [Хром + 1](#release-comments) \ (Edge v83 \) |  | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Соответствующий хром Microsoft Edge предложит групповую политику, чтобы отключить это изменение до пограничного 88.  Чтобы получить дополнительные сведения, в том числе запланированную временную шкалу в Google для этого изменения, проверьте [запись состояния платформы Chrome][ChromePlatformStatus4664843055398912].  |  
-| Вывод неявных запросов на запросы разрешений на уведомления |  | Канарские v83, dev v83 | Теперь пользователи могут отказаться от отправки запросов на уведомление в автоматическом режиме `edge://settings/content/notifications` .  Если этот параметр включен, в адресной строке Microsoft Edge отображается неявный значок запроса для сайтов, которые запрашивают у пользователей будущие уведомления с `Notifications` помощью `Push` интерфейса или API.  Этот неявный значок заменяет запрос на разрешение всплывающего элемента.  Эксперименты в Канарские и dev приводят к этому поведению по умолчанию для некоторых пользователей на всех сайтах, которые запрашивают разрешения на уведомления.  Пользователи могут отказаться от него `edge://settings/content/notifications` .  В будущем группа Microsoft Edge может проанализировать Отображение всплывающего окна в конкретных ситуациях на основе вариантов поведения пользователей и другого ввода.  |  
+| Запрет синхронного объекта XmlHttpRequest при закрытии страницы | [Хром + 1](#release-comments) \ (Edge v83 \) |  | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Соответствующий хром Microsoft Edge предложит групповую политику, чтобы отключить это изменение до пограничного V88.  Чтобы получить дополнительные сведения, в том числе запланированную временную шкалу в Google для этого изменения, проверьте [запись состояния платформы Chrome][ChromePlatformStatus4664843055398912].  |  
+| Вывод неявных запросов на запросы разрешений на уведомления | Пограничный v84 |  | В ответ на запрос уведомлений в тихом окне отображается слабый значок запроса для разрешений на уведомления о сайтах, запрашиваемых с помощью интерфейса `Notifications` или `Push` API, заменяя полный или стандартный пользовательский интерфейс подсказки для всплывающих подсказок.  В настоящее время эта функция включена для всех пользователей.  Чтобы отказаться от запросов на уведомления в тихом режиме, перейдите на `edge://settings/content/notifications` .  В будущем группа Microsoft Edge может проанализировать повторное включение полного всплывающего уведомления в некоторых сценариях.  |  
 | Отключение TLS/1.0 и TLS/1.1 по умолчанию | Пограничный v84 |  | Для выяснения воздействия на веб-сайты вы можете установить `edge://flags/#display-legacy-tls-warnings` флажок, чтобы при загрузке страниц, требующих устаревших протоколов TLS, выводилось сообщение о небезопасном использовании Microsoft Edge.  Групповая политика [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] разрешает повторное включение TLS/1.0 и TLS/1.1; После появления 88 эта политика останется доступной.  |  
 | Блокировка загрузки смешанного содержимого | [Хром + 1](#release-comments) \ (Edge V86 \)  |  | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Чтобы получить дополнительные сведения, в том числе запланированную временную шкалу в Google для этого изменения, ознакомьтесь с [записью блога безопасности Google][GoogleBlogSecurity20200206].  Расписание выпуска Microsoft для типов файлов, которые нужно предупреждать или блокировать, планируется для одного выхода после Chrome.  |  
-| Устаревшие AppCache | [Хром + 1](#release-comments) \ (Edge V86 \)  |  | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Дополнительную информацию можно узнать в [документации по WebDev][WebDevAppCacheRemoval].  Расписание выпуска Microsoft для устаревшей планируется для одного выпуска после Chrome.  Запрос [маркера AppCache OriginTrial][AppCacheOriginTrial] позволяет сайтам продолжать использовать устаревший API, пока не появится Edge V90. |  
+| Устаревшие AppCache | [Хром + 1](#release-comments) \ (Edge V86 \)  |  | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Дополнительную информацию можно узнать в [документации по WebDev][WebDevAppCacheRemoval].  Расписание выпуска Microsoft для устаревшей планируется для одного выпуска после Chrome.  Запрос [маркера AppCache OriginTrial][AppCacheOriginTrial] позволяет сайтам продолжать использовать устаревший API, пока не появится Edge V90.  |  
 | Удаление Adobe Flash | Пограничный V88  |  | Это изменение происходит в проекте Chromium, на котором основывается Microsoft Edge.  Для получения дополнительной информации ознакомьтесь с [РазChromiumной схемой Adobe Flash][ChromiumFlashRoadmapSupportRemoved].  | 
 ##### Примечания о выпуске  
 
@@ -47,16 +47,13 @@ ms.locfileid: "10866052"
    :::column-end:::
 :::row-end:::
 
-
-<!-- image links -->  
-
 <!-- links -->  
 
-[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin-Microsoft Edge-стратегии"  
+[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin-Microsoft Edge-Policies | Документы Microsoft"  
 
-[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Отключить синхронизацию XHR в закрытии страницы JavaScript-состояние платформы Chrome"  
-[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookie-файлы по умолчанию для SameSite = слабая платформа по состоянию хрома"  
-[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Политика "источник ссылки": по умолчанию для состояния платформы с определенными источниками, по состоянию на основе цветового хрома"  
+[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Отключить синхронизацию XHR при закрытии страницы JavaScript | Состояние платформы Chrome"  
+[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Файлы cookie по умолчанию SameSite = слабый | Состояние платформы Chrome"  
+[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Политика "источник ссылки": по умолчанию используется строгое происхождение Состояние платформы Chrome"  
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Поддержка флэш-памяти, удаленная из Chromium (targets: Chrome 88 +-Янв 2021)-Flash-схема | Проекты Chromium"  
 
