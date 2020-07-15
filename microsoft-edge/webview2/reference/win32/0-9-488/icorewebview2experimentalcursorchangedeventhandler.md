@@ -1,21 +1,21 @@
 ---
 description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+title: 0.9.515-WebView2 Win32 C++ ICoreWebView2ExperimentalCursorChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 9c8cd627275a98382f079bc4f64dd7f565d46630
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 6fbcc82409791bc3d2da3bb2f7985732cb344a97
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655001"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880628"
 ---
-# интерфейс ICoreWebView2ExperimentalCursorChangedEventHandler 
+# 0.9.515-Interface ICoreWebView2ExperimentalCursorChangedEventHandler 
 
 > [!NOTE]
 > Это экспериментальный API-интерфейс, поставляемый с предварительной версией SDK версии 0.9.488.

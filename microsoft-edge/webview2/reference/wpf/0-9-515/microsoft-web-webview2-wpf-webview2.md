@@ -1,24 +1,24 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
+title: Microsoft. Web. WebView2. WPF. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: a0030e1a2a77d65963bd8333f2071485ab2fe308
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2. WPF. WebView2
+ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687799"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880264"
 ---
 # Класс Microsoft. Web. WebView2. WPF. WebView2 
 
 Пространство имен: Microsoft. Web. WebView2. WPF \
-Сборка: Microsoft. Web. WebView2. WPF. dll
+Сборка: Microsoft.Web.WebView2.Wpf.dll
 
 ```
 class Microsoft.Web.WebView2.Wpf.WebView2
@@ -194,7 +194,7 @@ class Microsoft.Web.WebView2.Wpf.WebView2
 
 > общедоступная асинхронная задача< String > [ExecuteScriptAsync](#executescriptasync)(String JavaScript)
 
-Эквивалентно вызову CoreWebView2. ExecuteScriptAsync на CoreWebView2
+Эквивалентно вызову CoreWebView2.ExecuteScriptAsync на CoreWebView2
 
 ##### Исключения
 * `InvalidOperationException` Вызывается, если CoreWebView2 еще не инициализирован.

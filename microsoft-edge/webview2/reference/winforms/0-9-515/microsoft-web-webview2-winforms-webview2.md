@@ -1,24 +1,24 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
+title: Microsoft. Web. WebView2. WinForms. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
+ms.openlocfilehash: 7d707c2a6ecb8127074735f06ba6d4f1f28eea0c
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687806"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879452"
 ---
 # Класс Microsoft. Web. WebView2. WinForms. WebView2 
 
 Пространство имен: Microsoft. Web. WebView2. WinForms \
-Assembly: Microsoft. Web. WebView2. WinForms. dll
+Сборка: Microsoft.Web.WebView2.WinForms.dll
 
 ```
 class Microsoft.Web.WebView2.WinForms.WebView2
@@ -164,7 +164,7 @@ WebMessageReceived отправляет сообщение на узел при�
 
 > общедоступная асинхронная задача< String > [ExecuteScriptAsync](#executescriptasync)(строковый сценарий)
 
-Это эквивалентно методу ExecuteScriptAsync в CoreWebView2. Если базовый CoreWebView2 еще не инициализирован, этот метод создает исключение InvalidOperationException. Более подробную информацию вы увидите в документации CoreWebView2. ExecuteScriptAsync.
+Это эквивалентно методу ExecuteScriptAsync в CoreWebView2. Если базовый CoreWebView2 еще не инициализирован, этот метод создает исключение InvalidOperationException. Более подробную информацию вы видите в CoreWebView2.Exeдокументации cuteScriptAsync.
 
 #### GoBack 
 

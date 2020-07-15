@@ -1,21 +1,21 @@
 ---
 description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView 2
-title: Microsoft Edge WebView 2 для приложений Win32
+title: Справочник по языку 0.9.515-WebView2 Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 8c0511dc0e7327ebc2f6ee3bac34f62716dff472
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: a4c354920022f344af44e887ec0a08b6ab892ab7
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697884"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879956"
 ---
-# 0.9.515-Reference (WebView2)  
+# 0.9.515 — справочные материалы (WebView2)  
 
 > [!NOTE]
 > Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../webview2-api-reference.md) для получения последней ссылки на API.

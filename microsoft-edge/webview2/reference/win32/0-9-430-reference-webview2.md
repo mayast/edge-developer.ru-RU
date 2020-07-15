@@ -1,30 +1,30 @@
 ---
 description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView 2
-title: Microsoft Edge WebView 2 для приложений Win32
+title: Справочник по языку 0.9.430-WebView2 Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 8baa7b1f571d62fad21a30441f47835bff3da96a
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a0095660af031cafa09e5223650d174f525ba3df
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654918"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880243"
 ---
-# 0.9.430-Reference (WebView2)  
+# 0.9.430 - Справочные материалы (WebView2)  
 
 > [!NOTE]
 > Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.430. Ознакомьтесь со [справочной](../../webview2-api-reference.md) информацией по последней ссылке на API.
 
 Элемент управления Microsoft Edge WebView2 позволяет размещать веб-содержимое в приложении с помощью [Microsoft Edge \ (Chromium \)](https://www.microsoftedgeinsider.com) в качестве обработчика визуализации.  Дополнительные сведения можно найти в [статье Обзор Microsoft Edge WebView2](../../index.md)) и [Приступая к работе с WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-430/ICoreWebView2.md) — это удобное место для изучения данных API.  
 
-## Глобальные  
+## Глобальные настройки  
 
-*   [Глобальные](0-9-430/webview2-idl.md)  
+*   [Глобальные настройки](0-9-430/webview2-idl.md)  
 
 ## Приклад  
 *   [ICoreWebView2](0-9-430/ICoreWebView2.md)

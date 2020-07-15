@@ -1,19 +1,19 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft Edge WebView2 для приложений Win32
+description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
+title: WebView2 Win32 C++ ICoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2NewWindowRequestedEventArgs
+ms.openlocfilehash: bb18b6662fd5921406e19b3c333c97f8a1cd0dbc
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751851"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879438"
 ---
 # интерфейс ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,7 +52,7 @@ IsUserInitiated имеет значение true, когда новый запр
 
 > общедоступные значения HRESULT [get_IsUserInitiated](#get_isuserinitiated)(bool * IsUserInitiated)
 
-Элементы управления WebView2 могут отображать всплывающие окна, так как блокирование всплывающих окон отключено. Чтобы заблокировать отображение всплывающих окон, не инициированных пользователем, используйте `get_IsUserInitiated` .
+Заблокированный блочный блок "Edge" отключен для WebView, поэтому приложение может использовать этот флаг, чтобы заблокировать всплывающие окна, не инициированные пользователем.
 
 #### get_NewWindow 
 
@@ -89,3 +89,4 @@ IsUserInitiated имеет значение true, когда новый запр
 > общедоступные значения HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * NewWindow)
 
 Не следует перемещаться по целевому WebView. Если задано значение NewWindow, окно верхнего уровня будет возвращено в виде открытой WindowProxy.
+
