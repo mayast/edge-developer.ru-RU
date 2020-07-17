@@ -1,20 +1,21 @@
 ---
 description: Ссылка на домен страницы. Действия и события, связанные с проверенной страницей, относятся к домену страницы.
-title: Домен страницы — Протокол DevTools версии 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Домен страницы — Протокол DevTools версии 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: a1cd094baef4571240881a86ecccfdb319fef61b
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1602673eae1c04f60046a898dbadeab1b59f9ce5
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571692"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882942"
 ---
-# Page
+# Домен страницы — Протокол DevTools версии 0,1 (EdgeHTML)  
+
 Действия и события, связанные с проверенной страницей, относятся к домену страницы.
 
 | | |

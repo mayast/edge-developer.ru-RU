@@ -1,17 +1,17 @@
 ---
-title: DevTools для начинающих
+title: 'DevTools для начинающих: Приступая к работе с HTML и моделью DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 8695fe1b2c5d78bd074447acd26a1f01a5833b2d
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581589"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882732"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -180,7 +180,7 @@ ms.locfileid: "10581589"
     
     > ##### Рисунок12  
     > Текст загадкы `A new element!?!` не удается найти в `index.html`  
-    > ![Текст "Загадка" — новый элемент!?! не удается найти в index. HTML][ImageHtmlDom2]  
+    > ![Текст "Загадка" — новый элемент!?! не удается найти в index.html][ImageHtmlDom2]  
     
 1.  Вернитесь на **вкладку динамический**, щелкните правой кнопкой мыши `A new element!?!` и выберите команду **проверить**.  
     
@@ -318,7 +318,7 @@ ms.locfileid: "10581589"
     
     > ##### Рисунок 24  
     > Как `index.html` должен выглядеть файл  
-    > ![Как должен выглядеть файл index. HTML][ImageHtmlCopy2]  
+    > ![Как должен выглядеть файл index.html][ImageHtmlCopy2]  
     
 ## Дальнейшие действия   
 
@@ -339,7 +339,7 @@ ms.locfileid: "10581589"
 [ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "На рисунке 9: на вкладке "редактор" выделена кнопка "создать код"."  
 [ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Рисунок 10: новый список отображается на вкладке "живые""  
 [ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "На рисунке 11: в нижней части страницы текст — это новый элемент!?! может отображаться"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Рисунок 12: текст "Загадка" — новый элемент!?! не удается найти в index. HTML"  
+[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Рисунок 12: текст "Загадка" — новый элемент!?! не удается найти в index.html"  
 [ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Рисунок 13: проверка текста"  
 [ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Рисунок 14: DevTools открывается вместе со страницей"  
 [ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Рисунок 15: Редактирование узла в формате HTML"  
@@ -351,7 +351,7 @@ ms.locfileid: "10581589"
 [ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Рисунок 21: Выбор узла для удаления"  
 [ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Рис. 22: узел удален"  
 [ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Рис. 23: изменения, внесенные вами, исчезли"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Рисунок 24: внешний вид файла index. HTML"  
+[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Рисунок 24: способ просмотра файла index.html"  
 
 <!--- links --->  
 
@@ -361,7 +361,7 @@ ms.locfileid: "10581589"
 
 [CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Общие сведения о веб-разработке | Coursera"  
 
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index. HTML-alluring-удар | Цепь"  
+[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html-alluring-удар | Цепь"  
 
 [MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Начало работы с HTML | MDN"  
 [MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Общие сведения об DOM | MDN"  

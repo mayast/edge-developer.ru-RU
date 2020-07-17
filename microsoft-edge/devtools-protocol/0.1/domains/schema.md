@@ -1,20 +1,21 @@
 ---
 description: Ссылка на домен схемы. Предоставляет сведения о схеме протоколов.
-title: Schema Domain-DevTools Protocol версии 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Domain Schema-DevTools Protocol версии 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 83d7019d18ccce1c81b67aafdcafe1a8566694ea
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a2f679f6f4bf8e82dc7298d96f798507b1338062
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571686"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882928"
 ---
-# Схема
+# Domain Schema-DevTools Protocol версии 0,1 (EdgeHTML)  
+
 Предоставляет сведения о схеме протоколов.
 
 | | |

@@ -1,20 +1,20 @@
 ---
 description: Протокол Microsoft Edge DevTools, версия 0,1, поддерживает указанные ниже клиентские средства.
-title: Клиенты DevTools протокола версии 0,1
+title: Клиенты DevTools версии 0,1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: a537102bab7b5d914fd721aeca8bed57817e9216
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 5fdf375634bb63c944b3fe09d1c0cbd5a935dcd7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571705"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882767"
 ---
-# Клиенты протоколов DevTools
+# Клиенты DevTools версии 0,1 (EdgeHTML)  
 
 > [!NOTE]
 > Протокол Microsoft Edge DevTools работает только на [Windows 10 2018 апрельского обновления](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) и более поздних сборок для предварительной [оценки Windows](https://insider.windows.com/en-us/getting-started/) .
@@ -23,7 +23,7 @@ ms.locfileid: "10571705"
 
 [ ![ Microsoft Edge DevTools предварительной версии](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [ ![ Microsoft Visual Studio 15,7 Preview 2](../media/visual-studio-2017.png)](#microsoft-visual-studio-preview)
 
-## Предварительная версия DevTools Microsoft Edge
+## Предварительный просмотр средств разработчика в Microsoft Edge
 
 Вы можете использовать автономное приложение [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) из Microsoft Store для удаленной отладки основного устройства под управлением Microsoft EDGE ([EdgeHTML 17](../../dev-guide.md) или более поздней версии).
 
@@ -39,9 +39,9 @@ ms.locfileid: "10571705"
 
 2. Откройте панель управления " **для разработчиков** " в разделе " *Параметры* Windows" (Найдите для *разработчика* и щелкните " *Использование функций разработчика*"), а также: 
 
-    А. Включить или выключить **режим разработчика**. При этом будет установлен пакет *режима разработчика* , позволяющий удаленное средство для рабочего стола.
+    а. Включить или выключить **режим разработчика**. При этом будет установлен пакет *режима разработчика* , позволяющий удаленное средство для рабочего стола.
 
-    Б. Включите [**портал устройств**](/windows/uwp/debug-test-perf/device-portal) (*включите удаленную диагностику через локальную сеть*) и **обнаружение устройств** (*Сделайте устройство видимым для USB-подключений и локальной сети*).
+    б. Включите [**портал устройств**](/windows/uwp/debug-test-perf/device-portal) (*включите удаленную диагностику через локальную сеть*) и **обнаружение устройств** (*Сделайте устройство видимым для USB-подключений и локальной сети*).
 
     в. Включите **проверку подлинности** и введите имя пользователя и пароль.
 

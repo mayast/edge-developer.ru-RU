@@ -1,28 +1,29 @@
 ---
 description: Ссылка на домен отладчика. Домен отладчика предоставляет возможности отладки JavaScript. Он позволяет устанавливать и удалять точки останова, пошаговое выполнение, изменяя трассировку стека и т. д.
-title: Debugger Domain-DevTools Protocol версии 0,2
-author: pelavall
-ms.author: pelavall
-ms.date: 03/05/2020
+title: Debugger Domain-DevTools Protocol версии 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: de967b0e067bf43ea07f8975eac7ee7c5a4dfd83
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3dae7e569db31cf2cff3cbb6d2a83cbead7ba22c
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571678"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882690"
 ---
-# Отладчика
+# Debugger Domain-DevTools Protocol версии 0,2 (EdgeHTML)  
+
 Домен отладчика предоставляет возможности отладки JavaScript. Он позволяет устанавливать и удалять точки останова, пошаговое выполнение, изменяя трассировку стека и т. д.
 
 | | |
 |-|-|
 | [**Методы**](#methods) | [включить](#enable), [Отключить](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [steping](#stepout), [Pause](#pause), [Resume](#resume), [getScriptSource, setPauseOnExceptions](#getscriptsource) [, evaluateOnCallFrame](#setpauseonexceptions), [setVariableValue](#setvariablevalue) [setVariableValue](#evaluateoncallframe) [setBlackboxPatterns](#setblackboxpatterns) [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**События**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [приостановлено](#paused), [возобновлено](#resumed) |
+| [**Мероприятия**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [приостановлено](#paused), [возобновлено](#resumed) |
 | [**Типы**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [область](#scope) |
-| [**Зависимости**](#dependencies) | [Язык](runtime.md) |
+| [**Зависимости**](#dependencies) | [Время выполнения](runtime.md) |
 ## Методы
 
 ### "Включить"
@@ -472,7 +473,7 @@ ms.locfileid: "10571678"
 
 ---
 
-## События
+## Мероприятия
 
 ### scriptParsed
 Возникает при синтаксическом анализе сценария. Это событие также срабатывает для всех известных и несобранных сценариев при включенном отладчике.
@@ -658,7 +659,7 @@ ms.locfileid: "10571678"
 
 ---
 
-### <a name="location"></a> Местоположение `object`
+### <a name="location"></a> Расположение `object`
 
 Расположение в исходном коде.
 
@@ -846,4 +847,4 @@ ms.locfileid: "10571678"
 
 ## Зависимости
 
-[Язык](runtime.md)
+[Время выполнения](runtime.md)

@@ -1,17 +1,17 @@
 ---
-title: DevTools для начинающих
+title: 'DevTools для начинающих: Приступая к работе с CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 0064f0427b6bd5689e888cccfe2c650492898bb2
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: fba049a20a7b5f981130b4d9e60c37b07dc7e092
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581596"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882739"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -390,7 +390,7 @@ li a {
     
     > ##### Рис. 26  
     > `contact.html`  
-    > ![Contact. HTML][ImageCssExternal02]  
+    > ![contact.html][ImageCssExternal02]  
     
 1.  Удалить все между `<style>` и `</style>` , включая `<style>` и `</style>` .  
     
@@ -458,7 +458,7 @@ li a {
     
     > ##### Рисунок 33  
     > Связывание `style.css` в `contact.html`  
-    > ![Связывание с Style. CSS в Contact. HTML][ImageCssExternal09]  
+    > ![Связывание со стилем Style. CSS в contact.html][ImageCssExternal09]  
 
 1.  Перейдите на **вкладку динамический**.  Домашняя страница теперь имеет тот же шрифт, что и в последнем разделе, и в синем разделе навигации.  
     
@@ -486,13 +486,13 @@ li a {
     
     > ##### Рисунок 36  
     > Связывание с платформой в `contact.html`  
-    > ![Связывание с платформой в Contact. HTML][ImageCssFramework1]  
+    > ![Связывание с платформой в contact.html][ImageCssFramework1]  
     
 1.  Также вставьте код в `index.html` .  
     
     > ##### Рисунок 37  
     > Связывание с платформой в `index.html`  
-    > ![Связывание с платформой в index. HTML][ImageCssFramework2]  
+    > ![Связывание с платформой в index.html][ImageCssFramework2]  
     
 1.  Вернитесь на вкладку динамический, чтобы просмотреть изменения.  Несмотря на то, что цвет фона `<nav>` и шрифт элементов совпадают `li a` , изменился шрифт других элементов.  
     
@@ -514,13 +514,13 @@ li a {
     
     > ##### Рисунок 39  
     > Добавление классов в `index.html`  
-    > ![Добавление классов в index. HTML][ImageCssJumbotron1]  
+    > ![Добавление классов в index.html][ImageCssJumbotron1]  
     
 1.  Добавьте код в `<header>` тег `contact.html` .  
     
     > ##### Рисунок 40  
     > Добавление классов в `contact.html`  
-    > ![Добавление классов в Contact. HTML][ImageCssJumbotron2]  
+    > ![Добавление классов в contact.html][ImageCssJumbotron2]  
     
 1.  Просмотрите изменения на вкладке "живые".  На вашем заголовке есть большое затененное поле.  
     
@@ -611,7 +611,7 @@ li a {
 [ImageCssSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup2.msft.png "Рисунок 4: меню "Параметры проекта""  
 [ImageCssSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup3.msft.png "Рисунок 5. Вкладка "динамический""  
 [ImageCssStyled]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-red_paragraph.msft.png "Рисунок 6: этот стиль помечен с помощью CSS"  
-[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "Рисунок 7: index. HTML"  
+[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "Рисунок 7: index.html"  
 [ImageCssInline2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline2.msft.png "Рисунок 8: цвет фона, на котором находятся ссылки на домашнюю и контактный, теперь синего цвета"  
 [ImageCssInternal1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal1.msft.png "Рисунок 9: страница "контакт""  
 [ImageCssInternal2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal2.msft.png "Рисунок 10: изменен шрифт ссылок на домашнюю и контактный"  
@@ -630,21 +630,21 @@ li a {
 [ImageCssRule4]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule4.msft.png "Рисунок 23: ввод зеленого"  
 [ImageCssRule5]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule5.msft.png "Рис. 24: наведение указателя мыши на домашнюю ссылку для отображения зеленого фона"  
 [ImageCssExternal01]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external1.msft.png "Рис. 25: после перезагрузки страницы изменения, внесенные в DevTools, исчезают"  
-[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "Рисунок 26: Contact. HTML"  
+[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "Рисунок 26: contact.html"  
 [ImageCssExternal03]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external3.msft.png "Рисунок 27: тег Style был удален"  
 [ImageCssExternal04]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external4.msft.png "Рис. 28: встроенный стиль удален из элемента навигации."  
 [ImageCssExternal05]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external5.msft.png "Рис. 29: диалоговое окно "Создание файла""  
 [ImageCssExternal06]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external6.msft.png "Рисунок 30: ввод Style. CSS"  
 [ImageCssExternal07]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external7.msft.png "Рисунок 31: Добавление кода в Style. CSS"  
 [ImageCssExternal08]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external8.msft.png "Рисунок 32: связывание со стилем Style. CSS"  
-[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "Рисунок 33: связывание со стилем Style. CSS в Contact. HTML"  
+[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "Рисунок 33: связывание со стилем Style. CSS в contact.html"  
 [ImageCssExternal10]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external10.msft.png "Рисунок 34: Главная страница"  
 [ImageCssExternal11]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external11.msft.png "Рисунок 35: страница контакта"  
-[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "Рисунок 36: связывание с платформой в Contact. HTML"  
-[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "Рисунок 37: связывание с платформой в index. HTML"  
+[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "Рисунок 36: связывание с платформой в contact.html"  
+[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "Рисунок 37: связывание с платформой в index.html"  
 [ImageCssFramework3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework3.msft.png "Рисунок 38: некоторые шрифты на домашней странице изменились из-за платформы"  
-[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "Рисунок 39: Добавление классов в index. HTML"  
-[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "Рисунок 40: Добавление классов в Contact. HTML"  
+[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "Рисунок 39: Добавление классов в index.html"  
+[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "Рисунок 40: Добавление классов в contact.html"  
 [ImageCssJumbotron3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron3.msft.png "Рисунок 41: теперь верхний колонтитул имеет большой серый прямоугольник вокруг него."  
 [ImageCssAlign1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align1.msft.png "Рисунок 42: Добавление класса Container-жидкостный"  
 [ImageCssAlign2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align2.msft.png "Рисунок 43: Добавление строки"  
@@ -658,7 +658,7 @@ li a {
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Предварительная оценка Microsoft Edge"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index. HTML-готовил-amphibian | Цепь"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-готовил-amphibian | Цепь"  
 
 [MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "Первые шаги CSS | MDN"  
 

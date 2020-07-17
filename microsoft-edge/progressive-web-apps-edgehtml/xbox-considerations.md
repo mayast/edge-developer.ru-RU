@@ -1,20 +1,20 @@
 ---
 description: Убедитесь, что в веб-интерфейсе PWA есть удобное средство для Xbox
-title: Адаптация PWA для Windows
+title: Прогрессивные веб-приложения для Xbox One
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: прогрессивные веб-приложения, PWA, EDGE, Windows, UWP, Xbox, Xbox One, TVJS
-ms.openlocfilehash: 8c2660c8821826660d2030f832ae449ff4a061ad
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dfa2b2d252bb788c0010017de57ab147d407c5f7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572831"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882855"
 ---
-# Прогрессивные веб-приложения для Xbox One
+# Прогрессивные веб-приложения для Xbox One  
 
 Вы можете распространить веб-приложение и сделать его доступным в качестве приложения Xbox One через Microsoft Store, не прерывая использование существующих платформ, сети CDN и сервера.  И, как и все приложения универсальной платформы Windows (UWP), прогрессивные веб-приложения (PWAs), запущенные на Xbox One, могут также вызывать встроенные API для Windows 10.  У Xbox One уже есть несколько PWAs, особенно в категории [приложений для воспроизведения мультимедиа](#media-pwas-on-xbox).  
 
@@ -28,10 +28,10 @@ ms.locfileid: "10572831"
 
 ### Вариант 1: конструктор PWA
 
-[Конструктор PWA](https://www.pwabuilder.com/) — это приложение Node. js, которое можно установить из диспетчера пакетов узла (NPM). В нем используются метаданные вашего веб-сайта для создания собственных размещенных приложений на устройствах с Android, iOS и Windows. Если на вашем сайте уже есть [Манифест веб-приложения](https://developer.mozilla.org/docs/Web/Manifest), он будет использоваться построителем PWA для создания пакетов установки для конкретных платформ. В противном случае конструктор PWA создаст базовый файл *manifest. JSON* , основываясь на характеристиках сайта.
+[Конструктор PWA](https://www.pwabuilder.com/) — это приложение для Node.js, которое можно установить из диспетчера пакетов узла (NPM). В нем используются метаданные вашего веб-сайта для создания собственных размещенных приложений на устройствах с Android, iOS и Windows. Если на вашем сайте уже есть [Манифест веб-приложения](https://developer.mozilla.org/docs/Web/Manifest), он будет использоваться построителем PWA для создания пакетов установки для конкретных платформ. В противном случае конструктор PWA создаст базовое *manifest.jsдля* файла на основе характеристик вашего сайта.
 
 #### Требования
- - [Node. js](https://nodejs.org/en/), который включает NPM.
+ - [Node.js](https://nodejs.org/en/), который включает NPM.
 
 #### Настройка
 
@@ -154,7 +154,7 @@ navigator.gamepadInputEmulation = "keyboard";
 
 
 ## См. также
-[Видео с Южной узором](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): образец видеоприложения для Xbox, созданного с помощью реагируют на JS и размещенных на веб-сервере.
+[Видео с Южной](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video)настройкой: образец видеоприложения для Xbox, созданного с помощью React.js и размещенного на веб-сервере.
 
 [Проектирование для Xbox и телевизора](/windows/uwp/design/devices/designing-for-tv): Разработайте приложение универсальной платформы Windows (UWP), чтобы оно хорошо выглядело на экране Xbox One и телевизоры.
 

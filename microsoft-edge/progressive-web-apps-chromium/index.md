@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: прогрессивные веб-приложения, PWA, EDGE, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 482f498e246ee265424f7b80ff3cd67f78501ee2
-ms.sourcegitcommit: 9169d784485e3cb0b1987a8f395c4bb688bd9b2e
+ms.openlocfilehash: 90740bac07ebfd74f89e2524e6955621e1b09b05
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "10583037"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882809"
 ---
 # Прогрессивные веб-приложения для Windows  
 
@@ -86,33 +86,31 @@ ms.locfileid: "10583037"
 > [!IMPORTANT]
 > Чтобы настроить PWAs специально для Windows 10, которые делают запросы API WinRT с помощью JavaScript, ознакомьтесь с [документацией, относящейся к функциям EDGEHTML PWA][PwaEdgehtmlIndex].  Узнайте больше о том, как тестировать PWA в Windows 10 и распространять его в Microsoft Store.  
 
+> [!NOTE]
+> В [сеансе сборки 2020 PWA][BuildVideo] вы можете найти общие сведения о преимуществах PWA, предстоящих функциях и кратких видеодемонстрациях. 
+
 ## Требования  
 
 Для работы в качестве PWA веб-приложение, размещенное на сервере, должно включать следующие минимальные требования.  
 
-|  | Требование | Сведения | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | Защитите своих пользователей, обеспечив надежную связь с сервером или приложением.  Сотрудники служб и другие технологии PWA работают только с веб-ресурсами, обслуживаемыми в безопасном соединении (или в `localhost` целях отладки).  |  
-| X | [Обслуживание сотрудников][MDNServiceWorkerApi] | Используйте рабочие потоки служб, чтобы выступать в качестве сетевых прокси между сервером и клиентским приложением, чтобы обеспечить поддержку в автономном режиме, кэшировании ресурсов, push-уведомлениях, фоновой синхронизации данных и оптимизации производительности загрузки страниц.  |  
-| X | [Манифест веб-приложения][MDNWebAppManifest] | Предоставьте файл метаданных на основе JSON, описывающий ключевые сведения о вашем веб-приложении, (например, значки, язык и точку входа URL \), поэтому Windows 10 и другие платформы узла смогут предоставлять пользователям PWA доступ к устанавливаемому исходному приложению.  |  
+| Требование | Сведения | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | Защитите своих пользователей, обеспечив надежную связь с сервером или приложением.  Сотрудники служб и другие технологии PWA работают только с веб-ресурсами, обслуживаемыми в безопасном соединении (или в `localhost` целях отладки).  |  
+| [Служебные сценарии][MDNServiceWorkerApi] | Используйте рабочие потоки служб, чтобы выступать в качестве сетевых прокси между сервером и клиентским приложением, чтобы обеспечить поддержку в автономном режиме, кэшировании ресурсов, push-уведомлениях, фоновой синхронизации данных и оптимизации производительности загрузки страниц.  |  
+| [Манифест веб-приложения][MDNWebAppManifest] | Предоставьте файл метаданных на основе JSON, описывающий ключевые сведения о вашем веб-приложении, (например, значки, язык и точку входа URL \), поэтому Windows 10 и другие платформы узла смогут предоставлять пользователям PWA доступ к устанавливаемому исходному приложению.  |  
 
 Для того чтобы стать прекрасным PWA, ваше приложение должно также отвечать указанным ниже требованиям.  
 
-|  | Требование | Сведения | 
-|:--- |:--- |:--- |  
-| X | [Совместимость с различными браузерами][MDNCrossBrowserTesting] | Убедитесь, что веб-приложение PWA [работает в разных][MicrosoftDeveloperEdgeToolsRemote] браузерах и средах.  |  
-| X | [Адаптивный дизайн][WikiResponsiveWebDesign] | Использование жидкостных макетов и гибких изображений с помощью [сетки][MDNCssGridLayout]CSS, [гибкого бокса][MDNCssFlexibleBoxLayout], [сетки][MDNCssGridLayout] CSS и гибкого [бокса][MDNCssFlexibleBoxLayout] , [мультимедийных запросов][MDNMediaQueries]и [отклика изображений][MDNResponsiveImages] для адаптации вашего UX к устройству пользователя.  Используйте [средства эмуляции устройства][DevToolsGuide|::ref1::|] в браузере для проверки на локальном компьютере или настройте [сеанс удаленной отладки][DevToolsProtocolClientsEdgeDevToolsPreview] для проверки непосредственно на целевом устройстве.  |  
-| X | [Глубокая связь][WikiDeepLinking] | Перенаправление каждой страницы сайта на уникальный URL-адрес, чтобы пользователи могли пользоваться более широкой аудиторией через функцию совместного использования социальных сетей.  |  
-| X | [Рекомендации][Webhint] | Используйте средства качества кода, такие как Linter веб – [Подсказка][Webhint] , чтобы оптимизировать эффективность, надежность, безопасность и доступность вашего приложения.  |  
-| X | [Контрольный список для Chromium PWA][WebDevGoodPwaChecklist] | Убедитесь, что у PWA есть контрольный список Google Baseline PWA.  |  
+| Требование | Сведения | 
+|:--- |:--- |  
+| [Совместимость с различными браузерами][MDNCrossBrowserTesting] | Убедитесь, что веб-приложение PWA [работает в разных][MicrosoftDeveloperEdgeToolsRemote] браузерах и средах.  |  
+| [Адаптивный дизайн][WikiResponsiveWebDesign] | Использование жидкостных макетов и гибких изображений с помощью [сетки][MDNCssGridLayout]CSS, [гибкого бокса][MDNCssFlexibleBoxLayout], [сетки][MDNCssGridLayout] CSS и гибкого [бокса][MDNCssFlexibleBoxLayout] , [мультимедийных запросов][MDNMediaQueries]и [отклика изображений][MDNResponsiveImages] для адаптации вашего UX к устройству пользователя.  Используйте [средства эмуляции устройства][DevToolsGuide|::ref1::|] в браузере для проверки на локальном компьютере или настройте [сеанс удаленной отладки][DevToolsProtocolClientsEdgeDevToolsPreview] для проверки непосредственно на целевом устройстве.  |  
+| [Глубокая связь][WikiDeepLinking] | Перенаправление каждой страницы сайта на уникальный URL-адрес, чтобы пользователи могли пользоваться более широкой аудиторией через функцию совместного использования социальных сетей.  |  
+| [Рекомендации][Webhint] | Используйте средства качества кода, такие как Linter веб – [Подсказка][Webhint] , чтобы оптимизировать эффективность, надежность, безопасность и доступность вашего приложения.  |  
+| [Контрольный список для Chromium PWA][WebDevGoodPwaChecklist] | Убедитесь, что у PWA есть контрольный список Google Baseline PWA.  |  
 
 Если вы хотите преобразовать PWA в приложение [Microsoft Store][MicrosoftDeveloperStore] , заголовков, посвященных [последовательной документации на веб-приложения (EdgeHTML)][PwaEdgehtmlMicrosoftStore] .  
-
-## Текущая доступность  
-
-Поддержка обработчиком прогрессивных веб-приложений запросов на некоторые архитектурные компоненты — наиболее существенная сетевая инфраструктура, базовая для [API выборки][MDNFetchApi].  
-
-Для Microsoft Edge \ (Chromium \) веб-платформа включает полную поддержку этих функций, которые работают на разных устройствах, где поддерживается Microsoft Edge \ (Chromium \).  
+  
 
 <!-- image links -->  
 
@@ -130,8 +128,8 @@ ms.locfileid: "10583037"
 
 <!-- links -->  
 
-[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Клиенты Microsoft Edge DevTools Preview-DevTools Protocol"  
-[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Эмуляции"  
+[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Предварительный просмотр Средств разработчика в Microsoft Edge — Клиенты протокола средств разработчика"  
+[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Эмуляция"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "Отладка последовательного веб-приложения"  
 [DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "Новые возможности EdgeHTML 17"  
 [DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "Новые возможности EdgeHTML 14"  
@@ -181,6 +179,8 @@ ms.locfileid: "10583037"
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API рабочего процесса службы | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Манифест веб-приложения | MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "Видео PWA"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 

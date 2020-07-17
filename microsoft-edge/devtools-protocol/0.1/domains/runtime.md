@@ -1,26 +1,27 @@
 ---
 description: Справочник по домену среды выполнения. Домен среды выполнения предоставляет среду выполнения JavaScript с помощью удаленных и зеркальных объектов. Результаты вычислений возвращаются как зеркальный объект, который предоставляет тип объекта, строковое представление и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект. Исходные объекты сохраняются в памяти, если они не были явно освобождены.
-title: Домен среды выполнения — протокол DevTools версии 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Домен среды выполнения — протокол DevTools версии 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 33bc98b272aaa8831e908207b97ea7d3d0842976
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 15d6cd254ddbe2337e3db850620dc3eb20a5ea67
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571689"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882935"
 ---
-# Язык
+# Домен среды выполнения — протокол DevTools версии 0,1 (EdgeHTML)  
+
 Домен среды выполнения предоставляет среду выполнения JavaScript с помощью удаленных и зеркальных объектов. Результаты вычислений возвращаются как зеркальный объект, который предоставляет тип объекта, строковое представление и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект. Исходные объекты сохраняются в памяти, если они не были явно освобождены.
 
 | | |
 |-|-|
 | [**Методы**](#methods) | [Включение](#enable), [Отключение](#disable), [Оценка](#evaluate), [callFunctionOn](#callfunctionon), [Свойства](#getproperties) |
-| [**События**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |
+| [**Мероприятия**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |
 | [**Типы**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Метка времени](#timestamp) [, CallFrame,](#callframe) [StackTrace](#stacktrace) |
 ## Методы
 
@@ -205,7 +206,7 @@ ms.locfileid: "10571689"
 
 ---
 
-## События
+## Мероприятия
 
 ### executionContextsCleared
 Выдается, когда все executionContexts были очищены в браузере

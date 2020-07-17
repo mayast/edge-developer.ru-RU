@@ -1,20 +1,20 @@
 ---
 description: Протокол Microsoft Edge DevTools версии 0,1 поддерживает следующие конечные точки HTTP.
-title: Конечные точки HTTP протокола DevTools версии 0,1
+title: Конечные точки HTTP протокола DevTools версии 0,1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 5b1cf0d347fec5bfe20b2574afcd635ee569c92d
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a9d40772b8175790c034ee67236c4887d0831785
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571684"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882872"
 ---
-# Конечные точки HTTP протокола DevTools
+# Конечные точки HTTP протокола DevTools версии 0,1 (EdgeHTML)  
 
 > [!NOTE]
 > Протокол Microsoft Edge DevTools работает только на [Windows 10 2018 апрельского обновления](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) и более поздних сборок для предварительной [оценки Windows](https://insider.windows.com/en-us/getting-started/) .

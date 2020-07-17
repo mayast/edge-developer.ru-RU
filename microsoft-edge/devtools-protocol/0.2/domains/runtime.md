@@ -1,25 +1,26 @@
 ---
 description: Справочник по домену среды выполнения. Домен среды выполнения предоставляет среду выполнения JavaScript с помощью удаленных и зеркальных объектов. Результаты вычислений возвращаются как зеркальный объект, который предоставляет тип объекта, строковое представление и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект. Исходные объекты сохраняются в памяти, если они не были явно освобождены.
-title: Домен среды выполнения — протокол DevTools версии 0,2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Домен среды выполнения — протокол DevTools версии 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 504f944f7a8389450685b40cdd010b54c3a7ba4e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 710b3b3e0383f1f6feb7947e0468730d2e0b0e66
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571663"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882865"
 ---
-# Язык
+# Домен среды выполнения — протокол DevTools версии 0,2 (EdgeHTML)  
+
 Домен среды выполнения предоставляет среду выполнения JavaScript с помощью удаленных и зеркальных объектов. Результаты вычислений возвращаются как зеркальный объект, который предоставляет тип объекта, строковое представление и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект. Исходные объекты сохраняются в памяти, если они не были явно освобождены.
 
 | | |
 |-|-|
 | [**Методы**](#methods) | [Включение](#enable), [Отключение](#disable), [Оценка](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [Свойства](#getproperties), [globalLexicalScopeNames](#globallexicalscopenames), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |
-| [**События**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |
+| [**Мероприятия**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |
 | [**Типы**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExecutionContextDescription](#executioncontextdescription) [timestamp](#timestamp), [ExecutionContextDescription,](#exceptiondetails) [StackTrace](#stacktrace) [CallFrame](#callframe) |
 ## Методы
 
@@ -349,7 +350,7 @@ ms.locfileid: "10571663"
 
 ---
 
-## События
+## Мероприятия
 
 ### executionContextCreated
 Выдается при создании нового контекста выполнения.

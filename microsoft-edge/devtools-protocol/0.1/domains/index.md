@@ -1,25 +1,27 @@
 ---
 description: Список ссылок на поддерживаемые домены в Microsoft Edge DevTools Protocol версии 0,1.
-title: Домены — протокол DevTools версии 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Домены протоколов DevTools — протокол DevTools версии 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: b3cf3411a8402b7407012eb789f8bf267b4997a8
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: de816e2b07838ba1b6151967ff7b8751789c60ea
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571688"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882949"
 ---
-# Домены протоколов DevTools
-## [Отладчика](debugger.md)
+# Домены протоколов DevTools — протокол DevTools версии 0,1 (EdgeHTML)  
+
+## [Отладчик](debugger.md)  
+
 Домен отладчика предоставляет возможности отладки JavaScript. Он позволяет устанавливать и удалять точки останова, пошаговое выполнение, изменяя трассировку стека и т. д.
 ## [Page](page.md)
 Действия и события, связанные с проверенной страницей, относятся к домену страницы.
-## [Язык](runtime.md)
+## [Время выполнения](runtime.md)
 Домен среды выполнения предоставляет среду выполнения JavaScript с помощью удаленных и зеркальных объектов. Результаты вычислений возвращаются как зеркальный объект, который предоставляет тип объекта, строковое представление и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект. Исходные объекты сохраняются в памяти, если они не были явно освобождены.
 ## [Схема](schema.md)
 Предоставляет сведения о схеме протоколов.

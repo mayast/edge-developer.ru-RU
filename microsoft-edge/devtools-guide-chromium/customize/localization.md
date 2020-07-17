@@ -1,19 +1,19 @@
 ---
-title: Настройка Microsoft Edge DevTools
+title: Изменение языковых параметров DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, локализация, loc, язык
-ms.openlocfilehash: cd95e965e14d5214842a74e798d9d3a8ae90c193
-ms.sourcegitcommit: 738a012a2e0edfc63315c2df77b170e26ad9169b
+ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604165"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882725"
 ---
-# Соответствие языков браузера  
+# Изменение языковых параметров DevTools  
 
 Ваши средства разработчика соответствуют языку браузера по умолчанию, если это один из десяти языков, которые в настоящее время поддерживаются (в дополнение к английскому).  
 
@@ -58,16 +58,12 @@ ms.locfileid: "10604165"
    :::column-end:::
 :::row-end:::  
 
-> #### Рис. 1  
-> DevTools на японском языке  
-> ![DevTools на японском языке][ImageJpDevTools]  
+:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools на японском языке" lightbox="./media/localization-jp.png":::
+   DevTools на японском языке  
+:::image-end:::  
 
 Если вы хотите вернуться к DevTools на английский, перейдите в [Параметры DevTools][DevtoolschromiumCustomizeIndexSettings] или нажмите кнопку `F1`  >  **Параметры** и снимите флажок **учитывать язык браузера** .  
 
-<!-- image links -->
-
-[ImageJpDevTools]: ./media/localization-jp.png "Рисунок 1: DevTools на японском языке"  
-
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Параметры: Настройка Microsoft Edge DevTools"  
+[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"  

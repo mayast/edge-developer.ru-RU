@@ -1,18 +1,18 @@
 ---
 description: Расширение возможностей PWA для Windows с помощью собственных функций приложения
-title: Адаптация PWA для Windows
+title: Адаптация PWA (EdgeHTML) для Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: прогрессивные веб-приложения, PWA, EDGE, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 5bad708db5b13517fd1887214a5e1d5457796ee2
-ms.sourcegitcommit: e07de36ee9fbe20422ffc2c62b98839851e1b02b
+ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604013"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882788"
 ---
 # Адаптация PWA (EdgeHTML) для Windows  
 
@@ -47,7 +47,7 @@ PWA \ (EdgeHTML \), установленный как приложение Windo
     ![Диалоговое окно "выбор" в Visual Studio для сборок целевых объектов проекта UWP](media/vs-target-min-version.png)  
 
     Новый проект загружается с открытым конструктором Package. appxmanifest.  Здесь вы настраиваете сведения о приложении, в том числе удостоверение пакета, зависимости пакетов, необходимые возможности, визуальные элементы и точки расширения.  Это легко настраиваемая временная версия манифеста пакета приложения, используемая во время разработки приложения.  
-    При построении проекта приложения [Visual Studio создает файл AppxManifest. XML][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] из этих метаданных, который используется для установки и запуска приложения.  Когда вы обновляете `package.appxmanifest` файл, не забудьте перестроить проект, чтобы оба были отражены во `AppxManifest.xml` время выполнения.  
+    При построении проекта приложения [Visual Studio создает файл AppxManifest.xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] из этих метаданных, которые используются для установки и запуска приложения.  Когда вы обновляете `package.appxmanifest` файл, не забудьте перестроить проект, чтобы оба были отражены во `AppxManifest.xml` время выполнения.  
 
 1.  На панели **приложения** в конструкторе манифестов введите URL-адрес PWA `Start page` .
 
@@ -69,7 +69,7 @@ PWA \ (EdgeHTML \), установленный как приложение Windo
     Вы готовы запускать и отлаживать PWA как приложение для Windows 10.  Если вы используете сайт localhost для перехода по этому руководству, убедитесь, что он запущен.  Затем  
 1.  Выполните сборку \ ( `Ctrl` + `Shift` + `F5` \) и запустите \ ( `F5` \) проект PWA.  После этого ваш веб-сайт должен быть запущен в отдельном окне приложения.  Это размещенное веб-приложение. оно запущено в виде последовательного веб-приложения, установленного в Windows 10!  
 
-    ![PWA запускается в окне WWAHost. exe](media/wwahost.png)  
+    ![Работа PWA в окне WWAHost.exe](media/wwahost.png)  
 
 ## Отладка PWA \ (EdgeHTML \) как приложение для Windows  
 
@@ -306,8 +306,8 @@ if(window.Windows && Windows.Media.SpeechRecognition){
 [PwaIndexWindows10]: ./index.md#pwas-on-windows-10-edgehtml "PWAs в Windows 10 (EdgeHTML) — прогрессивные веб-приложения для Windows"  
 [DevToolsGuide]: ../devtools-guide.md "Инструменты разработчика Microsoft EDGE (EdgeHTML)"  
 [DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Microsoft Store App-Microsoft EDGE (EdgeHTML) Tools Developer"  
-[DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Обслуживание сотрудников"  
-[DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Клиенты Microsoft Edge DevTools Preview-DevTools Protocol"  
+[DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Служебные сценарии"  
+[DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Предварительный просмотр Средств разработчика в Microsoft Edge — Клиенты протокола средств разработчика"  
 [DevGuideWhatsNew]: ../dev-guide/whats-new.md "Новые возможности EdgeHTML"  
 [WindowsRuntime]: ../windows-runtime/index.md "Среда выполнения Windows (WinRT) для JavaScript"  
 [WindowRuntimeUsingJavascript]: ../windows-runtime/using-the-windows-runtime-in-javascript.md "Использование среды выполнения Windows в JavaScript"  
