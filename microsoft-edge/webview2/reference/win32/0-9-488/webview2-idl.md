@@ -3,22 +3,21 @@ description: Размещение веб-содержимого в прилож�
 title: Глобальные 0.9.515-WebView2 Win32 C++
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 38ebe9bb98ecb58fb9ec52d11e6885ac0b06cdd2
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1134aa10717dfc5be8ef1a4de5805a3fc319aeb8
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879732"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883800"
 ---
 # 0.9.515-Globals 
 
-> [!NOTE]
-> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ## Краткий обзор
 

@@ -3,17 +3,17 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. Core. CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: f8e0ebae683e1e68d12ce541fbec922ec9c05ef4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879011"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885277"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2 
 
@@ -48,6 +48,7 @@ WebView2 позволяет размещать веб-содержимое с п
 [SourceChanged](#sourcechanged) | SourceChanged активируется при изменении свойства Source.
 [WebMessageReceived](#webmessagereceived) | Это событие срабатывает, если задан параметр IsWebMessageEnabled и документ верхнего уровня для вызовов WebView `window.chrome.webview.postMessage` .
 [WebResourceRequested](#webresourcerequested) | Активируется, когда WebView выполняет запрос HTTP к соответствующему URL-адресу и фильтру контекста ресурсов, добавленному с помощью AddWebResourceRequestedFilter.
+[WebResourceResponseReceived](#webresourceresponsereceived) | Событие WebResourceResponseReceived срабатывает после того, как WebView получил и обработал ответ для запроса на веб-ресурс.
 [WindowCloseRequested](#windowcloserequested) | Вызывается, когда содержимое в WebView запрашивает закрытие окна, например после вызова Window. Close.
 [AddHostObjectToScript](#addhostobjecttoscript) | Добавьте предоставленный объект узла в сценарий, выполняемый в WebView с указанным именем.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Добавьте предоставленный JavaScript в список сценариев, которые должны выполняться после создания глобального объекта, но до начала синтаксического анализа HTML-документа и перед выполнением любого другого сценария, включенного в документ HTML.
@@ -231,6 +232,16 @@ SourceChanged срабатывает для переходов на другой
 
 Для срабатывания события необходимо добавить хотя бы один фильтр.
 
+#### WebResourceResponseReceived 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+Событие WebResourceResponseReceived срабатывает после того, как WebView получил и обработал ответ для запроса на веб-ресурс.
+
+> событие EventHandler< [CoreWebView2WebResourceResponseReceivedEventArgs](microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)  >  [WebResourceResponseReceived](#webresourceresponsereceived)
+
+Аргументы события включают в себя WebResourceRequest, отправленный по каналу и WebResourceResponse, включая все дополнительные заголовки, добавленные сетевым стеком, которые не были включены как часть связанного события WebResourceRequested, например заголовки проверки подлинности.
+
 #### WindowCloseRequested 
 
 Вызывается, когда содержимое в WebView запрашивает закрытие окна, например после вызова Window. Close.
@@ -307,7 +318,7 @@ let result = await app_object.method1(parameters);
 > общедоступная асинхронная задача< String > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(строка MethodName, String parametersAsJson)
 
 ##### Дает
-Строка JSON, представляющая возвращаемый объект метода.
+Строка JSON, представляющая возвращаемый объект метода. 
 
 Список и описание доступных методов можно найти в [средстве просмотра протокола DevTools](https://aka.ms/DevToolsProtocolDocs) . Параметр methodName — это полное имя метода в формате `{domain}.{method}` . Параметр parametersAsJson является строкой в формате JSON, содержащей параметры соответствующего метода. Метод Invoke обработчика вызывается, когда метод асинхронно завершается. Вызов Invoke будет вызываться с возвращаемым методом объектом в виде строки JSON.
 
@@ -328,7 +339,7 @@ let result = await app_object.method1(parameters);
 ##### Дает
 Возвращает строку в кодировке JSON, представляющую результат выполнения указанного кода JavaScript. 
 
-Этот метод асинхронно запускает указанные сценарии JavaScript и возвращает результат указанного кода JavaScript. Если результат указанного в коде JavaScript `undefined` содержит цикл ссылки или не может быть закодирован в JSON, возвращается строка NULL. Если вызываемая функция в указанном коде JavaScript не имеет явного возвращаемого значения, `undefined` возвращается. Если в указанном коде JavaScript возникает неуправляемое исключение, возвращается значение null. Если этот метод вызывается после `NavigationStarting` события, то при загрузке документа JavaScript запускается в новом документе, когда он загружается, в то же время, что и `ContentLoading` запускается. `ExecuteScript` задействуется, даже если `IsScriptEnabled` задано значение `FALSE` .
+Этот метод асинхронно запускает указанные сценарии JavaScript и возвращает результат указанного кода JavaScript. Если результат указанного в коде JavaScript `undefined` содержит цикл ссылки или не может быть закодирован в JSON, возвращается строка NULL. Если вызываемая функция в указанном коде JavaScript не имеет явного возвращаемого значения, `undefined` возвращается. Если в указанном коде JavaScript возникает неуправляемое исключение, возвращается значение null. Если этот метод вызывается после события NavigationStarting, то при загрузке в новом документе код JavaScript выполняется в то же время, в котором инициируется ContentLoading. ExecuteScriptAsync будет работать даже в том случае, если для IsScriptEnabled установлено значение `FALSE` .
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -434,3 +445,4 @@ window.chrome.webview.removeEventListener('message', handler)
 > открытая пустая [Отмена](#stop)()
 
 Не останавливает сценарии.
+

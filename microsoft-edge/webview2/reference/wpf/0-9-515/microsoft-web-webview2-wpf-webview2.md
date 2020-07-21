@@ -3,17 +3,17 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. WPF. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2. WPF. WebView2
-ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e7f5d11b540d1d7ad9630aa674ef5bc0073195c2
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880264"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885298"
 ---
 # Класс Microsoft. Web. WebView2. WPF. WebView2 
 
@@ -37,11 +37,13 @@ class Microsoft.Web.WebView2.Wpf.WebView2
 [NavigationStarting](#navigationstarting) | Обертка для события CoreWebView2. NavigationStarting в CoreWebView2.
 [SourceChanged](#sourcechanged) | Обертка для события CoreWebView2. SourceChanged в CoreWebView2.
 [WebMessageReceived](#webmessagereceived) | Обертка для события CoreWebView2. WebMessageReceived в CoreWebView2.
+[ZoomFactorChanged](#zoomfactorchanged) | Событие срабатывает, когда изменяется свойство ZoomFactor объекта WebView.
 [CanGoBack](#cangoback) | Возвращает значение "истина", если WebView может перейти к предыдущей странице в журнале переходов.
 [CanGoForward](#cangoforward) | Возвращает значение "истина", если WebView может перейти к следующей странице в журнале переходов.
 [CoreWebView2](#corewebview2) | Получить доступ ко всем функциональным возможностям базового API Core. CoreWebView2.
 [CreationProperties](#creationproperties) | Возвращает или задает набор параметров, которые используются при инициализации CoreWebView2 элемента управления.
 [Источник](#source) | Универсальный код ресурса (URI) верхнего уровня, который в данный момент отображает WebView (или будет отображаться после инициализации его CoreWebView2).
+[ZoomFactor](#zoomfactor) | Коэффициент масштабирования для WebView.
 [EnsureCoreWebView2Async](#ensurecorewebview2async) | Явным образом инициализируйте инициализацию CoreWebView2 элемента управления.
 [ExecuteScriptAsync](#executescriptasync) | Выполняет код JavaScript из параметра javaScript в текущем документе верхнего уровня, отображаемом в WebView.
 [GoBack](#goback) | Переход по WebView на предыдущую страницу в истории навигации.
@@ -119,6 +121,14 @@ class Microsoft.Web.WebView2.Wpf.WebView2
 
 Единственное различие между этим событием и CoreWebView2. WebMessageReceived — первый параметр, передаваемый обработчикам. Обработчики этого события получат элемент управления WebView2, в то время как обработчики для CoreWebView2. WebMessageReceived получат экземпляр CoreWebView2.
 
+#### ZoomFactorChanged 
+
+Событие срабатывает, когда изменяется свойство ZoomFactor объекта WebView.
+
+> событие EventHandler< EventArgs > [ZoomFactorChanged](#zoomfactorchanged)
+
+Это событие прямо предоставляет доступ к CoreWebView2Controller. ZoomFactorChanged, чтобы получить дополнительные сведения, ознакомьтесь с его документацией.
+
 #### CanGoBack 
 
 Возвращает значение "истина", если WebView может перейти к предыдущей странице в журнале переходов.
@@ -162,10 +172,20 @@ class Microsoft.Web.WebView2.Wpf.WebView2
 
 > общедоступный [источник](#source) URI
 
-Как правило, это свойство эквивалентно получению свойства CoreWebView2. Source объекта CoreWebView2 и установке этого свойства эквивалентно вызову метода CoreWebView2. Navigate для CoreWebView2. При получении значения этого свойства до инициализации CoreWebView2 будет извлечен последний URI, для которого был задан этот параметр. Если задать это свойство до инициализации CoreWebView2, инициализация начнется в фоновом режиме (если еще не выполняется), после чего WebView2 будет переходить к указанному универсальному коду ресурса (URI). Ознакомьтесь с документацией по классу WebView2 для обзора инициализации.
+Как правило, это свойство эквивалентно получению свойства CoreWebView2. Source из CoreWebView2 и присваивания этому свойству (в другом значении) эквивалентно вызову метода CoreWebView2. Navigate для CoreWebView2. Значение null имеет тот же смысл, что и "about: blank" (Дополнительные сведения можно найти в разделе Примечания). При получении этого свойства перед инициализацией CoreWebView2 извлекается последний URI, для которого был установлен этот параметр, или null (значение по умолчанию), если оно не задано должным образом. Если задать это свойство до инициализации CoreWebView2, инициализация начнется в фоновом режиме (если еще не выполняется), после чего WebView2 будет переходить к указанному универсальному коду ресурса (URI). Ознакомьтесь с документацией по классу WebView2 для обзора инициализации.
+
+Если это свойство имеет значение null, CoreWebView2 будет показывать "about: blank" (или, если задано значение null, переход на CoreWebView2 будет выполнен по "about: blank"). Кроме того, этому свойству можно присвоить (или задать) явное значение "о программе: пусто", которое действует так же для CoreWebView2. Другими словами, если в CoreWebView2 отображается "about: blank", значение этого свойства может быть либо null, либо "about: blank". Однако NULL и "about: blank" — это разные значения этого свойства, которые не обрабатываются как одинаковые. Это важно для инициализации элемента управления, так как это означает, что изменение значения из null (по умолчанию) на "about: blank" по-прежнему является изменением и по-прежнему вызывает неявную инициализацию. 
 
 ##### Исключения
 * `ObjectDisposedException` Вызывается, если метод Dispose уже вызывался для элемента управления.
+
+#### ZoomFactor 
+
+Коэффициент масштабирования для WebView.
+
+> общедоступная двойная [ZoomFactor](#zoomfactor)
+
+Это свойство прямо предоставляет доступ к CoreWebView2Controller. ZoomFactor, чтобы получить дополнительные сведения, ознакомьтесь с его документацией. При получении этого свойства до инициализации CoreWebView2 будет извлечено Последнее значение, которое ему было задано, или 1,0 (значение по умолчанию), если таковое не было. Последнее значение, установленное для этого свойства до инициализации CoreWebView2, будет задано для него после инициализации.
 
 #### EnsureCoreWebView2Async 
 

@@ -3,22 +3,21 @@ description: Размещение веб-содержимого в прилож�
 title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2ContentLoadingEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 899adcb7cfa171e8c1f6cb9693092e36f2e41a5f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6e2925583c4c3e9d207768c880c014ab1db23f7a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877765"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885130"
 ---
 # класс 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2ContentLoadingEventArgs 
 
-> [!NOTE]
-> Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515. Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Пространство имен: Microsoft. Web. WebView2. Core \
 Сборка: Microsoft.Web.WebView2.Core.dll

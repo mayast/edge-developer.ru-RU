@@ -3,17 +3,17 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2
-ms.openlocfilehash: a482dd4e06e6899b7be64adc53e848ed6b7067d3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 889924c996e030a0abe2a6a34036a881dcb26db5
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877562"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884577"
 ---
 # интерфейс ICoreWebView2 
 
@@ -83,7 +83,7 @@ WebView2 позволяет размещать веб-содержимое с п
 [remove_WebResourceRequested](#remove_webresourcerequested) | Удалите обработчик событий, добавленный ранее add_WebResourceRequested.
 [remove_WindowCloseRequested](#remove_windowcloserequested) | Удалите обработчик событий, добавленный ранее add_WindowCloseRequested.
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Удалите объект узла, заданный именем, чтобы он больше не будет доступен из кода JavaScript в WebView.
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Удалите соответствующий сценарий JavaScript, добавленный через AddScriptToExecuteOnDocumentCreated.
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Удалите соответствующий сценарий JavaScript, который добавляется с использованием `AddScriptToExecuteOnDocumentCreated` указанного идентификатора сценария.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Удаляет соответствующий фильтр веб-ресурсов, который ранее был добавлен для события WebResourceRequested.
 [Stop](#stop) | Остановите все переходы и ожидающие выборки ресурсов.
 [COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) | Формат изображения, используемый в методе ICoreWebView2:: CapturePreview.
@@ -311,8 +311,8 @@ FrameNavigationStarting активируется, когда дочерний к
                 BOOL canGoForward;
                 sender->get_CanGoBack(&canGoBack);
                 sender->get_CanGoForward(&canGoForward);
-                EnableWindow(m_toolbar->backWindow, canGoBack);
-                EnableWindow(m_toolbar->forwardWindow, canGoForward);
+                m_toolbar->SetItemEnabled(Toolbar::Item_BackButton, canGoBack);
+                m_toolbar->SetItemEnabled(Toolbar::Item_ForwardButton, canGoForward);
 
                 return S_OK;
             })
@@ -349,7 +349,8 @@ FrameNavigationStarting активируется, когда дочерний к
                         // display its own error page automatically.
                     }
                 }
-                EnableWindow(m_toolbar->cancelWindow, FALSE);
+                m_toolbar->SetItemEnabled(Toolbar::Item_CancelButton, false);
+                m_toolbar->SetItemEnabled(Toolbar::Item_ReloadButton, true);
                 return S_OK;
             })
             .Get(),
@@ -457,9 +458,9 @@ NavigationStarting активируется, когда основной кад�
                 CHECK_FAILURE(windowFeatures->get_Toolbar(&shouldHaveToolbar));
 
                 windowRect.left = left;
-                windowRect.right = left + (width < s_minNewWindowSize  s_minNewWindowSize : width);
+                windowRect.right = left + (width < s_minNewWindowSize ? s_minNewWindowSize : width);
                 windowRect.top = top;
-                windowRect.bottom = top + (height < s_minNewWindowSize  s_minNewWindowSize : height);
+                windowRect.bottom = top + (height < s_minNewWindowSize ? s_minNewWindowSize : height);
 
                 if (!useDefaultWindow)
                 {
@@ -513,15 +514,15 @@ NavigationStarting активируется, когда основной кад�
         message += uri.get();
         message += L"?\n\n";
         message += (userInitiated
-             L"This request came from a user gesture."
+            ? L"This request came from a user gesture."
             : L"This request did not come from a user gesture.");
 
         int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
                                    MB_YESNOCANCEL | MB_ICONWARNING);
 
         COREWEBVIEW2_PERMISSION_STATE state =
-              response == IDYES  COREWEBVIEW2_PERMISSION_STATE_ALLOW
-            : response == IDNO   COREWEBVIEW2_PERMISSION_STATE_DENY
+              response == IDYES ? COREWEBVIEW2_PERMISSION_STATE_ALLOW
+            : response == IDNO  ? COREWEBVIEW2_PERMISSION_STATE_DENY
             :                     COREWEBVIEW2_PERMISSION_STATE_DEFAULT;
         CHECK_FAILURE(args->put_State(state));
 
@@ -673,7 +674,7 @@ SourceChanged срабатывает для переходов на другой
                 {
                     uri = wil::make_cotaskmem_string(L"");
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                SetWindowText(GetAddressBar(), uri.get());
 
                 return S_OK;
             })
@@ -753,7 +754,7 @@ SourceChanged срабатывает для переходов на другой
 
 > общедоступные значения HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](icorewebview2webresourcerequestedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
-Активируется, когда WebView выполняет запрос HTTP к соответствующему URL-адресу и фильтру контекста ресурсов, добавленному с помощью AddWebResourceRequestedFilter. Для срабатывания события необходимо добавить хотя бы один фильтр.
+Активируется, когда WebView выполняет запрос URL-адреса к соответствующему URL-адресу и фильтру контекст ресурсов, добавленный с помощью AddWebResourceRequestedFilter. Для срабатывания события необходимо добавить хотя бы один фильтр.
 
 ```cpp
         if (m_blockImages)
@@ -967,6 +968,7 @@ let result = await app_object.method1(parameters);
         });
         });
 ```
+Предоставление доступа к объектам узла для сценария имеет угрозу безопасности. Пожалуйста, [следуйте рекомендациям](https://docs.microsoft.com/microsoft-edge/webview2/concepts/security).
 
 #### AddScriptToExecuteOnDocumentCreated 
 
@@ -1043,7 +1045,7 @@ void ScriptComponent::CallCdpMethod()
         std::wstring methodName = dialog.input.substr(0, delimiterPos);
         std::wstring methodParams =
             (delimiterPos < dialog.input.size()
-                 dialog.input.substr(delimiterPos + 1)
+                ? dialog.input.substr(delimiterPos + 1)
                 : L"{}");
 
         m_webView->CallDevToolsProtocolMethod(
@@ -1203,7 +1205,7 @@ void ScriptComponent::InjectScript()
                 {
                     uri = wil::make_cotaskmem_string(L"");
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                SetWindowText(GetAddressBar(), uri.get());
 
                 return S_OK;
             })
@@ -1287,10 +1289,10 @@ void ScriptComponent::SubscribeToCdpEvent()
 ```cpp
 void ControlComponent::NavigateToAddressBar()
 {
-    int length = GetWindowTextLength(m_toolbar->addressBarWindow);
+    int length = GetWindowTextLength(GetAddressBar());
     std::wstring uri(length, 0);
     PWSTR buffer = const_cast<PWSTR>(uri.data());
-    GetWindowText(m_toolbar->addressBarWindow, buffer, length + 1);
+    GetWindowText(GetAddressBar(), buffer, length + 1);
 
     HRESULT hr = m_webView->Navigate(uri.c_str());
     if (hr == E_INVALIDARG)
@@ -1682,3 +1684,4 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Обмен под
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Запросы ping.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | Отчеты о нарушениях CSP.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Другие ресурсы.
+

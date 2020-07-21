@@ -3,22 +3,21 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: 45ac5406cea804aa5b5db748cecaae7104dccb00
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1eb2498e05e2ec9fafa317f6108d022f7354c249
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878990"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885284"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2CompositionController 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Пространство имен: Microsoft. Web. WebView2. Core \
 Сборка: Microsoft.Web.WebView2.Core.dll
@@ -33,7 +32,7 @@ ms.locfileid: "10878990"
 [CursorChanged](#cursorchanged) | Событие срабатывает, когда WebView считает, что курсор должен быть изменен.
 [RootVisualTarget](#rootvisualtarget) | RootVisualTarget — это визуальный элемент в визуальном дереве размещающего приложения.
 [UIAProvider](#uiaprovider) | Возвращает поставщик модели автоматизации пользовательского интерфейса для WebView.
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | Вспомогательная функция для преобразования pointerId, полученного из системы, в CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | Вспомогательная функция для преобразования pointerId, полученного из системы, в CoreWebView2PointerInfo.
 [SendMouseInput](#sendmouseinput) | Если eventKind — CoreWebView2MouseEventKind. HorizontalWheel или CoreWebView2MouseEventKind. Wheel, то mouseData задает величину движения колесика.
 [SendPointerInput](#sendpointerinput) | SendPointerInput принимает вводные данные и указатель пера для типов, определенных в CoreWebView2PointerEventKind.
 
@@ -71,11 +70,11 @@ RootVisualTarget — это визуальный элемент в визуал�
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-Вспомогательная функция для преобразования pointerId, полученного из системы, в CoreWebView2ExperimentalPointerInfo.
+Вспомогательная функция для преобразования pointerId, полученного из системы, в CoreWebView2PointerInfo.
 
 > общедоступные [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(uint pointerId, IntPtr ParentWindow, Matrix4x4 Transform)
 
-parentWindow — HWND, который содержит WebView. Это может быть любой HWND в дереве HWND, который включает WebView. CoreWebView2Matrix4x4 является преобразованием из HWND в WebView. Возвращенный CoreWebView2ExperimentalPointerInfo используется в SendPointerInfo. Тип указателя должен быть либо пером, либо сенсорным, либо функция завершится сбоем.
+parentWindow — HWND, который содержит WebView. Это может быть любой HWND в дереве HWND, который включает WebView. CoreWebView2Matrix4x4 является преобразованием из HWND в WebView. Возвращенный CoreWebView2PointerInfo используется в SendPointerInfo. Тип указателя должен быть либо пером, либо сенсорным, либо функция завершится сбоем.
 
 #### SendMouseInput 
 
@@ -91,5 +90,5 @@ SendPointerInput принимает вводные данные и указат�
 
 > Public void [SendPointerInput](#sendpointerinput)([CoreWebView2PointerEventKind](./namespace-microsoft-web-webview2-core.md) EventType, [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) pointerInfo)
 
-Все входные данные указателя из системы должны быть преобразованы в CoreWebView2ExperimentalPointerInfo первыми.
+Все входные данные указателя из системы должны быть преобразованы в CoreWebView2PointerInfo первыми.
 

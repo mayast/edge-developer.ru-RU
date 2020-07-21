@@ -3,22 +3,21 @@ description: Размещение веб-содержимого в прилож�
 title: 0.8.355-WebView2 Win32 C++ IWebView2WebView5
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE
-ms.openlocfilehash: 06cff80d1c0dd25ab0753edd521f2c04b49816c3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: bc48c5d495c2182ba39b867fdb46ce7af503f5ba
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878010"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884689"
 ---
 # 0.8.355-Interface IWebView2WebView5 
 
-> [!NOTE]
-> Этот интерфейс может быть изменен или недоступен для выпусков после версии SDK 0.8.355. Ознакомьтесь со [справочной](../../../webview2-api-reference.md) информацией по последней ссылке на API.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2WebView5

@@ -3,17 +3,17 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: 79bc9908d0fd12d4606311b959cbc6bc0c384c2d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878920"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885291"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2Environment 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10878920"
 [CreateAsync](#createasync) | Создает среду Evergreen WebView2, используя установленную версию Edge.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Асинхронно создайте новый WebView для использования с визуальным размещением.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Асинхронно создайте новый WebView.
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Создание пустого CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Создание пустого CoreWebView2PointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Создание нового объекта ответа на веб-ресурс.
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Получение сведений о версии браузера, включая имя канала, если это не стабильный канал или внедренный край.
 [GetProviderForHwnd](#getproviderforhwnd) | Возвращает поставщик модели автоматизации пользовательского интерфейса для CoreWebView2CompositionController, соответствующего данному дескриптору HWND.
@@ -87,8 +87,7 @@ ms.locfileid: "10878920"
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Асинхронно создайте новый WebView для использования с визуальным размещением.
 
@@ -112,14 +111,13 @@ parentWindow — HWND, в котором нужно отобразить WebView
 
 #### CreateCoreWebView2PointerInfo 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-Создание пустого CoreWebView2ExperimentalPointerInfo.
+Создание пустого CoreWebView2PointerInfo.
 
 > общедоступная [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
 
-Возвращенные CoreWebView2ExperimentalPointerInfo должны быть заполнены всеми соответствующими сведениями перед вызовом SendPointerInput.
+Возвращенные CoreWebView2PointerInfo должны быть заполнены всеми соответствующими сведениями перед вызовом SendPointerInput.
 
 #### CreateWebResourceResponse 
 
@@ -140,8 +138,7 @@ parentWindow — HWND, в котором нужно отобразить WebView
 
 #### GetProviderForHwnd 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Возвращает поставщик модели автоматизации пользовательского интерфейса для CoreWebView2CompositionController, соответствующего данному дескриптору HWND.
 

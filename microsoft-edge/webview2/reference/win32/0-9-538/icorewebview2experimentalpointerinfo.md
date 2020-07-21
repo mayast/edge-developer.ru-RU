@@ -3,22 +3,21 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: WebView2 Win32 C++ ICoreWebView2ExperimentalPointerInfo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2ExperimentalPointerInfo
-ms.openlocfilehash: b84c822e8b9e01d3b5a0e59baaeed5fc587d9a15
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6a5727fbcae24f7fd65c6c4a7a49b1a0b4746eb3
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879949"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883715"
 ---
 # интерфейс ICoreWebView2ExperimentalPointerInfo 
 
-> [!NOTE]
-> Это экспериментальный API-интерфейс, поставляемый с предварительной версией SDK версии 0.9.538.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalPointerInfo

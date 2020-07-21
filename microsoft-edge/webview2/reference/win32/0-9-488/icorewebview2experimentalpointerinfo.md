@@ -3,22 +3,21 @@ description: Размещение веб-содержимого в прилож�
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2ExperimentalPointerInfo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 887dcd438a89dcff4da239872df4bdb51e90f1f0
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 8c0ed40c61344fe0a3177fd36d5629953f8801d7
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880614"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885487"
 ---
 # 0.9.515-Interface ICoreWebView2ExperimentalPointerInfo 
 
-> [!NOTE]
-> Это экспериментальный API-интерфейс, поставляемый с предварительной версией SDK версии 0.9.488.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalPointerInfo

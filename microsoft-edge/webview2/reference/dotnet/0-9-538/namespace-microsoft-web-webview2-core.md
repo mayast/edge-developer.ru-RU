@@ -3,17 +3,17 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. Core
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2. Core
-ms.openlocfilehash: e45cb4c6a6fdd01680abc59691a0e0c34a64af15
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 121ca87d1cd444228aeba1328feb2d0633647d74
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881195"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884031"
 ---
 # Microsoft.Web.WebView2.Core пространство имен 
 
@@ -55,6 +55,7 @@ CoreWebView2Settings | Определяет свойства, которые в�
 CoreWebView2SourceChangedEventArgs | Аргументы события для события SourceChanged.
 CoreWebView2WebMessageReceivedEventArgs | Аргументы события для события WebMessageReceived.
 CoreWebView2WebResourceRequestedEventArgs | Аргументы события для события WebResourceRequested.
+CoreWebView2WebResourceResponseReceivedEventArgs | Аргументы события для события WebResourceResponseReceived.
 CoreWebView2WindowFeatures | Функции окна для всплывающего окна WebView.
 EdgeNotFoundException | Исключение, возникающее при отсутствии установки Edge.
 CoreWebView2Matrix4x4 | Это преобразование используется для вычисления правильных координат при вызове CreateCoreWebView2PointerInfoFromPointerId.
@@ -88,8 +89,7 @@ SystemKeyUp            | ВыWM_SYSKEYUP сообщение в окне.
 
 #### CoreWebView2MouseEventKind 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Тип событий мыши, используемый функцией SendMouseInput для передачи типа события мыши, отправляемого в WebView.
 
@@ -116,8 +116,7 @@ XButtonUp            | Первая или вторая кнопка X — со�
 
 #### CoreWebView2MouseEventVirtualKeys 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Виртуальные ключи событий мыши, связанные с CoreWebView2MouseEventKind для SendMouseInput.
 
@@ -176,8 +175,7 @@ ClipboardRead            | Разрешение на чтение системн
 
 #### CoreWebView2PointerEventKind 
 
-> [!NOTE]
-> Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Тип события указателя, используемый функцией SendPointerInput для передачи типа события указателя, отправляемого в WebView.
 
