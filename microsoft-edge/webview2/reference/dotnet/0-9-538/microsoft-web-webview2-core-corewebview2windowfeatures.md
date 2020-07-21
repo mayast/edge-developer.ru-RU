@@ -3,106 +3,105 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. Core. CoreWebView2WindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: 4866626111908eae9800da0baabec0356d5d4bf8
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d6d6f52456823488c07288c8ed07b9655a29883a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879655"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884439"
 ---
-# <span data-ttu-id="40769-104">Класс Microsoft. Web. WebView2. Core. CoreWebView2WindowFeatures</span><span class="sxs-lookup"><span data-stu-id="40769-104">Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures class</span></span> 
+# <span data-ttu-id="34b1f-104">Класс Microsoft. Web. WebView2. Core. CoreWebView2WindowFeatures</span><span class="sxs-lookup"><span data-stu-id="34b1f-104">Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures class</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="40769-105">Это [экспериментальный API](../../../concepts/versioning.md#experimental-apis) , поставляемый с нашей версией SDK версии [0.9.538-предварительной версии](../../../releasenotes.md#09538).</span><span class="sxs-lookup"><span data-stu-id="40769-105">This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).</span></span>
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-<span data-ttu-id="40769-106">Пространство имен: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="40769-106">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="40769-107">Сборка: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="40769-107">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+<span data-ttu-id="34b1f-105">Пространство имен: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="34b1f-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="34b1f-106">Сборка: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="34b1f-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-<span data-ttu-id="40769-108">Функции окна для всплывающего окна WebView.</span><span class="sxs-lookup"><span data-stu-id="40769-108">Window features for a WebView popup window.</span></span>
+<span data-ttu-id="34b1f-107">Функции окна для всплывающего окна WebView.</span><span class="sxs-lookup"><span data-stu-id="34b1f-107">Window features for a WebView popup window.</span></span>
 
-## <span data-ttu-id="40769-109">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="40769-109">Summary</span></span>
+## <span data-ttu-id="34b1f-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="34b1f-108">Summary</span></span>
 
- <span data-ttu-id="40769-110">Участников</span><span class="sxs-lookup"><span data-stu-id="40769-110">Members</span></span>                        | <span data-ttu-id="40769-111">Описания</span><span class="sxs-lookup"><span data-stu-id="40769-111">Descriptions</span></span>
+ <span data-ttu-id="34b1f-109">Участников</span><span class="sxs-lookup"><span data-stu-id="34b1f-109">Members</span></span>                        | <span data-ttu-id="34b1f-110">Описания</span><span class="sxs-lookup"><span data-stu-id="34b1f-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="40769-112">Полноразмерных</span><span class="sxs-lookup"><span data-stu-id="40769-112">Height</span></span>](#height) | <span data-ttu-id="40769-113">Высота окна.</span><span class="sxs-lookup"><span data-stu-id="40769-113">The height of the window.</span></span>
-[<span data-ttu-id="40769-114">Влево</span><span class="sxs-lookup"><span data-stu-id="40769-114">Left</span></span>](#left) | <span data-ttu-id="40769-115">Левое расположение окна.</span><span class="sxs-lookup"><span data-stu-id="40769-115">The left position of the window.</span></span>
-[<span data-ttu-id="40769-116">MenuBar</span><span class="sxs-lookup"><span data-stu-id="40769-116">MenuBar</span></span>](#menubar) | <span data-ttu-id="40769-117">Указывает, следует ли отображать строку меню.</span><span class="sxs-lookup"><span data-stu-id="40769-117">Whether or not to display the menu bar.</span></span>
-[<span data-ttu-id="40769-118">Полосы прокрутки</span><span class="sxs-lookup"><span data-stu-id="40769-118">ScrollBars</span></span>](#scrollbars) | <span data-ttu-id="40769-119">Указывает, следует ли отображать полосы прокрутки.</span><span class="sxs-lookup"><span data-stu-id="40769-119">Whether or not to display scroll bars.</span></span>
-[<span data-ttu-id="40769-120">Состояние</span><span class="sxs-lookup"><span data-stu-id="40769-120">Status</span></span>](#status) | <span data-ttu-id="40769-121">Следует ли добавить строку состояния.</span><span class="sxs-lookup"><span data-stu-id="40769-121">Whether or not to add a status bar.</span></span>
-[<span data-ttu-id="40769-122">панель инструментов;</span><span class="sxs-lookup"><span data-stu-id="40769-122">Toolbar</span></span>](#toolbar) | <span data-ttu-id="40769-123">Указывает, следует ли отображать панель инструментов браузера.</span><span class="sxs-lookup"><span data-stu-id="40769-123">Whether or not to display the browser toolbar.</span></span>
-[<span data-ttu-id="40769-124">Top</span><span class="sxs-lookup"><span data-stu-id="40769-124">Top</span></span>](#top) | <span data-ttu-id="40769-125">Верхнее расположение окна.</span><span class="sxs-lookup"><span data-stu-id="40769-125">The top position of the window.</span></span>
-[<span data-ttu-id="40769-126">Ширина</span><span class="sxs-lookup"><span data-stu-id="40769-126">Width</span></span>](#width) | <span data-ttu-id="40769-127">Ширина окна.</span><span class="sxs-lookup"><span data-stu-id="40769-127">The width of the window.</span></span>
-[<span data-ttu-id="40769-128">HasPosition</span><span class="sxs-lookup"><span data-stu-id="40769-128">HasPosition</span></span>](#hasposition) | <span data-ttu-id="40769-129">Заданные значения Left и Top.</span><span class="sxs-lookup"><span data-stu-id="40769-129">Has specified left and top values.</span></span>
-[<span data-ttu-id="40769-130">HasSize</span><span class="sxs-lookup"><span data-stu-id="40769-130">HasSize</span></span>](#hassize) | <span data-ttu-id="40769-131">Заданные значения Height и Width.</span><span class="sxs-lookup"><span data-stu-id="40769-131">Has specified height and width values.</span></span>
+[<span data-ttu-id="34b1f-111">Полноразмерных</span><span class="sxs-lookup"><span data-stu-id="34b1f-111">Height</span></span>](#height) | <span data-ttu-id="34b1f-112">Высота окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-112">The height of the window.</span></span>
+[<span data-ttu-id="34b1f-113">Влево</span><span class="sxs-lookup"><span data-stu-id="34b1f-113">Left</span></span>](#left) | <span data-ttu-id="34b1f-114">Левое расположение окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-114">The left position of the window.</span></span>
+[<span data-ttu-id="34b1f-115">MenuBar</span><span class="sxs-lookup"><span data-stu-id="34b1f-115">MenuBar</span></span>](#menubar) | <span data-ttu-id="34b1f-116">Указывает, следует ли отображать строку меню.</span><span class="sxs-lookup"><span data-stu-id="34b1f-116">Whether or not to display the menu bar.</span></span>
+[<span data-ttu-id="34b1f-117">Полосы прокрутки</span><span class="sxs-lookup"><span data-stu-id="34b1f-117">ScrollBars</span></span>](#scrollbars) | <span data-ttu-id="34b1f-118">Указывает, следует ли отображать полосы прокрутки.</span><span class="sxs-lookup"><span data-stu-id="34b1f-118">Whether or not to display scroll bars.</span></span>
+[<span data-ttu-id="34b1f-119">Состояние</span><span class="sxs-lookup"><span data-stu-id="34b1f-119">Status</span></span>](#status) | <span data-ttu-id="34b1f-120">Следует ли добавить строку состояния.</span><span class="sxs-lookup"><span data-stu-id="34b1f-120">Whether or not to add a status bar.</span></span>
+[<span data-ttu-id="34b1f-121">панель инструментов;</span><span class="sxs-lookup"><span data-stu-id="34b1f-121">Toolbar</span></span>](#toolbar) | <span data-ttu-id="34b1f-122">Указывает, следует ли отображать панель инструментов браузера.</span><span class="sxs-lookup"><span data-stu-id="34b1f-122">Whether or not to display the browser toolbar.</span></span>
+[<span data-ttu-id="34b1f-123">Top</span><span class="sxs-lookup"><span data-stu-id="34b1f-123">Top</span></span>](#top) | <span data-ttu-id="34b1f-124">Верхнее расположение окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-124">The top position of the window.</span></span>
+[<span data-ttu-id="34b1f-125">Ширина</span><span class="sxs-lookup"><span data-stu-id="34b1f-125">Width</span></span>](#width) | <span data-ttu-id="34b1f-126">Ширина окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-126">The width of the window.</span></span>
+[<span data-ttu-id="34b1f-127">HasPosition</span><span class="sxs-lookup"><span data-stu-id="34b1f-127">HasPosition</span></span>](#hasposition) | <span data-ttu-id="34b1f-128">Заданные значения Left и Top.</span><span class="sxs-lookup"><span data-stu-id="34b1f-128">Has specified left and top values.</span></span>
+[<span data-ttu-id="34b1f-129">HasSize</span><span class="sxs-lookup"><span data-stu-id="34b1f-129">HasSize</span></span>](#hassize) | <span data-ttu-id="34b1f-130">Заданные значения Height и Width.</span><span class="sxs-lookup"><span data-stu-id="34b1f-130">Has specified height and width values.</span></span>
 
-## <span data-ttu-id="40769-132">Участников</span><span class="sxs-lookup"><span data-stu-id="40769-132">Members</span></span>
+## <span data-ttu-id="34b1f-131">Участников</span><span class="sxs-lookup"><span data-stu-id="34b1f-131">Members</span></span>
 
-#### <span data-ttu-id="40769-133">Полноразмерных</span><span class="sxs-lookup"><span data-stu-id="40769-133">Height</span></span> 
+#### <span data-ttu-id="34b1f-132">Полноразмерных</span><span class="sxs-lookup"><span data-stu-id="34b1f-132">Height</span></span> 
 
-<span data-ttu-id="40769-134">Высота окна.</span><span class="sxs-lookup"><span data-stu-id="40769-134">The height of the window.</span></span>
+<span data-ttu-id="34b1f-133">Высота окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-133">The height of the window.</span></span>
 
-> <span data-ttu-id="40769-135">открытая [Высота](#height) с uint</span><span class="sxs-lookup"><span data-stu-id="40769-135">public uint [Height](#height)</span></span>
+> <span data-ttu-id="34b1f-134">открытая [Высота](#height) с uint</span><span class="sxs-lookup"><span data-stu-id="34b1f-134">public uint [Height](#height)</span></span>
 
-#### <span data-ttu-id="40769-136">Влево</span><span class="sxs-lookup"><span data-stu-id="40769-136">Left</span></span> 
+#### <span data-ttu-id="34b1f-135">Влево</span><span class="sxs-lookup"><span data-stu-id="34b1f-135">Left</span></span> 
 
-<span data-ttu-id="40769-137">Левое расположение окна.</span><span class="sxs-lookup"><span data-stu-id="40769-137">The left position of the window.</span></span>
+<span data-ttu-id="34b1f-136">Левое расположение окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-136">The left position of the window.</span></span>
 
-> <span data-ttu-id="40769-138">Открытый uint [слева](#left)</span><span class="sxs-lookup"><span data-stu-id="40769-138">public uint [Left](#left)</span></span>
+> <span data-ttu-id="34b1f-137">Открытый uint [слева](#left)</span><span class="sxs-lookup"><span data-stu-id="34b1f-137">public uint [Left](#left)</span></span>
 
-<span data-ttu-id="40769-139">Если HasPosition имеет значение false, произойдет сбой.</span><span class="sxs-lookup"><span data-stu-id="40769-139">Will fail if HasPosition is false.</span></span>
+<span data-ttu-id="34b1f-138">Если HasPosition имеет значение false, произойдет сбой.</span><span class="sxs-lookup"><span data-stu-id="34b1f-138">Will fail if HasPosition is false.</span></span>
 
-#### <span data-ttu-id="40769-140">MenuBar</span><span class="sxs-lookup"><span data-stu-id="40769-140">MenuBar</span></span> 
+#### <span data-ttu-id="34b1f-139">MenuBar</span><span class="sxs-lookup"><span data-stu-id="34b1f-139">MenuBar</span></span> 
 
-<span data-ttu-id="40769-141">Указывает, следует ли отображать строку меню.</span><span class="sxs-lookup"><span data-stu-id="40769-141">Whether or not to display the menu bar.</span></span>
+<span data-ttu-id="34b1f-140">Указывает, следует ли отображать строку меню.</span><span class="sxs-lookup"><span data-stu-id="34b1f-140">Whether or not to display the menu bar.</span></span>
 
-> <span data-ttu-id="40769-142">public int [Remenubar](#menubar)</span><span class="sxs-lookup"><span data-stu-id="40769-142">public int [MenuBar](#menubar)</span></span>
+> <span data-ttu-id="34b1f-141">public int [Remenubar](#menubar)</span><span class="sxs-lookup"><span data-stu-id="34b1f-141">public int [MenuBar](#menubar)</span></span>
 
-#### <span data-ttu-id="40769-143">Полосы прокрутки</span><span class="sxs-lookup"><span data-stu-id="40769-143">ScrollBars</span></span> 
+#### <span data-ttu-id="34b1f-142">Полосы прокрутки</span><span class="sxs-lookup"><span data-stu-id="34b1f-142">ScrollBars</span></span> 
 
-<span data-ttu-id="40769-144">Указывает, следует ли отображать полосы прокрутки.</span><span class="sxs-lookup"><span data-stu-id="40769-144">Whether or not to display scroll bars.</span></span>
+<span data-ttu-id="34b1f-143">Указывает, следует ли отображать полосы прокрутки.</span><span class="sxs-lookup"><span data-stu-id="34b1f-143">Whether or not to display scroll bars.</span></span>
 
-> <span data-ttu-id="40769-145">открытые [прокрутки](#scrollbars) int</span><span class="sxs-lookup"><span data-stu-id="40769-145">public int [ScrollBars](#scrollbars)</span></span>
+> <span data-ttu-id="34b1f-144">открытые [прокрутки](#scrollbars) int</span><span class="sxs-lookup"><span data-stu-id="34b1f-144">public int [ScrollBars](#scrollbars)</span></span>
 
-#### <span data-ttu-id="40769-146">Состояние</span><span class="sxs-lookup"><span data-stu-id="40769-146">Status</span></span> 
+#### <span data-ttu-id="34b1f-145">Состояние</span><span class="sxs-lookup"><span data-stu-id="34b1f-145">Status</span></span> 
 
-<span data-ttu-id="40769-147">Следует ли добавить строку состояния.</span><span class="sxs-lookup"><span data-stu-id="40769-147">Whether or not to add a status bar.</span></span>
+<span data-ttu-id="34b1f-146">Следует ли добавить строку состояния.</span><span class="sxs-lookup"><span data-stu-id="34b1f-146">Whether or not to add a status bar.</span></span>
 
-> <span data-ttu-id="40769-148">общедоступный целочисленный [статус](#status)</span><span class="sxs-lookup"><span data-stu-id="40769-148">public int [Status](#status)</span></span>
+> <span data-ttu-id="34b1f-147">общедоступный целочисленный [статус](#status)</span><span class="sxs-lookup"><span data-stu-id="34b1f-147">public int [Status](#status)</span></span>
 
-#### <span data-ttu-id="40769-149">панель инструментов;</span><span class="sxs-lookup"><span data-stu-id="40769-149">Toolbar</span></span> 
+#### <span data-ttu-id="34b1f-148">панель инструментов;</span><span class="sxs-lookup"><span data-stu-id="34b1f-148">Toolbar</span></span> 
 
-<span data-ttu-id="40769-150">Указывает, следует ли отображать панель инструментов браузера.</span><span class="sxs-lookup"><span data-stu-id="40769-150">Whether or not to display the browser toolbar.</span></span>
+<span data-ttu-id="34b1f-149">Указывает, следует ли отображать панель инструментов браузера.</span><span class="sxs-lookup"><span data-stu-id="34b1f-149">Whether or not to display the browser toolbar.</span></span>
 
-> <span data-ttu-id="40769-151">общедоступная [панель инструментов](#toolbar) int</span><span class="sxs-lookup"><span data-stu-id="40769-151">public int [Toolbar](#toolbar)</span></span>
+> <span data-ttu-id="34b1f-150">общедоступная [панель инструментов](#toolbar) int</span><span class="sxs-lookup"><span data-stu-id="34b1f-150">public int [Toolbar](#toolbar)</span></span>
 
-#### <span data-ttu-id="40769-152">Top</span><span class="sxs-lookup"><span data-stu-id="40769-152">Top</span></span> 
+#### <span data-ttu-id="34b1f-151">Top</span><span class="sxs-lookup"><span data-stu-id="34b1f-151">Top</span></span> 
 
-<span data-ttu-id="40769-153">Верхнее расположение окна.</span><span class="sxs-lookup"><span data-stu-id="40769-153">The top position of the window.</span></span>
+<span data-ttu-id="34b1f-152">Верхнее расположение окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-152">The top position of the window.</span></span>
 
-> <span data-ttu-id="40769-154">Открытый uint, [сверху](#top)</span><span class="sxs-lookup"><span data-stu-id="40769-154">public uint [Top](#top)</span></span>
+> <span data-ttu-id="34b1f-153">Открытый uint, [сверху](#top)</span><span class="sxs-lookup"><span data-stu-id="34b1f-153">public uint [Top](#top)</span></span>
 
-<span data-ttu-id="40769-155">Если HasPosition имеет значение false, произойдет сбой.</span><span class="sxs-lookup"><span data-stu-id="40769-155">Will fail if HasPosition is false.</span></span>
+<span data-ttu-id="34b1f-154">Если HasPosition имеет значение false, произойдет сбой.</span><span class="sxs-lookup"><span data-stu-id="34b1f-154">Will fail if HasPosition is false.</span></span>
 
-#### <span data-ttu-id="40769-156">Ширина</span><span class="sxs-lookup"><span data-stu-id="40769-156">Width</span></span> 
+#### <span data-ttu-id="34b1f-155">Ширина</span><span class="sxs-lookup"><span data-stu-id="34b1f-155">Width</span></span> 
 
-<span data-ttu-id="40769-157">Ширина окна.</span><span class="sxs-lookup"><span data-stu-id="40769-157">The width of the window.</span></span>
+<span data-ttu-id="34b1f-156">Ширина окна.</span><span class="sxs-lookup"><span data-stu-id="34b1f-156">The width of the window.</span></span>
 
-> <span data-ttu-id="40769-158">открытая [Ширина](#width) с uint</span><span class="sxs-lookup"><span data-stu-id="40769-158">public uint [Width](#width)</span></span>
+> <span data-ttu-id="34b1f-157">открытая [Ширина](#width) с uint</span><span class="sxs-lookup"><span data-stu-id="34b1f-157">public uint [Width](#width)</span></span>
 
-#### <span data-ttu-id="40769-159">HasPosition</span><span class="sxs-lookup"><span data-stu-id="40769-159">HasPosition</span></span> 
+#### <span data-ttu-id="34b1f-158">HasPosition</span><span class="sxs-lookup"><span data-stu-id="34b1f-158">HasPosition</span></span> 
 
-<span data-ttu-id="40769-160">Заданные значения Left и Top.</span><span class="sxs-lookup"><span data-stu-id="40769-160">Has specified left and top values.</span></span>
+<span data-ttu-id="34b1f-159">Заданные значения Left и Top.</span><span class="sxs-lookup"><span data-stu-id="34b1f-159">Has specified left and top values.</span></span>
 
-> <span data-ttu-id="40769-161">public int [HasPosition](#hasposition)()</span><span class="sxs-lookup"><span data-stu-id="40769-161">public int [HasPosition](#hasposition)()</span></span>
+> <span data-ttu-id="34b1f-160">public int [HasPosition](#hasposition)()</span><span class="sxs-lookup"><span data-stu-id="34b1f-160">public int [HasPosition](#hasposition)()</span></span>
 
-#### <span data-ttu-id="40769-162">HasSize</span><span class="sxs-lookup"><span data-stu-id="40769-162">HasSize</span></span> 
+#### <span data-ttu-id="34b1f-161">HasSize</span><span class="sxs-lookup"><span data-stu-id="34b1f-161">HasSize</span></span> 
 
-<span data-ttu-id="40769-163">Заданные значения Height и Width.</span><span class="sxs-lookup"><span data-stu-id="40769-163">Has specified height and width values.</span></span>
+<span data-ttu-id="34b1f-162">Заданные значения Height и Width.</span><span class="sxs-lookup"><span data-stu-id="34b1f-162">Has specified height and width values.</span></span>
 
-> <span data-ttu-id="40769-164">public int [HasSize](#hassize)()</span><span class="sxs-lookup"><span data-stu-id="40769-164">public int [HasSize](#hassize)()</span></span>
+> <span data-ttu-id="34b1f-163">public int [HasSize](#hassize)()</span><span class="sxs-lookup"><span data-stu-id="34b1f-163">public int [HasSize](#hassize)()</span></span>
 

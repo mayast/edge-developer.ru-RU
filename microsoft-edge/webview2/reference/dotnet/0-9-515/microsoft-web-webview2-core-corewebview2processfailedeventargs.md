@@ -3,39 +3,38 @@ description: Размещение веб-содержимого в прилож�
 title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 4e6c8bde7cf1fac6dfd22e8d3998ff85e806a9bd
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3656bd21c9b61cc2fbcffdbf99fdb459442626ee
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879123"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884733"
 ---
-# <span data-ttu-id="cb467-104">класс 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs</span><span class="sxs-lookup"><span data-stu-id="cb467-104">0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs class</span></span> 
+# <span data-ttu-id="25cc0-104">класс 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs</span><span class="sxs-lookup"><span data-stu-id="25cc0-104">0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs class</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="cb467-105">Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="cb467-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="cb467-106">Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.</span><span class="sxs-lookup"><span data-stu-id="cb467-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
-<span data-ttu-id="cb467-107">Пространство имен: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="cb467-107">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="cb467-108">Сборка: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="cb467-108">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+<span data-ttu-id="25cc0-105">Пространство имен: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="25cc0-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="25cc0-106">Сборка: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="25cc0-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-<span data-ttu-id="cb467-109">Аргументы события для события ProcessFailed.</span><span class="sxs-lookup"><span data-stu-id="cb467-109">Event args for the ProcessFailed event.</span></span>
+<span data-ttu-id="25cc0-107">Аргументы события для события ProcessFailed.</span><span class="sxs-lookup"><span data-stu-id="25cc0-107">Event args for the ProcessFailed event.</span></span>
 
-## <span data-ttu-id="cb467-110">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="cb467-110">Summary</span></span>
+## <span data-ttu-id="25cc0-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="25cc0-108">Summary</span></span>
 
- <span data-ttu-id="cb467-111">Участников</span><span class="sxs-lookup"><span data-stu-id="cb467-111">Members</span></span>                        | <span data-ttu-id="cb467-112">Описания</span><span class="sxs-lookup"><span data-stu-id="cb467-112">Descriptions</span></span>
+ <span data-ttu-id="25cc0-109">Участников</span><span class="sxs-lookup"><span data-stu-id="25cc0-109">Members</span></span>                        | <span data-ttu-id="25cc0-110">Описания</span><span class="sxs-lookup"><span data-stu-id="25cc0-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="cb467-113">ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="cb467-113">ProcessFailedKind</span></span>](#processfailedkind) | <span data-ttu-id="cb467-114">Произошел сбой процесса.</span><span class="sxs-lookup"><span data-stu-id="cb467-114">The kind of process failure that has occurred.</span></span>
+[<span data-ttu-id="25cc0-111">ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="25cc0-111">ProcessFailedKind</span></span>](#processfailedkind) | <span data-ttu-id="25cc0-112">Произошел сбой процесса.</span><span class="sxs-lookup"><span data-stu-id="25cc0-112">The kind of process failure that has occurred.</span></span>
 
-## <span data-ttu-id="cb467-115">Участников</span><span class="sxs-lookup"><span data-stu-id="cb467-115">Members</span></span>
+## <span data-ttu-id="25cc0-113">Участников</span><span class="sxs-lookup"><span data-stu-id="25cc0-113">Members</span></span>
 
-#### <span data-ttu-id="cb467-116">ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="cb467-116">ProcessFailedKind</span></span> 
+#### <span data-ttu-id="25cc0-114">ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="25cc0-114">ProcessFailedKind</span></span> 
 
-<span data-ttu-id="cb467-117">Произошел сбой процесса.</span><span class="sxs-lookup"><span data-stu-id="cb467-117">The kind of process failure that has occurred.</span></span>
+<span data-ttu-id="25cc0-115">Произошел сбой процесса.</span><span class="sxs-lookup"><span data-stu-id="25cc0-115">The kind of process failure that has occurred.</span></span>
 
-> <span data-ttu-id="cb467-118">общедоступная CoreWebView2ProcessFailedKind [ProcessFailedKind](#processfailedkind)</span><span class="sxs-lookup"><span data-stu-id="cb467-118">public CoreWebView2ProcessFailedKind [ProcessFailedKind](#processfailedkind)</span></span>
+> <span data-ttu-id="25cc0-116">общедоступная CoreWebView2ProcessFailedKind [ProcessFailedKind](#processfailedkind)</span><span class="sxs-lookup"><span data-stu-id="25cc0-116">public CoreWebView2ProcessFailedKind [ProcessFailedKind](#processfailedkind)</span></span>
 

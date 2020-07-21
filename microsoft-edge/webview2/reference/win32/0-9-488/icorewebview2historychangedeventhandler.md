@@ -3,41 +3,40 @@ description: Размещение веб-содержимого в прилож�
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2HistoryChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 5c4807a6f1772354f4448b25d49ea7ea86278f57
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d90f461f6c2a1e573b0514213ec34f83f0d23366
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880607"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885501"
 ---
-# <span data-ttu-id="1e13a-104">0.9.515-Interface ICoreWebView2HistoryChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="1e13a-104">0.9.515 - interface ICoreWebView2HistoryChangedEventHandler</span></span> 
+# <span data-ttu-id="57e51-104">0.9.515-Interface ICoreWebView2HistoryChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="57e51-104">0.9.515 - interface ICoreWebView2HistoryChangedEventHandler</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="1e13a-105">Эта ссылка может быть изменена или недоступна для выпусков после версии SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="1e13a-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="1e13a-106">Обратитесь к [Справочнику API WebView2](../../../webview2-api-reference.md) для получения последней ссылки на API.</span><span class="sxs-lookup"><span data-stu-id="1e13a-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2HistoryChangedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="1e13a-107">Вызывающий объект реализует этот интерфейс для получения события HistoryChanged.</span><span class="sxs-lookup"><span data-stu-id="1e13a-107">The caller implements this interface to receive the HistoryChanged event.</span></span>
+<span data-ttu-id="57e51-105">Вызывающий объект реализует этот интерфейс для получения события HistoryChanged.</span><span class="sxs-lookup"><span data-stu-id="57e51-105">The caller implements this interface to receive the HistoryChanged event.</span></span>
 
-## <span data-ttu-id="1e13a-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="1e13a-108">Summary</span></span>
+## <span data-ttu-id="57e51-106">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="57e51-106">Summary</span></span>
 
- <span data-ttu-id="1e13a-109">Участников</span><span class="sxs-lookup"><span data-stu-id="1e13a-109">Members</span></span>                        | <span data-ttu-id="1e13a-110">Описания</span><span class="sxs-lookup"><span data-stu-id="1e13a-110">Descriptions</span></span>
+ <span data-ttu-id="57e51-107">Участников</span><span class="sxs-lookup"><span data-stu-id="57e51-107">Members</span></span>                        | <span data-ttu-id="57e51-108">Описания</span><span class="sxs-lookup"><span data-stu-id="57e51-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="1e13a-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="1e13a-111">Invoke</span></span>](#invoke) | <span data-ttu-id="1e13a-112">Аргументы события отсутствуют, а параметр args — null.</span><span class="sxs-lookup"><span data-stu-id="1e13a-112">There are no event args and the args parameter will be null.</span></span>
+[<span data-ttu-id="57e51-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="57e51-109">Invoke</span></span>](#invoke) | <span data-ttu-id="57e51-110">Аргументы события отсутствуют, а параметр args — null.</span><span class="sxs-lookup"><span data-stu-id="57e51-110">There are no event args and the args parameter will be null.</span></span>
 
-## <span data-ttu-id="1e13a-113">Участников</span><span class="sxs-lookup"><span data-stu-id="1e13a-113">Members</span></span>
+## <span data-ttu-id="57e51-111">Участников</span><span class="sxs-lookup"><span data-stu-id="57e51-111">Members</span></span>
 
-#### <span data-ttu-id="1e13a-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="1e13a-114">Invoke</span></span> 
+#### <span data-ttu-id="57e51-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="57e51-112">Invoke</span></span> 
 
-<span data-ttu-id="1e13a-115">Аргументы события отсутствуют, а параметр args — null.</span><span class="sxs-lookup"><span data-stu-id="1e13a-115">There are no event args and the args parameter will be null.</span></span>
+<span data-ttu-id="57e51-113">Аргументы события отсутствуют, а параметр args — null.</span><span class="sxs-lookup"><span data-stu-id="57e51-113">There are no event args and the args parameter will be null.</span></span>
 
-> <span data-ttu-id="1e13a-116">Открытый [вызов](#invoke)HRESULT ([ICoreWebView2](icorewebview2.md) \* WebView, IUnknown \* args)</span><span class="sxs-lookup"><span data-stu-id="1e13a-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* webview, IUnknown \* args)</span></span>
+> <span data-ttu-id="57e51-114">Открытый [вызов](#invoke)HRESULT ([ICoreWebView2](icorewebview2.md) \* WebView, IUnknown \* args)</span><span class="sxs-lookup"><span data-stu-id="57e51-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* webview, IUnknown \* args)</span></span>
 

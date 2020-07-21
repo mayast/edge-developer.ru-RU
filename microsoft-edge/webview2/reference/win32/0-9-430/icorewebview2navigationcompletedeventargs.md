@@ -3,57 +3,56 @@ description: Размещение веб-содержимого в прилож�
 title: 0.9.430-WebView2 Win32 C++ ICoreWebView2NavigationCompletedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 215297bf56234452aad33e135cfb03ec079a049b
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 099a022fef47beca0e0163e6e0e070aa37520a06
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877975"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883730"
 ---
-# <span data-ttu-id="f7043-104">0.9.430-Interface ICoreWebView2NavigationCompletedEventArgs</span><span class="sxs-lookup"><span data-stu-id="f7043-104">0.9.430 - interface ICoreWebView2NavigationCompletedEventArgs</span></span> 
+# <span data-ttu-id="aef69-104">0.9.430-Interface ICoreWebView2NavigationCompletedEventArgs</span><span class="sxs-lookup"><span data-stu-id="aef69-104">0.9.430 - interface ICoreWebView2NavigationCompletedEventArgs</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="f7043-105">Этот интерфейс может быть изменен или недоступен для выпусков после версии SDK 0.9.430.</span><span class="sxs-lookup"><span data-stu-id="f7043-105">This interface may be altered or unavailable for releases after SDK version 0.9.430.</span></span> <span data-ttu-id="f7043-106">Ознакомьтесь со [справочной](../../../webview2-api-reference.md) информацией по последней ссылке на API.</span><span class="sxs-lookup"><span data-stu-id="f7043-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2NavigationCompletedEventArgs
   : public IUnknown
 ```
 
-<span data-ttu-id="f7043-107">Аргументы события для события NavigationCompleted.</span><span class="sxs-lookup"><span data-stu-id="f7043-107">Event args for the NavigationCompleted event.</span></span>
+<span data-ttu-id="aef69-105">Аргументы события для события NavigationCompleted.</span><span class="sxs-lookup"><span data-stu-id="aef69-105">Event args for the NavigationCompleted event.</span></span>
 
-## <span data-ttu-id="f7043-108">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="f7043-108">Summary</span></span>
+## <span data-ttu-id="aef69-106">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="aef69-106">Summary</span></span>
 
- <span data-ttu-id="f7043-109">Участников</span><span class="sxs-lookup"><span data-stu-id="f7043-109">Members</span></span>                        | <span data-ttu-id="f7043-110">Описания</span><span class="sxs-lookup"><span data-stu-id="f7043-110">Descriptions</span></span>
+ <span data-ttu-id="aef69-107">Участников</span><span class="sxs-lookup"><span data-stu-id="aef69-107">Members</span></span>                        | <span data-ttu-id="aef69-108">Описания</span><span class="sxs-lookup"><span data-stu-id="aef69-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="f7043-111">get_IsSuccess</span><span class="sxs-lookup"><span data-stu-id="f7043-111">get_IsSuccess</span></span>](#get_issuccess) | <span data-ttu-id="f7043-112">Значение true, если навигация выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="f7043-112">True when the navigation is successful.</span></span>
-[<span data-ttu-id="f7043-113">get_WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="f7043-113">get_WebErrorStatus</span></span>](#get_weberrorstatus) | <span data-ttu-id="f7043-114">Код ошибки, если навигация завершилась сбоем.</span><span class="sxs-lookup"><span data-stu-id="f7043-114">The error code if the navigation failed.</span></span>
-[<span data-ttu-id="f7043-115">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="f7043-115">get_NavigationId</span></span>](#get_navigationid) | <span data-ttu-id="f7043-116">Идентификатор навигации.</span><span class="sxs-lookup"><span data-stu-id="f7043-116">The ID of the navigation.</span></span>
+[<span data-ttu-id="aef69-109">get_IsSuccess</span><span class="sxs-lookup"><span data-stu-id="aef69-109">get_IsSuccess</span></span>](#get_issuccess) | <span data-ttu-id="aef69-110">Значение true, если навигация выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="aef69-110">True when the navigation is successful.</span></span>
+[<span data-ttu-id="aef69-111">get_WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="aef69-111">get_WebErrorStatus</span></span>](#get_weberrorstatus) | <span data-ttu-id="aef69-112">Код ошибки, если навигация завершилась сбоем.</span><span class="sxs-lookup"><span data-stu-id="aef69-112">The error code if the navigation failed.</span></span>
+[<span data-ttu-id="aef69-113">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="aef69-113">get_NavigationId</span></span>](#get_navigationid) | <span data-ttu-id="aef69-114">Идентификатор навигации.</span><span class="sxs-lookup"><span data-stu-id="aef69-114">The ID of the navigation.</span></span>
 
-## <span data-ttu-id="f7043-117">Участников</span><span class="sxs-lookup"><span data-stu-id="f7043-117">Members</span></span>
+## <span data-ttu-id="aef69-115">Участников</span><span class="sxs-lookup"><span data-stu-id="aef69-115">Members</span></span>
 
-#### <span data-ttu-id="f7043-118">get_IsSuccess</span><span class="sxs-lookup"><span data-stu-id="f7043-118">get_IsSuccess</span></span> 
+#### <span data-ttu-id="aef69-116">get_IsSuccess</span><span class="sxs-lookup"><span data-stu-id="aef69-116">get_IsSuccess</span></span> 
 
-<span data-ttu-id="f7043-119">Значение true, если навигация выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="f7043-119">True when the navigation is successful.</span></span>
+<span data-ttu-id="aef69-117">Значение true, если навигация выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="aef69-117">True when the navigation is successful.</span></span>
 
-> <span data-ttu-id="f7043-120">общедоступные значения HRESULT [get_IsSuccess](#get_issuccess)(bool \* "успешно")</span><span class="sxs-lookup"><span data-stu-id="f7043-120">public HRESULT [get_IsSuccess](#get_issuccess)(BOOL \* isSuccess)</span></span>
+> <span data-ttu-id="aef69-118">общедоступные значения HRESULT [get_IsSuccess](#get_issuccess)(bool \* "успешно")</span><span class="sxs-lookup"><span data-stu-id="aef69-118">public HRESULT [get_IsSuccess](#get_issuccess)(BOOL \* isSuccess)</span></span>
 
-<span data-ttu-id="f7043-121">Это значение является ложным для навигации, которая завершилась на странице ошибки (ошибки поиска DNS, HTTP-сервер отвечает на 4xx), но это также может быть ложным для дополнительных функций, таких как Window. Stop (), вызываемых на странице навигации.</span><span class="sxs-lookup"><span data-stu-id="f7043-121">This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.</span></span>
+<span data-ttu-id="aef69-119">Это значение является ложным для навигации, которая завершилась на странице ошибки (ошибки поиска DNS, HTTP-сервер отвечает на 4xx), но это также может быть ложным для дополнительных функций, таких как Window. Stop (), вызываемых на странице навигации.</span><span class="sxs-lookup"><span data-stu-id="aef69-119">This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.</span></span>
 
-#### <span data-ttu-id="f7043-122">get_WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="f7043-122">get_WebErrorStatus</span></span> 
+#### <span data-ttu-id="aef69-120">get_WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="aef69-120">get_WebErrorStatus</span></span> 
 
-<span data-ttu-id="f7043-123">Код ошибки, если навигация завершилась сбоем.</span><span class="sxs-lookup"><span data-stu-id="f7043-123">The error code if the navigation failed.</span></span>
+<span data-ttu-id="aef69-121">Код ошибки, если навигация завершилась сбоем.</span><span class="sxs-lookup"><span data-stu-id="aef69-121">The error code if the navigation failed.</span></span>
 
-> <span data-ttu-id="f7043-124">общедоступные значения HRESULT [get_WebErrorStatus](#get_weberrorstatus)(CORE_WEBVIEW2_WEB_ERROR_STATUS \* CORE_WEBVIEW2_WEB_ERROR_STATUS)</span><span class="sxs-lookup"><span data-stu-id="f7043-124">public HRESULT [get_WebErrorStatus](#get_weberrorstatus)(CORE_WEBVIEW2_WEB_ERROR_STATUS \* CORE_WEBVIEW2_WEB_ERROR_STATUS)</span></span>
+> <span data-ttu-id="aef69-122">общедоступные значения HRESULT [get_WebErrorStatus](#get_weberrorstatus)(CORE_WEBVIEW2_WEB_ERROR_STATUS \* CORE_WEBVIEW2_WEB_ERROR_STATUS)</span><span class="sxs-lookup"><span data-stu-id="aef69-122">public HRESULT [get_WebErrorStatus](#get_weberrorstatus)(CORE_WEBVIEW2_WEB_ERROR_STATUS \* CORE_WEBVIEW2_WEB_ERROR_STATUS)</span></span>
 
-#### <span data-ttu-id="f7043-125">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="f7043-125">get_NavigationId</span></span> 
+#### <span data-ttu-id="aef69-123">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="aef69-123">get_NavigationId</span></span> 
 
-<span data-ttu-id="f7043-126">Идентификатор навигации.</span><span class="sxs-lookup"><span data-stu-id="f7043-126">The ID of the navigation.</span></span>
+<span data-ttu-id="aef69-124">Идентификатор навигации.</span><span class="sxs-lookup"><span data-stu-id="aef69-124">The ID of the navigation.</span></span>
 
-> <span data-ttu-id="f7043-127">общедоступные значения HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span><span class="sxs-lookup"><span data-stu-id="f7043-127">public HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span></span>
+> <span data-ttu-id="aef69-125">общедоступные значения HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span><span class="sxs-lookup"><span data-stu-id="aef69-125">public HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span></span>
 
