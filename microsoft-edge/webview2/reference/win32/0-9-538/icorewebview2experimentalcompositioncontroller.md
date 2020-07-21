@@ -3,29 +3,28 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: WebView2 Win32 C++ ICoreWebView2ExperimentalCompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2ExperimentalCompositionController
-ms.openlocfilehash: e2b16cfd9095d43eb01d7e6233da2857c12a04ad
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d651133162520e4a967d13de6f585fe3ac02e830
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880033"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886467"
 ---
 # интерфейс ICoreWebView2ExperimentalCompositionController 
 
-> [!NOTE]
-> Это экспериментальный API-интерфейс, поставляемый с предварительной версией SDK версии 0.9.538.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalCompositionController
   : public IUnknown
 ```
 
-Этот интерфейс является расширением интерфейса ICoreWebView2Controller для поддержки визуального размещения.
+Этот интерфейс является расширением интерфейса [ICoreWebView2Controller](icorewebview2controller.md) для поддержки визуального размещения.
 
 ## Краткий обзор
 
@@ -45,7 +44,7 @@ interface ICoreWebView2ExperimentalCompositionController
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | Виртуальные ключи событий мыши, связанные с COREWEBVIEW2_MOUSE_EVENT_KINDом для SendMouseInput.
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | Тип события указателя, используемый функцией SendPointerInput для передачи типа события указателя, отправляемого в WebView.
 
-Объект, реализующий интерфейс ICoreWebView2ExperimentalCompositionController, также будет реализовывать ICoreWebView2Controller. Предполагается, что вызывающие объекты используют ICoreWebView2Controller для изменения размера, видимости, фокусировки и т. д., а затем используют ICoreWebView2ExperimentalCompositionController для подключения к дереву композиции и предоставления входных данных для WebView.
+Объект, реализующий интерфейс ICoreWebView2ExperimentalCompositionController, также будет реализовывать [ICoreWebView2Controller](icorewebview2controller.md). Предполагается, что вызывающие объекты используют [ICoreWebView2Controller](icorewebview2controller.md) для изменения размера, видимости, фокусировки и т. д., а затем используют ICoreWebView2ExperimentalCompositionController для подключения к дереву композиции и предоставления входных данных для WebView.
 
 ## Участников
 
@@ -57,19 +56,21 @@ interface ICoreWebView2ExperimentalCompositionController
 
 Событие срабатывает, когда WebView считает, что курсор должен быть изменен. Например, если курсор мыши установлен по умолчанию, но затем перемещается поверх текста, он может попытаться перейти на курсор IBeam.
 
+Ожидается, что разработчик отправляет COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE сообщения (в дополнение к COREWEBVIEW2_MOUSE_EVENT_KIND_MOVE сообщениям) через API SendMouseInput. Это необходимо для того, чтобы убедиться в том, что указатель мыши находится в WebView, отправляющем события CursorChanged.
+
 ```cpp
         // Register a handler for the CursorChanged event.
         CHECK_FAILURE(m_compositionController->add_CursorChanged(
             Callback<ICoreWebView2ExperimentalCursorChangedEventHandler>(
                 [this](ICoreWebView2ExperimentalCompositionController* sender,
-                       IUnknown* args) -> HRESULT {
-                    HCURSOR cursor;
-                    CHECK_FAILURE(sender->get_Cursor(&cursor));
-                    SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
-                    return S_OK;
+                    IUnknown* args) -> HRESULT {
+                        HCURSOR cursor;
+                        CHECK_FAILURE(sender->get_Cursor(&cursor));
+                        SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
+                        return S_OK;
                 })
-                .Get(),
-            &m_cursorChangedToken));
+            .Get(),
+                    &m_cursorChangedToken));
 ```
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
@@ -79,7 +80,6 @@ interface ICoreWebView2ExperimentalCompositionController
 > общедоступные значения HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(uint POINTERID, HWND parentWindow, struct COREWEBVIEW2_MATRIX_4X4 Transform, [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * * pointerInfo)
 
 parentWindow — HWND, который содержит WebView. Это может быть любой HWND в дереве HWND, который включает WebView. COREWEBVIEW2_MATRIX_4X4 является преобразованием из дескриптора HWND в WebView. Возвращенный [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) используется в SendPointerInfo. Тип указателя должен быть либо пером, либо сенсорным, либо функция завершится сбоем.
-
 
 
 #### get_Cursor 
@@ -151,7 +151,7 @@ void ViewComponent::BuildDCompTreeUsingVisual()
 
 > Public HRESULT [SendMouseInput](#sendmouseinput)([COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind, [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys, UINT32 mouseData, точка Point)
 
-Положительное значение указывает на то, что колесико было повернуто вперед от пользователя; отрицательное значение указывает на то, что колесико было повернуто на обратном направлении к пользователю. Один щелчок мыши определяется как WHEEL_DELTA (120). Если eventKind COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN или COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP, то mouseData указывает, какие кнопки X были нажаты или отпущены. Это значение должно быть 1, если первая кнопка X нажата/выпущена, и 2 при нажатии или отпускании второй кнопки X. Если eventKind COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE, то virtualKeys, mouseData и Point должны равняться нулю. Если eventKind — любое другое значение, mouseData должно равняться нулю. Ожидается, что точка должна находиться в пространстве координат клиента WebView. Для отслеживания событий мыши, которые запускаются в WebView и потенциально могут перемещаться за пределы WebView и ведущего приложения, рекомендуется использовать вызов SetCapture и ReleaseCapture. Чтобы выйти из всплывающих окон, также рекомендуется отправлять WM_MOUSELEAVE сообщения. 
+Положительное значение указывает на то, что колесико было повернуто вперед от пользователя; отрицательное значение указывает на то, что колесико было повернуто на обратном направлении к пользователю. Один щелчок мыши определяется как WHEEL_DELTA (120). Если eventKind COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN или COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP, то mouseData указывает, какие кнопки X были нажаты или отпущены. Это значение должно быть 1, если первая кнопка X нажата/выпущена, и 2 при нажатии или отпускании второй кнопки X. Если eventKind COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE, то virtualKeys, mouseData и Point должны равняться нулю. Если eventKind — любое другое значение, mouseData должно равняться нулю. Ожидается, что точка должна находиться в пространстве координат клиента WebView. Для отслеживания событий мыши, которые запускаются в WebView и потенциально могут перемещаться за пределы WebView и ведущего приложения, рекомендуется использовать вызов SetCapture и ReleaseCapture. Чтобы выйти из всплывающих окон, также рекомендуется отправлять COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE сообщения. 
 ```cpp
 bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 {

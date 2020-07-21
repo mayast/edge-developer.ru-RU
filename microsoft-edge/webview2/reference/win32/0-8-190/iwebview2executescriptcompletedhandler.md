@@ -3,22 +3,21 @@ description: Размещение веб-содержимого в прилож�
 title: 0.8.355-WebView2 Win32 C++ IWebView2ExecuteScriptCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE
-ms.openlocfilehash: ecd3215c343925614b81d5da96fbf996350fd5a5
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 9a075cf5e5d3e5222e76b9ba7550636a67e5696a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878507"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886012"
 ---
 # 0.8.355-Interface IWebView2ExecuteScriptCompletedHandler 
 
-> [!NOTE]
-> Этот интерфейс может быть изменен или недоступен для выпусков после версии SDK 0.8.355. Ознакомьтесь со [справочной](../../../webview2-api-reference.md) информацией по последней ссылке на API.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2ExecuteScriptCompletedHandler

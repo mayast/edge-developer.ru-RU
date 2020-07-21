@@ -3,22 +3,21 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: WebView2 Win32 C++ ICoreWebView2ExperimentalNewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2ExperimentalNewWindowRequestedEventArgs
-ms.openlocfilehash: 39d52b1231e767739b63b3759cdd08e4c9b26be3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d18ccc91d16213cf0a915420b406b65823b3f9d9
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879991"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886453"
 ---
 # интерфейс ICoreWebView2ExperimentalNewWindowRequestedEventArgs 
 
-> [!NOTE]
-> Это экспериментальный API-интерфейс, поставляемый с предварительной версией SDK версии 0.9.538.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs
