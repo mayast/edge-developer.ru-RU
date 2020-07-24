@@ -3,16 +3,16 @@ description: В этом руководстве вы найдете общие �
 title: Приступая к работе с прогрессивными веб-приложениями (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: прогрессивные веб-приложения, PWA, EDGE, Windows, PWABuilder, веб-манифест, специалист по обслуживанию, отправка
-ms.openlocfilehash: 6c5fa5d6af8494f33e11a545d5dde1264604c787
-ms.sourcegitcommit: 136642396bb8094a535e203067ee429e60d31d25
+ms.openlocfilehash: a9a0cad2d771e52b783053e36f0f23dec5d8e70c
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10659211"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894712"
 ---
 # Приступая к работе с прогрессивными веб-приложениями (Chromium)  
 
@@ -26,7 +26,7 @@ ms.locfileid: "10659211"
 ## Предварительные условия  
 
 *   Использование [кода VS][VisualstudioCodeMain] для редактирования ИСХОДНОГО кода PWA.  
-*   Используйте [node. js][NodejsMain] в качестве локального веб-сервера.  
+*   Используйте [Node.js][NodejsMain] в качестве локального веб-сервера.  
 
 ## Настройка простого веб-приложения  
 
@@ -125,7 +125,7 @@ npm start
 1.  В коде VS откройте `/public/index.html` и добавьте следующий фрагмент кода в `<head>` тег.  
     
     ```html
-    <script src="/pwabuilder-sw-register.js"></script>
+    <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
 У вашего веб-приложения теперь есть сотрудник службы, который использует стратегию первого кэша, которая сначала извлекает такие ресурсы, как изображения, JS, CSS и HTML из кэша, и при необходимости возвращается к сети.  
@@ -319,7 +319,7 @@ self.addEventListener('notificationclick', function (event) {
 
 <!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service "Публикация в службе приложений Azure — создание приложения Node. js и Экспресс-представления в Visual Studio | Документы Microsoft"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Развертывание Node.js приложения в Azure с помощью кода VS | Документы Microsoft"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Создать бесплатную учетную запись Azure | Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Веб-приложения | Microsoft Azure"  
@@ -345,7 +345,7 @@ self.addEventListener('notificationclick', function (event) {
 
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Отправка VAPID идентифицированных уведомлений о событиях через службу Push-сообщений для Mozilla | Службы Mozilla"  
 
-[NodejsMain]: https://nodejs.org "Node. js"  
+[NodejsMain]: https://nodejs.org "Node.js"  
 
 [NPMWebPush]: https://www.npmjs.com/package/web-push "веб-отправка | NPM"  
 [NPMWebPushEncrypt]: https://www.npmjs.com/package/web-push#encryptuserpublickey-userauth-payload-contentencoding "Encrypt (userPublicKey, userAuth, полезные данные, contentEncoding) — веб-отправка | NPM"  

@@ -3,17 +3,17 @@ description: Размещение веб-содержимого в прилож�
 title: Приступая к работе с WebView2 для приложений Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: e184eaeb28a1e6e7aacf2917094149092d2fb6ee
-ms.sourcegitcommit: ae0257f8fb9832296ee6a196ded7bad2aacd3208
+ms.openlocfilehash: 7e35dc6ab84a32cfa7e020fa34ddfaa63818eda1
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "10846551"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895520"
 ---
 # Начало работы с WebView2 (Предварительная версия для разработчиков)  
 
@@ -124,7 +124,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
                 }
                 
                 // Add a few settings for the webview
-                // this is a redundant demo step as the values are the default settings
+                // The demo step is redundant since the values are the default settings
                 ICoreWebView2Settings* Settings;
                 webviewWindow->get_Settings(&Settings);
                 Settings->put_IsScriptEnabled(TRUE);
@@ -170,7 +170,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-Дополнительные сведения можно найти в разделе [события навигации][Webview2ReferenceWin3209538Icorewebview2NavigationEvents].  
+Дополнительные сведения можно найти в разделе [события навигации][Webview2ConceptsNavigationEvents].  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="События навигации":::
    События навигации  
@@ -206,7 +206,7 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 ## Шаг 5: создание сценариев  
 
-Ведущее приложение может также внедрить JavaScript в WebView.  Вы можете использовать WebView, чтобы выполнить произвольный сценарий JavaScript или добавить сценарии инициализации.  Добавленные сценарии инициализации применяются ко всем документам верхнего уровня и навигации дочернего фрейма до тех пор, пока они не будут удалены, а затем выполняются после создания глобального объекта и перед выполнением любого другого сценария, включенного в документ HTML.  
+Ведущее приложение может также внедрить JavaScript в WebView.  Вы можете WebView задачу, чтобы запустить произвольный сценарий JavaScript или добавить сценарии инициализации.  Добавленные сценарии инициализации применяются ко всем документам верхнего уровня и навигации дочернего фрейма до тех пор, пока они не будут удалены, а затем выполняются после создания глобального объекта и перед запуском любого другого сценария, включенного в документ HTML.  
 
 Скопируйте приведенный ниже фрагмент кода и вставьте его в `HelloWebView.cpp` .  
 
@@ -290,7 +290,7 @@ nullptr);
 
 [Webview2Index]: ../index.md "Введение в Microsoft Edge WebView2 (Предварительная версия) | Документы Microsoft"  
 [Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Ссылка (WebView2) | Документы Microsoft"  
-[Webview2ReferenceWin3209538Icorewebview2NavigationEvents]: ../reference/win32/0-9-538/ICoreWebView2.md#navigation-events "События навигации — интерфейс ICoreWebView2 | Документы Microsoft"  
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "События навигации | Документы Microsoft"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Библиотека шаблонов C++ среды выполнения Windows (WRL) | Документы Microsoft"  
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "Пошаговое руководство: создание традиционного классического приложения для Windows (C++) | Документы Microsoft"  

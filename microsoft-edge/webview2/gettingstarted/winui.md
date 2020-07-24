@@ -3,17 +3,17 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView2 для приложений WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, winui, winui, EDGE, CoreWebView2, Browser Control, EDGE HTML, Приступая к работе, Приступая к работе, .NET
-ms.openlocfilehash: 76bf2e7dc0ef54da4203f186ce0356cfbcbc130d
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888635"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895513"
 ---
 # Начало работы с WebView2 в WinUI3 (Предварительная версия)  
 
@@ -192,7 +192,7 @@ ms.locfileid: "10888635"
 *   `NavigationCompleted`  
 > [!NOTE]
 > Переадресация HTTP вызывает несколько `NavigationStarting` событий.  
-Дополнительные сведения можно найти в разделе [события навигации][Webviews2ReferenceWin3209488Icorewebview2NavigationEvents].  
+Дополнительные сведения можно найти в разделе [события навигации][Webviews2ConceptsNavigationEvents].  
 
 При возникновении ошибок возникают следующие события, которые могут перейти на страницу ошибки.  
 
@@ -274,7 +274,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [Webview2Index]: ../index.md "Введение в Microsoft Edge WebView2 (Предварительная версия) | Документы Microsoft"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Дальнейшие действия — введение в Microsoft Edge WebView2 (Предварительная версия) | Документы Microsoft"  
-[Webviews2ReferenceWin3209488Icorewebview2NavigationEvents]: ../reference/win32/0-9-488/icorewebview2.md#navigation-events "События навигации — интерфейс ICoreWebView2 | Документы Microsoft"  
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "События навигации | Документы Microsoft"  
 [Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "Класс ExecuteScriptAsync-Microsoft. Web. WebView2. WPF. WebView2 | Документы Microsoft"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Справочник по схеме манифеста пакета для Windows 10 | Документы Microsoft"  
