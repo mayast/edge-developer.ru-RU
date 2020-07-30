@@ -16,10 +16,18 @@
       href: concepts/distribution.md
     - name: Управление папками с данными пользователей
       href: concepts/userdatafolder.md
+    - name: События навигации
+      href: concepts/navigation-events.md
+    - name: Модель процессов
+      href: concepts/process-model.md
     - name: Рекомендации по безопасности
       href: concepts/security.md
     - name: Управление версиями
       href: concepts/versioning.md
+    - name: Потоковая модель
+      href: concepts/threading-model.md
+    - name: Соглашения Win32 API
+      href: concepts/win32-api-conventions.md
 - name: Заметки о выпуске
   href: releasenotes.md
 - name: Стратегия
