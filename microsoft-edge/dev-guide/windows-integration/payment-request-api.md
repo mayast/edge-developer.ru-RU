@@ -3,19 +3,22 @@ description: В этой статье рассказывается о том, к
 title: Руководство по разработке — API запроса на оплату
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
-ms.openlocfilehash: 75c596570a222336a4ba0c371acb8770f97804ee
-ms.sourcegitcommit: e690bb4d1cb9e73c93b468c9f55d91ea6fb6c654
+ms.openlocfilehash: b082e311dcbe5cff3101f084e7ff2c145e6e83df
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "10572879"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902866"
 ---
-# API запроса на оплату
+# API запроса на оплату (EdgeHTML)
+
+> [!NOTE]
+> В этой статье описан рабочий процесс, поддерживаемый в [устаревшей версии Microsoft Edge][MicrosoftSupport44533505].  Microsoft Edge \ (Chromium \) поддерживает API запроса на оплату с другой реализацией на основе проекта Chromium.  
 
 Продажи электронных торговли продолжают увеличиваться на быстром темпе. Согласно [eMarketer](https://www.emarketer.com/), в 2018 цифровые продажи обносятся с учетом того, что увеличиваются до 23% на основе уровней, измеренных в 2013.  Несмотря на то, что потребительские и коммерческие компании будут пользоваться преимуществами продаж из электронных торговли, проблемы остаются.  Сегодня каждый из владельцев веб-сайтов электронной коммерции должен вкладывать время в разработку бесплатных потоков и правил проверки.  Потребители должны перемещаться по разным заказам на извлечение и повторно вводить одинаковые сведения о платежах и отправке на каждом сайте, где они будут покупаться.  Это может занять много времени и неприятностей для потребителей, что приводит к высокой доле отказов в корзине покупок и снижению продаж для торговых продавцов. [Оценка](http://baymard.com/lists/cart-abandonment-rate) продавцов в масштабах от 60% до 70% покупательской корзины отброшена.      
 
@@ -204,8 +207,14 @@ var options = {
  
 ```
 
-## Справочные материалы по API
-[API запроса на оплату](https://msdn.microsoft.com/library/mt790447)
+## Справочник по API
+[API запроса оплаты](https://msdn.microsoft.com/library/mt790447)
 
 ## Specification
-[API запроса на оплату](https://w3.org/TR/payment-request/)
+[API запроса оплаты](https://w3.org/TR/payment-request/)
+
+<!-- links -->  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "Что такое Microsoft Edge Legacy?"  
