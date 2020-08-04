@@ -3,16 +3,16 @@ description: Расширение возможностей PWA для Windows с
 title: Адаптация PWA (EdgeHTML) для Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: прогрессивные веб-приложения, PWA, EDGE, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
-ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
+ms.openlocfilehash: 70a675b1a4057326463fb63c6a93abf8f428c677
+ms.sourcegitcommit: 8510fdaa72c8940440133e4c5b36349997d94127
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894719"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905575"
 ---
 # Адаптация PWA (EdgeHTML) для Windows  
 
@@ -44,8 +44,8 @@ PWA \ (EdgeHTML \), установленный как приложение Windo
 Настройка среды разработки приложений для Windows в Visual Studio.  
 
 1.  В параметрах Windows включите [режим разработчика][WindowsUWPGetStartedEnable].  \ (Введите `developer mode` в searchbar Windows, чтобы найти его. \)  
-1.  Запустите Visual Studio и **Создайте новый проект..** .  
-1.  Выберите шаблон **проект упаковки приложений для Windows** на C#.  Если вы используете предыдущую версию Visual Studio, найдите соответствующий шаблон в разделе **размещенное веб-приложение (универсальные приложения для Windows)** или **прогрессивное веб-приложение (универсальные приложения для Windows)**.  
+1.  Запустите Visual Studio и выберите **создать новый проект..**..  
+1.  **Javascript**  >  В Visual Studio 2017 в списке типов проектов выберите вариант "**универсальные** приложения для Windows" и выберите пункт **прогрессивное веб-приложение (универсальные системы Windows)** .  
 1.  Выберите по умолчанию Windows 10 `Target version` \ (самый последний выпуск \) и `Minimum version` \ (сборка 10586 или более поздняя) и нажмите кнопку **ОК**.  
 
     ![Диалоговое окно "выбор" в Visual Studio для сборок целевых объектов проекта UWP](media/vs-target-min-version.png)  
@@ -99,7 +99,7 @@ PWA \ (EdgeHTML \), установленный как приложение Windo
     
     Это возвращает глобальный `Windows Runtime` объект, содержащий все [пространства имен WinRT верхнего уровня](#find-windows-runtime-winrt-apis).  Это ваша входная точка PWA \ (EdgeHTML \) для [универсальной платформы Windows][WindowsUWPIndex], доступная только для веб-приложений, которые выполняются в приложениях Windows 10 (в процессе, запущенном за пределами браузера `WWAHost.exe` ).  
     
-## Поиск API-интерфейсов среды выполнения Windows \ (WinRT \)  
+## Поиск API среды выполнения Windows (WinRT)  
 
 Как установленное приложение для Windows, класс [PWA \ (EdgeHTML \) имеет полный доступ к встроенным API среды выполнения Windows][WindowsRuntime]. Определение необходимых данных, получение разрешений для реквизитов и использование функции обнаружения функций для отправки запроса API в поддерживаемых средах.  Пошаговые инструкции по добавлению последовательного расширения для пользователей классического приложения для Windows для настольных систем.  
 
