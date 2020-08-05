@@ -108,7 +108,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 При удаленной отладке [устройства с Android][DevToolsRemoteDebugAndroid], [устройства с Windows 10][DevToolsRemoteDebugWindows]или [эмулятора Surface Duo][DevToolsRemoteDebugDuoEmulator]вы можете переключаться между экранной презентацией с помощью ![ значка "Показать презентацию" ][ImageScreencastingIcon] в левом верхнем углу окна DevTools.  При включенной презентации вы можете перемещаться по вкладке в Microsoft EDGE на удаленном устройстве из окна DevTools.  В Microsoft Edge 84 эти кнопки навигации теперь также доступны для клавиатуры.  
 
-:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Нажатие клавиш SHIFT + TAB на панели экранных URL-адресов показывает, что кнопка "Обновить" находится в фокусе" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
+:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Нажатие клавиш SHIFT + TAB на панели экранных URL-адресов показывает, что кнопка Обновить находится в фокусе" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    При нажатии на `Shift` + `Tab` отрезке экранного URL-адреса появляется фокус на кнопке " **Обновить** "
 :::image-end:::  
 
@@ -118,7 +118,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 В Microsoft Edge 84 [область сведений][DevToolsNetworkDetails] на панели " **сеть** " теперь получает фокус при открытии ресурса в [сетевом журнале][DevToolsNetworkLog].  Это изменение позволяет средствам чтения с экрана читать и взаимодействовать с содержимым области **сведений** .  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="При открытии области сведений на панели "сеть" выводится фокус" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="При открытии области сведений на панели сеть выводится фокус" lightbox="../../media/2020/05/network-details.msft.png":::
    При открытии области **сведений** на панели " **сеть** " выводится фокус
 :::image-end:::  
 
@@ -134,7 +134,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 Чтобы приступить к работе, ознакомьтесь со статьей [Поиск и устранение проблем с помощью средства Microsoft Edge DevToolss][DevtoolsIssuesIndex].  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Инструмент "проблемы" в DevTools ящике" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Инструмент проблемы в DevTools ящике" lightbox="../../media/2020/05/issues.msft.png":::
    Инструмент " **проблемы** " в DevTools ящике  
 :::image-end:::  
 
@@ -170,7 +170,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 Если вы видите `Total Blocking Time: Unavailable` , Microsoft Edge DevTools не получил нужные сведения из внутренних данных профилирования в Microsoft Edge.  
 
-:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Общие сведения о времени блокировки в нижнем колонтитуле записи панели "производительность"" lightbox="../../media/2020/05/tbt.msft.png":::
+:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Общие сведения о времени блокировки в нижнем колонтитуле записи панели производительность" lightbox="../../media/2020/05/tbt.msft.png":::
    Общие сведения о времени блокировки в нижнем колонтитуле записи панели " **производительность** "  
 :::image-end:::  
 
@@ -211,7 +211,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 Пользовательский интерфейс "Автозаполнение" области " **стили** " теперь определяет ключевое слово " [вернуть][MDNRevert] CSS", которое возвращает каскадное значение свойства к предыдущему значению, примененному к стилю элемента.  
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Установка значения свойства "вернуть"" lightbox="../../media/2020/05/revert.msft.png":::
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Установка значения свойства вернуть" lightbox="../../media/2020/05/revert.msft.png":::
   Установка значения свойства "вернуть"  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 При выборе цветов с помощью [палитры][DevtoolsCssReferenceColorPicker] цветов или переключения между цветовыми представлениями в области **стили** при нажатии `Shift` и выделении `background-color` значения должен отобразиться синтаксис аргументов, разделенных пробелами.  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Использование аргументов, разделенных пробелами, в области "стили"" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Использование аргументов, разделенных пробелами, в области стили" lightbox="../../media/2020/05/color.msft.png":::
   Использование аргументов, разделенных пробелами, в области " **стили** "  
 :::image-end:::  
 
@@ -249,7 +249,7 @@ Microsoft Edge DevTools использует новый синтаксис, та
 
 Область " **Свойства** " на панели " **элементы** " устарела.  Запустите `console.dir($0)` на **консоли** .  
 
-:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="Область "устаревшие свойства"" lightbox="../../media/2020/05/properties.msft.png":::
+:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="Область устаревшие свойства" lightbox="../../media/2020/05/properties.msft.png":::
    Область "устаревшие **Свойства** "  
 :::image-end:::  
 
