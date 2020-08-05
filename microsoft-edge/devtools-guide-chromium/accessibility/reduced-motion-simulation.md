@@ -37,7 +37,7 @@ ms.locfileid: "10843986"
         
 1.  Тип `reduced` , чтобы включить или отключить эмуляцию.  Выберите параметр и нажмите клавишу `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Включение и отключение параметра "предпочтительные уменьшенные перемещения" в меню команд" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Включение и отключение параметра предпочтительные уменьшенные перемещения в меню команд" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
        Включение и отключение параметра " **предпочтительные уменьшенные перемещения** " в **меню команд**  
     :::image-end:::  
     
