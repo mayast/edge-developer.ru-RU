@@ -55,7 +55,7 @@ ms.locfileid: "10684066"
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="../media/actionmenu-browseraction.png" alt-text="Действие браузера в меню "действие"":::
+      :::image type="complex" source="../media/actionmenu-browseraction.png" alt-text="Действие браузера в меню действие":::
          Действие браузера в меню "действие" :::image-end:::
       
       <!--![browser action in action menu][ImageActionmenuBrowseraction]  -->  
@@ -128,7 +128,7 @@ ms.locfileid: "10684066"
 
 :::row:::
    :::column span="1":::
-       :::image type="complex" source="../media/windows-accent-color.png" alt-text="Цвет "контрастные" в Windows":::
+       :::image type="complex" source="../media/windows-accent-color.png" alt-text="Цвет контрастные в Windows":::
           Цвет "контрастные" в Windows :::image-end:::
        
        <!--![Windows accent color][ImageWindowsAccentColor]  -->  
