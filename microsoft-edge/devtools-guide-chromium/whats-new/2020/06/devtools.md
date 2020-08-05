@@ -54,7 +54,7 @@ ms.locfileid: "10898313"
 
 Вы также можете использовать **консоль сети** для создания и отправки HTTP-запросов непосредственно из DevTools.  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Панель "Сетевая консоль"" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Панель Сетевая консоль" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
    Панель " **Сетевая консоль** "  
 :::image-end:::  
 
@@ -72,7 +72,7 @@ ms.locfileid: "10898313"
 
 Вкладка **время** на панели " **сеть** " теперь включает `respondWith` события рабочих процессов служб.  `respondWith`Событие "сотрудник службы" показывает продолжительность, начиная с момента, `fetch` когда обработчик событий сотрудника службы начнет выполняться до того момента, когда `respondWith` `fetch` будет сопоставлено обещание обработчика.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Событие "Рабочий процесс службы respondWith" на вкладке "время" на панели "сеть"" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Событие Рабочий процесс службы respondWith на вкладке время на панели сеть" lightbox="../../media/2020/06/timing-tab.msft.png":::
    `respondWith`Событие "сотрудник службы" на вкладке " **время** " на панели " **сеть** "  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ ms.locfileid: "10898313"
 
 веб- [Подсказка][WebhintMain] — это средство с открытым исходным кодом, которое обеспечивает обратную связь в режиме реального времени для обеспечения специальных возможностей, совместимости, безопасности, производительности, PWAs и других распространенных проблем, возникающих при работе в Интернете.  Теперь вы можете увидеть отзыв по этой подсказке на панели " [вопросы][DevtoolsIssues] ".  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Обратная связь по этой подсказке на панели "вопросы"" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Обратная связь по этой подсказке на панели вопросы" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    Обратная связь по этой подсказке на панели "вопросы"  
 :::image-end:::  
 
@@ -258,7 +258,7 @@ DevTools теперь использует смещения байт-кода д
 
 Например, ранее DevTools не разгруппирование сообщений, несмотря на то, что `hello` флажок **Group похоже** не установлен.  Теперь `hello` сообщения разгруппированы.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Если флажок "Группировать" не установлен, сообщения приветствия разгруппированы не будут" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Если флажок Группировать не установлен, сообщения приветствия разгруппированы не будут" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Если флажок **Группировка** не установлен, `hello` сообщения разносятся в разгруппирование.
 :::image-end:::  
 
@@ -270,7 +270,7 @@ DevTools теперь использует смещения байт-кода д
 
 **Выбранный контекст** теперь сохраняется только в параметрах консоли.  Ранее параметры были сброшены каждый раз при закрытии и повторном открытии DevTools.  Изменение приводит к поведению параметров с другими параметрами консоли.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Параметр "только выбранный контекст"" lightbox="../../media/2020/06/selected-context.msft.png":::
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Параметр только выбранный контекст" lightbox="../../media/2020/06/selected-context.msft.png":::
    Параметр " **только выбранный контекст** "  
 :::image-end:::  
 
