@@ -352,7 +352,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 Эта вкладка особенно полезна для просмотра изображений.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Вкладка "предварительный просмотр"" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Вкладка предварительный просмотр" lightbox="../media/network-network-resources-preview.msft.png":::
    На рисунке 19: вкладка " **Предварительный просмотр** "  
 :::image-end:::  
 
@@ -363,7 +363,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  Выберите URL-адрес запроса в столбце " **имя** " таблицы "запросы".  
 1.  Откройте вкладку **ответ** .  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Вкладка "ответ"" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Вкладка ответ" lightbox="../media/network-network-resources-response.msft.png":::
    Рисунок 20. Вкладка " **ответ** "  
 :::image-end:::  
 
@@ -374,7 +374,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  Выберите URL-адрес запроса в столбце " **имя** " таблицы "запросы".  
 1.  Откройте вкладку **заголовки** .  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Вкладка "заголовки"" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Вкладка заголовки" lightbox="../media/network-resources-headers.msft.png":::
    Рисунок 21: вкладка " **заголовки** "  
 :::image-end:::  
 
@@ -392,7 +392,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  Открытие вкладки " **заголовки** " для запроса, который вас интересует.  См.: [Просмотр заголовков HTTP](#view-http-headers).  
 1.  Перейдите к разделу **Параметры строки запроса** .  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Раздел "параметры строки запроса"" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Раздел параметры строки запроса" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    Рис. 22: раздел " **Параметры строки запроса** "  
 :::image-end:::  
 
@@ -422,7 +422,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
 <!--TODO: add link when section is available -->
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Вкладка "cookie"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Вкладка cookie" lightbox="../media/network-network-resources-cookies.msft.png":::
    Рис. 23: вкладка "cookie"  
 :::image-end:::  
 
@@ -489,7 +489,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 DevTools отображает время показа `DOMContentLoaded` `load` событий в нескольких местах на панели "сеть".  `DOMContentLoaded`Событие окрашивается синим цветом, а `load` событие — красным.  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Расположение событий DOMContentLoaded и Load на панели "сеть"" lightbox="../media/network-network-requests-load-events.msft.png":::
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Расположение событий DOMContentLoaded и Load на панели сеть" lightbox="../media/network-network-requests-load-events.msft.png":::
    На рисунке 27 показано расположение событий " `DOMContentLoaded` и" `load` на панели "сеть".  
 :::image-end:::  
 
@@ -564,7 +564,7 @@ init();
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Выбор команды "Сохранить как HAR с контентом"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Выбор команды Сохранить как HAR с контентом" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    Рисунок 32: выбор команды " **Сохранить как HAR с контентом** "  
 :::image-end:::  
 
@@ -580,7 +580,7 @@ init();
 *   **Скопировать все как фигуру**.  Копирование всех запросов в виде последовательности команд с фигурой.  
 *   **Копировать все как HAR**.  Скопируйте все запросы как данные HAR.  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Выбор пункта "Копировать ответ"" lightbox="../media/network-network-requests-copy-response.msft.png":::
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Выбор пункта Копировать ответ" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Рисунок 33: выбор пункта " **Копировать ответ** "  
 :::image-end:::  
 
@@ -593,7 +593,7 @@ init();
 По умолчанию в DevTools отображается **область фильтров**.  
 Щелкните фильтр **фильтра** ![ ][ImageFilterIcon] , чтобы скрыть его.  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка "скрыть фильтры"" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка скрыть фильтры" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Рисунок 34: кнопка "скрыть фильтры"  
 :::image-end:::  
 
@@ -601,7 +601,7 @@ init();
 
 Используйте большие строки, если вы хотите, чтобы в таблице сетевых запросов больше пробелов.  Некоторые столбцы также содержат дополнительные сведения при использовании больших строк.  Например, минимальное значение столбца « **Размер** » — это несжатый размер запроса.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Пример строк большого запроса в области "запросы"" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Пример строк большого запроса в области запросы" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
    Рисунок 35: пример строк большого запроса в области " **запросы** "  
 :::image-end:::  
 
