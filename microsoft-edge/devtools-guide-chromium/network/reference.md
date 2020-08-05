@@ -607,7 +607,7 @@ init();
 
 Установите флажок **использовать строки большого запроса** , чтобы включить большие строки.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Флажок "использовать строки большого запроса"" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Флажок использовать строки большого запроса" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
    Рисунок 36: флажок " **использовать строки большого запроса** "  
 :::image-end:::  
 
@@ -615,7 +615,7 @@ init();
 
 По умолчанию в DevTools отображается **область "Общие сведения**".  Снимите флажок **Показать общие сведения** , чтобы скрыть его.  
 
-:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Флажок "Показать общие сведения"" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Флажок Показать общие сведения" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    Рисунок 37: флажок **Показать общие сведения**  
 :::image-end:::  
 
