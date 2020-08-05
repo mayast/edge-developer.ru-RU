@@ -53,14 +53,14 @@ ms.locfileid: "10688131"
        :::column span="":::
           Нажмите кнопку **Перейти к разделу "проблемы** " на желтой панели предупреждения.  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Нажатие кнопки "проблемы" на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Нажатие кнопки проблемы на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
              Рисунок 1.  Кнопка **Перейти к проблемам** на желтой полосе предупреждения при обнаружении проблем.  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Кроме того, можно выбрать пункт " **проблемы** " в меню " **другие инструменты** ".  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство "вопросы" в меню "другие инструменты"" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство вопросы в меню "другие инструменты"" lightbox="../media//issues-more-tools-menu.msft.png":::
              Рисунок 2.  Средство " **вопросы** " в меню " **другие инструменты** "  
           :::image-end:::  
        :::column-end:::
@@ -68,13 +68,13 @@ ms.locfileid: "10688131"
     
 1.  При необходимости нажмите кнопку **перезагрузить страницу** .  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Инструмент "проблемы" в DevTools ящике с кнопкой "перезагрузить страницу"" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Инструмент проблемы в DevTools ящике с кнопкой "перезагрузить страницу"" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Рисунок 3.  Инструмент " **проблемы** " в DevTools ящике с кнопкой " **перезагрузить страницу** "  
     :::image-end:::  
 
     Проблемы, обнаруженные в **консоли** , довольно сложно понять, например предупреждения о cookie-файлах на рисунке ниже.  На основе обнаруженных проблем может быть не ясно, что необходимо сделать.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Инструмент "проблемы" в денежном ящике DevTools с тремя неполадками с файлами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Инструмент проблемы в денежном ящике DevTools с тремя неполадками с файлами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Рисунок 4.  Инструмент " **проблемы** " в денежном ящике DevTools с тремя неполадками с файлами cookie  
     :::image-end:::  
     
@@ -84,7 +84,7 @@ ms.locfileid: "10688131"
 
 1.  Выберите элемент в инструменте " **вопросы** ", чтобы получить инструкции по устранению проблемы и поиску затронутых ресурсов.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометка cookie-файлов другого сайта как безопасной проблемы при открытии в инструменте "вопросы"" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометка cookie-файлов другого сайта как безопасной проблемы при открытии в инструменте вопросы" lightbox="../media/issues-tab-issue-open.msft.png":::
        Рисунок 5.  **Пометка cookie-файлов другого сайта как безопасной проблемы при** открытии в инструменте " **вопросы** "  
     :::image-end:::  
     
@@ -97,7 +97,7 @@ ms.locfileid: "10688131"
     
 1.  Чтобы просмотреть подробные сведения, выберите элементы в **затронутых ресурсах** .  В следующем примере **cookie-файлы межсайтового сайта как безопасные** вопросы влияют на один файл cookie и два запроса.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы, открытые на вкладке "ящик вопросов"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы, открытые на вкладке ящик вопросов" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Рисунок 6.  Затронутые ресурсы, открытые в инструменте " **вопросы** " в ящике DevTools  
     :::image-end:::  
     
