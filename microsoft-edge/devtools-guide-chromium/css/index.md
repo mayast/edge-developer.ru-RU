@@ -62,7 +62,7 @@ ms.locfileid: "10710387"
         
     1.  В `aloha` классе найдите значение для `padding` стиля и скопируйте его.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Классы CSS, примененные к проверяемому элементу, выделяются на вкладке "стили"" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Классы CSS, примененные к проверяемому элементу, выделяются на вкладке стили" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            Рисунок 2: классы CSS, примененные к выбранному элементу, такие как `aloha` , отображаются на вкладке **стили**  
         :::image-end:::  
         
@@ -81,7 +81,7 @@ ms.locfileid: "10710387"
 1.  Введите текст `background-color` и нажмите клавишу `Enter` .  
 1.  Введите текст `honeydew` и нажмите клавишу `Enter` .  В **дереве DOM** вы увидите, что к элементу применено объявление встроенного стиля.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Добавление объявления CSS к элементу с помощью вкладки "стили"" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Добавление объявления CSS к элементу с помощью вкладки стили" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Рисунок 3: `background-color:honeydew` объявление применено к элементу с помощью `element.style` раздела вкладки " **стили** "  
     :::image-end:::  
     
