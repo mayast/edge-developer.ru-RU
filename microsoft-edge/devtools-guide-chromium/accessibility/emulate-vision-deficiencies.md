@@ -41,13 +41,13 @@ ms.locfileid: "10843923"
 
 1.  Прокрутите вниз до `Emulate vision deficiencies` пункта меню и щелкните раскрывающееся меню, чтобы отобразить параметры.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Меню "симулятор deficiencies видения" в ящике отрисовки" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Меню симулятор deficiencies видения в ящике отрисовки" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        Меню " **симулятор deficiencies видения** " в ящике **отрисовки**  
     :::image-end:::  
     
 1.  Выберите один из вариантов.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Параметры меню "концепция имитации deficiencies"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Параметры меню концепция имитации deficiencies" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        Параметры меню " **концепция имитации deficiencies** "  
     :::image-end:::  
     
