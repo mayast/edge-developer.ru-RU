@@ -41,7 +41,7 @@ ms.locfileid: "10757582"
     
 1.  Перейдите на страницу [загрузки драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] и скачайте драйвер, который соответствует номеру версии Edge.  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел "загружаемые файлы" на странице драйвера Microsoft Edge":::
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел загружаемые файлы на странице драйвера Microsoft Edge":::
        Рисунок 2.  Раздел "загружаемые файлы" на странице [драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
