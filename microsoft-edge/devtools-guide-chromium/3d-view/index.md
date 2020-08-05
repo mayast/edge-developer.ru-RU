@@ -59,7 +59,7 @@ ms.locfileid: "10858069"
 
 ## Z-индекс  
 
-:::image type="complex" source="../media/z-index-view-box.png" alt-text="Представление "Z-индекс"" lightbox="../media/z-index-view-box.png":::
+:::image type="complex" source="../media/z-index-view-box.png" alt-text="Представление Z-индекс" lightbox="../media/z-index-view-box.png":::
    Представление "Z-индекс"  
 :::image-end:::  
 
