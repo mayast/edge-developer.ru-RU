@@ -118,7 +118,7 @@ $(selector, [startNode])
 
 На приведенном ниже рисунке возвращается ссылка на первый `<img>` элемент в документе.  
 
-:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ ("Img")" lightbox="../media/console-element-selector-image.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ (Img)" lightbox="../media/console-element-selector-image.msft.png":::
    На рисунке 5: `$('img')`  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ $(selector, [startNode])
 
 На приведенном ниже рисунке возвращается ссылка на элемент, выбранный в данный момент, и отображается свойство src.  
 
-:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ ("Img"). src" lightbox="../media/console-element-selector-image-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ (Img). src" lightbox="../media/console-element-selector-image-source.msft.png":::
    На рисунке 6: `$('img').src`  
 :::image-end:::  
 
@@ -134,7 +134,7 @@ $(selector, [startNode])
 
 На приведенном ниже рисунке первый `img` элемент найден после элемента `title--image` и отображается `src` правильно.  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ ("Img", Document. querySelector ("Title--Image")). src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ (Img, Document. querySelector (Title--Image)). src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
    На рисунке 7: `$('img', document.querySelector('title--image')).src`  
 :::image-end:::  
 
