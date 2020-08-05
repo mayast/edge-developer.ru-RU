@@ -60,7 +60,7 @@ ms.locfileid: "10688131"
        :::column span="":::
           Кроме того, можно выбрать пункт " **проблемы** " в меню " **другие инструменты** ".  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство вопросы в меню "другие инструменты"" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство вопросы в меню другие инструменты" lightbox="../media//issues-more-tools-menu.msft.png":::
              Рисунок 2.  Средство " **вопросы** " в меню " **другие инструменты** "  
           :::image-end:::  
        :::column-end:::
@@ -68,7 +68,7 @@ ms.locfileid: "10688131"
     
 1.  При необходимости нажмите кнопку **перезагрузить страницу** .  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Инструмент проблемы в DevTools ящике с кнопкой "перезагрузить страницу"" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Инструмент проблемы в DevTools ящике с кнопкой перезагрузить страницу" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Рисунок 3.  Инструмент " **проблемы** " в DevTools ящике с кнопкой " **перезагрузить страницу** "  
     :::image-end:::  
 
