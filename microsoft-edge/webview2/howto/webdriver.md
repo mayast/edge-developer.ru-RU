@@ -3,17 +3,17 @@ description: Автоматизация и тестирование элемен
 title: Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, EDGE, ICoreWebView2, ICoreWebView2Controller, Selenium, драйвер Microsoft Edge
-ms.openlocfilehash: 15e9a0957047569a0832fbb6ea6e8bf280905b8d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: a91c01d1ad765dae45061e382daedc2295d70bb8
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697261"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926450"
 ---
 # Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge
 
@@ -139,6 +139,6 @@ static void Main(string[] args)
 - Дополнительные сведения об элементе управления [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) и его использовании при внедрении веб-содержимого в собственное приложение
 - Дополнительные сведения об автоматизации Microsoft EDGE (Chromium) можно найти в [документации по Microsoft Edge Driver](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) .
 
-## Связь с командой WebView2  
+## Знакомство с командой Microsoft Edge WebView  
 
-Помогите нам создать более WebView2ную работу, поделитесь с нами. Посетите наш [репозиторий отзывов](https://github.com/MicrosoftEdge/WebViewFeedback) о функциях или сообщениях об ошибках или поиск известных проблем.
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

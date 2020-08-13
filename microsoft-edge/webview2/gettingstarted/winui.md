@@ -3,23 +3,23 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView2 для приложений WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, winui, winui, EDGE, CoreWebView2, Browser Control, EDGE HTML, Приступая к работе, Приступая к работе, .NET
-ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895513"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926493"
 ---
 # Начало работы с WebView2 в WinUI3 (Предварительная версия)  
 
 В этой статье приступите к созданию первого приложения WebView2 с помощью WinUI3 и ознакомьтесь с основными возможностями [знакомства с Microsoft Edge WebView2 (Предварительная версия)][Webview2Index].  Дополнительные сведения об отдельных API можно найти в [справочнике API][GithubMicrosoftUiXamlSpecsWebview2].  
 
-## Предварительные условия  
+## Предварительные требования  
 
 Перед переходом к следующей статье убедитесь, что вы установили приведенный ниже список предварительных условий.  
 
@@ -268,7 +268,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 ## Знакомство с командой Microsoft Edge WebView  
 
-Помогите вам создать более WebView2ную работу, отправив свой отзыв.  Посетите центр [отзывов и предложений][GithubMicrosoftedgeWebviewfeedback] Microsoft Edge WebView, чтобы отправить запросы функций или отчеты об ошибках или найти известные проблемы.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
@@ -296,6 +296,6 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "Скачать dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe"  
 
-[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe "dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
+[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
 [VisualstudioMarketplaceWinUiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "Шаблоны проектов WinUI 3"  

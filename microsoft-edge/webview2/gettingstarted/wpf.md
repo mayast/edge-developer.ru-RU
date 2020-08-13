@@ -3,23 +3,23 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView 2 для приложений WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: 304d79640bdf789eb0b822dc7ab8f260df637624
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: bfddfff03363b5149db3f7e9741730c8e8de2de0
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895492"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926584"
 ---
 # Начало работы с WebView2 в WPF (Предварительная версия)
 
 В этой статье приступите к созданию первого приложения WebView2 и ознакомьтесь с основными возможностями [WebView2 (Предварительная версия)](../index.md).  Дополнительные сведения об отдельных API можно найти в [справочнике API](../reference/dotnet/0-9-515-reference-webview2.md).  
 
-## Предварительные условия  
+## Предварительные требования  
 
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
@@ -338,4 +338,4 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 ## Знакомство с командой Microsoft Edge WebView  
 
-Помогите вам создать более широкие возможности WebView2, отправив свой отзыв.  Посетите центр [отзывов и предложений](https://github.com/MicrosoftEdge/WebViewFeedback) Microsoft Edge WebView, чтобы отправить запросы функций или отчеты об ошибках или найти известные проблемы.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

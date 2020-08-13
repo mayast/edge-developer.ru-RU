@@ -2,16 +2,16 @@
 title: Редактирование файлов с помощью рабочих областей
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 612e85b8b00a78a40e53ac5c33d187fdae174024
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 7cafa2b186d151a478fa532cdac49ae46f2120c3
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601854"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926566"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,7 @@ ms.locfileid: "10601854"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# Редактирование файлов с помощью рабочих областей   
-
-
+# Редактирование файлов с помощью рабочих областей  
 
 > [!NOTE]
 > Цель этого учебника — предоставить практические рекомендации по настройке и использованию рабочих областей, чтобы можно было использовать рабочие области в своих проектах.  Вы можете сохранить изменения в исходном коде на локальном компьютере, который вы сделали в DevTools после включения рабочих областей.  
@@ -46,7 +38,7 @@ ms.locfileid: "10601854"
 > *   [Использование DevTools для внесения основных изменений в CSS][DevToolsCssIndex]  
 > *   [Запуск локального веб-сервера HTTP][MDNSimpleLocalHTTPServer]  
 
-## Обзор   
+## Обзор  
 
 Рабочие области позволяют сохранить изменения, внесенные в Devtools, в локальную копию того же файла на компьютере.  Например, предположим, что:  
 
@@ -56,40 +48,41 @@ ms.locfileid: "10601854"
 
 После включения рабочих областей изменения в CSS, внесенные в DevTools, сохраняются в исходном коде на рабочем столе.  
 
-## Ограничения   
+## Ограничения  
 
 При использовании современной платформы, скорее всего, она преобразует исходный код из формата, который легко поддерживать в формате, который оптимизирован для выполнения как можно быстрее.  
-В рабочих областях обычно можно сопоставить оптимизированный код с первоначальным исходным кодом с помощью [карт исходного][TreehouseBlogSourceMaps]кода.  Однако между платформами есть множество вариантов использования карт исходного кода.  Devtools просто поддерживает все варианты.  
+В рабочих областях обычно можно сопоставить оптимизированный код с первоначальным исходным кодом с помощью [карт исходного][TreehouseBlogSourceMaps]кода.  Однако между платформами есть множество вариантов использования карт исходного кода.  Devtools просто не поддерживает все варианты.  
 
 Рабочие области не работают с этими платформами:  
 
 *   Приложение "Создание реагируй"  
-
-<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
-
-## Связанная функция: локальные переопределения   
+    
+    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+    
+## Связанная функция: локальные переопределения  
 
 **Локальные переопределения** — это еще одна функция DevTools, похожая на рабочие области.  Используйте локальные переопределения, если вы хотите поэкспериментировать с изменениями на странице, и вам нужно увидеть эти изменения при загрузке страницы, но вы не хотите сопоставлять изменения в исходном коде страницы.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Действие 1: Настройка   
+## Шаг 1: Настройка  
 
 Следуйте этим учебником, чтобы получить практические навыки работы с рабочими областями.  
 
-### Настройка ролика   
+### Настройка ролика  
 
 1.  [Откройте демонстрацию][GlitchWorkspacesDemo].  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
-    > ##### Рис. 1  
-    > Проект с сбоев ![][ImageGlitchProject]  
+    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Несбойный проект" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
+       Несбойный проект  
+    :::image-end:::  
     
-    <!--1.  Click the project name.  -->
+    <!--1.  Choose the project name.  -->
     <!--1.  Select **Advanced Options** > **Download Project**.  
     
-    > ##### Figure 2  
-    > The Download Project button  
-    > ![The Download Project button][ImageDownloadProjectButton]  
+    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
+       The Download Project button  
+    :::image-end:::  
     -->
     <!--1.  Close the tab.  -->
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
@@ -97,92 +90,96 @@ ms.locfileid: "10601854"
 1.  Создайте `app` каталог на рабочем столе.  Сохраняйте копии файлов в `workspaces-demo` каталоге.  В оставшейся части этого учебника этот каталог называется `~/Desktop/app` .  
 1.  Запустите локальный веб-сервер в `~/Desktop/app` .  Ниже приведен пример кода для запуска `SimpleHTTPServer` , но вы можете использовать любой предпочитаемый сервер.  
     
-    ```bash
-    cd ~/Desktop/app
-    python -m SimpleHTTPServer # Python 2
-    ```  
-    
-    ```bash
-    cd ~/Desktop/app
-    python -m http.server # Python 3
-    ```  
+    :::row:::
+       :::column span="":::
+          ```bash
+          cd ~/Desktop/app
+          python -m SimpleHTTPServer # Python 2
+          ```  
+       :::column-end:::
+       :::column span="":::
+          ```bash
+          cd ~/Desktop/app
+          python -m http.server # Python 3
+          ```  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Откройте вкладку в Microsoft EDGE и перейдите на веб-сайт с локально размещенной версией.  Доступ к ней можно получить с помощью URL-адреса, например `localhost:8080` или `http://0.0.0.0:8080` .  Точный [номер порта][WikiPortURLs] может отличаться от остальных.  
     
-    > ##### Рисунок 2  
-    > Демонстрация  
-    > ! [Демонстрация] [ImageDemo]  
-
-### Настройка DevTools   
-
-1.  Нажмите клавиши `Control` + `Shift` + `J` \ (Windows \) или `Command` + `Option` + `J` \ (macOS \), чтобы открыть панель **консоли** DevTools.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Демонстрация" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+       Демонстрация  
+    :::image-end:::  
     
-    > ##### Рисунок3  
-    > Панель **консоли**  
-    > ! [Панель консоли] [ImageConsolePanel]  
+### Настройка DevTools  
 
-1.  Откройте вкладку **источники** .  
-1.  Откройте вкладку **FileSystem (файловая система** ).  
+1.  Выберите `Control` + `Shift` + `J` \ (Windows \) или `Command` + `Option` + `J` \ (macOS \), чтобы открыть панель **консоли** DevTools.  
     
-    > ##### Рисунок4  
-    > Вкладка " **Файловая система** "  
-    > ! [Вкладка FileSystem] [ImageFilesystem]  
-
-1.  Нажмите кнопку **Добавить папку в рабочую область**.  
-1.  Выберите `~/Desktop/app` .  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Панель консоли" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+       Панель **консоли**  
+    :::image-end:::  
+    
+1.  Перейдите на вкладку **источники** .  
+1.  Перейдите на вкладку **FileSystem (файловая система** ).  
+    
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Вкладка "файловая система"" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       Вкладка " **Файловая система** "  
+    :::image-end:::  
+    
+1.  Выберите команду **Добавить папку в рабочую область**.  
+1.  Ввод `~/Desktop/app` .  
 1.  Нажмите кнопку **Разрешить** , чтобы предоставить DevTools разрешение на чтение и запись в каталог.  
     На вкладке **FileSystem** теперь есть зеленая точка рядом с `index.html` , `script.js` и `styles.css` .  Эти зеленые точки означают, что в DevTools установлено соответствие между сетевыми ресурсами страницы и файлами в `~/Desktop/app` .  
     
-    > ##### Рисунок 5  
-    > На вкладке **FileSystem** теперь показано соответствие между локальными и сетевыми файлами.  
-    > ! [На вкладке FileSystem теперь отображается соответствие между локальными файлами и сетью] [ImageMapping]  
-
-## Шаг 2: сохранение изменений CSS на диске   
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="На вкладке FileSystem теперь показано соответствие между локальными и сетевыми файлами." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       На вкладке **FileSystem** теперь показано соответствие между локальными и сетевыми файлами.  
+    :::image-end:::  
+    
+## Шаг 2: сохранение изменений CSS на диске  
 
 1.  Open (открыть) `styles.css` .  
     
     > [!NOTE]
-    >`color` `h1` Для свойства элементы задано значение `fuchsia` .
+    > `color` `h1` Для свойства элементы задано значение `fuchsia` .  
     
-    > ##### Рисунок6  
-    > Просмотр `styles.css` в текстовом редакторе  
-    > ! [Просмотр стилей. CSS в текстовом редакторе] [ImageStylesFuchsia]  
-
-
-1.  Откройте вкладку **элементы** .  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Просмотр стилей. CSS в текстовом редакторе" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+       Просмотр `styles.css` в текстовом редакторе  
+    :::image-end:::  
+    
+1.  Перейдите на вкладку **элементы** .  
 1.  Измените значение `color` свойства `<h1>` элемента на предпочтительный цвет.  
-    Помните о том, что для `<h1>` просмотра примененных к нему правил CSS в области **стили** необходимо щелкнуть элемент в **дереве DOM** .  Зеленая точка рядом с `styles.css:1` ней означает, что все изменения, внесенные вами, сопоставлены `~/Desktop/app/styles.css` .  
+    Помните о том, что для `<h1>` просмотра примененных к нему правил CSS в области **стили** необходимо выбрать элемент в **дереве DOM** .  Зеленая точка рядом с `styles.css:1` ней означает, что все изменения, внесенные вами, сопоставлены `~/Desktop/app/styles.css` .  
     
-    > ##### Рисунок7  
-    > Зеленый индикатор, связанный с файлом  
-    > ! [Зеленый индикатор, связанный с файлом] [ImageStylesGreen]  
-
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Зеленый индикатор, связанный с файлом" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+       Зеленый индикатор, связанный с файлом  
+    :::image-end:::  
+    
 1.  `styles.css`Снова откройте текстовый редактор.  `color`Свойству будет присвоена предпочтительный цвет.  
 1.  Перезагрузите страницу.  Цвет `<h1>` элемента по-прежнему установлен на предпочтительный цвет.  Это происходит потому, что после внесения изменений DevTools сохраняет изменения на диск.  А затем, когда вы перезагрузите страницу, локальный сервер сослужил измененную копию файла с диска.  
-
-## Шаг 3: сохранение изменений HTML на диске   
+    
+## Шаг 3: сохранение изменений HTML на диске  
 
 ### Изменение HTML на панели "элементы"  
 
 Вы можете внести изменения в HTML-код с панели элементов, но ваши изменения в дереве DOM не сохраняются на диск и влияют только на текущий сеанс браузера.  
 Дерево DOM не является HTML-кодом.  
 
-<!--### Try changing HTML from the Elements panel   
+<!--### Try changing HTML from the Elements panel  
 
 > [!WARNING]
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
-1.  Click the **Elements** tab.  
-1.  Double click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose the **Elements** tab.  
+1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    > ##### Old Figure 9  
-    > Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
-    > ![Attempting to change HTML from the DOM Tree of the Elements panel][ImageElementsCake]  
-
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempting to change HTML from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
+    :::image-end:::  
+    
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
 1.  Reload the page.  The page reverts to its original title.  
-
-#### Optional: Why it is not working   
+    
+#### Optional: Why it is not working  
 
 > [!NOTE]
 > This section describes why the workflow from [Try changing HTML from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
@@ -195,96 +192,78 @@ ms.locfileid: "10601854"
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
--->
-### Изменение HTML на панели «источники»   
+-->  
+
+### Изменение HTML на панели «источники»  
 
 Если вы хотите сохранить изменения в HTML-коде страницы, сделайте это с помощью панели « **источники** ».  
 
-1.  Откройте вкладку **источники** .  
-1.  Откройте вкладку **страница** .  
-1.  Нажмите кнопку **(указатель)**.  Откроется HTML-код для страницы.  
-1.  Заменить `<h1>Workspaces Demo</h1>` на `<h1>I ❤️  Cake</h1>` .  Смотрите [Рисунок 8](#figure-8).  
-1.  `Control` + `S` Чтобы сохранить изменения, нажмите клавиши \ (Windows \) или `Command` + `S` \ (macOS \).  
+1.  Перейдите на вкладку **источники** .  
+1.  Перейдите на вкладку **страница** .  
+1.  Выберите **(предметный указатель)**.  Откроется HTML-код для страницы.  
+1.  Заменить `<h1>Workspaces Demo</h1>` на `<h1>I ❤️  Cake</h1>` .  Смотрите на рисунке ниже.  
+1.  Выберите `Control` + `S` \ (Windows \) или `Command` + `S` \ (macOS \), чтобы сохранить изменения.  
 1.  Перезагрузите страницу.  `<h1>`Элемент по-прежнему отображается в новом тексте.  
     
-    > ##### Рисунок8  
-    > Для строки 12 установлено значение `I ❤️  Cake`  
-    > ! [Изменение HTML-кода на панели «источники»] [ImageSourcesCakeHTML]  
-
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Изменение HTML-кода на панели «источники»" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Для строки 12 установлено значение `I ❤️  Cake`  
+    :::image-end:::  
+    
 1.  Open (открыть) `~/Desktop/app/index.html` .  `<h1>`Элемент включает новый текст.  
-
-## Шаг 4: сохранение изменений JavaScript на диске   
+    
+## Шаг 4: сохранение изменений JavaScript на диске  
 
 Панель « **источники** » — это также место, где можно вносить изменения в JavaScript.  Но иногда вам нужно получить доступ к другим панелям, таким как панель **элементов** или панель **консоли** , при внесении изменений на сайт.  На панели « **источники** » есть способ открытия рядом с другими панелями.  
 
-1.  Откройте вкладку **элементы** .  
-1.  Нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \).  Откроется **меню команд** .  
+1.  Перейдите на вкладку **элементы** .  
+1.  Выберите `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \).  Откроется **меню команд** .  
 1.  Введите текст `QS` и выберите параметр **Показать быстрый источник**.  В нижней части окна DevTools теперь есть вкладка **быстрый источник** .  На вкладке отображается содержимое `index.html` , которое является последним файлом, измененным на панели « **источники** ».  На вкладке **быстрый источник** вы можете открыть редактор из панели **источники** , чтобы можно было редактировать файлы, не открывая другие панели.  
     
-    > ##### Рисунок9  
-    > Открытие вкладки " **быстрый источник** " с помощью **меню команд**  
-    > ! [Открытие вкладки "быстрый источник" с помощью меню "команды"] [ImageCommandMenuQuickSource]  
-
-1.  `Control` + `P` `Command` + `P` Чтобы открыть диалоговое окно " **Открытие файла** ", нажмите клавиши \ (Windows \) или \ (macOS \).  Смотрите [Рисунок 10](#figure-10).  
-1.  Введите `script` команду **app/script. js**.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Открытие вкладки "быстрый источник" с помощью командного меню" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Открытие вкладки " **быстрый источник** " с помощью **меню команд**  
+    :::image-end:::  
     
-    > ##### Рисунок 10  
-    > Открытие `script.js` с помощью диалогового окна " **Открыть файл** "  
-    > ! [Открытие сценария. js с помощью диалогового окна "Открытие файла"] [ImageOpenFileDialog]  
+1.  `Control` + `P` `Command` + `P` Чтобы открыть диалоговое окно " **Открытие файла** ", выберите \ (Windows \) или \ (macOS \).  Смотрите на рисунке ниже.  
+1.  Введите текст и `script` выберите **приложение/script.js**.  
+    
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Открытие script.js с помощью диалогового окна "Открытие файла"" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+       Открытие `script.js` с помощью диалогового окна " **Открыть файл** "  
+    :::image-end:::  
     
     > [!NOTE]
     > `Save Changes To Disk With Workspaces`Ссылка в демонстрационной видеоролика будет регулярно применена.  
     
-1.  Добавьте следующий код в нижнюю часть **сценария. js** с помощью вкладки " **быстрый источник** ".  
+1.  Добавьте следующий код в нижнюю часть **script.js** с помощью вкладки " **быстрый источник** ".  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  `Control` + `S` Чтобы сохранить изменения, нажмите клавиши \ (Windows \) или `Command` + `S` \ (macOS \).  
+1.  Выберите `Control` + `S` \ (Windows \) или `Command` + `S` \ (macOS \), чтобы сохранить изменения.  
 1.  Перезагрузите страницу.  
     
     > [!NOTE]
-    > Ссылка на странице теперь будет курсивной.
+    > Ссылка на странице теперь будет курсивной.  
     
-    > ##### Рисунок11  
-    > Ссылка на странице теперь курсивом  
-    > ! [Ссылка на странице теперь курсивом] [ImageScriptItalic]  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Ссылка на странице теперь выделена курсивом" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+       Ссылка на странице теперь выделена курсивом  
+    :::image-end:::  
+    
+## Дальнейшие действия  
 
-## Дальнейшие действия   
+С помощью этого учебника вы можете настроить рабочие области в проекте.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
-С помощью этого учебника вы можете настроить рабочие области в проекте.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+<!--  
+If you have more feedback on these topics or anything else, please use any of the channels below:  
 
- <!--  -->
-
-
-
-<!-- 
-If you have more feedback on these topics or anything else, please use any of the channels below:
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->
-
-<!-- image links -->  
-
-[ImageGlitchProject]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-workspaces-demo-source.msft.png "Рисунок 1: неработающий проект с именем, созданным случайным образом"  
-<!--[ImageDownloadProjectButton]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
-[ImageDemo]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo.MSFT.png "Рисунок 2: демонстрационный ролик"  
-[ImageConsolePanel]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Console.MSFT.png "Рисунок 3: панель консоли"  
-[ImageFilesystem]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Sources-FileSystem.MSFT.png "Рисунок 4: вкладка" FileSystem ""  
-[ImageMapping]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Sources-FileSystem-Folder.MSFT.png "Рисунок 5: теперь на вкладке FileSystem показано соответствие между локальными и сетевыми файлами.  
-[ImageStylesFuchsia]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Sources-FileSystem-CSS.MSFT.png "Рисунок 6: Просмотр стилей. CSS в текстовом редакторе"  
-[ImageStylesGreen]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Elements-Styles-CSS.MSFT.png "Рисунок 7: зеленый индикатор, связанный с файлом"  
-[ImageSourcesCakeHTML]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Sources-Page-H1.MSFT.png "Рисунок 8: изменение HTML на панели" источники "  
-<!--[ImageElementsCake]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
-[ImageCommandMenuQuickSource]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Search-Show-Quick-Source.MSFT.png "Рисунок 9: Открытие вкладки" быстрый источник "с помощью командного меню  
-[ImageOpenFileDialog]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Search-script.MSFT.png "Рисунок 10: открытие сценария. js с помощью диалогового окна" открыть файл "  
-[ImageScriptItalic]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/workspaces-workspaces-Demo-Elements-Styles-Quick-Source-script.MSFT.png "Рисунок 11: ссылка на странице теперь курсивом"  
+-->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Приступая к просмотру и изменению каскадных таблиц стилей"  
+[DevToolsCssIndex]: ../css/index.md# "Начало просмотра и изменения CSS | Документы Microsoft"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 

@@ -3,17 +3,17 @@ description: Сведения об отладке элементов управ�
 title: Отладка WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 08/10/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: ad6f334e5796d2f22146f2853ae1ef1d854e329c
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: 6b2cc65e5cb368c29efec2eb3638f0c1772000d9
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894321"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926479"
 ---
 # Отладка с помощью WebView2  
 
@@ -83,7 +83,7 @@ ms.locfileid: "10894321"
 
 ## Знакомство с командой Microsoft Edge WebView  
 
-Помогите вам создать более WebView2ную работу, отправив свой отзыв.  Чтобы отправить запросы на функции или отчеты об ошибках, посетите [репозиторий обратной связи][GithubMicrosoftedgeWebviewfeedbackMain] .  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!--## Debugging  
 
