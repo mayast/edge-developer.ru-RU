@@ -2,16 +2,16 @@
 title: Просмотр данных кэша приложения с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 6ce3087e9c719efbcf4d9ebceb860edd0ed0c3b6
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: fc1800fc54e5fb0d7998c62ce163ece7a461dd82
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612097"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931217"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,32 +27,26 @@ ms.locfileid: "10612097"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Просмотр данных кэша приложения с помощью Microsoft Edge DevTools   
-
-
+# Просмотр данных кэша приложения с помощью Microsoft Edge DevTools  
 
 > [!WARNING]
 > API кэша приложения [удаляется с веб-платформы][HTMLStandardOfflineWebApplications].  
 
 В этом руководстве описано, как использовать [Microsoft Edge DevTools][MicrosoftEdgeDevTools] для проверки ресурсов [кэша приложения][MDNWebAPIsWindowApplicationCache] .  
 
-## Просмотр данных кэша приложения   
+## Просмотр данных кэша приложения  
 
 1.  Перейдите на вкладку **источники** , чтобы открыть панель " **источники** ".  Обычно область **манифеста** открывается по умолчанию.  
     
-    > ##### Рис. 1  
-    > Область «манифест»  
-    > ![Область «манифест»][ImageManifestPane]  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-manifest.msft.png":::
+       Область « **Манифест** »  
+    :::image-end:::  
 
-1.  Разверните раздел **кэш приложений** и щелкните кэш для просмотра ресурсов.  
+1.  Разверните раздел **кэш приложения** и выберите кэш для просмотра ресурсов.  
     
-    > ##### Рисунок 2  
-    > Область кэша приложения  
-    > ![Область кэша приложения][ImageApplicationCachePane]  
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Область кэша приложения" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+       Область **кэша приложения**  
+    :::image-end:::  
 
 Каждая строка таблицы представляет собой кэшируемый ресурс.  
 
@@ -62,10 +56,12 @@ ms.locfileid: "10612097"
 |:--- |:--- |  
 | `Explicit` | Этот ресурс явно указан в манифесте. |  
 | `Fallback` | URL-адрес является резервным для другого ресурса.  URL-адрес другого ресурса не указан в DevTools. |  
-| `Master` | `manifest`Атрибут ресурса указывает на то, что этот кэш является родительским для ресурса. |  
-| `Network` | Манифест, который должен поступать этим ресурсом из сети. |  
+| `Master` | `manifest`Атрибут ресурса указывает на то, что кэш является родительским для ресурса. |  
+| `Network` | Манифест, который указывает, что ресурс должен поступать из сети. |  
 
-В нижней части таблицы находятся значки состояния, обозначающие сетевое соединение и состояние кэша приложения.  В кэше приложения могут находиться указанные ниже состояния.  
+<!--todo:  replace "Master" phrasing if possible.  -->  
+
+В нижней части таблицы находятся значки состояния, обозначающие сетевое соединение и состояние **кэша приложения**.  В **кэше приложения** могут находиться указанные ниже состояния.  
 
 | Состояние | Сведения |  
 |:--- |:--- |  
@@ -75,18 +71,9 @@ ms.locfileid: "10612097"
 | `OBSOLETE` | Кэш удаляется. |  
 | `UPDATEREADY` |  Доступна новая версия кэша. |  
 
-<!--   -->  
-
-
-
-<!-- image links -->  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Рисунок 1: область манифеста"  
-[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/storage-cache-pane-cache-storage-resources.msft.png "Рисунок 2: область кэша приложения"  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Автономные веб-приложения: HTML Standard"  
 

@@ -2,16 +2,16 @@
 title: Редактирование файлов с помощью рабочих областей
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 7cafa2b186d151a478fa532cdac49ae46f2120c3
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926566"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931233"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,15 +32,16 @@ ms.locfileid: "10926566"
 > [!NOTE]
 > Цель этого учебника — предоставить практические рекомендации по настройке и использованию рабочих областей, чтобы можно было использовать рабочие области в своих проектах.  Вы можете сохранить изменения в исходном коде на локальном компьютере, который вы сделали в DevTools после включения рабочих областей.  
 
-> [!CAUTION]
-> **Предварительные условия**: перед началом работы с этим учебником следует знать, как это сделать:  
+> [!IMPORTANT]
+> **Предварительные условия**: перед тем как приступить к работе с этим учебником, вам нужно знать, как выполнять указанные ниже действия.  
+> 
 > *   [Создание веб-страниц с помощью HTML, CSS и JavaScript][MDNWebGettingStarted]  
 > *   [Использование DevTools для внесения основных изменений в CSS][DevToolsCssIndex]  
 > *   [Запуск локального веб-сервера HTTP][MDNSimpleLocalHTTPServer]  
 
 ## Обзор  
 
-Рабочие области позволяют сохранить изменения, внесенные в Devtools, в локальную копию того же файла на компьютере.  Например, предположим, что:  
+Рабочие области позволяют сохранить изменения, внесенные в Devtools, в локальную копию того же файла на компьютере.  Для работы с этим учебником на вашем компьютере должны быть установлены указанные ниже параметры.  
 
 *   У вас есть исходный код для вашего сайта на рабочем столе.  
 *   Вы запускаете локальный веб-сервер из каталога исходного кода, чтобы сайт был доступен по адресу `localhost:8080` .  
@@ -51,9 +52,10 @@ ms.locfileid: "10926566"
 ## Ограничения  
 
 При использовании современной платформы, скорее всего, она преобразует исходный код из формата, который легко поддерживать в формате, который оптимизирован для выполнения как можно быстрее.  
-В рабочих областях обычно можно сопоставить оптимизированный код с первоначальным исходным кодом с помощью [карт исходного][TreehouseBlogSourceMaps]кода.  Однако между платформами есть множество вариантов использования карт исходного кода.  Devtools просто не поддерживает все варианты.  
 
-Рабочие области не работают с этими платформами:  
+В рабочих областях обычно можно сопоставить оптимизированный код с первоначальным исходным кодом с помощью [карт исходного][TreehouseBlogSourceMaps]кода.  Но существует множество вариантов между платформами, в которой используются карты источников.  Devtools просто поддерживает все варианты.  
+
+Рабочие области не работают со следующей платформой.  
 
 *   Приложение "Создание реагируй"  
     
@@ -61,13 +63,13 @@ ms.locfileid: "10926566"
     
 ## Связанная функция: локальные переопределения  
 
-**Локальные переопределения** — это еще одна функция DevTools, похожая на рабочие области.  Используйте локальные переопределения, если вы хотите поэкспериментировать с изменениями на странице, и вам нужно увидеть эти изменения при загрузке страницы, но вы не хотите сопоставлять изменения в исходном коде страницы.  
+**Локальные переопределения** — это еще одна функция DevTools, похожая на рабочие области.  Используйте локальные переопределения, если вы хотите поэкспериментировать с изменениями на странице, и вам необходимо просматривать изменения при загрузке страницы, но вы не хотите сопоставлять изменения в исходном коде страницы.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Шаг 1: Настройка  
+## Действие 1: Настройка  
 
-Следуйте этим учебником, чтобы получить практические навыки работы с рабочими областями.  
+Выполните указанные ниже действия, чтобы получить практические навыки работы с рабочими областями.  
 
 ### Настройка ролика  
 
@@ -77,17 +79,18 @@ ms.locfileid: "10926566"
        Несбойный проект  
     :::image-end:::  
     
-    <!--1.  Choose the project name.  -->
+    <!--1.  Choose the project name.  -->  
     <!--1.  Select **Advanced Options** > **Download Project**.  
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
-    -->
-    <!--1.  Close the tab.  -->
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+
+    -->  
+    <!--1.  Close the tab.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
     
-1.  Создайте `app` каталог на рабочем столе.  Сохраняйте копии файлов в `workspaces-demo` каталоге.  В оставшейся части этого учебника этот каталог называется `~/Desktop/app` .  
+1.  Создайте `app` каталог на рабочем столе.  Сохраняйте копии файлов из `workspaces-demo` каталога в `app` каталог.  В оставшейся части учебника каталог называется `~/Desktop/app` .  
 1.  Запустите локальный веб-сервер в `~/Desktop/app` .  Ниже приведен пример кода для запуска `SimpleHTTPServer` , но вы можете использовать любой предпочитаемый сервер.  
     
     :::row:::
@@ -155,13 +158,14 @@ ms.locfileid: "10926566"
     :::image-end:::  
     
 1.  `styles.css`Снова откройте текстовый редактор.  `color`Свойству будет присвоена предпочтительный цвет.  
-1.  Перезагрузите страницу.  Цвет `<h1>` элемента по-прежнему установлен на предпочтительный цвет.  Это происходит потому, что после внесения изменений DevTools сохраняет изменения на диск.  А затем, когда вы перезагрузите страницу, локальный сервер сослужил измененную копию файла с диска.  
+1.  Обновите страницу.  Цвет `<h1>` элемента по-прежнему установлен на предпочтительный цвет.  Изменение на время обновления, так как при внесении изменений в DevTools был сохранен переход на диск.  А затем, когда вы обновите страницу, локальный сервер сослужил измененную копию файла с диска.  
     
 ## Шаг 3: сохранение изменений HTML на диске  
 
 ### Изменение HTML на панели "элементы"  
 
 Вы можете внести изменения в HTML-код с панели элементов, но ваши изменения в дереве DOM не сохраняются на диск и влияют только на текущий сеанс браузера.  
+
 Дерево DOM не является HTML-кодом.  
 
 <!--### Try changing HTML from the Elements panel  
@@ -170,25 +174,25 @@ ms.locfileid: "10926566"
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
 1.  Choose the **Elements** tab.  
-1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempting to change HTML from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
-1.  Reload the page.  The page reverts to its original title.  
+1.  Refresh the page.  The page reverts to the original title.  
     
 #### Optional: Why it is not working  
 
 > [!NOTE]
-> This section describes why the workflow from [Try changing HTML from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
+> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
 *   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
-*   To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.  
+*   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.  
+*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
@@ -203,10 +207,10 @@ In short, the **DOM Tree** `!==` HTML.
 1.  Выберите **(предметный указатель)**.  Откроется HTML-код для страницы.  
 1.  Заменить `<h1>Workspaces Demo</h1>` на `<h1>I ❤️  Cake</h1>` .  Смотрите на рисунке ниже.  
 1.  Выберите `Control` + `S` \ (Windows \) или `Command` + `S` \ (macOS \), чтобы сохранить изменения.  
-1.  Перезагрузите страницу.  `<h1>`Элемент по-прежнему отображается в новом тексте.  
+1.  Обновите страницу.  `<h1>`Элемент по-прежнему отображается в новом тексте.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Изменение HTML-кода на панели «источники»" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Для строки 12 установлено значение `I ❤️  Cake`  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Изменение HTML на панели «источники»" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Для строки 12 задано значение `I ❤️  Cake`  
     :::image-end:::  
     
 1.  Open (открыть) `~/Desktop/app/index.html` .  `<h1>`Элемент включает новый текст.  
@@ -220,7 +224,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  Введите текст `QS` и выберите параметр **Показать быстрый источник**.  В нижней части окна DevTools теперь есть вкладка **быстрый источник** .  На вкладке отображается содержимое `index.html` , которое является последним файлом, измененным на панели « **источники** ».  На вкладке **быстрый источник** вы можете открыть редактор из панели **источники** , чтобы можно было редактировать файлы, не открывая другие панели.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Открытие вкладки "быстрый источник" с помощью командного меню" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Открытие вкладки " **быстрый источник** " с помощью **меню команд**  
+       Открытие вкладки " **быстрый источник** " с помощью **командного меню**  
     :::image-end:::  
     
 1.  `Control` + `P` `Command` + `P` Чтобы открыть диалоговое окно " **Открытие файла** ", выберите \ (Windows \) или \ (macOS \).  Смотрите на рисунке ниже.  
@@ -241,7 +245,7 @@ In short, the **DOM Tree** `!==` HTML.
     ```  
     
 1.  Выберите `Control` + `S` \ (Windows \) или `Command` + `S` \ (macOS \), чтобы сохранить изменения.  
-1.  Перезагрузите страницу.  
+1.  Обновите страницу.  
     
     > [!NOTE]
     > Ссылка на странице теперь будет курсивной.  
@@ -255,15 +259,15 @@ In short, the **DOM Tree** `!==` HTML.
 С помощью этого учебника вы можете настроить рабочие области в проекте.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
-If you have more feedback on these topics or anything else, please use any of the channels below:  
+If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->  
+    -->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md# "Начало просмотра и изменения CSS | Документы Microsoft"  
+[DevToolsCssIndex]: ../css/index.md "Начало просмотра и изменения CSS | Документы Microsoft"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
