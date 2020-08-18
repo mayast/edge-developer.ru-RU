@@ -3,30 +3,30 @@ description: Размещение веб-содержимого в прилож�
 title: Microsoft Edge WebView2 для приложений WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, winui, winui, EDGE, CoreWebView2, Browser Control, EDGE HTML, Приступая к работе, Приступая к работе, .NET
-ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
+ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926493"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934900"
 ---
 # Начало работы с WebView2 в WinUI3 (Предварительная версия)  
 
 В этой статье приступите к созданию первого приложения WebView2 с помощью WinUI3 и ознакомьтесь с основными возможностями [знакомства с Microsoft Edge WebView2 (Предварительная версия)][Webview2Index].  Дополнительные сведения об отдельных API можно найти в [справочнике API][GithubMicrosoftUiXamlSpecsWebview2].  
 
-## Предварительные требования  
+## Предварительные условия  
 
 Перед переходом к следующей статье убедитесь, что вы установили приведенный ниже список предварительных условий.  
 
 *   Windows 10 версии 1803 \ (сборка 17134 \) или более поздней версии.  Дополнительные сведения можно найти в [центре обновления Windows: вопросы и ответы][MicrosoftSupport12373].  
 *   [Microsoft EDGE (Chromium) Канарские Channel][MicrosoftedgeinsiderDownload] в Windows 10, Windows 8,1 или Windows 7.  
 *   Visual Studio 2019, версия 16,7 Preview 1.  Дополнительные сведения можно найти в разделе [Библиотека пользовательского интерфейса Windows версии 3 (июль 2020][WindowsAppsWinui3ConfigureYourDevEnvironment]г.).  
-*   Версии [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] и [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] версии .NET 5 Preview 4.  
+*   Версии [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] и [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] версии .NET 5 Preview 4.  
 *   Расширение [шаблонов проектов WinUI 3][VisualstudioMarketplaceWinUiprojecttemplates] для Visual Studio 2019.  
 Убедитесь, что вы [включите режим разработчика][WindowsUwpGetStartedEnableYourDeviceForDevelopment] , чтобы убедиться в том, что у вас есть доступ ко всем функциям Visual Studio.  
 
@@ -190,8 +190,10 @@ ms.locfileid: "10926493"
 *   `ContentLoading`  
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
+
 > [!NOTE]
 > Переадресация HTTP вызывает несколько `NavigationStarting` событий.  
+
 Дополнительные сведения можно найти в разделе [события навигации][Webviews2ConceptsNavigationEvents].  
 
 При возникновении ошибок возникают следующие события, которые могут перейти на страницу ошибки.  
@@ -199,10 +201,8 @@ ms.locfileid: "10926493"
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
-    
-
+     
 В качестве примера использования событий Зарегистрируйте обработчик для `NavigationStarting` него, чтобы отменить все запросы, не ИСПОЛЬЗУЮЩИЕ HTTPS. `MainWindow.xaml.cs`Измените конструктор, чтобы `EnsureHttps` он регистрировал, и добавьте `EnsureHttps` функцию так, чтобы она соответствовала следующему фрагменту кода.  
-
 
 ```csharp
 public MainWindow()
