@@ -3,16 +3,16 @@ description: Ознакомьтесь со сведениями о текущи�
 title: API-интерфейсы, поддерживаемые расширениями
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
-ms.openlocfilehash: b9f3764a65f2b27dc61e4e5ae8734820efb7fbd0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: fceba67f5fab1a223cfc94abf7f19a0a9d1bcdf0
+ms.sourcegitcommit: 0879b205aa88c6b73d84f106b4b435d5a0e8cadc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571601"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10937184"
 ---
 # Поддерживаемые API  
 
@@ -111,7 +111,7 @@ ms.locfileid: "10571601"
 [расширение getURL](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/extension/getURL) | | |
 [расширение. для просмотра](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/getViews) | | |
 [расширение. isAllowedIncognitoAccess](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/isAllowedIncognitoAccess) | | | 
-[расширение. inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
+[extension.inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
 
 
 
@@ -210,7 +210,7 @@ API | Известные проблемы | Несовместимость с х
 [Storage. local. Set](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [Storage. local. Clear](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [Storage. local. getBytesInUse](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` данные сохраняются в формате, отличном от Chrome, что приводит к возвращению другого значения при вызове `storage.local.getBytesInUse` .  <br/><br/>Пример: `storage.local.set({ "k": { "s": "âas" } }` возвращает 13 в Chrome и 50 в Microsoft Edge.|
-[Storage. Sync. Get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | | |
+[Storage. Sync. Get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | Если суммарный объем символов в `name` `author` полях и манифесте превышает 31 символ, это `storage.sync` может привести к невозможности работы пространства имен. | |
 [Storage. Sync. Remove](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/remove) | | |
 [Storage. Sync. Set](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/set) | | |
 [хранилище. OnChanged](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/onChanged) | | |
@@ -225,10 +225,10 @@ API | Известные проблемы | Несовместимость с х
 [Табуляторы. captureVisibleTab](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/captureVisibleTab) | | |
 [Табуляторы. Create](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/create) | | `selected`, `pinned` и `openerTabId` не поддерживаются. |
 [Табуляторы. detectLanguage](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/detectLanguage) | | |
-[Табуляторы. executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` игнорируется, если флажок установлен. Выполнение сценария в определенном кадре пока не поддерживается. | |
+[tabs.executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` игнорируется, если флажок установлен. Выполнение сценария в определенном кадре пока не поддерживается. | |
 [Табуляторы. Get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/get) | Страницы параметров. при появлении запроса на табуляции в окне, не вызываемом этим звонком, произошел сбой. | |
 [Табуляторы. OnCurrent](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/getCurrent) | | |
-[Табуляторы. insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` игнорируется, если флажок установлен. | |
+[Табуляторы. insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` игнорируется, если флажок установлен. | `cssOrigin` не поддерживается. |
 [Табуляторы. OnActivated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onActivated) | | |
 [Табуляторы. onattacheded](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onAttached) | | |
 [Табуляторы. OnCreated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
@@ -298,7 +298,7 @@ API | Известные проблемы | Несовместимость с х
 | [Windows. getAll](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll)                       | `windows.getAll({populate: true})` отсутствует `tabs` свойство. |                                                                                                                 |
 | [Windows. на текущий момент](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/getCurrent)               |                                                                |                                                                                                                 |
 | [Windows. getLastFocused](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/getLastFocused)       |                                                                |                                                                                                                 |
-| [Windows. Update](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/update)                       | Указание положения не поддерживается.                          | `"minimized"`/`"maximized"`/`"fullscreen"`и `drawAttention` не поддерживаются в Microsoft Edge.             |
+| [Windows. Update](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/update)                       | Указание положения не поддерживается.                          | `"minimized"`/`"maximized"`/`"fullscreen"` и `drawAttention` не поддерживаются в Microsoft Edge.             |
 | [Windows. OnCreated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/onCreated)                 |                                                                | `WindowType` фильтр не поддерживается.                                                                           |
 | [Windows. onFocusChanged](https://developer.mozilla.org/Add-ons/WebExtensions/API/windows/onFocusChanged)                    |                                                                | `WindowType` фильтр не поддерживается.                                                                           |
 | [Windows. WindowState](https://developer.mozilla.org/Add-ons/WebExtensions/API/windows/WindowState)                          | `"minimized"`, `"maximized"` `"fullscreen"` не поддерживаются. | `"docked"` не поддерживается в Microsoft Edge.                                                                  |
