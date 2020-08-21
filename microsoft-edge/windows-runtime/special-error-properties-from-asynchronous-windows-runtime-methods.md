@@ -1,7 +1,7 @@
 ---
-title: Специальные свойства ошибки из асинхронных методов среды выполнения Windows
+title: Специальные свойства ошибок из асинхронных методов среды выполнения Windows.
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -13,32 +13,32 @@ caps.latest.revision: 4
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 5cf2604e26c84e769cf44e0879ee137cbfbe8b90
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a1fccf1cec811501b94e7da4aa20b69d93754f62
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572848"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942067"
 ---
-# <span data-ttu-id="7517b-102">Специальные свойства ошибки из асинхронных методов среды выполнения Windows</span><span class="sxs-lookup"><span data-stu-id="7517b-102">Special Error Properties from Asynchronous Windows Runtime Methods</span></span>  
+# <span data-ttu-id="1a8a9-102">Специальные свойства ошибок из асинхронных методов среды выполнения Windows.</span><span class="sxs-lookup"><span data-stu-id="1a8a9-102">Special error properties from asynchronous Windows Runtime methods</span></span>  
 
-<span data-ttu-id="7517b-103">Отладка асинхронных методов среды выполнения Windows в JavaScript может быть сложной, так как эта ошибка может возникать в стеке вызовов.</span><span class="sxs-lookup"><span data-stu-id="7517b-103">It can be difficult to debug asynchronous Windows Runtime methods in JavaScript, because the error may be thrown from somewhere deep in the call stack.</span></span> <span data-ttu-id="7517b-104">Объект JavaScript `Error` имеет дополнительные свойства, которые отображаются только в том случае, если ошибка возникает из асинхронного метода среды выполнения Windows, если приложение работает в режиме отладки.</span><span class="sxs-lookup"><span data-stu-id="7517b-104">The JavaScript `Error` object has extra properties that appear only when the error is thrown from an asynchronous Windows Runtime method when the app is running in debug mode.</span></span>  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+<span data-ttu-id="1a8a9-103">Несовместимость с асинхронными методами выполнения Windows в JavaScript может быть слишком свежий, так как она может вызывать неоднозначно в стеке вызовов.</span><span class="sxs-lookup"><span data-stu-id="1a8a9-103">It can be difficult to debug asynchronous Windows Runtime methods in JavaScript, because the error may be thrown from somewhere deep in the call stack.</span></span>  <span data-ttu-id="1a8a9-104">Объект JavaScript имеет дополнительные свойства, которые отображаются только при наличии ошибки в режиме выполнения `Error` асинхронного метода выполнения Windows при запуске приложения в режиме отладки.</span><span class="sxs-lookup"><span data-stu-id="1a8a9-104">The JavaScript `Error` object has extra properties that appear only when the error is thrown from an asynchronous Windows Runtime method when the app is running in debug mode.</span></span>  
   
-## <span data-ttu-id="7517b-105">Специальные свойства ошибки</span><span class="sxs-lookup"><span data-stu-id="7517b-105">Special Error Properties</span></span>  
+## <span data-ttu-id="1a8a9-105">Специальные свойства ошибки</span><span class="sxs-lookup"><span data-stu-id="1a8a9-105">Special error properties</span></span>  
 
-<span data-ttu-id="7517b-106">Объект ошибки, являющийся результатом неудачной асинхронной операции среды выполнения Windows в режиме отладки, имеет следующие специальные свойства:</span><span class="sxs-lookup"><span data-stu-id="7517b-106">An error object that results from a failed Windows Runtime asynchronous operation in debug mode has the following special properties:</span></span>  
+<span data-ttu-id="1a8a9-106">Объект ошибки, возникающий из сбоя windows асинхронных операций в режиме отладки, имеет следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="1a8a9-106">An error object that results from a failed Windows Runtime asynchronous operation in debug mode has the following special properties:</span></span>  
 
-*   `asyncOpSource` <span data-ttu-id="7517b-107">\ (Объект \) получает сведения о первоначальном расположении, в котором была произведена ошибка вызова.</span><span class="sxs-lookup"><span data-stu-id="7517b-107">\(Object\) Gets information about the original location where the call that produced an error was made.</span></span> <span data-ttu-id="7517b-108">Свойство `asyncOpSource.originatingCall` \ (строка \) отображает расположение в коде пользователя, который является асинхронной операцией.</span><span class="sxs-lookup"><span data-stu-id="7517b-108">The property `asyncOpSource.originatingCall` \(String\) displays the location in the user's code that originated the asynchronous operation.</span></span>  
-*   <span data-ttu-id="7517b-109">asyncOpType \ (String \) возвращает имя типа асинхронной операции, который создал ошибку.</span><span class="sxs-lookup"><span data-stu-id="7517b-109">asyncOpType \(String\) Gets the name of the asynchronous operation type that raised the error.</span></span>  
+*   `asyncOpSource` <span data-ttu-id="1a8a9-107">\(Object\) Gets information about location where the call that duted that вызывал ошибку.</span><span class="sxs-lookup"><span data-stu-id="1a8a9-107">\(Object\) Gets information about the original location where the call that produced an error was made.</span></span>  <span data-ttu-id="1a8a9-108">В свойстве "\(String\)" отображается местовой поиск в коде пользователя, который происходил операция `asyncOpSource.originatingCall` асинхронно.</span><span class="sxs-lookup"><span data-stu-id="1a8a9-108">The property `asyncOpSource.originatingCall` \(String\) displays the location in the user's code that originated the asynchronous operation.</span></span>  
+*   <span data-ttu-id="1a8a9-109">asyncOpType \(String\) получает имя типа асинхронного типа операции, возвращаемого ошибкой.</span><span class="sxs-lookup"><span data-stu-id="1a8a9-109">asyncOpType \(String\) Gets the name of the asynchronous operation type that raised the error.</span></span>  
     
-<span data-ttu-id="7517b-110">Дополнительные сведения об ошибках при использовании асинхронных операций можно найти в следующих статьях:</span><span class="sxs-lookup"><span data-stu-id="7517b-110">For more information about errors with asynchronous operations, see:</span></span>  
+<span data-ttu-id="1a8a9-110">Дополнительные сведения об ошибках с асинхронными операциями см. в следующих статьях:</span><span class="sxs-lookup"><span data-stu-id="1a8a9-110">For more information about errors with asynchronous operations, see:</span></span>  
   
-*   [<span data-ttu-id="7517b-111">Как обрабатывать ошибки с помощью обещает!</span><span class="sxs-lookup"><span data-stu-id="7517b-111">How to handle errors with promises</span></span>][PreviousVersionsWindowsAppsHh700337]  
-*   [<span data-ttu-id="7517b-112">Устранение ошибок среды выполнения Windows</span><span class="sxs-lookup"><span data-stu-id="7517b-112">Troubleshooting Windows Runtime errors</span></span>][PreviousVersionsWindowsAppsHh974350]  
-
-<!-- image links -->  
+*   [<span data-ttu-id="1a8a9-111">Обработка ошибок с пропущенными минимумами</span><span class="sxs-lookup"><span data-stu-id="1a8a9-111">How to handle errors with promises</span></span>][PreviousVersionsWindowsAppsHh700337]  
+*   [<span data-ttu-id="1a8a9-112">Устранение ошибок Windows Runtime</span><span class="sxs-lookup"><span data-stu-id="1a8a9-112">Troubleshooting Windows Runtime errors</span></span>][PreviousVersionsWindowsAppsHh974350]  
 
 <!-- links -->  
 
-[PreviousVersionsWindowsAppsHh700337]: /previous-versions/windows/apps/hh700337(v=win.10) "Обработка ошибок с помощью обещает (HTML)"  
-[PreviousVersionsWindowsAppsHh974350]: /previous-versions/windows/apps/hh974350(v=win.10) "Устранение ошибок среды выполнения Windows (HTML)"  
+[PreviousVersionsWindowsAppsHh700337]: /previous-versions/windows/apps/hh700337(v=win.10) "Обработка ошибок с пропущенными HTML-кодами | Документы Майкрософт"  
+[PreviousVersionsWindowsAppsHh974350]: /previous-versions/windows/apps/hh974350(v=win.10) "Устранение ошибок среды выполнения Windows (HTML) | Документы Майкрософт"  

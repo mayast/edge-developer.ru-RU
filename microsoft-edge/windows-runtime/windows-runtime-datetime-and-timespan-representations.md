@@ -1,7 +1,7 @@
 ---
 title: Представления DateTime и TimeSpan среды выполнения Windows
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,30 @@ caps.latest.revision: 9
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: d3e138493b80face1238118a99c03f6015a6a8ef
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1c51bba74bb7e5182eb25342badcae848eeba339
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572842"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942057"
 ---
-# <span data-ttu-id="58b5a-102">Представления DateTime и TimeSpan среды выполнения Windows</span><span class="sxs-lookup"><span data-stu-id="58b5a-102">Windows Runtime DateTime and TimeSpan Representations</span></span>  
+# <span data-ttu-id="06c81-102">Представления DateTime и TimeSpan среды выполнения Windows</span><span class="sxs-lookup"><span data-stu-id="06c81-102">Windows Runtime DateTime and TimeSpan representations</span></span>  
 
-<span data-ttu-id="58b5a-103">Представление даты и времени в JavaScript отличается от версии среды выполнения Windows.</span><span class="sxs-lookup"><span data-stu-id="58b5a-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span></span>  <span data-ttu-id="58b5a-104">Структура [DateTime][UwpWindowsFoundationDatetime] среды выполнения Windows представлена в JavaScript как [дату][MDNDate] с резервным хранилищем, которое соответствует `DateTime` данным \ (и имеет другой диапазон и точность из JavaScript `Date` ).</span><span class="sxs-lookup"><span data-stu-id="58b5a-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span></span>  <span data-ttu-id="58b5a-105">Если изменить этот настраиваемый `Date` объект, он становится стандартным сценарием JavaScript `Date` и теряет точность.</span><span class="sxs-lookup"><span data-stu-id="58b5a-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span></span>  <span data-ttu-id="58b5a-106">`Date`Значения JavaScript можно передать в среду выполнения Windows `DateTime` и будет проверяться по диапазону, что может привести к возникновению исключений для маршалирования.</span><span class="sxs-lookup"><span data-stu-id="58b5a-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span></span>  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
- <span data-ttu-id="58b5a-107">Структура [TimeSpan][UwpWindowsFoundationTimespan] среды выполнения Windows преобразуется в миллисекунды и возвращается в виде номера JavaScript.</span><span class="sxs-lookup"><span data-stu-id="58b5a-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span></span>  
+<span data-ttu-id="06c81-103">Представление JavaScript для дат ы и времени отличается от версии Windows Runtime.</span><span class="sxs-lookup"><span data-stu-id="06c81-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span></span>  <span data-ttu-id="06c81-104">Структура [даты и времени][UwpWindowsFoundationDatetime] выполнения Windows представлена в javaScript как [дата,][MDNDate] в котором в строгом хранилище входит в обратный хранилище, соответствующий `DateTime` данным \(и имеет другой диапазон и точности JavaScript `Date` \).</span><span class="sxs-lookup"><span data-stu-id="06c81-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span></span>  <span data-ttu-id="06c81-105">При изменении `Date` настраиваемого объекта он становится стандартной точности JavaScript и `Date` потери.</span><span class="sxs-lookup"><span data-stu-id="06c81-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span></span>  <span data-ttu-id="06c81-106">Значения JavaScript можно перенести в windows Runtime и проверяться диапазоном, что может приводить к возникновению исключений `Date` `DateTime` в полях.</span><span class="sxs-lookup"><span data-stu-id="06c81-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span></span>  
 
-## <span data-ttu-id="58b5a-108">См. также</span><span class="sxs-lookup"><span data-stu-id="58b5a-108">See Also</span></span>  
+ <span data-ttu-id="06c81-107">Структура Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] преобразуется в миллисекунды и возвращается как номер JavaScript.</span><span class="sxs-lookup"><span data-stu-id="06c81-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span></span>  
 
-[<span data-ttu-id="58b5a-109">Использование среды выполнения Windows в JavaScript</span><span class="sxs-lookup"><span data-stu-id="58b5a-109">Using the Windows Runtime in JavaScript</span></span>][WindowsRuntimeJavascript]  
+## <span data-ttu-id="06c81-108">См. также</span><span class="sxs-lookup"><span data-stu-id="06c81-108">See also</span></span>  
 
-<!-- image links -->  
+[<span data-ttu-id="06c81-109">Использование среды выполнения Windows в JavaScript</span><span class="sxs-lookup"><span data-stu-id="06c81-109">Using the Windows Runtime in JavaScript</span></span>][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Использование среды выполнения Windows в JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Использование Windows Runtime в JavaScript | Документы Майкрософт"  
 
-[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "Структура DateTime"  
-[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "Структура TimeSpan"  
+[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime Struct | Документы Майкрософт"  
+[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "Структура TimeSpan Struct | Документы Майкрософт"  
 
 [MDNDate]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date "Дата | MDN"  
