@@ -1,7 +1,7 @@
 ---
 title: Обработка событий среды выполнения Windows в JavaScript
 ms.custom: ''
-ms.date: 04/01/2017
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -16,16 +16,18 @@ caps.latest.revision: 6
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: c3db0116a3d464c75fe754e73e41ff1d154f928e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: fe44457206569c1e32c40514b4b186bec50d1e3c
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572857"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942160"
 ---
 # Обработка событий среды выполнения Windows в JavaScript  
 
-События среды выполнения Windows не представляются таким же образом в JavaScript, как в C++ или .NET Framework.  Они не являются свойствами класса, а представляют собой строковые идентификаторы (строчные), которые передаются в `addEventListener` методы и классы `removeEventListener` .  Например, вы можете добавить обработчик событий для события [геоPositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] , передав методу строку "PositionChanged" `Geolocator.addEventListener` .  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+События выполнения Windows Runtime не отражаются иначе в JavaScript, что и в C++ или .NET Framework.  Они не являются занятиями, но в них представлены строки \(нижний регистр\). `addEventListener` `removeEventListener`  Например, можно добавить маркер события для [события Geolocator.PositionChanged,][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] передав `positionchanged` `Geolocator.addEventListener` строку метода.  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -36,7 +38,7 @@ locator.addEventListener(
     });
 ```  
 
-Вы также можете задать `locator.onpositionchanged` свойство:  
+Кроме того, свойство можно `locator.onpositionchanged` задать:  
 
 ```javascript
 locator.onpositionchanged =
@@ -45,28 +47,26 @@ locator.onpositionchanged =
     };
 ```  
 
-Еще одна разница между .NET и C++ и JavaScript — количеством параметров, полученных обработчиком событий.  В .NET/C++ обработчик принимает два: отправитель события и данные о событии.  В JavaScript эти два объекта объединены в один `Event` объект.  В приведенном ниже примере `ev` параметр имеет и отправителя события \ ( `target` свойство \), и свойства Data Events \ (здесь, просто `position` \).  Свойства данных события — это те, которые задокументированы для каждого события.  
+Еще одно различие между .NET/C++ и JavaScript — количество параметров, используемых обработчиком события.  В .NET/C+++ обработчик занимает два: отправитель события и данные событий.  В JavaScript два объединяются как один `Event` объект.  В следующем примере параметр может содержать отправитель события `ev` \(свойство\) и `target` свойства события \(здесь, `position` просто \).  Свойства данных события — это те, которые задокументированы для каждого события.  
 
 ```javascript
 function (ev) {
-    console.log("Sender:  " + ev.target);
-    console.log("Position:  " +
+    console.log("Sender: " + ev.target);
+    console.log("Position: " +
         ev.position.latitude + "," +
         ev.position.longitude);
 };
 ```  
 
 > [!IMPORTANT]
-> Функции среды выполнения Windows недоступны для приложений, работающих в Internet Explorer.  
+> Функции выполнения Windows недоступны для приложений, работающих в Internet Explorer.  
 
 ## См. также  
 
 [Использование среды выполнения Windows в JavaScript][WindowsRuntimeJavascript]  
 
- <!-- image links -->  
-
  <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Использование среды выполнения Windows в JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Использование Windows Runtime в JavaScript | Документы Майкрософт"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Класс геоуказателей"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Геолуокаративный класс | Документы Майкрософт"  

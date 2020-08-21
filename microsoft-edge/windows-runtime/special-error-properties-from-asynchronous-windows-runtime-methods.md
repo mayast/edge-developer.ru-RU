@@ -1,7 +1,7 @@
 ---
-title: Специальные свойства ошибки из асинхронных методов среды выполнения Windows
+title: Специальные свойства ошибок из асинхронных методов среды выполнения Windows.
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -13,32 +13,32 @@ caps.latest.revision: 4
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 5cf2604e26c84e769cf44e0879ee137cbfbe8b90
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a1fccf1cec811501b94e7da4aa20b69d93754f62
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572848"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942067"
 ---
-# Специальные свойства ошибки из асинхронных методов среды выполнения Windows  
+# Специальные свойства ошибок из асинхронных методов среды выполнения Windows.  
 
-Отладка асинхронных методов среды выполнения Windows в JavaScript может быть сложной, так как эта ошибка может возникать в стеке вызовов. Объект JavaScript `Error` имеет дополнительные свойства, которые отображаются только в том случае, если ошибка возникает из асинхронного метода среды выполнения Windows, если приложение работает в режиме отладки.  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+Несовместимость с асинхронными методами выполнения Windows в JavaScript может быть слишком свежий, так как она может вызывать неоднозначно в стеке вызовов.  Объект JavaScript имеет дополнительные свойства, которые отображаются только при наличии ошибки в режиме выполнения `Error` асинхронного метода выполнения Windows при запуске приложения в режиме отладки.  
   
 ## Специальные свойства ошибки  
 
-Объект ошибки, являющийся результатом неудачной асинхронной операции среды выполнения Windows в режиме отладки, имеет следующие специальные свойства:  
+Объект ошибки, возникающий из сбоя windows асинхронных операций в режиме отладки, имеет следующие свойства:  
 
-*   `asyncOpSource` \ (Объект \) получает сведения о первоначальном расположении, в котором была произведена ошибка вызова. Свойство `asyncOpSource.originatingCall` \ (строка \) отображает расположение в коде пользователя, который является асинхронной операцией.  
-*   asyncOpType \ (String \) возвращает имя типа асинхронной операции, который создал ошибку.  
+*   `asyncOpSource` \(Object\) Gets information about location where the call that duted that вызывал ошибку.  В свойстве "\(String\)" отображается местовой поиск в коде пользователя, который происходил операция `asyncOpSource.originatingCall` асинхронно.  
+*   asyncOpType \(String\) получает имя типа асинхронного типа операции, возвращаемого ошибкой.  
     
-Дополнительные сведения об ошибках при использовании асинхронных операций можно найти в следующих статьях:  
+Дополнительные сведения об ошибках с асинхронными операциями см. в следующих статьях:  
   
-*   [Как обрабатывать ошибки с помощью обещает!][PreviousVersionsWindowsAppsHh700337]  
-*   [Устранение ошибок среды выполнения Windows][PreviousVersionsWindowsAppsHh974350]  
-
-<!-- image links -->  
+*   [Обработка ошибок с пропущенными минимумами][PreviousVersionsWindowsAppsHh700337]  
+*   [Устранение ошибок Windows Runtime][PreviousVersionsWindowsAppsHh974350]  
 
 <!-- links -->  
 
-[PreviousVersionsWindowsAppsHh700337]: /previous-versions/windows/apps/hh700337(v=win.10) "Обработка ошибок с помощью обещает (HTML)"  
-[PreviousVersionsWindowsAppsHh974350]: /previous-versions/windows/apps/hh974350(v=win.10) "Устранение ошибок среды выполнения Windows (HTML)"  
+[PreviousVersionsWindowsAppsHh700337]: /previous-versions/windows/apps/hh700337(v=win.10) "Обработка ошибок с пропущенными HTML-кодами | Документы Майкрософт"  
+[PreviousVersionsWindowsAppsHh974350]: /previous-versions/windows/apps/hh974350(v=win.10) "Устранение ошибок среды выполнения Windows (HTML) | Документы Майкрософт"  

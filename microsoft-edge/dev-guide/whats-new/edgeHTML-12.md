@@ -1,84 +1,128 @@
 ---
-description: На этой странице представлены общие сведения о новых возможностях EdgeHTML 12.
-title: Новые возможности в EdgeHTML 12
+description: На этой странице представлен обзор новых возможностей Microsoft EdgeHTML 12.
+title: Новые функции и API в Microsoft EdgeHTML 12
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
-ms.openlocfilehash: f16db0551d4bea3d29b974c2a35fff2adf476c75
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: Edge, разработчики, html, css, javascript, разработчики
+ms.openlocfilehash: 51c5c89b8ae4ea0e02de68f6b413c162336661f6
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10570889"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941953"
 ---
-# Новые возможности в EdgeHTML 12
+# Новые возможности в EdgeHTML 12  
 
-В Microsoft Edge появился EdgeHTML, новый "живых" обработчик, разработанный для взаимодействия, чтобы гарантировать, что вы всегда получаете новейшую и самую новую веб-платформу Windows. Microsoft EDGE представляет собой четкий перерыв за последнюю, бесплатный из устаревшего кода, необходимого для поддержки элементов управления ActiveX, вспомогательных объектов браузера (BHO) и других методов разработки веб-приложений ByGone. Кроме того, Microsoft EDGE обеспечивает поддержку встроенного PDF-файла. По мере IE11 устаревшие режимы документов устарели, и в Microsoft Edge инфраструктура браузера для их поддержки не существует. Для получения дополнительных сведений ознакомьтесь с [IEBlog](https://go.microsoft.com/fwlink/p/?LinkID=519011) .
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Ниже приведены изменения, которые отгружаются с помощью EdgeHTML 12 в первоначальном выпуске [Windows 10](https://blogs.windows.com/windowsexperience/2015/07/28/windows-10-free-upgrade-available-in-190-countries) (07/2015, сборка 10240). Общие сведения об изменениях, внесенных в общий браузер Microsoft EDGE, можно найти в разделе [перерыв за прошедший: создание нового обработчика веб-отрисовки (Майкрософт](https://blogs.windows.com/msedgedev/2015/02/26/a-break-from-the-past-the-birth-of-microsofts-new-web-rendering-engine/) ) и [перерыв от прошлого, часть 2: как и в случае с элементами ActiveX, VBScript, attachEvent...](https://blogs.windows.com/msedgedev/2015/05/06/a-break-from-the-past-part-2-saying-goodbye-to-activex-vbscript-attachevent/).
+Microsoft Edge представляет microsoft EdgeHTML — новый модуль с инженером на совместимости с базовыми возможностями, чтобы гарантировать наличие актуальной и наиболее наиболее популярной веб-платформы Windows.  Microsoft Edge дает чистый перерыв из старых версий, необходим для поддержки элементов управления ActiveX, объектов помощника браузера \(BHOS\) и других методик разработки веб-страниц.  Кроме того, Microsoft Edge поддерживает внутреннюю поддержку PDF-файлов.  По состоянию IE11 устаревшие режимы документов не рекомендуется использовать, а в Microsoft Edge инфраструктура браузера не поддерживают их.  Дополнительные сведения см. в [IEBlog.](/archive/blogs/ie/living-on-the-edge-our-next-step-in-interoperability)  
 
-Ниже приведен список постоянных [https://aka.ms/devguide_edgehtml_12](https://aka.ms/devguide_edgehtml_12) изменений.
+Ниже перечислены изменения, публикуемые вместе с EdgeHTML 12 в первом выпуске [Windows 10](https://blogs.windows.com/windowsexperience/2015/07/28/windows-10-free-upgrade-available-in-190-countries) \(07.07.2015, сборка 10240\).  Общие сведения об изменениях браузеров Microsoft Edge см. в прошлом браузере Microsoft Edge: старший модуль Microsoft создан ный инженер нового [веб-приложения Майкрософт](https://blogs.windows.com/msedgedev/2015/02/26) [и а) от прошлого, часть 2: "Продажа хорошо до ActiveX, VBScript, attachEvent...](https://blogs.windows.com/msedgedev/2015/05/06)  
 
+Вот как и вот такая перечень изменений. [https://aka.ms/devguide_edgehtml_12](./edgehtml-12.md)  
 
-## Новые возможности
+## Новые возможности  
 
-### Политика безопасности содержимого 1,0
-Microsoft EDGE теперь реализует политику безопасности содержимого (CSP) 1,0. Стандарт безопасности CSP позволяет веб-разработчикам управлять ресурсами (сценариями, CSS, подключаемыми модулями, изображениями и т. д.), в которых определенная страница может получить или выполниться с целью предотвращения атак с помощью межсайтовых сценариев (XSS), clickjacking и других операций внедрения кода для выполнения вредоносного содержимого в контексте надежной веб-страницы. Дополнительные сведения о поставщиках служб шифрования в Microsoft EDGE можно узнать в этой [политике безопасности контента](https://docs.microsoft.com/microsoft-edge/dev-guide/security/content-security-policy) . 
+### Политика безопасности содержимого 1.0  
 
-### Эффекты фильтров
-Microsoft EDGE обеспечивает простой способ добавления визуальных эффектов к элементам. С помощью `filter` свойства можно добавить размытие, настроить яркость, добавить тени, изменить прозрачность и другие элементы. С помощью чистого CSS можно применить несколько эффектов фильтра к одному элементу и анимировать фильтры. Дополнительные сведения можно найти в разделе [эффекты фильтров](https://docs.microsoft.com/microsoft-edge/dev-guide/css/filter-effects).
+Microsoft Edge теперь реализует политику безопасности содержимого \(CSP\) 1.0.  Стандарт безопасности облачных служб позволяет разработчикам контролируйте ресурсы \(сценарий, CSS, подключаемые модули, изображения, т. е. и т. д.), которая может выполнять ся с аналогичным и запуском перекрестных веб-сайтов или механизмов перекрестного кода.  Дополнительные сведения [об CSP](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy) в Microsoft Edge см. в политике безопасности содержимого.  
 
-### JavaScript
-Поддержка JavaScript немного различается между финальной версией Internet Explorer (IE11) и Microsoft Edge. Новые функции в EDGE включают:
+### Эффекты фильтра  
 
-| | |
-|--|--|
-|**Выписки**| [класс](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) (экспериментальный), [for... из](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of) |
-|**Object**| [Обещание](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise), [прокси](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy), [символ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol), [слабый](/scripting/javascript/reference/weakset-object-javascript) |
-|**Функции** | [ACOSH](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh), [codePointAt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/codepointat), [fromCodePoint](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/fromcodepoint), [hypot](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot), [imul](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/imul), [целое](/scripting/javascript/reference/number-isinteger-function-number-javascript), [IsNaN](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isnan), [RAW](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/raw) |
-|**Методы**| [включает в себя](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes) [разделы](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) (массив), [Repeat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) (строка), [Values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) (массив). |
-|**Другие возможности**| [Функции](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions) (экспериментальные), [генераторы](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators), [итераторы](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators), [ `y` Пометка регулярных выражений](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) (экспериментальные), [строки шаблонов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals), [escape-символы кодовой точки Юникода](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals) |
+Microsoft Edge предоставляет простой способ добавления визуальных эффектов к элементам.  С `filter` помощью свойств можно добавлять размытия, настроить яркость, добавить тень, изменить продолжительность и многое другое для элемента.  Используя формат CSS, к одному элементу можно применить несколько эффектов фильтра к одному элементу и анимировать фильтры.  Дополнительные сведения см. в статье ["Применение фильтра".](https://developer.mozilla.org/docs/Web/CSS/filter)  
 
-Для сравнения поддержки JavaScript через Internet Explorer, Microsoft EDGE и приложения Microsoft Store ознакомьтесь со [*сведениями о версии JavaScript*](./javascript-version-information.md).
+### JavaScript  
 
-### Запись мультимедиа и потоки
-Microsoft EDGE обеспечивает поддержку API захвата мультимедиа и потоковых данных на основе спецификаций [захвата мультимедиа W3C и Streams](https://go.microsoft.com/fwlink/p/?LinkID=534096) . Эти API JavaScript разрешают веб-страницам доступ к устройствам захвата мультимедиа, таким как смартфоны или микрофоны, с разрешениями пользователя. Используя API захвата и потоковой передачи мультимедиа, вы можете создавать сценарии, такие как захват фотографий с помощью веб-камеры или захват голосового сообщения с микрофона. Ознакомьтесь с дополнительными сведениями о захвата мультимедиа в Microsoft EDGE в [блоге разработчиков Microsoft Edge](https://blogs.windows.com/msedgedev/2015/05/13/announcing-media-capture-functionality-in-microsoft-edge/). 
+Поддержка JavaScript немного отличается от окончательной версии Браузера Internet Explorer \(IE11\) и Microsoft Edge.  В нем относятся следующие новые возможности в Edge.  
 
-### Создание HTML-элемента и атрибутов
-* `meter` элемент
-* `picture` элемент
-* `template` элемент
-* `image` элемент: `srcset` и `sizes` атрибуты ( [запись блога](https://blogs.windows.com/msedgedev/2015/06/08/introducing-srcset-responsive-images-in-microsoft-edge/)разработчика Microsoft EDGE)
-* `selectionDirection` attribute
-* `input type=time` и `input type=datetime-local`
+:::row:::
+   :::column span="1":::
+      **Выписки**  
+   :::column-end:::
+   :::column span="2":::
+      [class](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) \(экспертальный\) [для... из](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of)  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Объекты**  
+   :::column-end:::
+   :::column span="2":::
+      [Promise,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) [Proxy,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) [Symbol,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) [WeakSet](/scripting/javascript/reference/weakset-object-javascript)  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Функции**  
+   :::column-end:::
+   :::column span="2":::
+      [acosh,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh) [codePointAt,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/codepointat) [fromCodePoint,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/fromcodepoint) [hypot,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot) [imul,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/imul) [isInteger,](/scripting/javascript/reference/number-isinteger-function-number-javascript) [isNaN,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isnan) [raw](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/raw)  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Методы**  
+   :::column-end:::
+   :::column span="2":::
+      [включает:](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes) [ключи](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) \(массив\), повтор\(String\), [значения](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) \(массив\) [repeat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Другие возможности**  
+   :::column-end:::
+   :::column span="2":::
+      [Функции](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions) \(экспериментальные\), [генерации,](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators)  [итерации,](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators) [пометка обычных `y` ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) выражений \(экспериментальные\), [строки шаблона,](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) [точка esicode point scape character scape character](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)  
+   :::column-end:::
+:::row-end:::  
 
-### API объекта RTC 
-Объектная связь в реальном времени (ORTC) обеспечивает потоковую передачу мультимедиа (звуковых и видеофайлов) в реальном времени напрямую между веб-браузерами, мобильными устройствами и серверами с помощью собственных API JavaScript. Дополнительные сведения о том, как ORTC в Microsoft EDGE, можно найти в руководстве разработчика "раздел" [объект API RTC](https://docs.microsoft.com/microsoft-edge/dev-guide/realtime-communication/object-rtc-api) . 
+Сравнение поддержки JavaScript в приложениях Internet Explorer, Microsoft Edge и Microsoft Store см. в сведениях о [версии JavaScript.](./javascript-version-information.md)  
 
-### Режим чтения
-Microsoft Edge предоставляет представление для чтения для более удобной работы с веб-страницами, так же как и без отзыва несвязанных или других вспомогательных материалов на странице. Режим чтения можно включить или отключить из режима чтения (значка книги) в адресной строке (или с помощью сочетания клавиш Ctrl + Shift + R). Дополнительные сведения можно найти в статье [режим чтения](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/reading-view) . 
+### Media Capture и Streams  
 
-### Обнаружение поставщика поиска
-Расширенная интеграция поиска встроена в адресную строку Microsoft EDGE, в том числе варианты поиска, результаты из Интернета, журнал браузера и Избранное. Microsoft Edge использует спецификацию [OpenSearch 1,1](https://go.microsoft.com/fwlink/p/?LinkID=208582) для поиска и использования веб-служб поиска. Если вы являетесь поставщиком поиска, [Ознакомьтесь с дополнительными](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/search-provider-discovery) сведениями о том, как обеспечить поддержку службой Microsoft Edge. 
+Реализует поддержку камер мультимедиа и API-каналов на основе [спецификации W3C Media Capture и Streams.](https://w3c.github.io/mediacapture-main/getusermedia.html)  Эти API JavaScript позволяют веб-страницам получать доступ к устройствам захвата, таким как веб-камеры и микрофоны, с разрешением пользователя.  С помощью API media Capture и Streams можно создавать сценарии, например запись с помощью веб-камеры или захвата голосового сообщения с микрофона.  Дополнительные сведения о медиаданных capture в Microsoft Edge в [блоге разработчика Microsoft Edge.](https://blogs.windows.com/msedgedev/2015/05/13)  
 
-### Поддержка API WebKit
-Для улучшенной совместимости Microsoft EDGE поддерживает различные предустановленные API с префиксом "-WebKit-". Полный список поддерживаемых API "-WebKit-" можно получить с помощью [каталога API](https://developer.microsoft.com/microsoft-edge/platform/catalog/?page=1&q=webkit).
+### Новый элемент и атрибуты HTML  
 
-### Веб-звук
-Microsoft EDGE поддерживает спецификацию [API аудиоподсистемы консорциума W3C](https://go.microsoft.com/fwlink/p/?LinkID=512167) . Веб-звук — это высокоуровневая API JavaScript для обработки и создания звуковых файлов в веб-приложениях, обеспечивающих богатые возможности голосовой и музыкальной связи. Несмотря на то `audio` , что элемент HTML5 поддерживает простое воспроизведение потокового звука, API веб-звука предоставляет широкий набор API, позволяющих воспроизводить несколько звуков с помощью более плотной синхронизации, а также применять функции выигрыша, исчезновения, переходов и базовые эффекты для смешанного звука. Ознакомьтесь с дополнительными сведениями о [веб-звуке](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/web-audio) в руководстве разработчика и в [блоге разработчиков Microsoft Edge](https://blogs.windows.com/msedgedev/2015/05/19/bringing-web-audio-to-microsoft-edge-for-interoperable-gaming-and-enthusiast-media/). 
+*   `meter` элемент  
+*   `picture` элемент  
+*   `template` элемент  
+*   `image` элемент: `srcset` и `sizes` атрибуты \(запись блога [разработчика](https://blogs.windows.com/msedgedev/2015/06/08)Microsoft Edge ))  
+*   `selectionDirection` attribute  
+*   `input type=time` и `input type=datetime-local`  
 
-### Веб-драйвер 
-API веб- [накопителей W3C](https://w3.org/TR/webdriver/) — это платформа и независимый от языка интерфейс и протокол проводной связи, позволяющая программам и сценариям управлять поведением браузера. С помощью этого устройства разработчики могут создавать автоматические тесты, имитирующие взаимодействие с пользователем. Это отличается от модульных тестов JavaScript, поскольку веб-дисковод имеет доступ к функциональным возможностям и сведениям, которые JavaScript запускается в браузере, и может более точно имитировать события пользователей и события на уровне операционной системы. Кроме того, веб-дисковод также может управлять тестированием между несколькими окнами, вкладками и страницами в одном тестовом сеансе.  Для получения дополнительных сведений о том, как приступить к работе с веб диском Microsoft Edge [, ознакомьтесь со статьей.](https://docs.microsoft.com/microsoft-edge/dev-guide/tools/webdriver) 
+### Object RTC API  
 
+Функция "Объектное временный режим" позволяет передавать файлы с помощью мультимедиа \(аудио или видео\) в режиме реального времени напрямую между веб-браузерами, мобильными устройствами и серверами через Собственный API JavaScript.  Дополнительные сведения о ORTC в Microsoft Edge см. в руководстве [по теме RTC RTC.](https://ortc.org)  
 
-## Новые API-интерфейсы в EdgeHTML 12
+### Режим чтения  
 
-Ниже приведен полный список новых API-интерфейсов в EdgeHTML 12.  Они указаны в формате **[имя интерфейса]. [ Имя API]**.
+В Microsoft Edge есть режим чтения, чтобы упростить чтение веб-страниц, как благодаря неотвлекающему нежелательному содержимому на странице.  Режим чтения можно включать и выключать с помощью кнопки чтения \(значка книги\) в адресной строке или с `Ctrl` + `Shift` + `R` ней.  Дополнительные сведения см. [в режиме](../browser-features/reading-view.md) чтения.  
+
+### Обнаружение службы поиска  
+
+Интеграция с поддержкой поиска встроена в адресную строку Microsoft Edge, включая предложения для поиска, результаты из Интернета, журнал браузера и избранное.  Microsoft Edge использует [спецификацию OpenSearch 1.1,](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) чтобы найти и использовать поставщики поиска в Интернете.  Если вы являетесь поставщиком поиска, [прочтите дополнительные](../browser-features/search-provider-discovery.md) сведения о том, как убедиться, что Microsoft Edge поддерживает вашу службу.  
+
+### Поддержка API WebKit aPI WebKit  
+
+Для улучшения совместимости Microsoft Edge поддерживает различные `-webkit-` API префикса.  Полный список поддерживаемых `-webkit-` API можно использовать [каталог API.](https://developer.microsoft.com/microsoft-edge/platform/catalog/?page=1&q=webkit)  
+
+### Аудиозапись  
+
+Microsoft Edge предлагает поддержку спецификации [API веб-аудиоконференции W3C веб-канала W3C.](https://webaudio.github.io/web-audio-api)  Web Audio — это API JavaScript, работающий с интерфейсом JavaScript, который обеспечивает более широкий интерфейс звука и музыкального интерфейса.  Хотя он позволяет воспроизводить потоковую передачу звука, интерфейс API веб-аудиосвязи предоставляет разные возможности aPI, позволяющие воспроизводить несколько звуков с контролем `audio` синхронизации и применять галочки, феймы, переходы и базовые эффекты к смешанному звуку.  Подробнее о [Web Audio](... /multimedia/web-audio.md в руководстве Devide и в [блоге Разработчика Microsoft Edge.](https://blogs.windows.com/msedgedev/2015/05/19)  
+
+### веб-драйвер  
+
+[API WebDriver —](https://w3.org/TR/webdriver) это платформа и интерфейс, неявный интерфейс, и протоколы, позволяющие контролировать работу веб-браузера.  WebDriver позволяет разработчикам создавать автоматизированные тесты, которые хорошо интересуют взаимодействие с пользователем.  Этот процесс отличается от тестов JavaScript unit, так как у WebDriver есть доступ к функциям и сведениям, запущенным в браузере, не и может более точно просматривать события пользователя или события на уровне освобождения.  WebDriver также может управлять тестированием нескольких окон, вкладок и веб-страниц в одном тестовое сеансе.  Дополнительные сведения о том, как начать работу с WebDriver для Microsoft Edge, см. в [веб-диспетчере веб-диспетчера веб-диспетчера веб-диспетчера веб-диспетчера веб-дис](../../webdriver.md)  
+
+## Новый API в Microsoft EdgeHTML 12  
+
+Ниже приведен полный список новых интерфейсов API в Microsoft EdgeHTML 12.  Они указаны в `[interface name].[api name]` формате.  
 
  > [!NOTE] 
- > Многие из этих API были доступны в IE11. Приведенные ниже данные для EdgeHTML 12 предлагаются как базовые показатели для сравнения начальной версии EdgeHTML и более поздних версий.
+ > Многие из этих API доступны в IE11.  Приведенные ниже данные для EdgeHTML 12 предлагаются в качестве базового плана для сравнения исходных версий EdgeHTML с последующими версиями.  
 
-<iframe height='580' scrolling='no' title='Новые API-интерфейсы в EdgeHTML 12' src='//codepen.io/MicrosoftEdgeDocumentation/embed/pPOwby/?height=580&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Ознакомьтесь с <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/pPOwby/'> новыми API-интерфейсами в EdgeHTML 12 </a> по Microsoft Edge Docs ( <a href='https://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) на <a href='https://codepen.io'> CodePen </a> .</iframe>
+<iframe height='580' scrolling='no' title='Новый API в Microsoft EdgeHTML 12' src='//codepen.io/MicrosoftEdgeDocumentation/embed/pPOwby/?height=580&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>См. статью <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/pPOwby/'> "Новый API" в Microsoft </a> EdgeHTML 12, используя документы Microsoft Edge <a href='https://codepen.io/MicrosoftEdgeDocumentation'> </a> (@MicrosoftEdgeDocumentation) на <a href='https://codepen.io'> коде Кодировки. </a></iframe>  

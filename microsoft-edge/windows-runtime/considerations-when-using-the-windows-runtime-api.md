@@ -1,7 +1,7 @@
 ---
 title: Рекомендации по использованию API среды выполнения Windows
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -15,101 +15,161 @@ caps.latest.revision: 8
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 95b082e27c4f247b841a9540e13bd49bd4c8bd67
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6b460fe514927590382613b7454a69c89a5a5f8b
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572861"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942213"
 ---
 # Рекомендации по использованию API среды выполнения Windows  
 
-Вы можете использовать практически каждый элемент API среды выполнения Windows в JavaScript.  Однако есть некоторые аспекты представления JavaScript элементов среды выполнения Windows, которые следует помнить.  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+Теперь можно использовать практически все элементы API выполнения Windows в JavaScript.  Однако некоторые аспекты элементов во время выполнения JavaScript элементов Windows, которые необходимо помнить.  
 
 > [!IMPORTANT]
-> Сведения о создании компонентов среды выполнения Windows в C++, C# или Visual Basic и их использовании в JavaScript можно найти в разделе [Создание компонентов среды выполнения Windows в c++][WindowsUwpComponentsCreatingCpp] и [Создание компонентов среды выполнения Windows в C# и Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
+> Сведения о создании компонентов среды выполнения Windows в C++, C#или Visual Basic и использовании их в JavaScript см. в статье ["Создание компонентов среды выполнения Windows в C++][WindowsUwpComponentsCreatingCpp] и создание компонентов среды выполнения [в C# и Visual Basic.][WindowsUwpComponentsCreatingCsharpVb]  
 
-## Особые случаи в представлении JavaScript типов среды выполнения Windows  
+## Особые случаи в типах JavaScript для Windows Runtime  
 
-*   Строки: неинициализированная строка передается методу среды выполнения Windows в качестве строки "uninitial", а строковое значение `null` передается как строка "null".  \ (Это справедливо каждый раз, `null` когда `undefined` какое-либо значение приводится к строке. \) перед передачей строки методу среды выполнения Windows следует инициализировать ее как пустую строку \ ("" \ ").  
-*   Интерфейсы: невозможно реализовать интерфейс среды выполнения Windows в JavaScript.  
-*   Массивы: массивы среды выполнения Windows не изменяются в размерах, поэтому методы, изменяющие размер массивов в JavaScript, не работают в массивах среды выполнения Windows.  
-*   Массивы: Если вы передаете значение массива JavaScript методу среды выполнения Windows, копируется массив.  Метод среды выполнения Windows не может изменить массив или его члены и вернуть его в приложение JavaScript.  Однако вы можете использовать типизированные массивы \ (например, [Int32Array Object][MDNInt32array]\), которые не копируются.  
-*   Структуры: структуры среды выполнения Windows — это объекты в JavaScript.  Если вы хотите передать структуру среды выполнения Windows в метод среды выполнения Windows, не создавайте экземпляр структуры с помощью `new` ключевого слова.  Вместо этого создайте объект и добавьте соответствующие члены и их значения.  Имена участников должны быть в стиле Camel: `SomeStruct.firstMember` .  
-*   Объекты: объекты JavaScript не совпадают с объектами управляемого кода \ ( `System.Object` \).  Вы не можете передать объект JavaScript методу среды выполнения Windows, для которого требуется `System.Object` .  
-*   Идентификация объекта: в большинстве случаев объекты, передаваемые между средой выполнения Windows и JavaScript, не изменяются.  Механизм JavaScript поддерживает схему известных объектов.  Когда объект возвращается из среды выполнения Windows, он сопоставляется с картой и, если он не существует, создается новый объект.  Эти же действия выполняются для объектов, представляющих интерфейсы, возвращаемые методами среды выполнения Windows.  Существует два типа исключений.  
-
-    *   Объекты, возвращаемые при вызове среды выполнения Windows, и новые свойства \ (expando \), не сохраняются при передаче обратно в среду выполнения Windows.  Тем не менее, когда они возвращаются в приложение JavaScript, так как они соответствуют существующему объекту, возвращаемый объект имеет свойства expando.  
-    *   Структуры и делегаты в среде выполнения Windows не могут идентифицироваться так же, как и ранее использованные структуры или делегаты.  Каждый раз, когда возвращается функция Structure или делегата, она получает новую ссылку.  
-
-*   Конфликты имен: несколько интерфейсов среды выполнения Windows могут содержать члены с одинаковыми именами.  Если они объединены в один объект JavaScript (который может быть представлением класса среды выполнения или интерфейса), то члены представлены с полными именами.  Чтобы вызвать эти члены, используйте следующий синтаксис:  
-    
-    ```cpp
-    Class["MemberName"](parameter)
-    ```  
-    
-    В следующем коде у двух интерфейсов есть метод Draw, а в классе среды выполнения реализованы оба интерфейса.  
-    
-    ```cpp
-    namespace CollisionExample {
-        interface InterfaceA
-        {
-            HRESULT Draw([in] Int32 a);
-        }
-        interface InterfaceB
-        {
-            HRESULT Draw([in] HString a);
-        }
-        runtimeclass ExampleObject {
+:::row:::
+   :::column span="1":::
+      Строки  
+   :::column-end:::
+   :::column span="3":::
+      Неинициализированная строка служит методом среды выполнения Windows, а строка "Unsetd" в качестве `null` строки "Null" является строкой "Null".  \(Это значение действительно принадлежат к `null` `undefined` строке.\) Перед аналогичным способом Windows, следует инициализировать ее как пустую строку \("\).  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Интерфейсы  
+   :::column-end:::
+   :::column span="3":::
+      Интерфейс среды выполнения Windows невозможно внедрить в JavaScript.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Массивы  
+   :::column-end:::
+   :::column span="3":::
+      Массивы Windows Runtime не изменяются, поэтому методы изменения размера массивов в JavaScript не работают для массивов Windows Runtime.  
+      *   Массивы: при переносе значения массива JavaScript в метод выполнения Windows этот макрос копируется.  Метод среды выполнения Windows не может изменять массив или его элементы и вернуть его в приложение JavaScript.  Однако можно использовать тип \(например, [Int32Array][MDNInt32array]\), которые не копируются.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Структуры  
+   :::column-end:::
+   :::column span="3":::
+      Структуры выполнения Windows являются объектами в JavaScript.  Если вы хотите сделать структуру Windows Runtime методом Windows Runtime, не используйте ключевое `new` слово.  Вместо этого создайте объект и добавьте необходимых участников и их значения.  В отличие от имен участников должны быть названы `SomeStruct.firstMember` так:  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Объекты  
+   :::column-end:::
+   :::column span="3":::
+      Объекты JavaScript отличаются от объектов управляемых кодов \( `System.Object` \).  Объект JavaScript невозможно перенести в метод выполнения Windows, который `System.Object` требуется.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Удостоверение объекта  
+   :::column-end:::
+   :::column span="3":::
+      В большинстве случаев объекты, переданные как в передаче, так и между windows Runtime и JavaScript, не изменяются.  Ядро JavaScript сохраняет карту известных объектов.  Когда объект возвращается из среды выполнения Windows Runtime, он соответствует карте и если он не создан.  Следуйте той же процедуре объектов, которые представляют интерфейсы, возвращаемые методами среды выполнения Windows.  Существует два типа исключений:  
+      
+      *   Объекты, возвращаемые из вызова Windows выполнения, а затем добавляли новые свойства \(expando\) не сохраняйте их при переносе в среду выполнения Windows Runtime.  Однако при возвращении в приложение JavaScript, так как они совпадают с существующим объектом, свойства возвращаемого объекта имеют свойства развертывания.  
+      *   Структуры и делегаты в Windows Runtime не могут быть отличаются от ранее использованных ранее структур и представителей.  Каждый раз, когда возвращаются структура или представителя, получается новая ссылка.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Выделение имен  
+   :::column-end:::
+   :::column span="3":::
+      Несколько интерфейсов Windows Runtime могут иметь одинаковые имена.  Если они объединены в один объект JavaScript (который может представлять класс выполнения или интерфейс), участники представляются с полными именами.  Вы можете позвонить этим членам, используя следующий синтаксис:  
+      
+      ```cpp
+      Class["MemberName"](parameter)
+      ```  
+      
+      В приведенном ниже коде два интерфейса имеет метод рисования, а класс ы выполнения — внедряет оба интерфейса.  
+      
+      ```cpp
+      namespace CollisionExample {
           interface InterfaceA
+          {
+              HRESULT Draw([in] Int32 a);
+          }
           interface InterfaceB
-        }
-    }
-    ```  
+          {
+              HRESULT Draw([in] HString a);
+          }
+          runtimeclass ExampleObject {
+            interface InterfaceA
+            interface InterfaceB
+          }
+      }
+      ```  
+      
+      Вот как можно вызвать приведенный выше код в JavaScript.  
+      
+      ```javascript
+      var example = new ExampleObject();
+      example["CollisionExample.InterfaceA.draw"](12);
+      example["CollisionExample.InterfaceB.draw"]("hello");
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `Out` параметры  
+   :::column-end:::
+   :::column span="3":::
+      Если метод выполнения Windows имеет несколько `out` параметров, в JavaScript метод JavaScript в качестве возвращаемого значения объектjaScript выполняется, а объект имеет свойства, соответствующие `out` параметру.  Например, рассмотрим следующее подпись во сеанса Выполнения Windows в C++.  
+      
+      ```cpp
+      void ExampleMethod(
+          [OutAttribute] char^ first,
+          [OutAttribute] char^ second
+      )
+      ```  
+      
+      Для этой подписи используется следующий вид:  
+      
+      ```javascript
+      var returnValue = exampleMethod();
+      ```  
+      
+      В данном `returnValue` примере является объект JavaScript с двумя `first` полями `second` и.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Статические члены  
+   :::column-end:::
+   :::column span="3":::
+      Windows Runtime определяет как статические члены, так и участники экземпляра.  В JavaScript статические элементы добавляются к объекту, связанному с классом или интерфейсом выполнения Windows Runtime.  
+      
+      ```javascript
+      // Static method.
+      var accel = Windows.Devices.Sensors.Accelerometer.getDefault();
+      // Instance method.
+      var reading = accel.getCurrentReading();
+      ```  
+   :::column-end:::
+:::row-end:::  
     
-    Вот как можно вызвать вышеприведенный код в JavaScript.  
-    
-    ```javascript
-    var example = new ExampleObject();
-    example["CollisionExample.InterfaceA.draw"](12);
-    example["CollisionExample.InterfaceB.draw"]("hello");
-    ```  
-    
-*   `Out` параметры: Если метод среды выполнения Windows имеет несколько `out` параметров, в JavaScript этот метод имеет объект JavaScript в качестве возвращаемого значения и объект имеет свойства, соответствующие `out` параметру.  Например, можно использовать следующую подпись среды выполнения Windows в C++.  
-    
-    ```cpp
-    void ExampleMethod(
-      [OutAttribute] char^ first,
-      [OutAttribute] char^ second
-    )
-    ```  
-    
-    Версия JavaScript этой сигнатуры:  
-    
-    ```javascript
-    var returnValue = exampleMethod();
-    ```  
-    
-    В этом примере `returnValue` — объект JavaScript, имеющий два поля: `first` и `second` .  
-    
-*   Статические члены: среда выполнения Windows определяет статические члены и члены экземпляра.  В JavaScript статические члены добавляются в объект, связанный с классом или интерфейсом среды выполнения Windows.  
-    
-    ```javascript
-    // Static method.
-    var accel = Windows.Devices.Sensors.Accelerometer.getDefault();
-    // Instance method.
-    var reading = accel.getCurrentReading();
-    ```  
-    
-Дополнительные сведения о представлении JavaScript основных типов среды выполнения Windows можно найти в [представлении JavaScript типов среды выполнения Windows][WindowsRuntimeJavascriptTypes].  
-
-<!-- image links -->  
+Дополнительные сведения о формате JavaScript основных типов Windows Runtime см. в [статье JavaScript, представляющее типы Управляемых типов Windows.][WindowsRuntimeJavascriptTypes]  
 
 <!-- links -->  
  
-[WindowsRuntimeJavascriptTypes]: /microsoft-edge/windows-runtime/javascript-representation-of-windows-runtime-types "Представление типов среды выполнения Windows в JavaScript"
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Представление JavaScript типов среды выполнения Windows | Документы Майкрософт"
 
-[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Компоненты среды выполнения Windows с C++/CX"  
-[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Компоненты среды выполнения Windows в C# и Visual Basic"  
+[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Компоненты среды выполнения Windows с C+++/CX | Документы Майкрософт"  
+[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Компоненты среды выполнения Windows с C# и Visual Basic | Документы Майкрософт"  
 
 [MDNInt32array]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array "Int32Array | MDN"  

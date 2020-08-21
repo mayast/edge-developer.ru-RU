@@ -1,48 +1,54 @@
 ---
-description: На этой странице представлены общие сведения о новых возможностях в сборках предварительной версии EdgeHTML для разработчиков.
-title: Новые возможности EdgeHTML для разработчиков
+description: На этой странице представлен обзор новых возможностей предварительной версии браузера Microsoft EdgeHTML для разработчиков.
+title: 'Новые возможности microsoft EdgeHTML для разработчиков: руководство для разработчиков'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/07/2018
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик, новые возможности в EDGE, новые API-интерфейсы в EDGE, edgehtml, edgehtml Build Previews
-ms.openlocfilehash: d577634cfe7fc3fe591a793bd792fad9065c7d5e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: Edge, разработка веб-приложений, html, css, javascript, разработчик, разработчики, новые возможности в Edge, новых aPI в Edge, Edgehtml, edgehtml
+ms.openlocfilehash: 81973d12f6e66b5e6f1c3cd6a12fee196c4495d7
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10570891"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941962"
 ---
-# Новые возможности EdgeHTML
+# Что нового в EdgeHTML  
 
-Получение новейших функций и API EdgeHTML в рамках программы [предварительной оценки Windows](https://insider.windows.com/). [Программа предварительной оценки Windows](https://insider.windows.com/) предоставляет новейшие сборки Windows 10 сразу после их появления. 
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Ознакомьтесь с руководством по [разработке](../dev-guide.md) , чтобы увидеть новые функции и API, которые поставляются в текущем выпуске платформы Microsoft EDGE, EdgeHTML 18 (сборка 17763). 
+Получайте новейшие функции и API-интерфейсы, стали участником [программы предварительной оценки Windows!](https://insider.windows.com)  Программа [предварительной оценки Windows предоставляет](https://insider.windows.com) последние сборки Windows 10 сразу после их выхода.  
 
-Ниже указаны новые и обновленные API EdgeHTML в сборках Windows 10 Preview. Они указаны в формате **[имя интерфейса]. [ Имя API]**. Полный список новых функций Microsoft EDGE и платформы можно найти в [журнале изменений](https://developer.microsoft.com/microsoft-edge/platform/changelog/) или в [руководстве по разработке](../dev-guide.md) для просмотра новых функций и API, которые поставляются в текущем стабильном выпуске платформы Microsoft EDGE, EdgeHTML 18.  
+Чтобы ознакомиться с новыми функциями и интерфейсами aPI, публикованными в текущем выпуске платформы Microsoft Edge, начните использовать EdgeHTML 18 \(сборка 17763\). [Dev Guide](../dev-guide.md)  
+
+Ниже описаны новые и обновленные API Edge HTML в предварительных сборках Для Windows 10. Они указаны в `[interface name].[api name]` формате.  Полный список новых возможностей Microsoft Edge и [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) платформ см. в руководстве по разработке, чтобы увидеть новые функции и интерфейс API, публикованный в текущем стабильном выпуске платформы Microsoft Edge и EdgeHTML 18. [Dev Guide](../dev-guide.md)   
 
 > [!WARNING] 
-> Некоторые сведения относятся к предварительным версиям продуктов, в которые перед коммерческим выпуском могут быть внесены существенные изменения. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
+> Некоторые сведения связаны с предварительно опубликованным продуктом, которые могут быть значительно изменены до коммерческого выпуска.  Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.  
 
-## Ознакомительная сборка 18272
-Изменения API не обнаружены.
+## Предварительная сборка 18272  
 
-## Ознакомительная сборка 18267
-Изменения API не обнаружены.
+Не изменяется.  
 
-## Ознакомительная сборка 18262
+## Сборка 18267  
 
-Добавлена новая поддержка API:
+Не изменяется.  
 
-<iframe height='341' scrolling='no' title='Предварительная версия сборки 17682 EdgeHTML' src='//codepen.io/MSEdgeDev/embed/5a691c1840690352f409d3788b8167fa/?height=341&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Ознакомьтесь с <a href='https://codepen.io/MSEdgeDev/pen/5a691c1840690352f409d3788b8167fa/'> разEdgeHTMLой версии 17682 </a> MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev </a> ) на <a href='https://codepen.io'> CodePen </a> .
-</iframe>
+## Предварительная сборка 18262  
 
-## Ознакомительная сборка 18252
-Изменения API не обнаружены.
+Добавлена поддержка API:  
 
-## Ознакомительная сборка 18247
-Изменения API не обнаружены.
+<iframe height='341' scrolling='no' title='Сборка EdgeHTML Preview 17682' src='//codepen.io/MSEdgeDev/embed/5a691c1840690352f409d3788b8167fa/?height=341&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>См. <a href='https://codepen.io/MSEdgeDev/pen/5a691c1840690352f409d3788b8167fa/'> сборку pen EdgeHTML Preview 17682 </a> на MSEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) на <a href='https://codepen.io'> коде CodePen. </a>  </iframe>  
 
-## Ознакомительная сборка 18242
-Изменения API не обнаружены.
+## Сборка 18252  
+
+Не изменяется.  
+
+## Сборка 18247  
+
+Не изменяется.  
+
+## Предварительная сборка 18242  
+
+Не изменяется.  

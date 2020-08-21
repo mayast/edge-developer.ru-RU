@@ -1,67 +1,82 @@
 ---
-description: На этой странице представлены общие сведения о новых возможностях EdgeHTML 13.
-title: Новые возможности в EdgeHTML 13
+description: На этой странице представлен обзор новых возможностей Microsoft EdgeHTML 13.
+title: Новые функции и API в Microsoft EdgeHTML 13
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
-ms.openlocfilehash: 8fb9d6bd78af5d595e217fa2bf210632f4c1a61f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: Edge, разработчики, html, css, javascript, разработчики
+ms.openlocfilehash: 033b8dacb107492624f3b8c7775a47285c9893dd
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10570883"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941912"
 ---
-# Новые возможности в EdgeHTML 13
-Ниже приведены изменения, которые поставляются вместе с EdgeHTML 13-й системой, которая включает браузер Microsoft EDGE в [первое крупное обновление](https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/) для Windows 10 (11/2015, сборка 10586). Общие сведения об изменениях, внесенных в общий браузер Microsoft EDGE, приведены в [статье Знакомство с EdgeHTML 13 и первой версией платформы Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/).
+# Новые возможности В EdgeHTML 13  
 
-Ниже приведен список постоянных [https://aka.ms/devguide_edgehtml_13](https://aka.ms/devguide_edgehtml_13) изменений.
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-## Функции
+Ниже перечислены изменения, пытаемые вместе с Браузером Microsoft Edge HTML 13, технологичным способом, который модуль Microsoft Edge в первом [обновлении](https://blogs.windows.com/windowsexperience/2015/11/12) Windows 10 \(11.11.2015, сборка 10586\).  Обзор изменений общего браузера Microsoft Edge см. в статье ["Знакомство с Microsoft EdgeHTML 13, нашем первоначальномплатформе microsoft Edge.](https://blogs.windows.com/msedgedev/2015/11/16)  
 
-### CSS
-"" EdgeHTML 13 поддерживает новые функции CSS, в том числе:
-* [Псевдо-классы для постоянство стилей CSS](https://developer.microsoft.com/microsoft-edge/platform/status/cssmutabilitypseudoclasses/)
-* [Псевдо-классы с диапазоном CSS](https://developer.microsoft.com/microsoft-edge/platform/status/cssrangepseudoclasses/)
-* [Начальные](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue/) и [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue/) Неотмененные ключевые слова CSS
+Вот как и вот такая перечень изменений. [https://aka.ms/devguide_edgehtml_13](./edgehtml-13.md)  
 
-### Расширения зашифрованных файлов мультимедиа
-Microsoft EDGE теперь поддерживает новые API-интерфейсы с непрефиксными [зашифрованными расширениями мультимедиа](https://w3.org/TR/encrypted-media/) . Расширения для зашифрованных мультимедийных файлов (ОБНОВЛЕННОЙ) расширяют элементы видео и звука, чтобы включить защищенное содержимое с помощью управления цифровыми правами (DRM), не используя подключаемые модули. Подробнее о ОБНОВЛЕННОЙ: [зашифрованные расширения для мультимедиа](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/encrypted-media-extensions).
+## Возможности  
 
-### Графика
+### CSS  
 
-В EdgeHTML 13 появились следующие обновленные графические элементы:
-* [Эллипс для холста](https://developer.microsoft.com/microsoft-edge/platform/status/canvas2dellipse/)
-* [Режимы наложения «холсты»](https://developer.microsoft.com/microsoft-edge/platform/status/compositingandblendingincanvas2d/)
-* [`<picture>` элемент](https://developer.microsoft.com/microsoft-edge/platform/status/pictureelement/)
-* [Внешнее содержимое SVG](https://developer.microsoft.com/microsoft-edge/platform/status/svgexternalcontent/)
+EdgeHTML 13 поддерживает новые возможности CSS, включая следующие:  
 
-### JavaScript
-EdgeHTML 13 содержит [существенные улучшения и поддержку новых функций в Chakra](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), а также в Microsoft EDGE, включенный в ядро JavaScript, в том числе:
+*   [Классы CSS mutability Pseudo-Class-class-class-classes](https://developer.microsoft.com/microsoft-edge/platform/status/cssmutabilitypseudoclasses)  
+*   [CSS Range Pseudo-classes](https://developer.microsoft.com/microsoft-edge/platform/status/cssrangepseudoclasses)  
+*   При настройке и [избавлении ключевых слов](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue) CSS [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue)  
 
-#### Новые функции (по умолчанию)
+### Зашифрованные расширения мультимедиа  
 
-* [ASM. js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) включен по умолчанию ([запись блога](https://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [демонстрация](https://dev.windows.com/microsoft-edge/testdrive/demos/chess/))
-* [Классы](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) (ES2015)
+Теперь Microsoft Edge теперь поддерживает новые API непрефиксированных зашифрованных оболочки [мультимедиа.](https://w3.org/TR/encrypted-media)  Зашифрованные расширения мультимедиа \(EME\) расширяют элементы видео и звуковых данных, чтобы включить защиту содержимого без использования подключаемого модуля.  Дополнительные сведения о EME: [зашифрованные расширения мультимедиа.](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API)  
 
-#### Экспериментальные функции JavaScript (включены с *флагами about: flags*)
+### Графика  
 
-* [Асинхронные функции](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)
-* [Оператор возведения](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) в степень (ES2016)
-* [Разструктуризация](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) (ES2015)
+EdgeHTML 13 содержит следующие обновления графических элементов:  
 
-### Ввод данных пользователем
-Ниже перечислены функции, представленные в EdgeHTML 13 улучшения ввода данных пользователем.
-* [`<meter>` элемент](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement/)
-* [`oninvalid` обработчик событий для документа и окна элемента](https://developer.microsoft.com/microsoft-edge/platform/status/oninvalideventhandler/)
+*   [Холлст](https://developer.microsoft.com/microsoft-edge/platform/status/canvas2dellipse)  
+*   [Модели ломаны](https://developer.microsoft.com/microsoft-edge/platform/status/compositingandblendingincanvas2d)  
+*   [<picture> элемент](https://developer.microsoft.com/microsoft-edge/platform/status/pictureelement)  
+*   [Внешний контент SVG](https://developer.microsoft.com/microsoft-edge/platform/status/svgexternalcontent)  
 
-### Блокировка указателя
-Microsoft EDGE теперь поддерживает интерфейс API блокировки указателей (ранее называемый блокировкой мыши) для доступа к перемещению мыши, заблокирующий цель событий мыши для одного элемента, устраняя ограничения того, насколько далеко движение мыши может находиться в одном направлении, и удаляет курсор из представления. 
+### JavaScript  
 
+EdgeHTML 13 содержит основные улучшения и новые возможности поддержки [в Какра,](https://blogs.windows.com/msedgedev/2015/09/30)включая переключатель JavaScript, работает на диске, включая следующие:  
 
-## Новые API-интерфейсы в EdgeHTML 13 "" "
+#### Новые возможности  
 
-Ниже приведен полный список новых API-интерфейсов в EdgeHTML 13. Они указаны в формате **[имя интерфейса]. [ Имя API]**.
-<iframe height='584' scrolling='no' title='Новые API-интерфейсы в EdgeHTML 13' src='//codepen.io/MicrosoftEdgeDocumentation/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Ознакомьтесь с <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'> новыми API-интерфейсами в EdgeHTML 13 на </a> Microsoft Edge Docs ( <a href='http://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) на <a href='http://codepen.io'> CodePen </a> .</iframe>""''""''""
+Включено по умолчанию  
+
+*   [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) по умолчанию (запись[блога),](https://blogs.windows.com/msedgedev/2015/11/10) [демонстрация \.](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)  
+*   [Классы](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \(ES2015\)  
+
+#### Экспертные функции JavaScript  
+
+Доступно с `about:flags`  
+
+*   [Функции асинхронизации](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \(ES2016\)  
+*   [Оператор экспоненциального оператора](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) \(ES2016\)  
+*   [Разработка](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) \(ES2015\)  
+
+### Ввод пользователя  
+
+В Microsoft EdgeHTML 13 появилась возможность ввода пользователей:  
+
+*   [<meter> элемент](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement)  
+*   [oninvalid event обработчик событий для документа и окна](https://developer.microsoft.com/microsoft-edge/platform/status/oninvalideventhandler)  
+
+### Блокировка указате  
+
+Теперь Microsoft Edge теперь поддерживает API блокировки указателя \(ранее называемая блокировка мыши\) для доступа к неперемещаемому перемещению, блокировке целевого элемента, уберение пределов продолжения перемещения в одном направлении и удаление курсора из вида.  
+
+## Новые API в Microsoft EdgeHTML 13  
+
+Ниже приведен полный список новых aPI в Microsoft EdgeHTML 13.  Они указаны в `[interface name].[api name]` формате.  
+
+<iframe height='584' scrolling='no' title='Новые API в Microsoft EdgeHTML 13' src='//codepen.io/MicrosoftEdgeDocumentation/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width:  100%;'>См. раздел <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'> "Новые API" в Microsoft EdgeHTML 13 </a> с помощью приложений Microsoft Edge <a href='http://codepen.io/MicrosoftEdgeDocumentation'> </a> (@MicrosoftEdgeDocumentation) на <a href='http://codepen.io'> коде </a> кода.</iframe>  

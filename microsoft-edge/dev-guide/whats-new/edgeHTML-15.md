@@ -1,31 +1,35 @@
 ---
-description: В этом руководстве вы найдете общие сведения о функциях и стандартах разработчика, включенных в EdgeHTML 15.
-title: Новые возможности EdgeHTML 15
+description: В этом руководстве представлен обзор функций и стандартов для разработчиков, включенных в Microsoft EdgeHTML 15.
+title: Новые функции и API в EdgeHTML 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
+keywords: Edge, разработчики, html, css, javascript, разработчики
 ms.custom: seodec18
-ms.openlocfilehash: e750a9272bb8bcdb51662839a31cc303c4064ef9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 4febe4be1fce29207de7a57b61d96eae0a5c02ab
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10570919"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941921"
 ---
-# Новые возможности EdgeHTML 15
-Ниже приведены изменения, которые поставляются с текущим выпуском платформы Microsoft EDGE, как в [обновлении Windows 10 Creators](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017, сборка 15063). Общие сведения об изменениях, внесенных в общий браузер Microsoft EDGE, приведены в [статье новые возможности Microsoft EDGE в обновлении Windows 10 Creators](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97) .
+# Новые возможности В EdgeHTML 15  
 
-Изменения, внесенные в последующих сборках Insider Preview для Windows, приведены [в разделе новые возможности EdgeHTML](../whats-new.md).
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Ниже приведен список постоянных **[https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)** изменений.
+Ниже перечислены изменения, публикуемые в текущем выпуске платформы Microsoft Edge с [обновлением Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \(04.04.2017, сборка 15063\).  Обзор изменений общего браузера Microsoft Edge см. в статье "Новые возможности [Microsoft Edge в Windows 10 Creators Update".](https://blogs.windows.com/msedgedev/2017/04/11)  
 
-## Новые возможности
+Сведения о последующих сборках Windows Insider Preview см. в статье ["Новые возможности Microsoft EdgeHTML".](../whats-new.md)  
 
-### Пользовательские свойства CSS
-Microsoft EDGE теперь поддерживает [пользовательские свойства CSS](https://drafts.csswg.org/css-variables/), переменные CSS. k.. Переменные CSS позволяют создавать пользовательские свойства CSS, которые можно повторно использовать во всех таблицах стилей для уменьшения количества повторяющихся данных, таких как повторяющиеся цвета. Использование переменных CSS очень просто:
+Вот как и вот такая перечень изменений. [https://aka.ms/devguide_edgehtml_15](./edgehtml-15.md)  
+
+## Новые возможности  
+
+### Настраиваемые свойства CSS  
+
+Теперь В Microsoft Edge теперь поддерживаются пользовательские [свойства CSS CSS](https://drafts.csswg.org/css-variables)— .k.a CSS.  Переменные CSS позволяют создавать пользовательские свойства CSS, которые можно повторно использовать во всех таблицах стилей для уменьшения количества повторяющихся данных, например повторяющихся цветов.  Использование переменных CSS очень просто:  
 
 ```css
 /* define a custom property by using two dashes and assign it a value */
@@ -39,104 +43,135 @@ h1 {
 }
 ```  
 
-### Наблюдатель пересечения
-EdgeHTML 15 представляет спецификацию [API наблюдателей пересечения](https://w3c.github.io/IntersectionObserver/) . API наблюдателя для пересечения позволяет асинхронно запрашивать расположение и видимость элементов DOM относительно других элементов или глобального окна просмотра. Этот API исключает необходимость специального дорогостоящего кода, создавая метод для эффективного уведомления элементов в представлении.
+### Эблемная дебет  
 
-### JavaScript
+EdgeHTML 15 представляет спецификацию [API пересечения через API-интерфейс OBserver.](https://w3c.github.io/IntersectionObserver)  API пересечения окна сервера Observer Observer позволяет асинхронно относительно модулям запросов к положению и видимости элементов DOM относительно других элементов или глобального представления.  Это позволит избежать необходимости для пользовательского дорогостоящего кода путем создания метода, которые эффективнее уведомляют элементы в режиме просмотра.  
 
-Оптимизация производительности занимает центральное состояние с помощью EdgeHTML 15 версии обработчика JavaScript для Chakra. С помощью обновления Windows 10 Creators Chakra экономит память, изменяя функции и оптимизируя аргументы кучи и повышая производительность для minified кода.
+### JavaScript  
 
-Кроме того, в EdgeHTML 15 представлены следующие предварительные обзоры функций:
+Оптимизация производительности учитывают удобство воспроизведения центра с пограничным модулем Chakra JavaScript.  В обновлении Windows 10 Creators Update камера сохраняет память, перекладывая функции и оптимизируя аргументы наушников и повышает производительность минифрованного кода.  
 
-#### Экспериментальные функции JavaScript (включены с *флагами about: flags*)
+Кроме того, в браузере EdgeHTML 15 представлены следующие предварительные версии функций:  
 
-* [Сборка](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) ([Demo](https://webassembly.org/demo/))
-* [Общая память и атомарные](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)
+#### Экспертные функции JavaScript  
 
-Более подробную информацию [*можно найти в разделе Улучшенная производительность JavaScript, сборка и общая память в Microsoft Edge*](https://blogs.windows.com/msedgedev/2017/04/20/improved-javascript-performance-webassembly-shared-memory/#t4gwUKjjtdmstMbs.97) .
+Доступно с `about:flags`  
 
-### API запроса на оплату
-[Интерфейс обработки запросов на оплату](https://w3.org/TR/payment-request/) теперь поддерживается, что позволяет упростить оформление и оплату через Интернет на компьютерах и телефонах с Windows 10. Этот API позволяет Microsoft Edge выступать в качестве посредника между продавцами, получателями и методами оплаты (например, кредитными картами), которые пользователи хранили в облаке. Дополнительные сведения об API запроса на оплату можно найти в статье [упрощенные веб-платежи: знакомство с API запроса на оплату](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) и руководство по API для разработчиков [запросов на оплату](/microsoft-edge/dev-guide/device/payment-request-api) .
+*   [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \([демонстрация](https://webassembly.org/demo)\)  
+*   [Общие память и атоминции](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
-### TCP Fast Open (TFO)
-TCP Fast Open — это функция, которая сокращает количество циклов обработки, необходимых для открытия TCP-соединения, повышая производительность сети в браузере. Дополнительные сведения можно найти [в разделе Создание более быстрой и безопасной веб-страницы с помощью TCP Fast Open](https://blogs.windows.com/msedgedev/2016/06/15/building-a-faster-and-more-secure-web-with-tcp-fast-open-tls-false-start-and-tls-1-3/#eQMauReErmIRXYqh.97). Из-за различий в взаимодействии с различными сетевыми топологиями эти функции не включены по умолчанию в Microsoft Edge. Чтобы включить его, введите `about:flags` адресную строку и установите флажок **включить TCP Fast Open** в разделе *сеть* . 
+Более подробные сведения о том, как производить [работу JavaScript, WebAssembly и "Общий](https://blogs.windows.com/msedgedev/2017/04/20) доступ" в Microsoft Edge, чтобы получить дополнительные сведения.  
 
-### WebRTC и поддержка видеокодека, поддерживающего взаимодействие с кодеками реального времени
+### API запроса оплаты  
 
-EdgeHTML 15 поддерживает подмножество API WebRTC 1,0 для обеспечения совместимости с приложениями, созданными в более ранних версиях консорциума W3C WebRTC-PC API Circa 2015. Подробности вы видите в [справочнике по API WebRTC](https://msdn.microsoft.com/library/mt806139(v=vs.85).aspx) .
+[API запросов платежа теперь поддерживается,](https://w3.org/TR/payment-request) что упрощенная оформление заказа и оплаты в Интернете на компьютерах и телефонах с Windows 10.  Этот API позволяет Microsoft Edge выступать в качестве промежуточного метода между методами, потребителями и методами оплаты \(например, кредитные карты\), которые хранятся в облаке.  Дополнительные сведения об API запросов о платежесм см. в [упрощенном веб-платеже: знакомство с API](https://blogs.windows.com/msedgedev/2016/12/15) запросов о платежах и руководству по [созданию запросов](/microsoft-edge/dev-guide/device/payment-request-api) платежей по платформе.  
 
-Для использования самых современных функций голосовой и видеосвязи в одноранговых режимах рекомендуется использовать [объект API для обмена данными в реальном времени](../realtime-communication/object-rtc-api.md). API ORTC лучше всего подходит для случаев, когда вы хотите настроить групповую видеосвязь и видеозвонки, а также прямо управлять индивидуальными объектами транспорта, отправителей и приемников.
+### TCP Fast Open (TFO)  
+TCP — это функция, сокращающая количество круговых путей, необходимых для открытия соединения TCP, повышая производительность сети.  Дополнительные сведения см. в статье "Создание более раннего и безопасного веб-сайта" [с помощью TCP С ранним открытием TCP.](https://blogs.windows.com/msedgedev/2016/06/15)  Из-за различий в различных топологиях сети эта функция по умолчанию не включена в Microsoft Edge.  Чтобы включить ее, `about:flags` введите в адресную строку и установите **флажок "Включить поддержку TCP раннего доступа"** в разделе **"Сетевой доступ".**  
 
-Microsoft EDGE поддерживает как H. 264, AVC, так и VP8 видео с помощью ORTC и WebRTC 1,0, а также предоставляет следующие функции для поддержки обоих типов кодеков: [ABS-время отправки](https://webrtc.org/experiments/rtp-hdrext/abs-send-time/), [GOOG-Remb](https://tools.ietf.org/html/draft-alvestrand-rmcat-remb-03), [Индикатор потери изображения и общий Nack отзыв](https://tools.ietf.org/html/rfc4585), [Повторная передача RTP](https://tools.ietf.org/html/rfc4588).
+### Поддержка кодеков веб-кодеков веб-кодеков WebRTC и кодеков rTC  
 
-Дополнительные сведения можно найти [в статье Знакомство с WebRTC 1,0 и взаимодействующими связями в режиме реального времени в Microsoft Edge](https://blogs.windows.com/msedgedev/2017/01/31/introducing-webrtc-microsoft-edge/#k8XMeWKyZDQDPYR4.97).
+EdgeHTML 15 поддерживает часть API WebRTC 1.0 для взаимодействия с приложениями, созданными в более ранних версиях API-браузера W3C WebRTC-PCI Circa 2015.  Дополнительные сведения см. в [справке WebRTC.](/previous-versions//mt806139(v=vs.85))  
 
-### WebVR
+Чтобы использовать преимущества наших более сложных функций для одноранговых и видеосвязи, мы рекомендуем [использовать API-музыку связи](https://ortc.org)в режиме реального времени.  API ORTC лучше подходит для ситуаций, когда вы хотите настроить голосовые и видеозвонки, а также напрямую контролировать отдельные транспортные, отправитель и объекты приемадления.  
 
-Microsoft EDGE теперь поддерживает [WebVR](https://immersive-web.github.io/webxr/)— экспериментальный API-интерфейс, соединяющий дисплеи Windows Mixed Reality с установленными заголовками и Microsoft Edge. Это подключение включает в себя доступ к содержимому VR на веб-сайте, что означает, что современные функциональные возможности больше не ограничиваются классским приложениям.  
+Microsoft Edge поддерживает видео h.264/AVC и VP8 с ORTC и WebRTC 1.0, обеспечивает поддержку обоих типов кодеков: [abs-send-time,](https://webrtc.org/experiments/rtp-hdrext/abs-send-time) [hog-remb, glob-remb,](https://tools.ietf.org/html/draft-alvestrand-rmcat-remb-03) [отзывы потери рисунков и стандартную среднюю фильтрацию](https://tools.ietf.org/html/rfc4585) [RTP.](https://tools.ietf.org/html/rfc4588)  
 
-Виртуальная реальность в Microsoft EDGE на платформе WebGL — API JavaScript для отрисовки трехмерной и двухмерной графики. WebGL приложения и приложения, созданные с помощью библиотек WebGL, таких как BabylonJS, поддерживаются. После подключения WebVR отправляет визуальные элементы, соответствующие положению и сведениям о датчиках вокруг гарнитуры. API WebVR также поддерживает пространственные контроллеры благодаря расширению [API игровой планшет](../dom/gamepad-api.md). Этот API включен по умолчанию, поэтому не нужно переключать флаг.
+Дополнительные сведения см. в статье Общие сведения о [WebRTC 1.0](https://blogs.windows.com/msedgedev/2017/01/31)и взаимодействии в реальном времени в Microsoft Edge.  
 
-Ознакомьтесь со справочными материалами по API [WEBVR API](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx) и [игровой планшета](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) для получения подробных сведений.
+### WebVR  
+
+В Microsoft Edge теперь [поддерживается WebVR](https://immersive-web.github.io/webxr)— экспериментальный API, подключающий демонстрацию мониторинга Windows Mixed Reality и Microsoft Edge.  Это подключение позволяет работать с контентом VR на веб-сайте, то есть иммерсивные виртуальные возможности виртуальной оптимизации больше не ограничиваются классическими приложениями.  
+
+Виртуальная реальность в Microsoft Edge оснащено Веб-GL, API JavaScript для отрисовки трехмерных и двухмерных графики.  Поддерживаются веб-приложения и приложения, созданные с помощью библиотек WebGL, например babylonJS.  После подключения WebVR отправляет визуальные элементы, соответствующие положению и датчику.  API WebVR также поддерживает спектры, благодаря расширению [для игры.](../dom/gamepad-api.md)  По умолчанию ЭтоA Включен, поэтому не тратить переключение.  
+
+Дополнительные сведения [см. в справке API веб-браузера](/previous-versions//mt806281(v=vs.85)) [и API игры.](https://developer.mozilla.org/docs/Web/API/Gamepad_API)  
 
  > [!NOTE] 
- > Поскольку спецификация WebVR по-прежнему находится на стадии разработки, реализация Microsoft Edge может измениться позже.
+ > Так как речь WebVR еще находится в разработке, реализация Microsoft Edge может измениться ниже строки ниже.  
 
+## Обновленные компоненты  
 
+### Политика безопасности содержимого (уровень 2)  
 
-## Обновленные функции
+Сайты, уже использующие облачные службы Облака CSP 1, следует и дальше работать со службой поддержки Microsoft Edge для CSP 2, однако лучше всего переключать направляемые сценарии, которые нагрузят нагрузку на `frame-src` новую `child-src` прямую проверку вашего сайта.  \(в соглашении CSP 3, больше не будет применяться к рабочим `frame-src` файлам.\) Облачных служб облачных служб:  
 
-### Политика безопасности содержимого (уровень 2)
-Сайты, уже использующие CSP 1, должны продолжать работать со службой поддержки Microsoft Edge для CSP 2, однако лучше переключать любые `frame-src` директивы, которые загружают сценарии рабочих процессов в новую `child-src` директиву для проверки правописания для сайта в будущем. (В CSP 3 `frame-src` больше не будет применяться к сотрудникам.) CSP 2 также добавляет следующее:
+:::row:::
+   :::column span="1":::
+      Новые практические важные  
+   :::column-end:::
+   :::column span="2":::
+      `base-uri`, `child-src` `form-action` `frame-ancestors` и `plugin-types` .  Дополнительные [сведения см. в поддерживаемых веб-каналах](../security/content-security-policy.md) Майкрософт.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Поддержка работников  
+   :::column-end:::
+   :::column span="2":::
+      Сценарии фона регулируются собственной политикой, отлично от политики загрузки документов.  Как и при использовании узлов ных документов, вы можете настроить облачную группу для работника в заголовке ответа.  Кроме того, новая возможность в функции облачных решений 2 также влияет на создание потоков. `allow-scripts` `allow-same-origin` `sandbox`  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Встроенные сценарии и стили  
+   :::column-end:::
+   :::column span="2":::
+      С помощью встроенных сценариев и стилей можно использовать встроенные сценарии и блоки стилей, предоставляя нумерацию и хэш-код в качестве белого механизма.  Nonces — это случайные базовые значения, созданные на каждой странице, загружаемые как в политике CSP, так и в тегах сценариев на странице.  Когда страница динамического призагрузки, сервер создает его неоглавленное значение, вставляет его в NonceToken на страницу, и обязвивает ее в заголовок HTTP security Policy (HTTP).  Хэш-значения формируются статическими значениями: \(четырьмя, тока-тихифами\) из содержимого элемента или элемента, указанного в `<script>` `<style>` политике `script-src` `style-src` облачных процессов.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Отчеты об нарушении облачных оболочки  
+   :::column-end:::
+   :::column span="2":::
+      Новое событие `SecurityPolicyViolationEvent` теперь достиглось нарушениями Упростить совершение облачных решений.  Старый механизм создания отчетов CSP по-прежнему `report-uri` поддерживается.  В отчеты о нарушении часто добавлено несколько новых полей, `effectiveDirective` включая \(нарушена нарушение\), `statusCode` \(программа HTTP response code\) `sourceFile` \(URL-адрес ресурса, находящегося в оперативной папке\) `lineNumber` `columnNumber` и.  
+   :::column-end:::
+:::row-end:::  
 
-1. Новые директивы: `base-uri` , `child-src` , `form-action` `frame-ancestors` и `plugin-types` . Дополнительные сведения о том, как узнать, [поддерживаются директивы поставщика служб Microsoft Edge](../security/content-security-policy.md) .
+### Проверка подлинности в Интернете  
 
-2. Поддержка сотрудников: сценарии фонового рабочего процесса управляются собственной политикой, отделенными от политики загрузки документа. Как и в случае с документами размещения, вы можете настроить CSP для исполнителя в заголовке ответа. Кроме того, Новая возможность в CSP 2 — это то, что `allow-scripts` `allow-same-origin` Флаги `sandbox` директивы теперь влияют на создание рабочего потока.
+Поддержка Microsoft Edge для выделения [API веб-проверки подлинности с](../device/web-authentication.md) [помощью радиальной](https://www.microsoft.com/windows/comprehensive-security) силы Windows Hello обновлена следующими изменениями:  
 
-3. Встроенные сценарии и стили: CSP 2 допускает выполнение встроенных сценариев и блоков стилей, предоставляя nonces и хэши в качестве механизма брандмауэров. Nonces — это случайные значения Base-64, созданные при каждой загрузке страницы, которая отображается как в политике CSP, так и в тегах сценария на странице. Когда страница динамически генерируется при загрузке, сервер создает значение nonce, вставляет его в NonceToken на странице, а также объявляет его в HTTP-заголовке политики безопасности содержимого. Хэши — это статические значения (с использованием алгоритмов *SHA256*, *SHA384* или *SHA512* ) из содержимого `<script>` элемента и `<style>` , которое затем задается (с помощью `script-src` или `style-src` директив) в политике CSP.
+*   Первонаправленная реализация API проверки подлинности по интернет-интерфейсу, впервые реализованного в [браузере Edge 14](https://blogs.windows.com/msedgedev/2016/08/04) \(windows 10 юбилейное обновление Windows 10, сборка 10240, 7.07.2016\) был передано через префикс \(интерфейс [MSCredentials\).](/previous-versions//mt697639(v=vs.85))  Хотя эти API доступны в среде EdgeHTML 15, теперь они теперь не предусмотрены в изолированных средах Инициаторов, которые определены более непрефиксированными, и скорее всего, будут продолжать изменяться, поэтому их можно продолжать изменять, как в составе стандартов реферализации. [recent snapshot](https://w3.org/TR/2016/WD-webauthn-20160928)  
 
-4. Отчет о нарушениях CSP: новое событие, SecurityPolicyViolationEvent теперь срабатывает при нарушениях CSP. Более ранний механизм составления отчетов CSP `report-uri` продолжает поддерживаться. Несколько новых полей добавлены в отчеты о нарушениях, общие для обоих, включая `effectiveDirective` (нарушение политики) `statusCode` (код ответа HTTP), `sourceFile` а также URL-адрес ресурса, вызывающего неполадки), `lineNumber` и `columnNumber` .
+*   Последняя реализация Microsoft Edge по умолчанию отключена и доставлена за флаг \(введите в адресной строке символ \(тип в адресной `about:flags` строке для включения функции\).  
 
-### Проверка подлинности веб-сайта
-Служба поддержки Microsoft Edge для нового [API проверки подлинности для веб-](../device/web-authentication.md) приложения с помощью биометрии [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) обновлена с учетом указанных ниже изменений.
-- Начальная реализация API экспериментальной веб-проверки подлинности, представленной в [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/#TVSCzKDkG4jCI5mt.97) (обновление годовщины Windows 10, сборка 10240, 7/2016), была предоставлена посредством API с префиксами (интерфейс [MSCredentials](https://msdn.microsoft.com/library/mt697639) ). Несмотря на то что эти API по-прежнему доступны в EdgeHTML 15, они теперь не рекомендуются в пользу нестандартных API-интерфейсов и поведения, определенных в более [поздних](https://w3.org/TR/2016/WD-webauthn-20160928) версиях спецификаций, и, возможно, они будут продолжать изменяться в соответствии с характеристиками стандартизации.
+*   В Microsoft Edge пока нет внешних учетных данных, таких как USB-ключи или Bluetooth устройства.  Текущий API ограничен только для внедренных учетных данных, хранящихся в TPM.  Программное обеспечение используется, если TPM недоступен на устройстве.  
 
-- Новейшая реализация Microsoft Edge по умолчанию отключена, и ее `about:flags` можно включить в адресную строку (введите ее в адресной строке).
+*   В настоящее время вошедший в учетную запись пользователя Windows должен быть настроен для поддержки ПИН-кода и предпочтительно лица или отпечатков пальцами.  Это необходимо для проверки подлинности Windows проверки подлинности доступа к телевизору.  
 
-- Microsoft Edge пока не поддерживает внешние учетные данные, такие как USB-ключи или устройства Bluetooth. Текущий API ограничивается внедренными учетными данными, хранящимися в TPM. Если на устройстве нет доверенного платформенного модуля, используется резервный вариант программного обеспечения.
+*   Из [стандартных](https://w3.org/TR/webauthn/#extension-predef) расширений, описанных в скобке, Microsoft Edge поддерживает [только FIDO AppId](https://w3.org/TR/webauthn/#extension-appid) \( `webauthn_txAuthSimple` \).  
 
-- Учетная запись пользователя Windows, зарегистрированная в системе, должна поддерживать по крайней мере ПИН-код, а предпочтительнее или биометрию отпечатков пальцев. Это необходимо для того, чтобы система Windows могла проверить подлинность доступа к доверенному платформенному модулю.
+*  В `timeoutSeconds` настоящее время эта возможность не вычисляется  
 
-- Из [предварительно определенных расширений](https://w3.org/TR/webauthn/#extension-predef) , описанных в этой спецификации, Microsoft EDGE поддерживает только [Fido AppID](https://w3.org/TR/webauthn/#extension-appid) ( `webauthn_txAuthSimple` ) в настоящее время.
+### WebDriver  
 
-- Этот `timeoutSeconds` параметр в настоящее время не вычисляется
+EdgeHTML 15 предлагает удобное обновление WebDriver, включая поддержку запасной строки командной строки и новых конечных точках команд:  
 
-### WebDriver
+| Метод | URI Template | Команда |  
+|:--- |:---  |:--- |    
+| POST | /session id}/alert/accept | [Принять оповещение](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert) |  
+| POST | /session id}/ alert/dismiss | [Отклонить оповещение](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert) |  
+| GET | /session id}/alert/text | [Получение оповещения](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text) |  
+| POST | /session id}/alert/text | [Отправка оповещения](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text) |  
+| POST | /session id}/execute/async | [Запуск сценария ASync](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script) |  
+| POST | /session id}/execute/sync | [Сценарий](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script) |  
+| GET | /session id}/window | [Получить маркер окна](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle) |  
+| GET | /session/{session id}/window/handles | [Получение маркеров окон](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles) |  
 
-EdgeHTML 15 предлагает несколько обновлений для веб-дисководов, включая поддержку для флагов автоматической командной строки и новых конечных точек команд:
+Дополнительные сведения и состояние других функций WebDriver см. в [веб-диспетчере веб-диспетчера.](../../webdriver.md)  
 
-Метод | Шаблон URI | Команда
-:----- | :----------  | :--------
-POST | /Session/{Session ID}/Alert/Accept | [Уведомление о принятии](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert)
-POST | /Session/{Session ID}/Alert/dismiss | [Закрыть оповещение](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert)
-GET | /Session/{Session ID}/Alert/Text | [Получение текста оповещения](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text)
-POST | /Session/{Session ID}/Alert/Text | [Отправка текста оповещения](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text)
-POST | /Session/{Session ID}/Execute/Async | [Выполнение сценария Async](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script)
-POST | /Session/{Session ID}/Execute/Sync | [Выполнение сценария](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script)
-GET | /Session/{Session ID}/Window | [Получение маркера окна](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle)
-GET | /Session/{Session ID}/Window/Handles | [Получение дескрипторов окон](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles)
+## Новый API в Microsoft EdgeHTML 15  
 
-Дополнительные сведения и состояние других функций для работы с такими сетевыми накопителями можно найти в этом сетевом [накопителе](../../webdriver.md).
+Ниже приведен полный список новых aPI в Microsoft EdgeHTML 15.  Они указаны в `[interface name].[api name]` формате.  
 
-## Новые API-интерфейсы в EdgeHTML 15
+<iframe height='582' scrolling='no' title='Новый API EdgeHTML15' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>См. статью "Перо <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'> нового EdgeHTML15" </a> для приложений @MicrosoftEdgeDocumentation Microsoft Edge <a href='http://codepen.io/MicrosoftEdgeDocumentation'> </a> (@MicrosoftEdgeDocumentation) на <a href='http://codepen.io'> коде </a> кода.</iframe>  
 
-Ниже приведен полный список новых API-интерфейсов в EdgeHTML 15. Они указаны в формате **[имя интерфейса]. [ Имя API]**.
+## Предыдущие выпуски EdgeHTML  
 
-<iframe height='582' scrolling='no' title='Новые API EdgeHTML15' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Ознакомьтесь с <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'> новыми API EdgeHTML15 в </a> Microsoft Edge Docs ( <a href='http://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) на <a href='http://codepen.io'> CodePen </a> .</iframe>  
+[EdgeHTML 12/ Windows сборка 10240 (07.07.2015)](./edgehtml-12.md)  
 
-## Предыдущие выпуски EdgeHTML
-[EdgeHTML 12/Windows Build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)
+[EdgeHTML 13 / Windows сборка 10586 (11.11.2015)](./edgehtml-13.md)  
 
-[EdgeHTML 13/Windows Build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
-
-[EdgeHTML 14/Windows Build 14393 (8/2016)](https://aka.ms/devguide_edgehtml_14)
+[EdgeHTML 14/ Windows сборка 14393 (8.08.2016)](./edgehtml-14.md)  

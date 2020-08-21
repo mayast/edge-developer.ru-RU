@@ -2,16 +2,16 @@
 title: Редактирование файлов с помощью рабочих областей
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931233"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942180"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,53 +30,53 @@ ms.locfileid: "10931233"
 # Редактирование файлов с помощью рабочих областей  
 
 > [!NOTE]
-> Цель этого учебника — предоставить практические рекомендации по настройке и использованию рабочих областей, чтобы можно было использовать рабочие области в своих проектах.  Вы можете сохранить изменения в исходном коде на локальном компьютере, который вы сделали в DevTools после включения рабочих областей.  
+> Цель этого учебника — предоставить на практические практические задачи по настройке и использованию рабочих областей, чтобы вы сможете использовать рабочие области в собственных проектах.  Вы можете сохранить изменения в исходном коде на локальном компьютере, которые были сделаны в DevTools после включения рабочих областей.  
 
 > [!IMPORTANT]
-> **Предварительные условия**: перед тем как приступить к работе с этим учебником, вам нужно знать, как выполнять указанные ниже действия.  
+> **Предварительные предварительные проверки:** прежде чем приступать к учебнику, необходимо узнать, как выполнить следующие действия.  
 > 
-> *   [Создание веб-страниц с помощью HTML, CSS и JavaScript][MDNWebGettingStarted]  
-> *   [Использование DevTools для внесения основных изменений в CSS][DevToolsCssIndex]  
-> *   [Запуск локального веб-сервера HTTP][MDNSimpleLocalHTTPServer]  
+> *   [Создание веб-страниц с помощью html, CSS и JavaScript][MDNWebGettingStarted]  
+> *   [Внесение основных изменений в CSS с помощью Средств разработки][DevToolsCssIndex]  
+> *   [Запуск локального HTTP-сервера][MDNSimpleLocalHTTPServer]  
 
 ## Обзор  
 
-Рабочие области позволяют сохранить изменения, внесенные в Devtools, в локальную копию того же файла на компьютере.  Для работы с этим учебником на вашем компьютере должны быть установлены указанные ниже параметры.  
+Рабочие области дают возможность сохранить изменения, внесенные в Devtools, в локальную копию файла на компьютере.  В этом учебнике у вас должны быть следующие параметры компьютера:  
 
-*   У вас есть исходный код для вашего сайта на рабочем столе.  
-*   Вы запускаете локальный веб-сервер из каталога исходного кода, чтобы сайт был доступен по адресу `localhost:8080` .  
-*   Вы открыли `localhost:8080` приложение Microsoft EDGE и используете DevTools для изменения CSS-сайта.  
+*   У вас есть исходный код сайта на вашем компьютере.  
+*   Вы запускаете локальный веб-сервер из исходного каталога кодов, чтобы сайт был доступен самого `localhost:8080` языка.  
+*   Вы открывали `localhost:8080` в Microsoft Edge и используете средства разработчиков для изменения CSS-сайта.  
 
-После включения рабочих областей изменения в CSS, внесенные в DevTools, сохраняются в исходном коде на рабочем столе.  
+Если включена поддержка рабочих областей, изменения, внесенные в DevTools, сохраняются в исходном коде на рабочем столе.  
 
 ## Ограничения  
 
-При использовании современной платформы, скорее всего, она преобразует исходный код из формата, который легко поддерживать в формате, который оптимизирован для выполнения как можно быстрее.  
+Если вы используете современной структуру, вероятно, исходный код из формата, который проще сохранять в формат, оптимизированный для работы как можно быстрее.  
 
-В рабочих областях обычно можно сопоставить оптимизированный код с первоначальным исходным кодом с помощью [карт исходного][TreehouseBlogSourceMaps]кода.  Но существует множество вариантов между платформами, в которой используются карты источников.  Devtools просто поддерживает все варианты.  
+Обычно рабочие области можно сопоставить оптимизированный код с исходным кодом с помощью исходных [карт.][TreehouseBlogSourceMaps]  Однако между структурами используется множество вариантов, которые используются в каждой из них.  Дисперсии просто поддерживают все варианты.  
 
-Рабочие области не работают со следующей платформой.  
+Рабочие области не совместимо с приведенной ниже таблицей.  
 
-*   Приложение "Создание реагируй"  
-    
+*   Создать редактироваемое приложение  
+
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
-## Связанная функция: локальные переопределения  
+## Дополнительные функции: локальные переопределения  
 
-**Локальные переопределения** — это еще одна функция DevTools, похожая на рабочие области.  Используйте локальные переопределения, если вы хотите поэкспериментировать с изменениями на странице, и вам необходимо просматривать изменения при загрузке страницы, но вы не хотите сопоставлять изменения в исходном коде страницы.  
+**Локальный переопределение —** это еще один компонент DevTools, аналогичная рабочей области.  Используйте локальные переопределения, если вы хотите экспертировать с изменениями на странице и вам нужно просматривать изменения на странице, но не беспокойтесь об изменениях исходного кода страницы.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Действие 1: Настройка  
+## Шаг 1. Настройка  
 
-Выполните указанные ниже действия, чтобы получить практические навыки работы с рабочими областями.  
+Выполните указанные ниже действия, чтобы повысить эффективность работы с рабочими областями.  
 
-### Настройка ролика  
+### Настройка демонстрации  
 
-1.  [Откройте демонстрацию][GlitchWorkspacesDemo].  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
+1.  [Открыть демонстрацию.][GlitchWorkspacesDemo]  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
-    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Несбойный проект" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
-       Несбойный проект  
+    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Проект в glitch-проекте" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
+       Проект в glitch-проекте  
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
@@ -88,10 +88,10 @@ ms.locfileid: "10931233"
 
     -->  
     <!--1.  Close the tab.  -->  
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
-1.  Создайте `app` каталог на рабочем столе.  Сохраняйте копии файлов из `workspaces-demo` каталога в `app` каталог.  В оставшейся части учебника каталог называется `~/Desktop/app` .  
-1.  Запустите локальный веб-сервер в `~/Desktop/app` .  Ниже приведен пример кода для запуска `SimpleHTTPServer` , но вы можете использовать любой предпочитаемый сервер.  
+1.  Создайте каталог `app` на компьютере.  Сохраняйте копии файлов из `workspaces-demo` каталога в `app` каталог.  Для остального учебника каталог называется `~/Desktop/app` каталогом.  
+1.  Запустите локальный веб-сервер `~/Desktop/app` в.  Ниже приведен пример кода для запуска, но вы можете использовать то, что `SimpleHTTPServer` вы хотите использовать.  
     
     :::row:::
        :::column span="":::
@@ -99,7 +99,7 @@ ms.locfileid: "10931233"
           cd ~/Desktop/app
           python -m SimpleHTTPServer # Python 2
           ```  
-       :::column-end:::
+       :::column-end:::  
        :::column span="":::
           ```bash
           cd ~/Desktop/app
@@ -108,7 +108,7 @@ ms.locfileid: "10931233"
        :::column-end:::
     :::row-end:::  
     
-1.  Откройте вкладку в Microsoft EDGE и перейдите на веб-сайт с локально размещенной версией.  Доступ к ней можно получить с помощью URL-адреса, например `localhost:8080` или `http://0.0.0.0:8080` .  Точный [номер порта][WikiPortURLs] может отличаться от остальных.  
+1.  Откройте вкладку в Microsoft Edge и перейдите к версии сайта, размещенной локально.  Вы должны иметь доступ по URL-адресу, такому `localhost:8080` как. `http://0.0.0.0:8080`  Точный [номер порта][WikiPortURLs] может быть другим.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Демонстрация" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        Демонстрация  
@@ -116,57 +116,57 @@ ms.locfileid: "10931233"
     
 ### Настройка DevTools  
 
-1.  Выберите `Control` + `Shift` + `J` \ (Windows \) или `Command` + `Option` + `J` \ (macOS \), чтобы открыть панель **консоли** DevTools.  
+1.  Выберите `Control` + `Shift` + `J` \(Windows\) `Command` + `Option` + `J` или \(macOS\), чтобы открыть **панель консоли** devTools.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Панель консоли" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        Панель **консоли**  
     :::image-end:::  
     
-1.  Перейдите на вкладку **источники** .  
-1.  Перейдите на вкладку **FileSystem (файловая система** ).  
+1.  Откройте **вкладку "Источники".**  
+1.  Откройте **вкладку Filesystem.**  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Вкладка "файловая система"" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       Вкладка " **Файловая система** "  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Вкладка "Файловая система"" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       Вкладка **"Файловая система"**  
     :::image-end:::  
     
-1.  Выберите команду **Добавить папку в рабочую область**.  
-1.  Ввод `~/Desktop/app` .  
-1.  Нажмите кнопку **Разрешить** , чтобы предоставить DevTools разрешение на чтение и запись в каталог.  
-    На вкладке **FileSystem** теперь есть зеленая точка рядом с `index.html` , `script.js` и `styles.css` .  Эти зеленые точки означают, что в DevTools установлено соответствие между сетевыми ресурсами страницы и файлами в `~/Desktop/app` .  
+1.  Выберите **команду "Добавить папку в рабочую область".**  
+1.  Введите `~/Desktop/app`.  
+1.  Выберите **"Разрешить",** чтобы предоставить devTools разрешение на чтение и запись в каталог.  
+    На **вкладке "Файлная** система" рядом с ней появится зеленая `index.html` `script.js` пунктирная линия, а также зеленая `styles.css` пунктирная линия.  Эти зеленые точки означали, что DevTools установил сопоставленное сопоставленное сопоставление между сетевыми ресурсами страницы и `~/Desktop/app` файлами.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="На вкладке FileSystem теперь показано соответствие между локальными и сетевыми файлами." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       На вкладке **FileSystem** теперь показано соответствие между локальными и сетевыми файлами.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="На вкладке "Файлная система" отображается сопоставление между локальными файлами и сетью" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       На **вкладке "Файлная** система" отображается сопоставление между локальными файлами и сетью  
     :::image-end:::  
     
-## Шаг 2: сохранение изменений CSS на диске  
+## Шаг 2. Сохранение изменения CSS на диск  
 
-1.  Open (открыть) `styles.css` .  
+1.  `styles.css`Откройте.  
     
     > [!NOTE]
-    > `color` `h1` Для свойства элементы задано значение `fuchsia` .  
+    > Для `color` свойства `h1` элементов задано значение `fuchsia` ..  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Просмотр стилей. CSS в текстовом редакторе" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Просмотр стилей.css в текстовом редакторе" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        Просмотр `styles.css` в текстовом редакторе  
     :::image-end:::  
     
-1.  Перейдите на вкладку **элементы** .  
-1.  Измените значение `color` свойства `<h1>` элемента на предпочтительный цвет.  
-    Помните о том, что для `<h1>` просмотра примененных к нему правил CSS в области **стили** необходимо выбрать элемент в **дереве DOM** .  Зеленая точка рядом с `styles.css:1` ней означает, что все изменения, внесенные вами, сопоставлены `~/Desktop/app/styles.css` .  
+1.  Откройте **вкладку "Элементы".**  
+1.  Измените значение `color` свойства `<h1>` элемента на избранный цвет.  
+    Помните, что чтобы правила CSS применены к этому представлению, необходимо выбрать элемент в дереве DOM, чтобы отобразить примененные к нему правила `<h1>` CSS в **области "Стили".** **DOM Tree**  Зеленая точка рядом с значками, с которыми `styles.css:1` вы вносите `~/Desktop/app/styles.css` изменения.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Зеленый индикатор, связанный с файлом" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
-       Зеленый индикатор, связанный с файлом  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Зеленый индикатор связывания файла" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+       Зеленый индикатор связывания файла  
     :::image-end:::  
     
-1.  `styles.css`Снова откройте текстовый редактор.  `color`Свойству будет присвоена предпочтительный цвет.  
-1.  Обновите страницу.  Цвет `<h1>` элемента по-прежнему установлен на предпочтительный цвет.  Изменение на время обновления, так как при внесении изменений в DevTools был сохранен переход на диск.  А затем, когда вы обновите страницу, локальный сервер сослужил измененную копию файла с диска.  
+1.  Снова `styles.css` откройте его в текстовом редакторе.  Теперь `color` для свойства будет настроен ваш избранный цвет.  
+1.  Обновите страницу.  Цвет элемента `<h1>` по-прежнему имеет избранный цвет.  Изменения остаются в обновлении, так как при внесении изменений средств разработчиков сохраняются изменения, сохраненные на диск.  После этого при обновлении страницы измененная копия файла с диска.  
     
-## Шаг 3: сохранение изменений HTML на диске  
+## Шаг 3. Сохранение изменения В ФОРМАТе HTML на диск  
 
-### Изменение HTML на панели "элементы"  
+### Изменение HTML-кода из панели элементов  
 
-Вы можете внести изменения в HTML-код с панели элементов, но ваши изменения в дереве DOM не сохраняются на диск и влияют только на текущий сеанс браузера.  
+Html можно вносить изменения в html-файл из панели элементов, но изменения в дереве DOM не сохраняются на диске и влияют только на текущий сеанс браузера.  
 
-Дерево DOM не является HTML-кодом.  
+Дерево DOM не является html.  
 
 <!--### Try changing HTML from the Elements panel  
 
@@ -198,57 +198,57 @@ ms.locfileid: "10931233"
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### Изменение HTML на панели «источники»  
+### Изменение HTML-кода из панели "Источники"  
 
-Если вы хотите сохранить изменения в HTML-коде страницы, сделайте это с помощью панели « **источники** ».  
+Если вы хотите сохранить изменение на HTML-адресстраницы, сделайте это с **помощью панели "Источники".**  
 
-1.  Перейдите на вкладку **источники** .  
-1.  Перейдите на вкладку **страница** .  
-1.  Выберите **(предметный указатель)**.  Откроется HTML-код для страницы.  
-1.  Заменить `<h1>Workspaces Demo</h1>` на `<h1>I ❤️  Cake</h1>` .  Смотрите на рисунке ниже.  
-1.  Выберите `Control` + `S` \ (Windows \) или `Command` + `S` \ (macOS \), чтобы сохранить изменения.  
-1.  Обновите страницу.  `<h1>`Элемент по-прежнему отображается в новом тексте.  
+1.  Откройте **вкладку "Источники".**  
+1.  Выберите **вкладку Страницы.**  
+1.  Выберите **(индекс).**  Откроется HTML-код страницы.  
+1.  Замените `<h1>Workspaces Demo</h1>` `<h1>I ❤️  Cake</h1>` их.  См. на следующем рисунке.  
+1.  Выберите `Control` + `S` \(Windows\) `Command` + `S` или \(macOS\), чтобы сохранить изменение.  
+1.  Обновите страницу.  Элемент `<h1>` по-прежнему отображает новый текст.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Изменение HTML на панели «источники»" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Для строки 12 задано значение `I ❤️  Cake`  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Изменение HTML-кода из панели "Источники"" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Изменение HTML-кода **из панели "Источники"**  
     :::image-end:::  
     
-1.  Open (открыть) `~/Desktop/app/index.html` .  `<h1>`Элемент включает новый текст.  
+1.  `~/Desktop/app/index.html`Откройте.  Элемент `<h1>` содержит новый текст.  
     
-## Шаг 4: сохранение изменений JavaScript на диске  
+## Шаг 4. Сохранение изменения JavaScript на диск  
 
-Панель « **источники** » — это также место, где можно вносить изменения в JavaScript.  Но иногда вам нужно получить доступ к другим панелям, таким как панель **элементов** или панель **консоли** , при внесении изменений на сайт.  На панели « **источники** » есть способ открытия рядом с другими панелями.  
+В **области "Источники"** также можно вносить изменения в JavaScript.  Но иногда при внесении изменений на сайт необходимо получить доступ к другим панелям, таким как панель "Элементы" или "Консоль", и при внесении изменений на сайт. **Elements** **Console**  Существует способ открыть **панель "Источники"** рядом с другими панелями.  
 
-1.  Перейдите на вкладку **элементы** .  
-1.  Выберите `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \).  Откроется **меню команд** .  
-1.  Введите текст `QS` и выберите параметр **Показать быстрый источник**.  В нижней части окна DevTools теперь есть вкладка **быстрый источник** .  На вкладке отображается содержимое `index.html` , которое является последним файлом, измененным на панели « **источники** ».  На вкладке **быстрый источник** вы можете открыть редактор из панели **источники** , чтобы можно было редактировать файлы, не открывая другие панели.  
+1.  Откройте **вкладку "Элементы".**  
+1.  Выберите `Control` + `Shift` + `P` \(Windows\) `Command` + `Shift` + `P` или \(macOS\).  Откроется **меню** команд.  
+1.  Введите `QS` текст, а затем выберите **"Показать экспресс-источник".**  В нижней части окна DevTools теперь находится вкладка **"Быстрый источник".**  Вкладка отображает содержимое `index.html` файла, который вы изменили на **панели "Источники".**  Вкладка **"Быстрый** источник" позволяет редактировать редактор на панели **"Источники",** чтобы можно было редактировать файлы, открыв другие панели.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Открытие вкладки "быстрый источник" с помощью командного меню" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Открытие вкладки " **быстрый источник** " с помощью **командного меню**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Открытие вкладки "Экспресс-источник" с помощью меню команд" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Открытие **вкладки "Экспресс-источник"** с **помощью меню команд**  
     :::image-end:::  
     
-1.  `Control` + `P` `Command` + `P` Чтобы открыть диалоговое окно " **Открытие файла** ", выберите \ (Windows \) или \ (macOS \).  Смотрите на рисунке ниже.  
-1.  Введите текст и `script` выберите **приложение/script.js**.  
+1.  Нажмите `Control` + `P` кнопку \(Windows\) `Command` + `P` или \(macOS\), чтобы открыть **диалоговое окно "Открыть** файл".  См. на следующем рисунке.  
+1.  Введите `script` и выберите **приложение/script.js. **  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Открытие script.js с помощью диалогового окна "Открытие файла"" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       Открытие `script.js` с помощью диалогового окна " **Открыть файл** "  
+       `script.js`Открытие файла с **помощью диалогового окна "Открытие** файла"  
     :::image-end:::  
     
     > [!NOTE]
-    > `Save Changes To Disk With Workspaces`Ссылка в демонстрационной видеоролика будет регулярно применена.  
+    > Ссылка `Save Changes To Disk With Workspaces` в демонстрации регулярно применяется к ссылке.  
     
-1.  Добавьте следующий код в нижнюю часть **script.js** с помощью вкладки " **быстрый источник** ".  
+1.  Добавьте следующий код внизу на **вкладкеscript.js"Быстрый** **источник".**  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Выберите `Control` + `S` \ (Windows \) или `Command` + `S` \ (macOS \), чтобы сохранить изменения.  
+1.  Выберите `Control` + `S` \(Windows\) `Command` + `S` или \(macOS\), чтобы сохранить изменение.  
 1.  Обновите страницу.  
     
     > [!NOTE]
-    > Ссылка на странице теперь будет курсивной.  
+    > Ссылка на странице теперь выделена курсивом.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Ссылка на странице теперь выделена курсивом" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
        Ссылка на странице теперь выделена курсивом  
@@ -256,7 +256,7 @@ In short, the **DOM Tree** `!==` HTML.
     
 ## Дальнейшие действия  
 
-С помощью этого учебника вы можете настроить рабочие области в проекте.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+Используйте то, что вы узнали в этом учебнике, чтобы настроить рабочие области в своем проекте.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
 If you have more feedback on the topics or anything else, please use any of the channels below:  
@@ -267,32 +267,32 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md "Начало просмотра и изменения CSS | Документы Microsoft"  
+[DevToolsCssIndex]: ../css/index.md "Начало работы с просмотром и изменением CSS | Документы Майкрософт"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
-[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Рабочие области — демонстрационные файлы | Цепь"  
+[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Демонстрация файлов рабочих областей | Глитский"  
 
-[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content-CSS: Каскадные таблицы стилей | MDN"  
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Начало работы с Интернетом | MDN"  
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Выполнение простого локального HTTP-сервера | MDN"  
+[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Содержимое CSS: касание таблиц стилей | MDN"  
+[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Начало работы с Веб-браузером | MDN"  
+[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Работа с простой локальным HTTP-сервером | MDN"  
 [MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Общие сведения об DOM — веб-API | MDN"  
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Общие сведения о картах исходного кода | Блог Treehouse"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Общие сведения об исходных картах | Treehouse Blog"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Порт \ (компьютерная сеть \) — Википедии"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Порт \(компьютеры\) - Википедия"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Части этой страницы изменяются на основе работы, созданных google и [предоставлением][GoogleSitePolicies] к ним общего доступа и используются в соответствии с терминами, которые описаны [в лицензии Creative Commons Attribution 4.0.][CCA4IL]  
+> Исходная страница [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) находится на сайте [Kayce Basques][KayceBasques] \(технический автор, Chrome DevTools \& Lighthouse\).  
 
-[![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

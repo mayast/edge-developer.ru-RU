@@ -1,84 +1,165 @@
 ---
 ms.assetid: 2ecc762c-11a5-4b16-9aed-22606c1d4994
-description: Сведения о том, как можно использовать API веб-уведомлений, чтобы разрешить веб-сайтам отправлять уведомления пользователей за пределами контекста браузера Microsoft Edge.
-title: 'Руководство для разработчиков: API веб-уведомлений'
+description: Узнайте, как С помощью API веб-уведомлений можно разрешить отправку уведомлений пользователям за пределами контекста браузера Microsoft Edge.
+title: API веб-уведомлений — руководство по разработке
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/18/2017
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: EDGE, веб-разработка, HTML, CSS, JavaScript, разработчик
-ms.openlocfilehash: da563a333491ef699925adec6f97b3c21d3e54a0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: Edge, разработчики, html, css, javascript, разработчики
+ms.openlocfilehash: 24b8a7b25fb3e0f0221f6d81b105d5d0374ea423
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571239"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941800"
 ---
-# API веб-уведомлений
+# API веб-уведомлений  
 
-API веб-уведомлений позволяет веб-сайтам отправлять уведомления пользователей за пределами контекста веб-страницы в браузере Microsoft Edge. Примером этой функции в действии может быть приложение для обмена сообщениями, например Skype. Когда пользователь получит новое сообщение, на его рабочем столе появится уведомление о сообщении. Веб-уведомления полностью интегрированы с платформой уведомлений и центром действий в Windows 10. 
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-## Создание уведомления
+API веб-уведомлений позволяет отправлять пользователям уведомления о них за пределами контекста веб-страницы в браузере Microsoft Edge.  Пример использования этой функции в действии может быть вызвано приложением для обмена сообщениями, например Skype.  Когда пользователь получит новое сообщение, на рабочем столе появляется уведомление, сообщающее его об отправке.  Веб-уведомления полностью интегрируются с платформой уведомлений и центром уведомлений в Windows 10.  
 
-На CodePen рисунке ниже показано, как создать фиктивное уведомление Skype, сделав [`Notification`](https://msdn.microsoft.com/library/mt710818) объект с [`title`](https://msdn.microsoft.com/library/mt710826) [`icon`](https://msdn.microsoft.com/library/mt710814) [`body`](https://msdn.microsoft.com/library/mt710811) установленным флажком "и".
+## Создание уведомления  
 
+Ниже создается уведомление о мехическом коде, создав объект [уведомления](https://msdn.microsoft.com/library/mt710818) [с](https://msdn.microsoft.com/library/mt710826)заголовком, [значком](https://msdn.microsoft.com/library/mt710814)и [набором](https://msdn.microsoft.com/library/mt710811) параметров текста:  
 
-<iframe height='295' scrolling='no' title='Веб-уведомления' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Ознакомьтесь <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'> с веб-уведомлениями о перьях </a> по Microsoft Edge Docs ( <a href='https://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) на <a href='https://codepen.io'> CodePen </a> .
-</iframe>
+<iframe height='295' scrolling='no' title='веб-уведомления' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Просматривайте <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'> веб-уведомления </a> к аркету с помощью документов на Microsoft Edge <a href='https://codepen.io/MicrosoftEdgeDocumentation'> </a> (@MicrosoftEdgeDocumentation) на <a href='https://codepen.io'> кодировке </a> кода.</iframe>  
 
-Настоятельно рекомендуется `icon` указывать для каждого уведомления. Это не только улучшит уведомления с точки зрения пользовательского интерфейса, но и позволяет оповещать пользователей о том, где отправляются уведомления.
+Настоятельно рекомендуется использовать **значок** для каждого уведомления.  Это позволит улучшить уведомление только от точки пользовательского пользовательского пользовательского пользовательского сайта, но и оповещать пользователей о том, с каких лицензий отправляется уведомление.  
 
-Посмотрите видеоролик ниже, в котором показано, как создать веб-оповещение и узнать, как это происходит в Windows 10.
+Просмотрите видеоролик ниже, чтобы узнать, как создавать веб-уведомления, и узнать, как это работает в Windows 10!  
 
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications/player]  
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications/player]
+### Свойства уведомления  
 
-### Свойства уведомлений
+Уведомления можно настроить следующими свойствами:  
 
-Уведомления можно настроить с помощью следующих параметров:
+:::row:::
+   :::column span="1":::
+      [body](https://developer.mozilla.org/docs/Web/API/Notification/body)  
+   :::column-end:::
+   :::column span="2":::
+      Текст уведомления.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [dir](https://developer.mozilla.org/docs/Web/API/Notification/dir)  
+   :::column-end:::
+   :::column span="2":::
+      Направление текста уведомления.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [icon](https://developer.mozilla.org/docs/Web/API/Notification/icon)  
+   :::column-end:::
+   :::column span="2":::
+      URL-адрес уведомления, используемый для значка своего значка.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [ланг](https://developer.mozilla.org/docs/Web/API/Notification/lang)  
+   :::column-end:::
+   :::column span="2":::
+      Язык уведомления.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [разрешение](https://developer.mozilla.org/docs/Web/API/Notification/permission)  
+   :::column-end:::
+   :::column span="2":::
+      В текущем уведомлении отображается разрешение, предоставленное пользователю для текущего оригинала.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [tag](https://developer.mozilla.org/docs/Web/API/Notification/tag)  
+   :::column-end:::
+   :::column span="2":::
+      Тег уведомления.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [title](https://developer.mozilla.org/docs/Web/API/Notification/title)  
+   :::column-end:::
+   :::column span="2":::
+      Название уведомления.  
+   :::column-end:::
+:::row-end:::  
 
-Свойство | Описание
-:-------- | :----------
-[body](https://msdn.microsoft.com/library/mt710811) | Основной текст уведомления.
-[dir](https://msdn.microsoft.com/library/mt710813) | Направление текста уведомления.
-[icon](https://msdn.microsoft.com/library/mt710814) | URL-адрес уведомления, который используется для его значка.
-[файл](https://msdn.microsoft.com/library/mt710815) | Язык уведомления.
-[PermissionSet](https://msdn.microsoft.com/library/mt670637) | Текущее разрешение на отображение уведомления, предоставленное пользователем для текущего происхождения.
-[tag](https://msdn.microsoft.com/library/mt710825) | Тег уведомления.
-[title](https://msdn.microsoft.com/library/mt710826) | Название уведомления.
+### События уведомлений  
 
-### События уведомления
+Следующие события используются в объекте [уведомления:](https://developer.mozilla.org/docs/Web/API/Notification)  
 
-С объектом используются следующие события [`Notification`](https://msdn.microsoft.com/library/mt710818) :
+:::row:::
+   :::column span="1":::
+      [onclick](https://developer.mozilla.org/docs/Web/API/Element/click_event)  
+   :::column-end:::
+   :::column span="2":::
+      Выбирайте уведомление, нажав ширину.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [onclose](https://developer.mozilla.org/docs/Archive/Mozilla/XUL/Events/close_event)  
+   :::column-end:::
+   :::column span="2":::
+      Получайте уведомления, когда пользователь закрывает уведомление или автоматические ожидания.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [onerror](https://developer.mozilla.org/docs/Web/API/Element/error_event)  
+   :::column-end:::
+   :::column span="2":::
+      Исчезновение ошибки при обработке уведомления.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [onshow](https://developer.mozilla.org/docs/Web/API/Element/show_event)  
+   :::column-end:::
+   :::column span="2":::
+      Появляются уведомления.  
+   :::column-end:::
+:::row-end:::  
 
-Событие | Описание
-:-------- | :----------
-[OnClick](https://msdn.microsoft.com/library/mt712180) | Активируется при щелчке уведомления пользователем.
-[OnClose (закрыть)](https://msdn.microsoft.com/library/mt712178) | Активируется при закрытии уведомления пользователем или автоматическим тайм-аутам.
-[ПриОшибке](https://msdn.microsoft.com/library/mt712181) | Активируется при возникновении ошибки при обработке уведомления.
-[onShow](https://msdn.microsoft.com/library/mt712182) | Активируется при отображении уведомления.
+### Способы уведомлений  
 
-### Способы уведомления
+В объекте Уведомления можно использовать [следующие](https://developer.mozilla.org/docs/Web/API/Notification) способы:  
 
-С объектом используются следующие методы [`Notification`](https://msdn.microsoft.com/library/mt710818) :
+:::row:::
+   :::column span="1":::
+      [close](https://developer.mozilla.org/docs/Web/API/Notification/close)  
+   :::column-end:::
+   :::column span="2":::
+      Закрывает отображаемое уведомление.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [запросразрешения](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission)  
+   :::column-end:::
+   :::column span="2":::
+      Запросы на разрешение пользователя, позволяющие разрешить отображение уведомлений текущим оригиналом.  
+   :::column-end:::
+:::row-end:::  
 
-Метод | Описание
-:-------- | :----------
-[close](https://msdn.microsoft.com/library/mt670636) | Закрывает открытое уведомление.
-[requestPermission](https://msdn.microsoft.com/library/mt710824) | Запрашивает разрешение от пользователя, чтобы разрешить отображение уведомлений текущим источником.
+## Разрешения для уведомлений  
 
-## Разрешения для уведомлений
+Microsoft Edge позволяет пользователям управлять разрешениями для каждого отдельного домена веб-сайтов.  При появлении сообщения о **Yes** том, что в домене потребуется выбрать "Да" **или "Нет".**  [Метод запроса Permission](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission) (сигнал из-за параметров разрешений) используется для сигнала в состоянии разрешений. `granted` `denied` `default`  Значение указывает на то, что пользователь не принял `default` решение, которое видно как эквивалент. `denied`  
 
-Microsoft EDGE позволяет пользователям управлять разрешениями уведомлений для каждого определенного домена веб-сайта. Вы можете выбрать вариант "Да" или "нет" при появлении запроса от домена, чтобы позволить ему показывать уведомления. [`requestPermission`](https://msdn.microsoft.com/library/mt710824)Метод используется, чтобы сообщить состояние разрешения как `granted` , так `denied` и `default` . Значение указывает на то `default` , что пользователь не принял решение, которое рассматривается как эквивалент `denied` .
+## Справочные материалы по API  
 
+[Веб-уведомления](https://developer.mozilla.org/docs/Web/API/Notifications_API)  
 
+## Спецификаци  
 
-
-## Справочные материалы по API
-
-[Веб-уведомления](https://msdn.microsoft.com/library/mt710827)
-
-## Specification
-
-[Веб-уведомления](https://notifications.spec.whatwg.org)
+[Веб-уведомления](https://notifications.spec.whatwg.org)  
