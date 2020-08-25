@@ -2,16 +2,16 @@
 title: Новые возможности DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f90bbde9b2b220cd8a333a81d520d4c6e56eaa90
-ms.sourcegitcommit: 4e6c0959bc01eb0ceb4b85dce791670916fb5b48
+ms.openlocfilehash: f1b5d147aac1b8b527cc7365f9f91a2a7974863e
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "10918635"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942222"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,7 +45,7 @@ ms.locfileid: "10918635"
    Рисунок 1: приложение [Remote Tools для Microsoft EDGE (Beta)][RemoteTools] , доступное в [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[Ознакомьтесь с руководством по настройке устройства с Windows 10 и компьютера для разработки удаленной отладки][DevtoolsRemoteDebuggingWindows].  Сообщите нам об удаленной отладке, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок [обратной связи](#feedback) !  
+[Ознакомьтесь с руководством по настройке устройства с Windows 10 и компьютера для разработки удаленной отладки][DevtoolsRemoteDebuggingWindows].  Сообщите нам об удаленной отладке, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
 
 ### Новые способы доступа к параметрам  
 
@@ -113,7 +113,7 @@ ms.locfileid: "10918635"
    Рис. 8: в Microsoft Edge 83 вы можете прокручивать текст по горизонтали с помощью клавиш со стрелками, чтобы просмотреть изменения, внесенные в код minified в **инструменте "изменения** ".  
 :::image-end:::  
 
-Если вы используете средства чтения с экрана или клавиатуру для навигации по DevTools, отправьте нам свой отзыв, выполнив [твит][PostTweetEdgeDevTools] в США или щелкнув значок [отзыва](#feedback) .  
+Если вы используете средства чтения с экрана или клавиатуру для навигации по DevTools, отправьте нам свой отзыв, выполнив [твит][PostTweetEdgeDevTools] в США или щелкнув значок [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 [#963183][CR963183] проблем с Chromium  
 
@@ -143,7 +143,7 @@ DevTools может эмулировать размытое видение и с
 
 Благодаря разработке для более экстремальных эмуляций в DevTools веб-приложения будут гарантированно доступны людям с protanomaly, Deuteranomaly, Tritanomaly и achromatomaly.  
 
-Отправьте свой отзыв с помощью [твитов][PostTweetEdgeDevTools] или щелкните значок [отзыва](#feedback) .  
+Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
 
 [#1003700][CR1003700] проблем с Chromium  
 
@@ -183,7 +183,7 @@ DevTools может эмулировать размытое видение и с
    Рисунок 12: дополнительные рекомендации в разделе заголовки ответа  
 :::image-end:::  
 
-Отправьте свой отзыв с помощью [твитов][PostTweetEdgeDevTools] или щелкните значок [отзыва](#feedback) .  
+Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
 
 [#1051466][CR1051466] проблем с Chromium  
 
@@ -216,7 +216,7 @@ DevTools может эмулировать размытое видение и с
 > [!NOTE]
 > Функция " **прикрепить к левому краю** " была доступна после выпуска Microsoft Edge 75, но ранее она была доступна только в [**главном меню**][DevtoolsCustomizePlacementsChangeMainMenu].  Новая функция в Microsoft Edge 83 — теперь вы можете получить доступ к этой функции в меню команд.  
 
-Отправьте свой отзыв с помощью [твитов][PostTweetEdgeDevTools] или щелкните значок [отзыва](#feedback) .  
+Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
 
 [#1011679][CR1011679] проблем с Chromium  
 
@@ -239,7 +239,7 @@ DevTools может эмулировать размытое видение и с
    Рисунок 15: удаление всех переопределений  
 :::image-end:::  
 
-Отправьте свой отзыв с помощью [твитов][PostTweetEdgeDevTools] или щелкните значок [отзыва](#feedback) .  
+Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
 
 [#1016501][CR1016501] проблем с Chromium  
 
@@ -253,7 +253,7 @@ DevTools может эмулировать размытое видение и с
    Рисунок 16: новый пользовательский интерфейс длительной задачи  
 :::image-end:::  
 
-Отправьте свой отзыв с помощью [твитов][PostTweetEdgeDevTools] или щелкните значок [отзыва](#feedback) .  
+Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
 
 [#1054447][CR1054447] проблем с Chromium  
 
@@ -272,22 +272,13 @@ DevTools может эмулировать размытое видение и с
 > [!NOTE]
 > Этот компонент запущен в Microsoft Edge 81.  Обновления, описанные здесь в Microsoft Edge 83, не были освещены в статье [новые возможности DevTools (Microsoft Edge 81)][WhatsNew81].  
 
-## Отзыв  
-
-Чтобы обсудить новые возможности и изменения в этой записи, а также другие связанные с DevTools, выполните указанные ниже действия.  
-
-*   Отправка отзыва с помощью значка **обратной связи** в DevTools  
-*   Твит на [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Отправка предложения в [Вебе][TheWebWeWant]  
-*   Ошибки файла в этом документе в репозитории " [Edge — разработчик][GitHubMicrosoftDocsEdgeDeveloperNewIssue] "  
-
-:::image type="complex" source="../../media/2020/03/feedback-icon.msft.png" alt-text="Значок * * Feedback * * в Microsoft Edge DevTools" lightbox="../../media/2020/03/feedback-icon.msft.png":::
-   Рисунок 18: значок **обратной связи** в Microsoft Edge DevTools  
-:::image-end:::  
-
 ## Загрузка каналов предварительной версии Microsoft Edge  
 
 Если вы используете Windows или macOS, рассматривайте в качестве браузера по умолчанию использование [каналов предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] .  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
+
+## Знакомство с Microsoft Edge DevTools Team  
+
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
