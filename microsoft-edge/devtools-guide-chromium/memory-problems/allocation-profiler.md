@@ -2,16 +2,16 @@
 title: Использование инструментирования выделения на временной шкале
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: ab7a270e1d599e254aaaf4515b6898cb1d9782fc
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611736"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985758"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -46,9 +46,9 @@ ms.locfileid: "10611736"
 
 **Инструментарий выделения на временной шкале** периодически берет моментальные снимки кучи во время записи \ (как обычно каждые 50 MS! \) и один финальный снимок в конце записи.  
 
-> ##### Рис. 1  
-> **Инструментирование выделения на временной шкале**  
-> ![Инструментирование выделения на временной шкале][ImageObjectTracker]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Инструментирование выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Инструментирование выделения на временной шкале**  
+:::image-end:::  
 
 > [!NOTE]
 > Число после a `@` — это идентификатор объекта, который сохраняется во многих снимках, сделанных в ходе сеанса записи.  Постоянный идентификатор объекта обеспечивает точное сравнение состояний кучи.  Объекты перемещаются во время сборки мусора, поэтому отображение адреса объекта не имеет смысла.  
@@ -60,29 +60,29 @@ ms.locfileid: "10611736"
 1.  [Откройте DevTools][DevtoolsOpenIndex].  
 1.  Откройте панель **память** и выберите переключатель **Инструментирование выделения на временной шкале** .  
 1.  Start recording.  
-
-> ##### Рисунок 2  
-> Профилировщик записи для выделения кучи  
-> ![Профилировщик записи для выделения кучи][ImageRecordHeap]  
-
+    
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Профилировщик записи для выделения кучи" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Профилировщик записи для выделения кучи  
+    :::image-end:::  
+    
 ## Чтение временной шкалы выделения кучи  
 
-Временная шкала выделения кучи показывает, где создаются объекты и определяет путь сохранения.  На [рисунке 3](#figure-3)на верхней панели обозначаются новые объекты, найденные в куче.  
+Временная шкала выделения кучи показывает, где создаются объекты и определяет путь сохранения.  На приведенном ниже рисунке в верхней части экрана указываются новые объекты, найденные в куче.  
 
 Высота каждой линии соответствует размеру недавно выделенных объектов, а цвет отрезков показывает, будут ли эти объекты по-прежнему находиться в последнем снимке кучи.  Синие отрезки указывают на объекты, которые по-прежнему находятся в конце временной шкалы, а серые — на объекты, которые были выделены на временной шкале, но с момента сбора мусора.  
 
-> ##### Рисунок3  
-> **Инструментирование выделения для снимка временной шкалы**  
-> ![Инструментирование выделения для снимка временной шкалы][ImageCollected]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Инструментирование выделения для снимка временной шкалы" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Инструментирование выделения для снимка временной шкалы**  
+:::image-end:::  
 
-<!--In [Figure 4](#figure-4), an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
+<!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
 Вы можете использовать ползунки на временной шкале выше, чтобы увеличить этот конкретный снимок и просмотреть объекты, которые были недавно выделены в данный момент.  
 
-> ##### Рисунок4  
-> Изменение размера снимка  
-> ![Изменение размера снимка][ImageSliders]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Изменение размера снимка" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Изменение размера снимка  
+:::image-end:::  
 
 Если щелкнуть конкретный объект в куче, появится дерево сохранения в нижней части снимка кучи.  Проверка пути сохранения для объекта позволяет понять, почему объект не был собран, и необходимо внести необходимые изменения в код, чтобы удалить ненужную ссылку.  
 
@@ -90,23 +90,18 @@ ms.locfileid: "10611736"
 
 Вы можете просматривать выделение памяти функцией JavaScript.  Дополнительные сведения [можно найти в разделе изучение выделения памяти по функциям][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] .  
 
-<!--## Feedback   -->  
+<!--
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageObjectTracker]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png "Рисунок 1: инструментирование выделения на временной шкале"  
-[ImageRecordHeap]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png "Рисунок 2: запись профилировщика выделения кучи"  
-[ImageCollected]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timelines-snapshot.msft.png "Рисунок 3: инструментирование выделения для снимка временной шкалы"  
-[ImageSliders]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Рисунок 4: изменение размера снимка"  
+-->  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: /microsoft-edge/devtools-guide-chromium/open "Откройте Microsoft EDGE (Chromium) DevTools"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: /microsoft-edge/devtools-guide-chromium/memory-problems/index#investigate-memory-allocation-by-function "Исследование выделения памяти функцией — устранение проблем с памятью"  
+[DevToolsOpenIndex]: ../open.md "Открыть Microsoft EDGE (Chromium) DevTools | Документы Microsoft"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Исследование выделения памяти функцией — устранение проблем с памятью | Документы Microsoft"  
 
-<!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
+<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Скачайте канал Microsoft Edge"  
