@@ -2,16 +2,16 @@
 title: Переопределение географического положения с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 307064bedf992e528b6d79eed3a2ade3367830d4
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607442"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981833"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,48 +31,45 @@ ms.locfileid: "10607442"
 
 
 
-# <span data-ttu-id="3a025-103">Переопределение географического положения с помощью Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="3a025-103">Override Geolocation With Microsoft Edge DevTools</span></span>   
+# <span data-ttu-id="eb9cf-103">Переопределение географического положения с помощью Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="eb9cf-103">Override geolocation with Microsoft Edge DevTools</span></span>   
 
 
 
-<span data-ttu-id="3a025-104">Многие веб-сайты имеют преимущество для предоставления пользователям более подходящих возможностей.</span><span class="sxs-lookup"><span data-stu-id="3a025-104">Many websites take advantage of user location in order to provide a more relevant experience for the users.</span></span>  <span data-ttu-id="3a025-105">Например, на веб-сайте Weather может отображаться локальный прогноз в области пользователя, после того как пользователь выдает разрешение веб-сайту на доступ к текущему расположению пользователя.</span><span class="sxs-lookup"><span data-stu-id="3a025-105">For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.</span></span>  
+<span data-ttu-id="eb9cf-104">Многие веб-сайты имеют преимущество для предоставления пользователям более подходящих возможностей.</span><span class="sxs-lookup"><span data-stu-id="eb9cf-104">Many websites take advantage of user location in order to provide a more relevant experience for the users.</span></span>  <span data-ttu-id="eb9cf-105">Например, на веб-сайте Weather может отображаться локальный прогноз в области пользователя, после того как пользователь выдает разрешение веб-сайту на доступ к текущему расположению пользователя.</span><span class="sxs-lookup"><span data-stu-id="eb9cf-105">For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.</span></span>  
 
 <!--todo: add link to user location section when available -->  
 
-<span data-ttu-id="3a025-106">Если вы создаете пользовательский интерфейс, который изменяется в зависимости от того, где находится пользователь, возможно, вы захотите убедиться в том, что сайт правильно работает в разных местах по всему миру.</span><span class="sxs-lookup"><span data-stu-id="3a025-106">If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.</span></span>  <span data-ttu-id="3a025-107">Чтобы переопределить географическое положение в Microsoft Edge DevTools, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="3a025-107">To override your geolocation in Microsoft Edge DevTools:</span></span>  
+<span data-ttu-id="eb9cf-106">Если вы создаете пользовательский интерфейс, который изменяется в зависимости от того, где находится пользователь, возможно, вы захотите убедиться в том, что сайт правильно работает в разных местах по всему миру.</span><span class="sxs-lookup"><span data-stu-id="eb9cf-106">If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.</span></span>  <span data-ttu-id="eb9cf-107">Чтобы переопределить географическое положение в Microsoft Edge DevTools, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="eb9cf-107">To override your geolocation in Microsoft Edge DevTools, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="3a025-108">`Control` + `Shift` + `P` Чтобы открыть меню команд, нажмите клавиши \ (Windows \) или `Command` + `Shift` + `P` \ ( **Command Menu**macOS \).</span><span class="sxs-lookup"><span data-stu-id="3a025-108">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="eb9cf-108">`Control` + `Shift` + `P` Чтобы открыть меню команд, нажмите клавиши \ (Windows \) или `Command` + `Shift` + `P` \ ( **Command Menu**macOS \).</span><span class="sxs-lookup"><span data-stu-id="eb9cf-108">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
-    > ##### <span data-ttu-id="3a025-109">Рис. 1</span><span class="sxs-lookup"><span data-stu-id="3a025-109">Figure 1</span></span>  
-    > <span data-ttu-id="3a025-110">Меню команд</span><span class="sxs-lookup"><span data-stu-id="3a025-110">The Command Menu</span></span>  
-    > ![Меню команд][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       <span data-ttu-id="eb9cf-110">**Меню команд**</span><span class="sxs-lookup"><span data-stu-id="eb9cf-110">The **Command Menu**</span></span>  
+    :::image-end:::  
     
-1.  <span data-ttu-id="3a025-112">Введите текст `sensors` , установите флажок **Показать датчики**и нажмите клавишу `Enter` .</span><span class="sxs-lookup"><span data-stu-id="3a025-112">Type `sensors`, select **Show Sensors**, and press `Enter`.</span></span>  <span data-ttu-id="3a025-113">Вкладка **датчики** откроется в нижней части окна DevTools.</span><span class="sxs-lookup"><span data-stu-id="3a025-113">The **Sensors** tab opens at the bottom of your DevTools window.</span></span>  
-1.  <span data-ttu-id="3a025-114">В списке **географическое положение** выберите один из готовых городов `Tokyo` или выберите **другое расположение** , чтобы указать пользовательские координаты долготы и широты, или выберите пункт **расположение недоступно** , чтобы увидеть, как работает сайт, когда его расположение недоступно.</span><span class="sxs-lookup"><span data-stu-id="3a025-114">From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.</span></span>  
+1.  <span data-ttu-id="eb9cf-111">Введите текст `sensors` , установите флажок **Показать датчики**и нажмите клавишу `Enter` .</span><span class="sxs-lookup"><span data-stu-id="eb9cf-111">Type `sensors`, select **Show Sensors**, and press `Enter`.</span></span>  <span data-ttu-id="eb9cf-112">Вкладка **датчики** откроется в нижней части окна DevTools.</span><span class="sxs-lookup"><span data-stu-id="eb9cf-112">The **Sensors** tab opens at the bottom of your DevTools window.</span></span>  
+1.  <span data-ttu-id="eb9cf-113">В списке **географическое положение** выберите один из готовых городов `Tokyo` или выберите **другое расположение** , чтобы указать пользовательские координаты долготы и широты, или выберите пункт **расположение недоступно** , чтобы увидеть, как работает сайт, когда его расположение недоступно.</span><span class="sxs-lookup"><span data-stu-id="eb9cf-113">From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.</span></span>  
     
-    > ##### <span data-ttu-id="3a025-115">Рисунок 2</span><span class="sxs-lookup"><span data-stu-id="3a025-115">Figure 2</span></span>  
-    > <span data-ttu-id="3a025-116">Выбор `Tokyo` из списка **географического расположения**</span><span class="sxs-lookup"><span data-stu-id="3a025-116">Selecting `Tokyo` from the **Geolocation** list</span></span>  
-    > ![Выбор в Токио из списка географического расположения][ImageGeolocationTokyo]  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Выберите Токио в списке "географическое положение"" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       <span data-ttu-id="eb9cf-115">Выберите в `Tokyo` списке " **географическое положение** "</span><span class="sxs-lookup"><span data-stu-id="eb9cf-115">Select `Tokyo` from the **Geolocation** list</span></span>  
+    :::image-end:::  
     
-<!--## Feedback   
+<!--  
+## Feedback   
 
-  -->  
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Рисунок 1: меню команд"  
-[ImageGeolocationTokyo]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-geolocation-tokyo.msft.png "Рисунок 2: выбор в Токио из списка географического расположения"  
+  
+-->  
 
 <!-- links -->  
 
 <!--[WebFundamentalsNativeHardwareUserLocationIndex]: /web/fundamentals/native-hardware/user-location/index "User Location"  -->  
 
 > [!NOTE]
-> <span data-ttu-id="3a025-120">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="3a025-120">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="3a025-121">Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="3a025-121">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="eb9cf-116">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="eb9cf-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="eb9cf-117">Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="eb9cf-117">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="3a025-123">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="3a025-123">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="eb9cf-119">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="eb9cf-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
