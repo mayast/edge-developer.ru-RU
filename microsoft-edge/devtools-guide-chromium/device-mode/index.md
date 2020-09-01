@@ -2,16 +2,16 @@
 title: Эмуляция мобильных устройств с помощью режима устройства в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 10c1ee12777965778ebec2d257399dc231e2a01a
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 6973f28a0cb530e8928976adb1354fa7471ee343
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607428"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985338"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,43 +53,43 @@ ms.locfileid: "10607428"
 
 ## Имитация окна просмотра для мобильных устройств   
 
-Нажмите **кнопку** Переключить панель инструментов устройства ![ ][ImageDeviceToolbarIcon] , чтобы открыть пользовательский интерфейс, позволяющий имитировать окно просмотра для мобильных устройств.  
+Нажмите кнопку **Переключить панель инструментов** \ ( ![ Переключить панель инструментов устройства ][ImageDeviceToolbarIcon] ), чтобы открыть пользовательский интерфейс, позволяющий имитировать окно просмотра для мобильных устройств.  
 
-> ##### Рис. 1  
-> Панель инструментов "устройства"  
-> ![Панель инструментов "устройства"][ImageDeviceToolbar]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Панель инструментов "устройства"" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   Панель инструментов "устройства"  
+:::image-end:::  
 
 По умолчанию панель инструментов устройства открывается в режиме отклика окна просмотра.  
 
 ### Режим окна просмотра с откликом   
 
-Перетащите маркеры, чтобы изменить размер окна просмотра в соответствии с нужными размерами.  Кроме того, можно ввести значения в полях Ширина и высота.  На [рисунке 2](#figure-2)задана ширина `626` и высота задана `516` .  
+Перетащите маркеры, чтобы изменить размер окна просмотра в соответствии с нужными размерами.  Кроме того, можно ввести значения в полях Ширина и высота.  На приведенном ниже рисунке задана ширина `626` и высота задана `516` .  
 
-> ##### Рисунок 2  
-> Дескрипторы для изменения размеров окна просмотра в отклике режима просмотра  
-> ![Дескрипторы для изменения размеров окна просмотра в отклике режима просмотра][ImageResponsiveHandles]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Дескрипторы для изменения размеров окна просмотра в отклике режима просмотра" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+   Дескрипторы для изменения размеров окна просмотра в отклике режима просмотра  
+:::image-end:::  
 
 #### Показать мультимедийные запросы   
 
 Чтобы отобразить точки останова для запросов мультимедиа над окном просмотра, нажмите кнопку **Дополнительные параметры** и выберите пункт **Показать мультимедийные запросы**.  
 
-> ##### Рисунок3  
-> Показать мультимедийные запросы  
-> ![Показать мультимедийные запросы][ImageShowMediaQueries]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Показать мультимедийные запросы" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+   **Показать мультимедийные запросы**  
+:::image-end:::  
 
 Щелкните точку останова, чтобы изменить ширину окна просмотра таким образом, чтобы точка останова была инициирована.  
 
-> ##### Рисунок4  
-> Щелкните точку останова, чтобы изменить ширину окна просмотра  
-> ![Щелкните точку останова, чтобы изменить ширину окна просмотра][ImageBreakpoint]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Щелкните точку останова, чтобы изменить ширину окна просмотра" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+   Щелкните точку останова, чтобы изменить ширину окна просмотра  
+:::image-end:::  
 
 #### Настройка типа устройства   
 
 Используйте список **типов устройств** для имитации мобильного устройства или настольного устройства.  
 
-> ##### Рисунок 5  
-> Список **типов устройств**  
-> ![Список типов устройств][ImageDeviceType]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Список типов устройств" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+   Список **типов устройств**  
+:::image-end:::  
 
 В приведенной ниже таблице описаны различия между параметрами.  **Метод рендеринга** указывает, будет ли Microsoft Edge обрабатывать страницу в виде окна просмотра на мобильном или рабочем столе.  **Значок курсора** указывает на тип курсора, который отображается при наведении указателя мыши на страницу.  **События, созданные** в зависимости от того, срабатывает ли страница `touch` или `click` события при взаимодействии со страницей.  
 
@@ -107,24 +107,24 @@ ms.locfileid: "10607428"
 
 Чтобы смоделировать размеры определенного мобильного устройства, выберите нужное устройство из списка **устройств** .  
 
-> ##### Рисунок6  
-> Список устройств  
-> ![Список устройств][ImageDeviceList]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Список устройств" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+   Список **устройств**  
+:::image-end:::  
 
 #### Поворот окна просмотра на альбомную ориентацию   
 
-Нажмите кнопку **повернуть** ![ поворачивать, ][ImageRotateIcon] чтобы повернуть окно просмотра на альбомную ориентацию.  
+**Rotate** ![ ][ImageRotateIcon] Чтобы повернуть окно просмотра на альбомную ориентацию, нажмите повернуть на (повернуть).  
 
-> ##### Рисунок7  
-> Альбомная ориентация  
-> ![Альбомная ориентация][ImageLandscape]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Альбомная ориентация" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+   Альбомная ориентация  
+:::image-end:::  
 
 > [!NOTE]
 > Кнопка **повернуть** исчезнет, если **панель инструментов на устройстве** является узкой.  
 
-> ##### Рисунок8  
-> Панель инструментов "устройства"  
-> ![Панель инструментов "устройства"][ImageDeviceToolbar2]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Панель инструментов "устройства"" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   **Панель инструментов "устройства** "  
+:::image-end:::  
 
 Смотрите также [Настройка ориентации](#set-orientation).  
 
@@ -135,182 +135,169 @@ ms.locfileid: "10607428"
 > [!NOTE]
 > Если вы не видите рамку устройства для определенного устройства, скорее всего, это означает, что DevTools просто не имеет иллюстраций для определенного параметра.  
 
-> ##### Рисунок9  
-> Показать рамку устройства  
-> ![Показать рамку устройства][ImageShowDeviceFrame]  
-
-> ##### Рисунок 10  
-> Рамка устройства для iPhone 6  
-> ![Рамка устройства для iPhone 6][ImageIphoneFrame]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Показать рамку устройства" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         Показать рамку устройства  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Рамка устройства для iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         Рамка устройства для iPhone 6  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 #### Добавление настраиваемого мобильного устройства   
 
 Чтобы добавить настраиваемое устройство, выполните указанные ниже действия.  
 
 1.  Щелкните список **устройств** и выберите команду **изменить**.  
-
-> ##### Рисунок11  
-> Выбор **Edit** 
-> ![ команды "Изменить"][ImageEdit]  
-
+    
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Нажмите кнопку Изменить." lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       Нажмите кнопку **изменить** .  
+    :::image-end:::  
+    
 1.  Нажмите кнопку **Добавить настраиваемое устройство**.  
-
 1.  Введите имя, ширину и высоту устройства.  Поля « [отношение к пикселям][MDNWindowDevicePixelRatio]», « [строка агента пользователя][MDNUserAgent]» и « [тип устройства](#set-the-device-type) » являются необязательными.  Поле «Тип устройства» — это список, который по умолчанию имеет значение " **мобильный** ".  
-
-> ##### Рисунок12  
-> Создание настраиваемого устройства  
-> ![Создание настраиваемого устройства][ImageAddCustomDevice]  
+    
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Создание настраиваемого устройства" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+       Создание настраиваемого устройства  
+    :::image-end:::  
 
 ### Отображение линеек   
 
 Нажмите кнопку **Дополнительные параметры** , а затем выберите пункт **Показывать линейки** , чтобы увидеть линейки сверху и слева от окна просмотра.  Единица измерения линеек — Пиксели.  
 
-> ##### Рисунок13  
-> Отображение линеек  
-> ![Отображение линеек][ImageShowRulers]  
-
-> ##### Рисунок14  
-> Линейки сверху и слева от окна просмотра  
-> ![Линейки сверху и слева от окна просмотра][ImageRulers]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Отображение линеек" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+         **Отображение линеек**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Линейки сверху и слева от окна просмотра" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         Линейки сверху и слева от окна просмотра  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 ### Изменение масштаба просмотра   
 
 С помощью списка **масштаб** вы можете увеличить или уменьшить масштаб.  
 
-> ##### Рисунок15  
-> Масштаб  
-> ![Масштаб][ImageZoomViewport]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Масштаб" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+   **Масштаб**  
+:::image-end:::  
 
 ## Регулирование сети и ЦП   
 
 Для регулирования сети и ЦП выберите на **мобильном** или **низком мобильном** уровне в списке **регулирования** .  
 
-> ##### Рисунок16  
-> Список регулирования  
-> ![Список регулирования][ImageThrottling]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Список регулирования" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   Список **регулирования**  
+:::image-end:::  
 
 На **мобильном устройстве с уровнем "среднее** " эмулируется быстрое соединение и снижается частота центрального процессора, так как это происходит в течение 4 часов, чем обычно.  На **мобильном** телефоне эмулируется медленная работа сети 3G и снижается частота процессора 6, чем обычно.  Имейте в виду, что регулирование задается относительно нормальной работы ноутбука или рабочего стола.  
 
 > [!NOTE]
-> Список **регулирования** будет скрыт, если **панель инструментов устройства** является узкой.  
+> Список **регулирования** скрывается, если **панель инструментов устройства** является узкой.  
 
-> ##### Рисунок17  
-> Панель инструментов "устройства"  
-> ![Панель инструментов "устройства"][ImageDeviceToolbar3]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Панель инструментов "устройства"" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   **Панель инструментов "устройства** "  
+:::image-end:::  
 
 ### Регулирование только ЦП   
 
-Чтобы перерегулировать только ЦП, а не сеть, перейдите на панель **производительность** , щелкните Параметры захвата **параметров** ![ ][ImageCaptureIcon] , а затем выберите скорость или **6X** **замедление** в списке **ЦП** .  
+Чтобы перерегулировать только ЦП, а не сеть, перейдите на панель **производительность** , нажмите **Параметры захвата** \ ( ![ Параметры захвата ][ImageCaptureIcon] ), а затем выберите скорость или **6X** **замедление** в списке **ЦП** .  
 
-> ##### Рис. 18  
-> Список ЦП  
-> ![Список ЦП][ImageCPU]  
+:::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Список ЦП" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+   Список **ЦП**  
+:::image-end:::  
 
 ### Регулирование сети только   
 
 Для регулирования сети, а не центрального процессора, откройте панель Network ( **сеть** ) и выберите в списке **регулирования** команду **Быстрый 3G** или **низкая 3G** .  
 
-> ##### На рисунке 19  
-> Список регулирования  
-> ![Список регулирования][ImageNetwork]  
+:::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Список регулирования" lightbox="../media/device-mode-network-throttle.msft.png":::
+   Список **регулирования**  
+:::image-end:::  
 
-Или нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть меню команд, введите `3G` и выберите **включить быстрое регулирование сети 3G** или **включить медленное регулирование сети 3G**.  
+Или нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть **меню команд**, введите `3G` и выберите **включить быстрое регулирование сети 3G** или **включить медленное регулирование сети 3G**.  
 
-> ##### Рис. 20  
-> Меню команд  
-> ![Меню команд][ImageCommandMenu]  
+:::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+   **Меню команд**  
+:::image-end:::  
 
-Вы также можете настроить регулирование сети на панели **Performance** .  Нажмите **кнопку захват** параметров ![ ][ImageCaptureIcon] , а затем в списке список **сетей** выберите пункт **Быстрая 3G** или **низкая 3G** .  
+Вы также можете настроить регулирование сети на панели **Performance** .  Нажмите кнопку **захвата параметров** \ ( ![ Параметры ][ImageCaptureIcon] захвата), а затем выберите в списке список **сетей** вариант **Быстрая 3G** или **низкая 3G** .  
 
-> ##### Рисунок 21  
-> Настройка регулирования сети с помощью панели "производительность"  
-> ![Настройка регулирования сети с помощью панели "производительность"][ImageNetwork2]  
+:::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Настройка регулирования сети с помощью панели "производительность"" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+   Настройка регулирования сети с помощью панели " **производительность** "  
+:::image-end:::  
 
 ## Переопределение географического положения   
 
-Чтобы открыть пользовательский интерфейс переопределения географического расположения, нажмите кнопку **Настройка DevTools** и `...` выберите пункт **другие**  >  **датчики**инструментов.  
+Чтобы открыть пользовательский интерфейс переопределения географического положения, нажмите кнопку **Настройка DevTools и** `...` выберите пункт **другие инструменты**  >  **датчики**.  
 
-> ##### Рис. 22  
-> Датчики  
-> ![Датчики][ImageSensors]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Датчики" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   **Датчики**  
+:::image-end:::  
 
 Или нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть меню команд, введите `Sensors` и выберите пункт **Показать датчики**.  
 
-> ##### Рис. 23  
-> Показать датчики  
-> ![Показать датчики][ImageShowSensors]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Показать датчики" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   **Показать датчики**  
+:::image-end:::  
 
 Выберите один из стилей из списка **географического расположения** или выберите **другое расположение** , чтобы ввести собственные координаты, или выберите **расположение недоступно** , чтобы проверить, как будет выглядеть страница, когда географическое положение находится в состоянии ошибки.  
 
-> ##### Рисунок 24  
-> Геолокация  
-> ![Геолокация][ImageGeolocation]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Геолокация" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+   **Геолокация**  
+:::image-end:::  
 
 ## Настройка ориентации   
 
-Чтобы открыть пользовательский интерфейс ориентации, нажмите кнопку **Настройка DevTools** и `...` выберите пункт **другие**  >  **датчики**инструментов.  
-
-> ##### Рис. 25  
-> Датчики  
-> ![Датчики][ImageSensors2]  
-
-Или нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть меню команд, введите `Sensors` и выберите пункт **Показать датчики**.  
-
-> ##### Рис. 26  
-> Показать датчики  
-> ![Показать датчики][ImageShowSensors2]  
+:::row:::
+   :::column span="":::
+      Чтобы открыть пользовательский интерфейс ориентации, нажмите кнопку **Настройка DevTools** и `...` выберите пункт **другие**  >  **датчики**инструментов.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Датчики" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Датчики**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      Или нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть меню команд, введите `Sensors` и выберите пункт **Показать датчики**.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Показать датчики" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Показать датчики**  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 Выберите один из наборов параметров в списке **ориентация** или выберите Пользовательский вариант **ориентация** , чтобы задать значения альфа, бета и гамма.  
 
-> ##### На рисунке 27  
-> Ориентация  
-> ![Ориентация][ImageOrientation]  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Ориентация" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+   **Ориентация**  
+:::image-end:::  
 
+<!--  
  
 
 
+-->  
 
 <!--See [Join the DevTools community][DevToolsCommunity] for other ways to leave feedback.  -->  
 
 <!-- image links -->  
 
-[ImageCaptureIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-settings-icon.msft.png  
-[ImageCustomizeIcon]: /microsoft-edge/devtools-guide-chromium/media/customize-and-control-devtools-icon.msft.png  
-[ImageDeviceToolbarIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: /microsoft-edge/devtools-guide-chromium/media/rotate-dark-icon.msft.png  
-
-[ImageDeviceToolbar]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Рисунок 1: панель инструментов "устройства""  
-[ImageResponsiveHandles]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png "Рисунок 2: маркеры изменения размеров окна просмотра в отклике режима просмотра"  
-[ImageShowMediaQueries]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png "Рисунок 3: отображение запросов мультимедиа"  
-[ImageBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png "Рисунок 4: щелкните точку останова, чтобы изменить ширину окна просмотра."  
-[ImageDeviceType]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-type-list.msft.png "Рисунок 5: список типов устройств"  
-[ImageDeviceList]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-list.msft.png "Рисунок 6: список устройств"  
-[ImageLandscape]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-landscape.msft.png "Рисунок 7: альбомная ориентация"  
-[ImageDeviceToolbar2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Рисунок 8: панель инструментов устройства"  
-[ImageShowDeviceFrame]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png "Рис. 9: Показать рамку устройства"  
-[ImageIphoneFrame]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png "Рисунок 10: кадр устройства для iPhone 6"  
-[ImageEdit]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-list-edit.msft.png "Рисунок 11: выбор пункта "Изменить""  
-[ImageAddCustomDevice]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png "Рисунок 12: Создание настраиваемого устройства"  
-[ImageShowRulers]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png "Рисунок 13: отображение линеек"  
-[ImageRulers]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-rulers.msft.png "Рисунок 14: линейки выше и слева от окна просмотра"  
-[ImageZoomViewport]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-zoom.msft.png "Рисунок 15: масштаб"  
-[ImageThrottling]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-throttle.msft.png "Рисунок 16: список регулирования"  
-[ImageDeviceToolbar3]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Рисунок 17: панель инструментов "устройства""  
-[ImageCPU]: /microsoft-edge/devtools-guide-chromium/media/device-mode-performance-cpu-throttle.msft.png "Рисунок 18: список ЦП"  
-[ImageNetwork]: /microsoft-edge/devtools-guide-chromium/media/device-mode-network-throttle.msft.png "На рисунке 19: список регулирования"  
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-command-menu-throttle.msft.png "Рисунок 20: меню команд"  
-[ImageNetwork2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-performance-network-throttle.msft.png "Рисунок 21: Настройка регулирования сети с помощью панели "производительность""  
-[ImageSensors]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png "Рисунок 22: датчики"  
-[ImageShowSensors]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png "Рисунок 23: отображение датчиков"  
-[ImageGeolocation]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png "Рисунок 24: географическое положение"  
-[ImageSensors2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png "Рисунок 25: датчики"  
-[ImageShowSensors2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png "Рис. 26: отображение датчиков"  
-[ImageOrientation]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png "Рисунок 27: ориентация"  
+[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
+[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
+[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 
-<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community"  -->
-[DevToolsRemoteDebugging]:/Microsoft-Edge/Devtools-Guide-Chromium/Remote-Debugging/index "Начало работы с удаленными отладочными устройствами Android"  
+<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
+[DevToolsRemoteDebugging]: .. /Remote-Debugging/index.md "Начало работы с удаленными отладочными устройствами Android | Microsoft Docs»  
 
 [MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window. devicePixelRatio | MDN"  
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Агент пользователя | MDN"  

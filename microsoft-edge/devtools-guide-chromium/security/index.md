@@ -2,16 +2,16 @@
 title: Общие сведения о проблемах с безопасностью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 05112d5270f41ce83daa935b8137c4a773ad25a0
-ms.sourcegitcommit: 4c24edbd1c591914cb4109511534851570a614cb
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 850dde157a673a84a3e603f22a5e54abd90bde5d
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611912"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984321"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,12 +44,11 @@ ms.locfileid: "10611912"
 Панель **безопасности** — это основное место в DevTools для проверки безопасности страницы.  
 
 1.  [Откройте DevTools][DevToolsOpen].  
-
 1.  Щелкните вкладку " **Безопасность** ", чтобы открыть панель " **Безопасность** ".  
     
-    > ##### Рис. 1  
-    > Панель "безопасность"  
-    > ![Панель "безопасность"][ImageSecurityPanel]  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Панель "безопасность"" lightbox="../media/security-security-overview-secure.msft.png":::
+       Панель " **Безопасность** "  
+    :::image-end:::  
     
 ## Распространенные проблемы   
 
@@ -57,9 +56,9 @@ ms.locfileid: "10611912"
 
 Если основной источник страницы небезопасен, в **обзоре безопасности** указано, что **Эта страница не является безопасной**.  
 
-> ##### Рисунок 2  
-> Небезопасная страница  
-> ![Небезопасная страница][ImageNonSecurePage]  
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Небезопасная страница" lightbox="../media/security-security-overview-non-secure.msft.png":::
+   Небезопасная страница  
+:::image-end:::  
 
 Эта проблема возникает, когда ваш URL-адрес, который вы посещали, запрашивался по протоколу HTTP.  Для обеспечения безопасности необходимо запросить его по протоколу HTTPS.  Например, если вы посмотрите на URL-адрес в адресной строке, скорее всего, он выглядит примерно так `http://example.com` .  Чтобы защитить этот URL-адрес, сделайте это `https://example.com` .  
 
@@ -74,15 +73,15 @@ ms.locfileid: "10611912"
 
 **Смешанное содержимое** указывает на то, что основной источник страницы является безопасным, но страница запрашивает ресурсы из незащищенных источников.  Смешанные страницы содержимого защищены только частично, так как содержимое HTTP доступно для прослушивания и уязвимо для атак "злоумышленник в середине".  
 
-> ##### Рисунок3  
-> Смешанное содержимое  
-> ![Смешанное содержимое][ImageMixedContent]  
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Смешанное содержимое" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+   Смешанное содержимое  
+:::image-end:::  
 
-На [рис. 3](#figure-3)щелкните **Просмотреть 1 запрос на панели "сеть** ", чтобы открыть панель " **сеть** " и применить `mixed-content:displayed` фильтр, чтобы в **журнале сети** отображались только небезопасные ресурсы.  
+На предыдущем рисунке щелкните **Просмотреть 1 запрос на панели "сеть** ", чтобы открыть панель " **сеть** ", и примените `mixed-content:displayed` фильтр, чтобы в **журнале сети** отображались не безопасные ресурсы.  
 
-> ##### Рисунок4  
-> Смешанные ресурсы в сетевом журнале  
-> ![Смешанные ресурсы в сетевом журнале][ImageMixedResourcesNetworkLog]  
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Смешанные ресурсы в сетевом журнале" lightbox="../media/security-network-filter.msft.png":::
+   Смешанные ресурсы в **сетевом журнале**  
+:::image-end:::  
 
 ## Просмотреть подробные сведения   
 
@@ -90,35 +89,28 @@ ms.locfileid: "10611912"
 
 В разделе " **Общие сведения о безопасности**" щелкните ссылку **Просмотр сертификата** для быстрого проверки сертификата для основного источника.  
 
-> ##### Рисунок 5  
-> Основной сертификат источника  
-> ![Основной сертификат источника][ImageCertificate]  
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Основной сертификат источника" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+   Основной сертификат источника  
+:::image-end:::  
 
 ### Просмотр сведений об источнике   
 
 Щелкните одну из записей на левой панели навигации, чтобы просмотреть подробные сведения об источнике.  На странице сведения вы можете просмотреть сведения о подключении и сертификате.  Информация о прозрачности сертификата также отображается, если она доступна.  
 
-> ##### Рисунок6  
-> Сведения о главном источнике  
-> ![Сведения о главном источнике][ImageOriginDetails]  
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Сведения о главном источнике" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+   Сведения о главном источнике  
+:::image-end:::  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageSecurityPanel]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure.msft.png "Рисунок 1: панель "безопасность""  
-[ImageNonSecurePage]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-non-secure.msft.png "Рисунок 2: небезопасная страница"  
-[ImageMixedContent]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure.msft.png "Рисунок 3: смешанное содержимое"  
-[ImageMixedResourcesNetworkLog]: /microsoft-edge/devtools-guide-chromium/media/security-network-filter.msft.png "Рисунок 4: смешанные ресурсы в сетевом журнале"  
-[ImageCertificate]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure-view-certificate.msft.png "Рисунок 5: сертификат основного источника"  
-[ImageOriginDetails]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure-main-origin.msft.png "Рисунок 6: сведения о главном источнике"  
+-->  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Открыть Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+[DevToolsOpen]: ../open.md "Открыть Microsoft Edge DevTools | Документы Microsoft"  
 
 
 [LetsEncrypt]: https://letsencrypt.org "Шифрование-бесплатные сертификаты SSL/TLS"  

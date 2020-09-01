@@ -2,16 +2,16 @@
 title: Доступ к локальным серверам
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: daa96b604d5ad48a9de49dd24dc38eab79de9c9b
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: fb8f8aabaf426685417f90e25295f3e8e7b08994
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898216"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984913"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -55,19 +55,19 @@ ms.locfileid: "10898216"
 1.  В диалоговом окне **Проверка устройств** в DevTools включите **переадресацию порта**.  
 1.  Нажмите кнопку **Добавить правило**.  
     
-    > ##### Рис. 1  
-    > Добавление правила переадресации портов  
-    > ![Добавление правила переадресации портов][ImageAddRule]  
+    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Добавление правила переадресации портов" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
+       Добавление правила переадресации портов  
+    :::image-end:::  
     
 1.  В поле " **порт устройства** " слева введите `localhost` номер порта, с которого вы хотите получить доступ к сайту на устройстве с Android.  Например, если вы хотите получить доступ к сайту из `localhost:5000` ввода `5000` .  
 1.  В текстовом поле " **локальный адрес** " щелкните правой кнопкой мыши IP-адрес или имя узла, на котором расположен сайт, который находится на компьютере разработчика, а затем укажите номер порта.  Например, если ваш веб-сайт запущен на `localhost:7331` входе `localhost:7331` .  
 1.  Нажмите кнопку **Добавить**.  
-
+    
 Переадресация порта теперь настроена.  Просмотрите индикатор состояния для порта на вкладке на вашем устройстве в диалоговом окне **Проверка устройств** .  
 
-> ##### Рисунок 2  
-> Состояние переадресации порта  
-> ![Состояние переадресации порта][ImagePortForwardingStatus]  
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Состояние переадресации порта" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+   Состояние переадресации порта  
+:::image-end:::  
 
 Чтобы просмотреть содержимое, откройте приложение Microsoft EDGE на устройстве с Android и перейдите к `localhost` порту, который вы указали в поле " **порт устройства** ".  Например, если вы ввели `5000` поле, перейдите на страницу `localhost:5000` .  
 
@@ -89,7 +89,7 @@ ms.locfileid: "10898216"
     > Прокси-сервер и веб-сервер должны работать на разных портах.  
     
 1.  Настройка [пересылки порта](#set-up-port-forwarding) на устройство с Android.  В поле **Local Address (локальный адрес** ) введите `localhost:` за ним порт, на котором работает прокси-сервер.  Например, если он запущен на порте `8000` , перейдите на страницу `localhost:8000` .  В поле **порт устройства** введите номер, который будет прослушивать ваше устройство с Android, например `3333` .  
-
+    
 ### Настройка параметров прокси-сервера на устройстве  
 
 Затем необходимо настроить устройство Android для взаимодействия с прокси-сервером.  
@@ -106,7 +106,7 @@ ms.locfileid: "10898216"
 1.  В поле **имя HostName прокси-сервера** введите `localhost` .  
 1.  В поле порт **прокси-сервера** введите номер порта, который вы ввели для **порта устройства** в предыдущем разделе.  
 1.  Выберите **Сохранить**.  
-
+    
 С помощью этих параметров устройство перенаправляет все свои запросы на прокси-сервер на компьютере разработчика.  Прокси-сервер создает запросы от имени вашего устройства, поэтому запросы к своему пользовательскому домену разрешаются надлежащим образом.  
 
 Теперь вы можете получать доступ к настраиваемым доменам на устройстве с Android так же, как и на компьютере разработчика.  
@@ -116,18 +116,14 @@ ms.locfileid: "10898216"
 > [!TIP]
 > Чтобы возобновить обычный просмотр, не забудьте вернуть параметры прокси-сервера на устройстве с Android после отключения от компьютера для разработки.  
 
-<!--  -->  
+<!--  
+  
 
 
-
-<!-- image links -->  
-
-[ImageAddRule]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png "Рисунок 1: Добавление правила переадресации портов"  
-[ImagePortForwardingStatus]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png "Рисунок 2: состояние переадресации порта"  
-
+-->  
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Начало работы с удаленными отладкой устройств с Android"  
+[RemoteDebuggingGettingStarted]: ./index.md "Начало работы с удаленными отладочными устройствами Android | Документы Microsoft"  
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Прокси-сервер отладчика Чарльз"  
 

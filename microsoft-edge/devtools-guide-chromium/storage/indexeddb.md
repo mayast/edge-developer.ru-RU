@@ -2,16 +2,16 @@
 title: Просмотр и изменение IndexedDBных данных с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 4eca78dcd92048d75f8488fddc7b210da68690df
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 890e20f65c3b70193a38783f3c9ca5d879d5ac48
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612090"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983788"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,18 +41,18 @@ ms.locfileid: "10612090"
 
 1.  Перейдите на вкладку **приложение** , чтобы открыть панель **приложения** .  Обычно область **манифеста** открывается по умолчанию.  
     
-    > ##### Рис. 1  
-    > Область «манифест»  
-    > ![Область «манифест»][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Область « **Манифест** »  
+    :::image-end:::  
+    
 1.  Разверните меню **IndexedDB** , чтобы узнать, какие базы данных доступны.  
     
-    > ##### Рисунок 2  
-    > Меню **IndexedDB**  
-    > ![Меню IndexedDB][ImageIndexedDBMenu]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Меню IndexedDB" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+       Меню **IndexedDB**  
+    :::image-end:::  
     
-    *   ![Значок базы данных ][ImageDatabaseIcon] `notes - https://mdn.github.io` представляет базу данных, где `notes` — это имя базы данных, а `https://mdn.github.io` также источник, который получает доступ к базе данных.  
-    *   ![Значок "хранилище объектов" ][ImageObjectStoreIcon] `notes` — это хранилище объектов.  
+    *   \ ( ![ Значок базы данных ][ImageDatabaseIcon] \) `notes - https://mdn.github.io` представляет базу данных, где `notes` — это имя базы данных, а `https://mdn.github.io` также источник, который получает доступ к базе данных.  
+    *   \ ( ![ Значок хранилища объектов ][ImageObjectStoreIcon] \) `notes` — это хранилище объектов.  
     *   **заголовок** и **текст** — это [индексы][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -60,41 +60,41 @@ ms.locfileid: "10612090"
     
 1.  Выберите базу данных, чтобы увидеть источник и номер версии.  
     
-    > ##### Рисунок3  
-    > База данных **Notes**  
-    > ![База данных Notes][ImageIndexedDBDatabase]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="База данных Notes" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+       База данных **Notes**  
+    :::image-end:::  
     
 1.  Выберите хранилище объектов для просмотра пар "ключ-значение".  
     
     > [!NOTE]
     > Данные IndexedDB не обновляются в режиме реального времени.  Смотрите раздел [Обновление данных IndexedDB](#refresh-indexeddb-data).  
     
-    > ##### Рисунок4  
-    > Хранилище объектов " **заметки** "  
-    > ![Хранилище объектов "Заметки"][ImageIndexedDBObjectStore]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Хранилище объектов "Заметки"" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+       Хранилище объектов " **заметки** "  
+    :::image-end:::  
+    
     *   **Всего элементов** — общее количество пар "ключ-значение" в хранилище объектов.  
     *   **Значение ключевого генератора** — это следующий доступный ключ.  Это поле отображается только при использовании [генераторов ключей][MDNBasicConceptsKeyGenerator].  
-
+    
 1.  Выберите ячейку в столбце **значение** , чтобы развернуть это значение.  
     
-    > ##### Рисунок 5  
-    > Просмотр значения IndexedDB  
-    > ![Просмотр значения IndexedDB][ImageIndexedBDValue]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Просмотр значения IndexedDB" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+       Просмотр значения **IndexedDB**  
+    :::image-end:::  
     
-1.  Выберите индекс (например, **заголовок** или **текст** ) на [рисунке 6](#figure-6), чтобы отсортировать хранилище объектов согласно значениям этого индекса.  
+1.  Выберите индекс (например, **заголовок** или **текст** ) на приведенном ниже рисунке, чтобы отсортировать хранилище объектов согласно значениям этого индекса.  
    
-    > ##### Рисунок6  
-    > Хранилище объектов, отсортированное в алфавитном порядке по ключу **заголовка**  
-    > ![Сортировка хранилища объектов по индексу][ImageIndexedDBIndex]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Сортировка хранилища объектов по индексу" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+       Сортировка хранилища объектов по индексу  
+    :::image-end:::  
+    
 ## Обновление данных IndexedDB   
 
-Значения IndexedDB на панели **приложения** не обновляются в режиме реального времени.  Выберите **Обновить** ![ Обновление ][ImageReloadIcon] при просмотре хранилища объектов, чтобы обновить данные, или просмотрите базу данных и нажмите **обновить базу данных** , чтобы обновить все данные.  
+Значения IndexedDB на панели **приложения** не обновляются в режиме реального времени.  Выберите команду **Обновить** \ ( ![ обновить ][ImageReloadIcon] \) при просмотре хранилища объектов, чтобы обновить данные, или просмотрите базу данных и нажмите **обновить базу данных** , чтобы обновить все данные.  
 
-> ##### Рисунок7  
-> Просмотр базы данных  
-> ![Просмотр базы данных][ImageIndexedDBDatabase2]  
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Просмотр базы данных" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+   Просмотр базы данных  
+:::image-end:::  
 
 ## Изменить данные IndexedDB   
 
@@ -104,9 +104,9 @@ IndexedDB ключи и значения не подлежат редактир�
 
 [Фрагменты][DevtoolsJavascriptSnippets] — это способ хранения и выполнения блоков кода JavaScript в DevTools.  При выполнении фрагмента на **консоль**выписывается результат.  Вы можете использовать сниппет для выполнения кода JavaScript, чтобы изменить базу данных IndexedDB.  
 
-> ##### Рисунок8  
-> Использование фрагмента для взаимодействия с IndexedDB  
-> ![Использование фрагмента для взаимодействия с IndexedDB][ImageIndexedDBSnippet]  
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Использование фрагмента для взаимодействия с IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+   Использование фрагмента для взаимодействия с IndexedDB  
+:::image-end:::  
 
 ## Удаление данных IndexedDB   
 
@@ -115,76 +115,63 @@ IndexedDB ключи и значения не подлежат редактир�
 1.  [Просмотр хранилища объектов IndexedDB](#view-indexeddb-data).  
 1.  Выберите пару "ключ-значение", которую вы хотите удалить.  DevTools выделит ее, чтобы показать, что она выбрана.  
     
-    > ##### Рисунок9  
-    > Выбор пары "ключ-значение" для ее удаления  
-    > ![Выбор пары "ключ-значение" для ее удаления][ImageIndexedDBKeyValuePair]  
-
-1.  Нажмите клавишу `Delete` или выберите команду **Удалить выбранное** ![ Удаление ][ImageDeleteIcon] .  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Выберите пару "ключ-значение", чтобы удалить ее" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+       Выберите пару "ключ-значение", чтобы удалить ее  
+    :::image-end:::  
     
-    > ##### Рисунок 10  
-    > Как выглядит хранилище объектов после удаления пары "ключ-значение"  
-    > ![Как выглядит хранилище объектов после удаления пары "ключ-значение"][ImageIndexedDBKeyValuePairDeleted]  
-
+1.  Нажмите клавишу `Delete` или нажмите кнопку **Удалить выделенные** \ ( ![ Удалить выбранные \ ][ImageDeleteIcon] ).  
+    
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Как выглядит хранилище объектов после удаления пары "ключ-значение"" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+       Как выглядит хранилище объектов после удаления пары "ключ-значение"  
+    :::image-end:::  
+    
 ### Удаление всех пар "ключ-значение" в хранилище объектов   
 
 1.  [Просмотр хранилища объектов IndexedDB](#view-indexeddb-data).  
     
-    > ##### Рисунок11  
-    > Просмотр хранилища объектов  
-    > ![Просмотр хранилища объектов][ImageIndexedDBObjectStore]  
-
-1.  Выберите **Очистить хранилище объектов** ![ Очистить хранилище объектов ][ImageClearIcon] .  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Просмотр хранилища объектов" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+       Просмотр хранилища объектов  
+    :::image-end:::  
+    
+1.  Выберите **Очистить хранилище объектов** \ ( ![ Очистить хранилище объектов ][ImageClearIcon] ).  
+    
 ### Удаление базы данных IndexedDB   
 
 1.  [Просмотрите базу данных IndexedDB](#view-indexeddb-data) , которую вы хотите удалить.  
 1.  Выберите команду **Удалить базу данных**.  
     
-    > ##### Рисунок12  
-    > Кнопка " **Удалить базу данных** "  
-    > ![Кнопка "удалить базу данных"][ImageIndexedDBDatabase]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Кнопка "удалить базу данных"" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+       Кнопка " **Удалить базу данных** "  
+    :::image-end:::  
+    
 ### Удаление всех IndexedDB хранилища   
 
 1.  Открытие области **очистки хранилища** .  
-
 1.  Убедитесь, что флажок **IndexedDB** установлен.  
-
 1.  Нажмите кнопку **Очистить данные сайта**.  
     
-    > ##### Рисунок13  
-    > Область **очистки** области "Очистка хранилища ![ "][ImageIndexedDBClearStorage]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Область "Очистка хранилища"" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+       Область " **Очистка хранилища** "  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDatabaseIcon]: /microsoft-edge/devtools-guide-chromium/media/database-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: /microsoft-edge/devtools-guide-chromium/media/object-store-icon.msft.png  
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Рисунок 1: область манифеста"  
-[ImageIndexedDBMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb.msft.png "Рисунок 2: меню IndexedDB"  
-[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db.msft.png "Рисунок 3: база данных notes_db"  
-[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png "Рисунок 4: notes_osое хранилище объектов"  
-[ImageIndexedBDValue]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png "Рисунок 5: Просмотр значения IndexedDB"  
-[ImageIndexedDBIndex]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png "Рисунок 6: Сортировка хранилища объектов по индексу"  
-[ImageIndexedDBDatabase2]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png "Рисунок 7: Просмотр базы данных"  
-[ImageIndexedDBSnippet]: /microsoft-edge/devtools-guide-chromium/media/storage-sources-snippets-indexeddb-output.msft.png "Рисунок 8: использование фрагмента для взаимодействия с IndexedDB"  
-[ImageIndexedDBKeyValuePair]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png "Рис. 9: выбор пары "ключ-значение" для ее удаления"  
-[ImageIndexedDBKeyValuePairDeleted]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png "Рисунок 10: внешний вид хранилища объектов после удаления пары "ключ-значение""  
-[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png "Рисунок 11: просмотр хранилища объектов"  
-[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png "Рисунок 12: кнопка "удалить базу данных""  
-[ImageIndexedDBClearStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png "Рисунок 13: область очистки хранилища"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDatabaseIcon]: ../media/database-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
+[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
-[DevtoolsJavascriptSnippets]: /microsoft-edge/devtools-guide-chromium/javascript/snippets "Выполнение фрагментов кода JavaScript на любой странице с Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Выполнение фрагментов кода JavaScript на любой странице с Microsoft Edge DevTools | Документы Microsoft"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770-DevTools: Show IFRAME IndexedDB databases-Chromium-Monorail"  
 

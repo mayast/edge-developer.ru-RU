@@ -2,16 +2,16 @@
 title: Запись моментальных снимков кучи
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: e6f64b219bc2b28d01780c28cc605d56a07cb491
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611680"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985459"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -43,17 +43,17 @@ ms.locfileid: "10611680"
 
 На панели **память** выберите команду **сделать снимок**, а затем нажмите кнопку **начать**.  Вы также можете нажать клавиши `Ctrl` + `E` \ (Windows \) или `Cmd` + `E` \ (macOS \).  
 
-> ##### Рис. 1  
-> Выбор типа профилирования  
-> ![Выбор типа профилирования][ImageProfilingType]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Выбор типа профилирования" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+   Выбор типа профилирования  
+:::image-end:::  
 
 **Моментальные снимки** первоначально хранятся в памяти процесса обработчика.  При необходимости снимки переносятся в DevTools по запросу, если щелкнуть значок снимка, чтобы просмотреть его.  
 
 После того как вы загрузили моментальный снимок в DevTools и проанализируете его, появится число под заголовком снимка, в котором будет показан [Общий размер достижимых объектов JavaScript][DevtoolsMemoryProblems101ObjectSizes].  
 
-> ##### Рисунок 2  
-> Общий размер достижимых объектов  
-> ![Общий размер достижимых объектов][ImageTotalSize]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Общий размер достижимых объектов" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+   Общий размер достижимых объектов  
+:::image-end:::  
 
 > [!NOTE]
 > В снимки включаются только достижимые объекты.  Кроме того, создание моментального снимка всегда начинается со сборки мусора.  
@@ -62,9 +62,9 @@ ms.locfileid: "10611680"
 
 Нажмите кнопку **Очистить все профили** , чтобы удалить снимки \ (как из DevTools, так и из памяти, связанной с процессом рендеринга \).  
 
-> ##### Рисунок3  
-> Удаление снимков  
-> ![Удаление снимков][ImageRemoveSnapshots]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Удаление снимков" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+   Удаление снимков  
+:::image-end:::  
 
 Закрытие окна DevTools не приводит к удалению профилей из памяти, связанной с процессом рендеринга.  При повторном открытии DevTools все ранее созданные моментальные снимки снова появляются в списке снимков.  
 
@@ -85,9 +85,9 @@ ms.locfileid: "10611680"
 
 Для переключения между представлениями Используйте селектор в верхней части представления.  
 
-> ##### Рисунок4  
-> Переключатель выбора представлений  
-> ![Переключатель выбора представлений][ImageSwitchViews]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Переключатель выбора представлений" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+   Переключатель выбора представлений  
+:::image-end:::  
 
 > [!NOTE]
 > Не все свойства хранятся в куче JavaScript.  Свойства, реализованные с помощью методов доступа, которые выполняют машинный код, не фиксируются.  Кроме того, не записываются значения, не являющиеся строками, например числа.  
@@ -96,9 +96,9 @@ ms.locfileid: "10611680"
 
 Изначально в представлении сводки открывается моментальный снимок, в котором отображаются итоговые объекты, которые могут быть развернуты для отображения экземпляров.  
 
-> ##### Рисунок 5  
-> Представление сводки  
-> ![Представление сводки][ImageSummaryView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Представление сводки" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+   Представление сводки  
+:::image-end:::  
 
 Элементы верхнего уровня — строки "Итого".  
 
@@ -117,9 +117,9 @@ ms.locfileid: "10611680"
 
 **Что в профилировщике кучи соотносятся различные элементы конструктора \ (Group \)?**  
 
-> ##### Рисунок6  
-> Группы конструкторов  
-> ![Группы конструкторов][ImageConstructorGroups]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Группы конструкторов" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+   Группы конструкторов  
+:::image-end:::  
 
 | Элемент Конструктор \ (группировка) | Описание |  
 |:--- |:--- |  
@@ -140,12 +140,12 @@ ms.locfileid: "10611680"
 1.  Выполнение операции \ (взаимодействие с страницей в некоторых условиях, когда вы считаете, что она вызывает утечку).  
 1.  Выполните обратную операцию, чтобы (выполнить обратное взаимодействие и повторить ее несколько раз).  
 1.  Сделайте второй снимок кучи и измените его представление на **Сравнение**, сравнив его с **снимком 1**.  
-
+    
 В представлении **Сравнение** отображается разница между двумя снимками.  При развертывании элемента общего типа отображаются добавленные и удаленные экземпляры объекта.  
 
-> ##### Рисунок7  
-> Представление "Сравнение"  
-> ![Представление "Сравнение"][ImageComparisonView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Представление "Сравнение"" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+   Представление " **Сравнение** "  
+:::image-end:::  
 
 <!--todo: add HeapProfilingComparison section when available  -->  
 
@@ -159,9 +159,9 @@ ms.locfileid: "10611680"
 | **Корни GC** | Фактические корни GC, используемые сборкой мусора ВМ.  Корни GC состоят из встроенных карт объектов, таблиц символов, стеков потоков виртуальной машины, кэшей компиляций, областей обработки и глобальных дескрипторов.  |  
 | **Собственные объекты** | Объекты браузера "отправили" на виртуальной машине JavaScript \ (JavaScript VM \), чтобы разрешить автоматизацию, например узлы DOM, правила CSS.  |  
 
-> ##### Рисунок8  
-> Представление "вложение"  
-> ![Представление "вложение"][ImageContainmentView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Представление "вложение"" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+   Представление " **вложение** "  
+:::image-end:::  
 
 <!--todo: add heap profiling containment section when available  -->  
 
@@ -178,7 +178,7 @@ ms.locfileid: "10611680"
 > }
 > ```  
 > 
-> В этом примере используются именованные функции.  
+> Во фрагменте followingcode используются именованные функции.  
 > 
 > ```javascript
 > function createLargeClosure() {
@@ -191,9 +191,9 @@ ms.locfileid: "10611680"
 > ```  
 > 
 > <!--  
-> > ##### old Figure 9  
-> > Name functions to distinguish between closures  
-> > ![Name functions to distinguish between closures][ImageDomLeaks]  
+> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures" lightbox="../media/memory-problems-domleaks.msft.png":::
+>    Name functions to distinguish between closures  
+> :::image-end:::  
 > -->  
 > 
 > > [!NOTE]
@@ -240,9 +240,9 @@ leafRef = null;
 
 Функция `#leaf` хранит ссылку на подходящую родительскую структуру \ (ParentNode \) и рекурсивно `#tree` дополнить, так что только в том случае, если leafRef является nullified — это всего лишь дерево с `#tree` кандидатом на сборку мусора.  
 
-> ##### Рисунок9  
-> Поддерево DOM  
-> ! [Поддеревья DOM] [ImageTreeGc]  
+:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Поддерево DOM" lightbox="../media/memory-problems-tree-gc.msft.png":::
+   Поддерево DOM  
+:::image-end:::  
 
 > [!NOTE]
 > Примеры: попробуйте этот пример [утечки узла DOM][GlitchDevtoolsMemoryExample06] , чтобы понять, где она может быть потеряна и как ее найти.  Кроме того, вы можете просмотреть этот пример [утечек DOM больше, чем ожидалось][GlitchDevtoolsMemoryExample09].  
@@ -256,27 +256,16 @@ leafRef = null;
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageProfilingType]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png "Рисунок 1: Выбор типа профилирования"  
-[ImageTotalSize]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png "Рисунок 2: общий размер достижимых объектов"  
-[ImageRemoveSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png "Рисунок 3: удаление моментальных снимков"  
-[ImageSwitchViews]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png "Рисунок 4: переключение режима выбора представлений"  
-[ImageSummaryView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png "Рисунок 5: представление "Сводка""  
-[ImageConstructorGroups]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png "Рисунок 6: группы конструкторов"  
-[ImageComparisonView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png "Рисунок 7: сравнительный режим"  
-[ImageContainmentView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png "Рисунок 8: режим вложения"  
-<!--[ImageDomLeaks]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-domleaks.msft.png "old Figure 9: Name functions to distinguish between closures"  -->  
-[ImageTreeGc]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Memory-Problems-Tree-GC.MSFT.png "Рисунок 9: поддерево DOM"  
+-->  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblems101ObjectSizes]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#object-sizes "Размеры объектов — терминология с памятью"  
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#objects-retaining-tree "Объекты, которые сохраняют терминологию в структуре памяти"  
+[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Размеры объектов — терминология с памятью | Документы Microsoft"  
+[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Объекты, в которых хранятся терминология в дереве-память | Документы Microsoft"  
 
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->  
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->  
@@ -284,12 +273,12 @@ leafRef = null;
 <!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->  
 <!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->  
 
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "Example-03. HTML — Microsoft EDGE (Chromium) DevTools | Цепь"  
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "Example-06. HTML — Microsoft EDGE (Chromium) DevTools | Цепь"  
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "Example-07. HTML — Microsoft EDGE (Chromium) DevTools | Цепь"  
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "Example-08. HTML — Microsoft EDGE (Chromium) DevTools | Цепь"  
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "Example-09. HTML — Microsoft EDGE (Chromium) DevTools | Цепь"  
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "Example-10. HTML — Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html-Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html-Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html-Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html-Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html-Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html-Microsoft EDGE (Chromium) DevTools | Цепь"  
 
 [GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "память | Закончен"  
 

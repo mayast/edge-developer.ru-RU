@@ -2,16 +2,16 @@
 title: Анализ производительности среды выполнения
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 7705428dba2ca368eb8f61b13bb96901756b081f
-ms.sourcegitcommit: 0342d99bf8d3212068890bab0e1e960afa507c02
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 5f1a4125cfea1c582a76469ae7c9cd1ca75f0b00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611866"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984934"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -44,7 +44,7 @@ ms.locfileid: "10611866"
 *   Не переусложняйте CSS.  Используйте меньший CSS, чтобы сделать селекторы CSS простыми.  
 *   Старайтесь не использовать разметку максимально возможной.  Выберите CSS, для которого не запущен макет.  
 *   Рисование может занимать больше времени, чем любые другие действия рендеринга.  Посмотрите, как узкие места закрашивания закраски.  
-
+    
 ## JavaScript  
 
 Вычисления JavaScript, особенно те, которые вызывают сложные визуальные изменения, могут привести к снижению производительности приложения.  Не разрешать неправильное или долгое выполнение JavaScript, мешая взаимодействию с пользователем.  
@@ -90,15 +90,15 @@ ms.locfileid: "10611866"
 
 Щелкните событие, `Recalculate Style` чтобы просмотреть дополнительные сведения о нем в области **сведений** .  Если изменение стиля занимает много времени, это снижение производительности.  Если вычисления стиля влияют на большое количество элементов, это еще одна область с комнатой для улучшения.  
 
-> ##### Рис. 1  
-> Длинный стиль пересчета  
-> ![Длинный стиль пересчета][ImageLongRecalculateStyle]
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Длинный стиль пересчета" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   Длинный стиль пересчета  
+:::image-end:::  
 
 Чтобы уменьшить влияние событий, `Recalculate Style` сделайте следующее:  
 
 *   Используйте [триггеры CSS][CssTriggers] , чтобы выяснить, какие свойства CSS активируют макет, Paint и Composite.  Эти свойства имеют наихудшее влияние на производительность отрисовки.  
 *   Переключиться на свойства с меньшим влиянием.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
-
+    
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
 ### Стиль: проблемы  
@@ -137,11 +137,11 @@ ms.locfileid: "10611866"
 
 Область **производительности** определяет, когда страница вызывает принудительно синхронные макеты.  Эти `Layout` события помечены красными отрезками.  
 
-> ##### Рисунок 2  
-> Принудительно синхронный макет  
-> ![Принудительно синхронный макет][ImageForcedSynchronousLayout]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Принудительно синхронный макет" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+   Принудительно синхронный макет  
+:::image-end:::  
 
-"Макет Thrashing" — это повторение принудительно синхронно заданных условий макета.  Это происходит, когда JavaScript пишет и считывает из DOM многократно, что приводит к пересчету макета в браузере.  Чтобы определить макет Thrashing, найдите шаблон с несколькими принудительно синхронными предупреждениями макета.  Смотрите [Рисунок 2](#figure-2).  
+"Макет Thrashing" — это повторение принудительно синхронно заданных условий макета.  Это происходит, когда JavaScript пишет и считывает из DOM многократно, что приводит к пересчету макета в браузере.  Чтобы определить макет Thrashing, найдите шаблон с несколькими принудительно синхронными предупреждениями макета.  Просмотреть предыдущий рисунок.  
 
 ### Макет: проблемы  
 
@@ -167,9 +167,9 @@ ms.locfileid: "10611866"
 Хотите узнать, как долго рисуются и как часто происходит рисование?  Установите флажок [включить дополнительные возможности инструментирования Paint][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] на панели **производительности** и сделайте запись.  Если большая часть времени отрисовки потратила на рисование, у вас возникли проблемы с рисованием.  
 
 <!--
-> ##### Old Figure 3  
-> Long paint times in timeline recording  
-> ![Long paint times in timeline recording][ImageLongPaintTimes]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+   Long paint times in timeline recording  
+:::image-end:::  
 -->  
 
 <!--
@@ -189,29 +189,25 @@ Check out the **Rendering** panel for further configurations that are able to he
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageLongRecalculateStyle]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-performance-recalculate-style-summary.msft.png "Рисунок 1: длинный пересчет стиля"  
-[ImageForcedSynchronousLayout]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-recalculate-style-summary.msft.png "Рисунок 2: принудительно синхронный макет"  
-<!--[ImageLongPaintTimes]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
+-->  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Ускорение выполнения JavaScript"  
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Ускорение выполнения JavaScript | Документы Microsoft"  
 
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#enable-advanced-paint-instrumentation "Включение расширенного инструментария рисования — справочные материалы по анализу производительности"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Включение расширенного инструментария рисования — Справка по анализу производительности | Документы Microsoft"
 
-<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: /microsoft-edge/devtools-guide-chromium/rendering-tools/forced-synchronous-layouts "Diagnose Forced Synchronous Layouts"  -->  
+<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
 <!-- The Timeline Tool page is deprecated  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#make-a-recording "Make a recording - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#rendering-settings "Rendering settings - How to Use the Timeline Tool"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool.md#profile-painting "Profile painting - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: ../evaluate-performance/timeline-tool.md#make-a-recording "Make a recording - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: ../evaluate-performance/timeline-tool.md#rendering-settings "Rendering settings - How to Use the Timeline Tool | Microsoft Docs"  -->  
 
 <!--[WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing "Avoid Large, Complex Layouts, and Layout Thrashing"  -->  
 <!--[WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime]: /web/fundamentals/performance/rendering/optimize-javascript-execution "Optimize JavaScript Runtime"  -->  

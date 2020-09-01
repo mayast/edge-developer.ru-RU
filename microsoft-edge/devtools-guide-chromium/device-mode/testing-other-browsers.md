@@ -2,16 +2,16 @@
 title: Эмуляция и тестирование других браузеров
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 65ad10ff89d3e4c27abc97cea0eb18b15853dd2e
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: d5eb33ea4cd1224930e91898d2c711310202cfc0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607315"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984984"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -64,11 +64,11 @@ ms.locfileid: "10607315"
 
 ### Эмулятор Android  
 
-<!--
-> ##### Figure old 1  
-> Stock Browser in Android Emulator  
-> ![Stock Browser in Android Emulator][ImageAndroidEmulatorStockBrowser]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
+   Stock Browser in Android Emulator  
+:::image-end:::  
+-->  
 
 В настоящее время невозможно установить Microsoft EDGE на эмуляторе Android.  Однако вы можете использовать браузер Android, оболочку содержимого Chromium и Firefox для Android, который мы рассмотрим позже в этом руководстве.  Chromium Content Shell запускает тот же механизм отрисовки Chromium, что и Microsoft EDGE, но не имеет каких бы то ни было специальных возможностей браузера.  
 
@@ -77,13 +77,13 @@ ms.locfileid: "10607315"
 
 #### Оболочка содержимого Chromium на Android  
 
-<!--
-> ##### Figure old 2  
-> Android Emulator Content Shell  
-> ![Android Emulator Content Shell][ImageAndroidEmulatorContentShell]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+   Android Emulator Content Shell  
+:::image-end:::  
+-->  
 
-Чтобы установить оболочку содержимого Chromium для Android, оставьте симулятор запущенным и выполните в командной строке следующие команды:  
+Чтобы установить оболочку содержимого Chromium для Android, оставьте симулятор запущенным и выполните следующую команду:  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -95,17 +95,17 @@ chmod u+x ./chromium-android-installer/*.sh
 
 #### Firefox для Android  
 
-<!--
-> ##### Figure old 3  
-> Firefox Icon on Android Emulator  
-> ![Firefox Icon on Android Emulator][ImageAndroidEmulatorFirefoxBrowser]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+   Firefox Icon on Android Emulator  
+:::image-end:::  
+-->  
 
 Как и в оболочке содержимого Chromium, вы можете получить APK для установки Firefox на эмулятор.  
 
 [Скачайте правильный файл. apk][MozillaFirefoxDownload].  
 
-Отсюда вы можете установить файл на открытый эмулятор или подключенное устройство с Android с помощью следующей команды:  
+Чтобы установить файл на открытый эмулятор или подключенное устройство с Android, выполните следующую команду:  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
@@ -122,9 +122,9 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 
 ###  Microsoft EDGE (EdgeHTML)  
 
-> ##### Рис. 1  
-> Современная виртуальная машина IE  
-> ! [Современная виртуальная машина IE] [ImageVMModernIe]  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Современная виртуальная машина IE" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   Современная виртуальная машина IE  
+:::image-end:::  
 
 Microsoft Edge \ (EdgeHTML \) виртуальные машины \ (VMS \) предоставляют доступ к разным версиям EdgeHTML и IE на компьютере с помощью VirtualBox \ (или VMWare).  Выберите [виртуальную машину на странице загрузки][MicrosoftDeveloperEdgeVms].  
 
@@ -136,22 +136,17 @@ Microsoft Edge \ (EdgeHTML \) виртуальные машины \ (VMS \) пр
 *   [SauceLabs (коммерческая версия)][SauceLabs] позволяет выполнять модульные тесты внутри эмулятора, который может быть весьма полезен для создания сценариев на сайте и просмотра видеозаписи после этого на различных устройствах.  Вы также можете выполнять тестирование на сайте вручную.  
 *   [Устройства в любом месте (в коммерческой версии)][AppExperience] не используют Эмуляторы, но реальные устройства, которыми вы можете управлять удаленно.  Это очень полезно в том случае, если вам нужно воспроизвести проблему на конкретном устройстве и не удается просмотреть ошибку с помощью любого из параметров предыдущих руководств.  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-<!--[ImageAndroidEmulatorStockBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  -->  
-<!--[ImageAndroidEmulatorContentShell]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  -->  
-<!--[ImageAndroidEmulatorFirefoxBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  -->  
-[ImageVMModernIe]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Device-Mode-Modern-IE-VM.MSFT.png "Рисунок 1: современное IE VM"  
+-->  
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) — эмуляция"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) — эмуляция | Документы Microsoft"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Эмуляция браузеров, размеров экрана и точек GPS"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Эмуляция браузеров, размеров экрана и точек доступа к GPS | Документы Microsoft"  
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Скачать виртуальные машины"  
 

@@ -2,16 +2,16 @@
 title: Переопределение строки агента пользователя из Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 376e1550d0dc31f3b47b6badd6970076a8c13f91
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607309"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984998"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,27 +39,24 @@ ms.locfileid: "10607309"
 
 1.  `Control` + `Shift` + `P` Чтобы открыть меню команд, нажмите клавиши \ (Windows \) или `Command` + `Shift` + `P` \ ( **Command Menu**macOS \).  
     
-    > ##### Рис. 1  
-    > Меню команд  
-    > ![Меню команд][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       **Меню команд**  
+    :::image-end:::  
     
 1.  Введите и `network conditions` выберите **Показывать условия сети**, а затем `Enter` откройте вкладку **условия сети** .  
 1.  В разделе **Агент пользователя** отключите флажок **выбрать автоматически** .  
     
-    > ##### Рисунок 2  
-    > Отключение **Select автоматически**  
-    > ![Отключение Select автоматически][ImageUserAgentDisableSelectAutomatically]  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Отключить функцию "выбрать автоматически"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Отключить функцию " **выбрать автоматически** "  
+    :::image-end:::  
     
 1.  Выберите строку агента пользователя из списка или введите собственную настраиваемую строку.  
+    
+<!--  
+## Feedback   
 
-<!--## Feedback   -->  
 
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Рисунок 1: меню команд"  
-[ImageUserAgentDisableSelectAutomatically]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png "Рисунок 2: отключение Select автоматически"  
+-->  
 
 <!-- links -->  
 

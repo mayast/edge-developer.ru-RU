@@ -2,16 +2,16 @@
 title: Просмотр ресурсов страницы с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 0977d0a9132c19742c3337f9dc0c3e1240508a3d
-ms.sourcegitcommit: 4c24edbd1c591914cb4109511534851570a614cb
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 4265841501bdd74d2976ecab1c2a07f1fb215535
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611919"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984461"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,31 +45,31 @@ ms.locfileid: "10611919"
 
 1.  Нажмите клавиши `Control` + `P` \ (Windows \) или `Command` + `P` \ (macOS \).  Откроется диалоговое окно **Открытие файла** .  
     
-    > ##### Рис. 1  
-    > Диалоговое окно « **Открытие файла** »  
-    > ![Диалоговое окно «Открытие файла»][ImageOpenFile]  
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Диалоговое окно «Открытие файла»" lightbox="../media/resources-command-menu-empty.msft.png":::
+       Диалоговое окно « **Открытие файла** »  
+    :::image-end:::  
     
 1.  Выберите файл из раскрывающегося списка или введите имя файла и нажмите `Enter` один раз, чтобы выделить его в поле "Автозаполнение".  
     
-    > ##### Рисунок 2  
-    > Ввод имени файла в диалоговом окне " **Открытие файла** "  
-    > ![Ввод имени файла в диалоговом окне "Открытие файла"][ImageFileSearch]  
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Введите имя файла в диалоговом окне "Открытие файла"" lightbox="../media/resources-command-menu-file-search.msft.png":::
+       Введите имя файла в диалоговом окне " **Открытие файла** "  
+    :::image-end:::  
     
 ### Открытие ресурсов на панели "сеть"   
 
 Ознакомьтесь [с подробными сведениями о ресурсе][DevtoolsNetworkInspectDetailsResource].  
 
-> ##### Рисунок3  
-> Проверка ресурса на панели "сеть"  
-> ![Проверка ресурса на панели "сеть"][ImageNetworkResponse]  
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Проверка ресурса на панели "сеть"" lightbox="../media/resources-network-response.msft.png":::
+   Проверка ресурса на панели " **сеть** "  
+:::image-end:::  
 
 ### Показать ресурсы на панели "сеть" с других панелей   
 
 В разделе [Обзор ресурсов](#browse-resources) ниже показано, как просматривать ресурсы из различных частей пользовательского интерфейса DevTools.  Если вы когда-нибудь хотите просмотреть ресурс на панели **сеть** , щелкните ресурс правой кнопкой мыши и выберите пункт **Показать на панели "сеть**".  
 
-> ##### Рисунок4  
-> Параметр « **Показать в сети»**  
-> ![Панель "Показать в сети"][ImageRevealNetwork]  
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Панель "Показать в сети"" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+   **Панель "Показать в сети"**  
+:::image-end:::  
 
 ## Просмотр ресурсов   
 
@@ -77,9 +77,9 @@ ms.locfileid: "10611919"
 
 Просмотр [журнала активности сети][DevtoolsNetworkLogActivity].  
 
-> ##### Рисунок 5  
-> Ресурсы страницы в журнале сети  
-> ![Ресурсы страницы в журнале сети][ImageNetworkLog]  
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Ресурсы страницы в журнале сети" lightbox="../media/resources-network-resources.msft.png":::
+   Ресурсы страницы в журнале **сети**  
+:::image-end:::  
 
 ### Просмотр по каталогу   
 
@@ -88,11 +88,11 @@ ms.locfileid: "10611919"
 1.  Перейдите на вкладку **источники** , чтобы открыть панель " **источники** ".  
 1.  Щелкните вкладку **страницы** , чтобы показать ресурсы страницы.  Откроется область **страница** .  
     
-    > ##### Рисунок6  
-    > Область **страницы**  
-    > ![Область страницы][ImagePage]  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Область страницы" lightbox="../media/resources-sources-page-empty.msft.png":::
+       Область **страницы**  
+    :::image-end:::  
     
-    Ниже приведено разделение элементов, не являющихся очевидными, на [рисунке 6](#figure-6).  
+    Ниже приведено разделение неочевидных элементов на предыдущем рисунке.  
     
     | Элемент страницы | Описание |  
     |:--- |:--- |  
@@ -104,9 +104,9 @@ ms.locfileid: "10611919"
     
 1.  Щелкните ресурс, чтобы просмотреть его в **редакторе**.  
     
-    > ##### Рисунок7  
-    > Просмотр файла в **редакторе**  
-    > ![Просмотр файла в редакторе][ImageSourcesView]  
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Просмотр файла в редакторе" lightbox="../media/resources-sources-page-resource.msft.png":::
+       Просмотр файла в **редакторе**  
+    :::image-end:::  
     
 ### Просмотр по имени файла   
 
@@ -115,15 +115,15 @@ ms.locfileid: "10611919"
 1.  Открытие области **страницы** .  Просмотр [по каталогу](#browse-by-directory).  
 1.  Нажмите кнопку **Дополнительные параметры** `...` и отключите функцию **Группировка по папкам**.  
     
-    > ##### Рисунок8  
-    > Параметр **Группировка по папке**  
-    > ![Параметр Группировка по папке][ImageGroupByFolder]  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Параметр Группировка по папке" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       Параметр **Группировка по папке**  
+    :::image-end:::  
     
     Ресурсы упорядочены по типам файлов.  В каждом типе файла ресурсы упорядочены по алфавиту.  
     
-    > ##### Рисунок9  
-    > Область **страницы** после отключения **группировки по папке**  
-    > ![Область страницы после отключения группировки по папке][ImageFileNames]  
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Область страницы после отключения группировки по папке" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       Область **страницы** после отключения **группировки по папке**  
+    :::image-end:::  
     
 ### Просмотр по типу файла   
 
@@ -131,57 +131,43 @@ ms.locfileid: "10611919"
 
 1.  Откройте вкладку **приложение** .  Откроется панель **приложения** .  По умолчанию область **манифеста** обычно открывается в первую очередь.  
     
-    > ##### Рисунок 10  
-    > Панель **приложения**  
-    > ![Панель приложения][ImageApplication]  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Панель приложения" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+       Панель **приложения**  
+    :::image-end:::  
     
 1.  Прокрутите страницу вниз до области **рамок** .  
     
-    > ##### Рисунок11  
-    > Область **рамок**  
-    > ![Область рамок][ImageFrames]  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Область рамок" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+       Область **рамок**  
+    :::image-end:::  
     
 1.  Разверните разделы, в которых вы заинтересованы.  
 1.  Щелкните ресурс, чтобы просмотреть его.  
     
-    > ##### Рисунок12  
-    > Просмотр ресурса на панели « **приложение** »  
-    > ![Просмотр ресурса на панели «приложение»][ImageApplicationView]  
-
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Просмотр ресурса на панели «приложение»" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+       Просмотр ресурса на панели « **приложение** »  
+    :::image-end:::  
+    
 #### Просмотр файлов по типу на панели «Сеть»   
 
 Просмотреть [Фильтр по типу ресурсов][DevtoolsNetworkFilterByResourceType].  
 
-> ##### Рисунок13  
-> Фильтрация для CSS в сетевом журнале  
-> ![Фильтрация для CSS в сетевом журнале][ImageCSS]  
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Фильтр для CSS в сетевом журнале" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+   Фильтр для CSS в **сетевом** журнале  
+:::image-end:::  
 
-<!--  -->  
+<!--  
+  
 
 
-
-<!-- image links -->  
-
-[ImageOpenFile]: /microsoft-edge/devtools-guide-chromium/media/resources-command-menu-empty.msft.png "Рисунок 1: диалоговое окно "открыть файл""  
-[ImageFileSearch]: /microsoft-edge/devtools-guide-chromium/media/resources-command-menu-file-search.msft.png "Рисунок 2: ввод имени файла в диалоговом окне "Открытие файла""  
-[ImageNetworkResponse]: /microsoft-edge/devtools-guide-chromium/media/resources-network-response.msft.png "Рисунок 3: Проверка ресурса на панели * * Network * *"  
-[ImageRevealNetwork]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-reveal-in-network-panel.msft.png "Рисунок 4: Показать на панели "сеть""  
-[ImageNetworkLog]: /microsoft-edge/devtools-guide-chromium/media/resources-network-resources.msft.png "Рисунок 5: ресурсы страницы в журнале сети"  
-[ImagePage]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-empty.msft.png "Рисунок 6: область страницы"  
-[ImageSourcesView]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-resource.msft.png "Рис. 7: Просмотр файла в редакторе"  
-[ImageGroupByFolder]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-resource-group-by-folder.msft.png "Рисунок 8: параметр группировка по папке"  
-[ImageFileNames]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png "Рисунок 9: область страницы после отключения группы по папке"  
-[ImageApplication]: /microsoft-edge/devtools-guide-chromium/media/resources-application-mainfest-airhorner.msft.png "Рисунок 10: панель приложения"  
-[ImageFrames]: /microsoft-edge/devtools-guide-chromium/media/resources-application-mainfest-airhorner-frames-expanded.msft.png "Рисунок 11: область рамок"  
-[ImageApplicationView]: /microsoft-edge/devtools-guide-chromium/media/resources-application-mainfest-airhorner-expanded-resources.msft.png "Рисунок 12: Просмотр ресурса на панели «приложение»"  
-[ImageCSS]: /microsoft-edge/devtools-guide-chromium/media/resources-network-resources-filter-css.msft.png "Рисунок 13: Фильтрация CSS в сетевом журнале"  
+-->  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
-[DevtoolsNetworkFilterByResourceType]: /microsoft-edge/devtools-guide-chromium/network/index#filter-by-resource-type "Фильтрация по типу ресурсов: Проверка активности сети в Microsoft Edge DevTools"  
-[DevtoolsNetworkInspectDetailsResource]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Просмотрите сведения об активности в сети для проверки ресурсов в Microsoft Edge DevTools"  
-[DevtoolsNetworkLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Регистрация активности сети — проверка активности сети в Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Фильтрация по типу ресурсов: Проверка активности сети в Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Просмотрите сведения об активности в сети для проверки ресурсов в Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Регистрация активности сети — проверка активности сети в Microsoft Edge DevTools | Документы Microsoft"  
 
 [MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<> IFRAME: элемент встроенной рамки | MDN"  
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Знакомство с веб-разработкой | MDN"  
