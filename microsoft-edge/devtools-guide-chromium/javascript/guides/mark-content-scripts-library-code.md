@@ -1,17 +1,17 @@
 ---
-title: Помечайте сценарии содержимого как код библиотеки
+title: Пометка сценария содержимого как кода библиотеки
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: fe34d8f2fb656283b1821441162b93d47d51d24e
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 410a74b906e3b1ff7ff98b6d1791e057e4fa89c4
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581791"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982807"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,26 +37,24 @@ ms.locfileid: "10581791"
 
 При использовании панели **Sources (источники** данных) Microsoft Edge DevTools для [перехода по коду][DevToolsJavascriptStepThroughCode], иногда наведите указатель мыши на код, который вы не знаете.  Возможно, вы приостановили код для одного из установленных расширений Microsoft Edge.  Выполните указанные ниже действия, чтобы не приостанавливаться на коде расширения.  
 
-1.  Откройте DevTools, выберите пункт **Настройка DevTools и управление** `...` **параметрами**.  Вы также можете открыть **Параметры** , нажав клавишу `F1` .  
+1.  Откройте DevTools, выберите пункт **Настройка DevTools и** `...` нажмите кнопку **Параметры**.  Вы также можете открыть **Параметры** , нажав клавишу `F1` .  
 
 1.  Откройте вкладку **код библиотеки** , которая открывает раздел **код библиотеки Framework** **параметров**.  
 1.  Установите флажок **помечать сценарии содержимого как библиотечный код** .  
     
-    > ##### Рис. 1  
-    > Флажок " **помечать сценарии содержимого как библиотеку кода** "  
-    > ![Флажок "помечать сценарии содержимого как библиотеку кода"][ImageMarkContentScriptsLibraryCode]  
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Флажок "помечать сценарии содержимого как библиотеку кода"" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       Флажок " **помечать сценарии содержимого как библиотеку кода** "  
+    :::image-end:::  
+    
+<!--  
+## Feedback   
 
-<!--## Feedback   -->  
 
-
-
-<!-- image links -->  
-
-[ImageMarkContentScriptsLibraryCode]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png "Рисунок 1: флажок "помечать сценарии содержимого как библиотеку кода""  
+-->  
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Шаг 4: пошаговое руководство по написанию кода — начало работы с отладкой JavaScript в Microsoft Edge DevTools"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Шаг 4: пошаговое руководство по написанию кода — начало работы с отладкой JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

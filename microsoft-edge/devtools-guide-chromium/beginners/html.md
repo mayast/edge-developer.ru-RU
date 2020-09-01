@@ -2,16 +2,16 @@
 title: 'DevTools для начинающих: Приступая к работе с HTML и моделью DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 50dfd8595c270a2532f55b71307b42c3636bba3c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882732"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983078"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -35,11 +35,11 @@ ms.locfileid: "10882732"
 
 ## Цели   
 
-Вы собираетесь познакомиться с веб-разработкой, завершив создание собственного веб-сайта.  Завершив все учебные курсы в серии *DevTools для начинающих* , ваш готовый веб-сайт будет выглядеть так, как **показано на рисунке 1**.  
+Вы собираетесь познакомиться с веб-разработкой, завершив создание собственного веб-сайта.  По мере того, как вы закончите все учебные курсы в серии *DevTools для начинающих* , ваш готовый сайт будет выглядеть так, как показано на следующем рисунке.  
 
-> ##### Рис. 1  
-> Готовый сайт  
-> ![Готовый сайт][ImageHtmlFinished]  
+:::image type="complex" source="../media/beginners-html-finished.msft.png" alt-text="Готовый сайт" lightbox="../media/beginners-html-finished.msft.png":::
+   Готовый сайт  
+:::image-end:::  
 
 В конце этого учебника вы узнаете:  
 
@@ -49,7 +49,7 @@ ms.locfileid: "10882732"
 
 У тебя также есть реальный веб-сайт!  Вы можете использовать этот сайт для размещения резюме или блога.  
 
-## Предварительные условия   
+## Что вам понадобится   
 
 Прежде чем приступить к работе с учебником, выполните следующие требования:  
 
@@ -61,28 +61,29 @@ ms.locfileid: "10882732"
 Вы собираетесь создать сайт в редакторе кода на веб-сайте с именем "сбой".  
 
 1.  Откройте [Исходный код][GlitchAlluringShockIndex].  Эта вкладка будет называться **вкладкой "редактор"** в рамках этого учебника.  
-    > ##### Рисунок 2  
-    > Вкладка "редактор"  
-    > ![Вкладка "редактор"][ImageHtmlSetup1]  
-
+    
+    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Вкладка "редактор"" lightbox="../media/beginners-html-setup1.msft.png":::
+       Вкладка "редактор"  
+    :::image-end:::  
+    
 1.  Щелкните **alluring-удар**.  В левом верхнем углу откроется меню "Параметры проекта".  
     
-    > #### Рисунок3  
-    > Меню "Параметры проекта"  
-    > ![Меню "Параметры проекта"][ImageHtmlSetup2]  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Меню "Параметры проекта"" lightbox="../media/beginners-html-setup2.msft.png":::
+       Меню "Параметры проекта"  
+    :::image-end:::  
     
 1.  Щелкните **Remix Project (проект**).  При возникновении недостаточной версии создается копия проекта, которую можно редактировать и случайным образом создает новое имя для проекта.  Содержимое будет таким же, как и раньше.  
     
-    > ##### Рисунок4  
-    > Смешанный проект  
-    > ![Смешанный проект][ImageHtmlSetup3]  
+    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Смешанный проект" lightbox="../media/beginners-html-setup3.msft.png":::
+       Смешанный проект  
+    :::image-end:::  
     
 1.  Если вы планируете выполнить следующий учебник в этой серии, нажмите **Вход** и войдите в систему, чтобы завершить работу с учетной записью GitHub или Facebook.  Если вы не входите в свою учетную запись, то после закрытия вкладки Правка вы потеряли возможность изменить этот проект.  
 1.  Нажмите кнопку **Показать** и выберите **в новом окне**.  Откроется новая вкладка, на которой отображается активная страница.  Эта вкладка будет называться на **вкладке динамический** в рамках этого учебника.  
     
-    > ##### Рисунок 5  
-    > Вкладка "динамический"  
-    > ![Вкладка "динамический"][ImageHtmlSetup4]  
+    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Вкладка "динамический"" lightbox="../media/beginners-html-setup4.msft.png":::
+       Вкладка "динамический"  
+    :::image-end:::  
     
 ## Добавление содержимого   
 
@@ -90,77 +91,92 @@ ms.locfileid: "10882732"
 
 1.  На **вкладке "редактор"** замените `<!-- You're "About Me" will go here.  -->` на `<h1>About Me</h1>` .  
     
-    ```html
-    ...
-        ...
-        <body>
-            <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-            </main>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Рисунок6  
-    > На вкладке "редактор" выделена новая программа  
-    > ![На вкладке "редактор" выделена новая программа][ImageHtmlAdd1]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+              <body>
+                  <p> Your site!</p>
+                  <main>
+                      <h1>About Me</h1>
+                  </main>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="На вкладке "редактор" выделена новая программа" lightbox="../media/beginners-html-add1.msft.png":::
+             На вкладке "редактор" выделена новая программа  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
 1.  Просмотрите изменения на **вкладке "живые"**.  Текст `About Me` будет отображаться на странице.  Он больше, чем оставшаяся часть текста, так как `<h1>` элемент представляет заголовок раздела.  В веб-браузере стили заголовков автоматически заменяются на более крупные размеры шрифта.  
     
-    > ##### Рисунок7  
-    > Новый заголовок отображается на вкладке "живые"  
-    > ![Новый заголовок отображается на вкладке "живые"][ImageHtmlAdd2]  
+    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Новый заголовок отображается на вкладке "живые"" lightbox="../media/beginners-html-add2.msft.png":::
+       Новый заголовок отображается на вкладке "живые"  
+    :::image-end:::  
     
 1.  Вернувшись на **вкладку Редактор**, вставьте `<p>I am learning HTML.  Recent accomplishments:</p>` строку под тем местом, где они просто размещены `<h1>About Me</h1>` .  
     
-    ```html
-    ...
-        ...
-        <body>
-            <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-                <p>I am learning web development.  Recent accomplishments:</p>
-            </main>
-            ...
-        ...
-    ...
-    ```  
-
-    > ##### Рисунок8  
-    > На вкладке "редактор" выделена новая программа  
-    > ![На вкладке "редактор" выделена новая программа][ImageHtmlAdd3]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+              <body>
+                  <p> Your site!</p>
+                  <main>
+                      <h1>About Me</h1>
+                      <p>I am learning web development.  Recent accomplishments:</p>
+                  </main>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="На вкладке "редактор" выделена новая программа" lightbox="../media/beginners-html-add3.msft.png":::
+             На вкладке "редактор" выделена новая программа  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
 1.  Просмотрите изменения на **вкладке "живые"**.  
 1.  Вернитесь на **вкладку Редактор**и добавьте список ваших достижений.  
     
-    ```html
-    ...
-        ...
-            ...
-            <p>I am learning web development.  Recent accomplishments:</p>
-            <ul>
-                <li>Learned how to set up my code in Glitch.</li>
-                <li>Added content to my HTML.</li>
-                <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
-                <li>TODO: Learn the difference between HTML and the DOM.</li>
-            </ul>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Рисунок9  
-    > На вкладке "редактор" выделена новая программа  
-    > ![На вкладке "редактор" выделена новая программа][ImageHtmlAdd4]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+                  ...
+                  <p>I am learning web development.  Recent accomplishments:</p>
+                  <ul>
+                      <li>Learned how to set up my code in Glitch.</li>
+                      <li>Added content to my HTML.</li>
+                      <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
+                      <li>TODO: Learn the difference between HTML and the DOM.</li>
+                  </ul>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="На вкладке "редактор" выделена новая программа" lightbox="../media/beginners-html-add4.msft.png":::
+             На вкладке "редактор" выделена новая программа  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Опять же, вернитесь на **вкладку динамический** , чтобы убедиться, что новое содержимое отображается правильно.  
     
-    > ##### Рисунок 10  
-    > Новый список отображается на вкладке "живые"  
-    > ![Новый список отображается на вкладке "живые"][ImageHtmlAdd5]  
+    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="Новый список отображается на вкладке "живые"" lightbox="../media/beginners-html-add5.msft.png":::
+       Новый список отображается на вкладке "живые"  
+    :::image-end:::  
     
 ## Поэкспериментировать с изменениями содержимого в Microsoft Edge DevTools   
 
@@ -172,27 +188,27 @@ ms.locfileid: "10882732"
 
 1.  Перейдите на **вкладку динамический**.  В нижней части страницы отображается текст `A new element!?!` .  
     
-    > ###### Рисунок11  
-    > В нижней части страницы `A new element!?!` можно видеть текст  
-    > ![В нижней части страницы текст — это новый элемент!?! может отображаться][ImageHtmlDom1]  
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="В нижней части страницы текст — это новый элемент!?! может отображаться" lightbox="../media/beginners-html-dom1.msft.png":::
+       В нижней части страницы текст — это новый элемент!?! может отображаться  
+    :::image-end:::  
     
 1.  Вернитесь на **вкладку Редактор** и попробуйте найти этот текст в `index.html` .  Это не так!  
     
-    > ##### Рисунок12  
-    > Текст загадкы `A new element!?!` не удается найти в `index.html`  
-    > ![Текст "Загадка" — новый элемент!?! не удается найти в index.html][ImageHtmlDom2]  
+    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Текст "Загадка" — новый элемент!?! не удается найти в index.html" lightbox="../media/beginners-html-dom2.msft.png":::
+       Текст загадкы `A new element!?!` не удается найти в `index.html`  
+    :::image-end:::  
     
 1.  Вернитесь на **вкладку динамический**, щелкните правой кнопкой мыши `A new element!?!` и выберите команду **проверить**.  
     
-    > ##### Рисунок13  
-    > Проверка текста  
-    > ![Проверка текста][ImageHtmlDom3]  
+    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Проверка текста" lightbox="../media/beginners-html-dom3.msft.png":::
+       Проверка текста  
+    :::image-end:::  
     
     DevTools открывается вместе со страницей.  `<div>A new element!?!</div>` выделяется синим цветом.  Несмотря на то, что структура в DevTools выглядит так же, как и у вашего HTML-кода, она действительно является **деревом DOM**.  
     
-    > ##### Рисунок14  
-    > DevTools открывается вместе со страницей  
-    > ![DevTools открывается вместе со страницей][ImageHtmlDom4]  
+    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools открывается вместе со страницей" lightbox="../media/beginners-html-dom4.msft.png":::
+       DevTools открывается вместе со страницей  
+    :::image-end:::  
     
 При загрузке страницы браузер использует HTML для создания *начального* содержимого страницы.  Модель DOM представляет *Текущее* содержимое страницы, которое может изменяться с течением времени.  Содержимое Mysterious `<div>A new element!?!</div>` будет добавлено на страницу из `<script src="new.js"></script>` -за тега в нижней части HTML.  Этот тег вызывает выполнение кода JavaScript.  Более подробно о JavaScript можно узнать в более подробном учебнике, но теперь его можно рассматривать как язык программирования, который может изменить содержимое страницы.  В этом конкретном случае код JavaScript добавляется `<div>A new element!?!</div>` на страницу.  Причина в том, что этот загадкный текст отображается на живой странице, но не в HTML.  
 
@@ -201,35 +217,40 @@ ms.locfileid: "10882732"
 Если вы хотите быстро поэкспериментировать с изменениями содержимого, не выходя из вкладки Live, попробуйте DevTools.  
 
 1.  В DevTools щелкните правой кнопкой мыши `Your site!` и выберите команду **изменить в HTML**.  
-
-    > ##### Рисунок15  
-    > Редактирование узла в формате HTML  
-    > ![Редактирование узла в формате HTML][ImageHtmlEdit1]  
+    
+    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Редактирование узла в формате HTML" lightbox="../media/beginners-html-edit1.msft.png":::
+       Редактирование узла в формате HTML  
+    :::image-end:::  
     
 1.  Замените `<p>Your site!</p>` на код ниже.  
     
-    ```html
-    ...
-        ...
-            ...
-            <header>
-                <p><b>Welcome to my site!</b></p>
-                <button>Download my resume</button>
-            </header>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Рисунок16  
-    > Редактирование узла в формате HTML  
-    > ![Редактирование узла в формате HTML][ImageHtmlEdit2]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+                  ...
+                  <header>
+                      <p><b>Welcome to my site!</b></p>
+                      <button>Download my resume</button>
+                  </header>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Редактирование узла в формате HTML" lightbox="../media/beginners-html-edit2.msft.png":::
+             Редактирование узла в формате HTML  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Нажмите клавиши `Control` + `Enter` \ (Windows \) или `Command` + `Enter` \ (macOS \), чтобы сохранить изменения, или щелкните любое место за пределами поля.  Изменения автоматически отображаются в режиме реального времени на странице.  Текст `Your site!` заменен новым содержимым.  
     
-    > ##### Рисунок17  
-    > Новое содержимое немедленно появляется на странице  
-    > ![Новое содержимое немедленно появляется на странице][ImageHtmlEdit3]  
+    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="Новое содержимое немедленно появляется на странице" lightbox="../media/beginners-html-edit3.msft.png":::
+       Новое содержимое немедленно появляется на странице  
+    :::image-end:::  
     
 Этот рабочий процесс хорошо подходит только для экспериментов с изменениями контента.  Если вы перезагрузите страницу или закроете ее, ваши изменения будут потеряны.  Если вы используете этот рабочий процесс и хотите сохранить изменения, вам потребуется вручную скопировать эти изменения на HTML-код.  В следующей паре разделов показаны другие способы изменения контента из дерева DOM.  
 
@@ -239,20 +260,26 @@ ms.locfileid: "10882732"
 
 1.  Найдите `<nav>` узел в **дереве DOM** DevTools.  
     
-    > ##### Рис. 18  
-    > Узел навигации выделяется синим цветом в DevTools  
-    > ![Узел навигации выделяется синим цветом в DevTools][ImageHtmlReorder1]  
+    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="Узел навигации выделяется синим цветом в DevTools" lightbox="../media/beginners-html-reorder1.msft.png":::
+       Узел навигации выделяется синим цветом в DevTools  
+    :::image-end:::  
     
 1.  Перетащите `<nav>` узел в верхнюю части экрана, чтобы он был первым дочерним `<body>` узлом узла.  
-    > ##### На рисунке 19  
-    > Перетаскивание узла навигации в начало  
-    > ![Перетаскивание узла навигации в начало][ImageHtmlReorder2]  
     
-    `<nav>`Теперь узел отображается в верхней части страницы.  
-    
-    > ##### Рис. 20  
-    > Узел навигации находится в верхней части страницы  
-    > ![Узел навигации находится в верхней части страницы][ImageHtmlReorder3]  
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Перетаскивание узла навигации в начало" lightbox="../media/beginners-html-reorder2.msft.png":::
+             Перетаскивание узла навигации в начало  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          `<nav>`Теперь узел отображается в верхней части страницы.  
+          
+          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Узел навигации находится в верхней части страницы" lightbox="../media/beginners-html-reorder3.msft.png":::
+             Узел навигации находится в верхней части страницы  
+          :::image-end:::  
+       :::column-end:::
+   :::row-end:::  
     
 ### Удаление узла   
 
@@ -260,15 +287,15 @@ ms.locfileid: "10882732"
 
 1.  В **дереве DOM**щелкните `<div>A new element!?!</div>` .  DevTools выделяет узел синим цветом.  
     
-    > ##### Рисунок 21  
-    > Выбор узла для удаления  
-    > ![Выбор узла для удаления][ImageHtmlDelete1]  
+    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Выбор узла для удаления" lightbox="../media/beginners-html-delete1.msft.png":::
+       Выбор узла для удаления  
+    :::image-end:::  
     
 1.  Нажмите клавишу `Delete` на клавиатуре.  `<div>A new element!?!</div>`Узел удаляется из дерева DOM.  
     
-    > ##### Рис. 22  
-    > Узел удален  
-    > ![Узел удален][ImageHtmlDelete2]  
+    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="Узел удален" lightbox="../media/beginners-html-delete2.msft.png":::
+       Узел удален  
+    :::image-end:::  
     
 ## Копирование изменений   
 
@@ -276,10 +303,10 @@ ms.locfileid: "10882732"
 
 1.  Обновите **вкладку Live**.  Изменения, внесенные в дереве DOM, исчезнут.  В частности, текст `Your site!` возвращается в верхней части страницы, а текст `A new element!?!` возвращается в нижнюю часть.  
     
-    > ##### Рис. 23  
-    > Внесенные вами изменения исчезли  
-    > ![Внесенные вами изменения исчезли][ImageHtmlCopy1]  
-
+    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Внесенные вами изменения исчезли" lightbox="../media/beginners-html-copy1.msft.png":::
+       Внесенные вами изменения исчезли  
+    :::image-end:::  
+    
 1.  Скопируйте приведенный ниже код.  
     
     ```html
@@ -313,12 +340,12 @@ ms.locfileid: "10882732"
         </body>
     </html>
     ```  
-      
+    
 1.  Вернитесь на **вкладку Редактор** и замените содержимое `index.html` файла кодом, который вы только что скопировали.  
     
-    > ##### Рисунок 24  
-    > Как `index.html` должен выглядеть файл  
-    > ![Как должен выглядеть файл index.html][ImageHtmlCopy2]  
+    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="Как должен выглядеть файл index.html" lightbox="../media/beginners-html-copy2.msft.png":::
+       Как `index.html` должен выглядеть файл  
+    :::image-end:::  
     
 ## Дальнейшие действия   
 
@@ -326,36 +353,9 @@ ms.locfileid: "10882732"
 *   Ознакомьтесь [с введением в DOM][MDNIntroductionDom] , чтобы узнать больше об DOM.  
 *   Ознакомьтесь с курсом, например [Знакомство с веб-разработкой][CourseraIntroductionToWebDevelopment] , чтобы получить больше возможностей для веб-разработки.  
 
-<!--- image links --->  
-
-[ImageHtmlFinished]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-finished.msft.png "Рисунок 1: готовый веб-сайт"  
-[ImageHtmlSetup1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup1.msft.png "Рисунок 2: вкладка "редактор""  
-[ImageHtmlSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup2.msft.png "Рисунок 3: меню "Параметры проекта""  
-[ImageHtmlSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup3.msft.png "Рисунок 4: смешанный проект"  
-[ImageHtmlSetup4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup4.msft.png "Рисунок 5. Вкладка "динамический""  
-[ImageHtmlAdd1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add1.msft.png "Рисунок 6: на вкладке "редактор" выделена новая программа"  
-[ImageHtmlAdd2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add2.msft.png "Рисунок 7: новый заголовок отображается на вкладке "живые""  
-[ImageHtmlAdd3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add3.msft.png "Рисунок 8: на вкладке "редактор" выделена новая программа"  
-[ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "На рисунке 9: на вкладке "редактор" выделена кнопка "создать код"."  
-[ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Рисунок 10: новый список отображается на вкладке "живые""  
-[ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "На рисунке 11: в нижней части страницы текст — это новый элемент!?! может отображаться"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Рисунок 12: текст "Загадка" — новый элемент!?! не удается найти в index.html"  
-[ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Рисунок 13: проверка текста"  
-[ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Рисунок 14: DevTools открывается вместе со страницей"  
-[ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Рисунок 15: Редактирование узла в формате HTML"  
-[ImageHtmlEdit2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit2.msft.png "Рисунок 16: Редактирование узла в формате HTML"  
-[ImageHtmlEdit3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit3.msft.png "Рисунок 17: новое содержимое немедленно появляется на странице"  
-[ImageHtmlReorder1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder1.msft.png "Рисунок 18: узел навигации выделен синим цветом в DevTools"  
-[ImageHtmlReorder2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder2.msft.png "На рисунке 19 показано, как перетащить узел навигации в начало."  
-[ImageHtmlReorder3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder3.msft.png "Рисунок 20: узел навигации находится в верхней части страницы."  
-[ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Рисунок 21: Выбор узла для удаления"  
-[ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Рис. 22: узел удален"  
-[ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Рис. 23: изменения, внесенные вами, исчезли"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Рисунок 24: способ просмотра файла index.html"  
-
 <!--- links --->  
 
-[DevToolsBeginnersCss]: /microsoft-edge/devtools-guide-chromium/beginners/css "DevTools для начинающих: Приступая к работе с CSS"  
+[DevToolsBeginnersCss]: ./css.md "DevTools для начинающих: Приступая к работе с CSS | Документы Microsoft"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Предварительная оценка Microsoft Edge"  
 

@@ -2,16 +2,16 @@
 title: Изменение положения DevTools Microsoft EDGE (Отстыковка, закрепить в нижней части, закрепить слева)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: f0be6243d4780e4ed49428ebaf2b6b37d9da323e
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601348"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981945"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,59 +37,63 @@ ms.locfileid: "10601348"
 
 По умолчанию DevTools закрепляется справа от окна просмотра.  Вы также можете закрепить нижнюю границу, закрепить слева или отстыковать DevTools в отдельном окне.  
 
-> ##### Рис. 1  
-> Закрепить слева  
-> ![Закрепить слева][ImageDockLeft]  
-
-> ##### Рисунок 2  
-> Закрепить в нижней части экрана  
-> ![Закрепить в нижней части экрана][ImageDockBottom]  
-
-> ##### Рисунок3  
-> Браузер в отдельном окне  
-> ![Браузер в отдельном окне][ImageUndockBrowser]  
-
-> ##### Рисунок4  
-> Незакрепленные DevTools в отдельном окне  
-> ![Незакрепленные DevTools в отдельном окне][ImageUndockDevTools]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Нажмите кнопку "закрепить на левой панели"" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Выбор `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Выберите пункт закрепить в нижней части экрана" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Выбор `Dock To Bottom`  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Браузер в отдельном окне" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Браузер в отдельном окне  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Незакрепленные DevTools в отдельном окне" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         Незакрепленные DevTools в отдельном окне  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Изменение положения в главном меню   
 
-1.  Нажмите кнопку **Настройка DevTools** `...` и выберите команду **открепить в отдельном окне** , а затем закрепите ![ ][ImageUndockIcon] **на нижней** панели ![ ][ImageBottomIcon] или **закрепите** влево ![ ][ImageLeftIcon] .  
+1.  Нажмите кнопку **настроить DevTools** \ ( `...` \) и выберите пункт **открепить в отдельном окне** \ (открепить к концу ![ ][ImageUndockIcon] ), **прикрепить к концу** \ ( ![ закрепить к низу) ][ImageBottomIcon] или **Закрепить слева** ( ![ ][ImageLeftIcon] Закрепить слева направо).  
     
-    > ##### Рисунок 5  
-    > Выбор пункта " **открепить в отдельном окне** "  
-    > ![Выбор пункта "Открепить в отдельном окне"][ImageUndockSettings]  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Выберите пункт открепить в отдельном окне" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Выберите пункт **открепить в отдельном окне**  
+    :::image-end:::  
     
 ## Изменение положения в меню команд   
 
 1.  [Открытие меню команд][DevtoolsCommandMenu].  
 1.  Выполните одну из указанных ниже `Dock To Bottom` команд. `Undock Into Separate Window`  В настоящее время нет команды для закрепления слева, но вы можете получить доступ к ней из [главного меню](#change-placement-from-the-main-menu).  
     
-    > ##### Рисунок6  
-    > Команда "отменить закрепление"  
-    > ![Команда "отменить закрепление"][ImageUndockCommand]  
-
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Команда "отменить закрепление"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Команда "отменить закрепление"  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
-[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
-[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
-
-[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Рисунок 1: закрепление влево"  
-[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Рисунок 2: закрепить в нижней части экрана"  
-[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Рисунок 3: браузер в отдельном окне"  
-[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Рисунок 4: незакрепленный DevTools в отдельном окне"  
-[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Рисунок 5: выбор пункта "Открепить в отдельном окне""  
-[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Рисунок 6: команда "Открепить""  
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Выполнение команд с помощью командного меню Microsoft Edge DevTools"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

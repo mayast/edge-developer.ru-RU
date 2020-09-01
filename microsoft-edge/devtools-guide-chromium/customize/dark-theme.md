@@ -2,16 +2,16 @@
 title: Включение темной темы в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 46a6d1aab30689a0d4b1f3fb20bf3521abd2017a
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601341"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981810"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,47 +37,42 @@ ms.locfileid: "10601341"
 
 Вы можете включить темную тему в меню " [Параметры](#set-up-dark-theme-from-settings) " или " [команды](#set-up-dark-theme-from-the-command-menu)".  
 
-> ##### Рис. 1  
-> Темная тема  
-> ![Темная тема][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Темная тема" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
+   Темная тема  
+:::image-end:::  
 
 ## Настройка темной темы из параметров   
 
 1.  Нажмите кнопку **Настройка DevTools** и `...` выберите пункт **Параметры**.  Вы также можете открыть **Параметры** , нажав клавишу `F1` .  
-
-> ##### Рисунок 2  
-> Параметры открытия  
-> ![Параметры открытия][ImageOpenSettings]  
+    
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Открытие "Параметров"" lightbox="../media/customize-options-settings.msft.png":::
+       Открыть **Параметры**  
+    :::image-end:::  
 
 1.  В области **Параметры** в разделе **внешний вид**щелкните раскрывающийся список **Тема** и выберите элемент **темно**.  
-
-> ##### Рисунок3  
-> Предпочтения  
-> ![Предпочтения][ImagePreferences]  
+    
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Предпочтения" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **Предпочтения**  
+    :::image-end:::  
 
 ## Настройка темной темы из меню команд   
 
-1.  [Открытие меню команд][CommandMenu].  
+1.  [Открытие меню команд][DevtoolsCommandMenu].  
 1.  Начните вводить текст `dark` , выберите команду " **темная тема** ", а затем нажмите, `Enter` чтобы выполнить команду.  
-
-> ##### Рисунок4  
-> Команда "темная тема"  
-> ![Команда "темная тема"][ImageDarkThemeCommand]  
-
+    
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Команда "темная тема"" lightbox="../media/customize-command-menu-dark.msft.png":::
+       Команда "темная тема"  
+    :::image-end:::  
+    
+<!--  
    
 
 
-
-<!-- image links -->  
-
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-console-dark-theme.msft.png "Рисунок 1: темная тема"  
-[ImageOpenSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-options-settings.msft.png "Рисунок 2: Открытие параметров"  
-[ImagePreferences]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences-appearance-theme-dark.msft.png "Рисунок 3: параметры"  
-[ImageDarkThemeCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-command-menu-dark.msft.png "Рисунок 4: команда "темная тема""  
+-->  
 
 <!-- links -->  
 
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Меню команд"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Меню команд | Документы Microsoft"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

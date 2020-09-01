@@ -2,16 +2,16 @@
 title: Контроль значений выражений JavaScript в режиме реального времени с помощью выражений в реальном масштабе
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: c388e44ca5507dd88ad9ad7b7ee985e658dfc569
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601742"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982240"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,11 +40,11 @@ ms.locfileid: "10601742"
 ## Создание выражения в реальном времени   
 
 1.  [Открытие консоли][DevToolsConsoleReferenceOpenConsole].  
-1.  Щелкните создать выражение для создания **динамического выражения** ![ ][ImageCreateLiveExpressionIcon] .  Появится текстовое поле " **выражение в реальном времени** ".  
+1.  Щелкните **создать выражение в реальном времени** \ ( ![ создать выражение в реальном времени ][ImageCreateLiveExpressionIcon] ).  Появится текстовое поле " **выражение в реальном времени** ".  
     
-    > ##### Рис. 1  
-    > Ввод `document.activeElement` текста в текстовое поле " **интерактивное выражение** "  
-    > ![Ввод данных Document. activeElement в текстовое поле "Интерактивное выражение"][ImageLiveExpressionTextbox]  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Ввод данных Document. activeElement в текстовое поле "Интерактивное выражение"" lightbox="../media/console-create-live-expression.msft.png":::
+       Ввод `document.activeElement` текста в текстовое поле " **интерактивное выражение** "  
+    :::image-end:::  
     
 1.  Введите `Control` + `Enter` \ (Windows \) или `Command` + `Enter` \ (macOS \), чтобы сохранить выражение, или щелкните любое место за пределами текстового поля **Live Expression** .  
 
@@ -56,13 +56,11 @@ ms.locfileid: "10601742"
 
 <!-- image links -->  
 
-[ImageCreateLiveExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpressionTextbox]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression.msft.png "Рисунок 1: ввод данных Document. activeElement в текстовое поле "Интерактивное выражение""  
+[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console "Открытие ссылки на консоль консоли"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Открытие ссылки на консоль консоли | Документы Microsoft"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

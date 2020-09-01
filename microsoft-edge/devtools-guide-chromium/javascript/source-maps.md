@@ -2,16 +2,16 @@
 title: Сопоставление предварительно обработанного кода с исходным кодом
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: b48c67584b3f3253ada99e32c5dabfdccb2fa4de
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581798"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981777"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -41,9 +41,9 @@ ms.locfileid: "10581798"
 ### Краткий обзор  
 
 *   С помощью карт исходного кода сопоставьте minified код с исходным кодом. После этого вы сможете прочитать и отладить скомпилированный код в исходном источнике.  
-*   Используйте только предварительные процессоры, которые могут создавать карты исходного кода.  
+*   Используйте только предварительные процессоры с возможностью создания карт исходного кода.  
 *   Убедитесь в том, что веб-сервер может служить исходными картами.  
-
+    
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
@@ -66,7 +66,7 @@ ms.locfileid: "10581798"
 *   Transpilers \ ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
 *   Компиляторы \ ([компилятор замыканий][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [DART][DartMain]\)  
 *   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)  
-
+    
 ## Карты исходного кода на панели «источники DevTools»  
 
 Карты исходного кода из предварительной обработки заставляют DevTools загрузить исходные файлы в дополнение к minified.  Затем вы можете использовать оригиналы для задания точек останова и пошагового кода.  В то же время Microsoft EDGE на самом деле выполняет minified код. Это дает вам иллюзию запуска сайта разработки в рабочей среде.  
@@ -75,11 +75,11 @@ ms.locfileid: "10581798"
 
 ### Включение карт исходного кода в параметрах  
 
-Исходные карты включены по умолчанию. <!--\(as of Microsoft Edge 39\)-->, но если вы хотите дважды проверить или включить их; Сначала откройте DevTools, нажмите кнопку **Настройка DevTools и** `...` выберите пункт **Параметры**.  В области **Параметры** в разделе **источники**установите флажок **включить сопоставления источников JavaScript**.  Вы также можете установить флажок **включить сопоставления источников CSS**.  
+Исходные карты включены по умолчанию. <!--\(as of Microsoft Edge 39\)-->, но если вы хотите дважды проверить или включить их; Сначала откройте DevTools, нажмите кнопку **Настройка и управление DevTools** \ ( `...` \) и выберите **Параметры**.  В области **Параметры** в разделе **источники**установите флажок **включить сопоставления источников JavaScript**.  Вы также можете установить флажок **включить сопоставления источников CSS**.  
 
-> ##### Рис. 1  
-> Включение карт исходного кода  
-> ![Включение карт исходного кода][ImageSourceMaps]  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Включение карт исходного кода" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   Включение карт исходного кода  
+:::image-end:::  
 
 ### Отладка с помощью карт исходного кода  
 
@@ -87,7 +87,7 @@ ms.locfileid: "10581798"
 
 1.  На консоли \ (ссылка на источник — это исходный файл, а не созданный).  
 1.  При пошаговом выполнении кода \ (ссылки в стеке вызовов должны открыть исходный исходный файл)  
-
+    
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
 
@@ -104,28 +104,25 @@ ms.locfileid: "10581798"
 Перейдите на следующую страницу.  
 
 *   [ролик][CssNinjaDemoSourceMapping]
-
+    
 Выполните указанные ниже действия.  
 
 1.  Откройте DevTools и перейдите на панель " **источники** ".  
-1.  Введите имя файла в поле **_код:_** input.  
+1.  Введите имя файла в поле **код:** input.  
 1.  Нажмите кнопку **Compile (компилировать** ).  
 1.  Появится предупреждение с вычисленной суммой из источника CoffeeScript.  
+    
+Если развернуть раздел **источники** , вы увидите новый файл с пользовательским именем, введенным ранее.  Если дважды щелкнуть для просмотра этого файла, он будет содержать скомпилированный код JavaScript для первоначального источника.  Однако в последней строке есть `// @sourceURL` Примечание, указывающее исходный исходный файл.  Это может помочь при отладке при работе с языковыми абстракциями.  
 
-Если развернуть раздел **_источники_** , вы увидите новый файл с пользовательским именем, введенным ранее.  Если дважды щелкнуть для просмотра этого файла, он будет содержать скомпилированный код JavaScript для первоначального источника.  Однако в последней строке есть `// @sourceURL` Примечание, указывающее исходный исходный файл.  Это может помочь при отладке при работе с языковыми абстракциями.  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Работа с sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Работа с sourceURL  
+:::image-end:::  
 
-> ##### Рисунок 2
-> Работа с sourceURL  
-> ![Работа с sourceURL][ImageCoffeeScript]  
-
-<!--## Feedback   -->  
-
+<!--  
+## Feedback   
 
 
-<!-- image links -->  
-
-[ImageSourceMaps]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png "Рисунок 1: включение карт исходного кода"  
-[ImageCoffeeScript]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-coffeeeeeeee.msft.png "Рисунок 2: работа с sourceURL"  
+-->  
 
 <!-- links -->  
 

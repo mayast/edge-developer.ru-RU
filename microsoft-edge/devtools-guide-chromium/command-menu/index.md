@@ -2,16 +2,16 @@
 title: Выполнение команд с помощью командного меню Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 748008b347a3498008748b9c3f9ecc1445c47f12
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 09adaadd6f62710b219911f69fbe39ba8edfb61a
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601749"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982559"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,46 +37,39 @@ ms.locfileid: "10601749"
 
 Меню команд предоставляет быстрый способ навигации по пользовательскому интерфейсу Microsoft Edge DevTools и выполнения стандартных задач, таких как [Отключение JavaScript][JavascriptDisable].  Возможно, вы знакомы с аналогичной функцией в коде Visual Studio, которая называется [палитрой команд][VisualStudioCodeUICommandPalette], которая была первоначальной для меню команд.  
 
-> ##### Рис. 1  
-> Отключение JavaScript с помощью меню команд  
-> ![Отключение JavaScript с помощью меню команд][ImageDisableJS]  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Отключение JavaScript с помощью меню команд" lightbox="../media/command-menu-run-command-java.msft.png":::
+   Отключение JavaScript с помощью меню команд  
+:::image-end:::  
 
 ## Открытие меню команд   
 
 Нажмите клавиши `Control` + `Shift` + `P` \ (Windows \) или `Command` + `Shift` + `P` \ (macOS \). Или нажмите кнопку **Настройка DevTools** `...` и выберите **команду выполнить**.  
 
-> ##### Рисунок 2  
-> Команда "выполнить"  
-> ![Команда "выполнить"][ImageRunCommand]  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Команда "выполнить"" lightbox="../media/command-menu-options-run-command.msft.png":::
+   Команда "выполнить"  
+:::image-end:::  
 
 ## Просмотр других доступных действий   
 
-Если вы используете рабочий процесс, описанный в разделе [Открыть меню команд](#open-the-command-menu), откроется меню команд с `>` символом, добавленным к текстовому полю меню команд.  
+Если вы используете рабочий процесс, описанный в разделе [Открыть меню команд](#open-the-command-menu), откроется меню команд с `>` символом, предварительно заданным в текстовом поле меню команды.  
 
-> ##### Рисунок3  
-> Символ команды  
-> ![Символ команды][ImageCommandCharacter]  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Символ команды" lightbox="../media/command-menu-run-command.msft.png":::
+   Символ команды  
+:::image-end:::  
 
 Удалите `>` символ и введите текст `?` , чтобы просмотреть другие действия, доступные в меню команд.  
 
-> ##### Рисунок4  
-> Другие доступные действия  
-> ![Другие доступные действия][ImageActions]  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Другие доступные действия" lightbox="../media/command-menu-help.msft.png":::
+   Другие доступные действия  
+:::image-end:::  
 
  
 
 
 
-<!-- image links -->  
-
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command-java.msft.png "Рисунок 1: использование командного меню для отключения JavaScript"  
-[ImageRunCommand]: /microsoft-edge/devtools-guide-chromium/media/command-menu-options-run-command.msft.png "Рисунок 2: команда "выполнить""  
-[ImageCommandCharacter]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command.msft.png "Рисунок 3: символ команды"  
-[ImageActions]: /microsoft-edge/devtools-guide-chromium/media/command-menu-help.msft.png "Рисунок 4: другие доступные действия"  
-
 <!-- links -->  
 
-[JavascriptDisable]: /microsoft-edge/devtools-guide-chromium/javascript/disable "Отключение JavaScript с помощью Microsoft Edge DevTools"  
+[JavascriptDisable]: ../javascript/disable.md "Отключение JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
 
 [VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Палитра команд — пользовательский интерфейс кода Visual Studio"  
 

@@ -2,16 +2,16 @@
 title: Переопределение географического положения с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 307064bedf992e528b6d79eed3a2ade3367830d4
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607442"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981833"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -43,25 +43,22 @@ ms.locfileid: "10607442"
 
 1.  `Control` + `Shift` + `P` Чтобы открыть меню команд, нажмите клавиши \ (Windows \) или `Command` + `Shift` + `P` \ ( **Command Menu**macOS \).  
     
-    > ##### Рис. 1  
-    > Меню команд  
-    > ![Меню команд][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       **Меню команд**  
+    :::image-end:::  
     
 1.  Введите текст `sensors` , установите флажок **Показать датчики**и нажмите клавишу `Enter` .  Вкладка **датчики** откроется в нижней части окна DevTools.  
 1.  В списке **географическое положение** выберите один из готовых городов `Tokyo` или выберите **другое расположение** , чтобы указать пользовательские координаты долготы и широты, или выберите пункт **расположение недоступно** , чтобы увидеть, как работает сайт, когда его расположение недоступно.  
     
-    > ##### Рисунок 2  
-    > Выбор `Tokyo` из списка **географического расположения**  
-    > ![Выбор в Токио из списка географического расположения][ImageGeolocationTokyo]  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Выберите Токио в списке "географическое положение"" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       Выберите в `Tokyo` списке " **географическое положение** "  
+    :::image-end:::  
     
-<!--## Feedback   
+<!--  
+## Feedback   
 
-  -->  
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Рисунок 1: меню команд"  
-[ImageGeolocationTokyo]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-geolocation-tokyo.msft.png "Рисунок 2: выбор в Токио из списка географического расположения"  
+  
+-->  
 
 <!-- links -->  
 

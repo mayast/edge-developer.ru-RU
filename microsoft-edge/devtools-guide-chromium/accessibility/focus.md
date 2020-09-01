@@ -1,17 +1,17 @@
 ---
-title: Отслеживание элемента, на который установлен фокус
+title: Отслеживание, какой элемент имеет фокус
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: a1bcb7e97357d1348b363ecd4842d1b6a78feb45
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581533"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981756"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,38 +31,36 @@ ms.locfileid: "10581533"
 
 
 
-# Отслеживание элемента, на который установлен фокус   
+# Отслеживание, какой элемент имеет фокус   
 
 
 
 Предположим, что вы тестируете специальные возможности навигации с помощью клавиатуры для страницы.  При переходе по странице с помощью `Tab` клавиши иногда теряется фокус, так как элемент, на который установлен фокус, скрыт.  Чтобы отследить фокусируемый элемент в DevTools, выполните указанные ниже действия.  
 
 1.  Открытие **консоли**.  
-1.  Щелкните создать выражение для создания **динамического выражения** ![ ][ImageCreateIcon] .  
-
-    > ##### Рис. 1  
-    > Создание **выражения в реальном времени**  
-    > ![Создание выражения в реальном времени][ImageLiveExpression]  
+1.  Щелкните **создать выражение в реальном времени** \ ( ![ создать выражение в реальном времени ][ImageCreateIcon] ).  
+    
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Создание выражения в реальном времени" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Создание выражения в реальном времени  
+    :::image-end:::  
     
 1.  Введите `document.activeElement`.
 1.  Щелкните за пределами пользовательского интерфейса **Live Expression** , чтобы сохранить его.
-
+    
 Значение, которое вы видите ниже, `document.activeElement` является результатом выражения.  
 Так как это выражение всегда представляет фокусируемый элемент, вы можете всегда следить за тем, какой элемент находится в фокусе.  
 
 *   Наведите указатель мыши на результат, чтобы выделиь фокусируемый элемент в окне просмотра.  
 *   Щелкните результат правой кнопкой мыши и выберите пункт **Показать на панели элементов** , чтобы отобразить элемент в дереве DOM на панели **элементы** .  
 *   Щелкните результат правой кнопкой мыши и выберите **Сохранить как глобальную переменную** , чтобы создать ссылку на переменную на узел, который вы можете использовать на **консоли**.  
-
+    
 <!--## Feedback   -->  
 
 
 
 <!-- image links -->  
 
-[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/accessibility-console-create-live-expression-empty.msft.png "Рисунок 1: создание выражения в реальном времени"  
+[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

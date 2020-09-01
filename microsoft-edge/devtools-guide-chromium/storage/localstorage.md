@@ -2,16 +2,16 @@
 title: Просмотр и изменение локального хранилища с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: f7e187662aec8231f2cc4e99baab1b4b8e2048ad
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 72aee823d3a3143ae7399c7057f3b606bd1078c3
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612013"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983529"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,102 +35,93 @@ ms.locfileid: "10612013"
 
 
 
-В этом руководстве описано, как использовать [Microsoft Edge DevTools][MicrosoftEdgeDevTools] для просмотра, изменения и удаления [`localStorage`][MDNWindowsLocalStorage] пар "ключ-значение".  
+В этом руководстве описано, как использовать [Microsoft Edge DevTools][MicrosoftEdgeDevTools] для просмотра, изменения и удаления пар ключ-значение [localStorage][MDNWindowsLocalStorage] .  
 
 ## Просмотр ключей и значений localStorage   
 
 1.  Перейдите на вкладку **приложение** , чтобы открыть панель **приложения** .  Область **манифеста** отображается по умолчанию.  
     
-    > ##### Рис. 1  
-    > Область «манифест»  
-    > ![Область «манифест»][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-manifest.msft.png":::
+       Область « **Манифест** »  
+    :::image-end:::  
+    
 1.  Разверните меню **Локальное хранилище** .  
     
-    > ##### Рисунок 2  
-    > В меню " **Локальное хранилище** " отображаются два домена: `https://business.bing.com` и `https://www.bing.com`  
-    > ![Меню «локальное хранилище»][ImageLocalStorageMenu]  
-
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Меню «локальное хранилище»" lightbox="../media/storage-application-local-storage.msft.png":::
+       Меню « **Локальное хранилище** »  
+    :::image-end:::  
+    
 1.  Выберите домен, чтобы просмотреть пары "ключ-значение".  
     
-    > ##### Рисунок3  
-    > `localStorage`Пары "ключ-значение" для `https://www.bing.com` домена  
-    > ![LocalStorage пары "ключ-значение" для https://www.bing.com домена][ImageLocalStorage]  
-
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="LocalStorage пары "ключ-значение" для https://www.bing.com домена" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+       `localStorage`Пары "ключ-значение" для `https://www.bing.com` домена  
+    :::image-end:::  
+    
 1.  Выделите строку таблицы, чтобы просмотреть ее значение в представлении под таблицей.  
     
-    > ##### Рисунок4  
-    > Просмотр значения `eventLogQueue_Online` ключа  
-    > ![Просмотр значения ключа eventLogQueue_Online][ImageLocalStorageViewer]  
-
-## Создание новой `localStorage` пары "ключ-значение"   
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Просмотр значения ключа eventLogQueue_Online" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+       Просмотр значения `eventLogQueue_Online` ключа  
+    :::image-end:::  
+    
+## Создание новой пары "ключ-значение" для localStorage   
 
 1.  [Просмотр `localStorage` пар "ключ-значение" домена](#view-localstorage-keys-and-values).  
 1.  Дважды щелкните пустую часть таблицы.  DevTools создает новую строку и нафокусирует указатель мыши на **ключевом** столбце.  
     
-    > ##### Рисунок 5  
-    > Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение.  
-    > ![Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение.][ImageLocalStorageCreate]  
-
-## Изменение `localStorage` ключей и значений   
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение." lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+       Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение.  
+    :::image-end:::  
+    
+## Изменение ключей и значений localStorage   
 
 1.  [Просмотр `localStorage` пар "ключ-значение" домена](#view-localstorage-keys-and-values).  
 1.  Дважды щелкните ячейку в столбце " **раздел** " или " **значение** ", чтобы изменить этот раздел или значение.  
     
-    > ##### Рисунок6  
-    > Редактирование `localStorage` ключа  
-    > ![Редактирование ключа localStorage][ImageLocalStorageEdit]  
-
-## Удаление `localStorage` пар "ключ-значение"   
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Изменение ключа localStorage" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+       Изменение `localStorage` ключа  
+    :::image-end:::  
+    
+## Удаление пар ключ-значение localStorage   
 
 1.  [Просмотр `localStorage` пар "ключ-значение" домена](#view-localstorage-keys-and-values).  
 1.  Выберите пару "ключ-значение", которую вы хотите удалить.  DevTools выделит ее синей, чтобы показать, что она выбрана.  
-
-1.  Нажмите клавишу `Delete` или выберите команду **Удалить выбранное** ![ Удаление ][ImageDeleteIcon] .  
-
+1.  Нажмите клавишу `Delete` или нажмите кнопку **Удалить выделенные** \ ( ![ Удалить выбранные \ ][ImageDeleteIcon] ).  
+    
 ## Удаление всех `localStorage` пар "ключ-значение" для домена   
 
 1.  [Просмотр `localStorage` пар "ключ-значение" домена](#view-localstorage-keys-and-values).  
-
-1.  Нажмите **Очистить все** ![ Очистить все ][ImageClearIcon] .  
-
-## Взаимодействие с `localStorage` консолью   
+1.  Нажмите **Очистить все** \ ( ![ Очистить все ][ImageClearIcon] \).  
+    
+## Взаимодействие с localStorage с помощью консоли   
 
 Так как вы можете запускать JavaScript на **консоли**, а так как у **консоли** есть доступ к контекстам JavaScript страницы, взаимодействие с `localStorage` **консолью**возможно.  
 
 1.  Используйте меню "контексты **JavaScript** " для изменения контекста JavaScript на **консоли** , если требуется получить доступ к `localStorage` парам "ключ-значение" домена, отличного от отображаемой страницы.  
     
-    > ##### Рисунок7  
-    > Изменение контекста JavaScript **консоли**  
-    > ![Изменение контекста JavaScript консоли][ImageJSContext]  
-
+    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Изменение контекста JavaScript консоли" lightbox="../media/storage-console-local-storage.msft.png":::
+       Изменение контекста JavaScript консоли  
+    :::image-end:::  
+    
 1.  Выполняйте `localStorage` выражения на консоли так же, как и в JavaScript.  
     
-    > ##### Рисунок8  
-    > Взаимодействие с `localStorage` **консолью**  
-    > ![Взаимодействие с localStorage из консоли][ImageLocalStorageConsole]  
-
+    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Взаимодействие с localStorage с помощью консоли" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+       Взаимодействие с `localStorage` **консолью**  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Рисунок 1: область манифеста"  
-[ImageLocalStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage.msft.png "Рисунок 2: меню "локальное хранилище""  
-[ImageLocalStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value.msft.png "Рисунок 3: localStorage пары "ключ-значение" для https://www.bing.com домена"  
-[ImageLocalStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value-selected.msft.png "Рисунок 4: Просмотр значения ключа eventLogQueue_Online"  
-[ImageLocalStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-new-key-value.msft.png "Рис. 5: пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение."  
-[ImageLocalStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-edit-key-value.msft.png "Рисунок 6: Редактирование ключа localStorage"  
-[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage.msft.png "Рис. 7: изменение контекста JavaScript консоли"  
-[ImageLocalStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage-interaction.msft.png "Рисунок 8: взаимодействие с localStorage из консоли"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window. localStorage | MDN"  
 

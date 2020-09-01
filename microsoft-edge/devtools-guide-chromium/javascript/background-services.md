@@ -2,16 +2,16 @@
 title: Отладка фоновых служб с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 0ac2a057307a939069cbb3b48ecd38c9de71e5db
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 1fecd6f9c1dceb39482bf8c4ade71918e32dec00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581833"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983314"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,13 +42,13 @@ Microsoft Edge DevTools считает каждый из указанных ни
 *   [Фоновая синхронизация](#background-sync)  
 *   [Уведомления](#notifications)  
 *   [Push-сообщения](#push-messages)  
-
+    
 Microsoft Edge DevTools может записывать события фоновой службы в течение 3 дней, даже если DevTools не открыт.  
-Это поможет вам убедиться в том, что события отправляются и принимаются должным образом.  Вы также можете просмотреть сведения о каждом событии.  
+Это поможет вам убедиться в том, что события отправляются и принимаются должным образом.  Кроме того, вы можете просмотреть сведения о каждом событии.  
 
-> ##### Рис. 1  
-> Просмотр сведений о событии в области Push-сообщений  
-> ![Просмотр сведений о событии в области Push-сообщений][PushDetails]  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Просмотр сведений о событии в области Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   Просмотр сведений о событии в области **Push-сообщений**  
+:::image-end:::  
 
 ## Фоновая выборка   
 
@@ -60,23 +60,23 @@ Microsoft Edge DevTools может записывать события фоно�
 1.  Откройте панель **приложения** .  
 1.  Открытие области " **Фоновая выборка** ".  
     
-    > ##### Рисунок 2  
-    > Область "Фоновая выборка"  
-    > ![Область "Фоновая выборка"][FetchEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Область "Фоновая выборка"" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+       Область " **Фоновая выборка** "  
+    :::image-end:::  
     
-1.  Нажмите **кнопку запись** ![ ][ImageRecordIcon] .  
+1.  Нажмите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
    После запуска некоторых операций фоновой выборки DevTools регистрирует события в таблице.  
     
-    > ##### Рисунок3  
-    > Журнал событий в области "Фоновая выборка"  
-    > ![Журнал событий в области "Фоновая выборка"][FetchLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Журнал событий в области "Фоновая выборка"" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+       Журнал событий в области " **Фоновая выборка** "  
+    :::image-end:::  
     
 1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
     
-    > ##### Рисунок4  
-    > Просмотр сведений о событии в области "Фоновая выборка"  
-    > ![Просмотр сведений о событии в области "Фоновая выборка"][FetchDetails]  
-
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Просмотр сведений о событии в области "Фоновая выборка"" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+       Просмотр сведений о событии в области " **Фоновая выборка** "  
+    :::image-end:::  
+    
 ## Фоновая синхронизация   
 
 **API фоновой синхронизации** позволяет автономному **рабочему специалисту** отправлять данные на сервер после повторного установления надежного Интернет-соединения.  Чтобы записать события фоновой синхронизации в течение 3 дней, даже если DevTools не открыт, выполните указанные ниже действия.  
@@ -87,22 +87,22 @@ Microsoft Edge DevTools может записывать события фоно�
 1.  Откройте панель **приложения** .  
 1.  Откройте область **фоновая синхронизация** .  
     
-    > ##### Рисунок 5  
-    > Область "фоновая синхронизация"  
-    > ![Область "фоновая синхронизация"][SyncEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Область "фоновая синхронизация"" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+       Область " **фоновая синхронизация** "  
+    :::image-end:::  
     
-1.  Нажмите **кнопку запись** ![ ][ImageRecordIcon] .  
+1.  Нажмите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
    После запуска некоторых операций синхронизации в фоновом режиме DevTools регистрирует события в таблице.  
     
-    > ##### Рисунок6  
-    > Журнал событий в области "фоновая синхронизация"  
-    > ![Журнал событий в области "фоновая синхронизация"][SyncLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Журнал событий в области "фоновая синхронизация"" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+       Журнал событий в области " **фоновая синхронизация** "  
+    :::image-end:::  
     
 1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
     
-    > ##### Рисунок7  
-    > Просмотр сведений о событии в области "фоновая синхронизация"  
-    > ![Просмотр сведений о событии в области "фоновая синхронизация"][SyncDetails]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Просмотр сведений о событии в области фоновой синхронизации" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+       Просмотр сведений о событии в области **фоновой синхронизации**  
+    :::image-end:::  
     
 ## Уведомления 
 
@@ -112,22 +112,22 @@ Microsoft Edge DevTools может записывать события фоно�
 1.  Откройте панель **приложения** .  
 1.  Открытие области **уведомлений** .  
     
-    > ##### Рисунок8  
-    > Область уведомлений  
-    > ![Область уведомлений][NotificationsEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Область уведомлений" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+       Область **уведомлений**  
+    :::image-end:::  
     
-1.  Нажмите **кнопку запись** ![ ][ImageRecordIcon] .  
+1.  Нажмите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
    После запуска некоторых действий с уведомлениями DevTools регистрирует события в таблице.  
     
-    > ##### Рисунок9  
-    > Журнал событий в области уведомлений  
-    > ![Журнал событий в области уведомлений][NotificationsLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Журнал событий в области уведомлений" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+       Журнал событий в области **уведомлений**  
+    :::image-end:::  
     
 1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
     
-    > ##### Рисунок 10  
-    > Просмотр сведений о событии в области уведомлений  
-    > ![Просмотр сведений о событии в области уведомлений][NotificationsDetails]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Просмотр сведений о событии в области уведомлений" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+       Просмотр сведений о событии в области **уведомлений**  
+    :::image-end:::  
     
 ## Push-сообщения 
 
@@ -137,51 +137,39 @@ Microsoft Edge DevTools может записывать события фоно�
 1.  Откройте панель **приложения** .  
 1.  Открыть область **Push-сообщений** .  
     
-    > ##### Рисунок11  
-    > Область Push-сообщений  
-    > ![Область Push-сообщений][PushEmpty]  
-
-1.  Нажмите **кнопку запись** ![ ][ImageRecordIcon] .  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       Область **Push-сообщений**  
+    :::image-end:::  
+    
+1.  Нажмите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
     После запуска некоторых действий Push-сообщений DevTools регистрирует события в таблице.  
     
-    > ##### Рисунок12  
-    > Журнал событий в области Push-сообщений  
-    > ![Журнал событий в области Push-сообщений][PushLog]  
-
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Журнал событий в области Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+       Журнал событий в области Push- **сообщений**  
+    :::image-end:::  
+    
 1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
     
-    > ##### Рисунок13  
-    > Просмотр сведений о событии в области Push-сообщений  
-    > ![Просмотр сведений о событии в области Push-сообщений][PushDetails2]  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Просмотр сведений о событии в области Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+       Просмотр сведений о событии в области **Push-сообщений**  
+    :::image-end:::  
     
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-
-[PushDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "Рисунок 1: Просмотр сведений о событии в области Push-сообщений"  
-[FetchEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-empty.msft.png "Рисунок 2: область "Фоновая выборка""  
-[FetchLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch.msft.png "Рисунок 3: журнал событий в области "Фоновая выборка""  
-[FetchDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-details.msft.png "Рисунок 4: Просмотр сведений о событии в области "Фоновая выборка""  
-[SyncEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-empty.msft.png "Рисунок 5: область "фоновая синхронизация""  
-[SyncLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync.msft.png "Рисунок 6: журнал событий в области "фоновая синхронизация""  
-[SyncDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-details.msft.png "Рисунок 7: Просмотр сведений о событии в области "фоновая синхронизация""  
-[NotificationsEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-empty.msft.png "Рисунок 8: область уведомлений"  
-[NotificationsLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications.msft.png "Рисунок 9: журнал событий в области уведомлений"  
-[NotificationsDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-details.msft.png "Рисунок 10: Просмотр сведений о событии в области уведомлений"  
-[PushEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-empty.msft.png "Рисунок 11: область Push-сообщений"  
-[PushLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "Рисунок 12: журнал событий в области Push-сообщений"  
-[PushDetails2]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-details.msft.png "Рисунок 13: Просмотр сведений о событии в области Push-сообщений"  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open.md "Средства разработчика Open Microsoft EDGE (Chromium)"  
+[OpenDevTools]: ../open.md "Открытие средств разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "API уведомлений | MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "API push-уведомлений | MDN"  

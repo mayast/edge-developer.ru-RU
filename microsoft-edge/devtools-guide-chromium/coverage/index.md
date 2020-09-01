@@ -2,16 +2,16 @@
 title: Поиск неиспользуемых кодов JavaScript и CSS с помощью вкладки "покрытие" в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: ebb8ae15a6888ce2227ec1dc18f307b03ddf9319
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 1c03140199b26bca39e69cdfbe33cd1c524257fe
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601721"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981878"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,9 +37,9 @@ ms.locfileid: "10601721"
 
 Вкладка "покрытие" в Microsoft Edge DevTools помогает найти неиспользуемый код JavaScript и CSS.  Удаление неиспользуемого кода может ускорить загрузку страницы и сохранить мобильные данные мобильных пользователей.  
 
-> ##### Рис. 1  
-> Анализ объема протестированного кода  
-> ![Анализ объема протестированного кода][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Анализ объема протестированного кода" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Анализ объема протестированного кода  
+:::image-end:::  
 
 > [!WARNING]
 > Найти неиспользуемый код довольно просто.  Но рефакторинг базы кода таким образом, чтобы каждая страница расгрузка только JavaScript и CSS может быть сложной.  Это руководство не содержит сведения о том, как оптимизировать базу кода, чтобы избежать неиспользуемого кода, поскольку эти данные фактов сильно зависят от вашего стека технологий.  
@@ -62,7 +62,7 @@ ms.locfileid: "10601721"
 
 *   Дополнительный код замедляет загрузку страницы.  <!--See [Render-Blocking CSS][render].  -->  
 *   Если пользователь получает доступ к странице на мобильном устройстве, в дополнительном коде используются данные сотовой связи.  
-
+    
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
 ## Открытие вкладки "покрытие"   
@@ -70,48 +70,46 @@ ms.locfileid: "10601721"
 1.  [Открытие меню команд][DevToolsCommandMenu].  
 1.  Начните вводить текст `coverage` , выберите команду **Показать покрытие** , а затем нажмите `Enter` , чтобы выполнить команду.  В **денежном ящике**откроется вкладка **покрытие** .  
 
-    > ##### Рисунок 2  
-    > Вкладка " **покрытие** "  
-    > ![Вкладка "покрытие"][ImageCoverage]  
-
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Вкладка "покрытие"" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       Вкладка " **покрытие** "  
+    :::image-end:::  
+    
 ## Запись покрытия кода   
 
 1.  На вкладке **покрытие** нажмите одну из указанных ниже кнопок.  
-    *   Нажмите кнопку **Запуск инструментирования и перезагрузка страницы** , ![ ][ImageReloadIcon] чтобы просмотреть код, необходимый для загрузки страницы.  
-    *   **Instrument Coverage** ![ ][ImageRecordIcon] Если вы хотите узнать, какой код используется после взаимодействия со страницей, щелкните покрытие инструментированного покрытия.  
-1.  Нажмите кнопку **остановить покрытие и выводит результаты** ![ остановить инструментирование и показать результаты, ][ImageStopIcon] когда необходимо остановить запись покрытия кода.  
-
+    *   Нажмите кнопку **запустить инструментирование покрытия и перезагрузите страницу** \ ( ![ Запуск инструментированного покрытия и перезагрузка страницы ][ImageReloadIcon] \), если вы хотите узнать, какой код требуется для загрузки страницы.  
+    *   **Instrument Coverage** ![ ][ImageRecordIcon] Если вы хотите узнать, какой код используется после взаимодействия со страницей, нажмите кнопку покрытие на инструментальных средствах (покрытие инструментов).  
+1.  Чтобы остановить запись, нажмите кнопку **остановить покрытие и показать результаты, а** затем — ![ остановить покрытие инструментирования и показать результаты ][ImageStopIcon] .  
+    
 ## Анализ объема протестированного кода   
 
-В таблице на вкладке **покрытие** показано, какие ресурсы были проанализированы, и сколько кода используется в каждом ресурсе. Щелкните строку, чтобы открыть ресурс на панели « **источники** » и просмотреть разбиение по строкам используемого кода и неиспользуемый код.  
+В таблице на вкладке **покрытие** показано, какие ресурсы были проанализированы, и сколько кода используется в каждом ресурсе.  Щелкните строку, чтобы открыть ресурс на панели « **источники** » и просмотреть разбиение по строкам используемого кода и неиспользуемый код.  
 
-> ##### Рисунок3  
-> Отчет о покрытии кода  
-> ![Отчет о покрытии кода][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Отчет о покрытии кода" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   Отчет о покрытии кода  
+:::image-end:::  
 
 *   Столбец **URL** — это URL-адрес анализируемого ресурса.  
 *   Столбец **Type (тип** ) показывает, содержит ли ресурс CSS, JavaScript или и то, и другое.  
 *   Столбец **Total Bytes** — это общий размер ресурса в байтах.  
 *   Столбец **неиспользованных байтов** — это количество байтов, которые не использовались.  
 *   Последний безымянный столбец — это визуализация общего числа столбцов в **байтах** и **неиспользуемых байтах** .  Красная область на панели содержит неиспользуемые байты.  Зеленый раздел используется в байтах.  
-
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-[ImageStopIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-icon.msft.png  
-
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage.msft.png "Рисунок 1: анализ объема протестированного кода"  
-[ImageCoverage]: /microsoft-edge/devtools-guide-chromium/media/coverage-console-drawer-coverage-empty.msft.png "Рисунок 2: вкладка "покрытие""  
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage-selected.msft.png "Рисунок 3: отчет о покрытии кода"  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
+[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Выполнение команд с помощью командного меню Microsoft Edge DevTools"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Кнопки для загрузки"  
 

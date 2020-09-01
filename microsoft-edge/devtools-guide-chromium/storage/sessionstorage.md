@@ -2,16 +2,16 @@
 title: Просмотр и изменение хранилища сеанса с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: d90d4bd7ec9b8927b713a744fb067cc5e96a1fe6
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: d0631f69a082a2a73c51e4359c21cf94636d665e
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612083"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983585"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,96 +41,87 @@ ms.locfileid: "10612083"
 
 1.  Перейдите на вкладку **приложение** , чтобы открыть панель **приложения** .  Область **манифеста** отображается по умолчанию.  
     
-    > ##### Рис. 1  
-    > Область «манифест»  
-    > ![Область «манифест»][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-manifest.msft.png":::
+       Область « **Манифест** »  
+    :::image-end:::  
+    
 1.  Разверните меню **хранилище сеанса** .  
     
-    > ##### Рисунок 2  
-    > Меню « **хранилище сеанса** »  
-    > ![Меню «хранилище сеанса»][ImageSessionStorageMenu]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Меню «хранилище сеанса»" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Меню « **хранилище сеанса** »  
+    :::image-end:::  
+    
 1.  Выберите домен, чтобы просмотреть пары "ключ-значение".  
     
-    > ##### Рисунок3  
-    > SessionStorage пары "ключ-значение"  
-    > ![Пары "sessionStorage" "ключ-значение"][ImageSessionStorage]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Пары "sessionStorage" "ключ-значение"" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+       `sessionStorage`Пары "ключ-значение"  
+    :::image-end:::  
+    
 1.  Выделите строку таблицы, чтобы просмотреть ее значение в представлении под таблицей.  
     
-    > ##### Рисунок4  
-    > Просмотр значения `x-sid` ключа  
-    > ![Просмотр значения ключа x-SID][ImageSessionStorageViewer]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Просмотр значения ключа x-SID" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+       Просмотр значения `x-sid` ключа  
+    :::image-end:::  
+    
 ## Создание новой пары "ключ-значение" для sessionStorage   
 
 1.  [Просмотр `sessionStorage` пар "ключ-значение" домена](#view-sessionstorage-keys-and-values).  
 1.  Дважды щелкните пустую часть таблицы.  DevTools создает новую строку и нафокусирует указатель мыши на **ключевом** столбце.  
     
-    > ##### Рисунок 5  
-    > Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение.  
-    > ![Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение.][ImageSessionStorageCreate]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение." lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+       Пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение.  
+    :::image-end:::  
+    
 ## Изменение ключей и значений sessionStorage   
 
 1.  [Просмотр `sessionStorage` пар "ключ-значение" домена](#view-sessionstorage-keys-and-values).  
 1.  Дважды щелкните ячейку в столбце " **раздел** " или " **значение** ", чтобы изменить этот раздел или значение.  
     
-    > ##### Рисунок6  
-    > Редактирование `sessionStorage` ключа  
-    > ![Редактирование ключа sessionStorage][ImageSessionStorageEdit]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Изменение ключа sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+       Изменение `sessionStorage` ключа  
+    :::image-end:::  
+    
 ## Удаление пар ключ-значение sessionStorage   
 
 1.  [Просмотр `sessionStorage` пар "ключ-значение" домена](#view-sessionstorage-keys-and-values).  
 1.  Выберите пару "ключ-значение", которую вы хотите удалить.  DevTools выделит ее синей, чтобы показать, что она выбрана.  
-
-1.  Нажмите клавишу `Delete` или выберите команду **Удалить выбранное** ![ Удаление ][ImageDeleteIcon] .  
-
+1.  Нажмите клавишу `Delete` или нажмите кнопку **Удалить выделенные** \ ( ![ Удалить выбранные \ ][ImageDeleteIcon] ).  
+    
 ## Удаление всех пар ключ-значение sessionStorage для домена   
 
 1.  [Просмотр `sessionStorage` пар "ключ-значение" домена](#view-sessionstorage-keys-and-values).  
-
-1.  Нажмите **Очистить все** ![ Очистить все ][ImageClearIcon] .  
-
+1.  Нажмите **Очистить все** \ ( ![ Очистить все ][ImageClearIcon] \).  
+    
 ## Взаимодействие с sessionStorage с помощью консоли   
 
 Так как вы можете запустить JavaScript на **консоли**, и так как **консоль** имеет доступ к контекстам JavaScript на странице, можно взаимодействовать с `sessionStorage` ней из **консоли**.  
 
 1.  Используйте меню "контексты **JavaScript** " для изменения контекста JavaScript на **консоли** , если вы хотите получить доступ к `sessionStorage` парам "ключ-значение" домена, отличного от страницы, на которой вы являетесь.  
     
-    > ##### Рисунок7  
-    > Изменение контекста JavaScript **консоли**  
-    > ![Изменение контекста JavaScript консоли][ImageJSContext]  
-
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Изменение контекста JavaScript консоли" lightbox="../media/storage-console-domain-selection.msft.png":::
+       Изменение контекста JavaScript консоли  
+    :::image-end:::  
+    
 1.  Выполняйте `sessionStorage` выражения на консоли так же, как и в JavaScript.  
     
-    > ##### Рисунок8  
-    > Взаимодействие с `sessionStorage` **консолью**  
-    > ![Взаимодействие с sessionStorage из консоли][ImageSessionStorageConsole]  
-
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Взаимодействие с sessionStorage с помощью консоли" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+       Взаимодействие с `sessionStorage` **консолью**  
+    :::image-end:::  
+    
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Рисунок 1: область манифеста"  
-[ImageSessionStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage.msft.png "Рисунок 2: меню «хранилище сеанса»"  
-[ImageSessionStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain.msft.png "Рисунок 3: пары "ключ-значение" sessionStorage"  
-[ImageSessionStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-selected.msft.png "Рисунок 4: Просмотр значения ключа x-SID"  
-[ImageSessionStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-new.msft.png "Рис. 5: пустая часть таблицы для двойного щелчка, чтобы создать новую пару ключ-значение."  
-[ImageSessionStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-edit.msft.png "Рисунок 6: Редактирование ключа sessionStorage"  
-[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-domain-selection.msft.png "Рис. 7: изменение контекста JavaScript консоли"  
-[ImageSessionStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-session-storage-keys.msft.png "Рисунок 8: взаимодействие с sessionStorage из консоли"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window. sessionStorage | MDN"  
 

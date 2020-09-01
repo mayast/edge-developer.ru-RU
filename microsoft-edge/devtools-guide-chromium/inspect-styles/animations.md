@@ -1,17 +1,17 @@
 ---
-title: Проверка анимации
+title: Проверка эффектов анимации
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/01/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 6466c7f0e1f8680a2429b565e8022d152d05d733
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: a6970d76f4ff70031ef4cc8c6de119a41d1a5b80
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572411"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983417"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,15 +31,15 @@ ms.locfileid: "10572411"
 
 
 
-# Проверка анимации   
+# Проверка эффектов анимации   
 
 
 
 Просмотрите и измените анимацию с помощью инспектора анимации Microsoft Edge DevTools.  
 
-> ##### Рис. 1  
-> Инспектор анимации  
-> ![Инспектор анимации][ImageAnimationInspector]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="Инспектор анимации" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+   Инспектор анимации  
+:::image-end:::  
 
 ### Краткий обзор  
 
@@ -61,7 +61,7 @@ ms.locfileid: "10572411"
 Группа анимации — это группа анимаций, которые могут быть связаны друг с другом.  В настоящее время в веб-браузере отсутствует фактическая Концепция групповых анимаций, поэтому разработчики движений и разработчиков должны создавать и обрабатывать отдельные анимации, чтобы анимация отображалась как один и тот же визуальный эффект.  Инспектор анимации прогнозирует, какие анимации связаны с учетом времени начала, (за исключением задержек и т. д.).  Инспектор анимации также группирует анимацию рядом друг с другом.  
 Другими словами, набор анимаций, которые вызываются в одном блоке сценария, группируются вместе.  Если анимация является асинхронной, она помещается в отдельную группу.  
 
-## Начало работы  
+## Get started  
 
 Открыть инспектор анимации можно двумя способами:  
 
@@ -69,18 +69,18 @@ ms.locfileid: "10572411"
     1.  Перейдите к вложенному меню **другие инструменты** .  
     1.  Выберите **анимации**:  
         
-        > ##### Рисунок 2  
-        > Анимация с помощью главного меню  
-        > ![Анимация с помощью главного меню][ImageAnimationsViaMainMenu]  
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Анимация с помощью главного меню" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+           **Анимация** с помощью главного меню  
+    :::image-end:::  
         
 *   Открытие **меню команд**  
     1.  Введите `Drawer: Show Animations`.  
 
 Инспектор анимации открывается в виде вкладки рядом с лотком консоли.  Поскольку инспектор анимаций является вкладкой ящика, вы можете использовать инспектор анимации на любой DevTools панели.  
 
-> ##### Рисунок3  
-> Пустой инспектор анимации  
-> ![Пустой инспектор анимации][ImageEmptyAnimationInspector]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Пустой инспектор анимации" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+   Пустой инспектор анимации  
+:::image-end:::  
 
 Инспектор анимации сгруппирован в четыре основных раздела \ (или области).  Это руководство относится к каждой области, как описано ниже.  
 
@@ -91,9 +91,9 @@ ms.locfileid: "10572411"
 | Трехконтактный | **Информация о сроках** | Задержите и начните анимацию отсюда или переходите к определенной точке анимации. |  
 | четырехпроцессорном | **Сведения** | Проверка и изменение выбранной в данный момент группы эффектов анимации. |  
 
-> ##### Рисунок4  
-> Инспектор анимации с заметками  
-> ![Инспектор анимации с заметками][ImageAnnotatedAnimationInspector]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Инспектор анимации с заметками" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+   Инспектор анимации с заметками  
+:::image-end:::  
 
 Чтобы зафиксировать анимацию, просто выполните взаимодействие, которое запускает анимацию, когда открыт Инспектор анимации.  Если анимация запускается при загрузке страницы, перезагрузите страницу с помощью инспектора анимации, чтобы определить анимацию.  
 
@@ -103,93 +103,82 @@ ms.locfileid: "10572411"
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Проверка анимации   
+## Проверка эффектов анимации   
 
 После захвата анимации есть несколько способов воспроизведения.  
 
 *   Наведите указатель мыши на эскиз в области " **Обзор** ", чтобы просмотреть его в предварительной версии.  
-*   В области " **Обзор** " выберите группу анимации \ (чтобы она отображалась в области **сведений** ) и нажмите значок **воспроизведения** ![ ][ImageReplayButtonIcon] .  Анимация воспроизводится в окне просмотра.  **animation speed** ![ ][ImageAnimationSpeedButtonsIcon] Чтобы изменить скорость просмотра в выбранной группе эффектов анимации, щелкните значки скорость анимации анимации.  Вы можете изменить текущее расположение с помощью красной вертикальной черты.  
+*   В области " **Обзор** " выберите группу анимации \ (чтобы она отображалась в области **сведений** ) и нажмите значок " **воспроизвести** " ( ![ значок воспроизведения ][ImageReplayButtonIcon] \).  Анимация воспроизводится в окне просмотра.  Щелкните значок **скорость анимации** \ ( ![ значки скорости анимации ][ImageAnimationSpeedButtonsIcon] \), чтобы изменить скорость просмотра выбранной группы анимации.  Вы можете изменить текущее расположение с помощью красной вертикальной черты.  
 *   Щелкните и перетащите красную вертикальную полосу, чтобы проочистки анимации просмотра.  
-
+    
 ### Просмотр подробных сведений о анимации  
 
 После захвата группы анимации щелкните ее в области " **Обзор** ", чтобы просмотреть подробные сведения.  В области **сведений** каждая из анимаций назначается отдельной строке.  
 
-> ##### Рисунок 5  
-> Сведения о группе эффектов анимации  
-> ![Сведения о группе эффектов анимации][ImageAnimationGroupDetails]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Сведения о группе эффектов анимации" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Сведения о группе эффектов анимации  
+:::image-end:::  
 
 Наведите указатель мыши на анимацию, чтобы выделить ее в окне просмотра.  Щелкните анимацию, чтобы выделить ее на панели " **элементы** ".  
 
-> ##### Рисунок6  
-> Наведите указатель мыши на анимацию, чтобы выделить ее в окне просмотра  
-> ![Наведите указатель мыши на анимацию, чтобы выделить ее в окне просмотра][ImageHoverOverAnimationHighlightViewport]  
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Наведите указатель мыши на анимацию, чтобы выделить ее в окне просмотра" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Наведите указатель мыши на анимацию, чтобы выделить ее в окне просмотра  
+:::image-end:::  
 
-Самым левым и темным разделом анимации является определение.  Справа, более размытые части представляют собой итерации.  Например, на [рисунке 7](#figure-7)разделы 2 и 3 представляют собой итерации раздела One.  
+Самым левым и темным разделом анимации является определение.  Справа, более размытые части представляют собой итерации.  Например, на приведенном ниже рисунке две и три части представляют собой итерации раздела One.  
 
-> ##### Рисунок7  
-> Схема итераций анимации  
-> ![Схема итераций анимации][ImageDiagramAnimationIterations]  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Схема итераций анимации" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+   Схема итераций анимации  
+:::image-end:::  
 
-Если к двум элементам применена одинаковая анимация, инспектор анимации назначает элементам один и тот же цвет.  Цвет является произвольным и не имеет значимости.  Например, на [рисунке 8](#figure-8) используются два элемента с `div.cwccw.earlier` `div.cwccw.later` одинаковой анимацией \ ( `spinrightleft` \), как `div.ccwcw.earlier` и `div.ccwcw.later` элементы.  
+Если к двум элементам применена одинаковая анимация, инспектор анимации назначает элементам один и тот же цвет.  Цвет является произвольным и не имеет значимости.  Например, на приведенном ниже рисунке показаны два элемента `div.cwccw.earlier` и `div.cwccw.later` применена одинаковая анимация \ ( `spinrightleft` \), как `div.ccwcw.earlier` и `div.ccwcw.later` элементы.  
 
-> ##### Рисунок8  
-> Анимация с цветовым кодированием  
-> ![Анимация с цветовым кодированием][ImageColorCodedAnimations]  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Анимация с цветовым кодированием" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+   Анимация с цветовым кодированием  
+:::image-end:::  
 
 ## Изменение анимации   
 
-Вы можете изменить анимацию с помощью инспектора анимации тремя способами:  
+Вы можете изменить анимацию с помощью инспектора анимации тремя способами.  
 
 *   Длительность анимации.  
 *   Временные интервалы для ключевых кадров.  
 *   Время начала задержки.  
+    
+На приведенном ниже рисунке представлена исходная анимация.  
 
-В этом разделе показано, что [на рисунке 9](#figure-9) представлена исходная анимация.  
-
-> ##### Рисунок9  
-> Исходная анимация перед изменением  
-> ![Исходная анимация перед изменением][ImageOriginalAnimationBeforeModification]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Исходная анимация перед изменением" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+   Исходная анимация перед изменением  
+:::image-end:::  
 
 Чтобы изменить длительность анимации, щелкните и перетащите первый или последний круг.  
 
-> ##### Рисунок 10  
-> Измененная длительность  
-> ![Измененная длительность][ImageModifiedDuration]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Измененная длительность" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+   Измененная длительность  
+:::image-end:::  
 
 Если анимация определяет любые правила для ключевого кадра, они будут представлены как белые внутренние круги.  Щелкните и перетащите один из них, чтобы изменить временные показатели для ключевого кадра.  
 
-> ##### Рисунок11  
-> Измененный ключевой кадр  
-> ![Измененный ключевой кадр][ImageModifiedKeyframe]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Измененный ключевой кадр" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+   Измененный ключевой кадр  
+:::image-end:::  
 
 Чтобы добавить задержку для анимации, щелкните и перетащите ее в любое место за исключением кругов.  
 
-> ##### Рисунок12  
-> Измененная задержка  
-> ![Измененная задержка][ImageModifiedDelay]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Измененная задержка" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+   Измененная задержка  
+:::image-end:::  
 
-<!--   -->  
+<!--  
+  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: /microsoft-edge/devtools-guide-chromium/media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/replay-button-icon.msft.png  
-
-[ImageAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-completed.msft.png "Рисунок 1: инспектор анимации"  
-[ImageAnimationsViaMainMenu]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-more-tools-animations.msft.png "Рисунок 2: анимация с помощью главного меню"  
-[ImageEmptyAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations.msft.png "Рисунок 3: пустой инспектор анимации"  
-[ImageAnnotatedAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png "Рисунок 4: инспектор анимации с примечаниями"  
-[ImageAnimationGroupDetails]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png "Рисунок 5: сведения о группе эффектов анимации"  
-[ImageHoverOverAnimationHighlightViewport]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png "Рисунок 6: наведите указатель мыши на анимацию, чтобы выделить ее в окне просмотра"  
-[ImageDiagramAnimationIterations]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-display-animations-highlight.msft.png "Рисунок 7: схема итераций анимации"  
-[ImageColorCodedAnimations]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-display-animations.msft.png "Рисунок 8: анимация с цветовым кодированием"  
-[ImageOriginalAnimationBeforeModification]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations.msft.png "Рисунок 9: исходная анимация перед изменением"  
-[ImageModifiedDuration]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png "Рисунок 10: изменена длительность"  
-[ImageModifiedKeyframe]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png "Рисунок 11: изменен ключевой кадр"  
-[ImageModifiedDelay]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png "Рисунок 12: измененная задержка"  
+[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
+[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

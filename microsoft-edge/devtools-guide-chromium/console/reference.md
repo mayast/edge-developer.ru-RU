@@ -2,16 +2,16 @@
 title: Справочник по консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: bd2a610b48905c6651663d490b9c9f1a0a8c7674
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 51a85c3dad121dcb42633390de9b4e817074546e
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601789"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982500"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ ms.locfileid: "10601789"
 
 Эта страница содержит ссылки на возможности, связанные с консолью Microsoft Edge DevTools.  Предполагается, что вы уже знакомы с использованием консоли для просмотра сообщений в журнале и запуска JavaScript.  В противном случае ознакомьтесь [со статьей начало работы с JavaScript на консоли][DevToolsConsoleJavascript] и начните [работу с сообщениями в журнале на консоли][DevToolsConsoleLog].  
 
-Если вы ищете ссылку API на функции, такие как `console.log()` , [Справочник по API консоли][DevToolsConsoleApi].  Дополнительные сведения о функциях, таких как `monitorEvents()` [Справка по API для консольных утилит][DevToolsConsoleUtilities].  
+Если вы ищете ссылку API на функции, такие как `console.log()` , [Справочник по API консоли][DevToolsConsoleApi].  Справку по функциям, например `monitorEvents()` , можно найти в [справочнике API для консольных утилит][DevToolsConsoleUtilities].  
 
 ## Открытие консоли   
 
@@ -47,43 +47,43 @@ ms.locfileid: "10601789"
 
 Нажмите клавиши `Control` + `Shift` + `J` \ (Windows \) или `Command` + `Option` + `J` \ (macOS \).  
 
-> ##### Рис. 1  
-> Панель консоли  
-> ![Панель консоли][ImageConsolePanel]  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Панель консоли" lightbox="../media/console-hello-console.msft.png":::
+   Панель **консоли**  
+:::image-end:::  
 
 Чтобы открыть панель консоли из [меню команд][DevToolsCommandMenu], начните вводить текст, `Console` а затем запустите команду **Показать консоль** с индикатором **панели** рядом с ним.  
 
-> ##### Рисунок 2  
-> Команда для отображения панели консоли  
-> ![Команда для отображения панели консоли][ImageCommandShowConsole]  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Команда для отображения панели консоли" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Команда для отображения панели **консоли**  
+:::image-end:::  
 
 ### Открытие вкладки "консоль" в ящике   
 
-Нажмите `Escape` или щелкните **настроить DevTools** `...` и выберите пункт **Показать входной ящик консоли**.  
+Нажмите `Escape` или щелкните **настроить DevTools** \ ( `...` \) и выберите пункт **Показать входной ящик консоли**.  
 
-> ##### Рисунок3  
-> Показать консольный ящик  
-> ![Показать консольный ящик][ImageShowConsoleDrawer]  
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Показать консольный ящик" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+   **Показать консольный ящик**  
+:::image-end:::  
 
 Ящик появляется в нижней части окна DevTools и открывается вкладка **консоли** .  
 
-> ##### Рисунок4  
-> Вкладка «консоль» в ящике  
-> ![Вкладка «консоль» в ящике][ImageDrawerConsole]  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="Вкладка «консоль» в ящике" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   Вкладка « **консоль** » в **ящике**  
+:::image-end:::  
 
 Чтобы открыть вкладку консоль в [меню команд][DevToolsCommandMenu], начните вводить текст, `Console` а затем запустите команду **Показать консоль** с индикатором **ящика** рядом с ним.  
 
-> ##### Рисунок 5  
-> Команда для отображения вкладки "консоль" в ящике  
-> ![Команда для отображения вкладки "консоль" в ящике][ImageShowDrawerCommand]  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Команда для отображения вкладки "консоль" в ящике" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Команда для отображения вкладки " **консоль** " в **ящике**  
+:::image-end:::  
 
 ### Открытие параметров консоли   
 
-Щелкните Параметры консоли " **Параметры** консоли" ![ ][ImageSettingsButtonIcon] .  
+Нажмите кнопку **Параметры консоли** \ ( ![ Параметры консоли ][ImageSettingsButtonIcon] \).  
 
-> ##### Рисунок6  
-> Параметры консоли  
-> ![Параметры консоли][ImageConsoleSettings]  
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Параметры консоли" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+   **Параметры консоли**  
+:::image-end:::  
 
 Ниже описаны ссылки для каждого параметра.  
 
@@ -94,14 +94,14 @@ ms.locfileid: "10601789"
 *   [**Запись в журнал XmlHttpRequest**](#log-xhr-and-fetch-requests)  
 *   [**Упреждающая Оценка**](#disable-eager-evaluation)  
 *   [**Автозаполнение из истории**](#disable-autocomplete-from-history)  
-
+    
 ### Открытие боковой панели консоли   
 
-Нажмите кнопку **Показать боковую панель консоли** ![ ][ImageShowConsoleSidebarIcon] , чтобы показать боковую панель, что бывает полезно для фильтрации.  
+Нажмите кнопку **Показать боковую панель консоли** \ ( ![ Показать боковую панель консоли ][ImageShowConsoleSidebarIcon] ), чтобы отобразить боковую панель, которая удобна для фильтрации.  
 
-> ##### Рисунок7  
-> Боковая панель консоли  
-> ![Боковая панель консоли][ImageConsoleSidebar]  
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Боковая панель консоли" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+   **Console (консоль** ) Врезка  
+:::image-end:::  
 
 ## Просмотр сообщений   
 
@@ -115,19 +115,18 @@ ms.locfileid: "10601789"
 
 [Откройте параметры консоли](#open-console-settings) и включите в **журнал записи XMLHttpRequest** , чтобы регистрировать все `XMLHttpRequest` и `Fetch` запросы на консоли по мере их появления.  
 
-> ##### Рисунок8  
-> Ведение журнала `XMLHttpRequest` и `Fetch` запросы  
-> ![Ведение журнала запросов на XMLHttpRequest и выборку][ImageXhrGrouped]  
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Запись запросов на XMLHttpRequest и выборке" lightbox="../media/console-xhr-fetch.msft.png":::
+   Журналы `XMLHttpRequest` и `Fetch` запросы  
+:::image-end:::  
+Верхнее сообщение на предыдущем рисунке показывает поведение группировки по умолчанию для **консоли**.  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
 
-В верхнем сообщении на [рисунке 8](#figure-8) показано поведение по умолчанию для группировки консоли.  <!--  [Figure 9](#figure-9) shows how the same log looks after [disabling message grouping](#disable-message-grouping).  -->  
-
-<!--
-
+<!--  
 > ##### Old Figure 9  
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping  
-> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping][ImageXhrUngrouped]  
-
--->
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
+>    How the logged XMLHttpRequest and Fetch requests look after ungrouping  
+> :::image-end:::  
+-->  
 
 <!--todo: add example for ungrouping console items  -->  
 
@@ -137,17 +136,16 @@ ms.locfileid: "10601789"
 
 ### Скрыть сетевые сообщения   
 
-По умолчанию браузер записывает сетевые сообщения на **консоль**.  Например, выбранное сообщение на [рис. 9](#figure-9) представляет код состояния `429` .  
+По умолчанию браузер записывает сетевые сообщения на **консоль**.  На приведенном ниже рисунке выбранное сообщение представляет код состояния HTTP `429` .  
 
-> ##### Рисунок9  
-> Сообщение 429 в консоли  
-> ! [Сообщение 429 в консоли] [Image429Message]  
-
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="Сообщение 429 в консоли" lightbox="../media/console-show-network.msft.png":::
+   `429`Сообщение на **консоли**  
+:::image-end:::  
 Чтобы скрыть сетевые сообщения, выполните указанные ниже действия.  
 
 1.  [Откройте параметры консоли](#open-console-settings).  
 1.  Включите флажок **Скрыть сеть** .  
-
+    
 ## Фильтрация сообщений   
 
 Есть несколько способов отфильтровать сообщения на консоли.  
@@ -156,9 +154,9 @@ ms.locfileid: "10601789"
 
 [Откройте панель консоли](#open-the-console-sidebar) и выберите пункт **сообщения пользователя** , чтобы отображались только те сообщения, которые были получены на странице JavaScript.  
 
-> ##### Рисунок 10  
-> Просмотр сообщений пользователя  
-> ! [Просмотр сообщений пользователей] [ImageUserMessages]  
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Просмотр сообщений пользователя" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+   Просмотр сообщений пользователя  
+:::image-end:::  
 
 ### Фильтрация по уровню ведения журнала   
 
@@ -166,35 +164,35 @@ DevTools назначает каждому `console.*` методу уровен
 
 Щелкните раскрывающийся список **уровни журнала** , чтобы включить или отключить `Verbose` , `Info` `Warning` или `Error` сообщения.  
 
-> ##### Рисунок11  
-> Раскрывающийся список **уровней журнала**  
-> ! [Раскрывающийся список уровней журнала] [ImageLogLevels]  
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Раскрывающийся список уровней журнала" lightbox="../media/console-log-level-default-levels.msft.png":::
+   Раскрывающийся список **уровней журнала**  
+:::image-end:::  
 
 Вы также можете отфильтровать по уровню журнала, [открыв боковую панель консоли](#open-the-console-sidebar) и выбрав пункт **ошибки**, **предупреждения**, **сведения**или **подробный**.  
 
-> ##### Рисунок12  
-> Использование боковой панели для просмотра предупреждений  
-> ! [Использование боковой панели для просмотра предупреждений] [ImageSidebarWarnings]  
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Использование боковой панели для просмотра предупреждений" lightbox="../media/console-sidebar-warnings.msft.png":::
+   Использование боковой панели для просмотра предупреждений  
+:::image-end:::  
 
 ### Фильтрация сообщений по URL-адресу   
 
 Введите и `url:` URL-адрес, чтобы просматривать только те сообщения, которые были отправлены из этого URL-адреса.  После ввода `url:` DevTools появятся все нужные URL-адреса.  Домены также работают.  Например, если `https://example.com/a.js` `https://example.com/b.js` сообщения записываются в журнал, `url:https://example.com` вы можете сосредоточиться на сообщениях из этих 2 сценариев.  
 
-> ##### Рисунок13  
-> Фильтр URL-адреса  
-> ! [Фильтр URL-адреса] [ImageUrlFilter]  
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Фильтр URL-адреса" lightbox="../media/console-filter-text.msft.png":::
+   Фильтр URL-адреса  
+:::image-end:::  
 
 Введите текст `-url:` , чтобы скрыть сообщения от этого URL-адреса.  Это называется фильтром отрицательных URL-адресов.  
 
-> ##### Рисунок14  
-> Фильтр отрицательных URL-адресов, который скрывает все сообщения, соответствующие URL-адресу `https://b.wal.co`  
-> ! [Фильтр по отрицательному URL-адресу, который скрывает все сообщения, соответствующие URL-адресу https://b.wal.co ] [ImageNegativeUrlFilter1]  
+:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Фильтр отрицательных URL-адресов, в котором скрываются все сообщения, соответствующие https://b.wal.co URL-адресу." lightbox="../media/console-negative-filter-text.msft.png":::
+   Фильтр отрицательных URL-адресов, в котором скрываются все сообщения, соответствующие `https://b.wal.co` URL-адресу.
+:::image-end:::  
 
 Вы также можете показывать сообщения с одного URL-адреса, [открыв боковую панель консоли](#open-the-console-sidebar), развернув раздел " **пользовательские сообщения** ", а затем щелкнув URL-адрес сценария, содержащего сообщения, на которые нужно обратить внимание.  
 
-> ##### Рисунок15  
-> Просмотр сообщений, которые были получены `wp-ad.min.js`  
-> ! [Просмотр сообщений, поступивших из WP-AD. min. js] [ImageNegativeUrlFilter2]  
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Просмотр сообщений, которые поставляются с wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+   Просмотр сообщений, которые были получены `wp-ad.min.js`  
+:::image-end:::  
 
 ### Фильтрация сообщений в разных контекстах   
 
@@ -204,9 +202,9 @@ DevTools назначает каждому `console.*` методу уровен
 
 Введите регулярное выражение, например `/[gm][ta][mi]/` в текстовое поле **Фильтр** , чтобы отфильтровать сообщения, которые не соответствуют этому шаблону.  DevTools проверяет, найден ли шаблон в тексте сообщения или сценарий, который привел к занесению в журнал сообщения.  
 
-> ##### Рисунок16  
-> Фильтрация несовпадающих сообщений `/[gm][ta][mi]/`  
-> ! [Фильтрация сообщений, не соответствующих выражению Regex] [ImageRegExFilter]  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Фильтрация сообщений, не соответствующих выражению Regex" lightbox="../media/console-filter-regex.msft.png":::
+   Фильтрация сообщений, не соответствующих `/[gm][ta][mi]/` выражению регулярного выражения  
+:::image-end:::  
 
 ## Запуск JavaScript   
 
@@ -229,77 +227,58 @@ DevTools назначает каждому `console.*` методу уровен
 По мере ввода выражения в всплывающем окне для консоли отображаются выражения, которые были выполнены раньше.  Эти выражения добавляются в начале `>` символа.  [Откройте меню Параметры консоли](#open-console-settings) и отключите флажок **Автозаполнение из журнала** , чтобы отключить отображение выражений из истории.  
 
 > [!NOTE]
-> На [рис](#figure-17). 17 `document.querySelector('a')` и `document.querySelector('img')` выражения, которые были оценены ранее.  
+> На приведенном ниже рисунке, `document.querySelector('a')` а `document.querySelector('img')` также выражения, которые были оценены ранее.  
 
-> ##### Рисунок17  
-> Всплывающее окно "Автозаполнение", в котором отображаются выражения из истории  
-> ! [Всплывающее окно "Автозаполнение", в котором отображаются выражения из истории] [ImageHistoryAutocomplete]  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="В всплывающем окне "Автозаполнение" отображаются выражения из истории" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   В всплывающем окне "Автозаполнение" отображаются выражения из истории  
+:::image-end:::  
 
 ### Выбор контекста JavaScript   
 
 По умолчанию раскрывающийся список **контекстов JavaScript** имеет значение **Top**, которое представляет [контекст просмотра][MDNBrowsingContext] основного документа.  
 
-> ##### Рис. 18  
-> Раскрывающийся список **контекстов JavaScript**  
-> ! [Раскрывающийся список контекстов JavaScript] [ImageJavascriptContext]  
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Раскрывающийся список контекстов JavaScript" lightbox="../media/console-dom-level-top.msft.png":::
+   Раскрывающийся список **контекстов JavaScript**  
+:::image-end:::  
 
 Предположим, что у вас есть реклама на странице, внедренная в `<iframe>` .  Вы хотите запустить JavaScript, чтобы настроить модель DOM рекламы.  Сначала необходимо выбрать контекст обзора рекламы из раскрывающегося списка **контекстов JavaScript** .  
 
-> ##### На рисунке 19  
-> Выбор другого контекста JavaScript  
-> ! [Выбор другого контекста JavaScript] [ImageSelectContext]  
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Выбор другого контекста JavaScript" lightbox="../media/console-dom-level-multiple.msft.png":::
+   Выбор другого контекста JavaScript  
+:::image-end:::  
 
 ## Очистка консоли   
 
 Чтобы очистить консоль, вы можете использовать любой из следующих рабочих процессов:  
 
-*   Нажмите кнопку **Очистить консоль** "очистить консоль" ![ ][ImageClearConsoleIcon] .  
+*   Нажмите **Очистить консоль** \ ( ![ Очистить консоль ][ImageClearConsoleIcon] ).  
 *   Щелкните сообщение правой кнопкой мыши и выберите команду **Очистить консоль**.  
 *   Введите текст `clear()` на консоли и нажмите клавишу `Enter` .  
 *   Вызов `console.clear()` из JavaScript на веб-странице.  
 *   Нажимайте кнопку, `Control` + `L` пока фокус находится на консоли.  
-
+    
+<!--
  
 
-
+  
+-->  
 
 <!-- image links -->  
 
-[ImageClearConsoleIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: /microsoft-edge/devtools-guide-chromium/media/show-console-sidebar-icon.msft.png  
-
-[ImageConsolePanel]: /microsoft-edge/devtools-guide-chromium/media/console-hello-console.msft.png "Рисунок 1: панель консоли"  
-[ImageCommandShowConsole]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Рисунок 2: команда для отображения панели консоли"  
-[ImageShowConsoleDrawer]: /microsoft-edge/devtools-guide-chromium/media/console-elements-customize-control-devtools-show-console-drawer.msft.png "Рисунок 3: отображение консольного ящика"  
-[ImageDrawerConsole]: /microsoft-edge/devtools-guide-chromium/media/console-elements-console-drawer-hello-world.msft.png "Рисунок 4: вкладка «консоль» в ящике"  
-[ImageShowDrawerCommand]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Рисунок 5: команда для отображения вкладки "консоль" в ящике"  
-[ImageConsoleSettings]: /microsoft-edge/devtools-guide-chromium/media/console-settings-group-similar-empty.msft.png "Рисунок 6: параметры консоли"  
-[ImageConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-drawer-empty.msft.png "Рисунок 7: Боковая панель консоли"  
-[ImageXhrGrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch.msft.png "Рисунок 8: регистрация запросов на XMLHttpRequest и выборку данных"  
-<!--[ImageXhrUngrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch-all.msft.png "Figure old 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  -->  
-[Image429Message]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Show-Network.MSFT.png "Рисунок 9: сообщение 429 в консоли"  
-[ImageUserMessages]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-sidebar-drawer-User-messages.MSFT.png "Рисунок 10: Просмотр сообщений пользователя"  
-[ImageLogLevels]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Log-Level-Default-Levels.MSFT.png "Рисунок 11: раскрывающийся список" уровни журнала ""  
-[ImageSidebarWarnings]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-sidebar-Warnings.MSFT.png "Рисунок 12: Использование боковой панели для просмотра предупреждений"  
-[ImageUrlFilter]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Filter-Text.MSFT.png "Рисунок 13: фильтр URL-адреса"  
-[ImageNegativeUrlFilter1]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Negative-Filter-Text.MSFT.png "Рисунок 14: фильтр отрицательных URL-адресов, который скрывает все сообщения, соответствующие URL-адресу https://b.wal.co "  
-[ImageNegativeUrlFilter2]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Filter-Text-Specified.MSFT.png "Рисунок 15: Просмотр сообщений, поступивших из WP-AD. min. js"  
-[ImageRegExFilter]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Filter-Regex.MSFT.png "Рисунок 16: Фильтрация сообщений, не соответствующих выражению Regex"  
-[ImageHistoryAutocomplete]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-Filter-Text-AutoFilter-History.MSFT.png "Рисунок 17: всплывающее окно" Автозаполнение ", в котором отображаются выражения из истории"  
-[ImageJavascriptContext]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-DOM-Level-Top.MSFT.png "Рисунок 18: раскрывающийся список контекстов JavaScript"  
-[ImageSelectContext]:/Microsoft-Edge/Devtools-Guide-Chromium/Media/Console-DOM-Level-Multiple.MSFT.png "Рисунок 19: выбор другого контекста JavaScript"  
+[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
+[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Выполнение команд с помощью командного меню Microsoft Edge DevTools"  
-[DevToolsConsoleViewMessages]: /microsoft-edge/devtools-guide-chromium/console/index#viewing-logged-messages "Просмотр сообщений с запротоколированием — обзор консоли"  
-[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Справочник по API консоли"  
-[DevToolsConsoleOverviewJavascript]: /microsoft-edge/devtools-guide-chromium/console/index#running-javascript "Выполнение JavaScript — обзор консоли"  
-[DevToolsConsoleJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Начало работы с JavaScript на консоли"  
-[DevToolsConsoleLiveExpressions]: /microsoft-edge/devtools-guide-chromium/console/live-expressions "Контроль значений выражений JavaScript в режиме реального времени с помощью выражений в реальном масштабе"  
-[DevToolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Начало работы с сообщениями журнала на консоли"  
-[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Справочник по API для консольных программ"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Просмотр сообщений с запротоколированием — обзор консоли | Документы Microsoft"  
+[DevToolsConsoleApi]: ./api.md "Справочник по API консоли | Документы Microsoft"  
+[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Выполнение JavaScript: обзор консоли | Документы Microsoft"  
+[DevToolsConsoleJavascript]: ./javascript.md "Начало работы с JavaScript на консоли | Документы Microsoft"  
+[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Просмотр значений выражений JavaScript в режиме реального времени с помощью выражений в реальном масштабе | Документы Microsoft"  
+[DevToolsConsoleLog]: ./log.md "Начало работы с сообщениями в журнале на консоли | Документы Microsoft"  
+[DevToolsConsoleUtilities]: ./utilities.md "Справочник по API служебных программ для консоли | Документы Microsoft"  
 
 [MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Контекст просмотра | MDN"  
 

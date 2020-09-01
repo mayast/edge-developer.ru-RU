@@ -2,16 +2,16 @@
 title: Приостановка кода с точки останова в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 2afa4b7dbe96b65747ec17b147f0a82c16efa288
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 804e864ee3029a49ba1ef2ac1f2deb61c3ba5ec3
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581805"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983218"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,7 +52,7 @@ ms.locfileid: "10581805"
 
 ## Точки останова в коде строки   
 
-Если вы знаете точную область кода, которую нужно исследовать, используйте точку останова из строки кода.  DevTools **всегда** задерживается перед выполнением этой строки кода.  
+Если вы знаете точную область кода, которую нужно исследовать, используйте точку останова из строки кода.  DevTools всегда задерживается перед выполнением этой строки кода.  
 
 Установка точки останова в коде строки в DevTools:  
 
@@ -60,11 +60,11 @@ ms.locfileid: "10581805"
 1.  Откройте файл с той строкой, в которой вы хотите прервать ее.  
 1.  Перейдите к строке кода.  
 1.  Слева от строки кода находится столбец номер строки.  Щелкните по нему.  Рядом со столбцом номер строки появится красный значок.  
-
-> ##### Рис. 1  
-> Точка останова, установленная на строке 30  
-> ![Точка останова строки кода][ImageLocBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="Точка останова строки кода" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+       Точка останова строки кода  
+    :::image-end:::  
+    
 ### Точки останова в коде для строк кода   
 
 Выполняйте `debugger` метод из вашего кода, чтобы приостановить его на этой линии.  Это эквивалентно [точке останова строки кода](#line-of-code-breakpoints), за исключением того, что точка останова задается в коде, а не в пользовательском интерфейсе DevTools.  
@@ -89,27 +89,27 @@ console.log('c');
 1.  Нажмите кнопку **добавить условную точку останова**.  Под строкой кода появится диалоговое окно.  
 1.  Введите условие в диалоговом окне.  
 1.  Нажмите `Enter` , чтобы активировать точку останова.  Значок рядом со столбцом "номер строки".  
-
-> ##### Рисунок 2  
-> В строке 34 задана зависимая точка останова для кода строки.  
-> ![Условная точка останова для строки кода][ImageConditionalLocBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="Условная точка останова для строки кода" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
+       Условная точка останова для строки кода  
+    :::image-end:::  
+    
 ### Управление точками останова для строк кода   
 
 С помощью области " **точки останова** " можно отключить или удалить точки останова для строк кода из одного места.  
 
-> ##### Рисунок3  
-> Панель " **точки останова** ", в которой отображаются две точки останова с двумя строками: один на строке `16` `get-started.js` , другой в строке `33`  
-> ![Панель «точки останова»][ImageBreakpointsPanel]  
+:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="Панель «точки останова»" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
+   Панель « **точки останова** »  
+:::image-end:::  
 
 *   Установите флажок рядом с записью, чтобы отключить эту точку останова.  
 *   Щелкните правой кнопкой мыши запись для удаления точки останова.  
 *   Щелкните правой кнопкой мыши в любом месте области **точки останова** , чтобы отключить все точки останова, отключить все точки останова или удалить все точки останова.  Отключение всех точек останова эквивалентно депроверке каждого из них.  Отключение всех точек останова дает указание DevTools игнорировать все точки останова для строк кода, а также поддерживать состояние включения, чтобы каждый из них нав одном и том же состоянии до повторной активации каждой из них.  
-
-> ##### Рисунок4  
-> Деактивированные точки останова на панели " **точки останова** " отключены и прозрачны  
-> ![Деактивированные точки останова на панели "точки останова"][ImageDeactivatedBreakpoints]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Деактивированные точки останова на панели "точки останова"" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+       Деактивированные точки останова на панели " **точки останова** "  
+    :::image-end:::  
+    
 ## Точки останова по изменению модели DOM   
 
 Чтобы приостановить выполнение кода, который изменяет узел DOM или дочерние элементы, используйте точку останова изменения модели DOM.  
@@ -120,19 +120,17 @@ console.log('c');
 1.  Перейдите к элементу, для которого вы хотите установить точку останова.  
 1.  Щелкните элемент правой кнопкой мыши.  
 1.  Наведите указатель мыши **на пункт разрыв**, а затем выберите **изменения поддерева**, **изменения атрибутов**или **Удаление узла**.  
-
-> ##### Рисунок 5  
-> Контекстное меню для создания точки останова по изменению модели DOM  
-> ![Контекстное меню для создания точки останова по изменению модели DOM][ImageDomChangeBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="Контекстное меню для создания точки останова по изменению модели DOM" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
+       Контекстное меню для создания точки останова по изменению модели DOM  
+    :::image-end:::  
+    
 ### Типы точек останова для изменения модели DOM   
 
 *   **Изменения поддерева**.  Вызывается при удалении или добавлении дочернего узла, выбранного в данный момент, или изменении содержимого дочернего элемента.  Не инициируется для изменений атрибутов дочернего узла или при любых изменениях в выбранном в данный момент узле.  
-
 *   **Изменения атрибутов**: активируется при добавлении или удалении атрибута на текущем выбранном узле или изменении значения атрибута.  
-
 *   **Удаление узла**: активируется при удалении текущего выбранного узла.  
-
+    
 ## Точки останова XHR и FETCH   
 
 Используйте точку останова XHR, когда нужно прервать, когда URL-адрес запроса XHR содержат указанную строку.  DevTools приостанавливается на строке кода, где XHR запускает `send()` метод.  
@@ -149,11 +147,11 @@ console.log('c');
 1.  Нажмите кнопку **Добавить точку останова**.  
 1.  Введите строку, на которой вы хотите приостановить.  DevTools приостанавливает работу, когда эта строка отображается в любом месте URL-адреса запроса XHR.  
 1.  Нажмите кнопку `Enter` , чтобы подтвердить.  
-
-> ##### Рисунок6  
-> Создание точки останова XHR в **точках останова XHR** для любого запроса, содержащегося `org` в URL-адресе.  
-> ![Создание точки останова XHR][ImageXhrBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="Создание точки останова XHR" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
+       Создание точки останова XHR  
+    :::image-end:::  
+    
 ## Точки останова прослушивателя событий 
 
 Используйте точки останова прослушивателя событий, когда необходимо приостановить выполнение кода прослушивателя событий, который выполняется после срабатывания события.  Вы можете выбрать определенные события, такие как `click` или категории событий, например все события мыши.  
@@ -161,28 +159,28 @@ console.log('c');
 1.  Откройте вкладку **источники** .  
 1.  Разверните область **точки останова для прослушивателя событий** .  DevTools отображает список категорий событий, например **анимацию**.  
 1.  Отметьте одну из этих категорий, чтобы приостановить любое событие из этой категории, или развернуть категорию и проверить определенное событие.  
-
-> ##### Рисунок7  
-> Создание точки останова прослушивателя событий для `deviceorientation`  
-> ![Создание точки останова для прослушивателя событий][ImageEventListenerBreakpoint]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Создание точки останова для прослушивателя событий" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
+       Создание точки останова для прослушивателя событий  
+    :::image-end:::  
+    
 ## Точки останова для исключений   
 
 Используйте точки останова, когда нужно приостановить выполнение в строке кода, которая вызывает перехваченное или неперехваченное исключение.  
 
 1.  Откройте вкладку **источники** .  
-1.  Нажмите кнопку **Пауза на** вкладке исключения ![ приостановить выполнение ][ImagePauseOnExceptionsIcon] .  При включении значок становится синей.  
+1.  Нажмите кнопку **Pause on Exceptions** \ ( ![ Pause on Exceptions ][ImagePauseOnExceptionsIcon] \).  При включении значок становится синей.  
     
-    > ##### Рисунок8  
-    > Кнопка " **Пауза при исключениях** "  
-    > ![Кнопка "Пауза при исключениях"][ImagePauseExceptionsHighlight]  
-
-1.  **Необязательный**. Установите флажок **приостановить на перехваченных исключениях** , если вы также хотите приостанавливать на перехваченных исключениях помимо неперехваченных.  
-
-> ##### Рисунок9  
-> Приостановлено при неперехваченном исключении  
-> ![Приостановлено при неперехваченном исключении][ImageUncaughtException]  
-
+    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="Кнопка "Пауза при исключениях"" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+       Кнопка " **Пауза при исключениях** "  
+    :::image-end:::  
+    
+1.  **Необязательный**.  Установите флажок **приостановить на перехваченных исключениях** , если вы также хотите приостанавливать на перехваченных исключениях помимо неперехваченных.  
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Приостановлено при неперехваченном исключении" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
+       Приостановлено при неперехваченном исключении  
+    :::image-end:::  
+    
 ## Точки останова по функциям   
 
 Выполняйте `debug(method)` метод, где `method` — команда, функция или метод, для которого нужно выполнить отладку, когда вы хотите приостановить каждый раз при запуске определенной функции.  Вы можете вставить `debug()` в код (например, `console.log()` инструкцию) или запустить метод из консоли DevTools.  `debug()` эквивалентно установке [точки останова строки кода](#line-of-code-breakpoints) в первой строке функции.  
@@ -219,34 +217,27 @@ debug(hey); // This does not work.  hey() is out of scope.
 1.  Установите [точку останова для строки кода](#line-of-code-breakpoints) , где находится функция в области.
 1.  Активация точки останова.  
 1.  Выполняйте `debug()` метод на консоли DevTools, когда код по-прежнему придерживается в точке останова кода.  
-
+    
+<!---  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImagePauseOnExceptionsIcon]: /microsoft-edge/devtools-guide-chromium/media/pause-on-exceptions-icon.msft.png  
-
-[ImageLocBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoint-30.msft.png "Рисунок 1: точка останова в коде строки"  
-[ImageConditionalLocBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-conditional-breakpoint.msft.png "Рисунок 2: точка останова, которая является зависимой от строки кода"  
-[ImageBreakpointsPanel]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoints-16-33.msft.png "Рисунок 3: панель «точки останова»"  
-[ImageDeactivatedBreakpoints]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png "Рисунок 4: отключенные точки останова в области "точки останова""  
-[ImageDomChangeBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-elements-break-on-subtree-modifications.msft.png "Рисунок 5: контекстное меню для создания точки останова по изменению модели DOM"  
-[ImageXhrBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png "Рисунок 6: создание точки останова XHR"  
-[ImageEventListenerBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png "Рисунок 7: создание точки останова для прослушивателя событий"  
-[ImagePauseExceptionsHighlight]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-pause-on-exceptions.msft.png "Рисунок 8: кнопка "Пауза при исключениях""  
-[ImageUncaughtException]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-paused-on-exception.msft.png "Рис. 9: приостанавливается на неперехваченном исключении"  
+[ImagePauseOnExceptionsIcon]: ../media/pause-on-exceptions-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsJavascriptIndex]: index.md "Начало работы с отладкой JavaScript в Microsoft Edge DevTools"  
+[DevtoolsJavascriptIndex]: index.md "Начало работы с отладкой JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Получить API | MDN"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
 > Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) и [Kayce Basques][KayceBasques] \ (технический писатель, хром DevTools & Lighthouse).  
+
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
 

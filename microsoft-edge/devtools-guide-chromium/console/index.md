@@ -2,16 +2,16 @@
 title: Обзор консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 6062afb929a5d763c095d4915a2960993bc5ab4c
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 45e2eb9d66fa284b1326e7554b6897a1e1747561
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601790"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982294"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,52 +39,52 @@ ms.locfileid: "10601790"
 
 ## Просмотр записанных сообщений   
 
-Веб-разработчики часто записывает сообщения на консоль, чтобы убедиться в том, что их JavaScript работает должным образом.  Чтобы записать сообщение в журнал, вставьте выражение, например, `console.log('Hello, Console!')` в сценарий JavaScript.  Когда браузер запускает JavaScript и видит такое выражение, оно заносит сообщение в консоль.  Например, предположим, что вы пишете HTML и JavaScript для страницы:  
+Веб-разработчики часто записывает сообщения на консоль, чтобы убедиться в том, что их JavaScript работает должным образом.  Чтобы записать сообщение в журнал, вставьте выражение, например, `console.log('Hello, Console!')` в сценарий JavaScript.  Когда браузер запускает JavaScript и видит такое выражение, оно заносит сообщение в консоль.  
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Console Demo</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script>
-      console.log('Loading!');
-      const h1 = document.querySelector('h1');
-      console.log(h1.textContent);
-      console.assert(document.querySelector('h2'), 'h2 not found!');
-      const artists = [
-        {
-          first: 'René',
-          last: 'Magritte'
-        },
-        {
-          first: 'Chaim',
-          last: 'Soutine'
-        },
-        {
-          first: 'Henri',
-          last: 'Matisse'
-        }
-      ];
-      console.table(artists);
-      setTimeout(() => {
-        h1.textContent = 'Hello, Console!';
-        console.log(h1.textContent);
-      }, 3000);
-    </script>
-  </body>
-</html>
-```  
+:::row:::
+   :::column span="":::
+      HTML и JavaScript для страницы.  
+      
+      ```html
+      <!doctype html>
+      <html>
+          <head>
+              <title>Console Demo</title>
+          </head>
+          <body>
+              <h1>Hello, World!</h1>
+              <script>
+                  console.log('Loading!');
+                  const h1 = document.querySelector('h1');
+                  console.log(h1.textContent);
+                  console.assert(document.querySelector('h2'), 'h2 not found!');
+                  const artists = [
+                      { first: 'René', last: 'Magritte' },
+                      { first: 'Chaim', last: 'Soutine' },
+                      { first: 'Henri', last: 'Matisse' }
+                  ];
+                  console.table(artists);
+                  setTimeout(() => {
+                      h1.textContent = 'Hello, Console!';
+                      console.log(h1.textContent);
+                  }, 3000);
+              </script>
+          </body>
+      </html>
+      ```  
+   :::column-end:::
+   :::column span="":::
+      На приведенном ниже рисунке показана **консоль** , на которой выводятся результаты загрузки страницы и ожидания 3 секунды.  
+      
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Панель консоли" lightbox="../media/console-console-demo.msft.png":::
+         Панель **консоли**  
+      :::image-end:::  
+      
+      Попробуйте определить, какие строки кода привели к тому, что браузер зарегистрирует сообщения.  
+   :::column-end:::
+:::row-end:::  
 
-[На рисунке 1](#figure-1) показано, как выглядит консоль после загрузки страницы и ожидания 3 секунды.  Попробуйте узнать, какие строки кода привели к тому, что браузер зарегистрирует сообщения.  
-
-> ##### Рис. 1  
-> Панель консоли  
-> ![Панель консоли][ImageConsole]  
-
-Веб-разработчики могут регистрировать сообщения по двум основным причинам.  
+Веб-разработчики могут регистрировать сообщения по следующим двум основным причинам.  
 
 *   Убедитесь в том, что код выполняется в нужном порядке.  
 *   Проверка значений переменных в определенный момент времени.  
@@ -93,39 +93,42 @@ ms.locfileid: "10601790"
 
 ## Выполнение JavaScript   
 
-Консоль также является [REPL][WikiREPLoop].  Вы можете запустить JavaScript на консоли для взаимодействия с проверяемой страницей.  Например, [на рисунке 2](#figure-2) показана консоль рядом с домашней страницей DevTools, а [на рисунке 3](#figure-3) показана эта же страница после использования консоли для изменения верхнего заголовка страницы.  
+**Консоль** также является [REPL][WikiREPLoop].  Вы можете запустить JavaScript на **консоли** для взаимодействия с проверяемой страницей.   
 
-> ##### Рисунок 2  
-> Панель консоли рядом с домашней страницей DevTools  
-> ![Панель консоли рядом с домашней страницей DevTools][ImageConsoleOverview]  
+:::row:::
+   :::column span="":::
+      На приведенном ниже рисунке **консоль** показана рядом с домашней страницей DevTools.  
+      
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Панель консоли рядом с домашней страницей DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+         Панель **консоли** рядом с домашней страницей DevTools  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      На приведенном ниже рисунке эта же страница отображается после использования **консоли** для изменения верхнего заголовка страницы.
+      
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Использование консоли для изменения верхнего заголовка страницы" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Использование **консоли** для изменения верхнего заголовка страницы  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
-> ##### Рисунок3  
-> Использование консоли для изменения верхнего заголовка страницы  
-> ![Использование консоли для изменения верхнего заголовка страницы][ImageConsoleChangeTitle]  
+Изменение страницы на **консоли** возможно из-за того, что **консоль** имеет полный доступ к [окну][MDNWindow] страницы.  В DevTools есть несколько удобных функций, которые облегчают изучение страницы.  Например, предположим, что ваш сценарий JavaScript содержит функцию с именем `hideModal` .  Выполнение `debug(hideModal)` программы приостанавливает код на первой строке при `hideModal` следующем запуске.  Дополнительные сведения о полном списке служебных функций можно найти в [справочнике API для консольных утилит][DevtoolsConsoleUtilitiesDebug].  
 
-Изменение страницы на консоли возможно из-за того, что консоль имеет полный доступ к [окну][MDNWindow] страницы.  В DevTools есть несколько удобных функций, которые облегчают изучение страницы.  Например, предположим, что ваш сценарий JavaScript содержит функцию с именем `hideModal` .  Выполнение `debug(hideModal)` программы приостанавливает код на первой строке при `hideModal` следующем запуске.  Полный список служебных функций можно найти в [справочнике API для консольных утилит][DevtoolsConsoleUtilitiesDebug] .  
-
-При запуске JavaScript вам не нужно взаимодействовать со страницей.  Вы можете использовать консоль, чтобы попробовать новый код, не связанный со страницей.  Например, предположим, что вы только что узнали о встроенном методе [Map ()][MDNMap] для массивов JavaScript () и хотите поэкспериментировать с ним.  
+При запуске JavaScript вам не нужно взаимодействовать со страницей.  Вы можете использовать **консоль** , чтобы попробовать новый код, не связанный со страницей.  Например, предположим, что вы только что узнали о встроенном методе [Map ()][MDNMap] для массивов JavaScript () и хотите поэкспериментировать с ним.  
 **Консоль** — это хорошее место для повторения функции.  
 
-Чтобы получить практический опыт выполнения JavaScript на консоли, ознакомьтесь [со статьей начало работы с JavaScript][ImageConsoleChangeTitle] .  
+Дополнительные сведения о том, как запустить JavaScript на **консоли**, можно найти в разделе [Начало работы с JavaScript][DevtoolsConsoleRunningJavascript].  
 
    
 
   
 
-<!-- image links -->  
-
-[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-console-demo.msft.png "Рисунок 1: панель консоли"  
-[ImageConsoleChangeTitle]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-h1-changed.msft.png "Рисунок 3: использование консоли для изменения верхнего заголовка страницы"  
-[ImageConsoleOverview]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-empty.msft.png "Рисунок 2: панель консоли рядом с домашней страницей DevTools"  
-
 <!-- links -->  
 
-[DevToolsConsoleAPI]: /microsoft-edge/devtools-guide-chromium/console/api "Справочник по API консоли"  
-[DevtoolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Начало работы с сообщениями журнала на консоли"  
-[DevtoolsConsoleRunningJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Начало работы с JavaScript на консоли"  
-[DevtoolsConsoleUtilitiesDebug]: /microsoft-edge/devtools-guide-chromium/console/utilities#debug "Справочник по API служебных программ для консоли отладки"  
+[DevToolsConsoleAPI]: ./api.md "Справочник по API консоли | Документы Microsoft"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Начало работы с сообщениями в журнале на консоли | Документы Microsoft"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Начало работы с JavaScript на консоли | Документы Microsoft"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "Справочник по API для служебных программ консоли | Документы Microsoft"  
 
 [MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. prototype. Map () | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Окно | MDN"  

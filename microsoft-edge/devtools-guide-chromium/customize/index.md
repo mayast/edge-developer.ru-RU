@@ -2,16 +2,16 @@
 title: Настройка Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882746"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982412"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,53 +45,53 @@ ms.locfileid: "10882746"
 
 *   Нажмите `F1` , чтобы DevTools в фокусе.  
 *   Откройте **главное меню** и выберите пункт **Параметры**.  
-
-> ##### Рис. 1  
-> Параметры  
-> ![Параметры][ImageSettings]  
-
+    
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Параметры" lightbox="../media/customize-settings-preferences.msft.png":::
+       **Параметры**  
+    :::image-end:::  
+    
 ## Зазор   
 
 Этот **ящик** включает множество скрытых функций.  
 
-Нажмите `Escape` , чтобы открыть или закрыть денежный ящик.  
+Нажмите `Escape` , чтобы открыть или закрыть **денежный ящик**.  
 
-> ##### Рисунок 2  
-> Ящик  
-> ![Ящик][ImageDrawerExample]  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Ящик" lightbox="../media/customize-drawer-open.msft.png":::
+   **Ящик**  
+:::image-end:::  
 
-Нажмите кнопку **Дополнительно** ![ ][ImageMoreIcon] , чтобы открыть вкладку другой ящик.  
+Нажмите кнопку **Дополнительно** ![ ][ImageMoreIcon] , чтобы открыть вкладку другой **ящик** .  
 
-> ##### Рисунок3  
-> Кнопка для открытия вкладок ящиков  
-> ![Кнопка для открытия вкладок ящиков][ImageMoreDrawerTabs]  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Кнопка для открытия вкладок ящиков" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Кнопка для открытия вкладок **ящиков**  
+:::image-end:::  
 
 ## Изменение порядка панелей   
 
 Щелкните и перетащите вкладку панели, чтобы изменить ее порядок.  Настраиваемый порядок табуляции сохраняется в сеансах DevTools.  
 
 > [!NOTE]
-> По умолчанию вкладка сетевая панель обычно является четвертой слева.  На [рисунке 4](#figure-4)это первый из левых.  
+> По умолчанию вкладка **Сетевая** панель обычно является четвертой слева.  На приведенном ниже рисунке панель **Network (сеть** ) — это первый из левых.  
 
-> ##### Рисунок4  
-> Окно DevTools с настраиваемым порядком табуляции    
-> ![Окно DevTools с настраиваемым заказом вкладки панели][ImageCustomTabOrdering]  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Окно DevTools с настраиваемым заказом вкладки панели" lightbox="../media/customize-network-first-position.msft.png":::
+   Окно DevTools с настраиваемым заказом вкладки панели  
+:::image-end:::  
 
 ## Изменение положения DevTools   
 
 Ознакомьтесь с [DevTools размещения Microsoft Edge][DevToolsPlacement].  
 
-> ##### Рисунок 5  
-> Незакрепленные DevTools  
-> ![Незакрепленные DevTools][ImageUndock]  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Незакрепленные DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   Незакрепленные DevTools  
+:::image-end:::  
 
 ## Темная тема   
 
 См. [: включить темную тему][DarkTheme].  
 
-> ##### Рисунок6  
-> Темная тема  
-> ![Темная тема][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Темная тема" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   Темная тема  
+:::image-end:::  
 
 ## Эксперименты   
 
@@ -103,25 +103,20 @@ ms.locfileid: "10882746"
 
 В следующий раз при открытии DevTools откроется новая страница с именем " **эксперименты** " в разделе " [Параметры](#settings)".  
 
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
-
-[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "Рисунок 1: параметры"  
-[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "Рисунок 2: ящик"  
-[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "Рисунок 3: кнопка для открытия вкладок ящиков"  
-[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "Рисунок 4: окно DevTools с заказом на вкладку "Настраиваемая панель""  
-[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png "Рисунок 5: незакрепленный DevTools"  
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png "Рисунок 6: темная тема"  
+[ImageMoreIcon]: ../media/more-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Изменение положения DevTools Microsoft EDGE (Отстыковка, закрепить в нижней части, закрепить слева)"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Включение темной темы в Microsoft Edge DevTools"  
+[DevToolsPlacement]: ./placement.md "Изменение положения Microsoft Edge DevTools | Документы Microsoft"  
+[DarkTheme]: ./dark-theme.md "Включить темную тему в Microsoft Edge DevTools | Документы Microsoft"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

@@ -2,16 +2,16 @@
 title: Справочник по отладке JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 1d361bb39523e9b039500f46da54e60b82adbda6
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 26f7272534e0834e0fb302a40b7f0ebfc817c88e
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581742"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982202"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -55,11 +55,11 @@ ms.locfileid: "10581742"
 
 ### Шаг с заходом в строке кода   
 
-При приостановке на строке, содержащей функцию, не относящуюся к проблеме, которую вы отлаживается, щелкните значок " **шаг за** ![ шагом", ][ImageStepOverIcon] чтобы запустить функцию без пошаговой отладки.  
+При приостановке в строке кода, содержащей функцию, которая не относится к проблеме, которую вы отлаживается, щелкните значок " **шаг за** шагом", ![ ][ImageStepOverIcon] чтобы запустить функцию без пошаговой отладки.  
 
-> ##### Рис. 1  
-> Выбор **пункта "шаг за шагом** "  
-> ![Выбор пункта "шаг за шагом"][ImageSelectingStepOver]  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Нажмите кнопку "шаг за шагом"" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
+   Нажмите кнопку " **шаг за шагом** "  
+:::image-end:::  
 
 Например, предположим, что выполняется отладка следующего кода:  
 
@@ -79,11 +79,11 @@ function getName() {
 
 ### Шаг с заходом в строку кода   
 
-При приостановке в строке кода, содержащей вызов функции, связанный с проблемой, в которой выполняется отладка, щелкните значок **шаг** с заходом, ![ ][ImageStepIntoIcon] чтобы более подробно изучить эту функцию.  
+При приостановке в строке кода, содержащей вызов функции, связанный с проблемой, в которой выполняется отладка, щелкните значок **шаг** с заходом \ (шаг с заходом в начало ![ ), ][ImageStepIntoIcon] чтобы более подробно изучить эту функцию.  
 
-> ##### Рисунок 2  
-> Выбор **шага**  
-> ![Выбор шага][ImageSelectingStepInto]  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Нажмите кнопку "шаг с заходом"" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
+   Нажмите кнопку " **Шаг с заходом** "  
+:::image-end:::  
 
 Например, предположим, что выполняется отладка следующего кода:  
 
@@ -103,13 +103,13 @@ function getName() {
 
 ### Пошаговое руководство из строки кода   
 
-При приостановке внутри функции, которая не связана с проблемой, которую вы выполняете Отладка, щелкните значок **шаг** с выходом, ![ ][ImageStepOutIcon] чтобы выполнить оставшуюся часть кода функции.  
+При приостановке внутри функции, которая не связана с проблемой, которую вы выполняете Отладка, щелкните значок **шаг** с выходом \ ( ![ Шаг с выходом ][ImageStepOutIcon] ), чтобы выполнить оставшуюся часть кода функции.  
 
-> ##### Рисунок3  
-> Выбор **пункта "шаг с выходом** "  
-> ![Выбор пункта "шаг с выходом"][ImageSelectingStepOut]  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Нажмите кнопку "шаг с выходом"" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
+   Нажмите кнопку " **Шаг с выходом** "  
+:::image-end:::  
 
-Например, предположим, что выполняется отладка следующего кода:  
+Например, предположим, что выполняется отладка следующего фрагмента кода.  
 
 ```javascript
 function updateHeader() {
@@ -129,19 +129,19 @@ function getName() {
 
 При отладке длительных функций может возникнуть большой объем кода, не относящегося к той проблеме, которую вы размещаете в отладке.  
 
-Вы можете пошагово пройти все строки, но это утомительно.  Вы можете указать точку останова для строки кода в строке, в которой вы заинтересованы, и нажать на значок возобновления сценария "возобновить **выполнение** скрипта" ![ ][ImageResumeScriptExecutionIcon] , но это быстрее.  
+Вы можете пошагово пройти все строки, но это утомительно.  Вы можете задать точку останова для строки кода в строке, в которой вы заинтересованы, а затем щелкнуть значок **запуска сценария возобновления** \ ( ![ возобновить выполнение скрипта ][ImageResumeScriptExecutionIcon] \), но это быстрее.  
 
 Щелкните правой кнопкой мыши строку кода, в которой вы хотите заинтересовать, и выберите команду **продолжить**.  DevTools запускает весь код до этого момента, а затем приостанавливает выполнение на этой линии.  
 
-> ##### Рисунок4  
-> Выбор варианта **"перейти сюда"**  
-> ![Выбор варианта "перейти сюда"][ImageSelectingContinueToHere]  
+:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Нажмите кнопку "перейти сюда"" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
+   Нажмите кнопку **"перейти сюда"**  
+:::image-end:::  
 
 ### Перезапустить функцию TOP в стеке вызовов   
 
-Наведя указатель на строку кода, щелкните правой кнопкой мыши в любом месте области **стека звонков** и выберите команду **перезапустить кадр** , чтобы приостановить работу на первой строке функции Top в стеке вызовов.  Функция Top — это последняя вызываемая функция.  
+Наведя указатель на строку кода, щелкните правой кнопкой мыши в любом месте области **стека звонков** и выберите команду **перезапустить кадр** , чтобы приостановить работу на первой строке функции Top в стеке вызовов.  Функция Top — это последняя выполненная функция.  
 
-Например, предположим, что выполняется пошаговое выполнение следующего кода:  
+Например, предположим, что вы пошаговое выполнение следующего фрагмента кода.  
 
 ```javascript
 function factorial(n) {
@@ -155,33 +155,33 @@ function factorial(n) {
 
 Вы приостанавливаете `A` .  После нажатия кнопки **перезапустить**вы должны быть приостановлены `B` , пока не задана точка останова или нажата клавиша **возобновления выполнения сценария**.  
 
-> ##### Рисунок 5  
-> Выбор **перезапуска кадра**  
-> ![Выбор перезапуска кадра][ImageSelectingRestartFrame]  
+:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Нажмите кнопку "перезапустить рамку"" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
+   Нажмите кнопку " **перезапустить рамку** "  
+:::image-end:::  
 
 ### Среда выполнения сценария возобновления   
 
-Чтобы продолжить выполнение после паузы в сценарии, щелкните значок "возобновить **сценарий запуска сценария** " ![ ][ImageResumeScriptExecutionIcon] .  DevTools запускает сценарий до следующей точки останова (при наличии).  
+Чтобы продолжить выполнение после паузы в сценарии, щелкните значок **возобновление выполнения сценария** \ ( ![ возобновить выполнение сценария ][ImageResumeScriptExecutionIcon] \).  DevTools запускает сценарий до следующей точки останова (при наличии).  
 
-> ##### Рисунок6  
-> Выбор **выполнения скрипта возобновления**  
-> ![Выбор выполнения скрипта возобновления][ImageSelectingResumeScriptExecution]  
+:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Выбор выполнения сценария возобновления" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
+   Выбор **выполнения сценария возобновления**  
+:::image-end:::  
 
 #### Выполнение принудительного выполнения сценария   
 
-Чтобы пропустить все точки останова и принудительно возобновить выполнение сценария, нажмите и удерживайте значок возобновления **сценария "возобновить выполнение** скрипта", ![ ][ImageResumeScriptExecutionIcon] а затем выберите команду **принудительное** ![ выполнение сценария принудительной обработки ][ImageForceScriptExecutionIcon] .  
+Чтобы пропустить все точки останова и принудительно возобновить выполнение сценария, щелкните значок **возобновления и удерживайте его** , ![ ][ImageResumeScriptExecutionIcon] а затем выберите пункт **принудительное** выполнение сценария \ (принудительное выполнение сценария ![ ][ImageForceScriptExecutionIcon] ).  
 
-> ##### Рисунок7  
-> Выбор **принудительного выполнения сценария**  
-> ![Выбор принудительного выполнения сценария][ImageSelectingForceScriptExecution]  
+:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Выберите принудительное выполнение сценария" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
+   Выберите **принудительное выполнение сценария**  
+:::image-end:::  
 
 ### Изменить контекст потока   
 
 При работе с веб-сотрудниками или сотрудниками служб щелкните контекст, указанный в области **потоки** , чтобы переключиться на этот контекст.  Синий значок стрелки соответствует контексту, выбранному в данный момент.  
 
-> ##### Рисунок8  
-> Область « **потоки** »  
-> ![Область «потоки»][ImageThreadsPane]  
+:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="Область «потоки»" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
+   Область « **потоки** »  
+:::image-end:::  
 
 Например, предположим, что вы придерживаетесь точки останова как в основном, так и на рабочем скрипте службы.  Вы хотите просмотреть локальные и глобальные свойства для контекста рабочего процесса службы, но на панели **источники** отображается контекст основного сценария.  Нажимая кнопку "сервисный рабочий процесс" на панели " **потоки** ", вы сможете перейти в этот контекст.  
 
@@ -192,9 +192,9 @@ function factorial(n) {
 *   Дважды щелкните значение свойства, чтобы изменить его.  
 *   Неперечислимые свойства затенены.  
 
-> ##### Рисунок9  
-> Область " **область** "  
-> ![Область "область"][ImageScopePane]  
+:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="Область "область"" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
+   Область " **область** "  
+:::image-end:::  
 
 ## Просмотр текущего стека вызовов   
 
@@ -204,9 +204,9 @@ function factorial(n) {
 
 Щелкните запись, чтобы перейти к строке кода, в которой была вызвана эта функция.  Синий значок стрелки показывает, какая функция DevTools выделяется в данный момент.  
 
-> ##### Рисунок 10  
-> Область « **Стек вызовов** »  
-> ![Область «стек вызовов»][ImageCallStackPane]  
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Область «стек вызовов»" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+   Область « **Стек вызовов** »  
+:::image-end:::  
 
 > [!NOTE]
 > Если в строке кода не присвоена значение, область **стека вызовов** пуста.  
@@ -219,9 +219,9 @@ This should be moved to an "Export debug data" H2 section when there is enough c
 
 Щелкните правой кнопкой мыши в любом месте области **стека звонков** и выберите команду **Копировать трассировку стека** , чтобы скопировать текущий стек вызовов в буфер обмена.  
 
-> ##### Рисунок11  
-> Выбор пункта « **Копировать трассировку стека** »  
-> ![Выбор пункта «Копировать трассировку стека»][ImageSelectingCopyStackTrace]  
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Нажмите кнопку Копировать трассировку стека." lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
+   Нажмите кнопку **Копировать трассировку стека** .  
+:::image-end:::  
 
 Ниже приведен пример выходных данных.  
 
@@ -235,7 +235,7 @@ onClick (get-started.js:15)
 
 Помечайте сценарий как код библиотеки, если вы хотите пропустить этот сценарий во время отладки.  При пометке в виде кода библиотеки сценарий скрывается в области **стека вызовов** , и вы никогда не просматриваете функции сценария при пошаговом выполнении кода.  
 
-Например, предположим, что выполняется пошаговое выполнение следующего кода:  
+Например, предположим, что вы пошаговое выполнение следующего фрагмента кода.  
 
 ```javascript
 function animate() {
@@ -254,22 +254,22 @@ function animate() {
 1.  Откройте файл.  
 1.  Щелкните правой кнопкой мыши в любом месте.  
 1.  Нажмите кнопку **помечать как код библиотеки**.  
-
-> ##### Рисунок12  
-> Пометка сценария как **кода библиотеки** в области " **Редактор** "  
-> ![Пометка сценария как кода библиотеки в области "редактор"][ImageMarkEditorPane]  
-
+    
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Пометка сценария как кода библиотеки в области "редактор"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
+       Пометка сценария как **кода библиотеки** в области " **Редактор** "  
+    :::image-end:::  
+    
 ### Пометка сценария как кода библиотеки на панели «стек вызовов»  
 
 Чтобы помечать сценарий как **код библиотеки** на панели « **стек звонков** », выполните указанные ниже действия.  
 
 1.  Щелкните правой кнопкой мыши функцию в сценарии.  
 1.  Нажмите кнопку **помечать как код библиотеки**.  
-
-> ##### Рисунок13  
-> Пометка сценария как **кода библиотеки** на панели « **Стек вызовов** »  
-> ![Пометка сценария как кода библиотеки на панели «стек вызовов»][ImageMarkCallStackPane]  
-
+    
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Пометка сценария как кода библиотеки на панели «стек вызовов»" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+       Пометка сценария как **кода библиотеки** на панели « **Стек вызовов** »  
+    :::image-end:::  
+    
 ### Пометка сценария как кода библиотеки из параметров  
 
 Чтобы помечать один сценарий или шаблон сценариев из параметров, выполните указанные ниже действия.  
@@ -279,11 +279,11 @@ function animate() {
 1.  Нажмите кнопку **Добавить узор**.  
 1.  Введите имя сценария или шаблон регулярного выражения для имен сценариев, чтобы помечать его как **код библиотеки**.  
 1.  Щелкните **Добавить**.  
-
-> ##### Рисунок14  
-> Пометка сценария как **кода библиотеки** из параметров  
-> ![Пометка сценария как кода библиотеки из параметров][ImageMarkScriptSettings]  
-
+    
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Пометка сценария как кода библиотеки из параметров" lightbox="../media/javascript-framework-library-code.msft.png":::
+       Пометка сценария как **кода библиотеки** из **параметров**  
+    :::image-end:::  
+    
 ## Выполнение фрагментов кода отладки на любой странице   
 
 Если вы обнаружите, что вы используете один и тот же код отладки в консоли, рассматривайте фрагменты кода.  Фрагменты — это сценарии среды выполнения, созданные, сохраняемые и выполняемые в DevTools.  
@@ -294,21 +294,21 @@ function animate() {
 
 Используйте область **контрольных** значений для просмотра значений настраиваемых выражений.  Вы можете просмотреть любое допустимое выражение JavaScript.  
 
-> ##### Рисунок15  
-> Область **контрольных значений**  
-> ![Область контрольных значений][ImageWatchPane]  
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Область контрольных значений" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+   Область **контрольных значений**  
+:::image-end:::  
 
-*   Щелкните значок Добавить **выражение** ![ Добавить выражение ][ImageAddExpressionIcon] , чтобы создать новое выражение контрольного значения.  
-*   Щелкните значок **обновления** обновления ![ ][ImageRefreshIcon] , чтобы обновить значения всех существующих выражений.  Значения автоматически обновляются при пошаговом выполнении кода.  
-*   Наведите указатель мыши на выражение и щелкните значок **Удалить** выражение удаления выражения, ![ ][ImageDeleteExpressionIcon] чтобы удалить его.  
-
+*   Щелкните значок " **Добавить выражение** " (добавить ![ выражение ][ImageAddExpressionIcon] ), чтобы создать новое выражение контрольного значения.  
+*   Щелкните значок **Refresh** ( ![ Обновить), ][ImageRefreshIcon] чтобы обновить значения всех существующих выражений.  Значения автоматически обновляются при пошаговом выполнении кода.  
+*   Наведите указатель мыши на выражение и щелкните значок **удалить выражение** \ ( ![ удалить выражение ][ImageDeleteExpressionIcon] \), чтобы удалить его.  
+    
 ## Создание читаемого файла minified   
 
-Щелкните значок формата **формата** ![ ][ImageFormatIcon] , чтобы сделать файл minified удобным для чтения.  
+Щелкните значок **Формат** \ ( ![ Формат ][ImageFormatIcon] \), чтобы сделать файл minified удобным для восприятия.  
 
-> ##### Рисунок16  
-> Кнопка " **Формат** "  
-> ![Кнопка "формат"][ImageFormat]  
+:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Кнопка "формат"" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
+   Кнопка " **Формат** "  
+:::image-end:::  
 
 ## Изменение сценария   
 
@@ -319,11 +319,11 @@ function animate() {
 1.  Откройте файл в области " **Редактор** " на панели " **источники** ".  
 1.  Внесите изменения в область " **Редактор** ".  
 1.  Чтобы сохранить, нажмите клавиши `Ctrl` + `S` \ (Windows \) или `Command` + `S` \ (macOS \).  DevTools заменяет весь JS – файл в механизме JavaScript Microsoft Edge.  
-
-> ##### Рисунок17  
-> Область " **Редактор** "  
-> ![Область "редактор"][ImageEditorPane]  
-
+    
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Область "редактор"" lightbox="../media/javascript-sources-html-minified.msft.png":::
+       Область " **Редактор** "  
+    :::image-end:::  
+     
 ## Отключение JavaScript   
 
 [В разделе Отключение JavaScript с Microsoft Edge DevTools][DevToolsJavascriptDisable].  
@@ -334,41 +334,22 @@ function animate() {
 
 <!-- image links -->  
 
-[ImageStepOverIcon]: /microsoft-edge/devtools-guide-chromium/media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: /microsoft-edge/devtools-guide-chromium/media/step-into-icon.msft.png  
-[ImageStepOutIcon]: /microsoft-edge/devtools-guide-chromium/media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: /microsoft-edge/devtools-guide-chromium/media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: /microsoft-edge/devtools-guide-chromium/media/format-icon.msft.png  
-
-[ImageSelectingStepOver]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-over-next-function-call.msft.png "Рисунок 1: выбор пункта "шаг за шагом""  
-[ImageSelectingStepInto]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-into-next-function-call.msft.png "Рисунок 2: выбор пункта "шаг""  
-[ImageSelectingStepOut]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-out-of-current-function.msft.png "Рисунок 3: выбор пункта "шаг с выходом""  
-[ImageSelectingContinueToHere]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-continue-to-here.msft.png "Рисунок 4: выбор варианта перейти сюда"  
-[ImageSelectingRestartFrame]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-restart-frame.msft.png "Рисунок 5: выбор перезапуска кадра"  
-[ImageSelectingResumeScriptExecution]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-resume-script-runtime.msft.png "Рисунок 6: выбор выполнения сценария возобновления"  
-[ImageSelectingForceScriptExecution]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-force-script-runtime.msft.png "Рисунок 7: выбор принудительного выполнения сценария"  
-[ImageThreadsPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-main-min-js-threads.msft.png "Рисунок 8: область "потоки""  
-[ImageScopePane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-scope.msft.png "Рисунок 9: область "область""  
-[ImageCallStackPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png "Рисунок 10: область стека звонков"  
-[ImageSelectingCopyStackTrace]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png "Рисунок 11: выбор пункта "Копировать трассировку стека""  
-[ImageMarkEditorPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Рисунок 12: Пометка сценария как кода библиотеки в области "редактор""  
-[ImageMarkCallStackPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Рис. 13: Пометка сценария как кода библиотеки в области стека вызовов"  
-[ImageMarkScriptSettings]: /microsoft-edge/devtools-guide-chromium/media/javascript-framework-library-code.msft.png "Рисунок 14: Пометка сценария как кода библиотеки из параметров"  
-[ImageWatchPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-watch.msft.png "Рисунок 15: область контрольных значений"  
-[ImageFormat]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-html-non-minified.msft.png "Рисунок 16: кнопка "формат""  
-[ImageEditorPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-html-minified.msft.png "Рисунок 17: область "редактор""  
+[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
+[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
+[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
+[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
+[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
+[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
+[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
+[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsJavascriptDisable]: disable.md "Отключение JavaScript с помощью Microsoft Edge DevTools"  
-[DevToolsJavascriptGetStarted]: index.md "Начало работы с отладкой JavaScript в Microsoft Edge DevTools"  
-[DevToolsJavascriptSnippets]: snippets.md "Выполнение фрагментов кода JavaScript на любой странице с Microsoft Edge DevTools"  
-
-[DevToolsCustomize]: ../customize/index.md "Настройка Microsoft Edge DevTools"  
+[DevToolsJavascriptDisable]: ./disable.md "Отключение JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsJavascriptGetStarted]: ./index.md "Начало работы с отладкой JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Выполнение фрагментов кода JavaScript на любой странице с Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsCustomize]: ../customize/index.md "Настройка Microsoft Edge DevTools | Документы Microsoft"  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
