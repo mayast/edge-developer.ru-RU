@@ -3,7 +3,7 @@ description: Знакомство со средствами разработчи
 title: Средства разработчика в Microsoft Edge (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: microsoft edge, веб-разработка, инструменты f1
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 ms.localizationpriority: high
-ms.openlocfilehash: cba59764805c0be0e9d2c57c1a3d87ca4d14943e
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 0c01b761d1aa1fb645b15b0be5d5d6e4265e646e
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866073"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985970"
 ---
 # Средства разработчика в Microsoft Edge (EdgeHTML)  
 
@@ -46,7 +46,7 @@ ms.locfileid: "10866073"
 *   Панель [Служебные сценарии][DevtoolsGuideEdgehtmlServiceworkers] для управления и отладки своих сервисных сценариев  
 *   Панель [Эмуляция][DevtoolsGuideEdgehtml|::ref9::|] для тестирования сайта с помощью различных профилей браузера, разрешений экрана и координат местоположения GPS  
 
-Не забудьте отправить свои [отзывы и запросы функций](#feedback)!  
+Не забудьте отправить свои [отзывы и запросы функций](#getting-in-touch-with-the-microsoft-edge-devtools-team)!  
 
 > [!TIP]
 > [Тестируйте в Microsoft Edge \ (EdgeHTML\) без использования любого браузера][BrowserstackEdgehtml].  
@@ -117,7 +117,7 @@ ms.locfileid: "10866073"
 > [!NOTE]
 > Если в процессе отладки вы приостановили процесс в точке останова, то используйте действие **Обновить страницу**, чтобы сперва возобновить работу среды выполнения.  
 
-## Отзыв  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 Отправьте свой отзыв, чтобы помочь улучшить Microsoft Edge \(EdgeHTML\) Средства разработчика.  Просто откройте средства \(`F12`), а затем нажмите кнопку [Отправить отзыв](#microsoft-edge-edgehtml-developer-tools).  
 
