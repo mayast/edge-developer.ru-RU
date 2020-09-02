@@ -3,17 +3,17 @@ description: Сведения о том, как протестировать в�
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft EDGE, веб-разработка, HTML, CSS, сценарий JavaScript, разработчик, веб-дисковод, Selenium, тестирование, инструменты, Автоматизация и тестирование
-ms.openlocfilehash: c60095373be337307225f28d320cae19174531a7
-ms.sourcegitcommit: 1b5dfc5a2c7130b3abc6b4545fcaaae0b0897148
+ms.openlocfilehash: 8170820d7809f7c4c07f21c815f17a9438016305
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10757582"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986215"
 ---
 # Использование Chromium для автоматизации тестов  
 
@@ -41,7 +41,7 @@ ms.locfileid: "10757582"
     
 1.  Перейдите на страницу [загрузки драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] и скачайте драйвер, который соответствует номеру версии Edge.  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел загружаемые файлы на странице драйвера Microsoft Edge":::
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел "загружаемые файлы" на странице драйвера Microsoft Edge":::
        Рисунок 2.  Раздел "загружаемые файлы" на странице [драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
@@ -325,8 +325,8 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 Группа Microsoft Edge – это информация о том, как использовать веб – диски, Selenium и Microsoft Edge.  С помощью значка **обратной связи** в Microsoft Edge DevTools или твит [@EdgeDevTools][TwitterTweetEdgeDevTools] , чтобы команда знала, что вы думаете.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Значок обратной связи в Microsoft Edge DevTools":::
-   Значок **обратной связи** в Microsoft Edge DevTools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools":::
+   Значок " **Отправить отзыв** " в Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- image links -->  

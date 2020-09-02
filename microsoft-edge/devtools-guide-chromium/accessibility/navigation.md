@@ -2,16 +2,16 @@
 title: Навигация в Microsoft Edge DevTools с помощью специальных возможностей
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 4bd910fabaab02a632bdc51ade29c5ad6502432a
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 544d6a6ecb8dabe262e7c28aa7fc072610604be0
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931198"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986065"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -235,11 +235,14 @@ ms.locfileid: "10931198"
 
 Чтобы запустить новый аудит, используйте `Shift` + `Tab` для выхода из него отчет и поиска кнопки **выполнить аудит** .  
 
+## Знакомство с командой Microsoft Edge DevTools
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "Справка по специальным возможностям | Документы Microsoft"  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
-
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Область "Специальные возможности": Справочник по специальным возможностям | Документы Microsoft"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
 [DevtoolsConsoleIndex]: ../console/index.md "Обзор консоли | Документы Microsoft"  

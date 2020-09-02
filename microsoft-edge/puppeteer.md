@@ -3,17 +3,17 @@ description: Автоматизация и тестирование в Microsoft
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft EDGE, веб-разработка, разработчик, инструменты, Автоматизация и тестирование
-ms.openlocfilehash: ccca46426a006651a417a22e54c8b528834b5f81
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: bef3f0d7472f7bc595998829546fb540041f20fc
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844014"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986159"
 ---
 # Puppeteer  
 
@@ -100,13 +100,13 @@ node example.js
 
 Это простой пример сценариев автоматизации и тестирования, включенных в Puppeteer и `puppeteer-core` .  Дополнительные сведения о Puppeteer и том, как это работает, можно найти в статьях [Puppeteer][|::ref2::|Main].  
 
-## Отправка отзыва  
+## Знакомство с командой Microsoft Edge DevTools  
 
-Группа разработчиков Edge может услышать отзывы об использовании Puppeteer `puppeteer-core` и Microsoft Edge.  С помощью значка " **Отправить отзыв** " в Microsoft Edge DevTools или твит [@EdgeDevTools][TwitterIntentTweetEdgedevtools] , чтобы группа Microsoft Edge знала, что вы думаете.  
+Группа разработчиков Microsoft Edge может услышать отзывы об использовании Puppeteer `puppeteer-core` и Microsoft Edge.  С помощью значка " **Отправить отзыв** " в Microsoft Edge DevTools или твит [@EdgeDevTools][TwitterIntentTweetEdgedevtools] , чтобы группа Microsoft Edge знала, что вы думаете.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Значок обратной связи в Microsoft Edge DevTools":::
-   Рисунок 2: значок **обратной связи** в Microsoft Edge DevTools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools":::
+   Значок " **Отправить отзыв** " в Microsoft Edge DevTools  
 :::image-end:::  
 
 <!--  

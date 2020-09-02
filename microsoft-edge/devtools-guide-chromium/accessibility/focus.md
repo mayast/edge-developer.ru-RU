@@ -2,16 +2,16 @@
 title: Отслеживание, какой элемент имеет фокус
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981756"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991171"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,11 @@ ms.locfileid: "10981756"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Отслеживание, какой элемент имеет фокус  
 
+Предположим, что вы тестируете специальные возможности навигации с помощью клавиатуры для страницы.  При переходе по странице с помощью `Tab` клавиши иногда теряется фокус, так как элемент, на который установлен фокус, скрыт.  
 
-
-
-# Отслеживание, какой элемент имеет фокус   
-
-
-
-Предположим, что вы тестируете специальные возможности навигации с помощью клавиатуры для страницы.  При переходе по странице с помощью `Tab` клавиши иногда теряется фокус, так как элемент, на который установлен фокус, скрыт.  Чтобы отследить фокусируемый элемент в DevTools, выполните указанные ниже действия.  
+Чтобы отследить фокусируемый элемент в DevTools, выполните указанные ниже действия.  
 
 1.  Открытие **консоли**.  
 1.  Щелкните **создать выражение в реальном времени** \ ( ![ создать выражение в реальном времени ][ImageCreateIcon] ).  
@@ -44,19 +40,20 @@ ms.locfileid: "10981756"
        Создание выражения в реальном времени  
     :::image-end:::  
     
-1.  Введите `document.activeElement`.
-1.  Щелкните за пределами пользовательского интерфейса **Live Expression** , чтобы сохранить его.
+1.  Введите `document.activeElement`.  
+1.  Щелкните за пределами пользовательского интерфейса **Live Expression** , чтобы сохранить его.  
     
 Значение, которое вы видите ниже, `document.activeElement` является результатом выражения.  
+
 Так как это выражение всегда представляет фокусируемый элемент, вы можете всегда следить за тем, какой элемент находится в фокусе.  
 
 *   Наведите указатель мыши на результат, чтобы выделиь фокусируемый элемент в окне просмотра.  
 *   Щелкните результат правой кнопкой мыши и выберите пункт **Показать на панели элементов** , чтобы отобразить элемент в дереве DOM на панели **элементы** .  
 *   Щелкните результат правой кнопкой мыши и выберите **Сохранить как глобальную переменную** , чтобы создать ссылку на переменную на узел, который вы можете использовать на **консоли**.  
-    
-<!--## Feedback   -->  
 
+## Знакомство с командой Microsoft Edge DevTools  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -66,7 +63,7 @@ ms.locfileid: "10981756"
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) и [Kayce Basques][KayceBasques] \ (технический писатель, хром DevTools & Lighthouse).  
+> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

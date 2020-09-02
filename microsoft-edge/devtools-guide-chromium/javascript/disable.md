@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982924"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986117"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10982924"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Отключение JavaScript с помощью Microsoft Edge DevTools  
 
-
-
-
-# Отключение JavaScript с помощью Microsoft Edge DevTools   
-
-
-
-, Чтобы увидеть, как выглядит веб-страница и использует ее при отключении JavaScript.  
+Выполните описанные ниже действия, чтобы увидеть, как выглядит веб-страница и использует ее при отключении JavaScript.  
 
 1.  [Откройте Microsoft Edge DevTools][DevToolsOpen].  
 1.  `Control` + `Shift` + `P` Чтобы открыть меню команд, нажмите клавиши \ (Windows \) или `Command` + `Shift` + `P` \ ( **Command Menu**macOS \).  
@@ -56,7 +50,7 @@ ms.locfileid: "10982924"
        Значок предупреждения рядом с пунктом « **источники** »  
     :::image-end:::  
     
-JavaScript останется отключенным на этой вкладке столько, сколько открыто DevTools.  
+JavaScript остается отключенным на вкладке столько, сколько открыто DevTools.  
 
 Возможно, потребуется перезагрузить страницу, чтобы проверить, зависит ли страница от JavaScript во время загрузки.  
 
@@ -65,11 +59,9 @@ JavaScript останется отключенным на этой вкладк�
 *   Снова откройте **меню команд** и выполните `Enable JavaScript` команду.  
 *   Закройте DevTools.  
 
-<!--  
-## Feedback   
+## Знакомство с командой Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985758"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986166"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985758"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Использование инструментирования выделения на временной шкале  
-
-
 
 Используйте **Инструментирование выделения на временной шкале** , чтобы найти объекты, которые не будут собираться сборщиком мусора, и продолжайте удерживать память.  
 
@@ -44,7 +38,7 @@ ms.locfileid: "10985758"
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**Инструментарий выделения на временной шкале** периодически берет моментальные снимки кучи во время записи \ (как обычно каждые 50 MS! \) и один финальный снимок в конце записи.  
+**Инструментарий выделения на временной шкале** периодически берет моментальные снимки кучи во время записи \ (как обычно каждые 50 MS \) и один конечный снимок в конце записи.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Инструментирование выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Инструментирование выделения на временной шкале**  
@@ -55,7 +49,7 @@ ms.locfileid: "10985758"
 
 ## Включение инструментирования выделения на временной шкале  
 
-Выполните эти действия, чтобы приступить к работе с **инструментированием выделения на временной шкале**.  
+Выполните указанные ниже действия, чтобы приступить к работе с **инструментированием выделения на временной шкале**.  
 
 1.  [Откройте DevTools][DevtoolsOpenIndex].  
 1.  Откройте панель **память** и выберите переключатель **Инструментирование выделения на временной шкале** .  
@@ -86,15 +80,13 @@ ms.locfileid: "10985758"
 
 Если щелкнуть конкретный объект в куче, появится дерево сохранения в нижней части снимка кучи.  Проверка пути сохранения для объекта позволяет понять, почему объект не был собран, и необходимо внести необходимые изменения в код, чтобы удалить ненужную ссылку.  
 
-## Просмотр выделения памяти по функциям   
+## Просмотр выделения памяти по функциям  
 
-Вы можете просматривать выделение памяти функцией JavaScript.  Дополнительные сведения [можно найти в разделе изучение выделения памяти по функциям][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] .  
+Вы можете просматривать выделение памяти функцией JavaScript.  Дополнительные сведения можно найти [в разделе изучение выделения памяти по функциям][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-<!--
-## Feedback   
+## Знакомство с командой Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

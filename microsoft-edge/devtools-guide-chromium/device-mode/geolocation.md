@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981833"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986103"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10981833"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Переопределение географического положения с помощью Microsoft Edge DevTools   
-
-
+# Переопределение географического положения с помощью Microsoft Edge DevTools  
 
 Многие веб-сайты имеют преимущество для предоставления пользователям более подходящих возможностей.  Например, на веб-сайте Weather может отображаться локальный прогноз в области пользователя, после того как пользователь выдает разрешение веб-сайту на доступ к текущему расположению пользователя.  
 
@@ -54,11 +48,9 @@ ms.locfileid: "10981833"
        Выберите в `Tokyo` списке " **географическое положение** "  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Знакомство с командой Microsoft Edge DevTools
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

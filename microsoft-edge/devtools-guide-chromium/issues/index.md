@@ -2,16 +2,16 @@
 title: Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 394ea0e831e3b60a60a149d1281c5cca382a887d
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: d837723ed68c6d088e7b345ae86c7a0312b46496
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688131"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986131"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10688131"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы"   
-
-
+# Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы"  
 
 Инструмент " **вопросы** " в Microsoft Edge DevTools сокращает усталость уведомлений и бессрочные элементы **консоли**.  Используйте его для поиска решений проблем, обнаруженных браузером, например проблем с файлами cookie и смешанного содержимого.  
 
@@ -45,7 +39,7 @@ ms.locfileid: "10688131"
 > 
 > Планы Microsoft Edge DevTools Teams, чтобы поддерживать дополнительные типы проблем в будущих версиях Microsoft Edge.  
 
-## Открытие инструмента "проблемы" в ящике DevTools   
+## Открытие инструмента "проблемы" в ящике DevTools  
 
 1.  Посетите страницу, например [SameSite-Sandbox.glitch.Me][GlitchSamesiteSandbox], которая включает проблемы, которые необходимо устранить.  
 1.  [Откройте DevTools][DevtoolsOpen].  
@@ -53,39 +47,39 @@ ms.locfileid: "10688131"
        :::column span="":::
           Нажмите кнопку **Перейти к разделу "проблемы** " на желтой панели предупреждения.  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Нажатие кнопки проблемы на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
-             Рисунок 1.  Кнопка **Перейти к проблемам** на желтой полосе предупреждения при обнаружении проблем.  
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Нажатие кнопки "проблемы" на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
+             Кнопка **Перейти к проблемам** на желтой полосе предупреждения при обнаружении проблем.  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Кроме того, можно выбрать пункт " **проблемы** " в меню " **другие инструменты** ".  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство вопросы в меню другие инструменты" lightbox="../media//issues-more-tools-menu.msft.png":::
-             Рисунок 2.  Средство " **вопросы** " в меню " **другие инструменты** "  
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство "вопросы" в меню "другие инструменты"" lightbox="../media//issues-more-tools-menu.msft.png":::
+             Средство " **вопросы** " в меню " **другие инструменты** "  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
 1.  При необходимости нажмите кнопку **перезагрузить страницу** .  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Инструмент проблемы в DevTools ящике с кнопкой перезагрузить страницу" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       Рисунок 3.  Инструмент " **проблемы** " в DevTools ящике с кнопкой " **перезагрузить страницу** "  
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Инструмент "проблемы" в DevTools ящике с кнопкой "перезагрузить страницу"" lightbox="../media/issues-tab-before-refresh.msft.png":::
+       Инструмент " **проблемы** " в DevTools ящике с кнопкой " **перезагрузить страницу** "  
     :::image-end:::  
 
     Проблемы, обнаруженные в **консоли** , довольно сложно понять, например предупреждения о cookie-файлах на рисунке ниже.  На основе обнаруженных проблем может быть не ясно, что необходимо сделать.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Инструмент проблемы в денежном ящике DevTools с тремя неполадками с файлами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       Рисунок 4.  Инструмент " **проблемы** " в денежном ящике DevTools с тремя неполадками с файлами cookie  
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Инструмент "проблемы" в денежном ящике DevTools с тремя неполадками с файлами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
+       Инструмент " **проблемы** " в денежном ящике DevTools с тремя неполадками с файлами cookie  
     :::image-end:::  
     
-## Просмотр элементов в инструменте "проблемы"   
+## Просмотр элементов в инструменте "проблемы"  
 
 Инструмент " **проблемы** " в ящике DevTools представляет предупреждения в структурированных, агрегатных и возможных действиях.  
 
 1.  Выберите элемент в инструменте " **вопросы** ", чтобы получить инструкции по устранению проблемы и поиску затронутых ресурсов.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометка cookie-файлов другого сайта как безопасной проблемы при открытии в инструменте вопросы" lightbox="../media/issues-tab-issue-open.msft.png":::
-       Рисунок 5.  **Пометка cookie-файлов другого сайта как безопасной проблемы при** открытии в инструменте " **вопросы** "  
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометка cookie-файлов другого сайта как безопасной проблемы при открытии в инструменте "вопросы"" lightbox="../media/issues-tab-issue-open.msft.png":::
+       **Пометка cookie-файлов другого сайта как безопасной проблемы при** открытии в инструменте " **вопросы** "  
     :::image-end:::  
     
     Каждый элемент состоит из четырех компонентов:  
@@ -97,33 +91,31 @@ ms.locfileid: "10688131"
     
 1.  Чтобы просмотреть подробные сведения, выберите элементы в **затронутых ресурсах** .  В следующем примере **cookie-файлы межсайтового сайта как безопасные** вопросы влияют на один файл cookie и два запроса.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы, открытые на вкладке ящик вопросов" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       Рисунок 6.  Затронутые ресурсы, открытые в инструменте " **вопросы** " в ящике DevTools  
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы, открытые на вкладке "ящик вопросов"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+       Затронутые ресурсы, открытые в инструменте " **вопросы** " в ящике DevTools  
     :::image-end:::  
     
-## Просмотр проблем в контексте   
+## Просмотр проблем в контексте  
 
 1.  Выберите ссылку на ресурс, чтобы просмотреть элемент в соответствующем контексте в DevTools.  В следующем примере выберите `samesite-sandbox.glitch.me` в разделе **запросы** для отображения файлов cookie, вложенных в запрос.  
     
     :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Просмотр затрагиваемого cookie-файла на панели DevTools Network" lightbox="../media/issues-tab-view-request.msft.png":::
-       Рисунок 7.  Просмотр затрагиваемого cookie-файла на панели DevTools Network  
+       Просмотр затрагиваемого cookie-файла на панели DevTools **Network**  
     :::image-end:::  
 
 1.  Прокрутите экран, чтобы просмотреть элемент с проблемой: в следующем примере показан `ck02` объект cookie.  Наведите указатель мыши на столбец **SameSite** , чтобы увидеть `None` значение, которое обнаружено проблемой.  
     
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Значение None в столбце SameSite для cookie-файла ck02 на панели DevTools Network" lightbox="../media/issues-tab-view-issue.msft.png":::
-       Рисунок 8.  `None` значение в столбце " **SameSite** " для `ck02` файла cookie на панели DevTools **Network (сеть** )  
+       `None` значение в столбце " **SameSite** " для `ck02` файла cookie на панели DevTools **Network (сеть** )  
     :::image-end:::  
 
-<!--## Feedback  -->  
+## Знакомство с командой Microsoft Edge DevTools  
 
-
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Открыть Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsOpen]: ../open.md "Открыть Microsoft Edge DevTools | Документы Microsoft"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Проверка файлов cookie SameSite | Цепь"  
 

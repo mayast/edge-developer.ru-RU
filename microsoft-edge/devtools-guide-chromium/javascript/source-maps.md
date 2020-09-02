@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981777"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986145"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,14 +27,7 @@ ms.locfileid: "10981777"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Сопоставление предварительно обработанного кода с исходным кодом   
-
-
-
+# Сопоставление предварительно обработанного кода с исходным кодом  
 
 Код на стороне клиента будет читаемым и отлаженным даже после того, как вы объедините, minify или компилируете его.  С помощью карт исходного кода сопоставьте исходный код с скомпилированным кодом.  
 
@@ -78,7 +71,7 @@ ms.locfileid: "10981777"
 Исходные карты включены по умолчанию. <!--\(as of Microsoft Edge 39\)-->, но если вы хотите дважды проверить или включить их; Сначала откройте DevTools, нажмите кнопку **Настройка и управление DevTools** \ ( `...` \) и выберите **Параметры**.  В области **Параметры** в разделе **источники**установите флажок **включить сопоставления источников JavaScript**.  Вы также можете установить флажок **включить сопоставления источников CSS**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Включение карт исходного кода" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   Включение карт исходного кода  
+   **Включение карт исходного кода JavaScript**  
 :::image-end:::  
 
 ### Отладка с помощью карт исходного кода  
@@ -89,7 +82,7 @@ ms.locfileid: "10981777"
 1.  При пошаговом выполнении кода \ (ссылки в стеке вызовов должны открыть исходный исходный файл)  
     
 <!--todo: add link to debugging your code when section is available -->  
-<!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
+<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
 ## @sourceURL и displayName  
 
@@ -104,7 +97,7 @@ ms.locfileid: "10981777"
 Перейдите на следующую страницу.  
 
 *   [ролик][CssNinjaDemoSourceMapping]
-    
+
 Выполните указанные ниже действия.  
 
 1.  Откройте DevTools и перейдите на панель " **источники** ".  
@@ -115,25 +108,31 @@ ms.locfileid: "10981777"
 Если развернуть раздел **источники** , вы увидите новый файл с пользовательским именем, введенным ранее.  Если дважды щелкнуть для просмотра этого файла, он будет содержать скомпилированный код JavaScript для первоначального источника.  Однако в последней строке есть `// @sourceURL` Примечание, указывающее исходный исходный файл.  Это может помочь при отладке при работе с языковыми абстракциями.  
 
 :::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Работа с sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
-   Работа с sourceURL  
+   Работа с `sourceURL`  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Знакомство с командой Microsoft Edge DevTools
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [BabelJS]: https://babeljs.io "Babel является компилятором JavaScript"  
+
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
+
 [CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Простой пример имени//# sourceURL eval"  
+
 [DartMain]: https://www.dartlang.org "Язык программирования DART"  
+
 [GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/замыкание — компилятор | GitHub"  
+
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
+
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Карты исходного кода: языки, инструменты и другая информация | Вики-сайт GitHub"  
+
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Приступая к работе-"Google/traceur-Compiler | Вики-сайт GitHub"  
+
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]

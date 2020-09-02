@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985459"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986173"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985459"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Запись моментальных снимков кучи   
-
-
+# Запись моментальных снимков кучи  
 
 Узнайте, как записывать моментальные снимки кучи с помощью профилировщика Microsoft Edge DevTools и поиска утечек памяти.  
 
@@ -97,7 +91,7 @@ ms.locfileid: "10985459"
 Изначально в представлении сводки открывается моментальный снимок, в котором отображаются итоговые объекты, которые могут быть развернуты для отображения экземпляров.  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Представление сводки" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   Представление сводки  
+   Представление **сводки**  
 :::image-end:::  
 
 Элементы верхнего уровня — строки "Итого".  
@@ -118,7 +112,7 @@ ms.locfileid: "10985459"
 **Что в профилировщике кучи соотносятся различные элементы конструктора \ (Group \)?**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Группы конструкторов" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   Группы конструкторов  
+   Группы **конструкторов**  
 :::image-end:::  
 
 | Элемент Конструктор \ (группировка) | Описание |  
@@ -256,11 +250,9 @@ leafRef = null;
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## Знакомство с командой Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

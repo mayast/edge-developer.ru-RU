@@ -2,16 +2,16 @@
 title: Пометка сценария содержимого как кода библиотеки
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 410a74b906e3b1ff7ff98b6d1791e057e4fa89c4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a5101cb8561a49ce6c271398f4c1a828984da9e3
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982807"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991162"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,17 +27,11 @@ ms.locfileid: "10982807"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Помечайте сценарии содержимого как код библиотеки   
-
-
+# Помечайте сценарии содержимого как код библиотеки  
 
 При использовании панели **Sources (источники** данных) Microsoft Edge DevTools для [перехода по коду][DevToolsJavascriptStepThroughCode], иногда наведите указатель мыши на код, который вы не знаете.  Возможно, вы приостановили код для одного из установленных расширений Microsoft Edge.  Выполните указанные ниже действия, чтобы не приостанавливаться на коде расширения.  
 
-1.  Откройте DevTools, выберите пункт **Настройка DevTools и** `...` нажмите кнопку **Параметры**.  Вы также можете открыть **Параметры** , нажав клавишу `F1` .  
+1.  Откройте DevTools, нажмите кнопку **Настройка DevTools и** `...` выберите пункт **Параметры**.  Вы также можете открыть **Параметры** , выбрав `F1` .  
 
 1.  Откройте вкладку **код библиотеки** , которая открывает раздел **код библиотеки Framework** **параметров**.  
 1.  Установите флажок **помечать сценарии содержимого как библиотечный код** .  
@@ -46,11 +40,9 @@ ms.locfileid: "10982807"
        Флажок " **помечать сценарии содержимого как библиотеку кода** "  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Знакомство с командой Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
@@ -58,7 +50,7 @@ ms.locfileid: "10982807"
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) и [Kayce Basques][KayceBasques] \ (технический писатель, хром DevTools & Lighthouse).  
+> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

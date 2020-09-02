@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: c9a2aecfff1101de532eb59f73da21a32d62c791
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: e11af27681f3aa1aaeefb62505908fdc6cd7a0e9
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985018"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986152"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10985018"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Имитация ориентации устройства с помощью Microsoft Edge DevTools  
 
-
-
-
-# Имитация ориентации устройства с помощью Microsoft Edge DevTools   
-
-
-
-Для имитации разных ориентаций устройства в Microsoft Edge DevTools:  
+Выполните указанные ниже действия, чтобы имитировать различные ориентации устройств в Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
@@ -56,7 +50,7 @@ ms.locfileid: "10985018"
        :::column-end:::
        :::column span="":::
           После выбора **настраиваемой ориентации** `alpha` `beta` поля и "и" `gamma` будут включены.  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
+          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
           Вы также можете настроить пользовательскую ориентацию, перетащив **модель ориентации**.  Удерживайте `Shift` перед перетаскиванием, чтобы повернуть вдоль `alpha` оси.  
           
@@ -66,18 +60,16 @@ ms.locfileid: "10985018"
        :::column-end:::
     :::row-end:::
     
-<!--  
-## Feedback 
+## Знакомство с командой Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation \& Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  

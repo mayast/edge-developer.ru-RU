@@ -2,16 +2,16 @@
 title: Приступая к просмотру и изменению модели DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: c1cf84a9b3f5ce2363372e405071c2dfe1a19519
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6d41b072a8bd19ae728cc02b43eb2f843d91b332
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985159"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991204"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -439,7 +439,7 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 > [!NOTE]
 > Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/dom/index) и [Kayce Basques][KayceBasques] \ (технический писатель, хром DevTools & Lighthouse).  
+> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/dom/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

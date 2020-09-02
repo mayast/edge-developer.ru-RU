@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, эксперименты
-ms.openlocfilehash: 4c2541615700f2c637f293ee6a3fbacd9ccbc43a
-ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
+ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10960724"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986124"
 ---
 # Экспериментальные функции  
 
@@ -139,9 +139,9 @@ ms.locfileid: "10960724"
 Чтобы оставить отзыв о экспериментах Microsoft Edge DevTools или каких-либо других связанных с DevTools.  
 
 *   Отправка отзыва с помощью значка " **Отправить отзыв** " в DevTools  
-*   Твит на [@EdgeDevTools][TwitterEdgedevtools]  
+*   Твит на [@EdgeDevTools][TwitterEdgedevtools]   
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Значок " **Отправить отзыв** " в Microsoft Edge DevTools  
 :::image-end:::  
 

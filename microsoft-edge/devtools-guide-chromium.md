@@ -3,17 +3,17 @@ description: Знакомство со средствами разработчи
 title: Инструменты разработчика Microsoft EDGE (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: cb51e16083e4798478817910e54c571721d094f8
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: c1168e25c99302a9d195c756c6049881b5dfe91f
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931226"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991183"
 ---
 # Инструменты разработчика Microsoft EDGE (Chromium)  
 
@@ -133,15 +133,9 @@ Microsoft Edge использует проект Chromium Open Source для б�
 
 ## Знакомство с командой Microsoft Edge DevTools  
 
-Отправьте свой отзыв, чтобы команда Microsoft Edge продолжала улучшать Microsoft Edge DevTools.  Просто щелкните значок **обратной связи** в DevTools или нажмите `Alt` + `Shift` + `I` на Windows \ ( `Option` + `Shift` + `I` в macOS \) и введите любые отзывы или предложения по функциям для DevTools.  
-
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Обратная связь в Microsoft Edge":::
-   Обратная связь в Microsoft Edge  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 Если вы хотите просмотреть [последние функции DevTools][DevtoolsGuideChromiumWhatsNewIndex], скачайте [Microsoft Edge Канарские][MicrosoftedgeinsiderDownload], который строится на ночь.  
-
-<!-- image links -->  
 
 <!-- links -->  
 
