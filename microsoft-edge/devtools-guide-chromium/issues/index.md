@@ -2,16 +2,16 @@
 title: Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: d837723ed68c6d088e7b345ae86c7a0312b46496
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986131"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992822"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -109,7 +109,7 @@ ms.locfileid: "10986131"
        `None` значение в столбце " **SameSite** " для `ck02` файла cookie на панели DevTools **Network (сеть** )  
     :::image-end:::  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -1,17 +1,18 @@
 ---
+description: Узнайте, как использовать Microsoft Edge DevTools для поиска возможностей, позволяющих быстрее загружать веб-сайты.
 title: Оптимизация скорости веб-сайта с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 42b742316ccaa64aa35fc1d21c5277e448b2d5b7
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: dafcb9c4d1194239baed7507e505d74d2b4ce1c8
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984764"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993444"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,7 +40,7 @@ ms.locfileid: "10984764"
 
 В этом учебнике объясняется, как использовать Microsoft Edge DevTools, чтобы найти способы быстрой загрузки веб-сайтов.  
 
-## Что вам понадобится  
+## Предварительные условия  
 
 *   У вас должен быть базовый интерфейс разработки веб-приложений, аналогично тому, что научились в этом [Знакомство с классом веб-разработки][CourseraIntroductionWebDevelopmentClass].  
 *   Вам ничего не нужно знать о быстродействии нагрузки.  В этом учебнике вы узнаете об этом.  

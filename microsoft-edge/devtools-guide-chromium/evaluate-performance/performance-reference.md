@@ -1,17 +1,18 @@
 ---
-title: Ссылка на событие временной шкалы
+description: В режиме событий временной шкалы отображаются все события, инициированные во время создания записи.  Чтобы узнать больше о каждом типе событий временной шкалы, воспользуйтесь ссылкой на событие временной шкалы.
+title: Справочные материалы по событию временной шкалы
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: e5f0807204877ce034fd52ea4535795ea80ba394
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611722"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992850"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -31,7 +32,7 @@ ms.locfileid: "10611722"
 
 
 
-# Ссылка на событие временной шкалы   
+# Справочные материалы по событию временной шкалы   
 
 
 
@@ -145,7 +146,7 @@ ms.locfileid: "10611722"
 
 | Свойство | Описание |  
 |:--- |:--- |  
-| Местоположение | Для событий Paint координаты x и y прямоугольника рисования. |  
+| Location | Для событий Paint координаты x и y прямоугольника рисования. |  
 | Кодов | Для событий рисования — высота и Ширина закрашиваемой области. |  
 
  

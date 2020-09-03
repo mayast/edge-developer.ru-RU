@@ -1,17 +1,18 @@
 ---
-title: Новые возможности в DevTools (Microsoft Edge 84)
+description: Использование DevTools в режиме высокой контрастности Windows, соответствие сочетаний клавиш в коде DevTools и VS и т. д.
+title: Новые возможности DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: aa39e5d7811d4a614e055a8e0479c74278efbefd
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: 62f261b381b0382561e166bca67f77f37225b764
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942189"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992891"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,324 +28,324 @@ ms.locfileid: "10942189"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Новые возможности в DevTools (Microsoft Edge 84)  
+# Новые возможности DevTools (Microsoft Edge 84)  
 
-## Объявления от команды разработчиков Microsoft Edge  
+## Объявления из группы Microsoft Edge DevTools  
 
-В следующих разделах приведен список извещений, которые вы пропустили от команды разработчиков Microsoft Edge DevTools! Ознакомьтесь с их новыми возможностями в DevTools, расширениях кода VS и многом другом.  Чтобы быть в курсе всех последних и полезных функций в средствах разработчика, скачайте [каналы microsoft Edge][MicrosoftEdgePreviewChannels] и [отслеживайте нас в Твиттере.][EdgeDevToolsTwitterAccount]  
+В следующих разделах представлен список извещений, которые вы могли не получить в Microsoft Edge DevTools Teams! Узнайте, как использовать новые функции в DevTools, расширения кода VS и многое другое.  Чтобы оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительной версии Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Twitter][EdgeDevToolsTwitterAccount].  
 
-### Использование Средств разработки в режиме высокой контрастности Windows
+### Использование DevTools в режиме высокой контрастности Windows
 
-Средства разработчиков Microsoft Edge теперь отображаются в режиме высокой контрастности, если Windows работает в режиме высокой контрастности.  
+Microsoft Edge DevTools теперь отображается в режиме высокой контрастности, когда Windows находится в режиме высокой контрастности.  
 
-:::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="Разработчики Microsoft Edge в режиме высокой контрастности" lightbox="../../media/2020/05/high-contrast.msft.png":::
-   Разработчики Microsoft Edge в режиме высокой контрастности  
+:::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="Microsoft Edge DevTools в режиме высокой контрастности" lightbox="../../media/2020/05/high-contrast.msft.png":::
+   Microsoft Edge DevTools в режиме высокой контрастности  
 :::image-end:::  
 
-[Следуйте инструкциям в windows, чтобы включить режим высокой контрастности.][MicrosoftSupportWindows10HighContrastMode]  Откройте DevTools в Microsoft Edge, нажав `F12` или `Ctrl` + `Shift` + `I` клавишу.  В режиме высокой контрастности отображаются разработчики.  
+[Следуйте инструкциям, чтобы включить режим высокой контрастности в Windows][MicrosoftSupportWindows10HighContrastMode].  Откройте DevTools в Microsoft EDGE, нажав `F12` или `Ctrl` + `Shift` + `I` .  DevTools отображаются в режиме высокой контрастности.  
 
 > [!NOTE]
-> В настоящее время в Microsoft Edge DevTools поддерживает режим высокой контрастности для Windows, но не в macOS. 
+> Microsoft Edge DevTools в настоящее время поддерживает режим высокой контрастности в Windows, но не на macOS. 
 
-Проблема с chromium [#1048378][CR1048378]  
+[#1048378][CR1048378] проблем с Chromium  
 
-### Соответствие сочетаниям клавиш в разработчиках на VS-код  
+### Сопоставление сочетаний клавиш в DevTools с кодом VS  
 
-От отзывов [и](#getting-in-touch-with-microsoft-edge-devtools-team) [общедоступного средства разработчика Chromium][CRIssuesList]команда разработчиков Microsoft Edge заработал собой, что вы хотите настраивать сочетания клавиш в средствах разработчиков.  В Microsoft Edge 84 теперь можно использовать сочетания клавиш в Разработчиках с [кодом VS-кода VS,][VSCode]который над ее помощью работает только для настройки сочетаний клавиш.  
+Из вашего [отзыва](#getting-in-touch-with-microsoft-edge-devtools-team) и средства [отслеживания общедоступных проблем Chromium][CRIssuesList]в Microsoft Edge DevTools была рассказано о том, что вы решили настроить сочетания клавиш в DevTools.  В Microsoft Edge 84 теперь можно сопоставить сочетания клавиш в [коде][VSCode]DevTools с одним из функций, над которыми работает команда для настройки ярлыков.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Соответствие сочетаниям клавиш в разработчиках на VS-код" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
-   Разработчики Microsoft Edge в режиме высокой контрастности  
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Сопоставление сочетаний клавиш в DevTools с кодом VS" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+   Microsoft Edge DevTools в режиме высокой контрастности  
 :::image-end:::  
 
-Чтобы попробовать эксперимент, откройте параметры DevTools, нажав или `?` щелкнув ![ значок "Параметры DevTools" в правом верхнем углу ][ImageSettingsIcon] средств разработчика.  Перейдите в раздел **"Эксперименты"** и проверьте параметры сочетаний клавиш **(необходимо перезагрузить) на вкладке "Параметры сочетаний клавиш" (потребуется перезагрузить).**  Теперь снова загрузите DevTools, снова откройте параметры и перейдите в раздел **сочетаний клавиш.**  
+Чтобы попробовать эксперимент, откройте параметры DevTools, нажав `?` или выделив значок ![ параметров DevTools ][ImageSettingsIcon] в правом верхнем углу DevTools.  Перейдите к разделу " **эксперименты** " и установите флажок **включить пользовательские сочетания клавиш (требуется повторная загрузка)**.  Теперь повторно Загрузи DevTools, снова откройте параметры и перейдите к разделу **сочетания клавиш** .  
 
-В **раскрывающемся списке ярлыков "Соответствие" выберите** **пункт Visual Studio Код.** **Match shortcuts from preset**  Сочетания клавиш в разработчиках теперь соответствуют сочетаниям клавиш для эквивалентных действий кода VS-кода.  
+Выберите **DevTools (по умолчанию)** в раскрывающемся списке **искать сочетания клавиш из предварительной настройки** и выберите **код Visual Studio**.  Сочетания клавиш в DevTools теперь соответствуют сочетаниям клавиш для эквивалентных действий в коде VS.  
 
-Например, сочетание клавиш для привязки или продолжения работы сценария в [коде VS относится][VSCodeShortcuts] к клавише CS. `F5`  В **стандартных средствах DevTools (по умолчанию)** это сочетание клавиш в devTools `F8` **является, но с Visual Studio Code,** теперь это сочетание клавиш `F5` и ярлык.  
+Например, с помощью сочетания клавиш можно приостановить или продолжить выполнение сценария в [коде VS][VSCodeShortcuts] `F5` .  В стиле **DevTools (Default)** это же сочетание клавиш в DevTools имеет тот же самый ярлык `F8` , что и в **Visual Studio** , но теперь этот ярлык также доступен `F5` .  
 
-Функция в настоящее время доступна в Microsoft Edge 84 в качестве экспертов, поэтому сообщите нам об этом с [коллегами.](#getting-in-touch-with-microsoft-edge-devtools-team)  
+В настоящее время эта функция доступна в Microsoft Edge 84 в качестве эксперимента, поэтому Поделитесь своим [мнением](#getting-in-touch-with-microsoft-edge-devtools-team) с командой!  
 
-Проблема с [хромом#174309][CR174309]  
+[#174309][CR174309] проблем с Chromium  
 
-### Удаленный отладка Surface Duo emulator  
+### Эмуляторы Surface Duo удаленной отладки  
 
-Теперь вы можете удаленно отладки веб-контента работать на [экране эмоблемы Surface Duo][DualScreensAndroidEmulator] с полными возможностями [средств разработчиков Microsoft Edge.][DevToolsChromiumGuide]  
+Теперь вы можете выполнять удаленную отладку веб-содержимого, работающего в [эмуляторе Duo Surface][DualScreensAndroidEmulator] , используя полную мощь [Microsoft Edge DevTools][DevToolsChromiumGuide].  
 
-[Эмулуатор Surface Duo][DualScreensAndroidEmulator]помогают проверить, как ваш веб-контент будет выводиться на новом классе сгибом и сдвиганием экрана.  Эмулятор работает под управлением операционной системы Android и предоставляет [приложение Microsoft Edge для Android.][AndroidEdge]  Загрузите веб-контент в [приложении Microsoft Edge][AndroidEdge] и отладьте его с помощью [разработчиков Microsoft Edge.][DevToolsChromiumGuide]  
+С помощью [эмулятора Surface Duo][DualScreensAndroidEmulator]вы можете протестировать отображение веб-содержимого в новом классе складная и на устройствах с двумя экранами.  Эмулятор запускает операционную систему Android и предоставляет [приложение Microsoft Edge Android][AndroidEdge].  Загрузи веб-содержимое в [приложении Microsoft Edge][AndroidEdge] и отлаживать его с помощью [Microsoft Edge DevTools][DevToolsChromiumGuide].  
 
-:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="Приложение Microsoft Edge работает на эмулунере" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
-   Приложение Microsoft Edge на эмутулу  
+:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="Приложение Microsoft EDGE, запущенное в эмуляторе Duo Surface" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
+   Приложение Microsoft EDGE на эмуляторе Duo Surface  
 :::image-end:::  
 
-На `edge://inspect` странице в экземпляре [Microsoft Edge][DesktopEdge] отображается список открытых вкладок или [PWS,][PwaIndex] которые выполняются на конвейере [Surface Duo.][DualScreensAndroidEmulator] **SurfaceDuoEmulator**  
+`edge://inspect`Страница в экземпляре [Microsoft Edge][DesktopEdge] на рабочем столе показывает **SurfaceDuoEmulator** со списком открытых вкладок или [PWAs][PwaIndex] , которые выполняются в [эмуляторе Duo Surface][DualScreensAndroidEmulator].  
 
-:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="На edge://inspect появится список открытых вкладок в приложении Microsoft Edge, запущенной на эмляторе" lightbox="../../media/2020/05/edge-inspect.msft.png":::
-   На `edge://inspect` странице отображается список открытых вкладок в приложении Microsoft Edge, запущенном на эмляторе
+:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="На странице edge://inspect отображается список вкладок в приложении Microsoft EDGE, работающем в эмуляторе." lightbox="../../media/2020/05/edge-inspect.msft.png":::
+   На `edge://inspect` странице отображается список вкладок в приложении Microsoft EDGE, работающем в эмуляторе.
 :::image-end:::  
 
-Если выбрать **поиск вкладки или** PWA, которые нужно отладить, [откроется microsoft Edge DevTools.][DevToolsChromiumGuide]  Следуйте пошаговым инструкциям, чтобы удаленно отладить [веб-контент на эмоблуровsurface.][DevToolsRemoteDebugDuoEmulator]  
+Если выбрать пункт **Проверка** для ВКЛАДКИ или PWA, для которых нужно выполнить отладку, откроется [Microsoft Edge DevTools][DevToolsChromiumGuide].  Следуйте пошаговым инструкциям, [чтобы выполнить удаленную отладку веб-содержимого в эмуляторе Surface Duo][DevToolsRemoteDebugDuoEmulator].  
 
-### Удобнее изменить размер рисования DevTools  
+### Упрощенное изменение размера DevToolsого ящика  
 
-В Microsoft Edge 83 и более ранних версиях можно изменить размер только средства [рисования DevTools,][DevToolsDrawer] наводя указатель мыши на панель инструментов "Рисование".  Рисование отличается от других элементов управления для областей в разработчиках, если наведите указатель мыши на границу области, чтобы изменить ее размер.  Щелкните на следующем рисунке изображение, чтобы узнать, как изменение рисования, работавшего в версии 83 или более ранних версиях Microsoft Edge.  
+В Microsoft Edge 83 или более ранней версии вы смогли изменить размер [DevToolsого ящика][DevToolsDrawer] , наведя указатель мыши на панель инструментов ящика.  Денежный ящик ведет себя иначе, чем другие элементы управления изменением размера для областей в DevTools, где вы наводите указатель мыши на границу области, чтобы изменить ее размер.  Чтобы узнать, как изменить размер ящика, который работал в версии 83 или более ранней версии Microsoft EDGE, выберите приведенный ниже рисунок.  
 
-:::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Изменение размера средства рисования DevTools в Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
-   Изменение размера средства рисования DevTools в Microsoft Edge 83
-:::image-end:::  
-
-<!--todo:  create png that represents the gif information  -->  
-
-Начиная с Microsoft Edge 84, теперь можно изменить размер рисования, наводя указатель мыши на границу документа.  Это изменение отражает поведение размера других областей средств разработчика с помощью средств разработчика.  Щелкните изображение ниже, чтобы увидеть изменения размера в действии в Microsoft Edge 84.  
-
-:::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Изменение размера средствризов DevTools в Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
-   Изменение размера средствризов DevTools в Microsoft Edge 84
+:::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Изменение размера DevTools денежных средств в Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
+   Изменение размера DevTools денежных средств в Microsoft Edge 83
 :::image-end:::  
 
 <!--todo:  create png that represents the gif information  -->  
 
-Проблема с chromium [#1076112][CR1076112]  
+Начиная с Microsoft Edge 84, вы можете изменить размер денежного ящика, наведя указатель мыши на границу денежного ящика.  Это изменение выровнять поведение, изменяя размер DevToolsого ящика с учетом того, как вы измените размеры других областей в DevTools.  Чтобы изменить размер в действии в Microsoft Edge 84, выберите приведенный ниже рисунок.  
 
-### Кнопки навигации экрана с фокусом на кнопках навигации  
-
-При удаленном отключении [устройства с Android,][DevToolsRemoteDebugAndroid] [устройства с Windows 10][DevToolsRemoteDebugWindows]или [эмблему Surface Duo][DevToolsRemoteDebugDuoEmulator]вы можете выключать экрансткую выключатель с помощью значка "Выключатель экрана" в левом верхнем углу ![ средств ][ImageScreencastingIcon] DevTools.  Если включена поддержка экрана, вы сможете перемещаться по вкладке в Microsoft Edge на удаленном устройстве из окна Средств DevTools.  В Microsoft Edge 84 эти кнопки навигации теперь доступны и с помощью клавиатуры.  
-
-:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="При нажатии клавиш SHIFT+TAB на панели url-адреса экрана фокус переместится на кнопку "Обновить"" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
-   При нажатии url-адреса на панели вызова `Shift` + `Tab` отображается фокус на **кнопке "Обновить"**
+:::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Изменение размера DevTools денежных средств в Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
+   Изменение размера DevTools денежных средств в Microsoft Edge 84
 :::image-end:::  
 
-Проблема с #1081486 chromium [#1081486][CR1081486]  
+<!--todo:  create png that represents the gif information  -->  
 
-### Панель сведений о панели сетей теперь доступна  
+[#1076112][CR1076112] проблем с Chromium  
 
-В области сведений [Details pane][DevToolsNetworkDetails] в Microsoft **Network** Edge 84 фокус перемещается при ее открытии для ресурса в [журнале сети.][DevToolsNetworkLog]  Это изменение позволяет средствам чтения с экрана читать содержимое области **сведений** и работать с ним.  
+### Отображение фокуса на кнопках навигации для презентаций  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="В области сведений в панели "Сетевая сеть" фокус перемещается при открытии" lightbox="../../media/2020/05/network-details.msft.png":::
-   В **области сведений в** **панели "Сетевая** сеть" фокус перемещается при открытии
+При удаленной отладке [устройства с Android][DevToolsRemoteDebugAndroid], [устройства с Windows 10][DevToolsRemoteDebugWindows]или [эмулятора Surface Duo][DevToolsRemoteDebugDuoEmulator]вы можете переключаться между экранной презентацией с помощью ![ значка "Показать презентацию" ][ImageScreencastingIcon] в левом верхнем углу окна DevTools.  При включенной презентации вы можете перемещаться по вкладке в Microsoft EDGE на удаленном устройстве из окна DevTools.  В Microsoft Edge 84 эти кнопки навигации теперь также доступны для клавиатуры.  
+
+:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Нажатие клавиш SHIFT + TAB на панели экранных URL-адресов показывает, что кнопка "Обновить" находится в фокусе" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
+   При нажатии на `Shift` + `Tab` отрезке экранного URL-адреса появляется фокус на кнопке " **Обновить** "
 :::image-end:::  
 
-Проблема с [#963183][CR963183]  
+[#1081486][CR1081486] проблем с Chromium  
 
-## Извещения из проекта Chromium  
+### Область сведений на панели "сеть" теперь доступна  
 
-В следующих разделах описаны дополнительные функции, доступные в Microsoft Edge 84, которые были внесены в проект Chromium.  
+В Microsoft Edge 84 [область сведений][DevToolsNetworkDetails] на панели " **сеть** " теперь получает фокус при открытии ресурса в [сетевом журнале][DevToolsNetworkLog].  Это изменение позволяет средствам чтения с экрана читать и взаимодействовать с содержимым области **сведений** .  
 
-### Устранение проблем с новым средством "Проблемы" в средстве рисования DevTools
-
-Новый **инструмент "Проблемы"** в средстве рисования DevTools встроен для уменьшения количества уведомлений и ненужных элементов **консоли.**  В **настоящее** время консоль — это централизованное место для разработчиков веб-сайтов, библиотек, структур и Microsoft Edge для регистрации сообщений, предупреждений и ошибок.  **Средство** "Проблемы" влияет на предупреждения в браузере в структурированном, обобщаемом и поледо конкретном средстве, ссылки на влияние на ресурсы, на которые влияют на ресурсы в microsoft Edge DevTools, и предоставляет рекомендации по их устранению.  Со временем в средстве "Проблемы" в центре проблем важно появляться больше предупреждений в секторе Microsoft Edge, а не **консоли,** что помогает сократить беспорядок в **консоли.** **Issues**  
-
-Чтобы приступить к работе, ознакомьтесь с разделом ["Проблемы с инструментом разработчика Microsoft Edge".][DevtoolsIssuesIndex]  
-
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Средство "Проблемы" в средстве рисования Разработчиков" lightbox="../../media/2020/05/issues.msft.png":::
-   Средство **"Проблемы"** в средстве рисования Разработчиков  
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="При открытии области сведений на панели "сеть" выводится фокус" lightbox="../../media/2020/05/network-details.msft.png":::
+   При открытии области **сведений** на панели " **сеть** " выводится фокус
 :::image-end:::  
 
-Проблема с [#1068116][CR1068116]  
+[#963183][CR963183] проблем с Chromium  
 
-### Просмотр сведений о специальных возможностях в подсказке "Режим проверки"  
+## Объявления из проекта Chromium  
 
-В **подсказке** теперь указывается, есть ли у элемента доступные названия и [роль][WebhintHintsAxeNameRoleValue] и есть [клавиатура.][WebhintHintsAxeKeyboard]  
+В следующих разделах описаны дополнительные возможности, доступные в Microsoft Edge 84, которые были задействованы в проекте Open Source Chromium.  
+
+### Устранение проблем с сайтом с помощью средства "новые проблемы" в DevToolsном ящике
+
+В DevToolsном лотке была создана функция новых **проблем** , позволяющая уменьшить усталость уведомлений и бессрочные элементы **консоли**.  В настоящее время **консоль** — это центральное место для разработчиков веб-сайтов, библиотек, платформ и Microsoft Edge для записи сообщений, предупреждений и ошибок.  Средство " **проблемы** " объединяет предупреждения из браузера в структурированном, статистическом и определенном виде, а также ссылки на уязвимые ресурсы в Microsoft Edge DevTools и инструкции по устранению проблем.  С течением времени вы должны видеть больше и больше предупреждений в Microsoft Edge использование в инструменте " **проблемы** ", а не на **консоли**, что поможет вам уменьшить ненужные элементы на **консоли**.  
+
+Чтобы приступить к работе, ознакомьтесь со статьей [Поиск и устранение проблем с помощью средства Microsoft Edge DevToolss][DevtoolsIssuesIndex].  
+
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Инструмент "проблемы" в DevTools ящике" lightbox="../../media/2020/05/issues.msft.png":::
+   Инструмент " **проблемы** " в DevTools ящике  
+:::image-end:::  
+
+[#1068116][CR1068116] проблем с Chromium  
+
+### Просмотр сведений о специальных возможностях в подсказке режима проверки  
+
+Всплывающая подсказка **режима проверки** теперь указывает, имеет ли элемент доступное [имя и роль][WebhintHintsAxeNameRoleValue] , и это может быть [фокус клавиатуры][WebhintHintsAxeKeyboard].  
 
 <!--todo:  add link inspect mode tooltip (WebdevCls) when section is live  -->  
 <!--todo:  add link name and role (WebdevLabelsText) when section is live  -->  
 <!--todo:  add link keyboard-focusable (WebdevControlFocus) when section is live  -->  
 
-:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="Подсказка в режиме проверки со сведениями о специальных возможностях" lightbox="../../media/2020/05/a11y.msft.png":::
-  **Подсказка в режиме** проверки со сведениями о специальных возможностях  
+:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="Всплывающая подсказка режима проверки с информацией о специальных возможностях" lightbox="../../media/2020/05/a11y.msft.png":::
+  Всплывающая подсказка **режима проверки** с информацией о специальных возможностях  
 :::image-end:::  
 
-Проблема с #1040025 chromium [#1040025][CR1040025]  
+[#1040025][CR1040025] проблем с Chromium  
 
-### Обновления панели производительности  
+### Обновления панели "производительность"  
 
-#### Просмотр сведений об итоговом блоке в нижнем колонтитуле  
+#### Просмотр общих сведений о времени блокировки в нижнем колонтитуле  
 
-После записи скорости загрузки на панели "Производительность" отображаются сведения о дате блокирования времени \(TBT\) в нижнем колонтитуле. **Performance**  Срок погрузки — это показатель производительности, которая помогает квадратить, сколько времени занимает страница.  Фактически измеряет, как долго страница будет отображаться в размере \(так как отображается на экране\); Но не является полезным, так как JavaScript блокирует основной цепочку и поэтому страница не отвечает пользователю.  TBT является основной метрикой приблизительных задержек первого ввода.  
+После того как вы запустите производительность загрузки, на панели **производительности** теперь выводятся общие сведения о времени блокировки (TBT \) в нижнем колонтитуле.  TBT — это метрика производительности нагрузки, которая помогает количественно оценить время, затрачиваемое на использование страницы.  Он по сути определяет, как долго страница может быть использована для работы, а не в том случае, если содержимое отображается на экране. но фактически не годен для использования, так как JavaScript блокирует основной поток, поэтому страница не отвечает на ввод данных пользователем.  TBT — это основная метрика для приближения первой задержки ввода.  
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->  
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 
-Чтобы получить сведения о блокировке времени, не используйте значок **обновления страницы** для ![ ][ImageRefreshPageIcon] загрузки страницы.  
+Чтобы получить общую информацию о времени блокировки, не используйте рабочий процесс обновления **страницы** ![ ][ImageRefreshPageIcon] для записи загрузки страниц с помощью значка страницы обновить.  
 
-Вместо этого выберите **значок записи,** вручную перезагрузите страницу, дождитесь ![ ][ImageRecordIcon] загрузки страницы и остановите запись.  
+Вместо этого нажмите значок **записи записи** ![ ][ImageRecordIcon] , вручную перезагрузить страницу, дождитесь загрузки страницы и остановите запись.  
 
-Если вы видите, Microsoft Edge DevTools не получал требуемые сведения из `Total Blocking Time: Unavailable` внутренних данных профиля в Microsoft Edge.  
+Если вы видите `Total Blocking Time: Unavailable` , Microsoft Edge DevTools не получил нужные сведения из внутренних данных профилирования в Microsoft Edge.  
 
-:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Сведения об общем количестве блокировки в нижнем колонтитуле области производительности" lightbox="../../media/2020/05/tbt.msft.png":::
-   Сведения об общем количестве блокировки в нижнем колонтитуле **области производительности**  
+:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Общие сведения о времени блокировки в нижнем колонтитуле записи панели "производительность"" lightbox="../../media/2020/05/tbt.msft.png":::
+   Общие сведения о времени блокировки в нижнем колонтитуле записи панели " **производительность** "  
 :::image-end:::  
 
-Проблема с [хромом#1054381][CR1054381]  
+[#1054381][CR1054381] проблем с Chromium  
 
-#### События макета в новом разделе "Возможности"  
+#### События смещения макета в разделе "новый интерфейс"  
 
-Новый раздел "Производительность" панели "Производительность" поможет обнаружить смены макета. **Experience** **Performance**  Совместимость макета Shift \(CLS\) позволяет квалифицировать нежелательные визуальные элементы.
+С помощью раздела "новый **интерфейс** " на панели " **производительность** " можно определять смену макета.  Интегральная схема сдвига \ (CLS \) — это метрика, которая помогает оценить нежелательные визуальные нестабильность.
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Выберите **событие "Смена** макета" для просмотра сведений о смене макета в **области "Сводка".**  Наведите указатель мыши **на перемещенные поля** и **"Перемещенные" в** поля, чтобы наглядно представить, где произошло смена макета.  
+Выберите событие **сдвиг макета** , чтобы просмотреть сведения о смене макета в области **Сводка** .  Наведите указатель мыши на поле **переместить из** и **переместили в** поля, чтобы увидеть, где произошел сдвиг макета.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="Сведения о смене макета" lightbox="../../media/2020/05/cls.msft.png":::
    Сведения о смене макета  
 :::image-end:::  
 
-### Более тщательно промежуточные термины в консоли  
+### Более точная терминология по обещанию на консоли  
 
-При ведении журнала консоль неправильно предоставлено `Promise` **Console** `PromiseStatus` `resolved` значение.  
+При входе в систему `Promise` **консоль** неправильно предоставила `PromiseStatus` значение, равное `resolved` .  
 
-:::image type="complex" source="../../media/2020/05/resolved.msft.png" alt-text="Пример консоли с использованием старого определения терминов" lightbox="../../media/2020/05/resolved.msft.png":::
-   Пример консоли **с** использованием `resolved` старого термина  
+:::image type="complex" source="../../media/2020/05/resolved.msft.png" alt-text="Пример консоли, использующей старую распознанную терминологию" lightbox="../../media/2020/05/resolved.msft.png":::
+   Пример **консоли** с помощью старой `resolved` терминологии  
 :::image-end:::  
 
-Теперь **в консоли используется** термин `fulfilled` , который выравнивается относительно `Promise` спецификации.  Дополнительные сведения о `Promise` спецификации см. в [разделе "Регионы и сборы" на гитме.](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)  
+Теперь **консоль** использует термин, который выводится `fulfilled` в соответствии со `Promise` спецификацией.  Дополнительные сведения о `Promise` спецификации можно найти в статьях [состояния и Fates на GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
 
-:::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="Пример консоли с новым терминами" lightbox="../../media/2020/05/fulfilled.msft.png":::
-  Пример **консоли** с новым `fulfilled` терминами  
+:::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="Пример консоли, в которой используется новая терминология" lightbox="../../media/2020/05/fulfilled.msft.png":::
+  Пример **консоли** , в которой используется новая `fulfilled` терминология  
 :::image-end:::  
 
-Проблема с [#6751][CRV86751]  
+[#6751][CRV86751] проблем с V8  
 
-### Обновления области стилей  
+### Обновления области "стили"  
 
-#### Поддержка восстановления ключевых слов  
+#### Поддержка ключевого слова "вернуть"  
 
-В интерфейсе автозаполнения области **"Стили"** теперь [обнаружение обратного][MDNRevert] ключевого слова CSS, при котором касается касательно вычисленного значения свойства к предыдущему значению.  
+Пользовательский интерфейс "Автозаполнение" области " **стили** " теперь определяет ключевое слово " [вернуть][MDNRevert] CSS", которое возвращает каскадное значение свойства к предыдущему значению, примененному к стилю элемента.  
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Отмена значения свойства для отмены" lightbox="../../media/2020/05/revert.msft.png":::
-  Отмена значения свойства для отмены  
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Установка значения свойства "вернуть"" lightbox="../../media/2020/05/revert.msft.png":::
+  Установка значения свойства "вернуть"  
 :::image-end:::  
 
-Проблема с [#1075437][CR1075437]  
+[#1075437][CR1075437] проблем с Chromium  
 
 #### Предварительный просмотр изображений  
 
-Наведите указатель мыши на `background-image` значение в области **"Стили"** для предварительного просмотра изображения в подсказке.  
+Наведите указатель мыши на `background-image` значение в области **стили** , чтобы просмотреть изображение во всплывающей подсказке.  
 
-:::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="При наведении указателя мыши на значение фонового изображения" lightbox="../../media/2020/05/image-preview.msft.png":::
-  Наведение указателя на `background-image` значение  
+:::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Наведение указателя мыши на значение фонового изображения" lightbox="../../media/2020/05/image-preview.msft.png":::
+  Наведение указателя мыши на `background-image` значение  
 :::image-end:::  
 
-Проблема с [#1040019][CR1040019]  
+[#1040019][CR1040019] проблем с Chromium  
 
-#### В средстве выбора цветов теперь используется функция с разделителями, разделенными между пробелами  
+#### Средство выбора цвета теперь использует нотацию функционального цвета, отделенную от пробелов  
 
-[Уровень цветового модуля CSS определяет,][CSSWGDraftsColor4Changes3] что функции цвета `rgb()` (например, должны поддерживать аргументы, разделенные пробелами).  Например, команда `rgb(0, 0, 0)` эквивалентна `rbg(0 0 0)`.  
+[Модуль цветов CSS Level 4][CSSWGDraftsColor4Changes3] указывает, что функции цвета, такие как `rgb()` , должны поддерживать аргументы, разделенные пробелами.  Например, команда `rgb(0, 0, 0)` эквивалентна `rbg(0 0 0)`.  
 
-При выборе цветов [Color Picker][DevtoolsCssReferenceColorPicker] с помощью средства выбора цветов или альтернативного цветового представления в области **"Стили",** удерживая `Shift` нажатой клавишу `background-color` CTRL, вы увидите синтаксис аргументов, разделенных пробелами.  
+При выборе цветов с помощью [палитры][DevtoolsCssReferenceColorPicker] цветов или переключения между цветовыми представлениями в области **стили** при нажатии `Shift` и выделении `background-color` значения должен отобразиться синтаксис аргументов, разделенных пробелами.  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Использование аргументов разделителей между пробелами в области "Стили"" lightbox="../../media/2020/05/color.msft.png":::
-  Использование аргументов разделителей между пробелами в **области "Стили"**  
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Использование аргументов, разделенных пробелами, в области "стили"" lightbox="../../media/2020/05/color.msft.png":::
+  Использование аргументов, разделенных пробелами, в области " **стили** "  
 :::image-end:::  
 
-Вы также увидите синтаксис в области **вычисляемого** текста и всплывающую подсказку "Режим проверки". **Inspect Mode**  
+Также следует ознакомиться с синтаксисом в области **вычисляемый** раздел и подсказкой **режима проверки** .  
 
-В Microsoft Edge DevTools используется новый синтаксис, так как предстоящие функции CSS, [такие как color()][CSSWGDraftsColor4Property] не поддерживают синтаксис устаревшей запятой.  
+Microsoft Edge DevTools использует новый синтаксис, так как предстоящие функции CSS, например [Color ()][CSSWGDraftsColor4Property] , не поддерживают устаревший синтаксис аргументов, разделенных запятыми.  
 
-Синтаксис аргументов с разделителями между пробелами поддерживается в большинстве браузеров.  Дополнительные сведения см. в статье ["Можно ли использовать: функция с разделителями"?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
+В большинстве браузеров поддерживается синтаксис аргументов, разделенных пробелами.  Более подробную информацию можно найти в [статье возможность использования: нотация функциональных цветов, разделенных с помощью пробелов][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
 
-Проблема с [#1072952][CR1072952] хромом  
+[#1072952][CR1072952] проблем с Chromium  
 
-### Устаревшее окно "Свойства" в области "Элементы"  
+### Устаревшее окно "Свойства" на панели "элементы"  
 
-Устаревшая область **"Свойства"** на панели "Элементы" устарела. **Properties**  Вместо `console.dir($0)` этого **запустите консоль.**  
+Область " **Свойства** " на панели " **элементы** " устарела.  Запустите `console.dir($0)` на **консоли** .  
 
-:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="Область свойств устаревшей" lightbox="../../media/2020/05/properties.msft.png":::
-   Область свойств **устаревшей**  
+:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="Область "устаревшие свойства"" lightbox="../../media/2020/05/properties.msft.png":::
+   Область "устаревшие **Свойства** "  
 :::image-end:::  
 
 #### Ссылок  
 
-*   [console.dir()][DevtoolsConsoleApiDir]  
-*   [0 $][DevtoolsConsoleUtilitiesDom]  
+*   [Console. dir ()][DevtoolsConsoleApiDir]  
+*   [$0][DevtoolsConsoleUtilitiesDom]  
 
-### Поддержка сочетаний клавиш приложения в области "Манифест"  
+### Поддержка клавиш со встроенными приложениями в области манифеста  
 
-Сочетания клавиш для приложений помогают пользователям быстро начинать типичные или рекомендуемые задачи в веб-приложении.  Меню сочетаний клавиш приложений отображается только для прогрессиональных [веб-приложений,][PwaIndex] установленных на компьютере или мобильном устройстве пользователя.  
+Сочетания клавиш для работы с приложениями помогают пользователям быстро запускать наиболее распространенные или Рекомендуемые задачи в веб-приложении.  Меню "ярлыки приложения" отображается только для [последовательного веб-приложений][PwaIndex] , установленных на настольном компьютере или мобильном устройстве пользователя.  
 
 <!--For more information, see [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->  
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="Сочетания клавиш приложений в области манифеста" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
-  Сочетания клавиш приложений в **области манифеста**  
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="Ярлыки приложений в области манифеста" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+  Ярлыки приложений в области **манифеста**  
 :::image-end:::  
 
-## Скачивание каналов с предварительными версиями Microsoft Edge  
+## Загрузка каналов предварительной версии Microsoft Edge  
 
-Если вы используете Windows или macOS, рекомендуем использовать каналы [предварительной версии Microsoft Edge][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Каналы с предварительными версиями каналов получают доступ к новейшим функциям DevTools.  
+Если вы используете Windows или macOS, рассматривайте в качестве браузера по умолчанию использование [каналов предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] .  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
 
-## Совместная работа с помощью команды разработчиков Microsoft Edge  
+## Знакомство с Microsoft Edge Devtools Team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Значок "Параметры разработчика""
-[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "DevTools Togle screencast Screencast"
-[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "Значок "Обновить страницу" в области "Производительность""
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "Значок "Запись" панели "Производительность""
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Значок параметров DevTools"
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "DevTools значок "переключить презентацию""
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "Значок страницы "Обновить" на панели производительности DevTools"
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "Значок записи на панели производительности DevTools"
 
 <!-- links -->  
 
-[DualScreensAndroidEmulator]: /dual-screen/android/use-emulator "Использование эмулятора Surface Duo | Документы Майкрософт"
+[DualScreensAndroidEmulator]: /dual-screen/android/use-emulator "Использование эмулятора Surface Duo | Документы Microsoft"
 
-[DevtoolsConsoleApiDir]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir — Ссылка на консоли API | Документы Майкрософт"  
-[DevtoolsConsoleUtilitiesDom]: /microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Объект "Недавно выбранный элемент или объект JavaScript" — API служебных utilities API | Документы Майкрософт"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Изменение цветов с помощью средства выбора цветов — CSS Reference | Документы Майкрософт"  
-[DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Рисование — настройка | Обзор | Документы Майкрософт"  
-[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Средства разработчика Microsoft Edge (на базе Chromium) | Документы Майкрософт"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Поиск и устранение проблем с вкладкой "Проблемы разработчиков" в Microsoft Edge | Документы Майкрософт"  
-[DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Начало работы с удаленным отладкой с Устройствами Android | Документы Майкрософт"  
-[DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "Начало работы с удаленным демоэропорой Surface Duo | Документы Майкрософт"  
-[DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Начало работы с удаленным отладкой устройств с Windows 10 | Документы Майкрософт"  
-[DevToolsNetworkDetails]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Проверьте сведения о ресурсе | Документы Майкрософт"  
-[DevToolsNetworkLog]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Действия в сети | Документы Майкрософт"  
-[PwaIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивные веб-приложения в Windows | Документы Майкрософт"  
+[DevtoolsConsoleApiDir]: /microsoft-edge/devtools-guide-chromium/console/api#dir "Справочник по API dir-Console | Документы Microsoft"  
+[DevtoolsConsoleUtilitiesDom]: /microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Недавно выбранный элемент или объект JavaScript: Справочник по API служебных программ для консоли | Документы Microsoft"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Изменение цвета с помощью палитры цветов — Справка по CSS | Документы Microsoft"  
+[DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Ящик: Настройка обзора | Документы Microsoft"  
+[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Поиск и устранение проблем с вкладкой Microsoft Edge DevTools "вопросы" | Документы Microsoft"  
+[DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Начало работы с удаленными отладочными устройствами Android | Документы Microsoft"  
+[DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "Начало работы с эмуляторами Surface Duo удаленной отладки | Документы Microsoft"  
+[DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Начало работы с удаленной отладкой на устройствах с Windows 10 | Документы Microsoft"  
+[DevToolsNetworkDetails]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Проверка сведений о ресурсе | Документы Microsoft"  
+[DevToolsNetworkLog]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Регистрация активности в сети | Документы Microsoft"  
+[PwaIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивные веб-приложения в Windows | Документы Microsoft"  
 <!--[DevtoolsWhatsNew201901Inspect]: /microsoft-edge/devtools-guide-chromium/whats-new/2019/01/devtools#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->  
 
 [AndroidEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Приложение Microsoft Edge для Android"
 
-[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Нотация с разделителями с разделителями — MDN | Можно ли использовать"  
+[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Представления функциональных цветов, разделенные пробелами — MDN | Можно ли использовать"  
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Ошибки на Chromium"
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Ошибки Chromium"
 
-[CR174309]: https://crbug.com/174309 "DevTools: разрешение настройки сочетаний клавиш и привязок | Ошибки на Chromium"  
-[CR963183]: https://crbug.com/963183 "DevTools не совместимо с WCAG | Ошибки на Chromium"  
-[CR1040019]: https://crbug.com/1040019 "DevTools: удобный предварительный просмотр изображений и фоновых изображений в области стилей| Ошибки на Chromium"  
-[CR1040025]: https://crbug.com/1040025 "DevTools: показать в свой элемент базовую информацию Ошибки на Chromium"  
-[CR1048378]: https://crbug.com/1048378 "Поддержка пользовательского пользовательского образца для режима высокой контрастности | Ошибки на Chromium"  
-[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Ошибки на Chromium"  
-[CR1068116]: https://crbug.com/1068116 "Панель "Проблемы с отправкой" | Ошибки на Chromium"  
-[CR1072952]: https://crbug.com/1072952 "DevTools: средство выбора цветов должен создать современный синтаксис цветов CSS | Ошибки на Chromium"  
-[CR1075437]: https://crbug.com/1075437 "DevTools: добавление поддержки для ключевого слова и значения | Ошибки на Chromium"  
-[CR1076112]: https://crbug.com/1076112 "Персонализация разработки — изменение размера рисования"  
-[CR1081486]: https://crbug.com/1081486 "Фокус не отображается для кнопок навигации в режиме экранной шкала | Ошибки на Chromium"  
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus должен быть заполнено, а не соответствует предложению | В8 ошибок v8"  
+[CR174309]: https://crbug.com/174309 "DevTools: разрешение на настройку сочетаний клавиш и привязок клавиш | Ошибки Chromium"  
+[CR963183]: https://crbug.com/963183 "DevTools не соответствуют требованиям WCAG | Ошибки Chromium"  
+[CR1040019]: https://crbug.com/1040019 "DevTools: простое предварительное Просмотр изображений и фоновых изображений в области "стили" | Ошибки Chromium"  
+[CR1040025]: https://crbug.com/1040025 "DevTools: Показывать основные сведения о a11y в элементе popover | Ошибки Chromium"  
+[CR1048378]: https://crbug.com/1048378 "Поддержка пользовательского интерфейса DevTools для режима высокой контрастности | Ошибки Chromium"  
+[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Ошибки Chromium"  
+[CR1068116]: https://crbug.com/1068116 "Панель отправки вопросов | Ошибки Chromium"  
+[CR1072952]: https://crbug.com/1072952 "DevTools: средство выбора цвета должно создавать современный синтаксис цвета CSS | Ошибки Chromium"  
+[CR1075437]: https://crbug.com/1075437 "DevTools: добавьте поддержку для ключевого слова "вернуть" и значений для CSS | Ошибки Chromium"  
+[CR1076112]: https://crbug.com/1076112 "Devtools Персонализация — изменение размера лотка"  
+[CR1081486]: https://crbug.com/1081486 "Фокус клавиатуры не отображается для кнопок навигации в режиме презентации | Ошибки Chromium"  
+[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus должен быть "выполнены", а не "разрешено" | Ошибки V8"  
 
-[CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Изменения цветов 3 - Модуль цвета CSS уровень 4 | Редактор черновиков группы CSS working Group"  
-[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Фон круговый модуль: "цвет" - CSS уровень цвета CSS | Редактор черновиков группы CSS working Group"  
+[CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Изменения цвета 3 — цветовой модуль CSS уровня 4 | Черновики редакторов рабочих групп W3C CSS"  
+[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. цвет переднего плана: "цветная" — уровень модуля цветовой поддержки CSS 4 | Черновики редакторов рабочих групп W3C CSS"  
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "Представляем новый браузер Microsoft Edge"  
+[DesktopEdge]: https://www.microsoft.com/edge/ "Знакомство с новым Microsoft Edge"  
 
-[GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "Штаты и лицы — думанная и промиутбург | GitHub"  
+[GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "Состояния и Fates-Domenic/обещания — разтекание | GitHub"  
 
-[MDNRevert]: https://developer.mozilla.org/docs/Web/CSS/revert "отмена | MDN"  
-[MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Совместимость браузера | MDN"  
+[MDNRevert]: https://developer.mozilla.org/docs/Web/CSS/revert "вернуть | MDN"  
+[MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Совместимость с браузерами | MDN"  
 
-[VSCode]: https://code.visualstudio.com/ "Visual Studio код"  
-[VSCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio сочетания клавиш в программах для Windows"  
+[VSCode]: https://code.visualstudio.com/ "Код Visual Studio"  
+[VSCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Сочетания клавиш в Visual Studio Code для Windows"  
 
-[WebhintHintsAxeKeyboard]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Ось: клавиатура | WebHint"  
-[WebhintHintsAxeNameRoleValue]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Оси: имя роли " | Значение роли | WebHint"  
+[WebhintHintsAxeKeyboard]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Axe: клавиатура | Подсказка"  
+[WebhintHintsAxeNameRoleValue]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Axe: Name значение роли | Подсказка"  
 
 [MicrosoftSupportWindows10HighContrastMode]: https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off "Включение и отключение режима высокой контрастности в Windows | Поддержка Windows"  
 
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Публикация твита"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools твиттер"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Новая проблема: MicrosoftDocs/edge-разработчики"  
+[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools учетной записи Twitter"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Новая ошибка — MicrosoftDocs/Edge-разработчик"  
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Каналы предварительной версии Microsoft Edge"  
-[TheWebWeWant]: https://aka.ms/webwewant "Нужный веб-час"  
+[TheWebWeWant]: https://aka.ms/webwewant "Требуемый веб-сайт"  
 
 <!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->  
 <!--[WebdevCls]: https://alphabet-dev/cls "Cumulative Layout Shift (CLS) | alphabet-dev"  -->  
@@ -355,10 +356,10 @@ ms.locfileid: "10942189"
 <!--[WebdevCoreWebVitals]: https://alphabet-dev/vitals#core-web-vitals "Core Web Vitals | alphabet-dev"  -->  
 
 > [!NOTE]
-> Части этой страницы изменяются на основе работы, созданных google и [предоставлением][GoogleSitePolicies] к ним общего доступа и используются в соответствии с терминами, которые описаны [в лицензии Creative Commons Attribution 4.0.][CCA4IL]  
-> Исходная страница [here](https://developers.google.com/web/updates/2020/05/devtools/index) находится на сайте [Kayce Basques][KayceBasques] \(технический автор, Chrome DevTools \& Lighthouse\).  
+> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
+> Исходная страница будет найдена [здесь](https://developers.google.com/web/updates/2020/05/devtools/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
+[![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

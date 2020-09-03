@@ -1,4 +1,5 @@
 ---
+description: Открыть консоль, создать выражение в реальном времени и задать для него выражение Document. activeElement.
 title: Отслеживание, какой элемент имеет фокус
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991171"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993207"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -51,7 +52,7 @@ ms.locfileid: "10991171"
 *   Щелкните результат правой кнопкой мыши и выберите пункт **Показать на панели элементов** , чтобы отобразить элемент в дереве DOM на панели **элементы** .  
 *   Щелкните результат правой кнопкой мыши и выберите **Сохранить как глобальную переменную** , чтобы создать ссылку на переменную на узел, который вы можете использовать на **консоли**.  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

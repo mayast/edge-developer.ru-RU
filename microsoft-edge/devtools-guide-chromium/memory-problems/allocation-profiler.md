@@ -1,17 +1,18 @@
 ---
+description: Используйте инструментирование выделения на временной шкале, чтобы найти объекты, которые не будут собираться сборщиком мусора, и продолжайте удерживать память.
 title: Использование инструментирования выделения на временной шкале
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986166"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993508"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -84,7 +85,7 @@ ms.locfileid: "10986166"
 
 Вы можете просматривать выделение памяти функцией JavaScript.  Дополнительные сведения можно найти [в разделе изучение выделения памяти по функциям][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

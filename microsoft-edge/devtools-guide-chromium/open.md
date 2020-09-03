@@ -1,17 +1,18 @@
 ---
+description: Все способы открытия DevTools Microsoft Edge.
 title: Открыть Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 06e547d2d413535a6f14d829d30dc4d7b11ac92b
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: ffc05a1eff2cdb7f3020a7dbb853a7520a0502dd
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844007"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993599"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -67,7 +68,7 @@ ms.locfileid: "10844007"
 
 *   Чтобы открыть Microsoft Edge DevTools, выполните указанные ниже действия.  
     
-    1.  Щелкните `...` значок \ ( **Параметры и** значок "Дополнительно").  
+    1.  Щелкните  `...` значок \ ( **Параметры и** значок "Дополнительно").  
     1.  Нажмите кнопку **другие инструменты**.  
     1.  Выберите **Инструменты разработчика**.  
     

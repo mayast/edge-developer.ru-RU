@@ -1,17 +1,18 @@
 ---
+description: Узнайте, как записывать моментальные снимки кучи с помощью профилировщика Microsoft Edge DevTools и поиска утечек памяти.
 title: Запись моментальных снимков кучи
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 15692b0258de6db66c0b58a2659348a6e849aaca
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986173"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993473"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -250,7 +251,7 @@ leafRef = null;
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

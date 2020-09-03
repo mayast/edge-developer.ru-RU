@@ -1,17 +1,18 @@
 ---
+description: Нахождение ресурсоемких функций с помощью панели DevTools Memory (Microsoft EDGE).
 title: Ускорение среды выполнения JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986187"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993585"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -140,7 +141,7 @@ Flame диаграмма делится на две части.
    Просмотр сведений о функциях на диаграмме  
 :::image-end:::  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

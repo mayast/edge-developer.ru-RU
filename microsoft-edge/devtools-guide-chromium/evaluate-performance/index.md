@@ -1,17 +1,18 @@
 ---
+description: Сведения о том, как оценивать производительность среды выполнения в Microsoft Edge DevTools.
 title: Приступая к анализу производительности среды выполнения
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 94753c7024c2f4f4c96d560c815d310b1f9643a1
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 65351f3846ed76ef8a27dbff2cfb08c497282d15
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931176"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992948"
 ---
 <!-- Copyright Kayce Basques 
 

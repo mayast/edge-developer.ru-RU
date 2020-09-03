@@ -1,17 +1,18 @@
 ---
+description: Открыть меню команд и выполнить команду "отключить JavaScript".
 title: Отключение JavaScript с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986117"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992801"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +60,7 @@ JavaScript остается отключенным на вкладке стол�
 *   Снова откройте **меню команд** и выполните `Enable JavaScript` команду.  
 *   Закройте DevTools.  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

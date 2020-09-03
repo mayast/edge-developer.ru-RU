@@ -1,17 +1,18 @@
 ---
+description: Откройте вкладку датчики и перейдите к разделу ориентация.
 title: Имитация ориентации устройства с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: e11af27681f3aa1aaeefb62505908fdc6cd7a0e9
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 42b58ef2d4b132eedad2663287894e25e72b2572
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986152"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992934"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -60,7 +61,7 @@ ms.locfileid: "10986152"
        :::column-end:::
     :::row-end:::
     
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

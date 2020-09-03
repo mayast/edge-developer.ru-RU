@@ -1,17 +1,18 @@
 ---
+description: Полный справочник по функциям панели DevTools сети Microsoft Edge.
 title: Справочник по анализу сети
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: ec8969fbf7b54512f00120ac4a253b952c55768f
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 38570e6d196314aa6315a34f0b8b1b0b0d740c91
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844021"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993620"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,7 +41,7 @@ ms.locfileid: "10844021"
 
 По умолчанию DevTools записывает все сетевые запросы на панели "сеть", пока не откроете DevTools.  
 
-:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Панель сеть" lightbox="../media/network-network-panel.msft.png":::
+:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Панель "сеть"" lightbox="../media/network-network-panel.msft.png":::
    Рисунок 1: панель " **сеть** "  
 :::image-end:::  
 
@@ -55,7 +56,7 @@ ms.locfileid: "10844021"
 
 **Clear** ![ ][ImageClearIcon] Чтобы очистить все запросы из таблицы "запросы", на панели "сеть" нажмите кнопку Clear Clear.  
 
-:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Кнопка очистить" lightbox="../media/network-network-clear-button.msft.png":::
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Кнопка "очистить"" lightbox="../media/network-network-clear-button.msft.png":::
    Рисунок 2: кнопка " **очистить** "  
 :::image-end:::  
 
@@ -63,7 +64,7 @@ ms.locfileid: "10844021"
 
 Для сохранения запросов на страницах загрузок на панели "сеть" установите флажок **сохранить журнал** .  DevTools сохраняет все запросы, пока не отключайте параметр **сохранить журнал**.  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Флажок сохранить журнал" lightbox="../media/network-network-preserve-log.msft.png":::
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Флажок "сохранить журнал"" lightbox="../media/network-network-preserve-log.msft.png":::
    Рисунок 3: флажок " **сохранить журнал** "  
 :::image-end:::  
 
@@ -101,7 +102,7 @@ ms.locfileid: "10844021"
 
 Чтобы эмулировать, как пользователь попытается получить доступ к сайту, установите флажок **отключить кэш** .  DevTools отключает кэш браузера.  Это более точно эмулирует взаимодействие с пользователем при первом запуске, так как запросы размещаются из кэша браузера на повторных посещениях.  
 
-:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Флажок отключить кэш" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Флажок "отключить кэш"" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    Рисунок 5: флажок **отключения кэша**  
 :::image-end:::  
 
@@ -130,7 +131,7 @@ ms.locfileid: "10844021"
 
 Щелкните раскрывающееся меню **онлайн** , выполните поиск в разделе " **стили**", а затем выберите пункт в **автономном режиме** , чтобы имитировать полностью автономный режим работы сети.  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Раскрывающееся меню автономный режим" lightbox="../media/network-network-offline-dropdown.msft.png":::
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Раскрывающееся меню "автономный режим"" lightbox="../media/network-network-offline-dropdown.msft.png":::
    Рисунок 7: раскрывающийся список в **автономном режиме**  
 :::image-end:::  
 
@@ -182,7 +183,7 @@ DevTools отображает значок предупреждения рядо
 Если надпись не отображается, возможно, область Фильтры скрыта.  
 Посмотрите [скрыть область фильтров](#hide-the-filters-pane).  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Текстовое поле фильтр" lightbox="../media/network-network-filters-textbox.msft.png":::
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Текстовое поле "фильтр"" lightbox="../media/network-network-filters-textbox.msft.png":::
    Рисунок 10: текстовое поле " **Фильтр** "  
 :::image-end:::  
 
@@ -232,7 +233,7 @@ DevTools отображает значок предупреждения рядо
 
 Установите флажок **скрыть URL-адреса данных** , чтобы скрыть запросы.  
 
-:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Флажок скрыть URL-адреса данных" lightbox="../media/network-network-hide-data-urls.msft.png":::
+:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Флажок "скрыть URL-адреса данных"" lightbox="../media/network-network-hide-data-urls.msft.png":::
    Рисунок 13: флажок **скрыть URL-адреса данных**  
 :::image-end:::  
 
@@ -291,7 +292,7 @@ DevTools отображает значок предупреждения рядо
 
 Наведите указатель мыши на заголовок таблицы запросы, откройте контекстное меню (щелкните правой кнопкой мыши \) и выберите один из вариантов, чтобы скрыть или отобразить его.  Параметры, отображаемые в данный момент, отмечены флажками рядом с каждым элементом.  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Добавление столбца в таблицу запросы" lightbox="../media/network-network-requests-add-column.msft.png":::
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Добавление столбца в таблицу "запросы"" lightbox="../media/network-network-requests-add-column.msft.png":::
    Рисунок 16: Добавление столбца в таблицу "запросы"  
 :::image-end:::  
 
@@ -299,7 +300,7 @@ DevTools отображает значок предупреждения рядо
 
 Чтобы добавить настраиваемый столбец в таблицу запросы, наведите указатель мыши на заголовок таблицы запросы, откройте контекстное меню (щелкните правой кнопкой мыши \) и выберите **заголовки ответов**  >  .**Управление столбцами заголовков**.  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Добавление настраиваемого столбца в таблицу запросы" lightbox="../media/network-network-requests-add-custom.msft.png":::
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Добавление настраиваемого столбца в таблицу "запросы"" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Рисунок 17: Добавление настраиваемого столбца в таблицу "запросы"  
 :::image-end:::  
 
@@ -311,7 +312,7 @@ DevTools отображает значок предупреждения рядо
 
 Чтобы увидеть различные способы сортировки каскадов, просмотрите [фазу сортировки по действию](#sort-by-activity-phase) .  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Столбец Каскад на панели запросы" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Столбец "Каскад" на панели "запросы"" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Рисунок 18: столбец "Каскад" на панели " **запросы** "  
 :::image-end:::  
 
@@ -352,7 +353,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 Эта вкладка особенно полезна для просмотра изображений.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Вкладка предварительный просмотр" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Вкладка "предварительный просмотр"" lightbox="../media/network-network-resources-preview.msft.png":::
    На рисунке 19: вкладка " **Предварительный просмотр** "  
 :::image-end:::  
 
@@ -363,7 +364,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  Выберите URL-адрес запроса в столбце " **имя** " таблицы "запросы".  
 1.  Откройте вкладку **ответ** .  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Вкладка ответ" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Вкладка "ответ"" lightbox="../media/network-network-resources-response.msft.png":::
    Рисунок 20. Вкладка " **ответ** "  
 :::image-end:::  
 
@@ -374,7 +375,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  Выберите URL-адрес запроса в столбце " **имя** " таблицы "запросы".  
 1.  Откройте вкладку **заголовки** .  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Вкладка заголовки" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Вкладка "заголовки"" lightbox="../media/network-resources-headers.msft.png":::
    Рисунок 21: вкладка " **заголовки** "  
 :::image-end:::  
 
@@ -392,7 +393,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1.  Открытие вкладки " **заголовки** " для запроса, который вас интересует.  См.: [Просмотр заголовков HTTP](#view-http-headers).  
 1.  Перейдите к разделу **Параметры строки запроса** .  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Раздел параметры строки запроса" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Раздел "параметры строки запроса"" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    Рис. 22: раздел " **Параметры строки запроса** "  
 :::image-end:::  
 
@@ -422,7 +423,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
 <!--TODO: add link when section is available -->
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Вкладка cookie" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Вкладка "cookie"" lightbox="../media/network-network-resources-cookies.msft.png":::
    Рис. 23: вкладка "cookie"  
 :::image-end:::  
 
@@ -489,7 +490,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 DevTools отображает время показа `DOMContentLoaded` `load` событий в нескольких местах на панели "сеть".  `DOMContentLoaded`Событие окрашивается синим цветом, а `load` событие — красным.  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Расположение событий DOMContentLoaded и Load на панели сеть" lightbox="../media/network-network-requests-load-events.msft.png":::
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Расположение событий DOMContentLoaded и Load на панели "сеть"" lightbox="../media/network-network-requests-load-events.msft.png":::
    На рисунке 27 показано расположение событий " `DOMContentLoaded` и" `load` на панели "сеть".  
 :::image-end:::  
 
@@ -564,7 +565,7 @@ init();
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Выбор команды Сохранить как HAR с контентом" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Выбор команды "Сохранить как HAR с контентом"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    Рисунок 32: выбор команды " **Сохранить как HAR с контентом** "  
 :::image-end:::  
 
@@ -580,7 +581,7 @@ init();
 *   **Скопировать все как фигуру**.  Копирование всех запросов в виде последовательности команд с фигурой.  
 *   **Копировать все как HAR**.  Скопируйте все запросы как данные HAR.  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Выбор пункта Копировать ответ" lightbox="../media/network-network-requests-copy-response.msft.png":::
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Выбор пункта "Копировать ответ"" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Рисунок 33: выбор пункта " **Копировать ответ** "  
 :::image-end:::  
 
@@ -593,7 +594,7 @@ init();
 По умолчанию в DevTools отображается **область фильтров**.  
 Щелкните фильтр **фильтра** ![ ][ImageFilterIcon] , чтобы скрыть его.  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка скрыть фильтры" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка "скрыть фильтры"" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Рисунок 34: кнопка "скрыть фильтры"  
 :::image-end:::  
 
@@ -601,13 +602,13 @@ init();
 
 Используйте большие строки, если вы хотите, чтобы в таблице сетевых запросов больше пробелов.  Некоторые столбцы также содержат дополнительные сведения при использовании больших строк.  Например, минимальное значение столбца « **Размер** » — это несжатый размер запроса.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Пример строк большого запроса в области запросы" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Пример строк большого запроса в области "запросы"" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
    Рисунок 35: пример строк большого запроса в области " **запросы** "  
 :::image-end:::  
 
 Установите флажок **использовать строки большого запроса** , чтобы включить большие строки.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Флажок использовать строки большого запроса" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Флажок "использовать строки большого запроса"" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
    Рисунок 36: флажок " **использовать строки большого запроса** "  
 :::image-end:::  
 
@@ -615,7 +616,7 @@ init();
 
 По умолчанию в DevTools отображается **область "Общие сведения**".  Снимите флажок **Показать общие сведения** , чтобы скрыть его.  
 
-:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Флажок Показать общие сведения" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Флажок "Показать общие сведения"" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    Рисунок 37: флажок **Показать общие сведения**  
 :::image-end:::  
 

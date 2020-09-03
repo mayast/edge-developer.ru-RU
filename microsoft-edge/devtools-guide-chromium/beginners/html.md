@@ -1,17 +1,18 @@
 ---
+description: Начало работы с HTML и моделью DOM
 title: 'DevTools для начинающих: Приступая к работе с HTML и моделью DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 50dfd8595c270a2532f55b71307b42c3636bba3c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 182885cb97dbd1672d33b257569b0d841466985b
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983078"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993284"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -49,7 +50,7 @@ ms.locfileid: "10983078"
 
 У тебя также есть реальный веб-сайт!  Вы можете использовать этот сайт для размещения резюме или блога.  
 
-## Что вам понадобится   
+## Предварительные условия   
 
 Прежде чем приступить к работе с учебником, выполните следующие требования:  
 

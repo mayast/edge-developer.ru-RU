@@ -1,17 +1,18 @@
 ---
+description: В этом разделе описаны распространенные термины, используемые при анализе памяти, и применимы различные средства профилирования памяти для разных языков.
 title: Терминология памяти
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: cb258135b7b3c931116d84b1e9b7a548a2b58a6d
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 3455b05cf19f3aa5a69de5571ab3a24d5654dfe4
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986265"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992752"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -173,7 +174,7 @@ ms.locfileid: "10986265"
 
 Каждый объект-обертка содержит ссылку на соответствующий собственный объект для перенаправления команд в нее.  В свою очередь, Группа объектов содержит объекты-оболочки.  Однако это не создает несобираемого цикла, так как сборщик мусора (GC \) достаточно интеллектуальный для освобождения групп объектов, оболочки которых больше не упоминаются. Но при невозможности освобождения одной обертки она содержит всю группу и связанные с ней оболочки.  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

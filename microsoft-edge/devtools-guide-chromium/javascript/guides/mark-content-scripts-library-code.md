@@ -1,4 +1,5 @@
 ---
+description: Включите параметр "помечать сценарии содержимого как код библиотеки" в настройках > код библиотеки Framework.
 title: Пометка сценария содержимого как кода библиотеки
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: a5101cb8561a49ce6c271398f4c1a828984da9e3
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 517e0a4e944f32d41451a0a5d9d7baa91ff97212
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991162"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992794"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,7 +41,7 @@ ms.locfileid: "10991162"
        Флажок " **помечать сценарии содержимого как библиотеку кода** "  
     :::image-end:::  
     
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 

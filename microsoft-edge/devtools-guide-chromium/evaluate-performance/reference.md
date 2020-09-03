@@ -1,17 +1,18 @@
 ---
+description: Ссылки на все способы записи и анализа производительности в Microsoft Edge DevTools.
 title: Справочные материалы по анализу производительности
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 59e2f67d773102554b96749690fae51da09428a8
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 0e81cb89f0e690533bdd9c8fdbfce272610be783
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984198"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992906"
 ---
 <!-- Copyright Kayce Basques 
 

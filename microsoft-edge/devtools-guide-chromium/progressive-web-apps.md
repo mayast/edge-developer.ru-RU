@@ -1,17 +1,18 @@
 ---
+description: С помощью панели приложения можно просматривать, изменять и отлаживать манифесты веб-приложения, рабочие процессы служб и служебные кэши служб.
 title: Отладка последовательного веб-приложения
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6733d7823348bc02dd6f29ec218a33ab4073dbfc
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984967"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993606"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Узнайте, как использовать Microsoft EDGE и DevTools для обнаружения проблем с памятью, в том числе утечек памяти, чрезмерного объема памяти и частых сборок мусора.
 title: Устранение проблем с памятью
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751991"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992780"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -163,7 +164,7 @@ document.getElementById('create').addEventListener('click', create);
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Выберите узел, чтобы проанализировать его дальше.  В области **объектов** вы можете просмотреть дополнительные сведения о коде, который ссылается на него.  Например, на следующем рисунке показано, что `detachedNodes` переменная ссылается на узел.  Чтобы устранить эту проблему, необходимо изучить код, использующий `detachedNodes` переменную, и убедиться, что ссылка на узел удаляется, когда он больше не нужен.  
+Выберите узел, чтобы проанализировать его дальше.  В области **объектов** вы можете просмотреть дополнительные сведения о коде, который ссылается на него.  Например, на следующем рисунке показано, что `detachedNodes` переменная ссылается на узел.  Чтобы устранить эту проблему, необходимо изучить код, использующий `detachedUNode` переменную, и убедиться, что ссылка на узел удаляется, когда он больше не нужен.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Исследование узла" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Рисунок 7: исследование узла  
@@ -175,7 +176,7 @@ document.getElementById('create').addEventListener('click', create);
 
 **Инструментирование выделения на временной шкале** — это еще один инструмент, который может помочь вам отслеживать утечки памяти в куче JS.  
 
-На временной шкале с помощью следующего кода показано **Инструментирование выделения ресурсов** .  
+На временной шкале с помощью следующего кода показано **Инструментирование выделения ресурсов**  .  
 
 ```javascript
 var x = [];

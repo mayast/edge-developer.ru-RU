@@ -1,17 +1,18 @@
 ---
+description: Ознакомьтесь с новыми рабочими процессами отладки в этой полной справке функций отладки Microsoft Edge DevTools.
 title: Справочник по отладке JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: a6ec2438457c81ed527154af30c9642d5c287d3c
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: f11dfb52e97dcec20d1e6c4f3adeee7010857a33
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991215"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993424"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -318,7 +319,7 @@ Compelte действия folliwng, чтобы помечать сценарий
 
 [В разделе Отключение JavaScript с Microsoft Edge DevTools][DevToolsJavascriptDisable].  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

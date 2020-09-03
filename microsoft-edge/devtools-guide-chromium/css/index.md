@@ -1,17 +1,18 @@
 ---
+description: Сведения о том, как использовать Microsoft Edge DevTools для просмотра и изменения CSS-страниц.
 title: Начало работы с просмотром и редактированием CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: f055606ff6140652341627097e7fe7b270dc929c
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710387"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993067"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +63,7 @@ ms.locfileid: "10710387"
         
     1.  В `aloha` классе найдите значение для `padding` стиля и скопируйте его.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Классы CSS, примененные к проверяемому элементу, выделяются на вкладке стили" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Классы CSS, примененные к проверяемому элементу, выделяются на вкладке "стили"" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            Рисунок 2: классы CSS, примененные к выбранному элементу, такие как `aloha` , отображаются на вкладке **стили**  
         :::image-end:::  
         
@@ -81,7 +82,7 @@ ms.locfileid: "10710387"
 1.  Введите текст `background-color` и нажмите клавишу `Enter` .  
 1.  Введите текст `honeydew` и нажмите клавишу `Enter` .  В **дереве DOM** вы увидите, что к элементу применено объявление встроенного стиля.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Добавление объявления CSS к элементу с помощью вкладки стили" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Добавление объявления CSS к элементу с помощью вкладки "стили"" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Рисунок 3: `background-color:honeydew` объявление применено к элементу с помощью `element.style` раздела вкладки " **стили** "  
     :::image-end:::  
     

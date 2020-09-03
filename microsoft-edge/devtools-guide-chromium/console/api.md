@@ -1,17 +1,18 @@
 ---
+description: Используйте API консоли для записи сообщений на консоль.
 title: Справочник по API консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/09/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 19545759ede4252f2e7ba21329d482f4eb96f0c6
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708518"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993256"
 ---
 <!-- Copyright Kayce Basques 
 

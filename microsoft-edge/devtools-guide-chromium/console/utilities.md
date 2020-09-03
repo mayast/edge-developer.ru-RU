@@ -1,17 +1,18 @@
 ---
+description: Ссылка на удобные команды, доступные в консоли Microsoft Edge DevTools.
 title: Справочник по API для консольных программ
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: efa03e02813d718514f73445bc0dceb3a1a83f39
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708878"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993109"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,13 +48,13 @@ $_
 На приведенном ниже рисунке вычисляется простое выражение \ ( `2 + 2` \).  `$_`Затем вычисляется свойство, которое содержит одно и то же значение.  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ — это последнее вычисленное выражение" lightbox="../media/console-arithmatic.msft.png":::
-   Рисунок 1: `$_` это последнее вычисленное выражение.  
+   Рисунок 1:  `$_` это последнее вычисленное выражение.  
 :::image-end:::  
 
 На приведенном ниже рисунке вычисленное выражение изначально включает массив имен.  Вычисление `$_.length` для определения длины массива, значение, хранящееся в `$_` изменениях, становится последним вычисленным выражением `4` .  
 
 :::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ изменения при вычислении новых команд" lightbox="../media/console-array-length.msft.png":::
-   Рисунок 2: `$_` изменения при вычислении новых команд  
+   Рисунок 2:  `$_` изменения при вычислении новых команд  
 :::image-end:::  
 
 ## Недавно выбранный элемент или объект JavaScript  
@@ -118,7 +119,7 @@ $(selector, [startNode])
 
 На приведенном ниже рисунке возвращается ссылка на первый `<img>` элемент в документе.  
 
-:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ (Img)" lightbox="../media/console-element-selector-image.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ ("Img")" lightbox="../media/console-element-selector-image.msft.png":::
    На рисунке 5: `$('img')`  
 :::image-end:::  
 
@@ -126,7 +127,7 @@ $(selector, [startNode])
 
 На приведенном ниже рисунке возвращается ссылка на элемент, выбранный в данный момент, и отображается свойство src.  
 
-:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ (Img). src" lightbox="../media/console-element-selector-image-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ ("Img"). src" lightbox="../media/console-element-selector-image-source.msft.png":::
    На рисунке 6: `$('img').src`  
 :::image-end:::  
 
@@ -134,7 +135,7 @@ $(selector, [startNode])
 
 На приведенном ниже рисунке первый `img` элемент найден после элемента `title--image` и отображается `src` правильно.  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ (Img, Document. querySelector (Title--Image)). src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ ("Img", Document. querySelector ("Title--Image")). src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
    На рисунке 7: `$('img', document.querySelector('title--image')).src`  
 :::image-end:::  
 

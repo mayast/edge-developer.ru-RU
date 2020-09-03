@@ -1,17 +1,18 @@
 ---
+description: Используйте виртуальные устройства в режиме устройства для Microsoft Edge для создания веб-сайтов для мобильных устройств.
 title: Эмуляция мобильных устройств с помощью режима устройства в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6973f28a0cb530e8928976adb1354fa7471ee343
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: eababe8112b5d888671a8955e16f0fe1c89564fb
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985338"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993018"
 ---
 <!-- Copyright Kayce Basques 
 
