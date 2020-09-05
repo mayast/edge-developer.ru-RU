@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, эксперименты
-ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: a5793b6f4b67add313958ad4b8cee01cb7b09dbf
+ms.sourcegitcommit: 7e3644e6b1d568ab795168e421c013814efa0073
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986124"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996161"
 ---
 # Экспериментальные функции  
 
@@ -46,24 +46,11 @@ ms.locfileid: "10986124"
 
 | Экспериментальная функция | Версия Microsoft Edge |  
 |:--- |:--- |  
-| [Вкладка "Включение настраиваемых сочетаний клавиш"](#enable-custom-keyboard-shortcuts-settings-tab) | 84 или более поздняя версия |
 | [Включение новых функций отладки CSS Grid](#enable-new-css-grid-debugging-features) | 85 или более поздняя версия |  
 | [Включение поддержки перемещения вкладок между панелями](#enable-support-to-move-tabs-between-panels) | 85 или более поздняя версия |  
 | [Включить подсказку](#enable-webhint) | 85 или более поздняя версия |  
 | [Включение сетевой консоли](#enable-network-console) | 85 или более поздняя версия |  
 | [Включение средства просмотра заказов исходным кодом](#enable-source-order-viewer) | 86 или более поздняя версия |  
-
-### Вкладка "Включение настраиваемых сочетаний клавиш"  
-
-Эта страница содержит новую страницу " **ярлыки** " в [параметрах DevTools][DevToolsCustomizeSettings] , которая позволяет использовать соответствующие [сочетания клавиш][DevToolsShortcuts] в DevTools с [кодом Microsoft Visual Studio][VisualstudioCode].  
-
-После включения эксперимента снова откройте [Параметры DevTools][DevToolsCustomizeSettings] с помощью SELECT `Shift` + `?` .  Перейдите на страницу новые **сочетания клавиш** .  Выберите **DevTools (по умолчанию)** в раскрывающемся списке **искать сочетания клавиш из предварительной настройки** и выберите **код Visual Studio**.  Сочетания клавиш в DevTools теперь соответствуют сочетаниям клавиш для эквивалентных действий в коде Visual Studio.  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Соответствие сочетаний клавиш в DevTools с кодом Visual Studio" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Соответствие сочетаний клавиш в DevTools с кодом Visual Studio  
-:::image-end:::  
-
-Например, в Windows для приостановки или продолжения выполнения сценария в [Visual Studio][VisualstudioCodeShortcutsKeyboardWindows] используется сочетание клавиш `F5` .  В стиле **DevTools (по умолчанию)** в DevTools используется один и тот же ярлык `F8` .  В стиле **кода Visual Studio** ярлык также можно использовать `F5` .  
 
 ### Включение новых функций отладки CSS Grid  
 
@@ -133,7 +120,7 @@ ms.locfileid: "10986124"
 ## Предыдущие экспериментальные функции  
 
 *   Теперь [трехмерный вид][Devtools3dViewIndex] доступен и включен по умолчанию в Microsoft Edge версии 83 или более поздней.  
-
+*   [Настройка сочетаний клавиш][DevtoolsCustomKeyboardShortcuts] теперь доступна и включена по умолчанию в Microsoft Edge версии 86 или более поздней.
 ## Отзывы о экспериментальных функциях  
 
 Чтобы оставить отзыв о экспериментах Microsoft Edge DevTools или каких-либо других связанных с DevTools.  
@@ -152,10 +139,8 @@ ms.locfileid: "10986124"
 [DevToolsCustomizeSettings]: ./customize/index.md#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Сочетания клавиш в Microsoft Edge DevTools | Документы Microsoft"  
 [DevtoolsOpen]: ./open.md "Открыть Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Настройка сочетаний клавиш в Microsoft Edge DevTools | Документы Microsoft"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Контента"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Код Microsoft Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Сочетания клавиш в Visual Studio Code для Windows | Код Microsoft Visual Studio"  
 
 [WebhintMain]: https://webhint.io "Подсказка" 
