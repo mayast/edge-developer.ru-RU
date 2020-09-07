@@ -373,12 +373,10 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Публикация в Microsoft Store
           items:
-            - name: Пошаговый процесс публикации
+            - name: Публикация расширения
               href: extensions-chromium/publish/publish-extension.md
-            - name: Открыть учетную запись разработчика
+            - name: Регистрация разработчика
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Отправка видео YouTube
-              href: extensions-chromium/publish/upload-video.md
             - name: Обновление перечня расширений
               href: extensions-chromium/publish/update.md
             - name: Состояния отправки
