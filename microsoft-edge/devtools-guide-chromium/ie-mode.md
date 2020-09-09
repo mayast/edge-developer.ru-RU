@@ -1,53 +1,92 @@
 ---
 description: Режим IE и Microsoft EDGE (Chromium) DevTools
 title: Режим Internet Explorer и DevTools
-author: robpaveza
-ms.author: ropaveza
-ms.date: 01/15/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, ie11, Internet Explorer 11, режим IE
-ms.openlocfilehash: 18e5f029d277e446857ec48b9cf129149f219256
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: b059cae3ff48a45fe92cbf69e37ad692e329b200
+ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572430"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11003975"
 ---
-# Режим Internet Explorer и DevTools
+# Режим Internet Explorer и DevTools  
 
-В этом документе описывается интеграция режима Internet Explorer (режим IE) с Microsoft EDGE (Chromium) DevTools.
+В этой статье описывается интеграция режима Internet Explorer \ (режим IE) с Microsoft Edge \ (Chromium \) DevTools.  
 
-## Общие сведения о режиме IE
+## Общие сведения о режиме IE  
 
-Режим IE — это механизм, с помощью которого компании могут определять набор веб-сайтов, которые, до этого момента, будут работать только в Internet Explorer 11. Когда эти веб-сайты просматриваются в Microsoft EDGE (Chromium), на вкладке выполняется полный экземпляр браузера Internet Explorer 11 и отображаются на нем. Это позволяет предприятиям управлять совместимостью в режимах документов IE, элементов ActiveX и других устаревших компонентах, которые в настоящее время не совместимы с любыми современными веб-браузерами.
+Режим IE позволяет компаниям указывать список веб-сайтов, которые работают только в Internet Explorer 11.  При переходе на такие веб-сайты в Microsoft Edge \ (Chromium \) экземпляр браузера Internet Explorer 11 запускается и отображает сайт на вкладке.  Эта функция позволяет предприятиям управлять совместимостью с технологиями, которые в настоящее время не совместимы с современными веб-браузерами.  Поддержка следующих технологий включена в режим IE.  
 
-В режиме IE процесс рендеринга полностью основан на Internet Explorer 11. Процесс диспетчера Microsoft EDGE (Chromium) управляет жизненным циклом процесса отрисовки, но ограничивается временем существования вкладки на данном сайте или приложении. При отображении вкладки в режиме IE в адресной строке для указанной вкладки появляется индикатор.
+*   Режимы работы с документами в IE  
+*   элементы ActiveX;  
+*   другие устаревшие компоненты  
 
-![Значок режима IE в адресной строке](./media/ie-mode-badge.png)
+В режиме IE процесс отрисовки основан на Internet Explorer 11.  Диспетчер обработки Microsoft Edge \ (Chromium \) обрабатывает жизненный цикл процесса отрисовки.  Оно ограничено временем существования вкладки для определенного сайта \ (или приложения \).  При отображении вкладки в режиме IE в адресной строке на вкладке появляется индикатор.  
 
-В настоящее время режим Internet Explorer доступен в Windows 10 версии 1903 (обновление может 2019), но вскоре на все поддерживаемые платформы Windows.
+:::image type="complex" source="./media/ie-mode-badge.msft.png" alt-text="Значок режима IE в адресной строке" lightbox="./media/ie-mode-badge.msft.png":::
+   Значок режима IE в адресной строке  
+:::image-end:::  
 
-## Запуск DevTools на вкладке в режиме IE
+В настоящее время режим Internet Explorer доступен в Windows 10 версии 1903 \ (обновление Май 2019), но скоро задействуется на все поддерживаемые платформы Windows.  
 
-Если вы пытаетесь просмотреть режим документов на веб-сайте в режиме IE, вы можете щелкнуть значок в адресной строке.
+## Запуск DevTools на вкладке в режиме IE  
 
-![Просмотр режима документов с помощью эмблемы в режиме IE](./media/ie-mode-badge-doc-mode.png)
+Если вы пытаетесь просмотреть режим документов на веб-сайте в режиме IE, выберите индикатор в адресной строке.  
 
-На вкладке в режиме IE DevTools работать не будет. `F12` `Ctrl` + `Shift` + `I` Вы можете запустить пустой экземпляр Microsoft EDGE (Chromium) только в том случае, если у вас есть сообщение, которое Прочитано: "средства разработчика недоступны в режиме Internet Explorer. Чтобы выполнить отладку страницы, откройте ее в Internet Explorer 11. " **Представление "источник** " запускает приложение "Блокнот", а **элемент проверки** не будет отображаться в контекстном меню в режиме Internet Explorer.
+:::image type="complex" source="./media/ie-mode-badge-doc-mode.msft.png" alt-text="Просмотр режима документов с помощью эмблемы в режиме IE" lightbox="./media/ie-mode-badge-doc-mode.msft.png":::
+   Просмотр режима документов с помощью эмблемы в режиме IE  
+:::image-end:::  
 
-Это связано с тем, что при переходе с Chromium на Internet Explorer 11 в режиме IE некоторые компоненты в DevTools (например, сети и средства для работы с производительностью) будут разорваны. Чтобы отправить нам отзыв, щелкните `:)` значок.
+Если вкладка используется в режиме IE, DevTools не работает и выполняются следующие условия.
 
-![DevTools запущен в режиме IE](./media/ie-mode-devtools.png)
+*   Если вы выберете `F12` или выберете `Ctrl` + `Shift` + `I` пустой экземпляр Microsoft Edge \ (Chromium \) DevTools, появится следующее сообщение.  
+    
+    ```text
+    Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.
+    ```  
+    
+*   Если вы открыли контекстное меню \ (щелкните правой кнопкой мыши \) и выберите команду **Просмотреть источник**, запускается блокнот.  
+*   Если открыть контекстное меню \ (щелкните правой кнопкой мыши \), элемент " **проверить** " не будет виден.  
 
-Если вы разрабатываете или сохраняете веб-сайт или приложение на базе Internet Explorer 11, рекомендуем перейти на одну и ту же страницу в Internet Explorer 11. В Windows 10 вы можете найти ярлык для Internet Explorer 11 в меню "Пуск" в разделе "Аксессуары" для Windows. В Windows 7 вы можете найти Internet Explorer 11 в главном меню "Пуск". Затем вы можете запустить Internet Explorer DevTools, нажав `F12` или нажав кнопку **проверить элемент** в контекстном меню. Чтобы узнать больше о том, как использовать эти инструменты, щелкните [здесь](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).
+Причина, по которой не работают некоторые инструменты в DevTools \ (например, **сеть** и **производительность** ), — средство визуализации переключается с Chromium на Internet Explorer 11 в режиме IE.  Чтобы отправить отзыв, перейдите к [разделу знакомство с командой Microsoft Edge DevTools](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
-## Удаленная отладка и режим IE
+:::image type="complex" source="./media/ie-mode-devtools.msft.png" alt-text="DevTools запущен в режиме IE" lightbox="./media/ie-mode-devtools.msft.png":::
+   DevTools запущен в режиме IE  
+:::image-end:::  
 
-Вы можете запустить Microsoft EDGE (Chromium) с включенной удаленной отладкой, которая обычно описывает такие инструменты, как Visual Studio или VS Code EDGE, из командной строки.
+Чтобы протестировать веб-сайт на базе Internet Explorer 11 (или приложение \) в Internet Explorer 11 и IE, выполните указанные ниже действия.  
 
-`start msedge --remote-debugging-port=9222`
+1.  Откройте Internet Explorer 11.  
+    *   В Windows 10 найдите ярлык для Internet Explorer 11.
+        1.  Меню "Пуск" **Start Menu**  >  **Аксессуары**  >  для Windows **Internet Explorer 11**.  
+    *   В Windows 7 найдите Internet Explorer 11.
+        1.  Меню "Пуск" **Start Menu**  >  **Internet Explorer 11**.  
+1.  В Internet Explorer 11 откройте ту же веб-страницу.  
+1.  Запустите Internet Explorer DevTools.  
+    *   Выберите `F12` .  
+    *   Наведите указатель мыши на любое место, откройте контекстное меню, а затем нажмите кнопку **проверить элемент**.  Дополнительные сведения об использовании этих средств можно найти в разделе [использование средств разработчика F12][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
 
-При запуске Microsoft EDGE (Chromium) с помощью этого аргумента командной строки режим IE будет недоступен. Вы по-прежнему можете переходить к веб-сайтам или приложениям, которые в противном случае находятся в режиме IE, но содержимое будет отображено через Chromium, а не Internet Explorer 11. Вы можете ожидать, что части страниц, которые используют IE11, такие как элементы ActiveX, будут отображаться неправильно. Значок "режим IE" больше не будет отображаться в адресной строке.
+## Удаленная отладка и режим IE  
 
-Режим IE останется недоступным, пока не будет полностью закрыт Microsoft EDGE (Chromium).
+Запустите Microsoft Edge \ (Chromium \) с включенной удаленной отладкой с помощью интерфейса командной строки.  Visual Studio, Visual Studio и другие средства разработки обычно выполняют команду для запуска Microsoft Edge.  Следующая команда запускает Microsoft Edge с установленным портом удаленной отладки `9222` .  
+
+```shell
+start msedge --remote-debugging-port=9222
+```  
+
+После запуска Microsoft Edge \ (Chromium \) с помощью аргумента командной строки режим IE будет недоступен.  Вы по-прежнему можете переходить к веб-сайтам, которые в противном случае отображались бы в режиме IE. Контент веб-сайта \ (или приложения \) будет обрабатываться с помощью Chromium, а не Internet Explorer 11.  Ожидается, что части страниц, зависящие от IE11, такие как элементы ActiveX, не отображаются должным образом.  Значок "режим IE" не отображается в адресной строке.  
+
+Режим IE останется недоступным, пока вы не закроете и не перезапустите Microsoft Edge \ (Chromium \).  
+
+## Взаимодействие с командой средств разработчика Microsoft Edge  
+
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+
+<!-- links -->  
+
+[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Использование средств разработчика F12 | Документы Microsoft"  

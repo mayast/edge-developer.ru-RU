@@ -3,17 +3,17 @@ description: Знакомство со средствами разработчи
 title: Инструменты разработчика Microsoft EDGE (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: c1168e25c99302a9d195c756c6049881b5dfe91f
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
+ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991183"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11003938"
 ---
 # Инструменты разработчика Microsoft EDGE (Chromium)  
 
@@ -131,7 +131,7 @@ Microsoft Edge использует проект Chromium Open Source для б�
 *   [DevTools для начинающих: Приступая к работе с HTML и моделью DOM][DevtoolsGuideChromiumBeginnersHtml]  
 *   [Протокол DevTools Microsoft EDGE (Chromium)][DevtoolsProtocolChromiumIndex]  
 
-## Знакомство с командой Microsoft Edge DevTools  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
@@ -140,7 +140,7 @@ Microsoft Edge использует проект Chromium Open Source для б�
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools для начинающих: Приступая к работе с HTML и моделью DOM | Документы Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "Новые возможности Microsoft EDGE (Chromium) DevTools | Документы Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools "Новые возможности Microsoft EDGE (Chromium) DevTools | Документы Microsoft"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Протокол Microsoft EDGE (Chromium) DevTools Protocol | Документы Microsoft"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Надстройки Microsoft Edge"  
