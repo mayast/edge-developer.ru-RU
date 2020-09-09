@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 08/20/2020
+  ms.date: 09/08/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 7b2bc99d1338737e2c1008225fd81915192db54e
-  ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
+  ms.openlocfilehash: 3d33b5a1e0e43269cd77b095f1516f5885fcf807
+  ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "10960708"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "11004323"
 highlightedContent:
   items:
   - title: Microsoft EDGE (официальный стабильный канал)
@@ -27,7 +27,7 @@ highlightedContent:
   - title: Дополнительные сведения о новых возможностях
     itemType: learn
     url: https://www.microsoftedgeinsider.com/whats-new
-  - title: Получение поддержки
+  - title: Получить поддержку
     itemType: reference
     url: /microsoft-edge/index#help-and-support
   - title: Использование Microsoft Edge
@@ -107,7 +107,7 @@ additionalContent:
       - text: Общие сведения о DevTools
         url: /microsoft-edge/devtools-guide-chromium
       - text: Новые возможности
-        url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+        url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools
       - text: Открыть средства разработчика
         url: /microsoft-edge/devtools-guide-chromium/open
       - text: Средства разработчика для начинающих
@@ -124,7 +124,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide-chromium/console/index
       - text: Network
         url: /microsoft-edge/devtools-guide-chromium/network/index
-      - text: Storage
+      - text: Хранилище
         url: /microsoft-edge/devtools-guide-chromium/storage/cookies
       - text: Меню команд
         url: /microsoft-edge/devtools-guide-chromium/command-menu/index
