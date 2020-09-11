@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2Experimental
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2Experimental
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2Experimental
-ms.openlocfilehash: 98f13193e73781f9f7371db05ed3ca99ca93c128
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 01bea6a6f89c61e34fe03af6007bee359770fb54
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886571"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011148"
 ---
-# <span data-ttu-id="59ec6-104">интерфейс ICoreWebView2Experimental</span><span class="sxs-lookup"><span data-stu-id="59ec6-104">interface ICoreWebView2Experimental</span></span> 
+# <span data-ttu-id="39ebd-104">0.9.579-Interface ICoreWebView2Experimental</span><span class="sxs-lookup"><span data-stu-id="39ebd-104">0.9.579 - interface ICoreWebView2Experimental</span></span> 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -24,22 +26,22 @@ interface ICoreWebView2Experimental
   : public IUnknown
 ```
 
-## <span data-ttu-id="59ec6-105">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="59ec6-105">Summary</span></span>
+## <span data-ttu-id="39ebd-105">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="39ebd-105">Summary</span></span>
 
- <span data-ttu-id="59ec6-106">Участников</span><span class="sxs-lookup"><span data-stu-id="59ec6-106">Members</span></span>                        | <span data-ttu-id="59ec6-107">Описания</span><span class="sxs-lookup"><span data-stu-id="59ec6-107">Descriptions</span></span>
+ <span data-ttu-id="39ebd-106">Участников</span><span class="sxs-lookup"><span data-stu-id="39ebd-106">Members</span></span>                        | <span data-ttu-id="39ebd-107">Описания</span><span class="sxs-lookup"><span data-stu-id="39ebd-107">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="59ec6-108">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="59ec6-108">add_WebResourceResponseReceived</span></span>](#add_webresourceresponsereceived) | <span data-ttu-id="59ec6-109">Добавьте обработчик событий для события WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="59ec6-109">Add an event handler for the WebResourceResponseReceived event.</span></span>
-[<span data-ttu-id="59ec6-110">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="59ec6-110">remove_WebResourceResponseReceived</span></span>](#remove_webresourceresponsereceived) | <span data-ttu-id="59ec6-111">Удаляет обработчик событий WebResourceResponseReceived, добавленный ранее add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="59ec6-111">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
+[<span data-ttu-id="39ebd-108">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="39ebd-108">add_WebResourceResponseReceived</span></span>](#add_webresourceresponsereceived) | <span data-ttu-id="39ebd-109">Добавьте обработчик событий для события WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="39ebd-109">Add an event handler for the WebResourceResponseReceived event.</span></span>
+[<span data-ttu-id="39ebd-110">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="39ebd-110">remove_WebResourceResponseReceived</span></span>](#remove_webresourceresponsereceived) | <span data-ttu-id="39ebd-111">Удаляет обработчик событий WebResourceResponseReceived, добавленный ранее add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="39ebd-111">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
 
-## <span data-ttu-id="59ec6-112">Участников</span><span class="sxs-lookup"><span data-stu-id="59ec6-112">Members</span></span>
+## <span data-ttu-id="39ebd-112">Участников</span><span class="sxs-lookup"><span data-stu-id="39ebd-112">Members</span></span>
 
-#### <span data-ttu-id="59ec6-113">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="59ec6-113">add_WebResourceResponseReceived</span></span> 
+#### <span data-ttu-id="39ebd-113">add_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="39ebd-113">add_WebResourceResponseReceived</span></span> 
 
-<span data-ttu-id="59ec6-114">Добавьте обработчик событий для события WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="59ec6-114">Add an event handler for the WebResourceResponseReceived event.</span></span>
+<span data-ttu-id="39ebd-114">Добавьте обработчик событий для события WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="39ebd-114">Add an event handler for the WebResourceResponseReceived event.</span></span>
 
-> <span data-ttu-id="59ec6-115">общедоступные значения HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* eventHandler, EventRegistrationToken \* token)</span><span class="sxs-lookup"><span data-stu-id="59ec6-115">public HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* eventHandler, EventRegistrationToken \* token)</span></span>
+> <span data-ttu-id="39ebd-115">общедоступные значения HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* eventHandler, EventRegistrationToken \* token)</span><span class="sxs-lookup"><span data-stu-id="39ebd-115">public HRESULT [add_WebResourceResponseReceived](#add_webresourceresponsereceived)([ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler](icorewebview2experimentalwebresourceresponsereceivedeventhandler.md) \* eventHandler, EventRegistrationToken \* token)</span></span>
 
-<span data-ttu-id="59ec6-116">Событие WebResourceResponseReceived срабатывает после того, как WebView получил и обработал ответ для запроса на веб-ресурс.</span><span class="sxs-lookup"><span data-stu-id="59ec6-116">WebResourceResponseReceived event fires after the WebView has received and processed the response for a WebResource request.</span></span> <span data-ttu-id="59ec6-117">Аргументы события включают в себя WebResourceRequest, отправленный по каналу и WebResourceResponse, включая все дополнительные заголовки, добавленные сетевым стеком, которые не были включены как часть связанного события WebResourceRequested, например заголовки проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="59ec6-117">The event args include the WebResourceRequest as sent by the wire and WebResourceResponse received, including any additional headers added by the network stack that were not be included as part of the associated WebResourceRequested event, such as Authentication headers.</span></span> 
+<span data-ttu-id="39ebd-116">Событие WebResourceResponseReceived срабатывает после того, как WebView получил и обработал ответ для запроса на веб-ресурс.</span><span class="sxs-lookup"><span data-stu-id="39ebd-116">WebResourceResponseReceived event fires after the WebView has received and processed the response for a WebResource request.</span></span> <span data-ttu-id="39ebd-117">Аргументы события включают в себя WebResourceRequest, отправленный по каналу и WebResourceResponse, включая все дополнительные заголовки, добавленные сетевым стеком, которые не были включены как часть связанного события WebResourceRequested, например заголовки проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="39ebd-117">The event args include the WebResourceRequest as sent by the wire and WebResourceResponse received, including any additional headers added by the network stack that were not be included as part of the associated WebResourceRequested event, such as Authentication headers.</span></span> 
 ```cpp
     wil::com_ptr<ICoreWebView2Experimental> webviewExperimental;
     CHECK_FAILURE(m_appWindow->GetWebView()->QueryInterface(IID_PPV_ARGS(&webviewExperimental)));
@@ -73,9 +75,9 @@ interface ICoreWebView2Experimental
         &m_webResourceResponseReceivedToken));
 ```
 
-#### <span data-ttu-id="59ec6-118">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="59ec6-118">remove_WebResourceResponseReceived</span></span> 
+#### <span data-ttu-id="39ebd-118">remove_WebResourceResponseReceived</span><span class="sxs-lookup"><span data-stu-id="39ebd-118">remove_WebResourceResponseReceived</span></span> 
 
-<span data-ttu-id="59ec6-119">Удаляет обработчик событий WebResourceResponseReceived, добавленный ранее add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="59ec6-119">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
+<span data-ttu-id="39ebd-119">Удаляет обработчик событий WebResourceResponseReceived, добавленный ранее add_WebResourceResponseReceived.</span><span class="sxs-lookup"><span data-stu-id="39ebd-119">Removes the WebResourceResponseReceived event handler previously added with add_WebResourceResponseReceived.</span></span>
 
-> <span data-ttu-id="59ec6-120">общедоступные значения HRESULT [remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)(маркер EventRegistrationToken)</span><span class="sxs-lookup"><span data-stu-id="59ec6-120">public HRESULT [remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)(EventRegistrationToken token)</span></span>
+> <span data-ttu-id="39ebd-120">общедоступные значения HRESULT [remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)(маркер EventRegistrationToken)</span><span class="sxs-lookup"><span data-stu-id="39ebd-120">public HRESULT [remove_WebResourceResponseReceived](#remove_webresourceresponsereceived)(EventRegistrationToken token)</span></span>
 
