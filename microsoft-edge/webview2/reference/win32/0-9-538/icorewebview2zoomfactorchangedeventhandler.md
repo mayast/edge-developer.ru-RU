@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2ZoomFactorChangedEventHandler
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2ZoomFactorChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2ZoomFactorChangedEventHandler
-ms.openlocfilehash: 74cd0451e111780078714b17e5bd1097c56d6b2e
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: c941629ab8ee87c0c964b00798878bb69265669a
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877576"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011393"
 ---
-# интерфейс ICoreWebView2ZoomFactorChangedEventHandler 
+# 0.9.579-Interface ICoreWebView2ZoomFactorChangedEventHandler 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ZoomFactorChangedEventHandler

@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2NewBrowserVersionAvailableEventHandler
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2NewBrowserVersionAvailableEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2NewBrowserVersionAvailableEventHandler
-ms.openlocfilehash: 82a5e73b8b928897e5c0af1610631c9e7d636337
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 7cadbfddca9c05c8649b79503de3ce4f3695ea4c
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879746"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011274"
 ---
-# интерфейс ICoreWebView2NewBrowserVersionAvailableEventHandler 
+# 0.9.579-Interface ICoreWebView2NewBrowserVersionAvailableEventHandler 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2NewBrowserVersionAvailableEventHandler

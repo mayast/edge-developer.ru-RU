@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2PermissionRequestedEventArgs
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2PermissionRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2PermissionRequestedEventArgs
-ms.openlocfilehash: b3178f3c012bc19b9221fbf6961ce0665245d551
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 4abb6fb058765a05ebb32fe97474348c4aebde12
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879340"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010035"
 ---
-# интерфейс ICoreWebView2PermissionRequestedEventArgs 
+# 0.9.579-Interface ICoreWebView2PermissionRequestedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2PermissionRequestedEventArgs

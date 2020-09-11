@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2ContainsFullScreenElementChangedEventHandler
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2ContainsFullScreenElementChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, управление браузером, EDGE HTML, ICoreWebView2ContainsFullScreenElementChangedEventHandler
-ms.openlocfilehash: 0f0efc8cc5315c35bef4c0ad122be37f26444f8d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e1c51ee30a7b61d5a5638adb4130b1add3bddb23
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877429"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010560"
 ---
-# интерфейс ICoreWebView2ContainsFullScreenElementChangedEventHandler 
+# 0.9.579-Interface ICoreWebView2ContainsFullScreenElementChangedEventHandler 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ContainsFullScreenElementChangedEventHandler

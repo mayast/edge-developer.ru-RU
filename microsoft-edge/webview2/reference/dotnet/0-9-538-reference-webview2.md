@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: Справочник по Microsoft. Web. WebView2. Core
+title: Справочник по 0.9.579-Microsoft. Web. WebView2. Core
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузера, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: ab0a476f444b671b7042b5007aea59359d5377fc
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 9d30c66453097effc4c42f5204df3d550157ff88
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885256"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010826"
 ---
-# Справочник (ядро WebView2)  
+# 0.9.579-Reference (WebView2 Core)  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]
 
 Элемент управления Microsoft Edge WebView2 позволяет размещать веб-содержимое в приложении с помощью [Microsoft Edge \ (Chromium \)](https://www.microsoftedgeinsider.com) в качестве обработчика визуализации.  Дополнительные сведения можно найти в [статье Обзор Microsoft Edge WebView2](../../index.md)) и [Приступая к работе с WebView2](../../gettingstarted/win32.md).  [Microsoft. Web. WebView2. Core. CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md) — это удобное место для изучения данных API.  
 

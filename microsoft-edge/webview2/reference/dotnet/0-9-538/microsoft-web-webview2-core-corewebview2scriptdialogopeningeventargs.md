@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2ScriptDialogOpeningEventArgs
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2ScriptDialogOpeningEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: cbff39e9393026f51471bdfb3189600e2d7bf109
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 9be4a2da9e29dec69f8cc50eef10d5f99e6c5cd4
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879697"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010875"
 ---
-# Класс Microsoft. Web. WebView2. Core. CoreWebView2ScriptDialogOpeningEventArgs 
+# класс 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2ScriptDialogOpeningEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Пространство имен: Microsoft. Web. WebView2. Core \
 Сборка: Microsoft.Web.WebView2.Core.dll

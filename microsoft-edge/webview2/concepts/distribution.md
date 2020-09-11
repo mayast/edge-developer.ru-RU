@@ -3,21 +3,21 @@ description: Варианты распространения при выпуск
 title: Распространение приложения Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения WPF, WPF, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "браузер", HTML Edge
-ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3536b749c8a3389b5e247e42f53abf74a9e3281e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879179"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010770"
 ---
 # Распространение приложений с помощью WebView2  
 
-Элемент управления WebView2 использует платформу Microsoft Edge \ (Chromium \).  При упаковке и распространении приложения перед запуском приложения убедитесь в том, что у вас установлена копия платформы или среды выполнения WebView2.  На следующей странице показано, как вы (разработчик) может гарантировать, что среда выполнения WebView2 установлена и использует два режима распространения для вашего приложения WebView2: [Evergreen](#evergreen-distribution-mode) и [фиксированная версия](#fixed-version-distribution-mode).  
+Элемент управления WebView2 использует платформу Microsoft Edge \ (Chromium \).  При упаковке и распространении приложения перед запуском приложения убедитесь в том, что у вас установлена копия платформы или среды выполнения WebView2.  На следующей странице показано, как вы (разработчик) может гарантировать, что среда выполнения WebView2 установлена и использует два режима распространения для вашего приложения WebView2:  [Evergreen](#evergreen-distribution-mode) и [фиксированная версия](#fixed-version-distribution-mode).  
 
 ## Режим распространения Evergreen  
 
@@ -39,7 +39,7 @@ ms.locfileid: "10879179"
 > [!IMPORTANT]
 > Стабильный канал Microsoft EDGE не является допустимым целевым объектом для WebView2, поэтому причины описаны ниже.  
 
-Дополнительные сведения об управлении версиями можно найти в разделе [Управление версиями][ConceptsVersioning] и [Globals][ReferenceWin3209538WebviewIdl].  
+Дополнительные сведения об управлении версиями можно найти в разделе [Управление версиями][ConceptsVersioning] и [Globals][ReferenceWin3209622WebviewIdl].  
 
 ### Общие сведения о среде выполнения WebView2 и установщике (Предварительная версия)  
 
@@ -54,7 +54,7 @@ ms.locfileid: "10879179"
 
 1.  Скачайте последнюю версию [установщика среды выполнения Evergreen WebView2][Webview2Installer].  
 1.  Включите установщик в установщик приложения или в средство обновления.  
-1.  Во время установки или обновления приложения убедитесь, что среда выполнения Evergreen WebView2 уже установлена на компьютере пользователя, используя API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) и проверяя, имеет ли versionInfo значение null. Если этот параметр не установлен, установщик приложений может автоматически вызвать установщик среды выполнения из процесса с повышенными привилегиями или командной строки с помощью `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+1.  Во время установки или обновления приложения убедитесь, что среда выполнения Evergreen WebView2 уже установлена на компьютере пользователя, используя API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) и проверяя, имеет ли versionInfo значение null. Если этот параметр не установлен, установщик приложений может автоматически вызвать установщик среды выполнения из процесса с повышенными привилегиями или командной строки с помощью `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 В зависимости от вашего сценария вам может потребоваться изменить описанный выше рабочий процесс.  Например, установщик приложения может загрузить установщик Evergreen WebView2 среды выполнения, вместо включения его в пакет приложения.  
 
@@ -79,6 +79,6 @@ ms.locfileid: "10879179"
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Общие сведения о версиях браузеров и WebView2 | Документы Microsoft"  
-[ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globals | Документы Microsoft"  
+[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals | Документы Microsoft"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Установщик WebView2"  

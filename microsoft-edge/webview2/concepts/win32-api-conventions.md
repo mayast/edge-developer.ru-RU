@@ -3,17 +3,17 @@ description: Соглашения об API для Win32 C++ WebView2
 title: Соглашения об API для Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения WPF, WPF, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "браузер", HTML Edge
-ms.openlocfilehash: c8792133da2b858cfaa456df5a7dce26c3c65154
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 6c596b038e871caa5a364991351636f51ef7d685
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895568"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010686"
 ---
 # Соглашения об API для Win32 C++ WebView2  
 
@@ -21,7 +21,7 @@ ms.locfileid: "10895568"
 
 Асинхронные методы в API-интерфейсе WebView2 Win32 используют делегаты для обратного вызова, чтобы указать, когда асинхронный метод завершился, код успеха или ошибки, а также для некоторых результатов.  Последний параметр для всех асинхронных методов — указатель на интерфейс делегата, для которого предоставляется реализация.  
 
-У интерфейса делегата есть единственный `Invoke` метод, который принимает в качестве первого параметра `HRESULT` код успеха или ошибки.  Кроме того, может быть вторым параметром, который является результатом метода, если он имеет результат.  Например, метод [ICoreWebView2:: CapturePreview][Webview2ReferenceWin3209538Icorewebview2CapturePreview] принимает в качестве последнего параметра `ICoreWebView2CapturePreviewCompletedHandler` указатель.  Чтобы отправить `CapturePreview` запрос на метод, необходимо предоставить экземпляр класса `ICoreWebView2CapturePreviewCompletedHandler` , который вы реализуете.  В следующем фрагменте кода используется один метод для реализации.  
+У интерфейса делегата есть единственный `Invoke` метод, который принимает в качестве первого параметра `HRESULT` код успеха или ошибки.  Кроме того, может быть вторым параметром, который является результатом метода, если он имеет результат.  Например, метод [ICoreWebView2:: CapturePreview] [Webview2ReferenceWin3209538Icorewebview2CapturePreview] принимает в качестве финального параметра `ICoreWebView2CapturePreviewCompletedHandler` указатель.  Чтобы отправить `CapturePreview` запрос на метод, необходимо предоставить экземпляр класса `ICoreWebView2CapturePreviewCompletedHandler` , который вы реализуете.  В следующем фрагменте кода используется один метод для реализации.  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -117,6 +117,6 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2ReferenceWin3209538Icorewebview2CapturePreview]: ../reference/win32/0-9-538/icorewebview2.md#capturepreview "CapturePreview-Interface ICoreWebView2 | Документы Microsoft"  
+[Webview2ReferenceWin3209622Icorewebview2CapturePreview]: ../reference/win32/0-9-622/icorewebview2.md#capturepreview "CapturePreview-Interface ICoreWebView2 | Документы Microsoft"  
 
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Функция обратного вызова (WRL) | Документы Microsoft"  

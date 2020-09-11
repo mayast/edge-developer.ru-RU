@@ -1,21 +1,23 @@
 ---
 description: Внедрение веб-технологий (HTML, CSS и JavaScript) в собственные приложения с помощью элемента управления Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: ca31ddd3536350d3b3bdd02b445b4c47589f7dba
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885277"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011113"
 ---
-# Класс Microsoft. Web. WebView2. Core. CoreWebView2 
+# класс 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Пространство имен: Microsoft. Web. WebView2. Core \
 Сборка: Microsoft.Web.WebView2.Core.dll
