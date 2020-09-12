@@ -1,5 +1,5 @@
 ---
-description: Размещение веб-содержимого в приложении Win32 с помощью элемента управления Microsoft Edge WebView 2
+description: Размещение веб-содержимого на платформе Win32, .NET и приложениях UWP с помощью элемента управления Microsoft Edge WebView2
 title: Элемент управления Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,13 +7,13 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, элементы управления браузером, EDGE HTML, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, HTML, Windows Forms,, WPF, .NET, WinUI, Project
+ms.openlocfilehash: d3294ce72237a323113ed9f7c8f31e37af43f5e6
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926472"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013746"
 ---
 # Введение в Microsoft Edge WebView2 (Предварительная версия)  
 
@@ -110,7 +110,8 @@ ms.locfileid: "10926472"
 *   Windows 10;  
 *   Windows 8.1  
 *   Windows 8  
-*   Windows 7  
+*   Windows7  
+*   WindowsServer2019  
 *   WindowsServer2016  
 *   Windows Server 2012  
 *   Windows Server 2012R2  
