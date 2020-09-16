@@ -3,16 +3,16 @@ description: Сведения о том, как зарегистрировать
 title: Зарегистрируйтесь как разработчик расширений Microsoft Edge для публикации расширений
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 09/15/2020
 ms.topic: conceptual
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Разработка расширений, расширения браузера, надстройки, центр партнеров, разработчик
-ms.openlocfilehash: 55f3520526a97ebbd8eeacf1c46f801b94599694
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: 87c5dbfdec65ae3957724ae846a06480a2488084
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898209"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015746"
 ---
 # Регистрация в качестве разработчика расширения Microsoft Edge  
 

@@ -3,17 +3,17 @@ description: Внедрение веб-технологий (HTML, CSS и JavaSc
 title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, "ядро", "WebView2", WebView, DotNet, WPF, WinForms, App, EDGE, CoreWebView2, CoreWebView2Controller, браузерный элемент управления, EDGE HTML, Microsoft. Web. WebView2
-ms.openlocfilehash: c6b1f1c62da5aa5ef64693575abb9cb46ac13851
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 05b8a10c723ae57b2c95551f4d5043f3336eba3b
+ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11012480"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016328"
 ---
 # Класс Microsoft. Web. WebView2. Core. CoreWebView2Environment 
 
@@ -28,15 +28,16 @@ ms.locfileid: "11012480"
 --------------------------------|---------------------------------------------
 [BrowserVersionString](#browserversionstring) | Сведения о версии браузера для текущего CoreWebView2Environment, включая имя канала, если он не является стабильным каналом.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | NewBrowserVersionAvailable активируется, когда установлена более новая версия браузера EDGE и доступна для использования через WebView2.
+[CompareBrowserVersions](#comparebrowserversions) | Сравните версии браузеров, чтобы определить, совпадают ли они или различаются.
+[CreateAsync](#createasync) | Создает среду Evergreen WebView2 с помощью установленной версии Microsoft Edge.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Асинхронно создайте новый WebView для использования с визуальным размещением.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Асинхронно создайте новый WebView.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Создание пустого CoreWebView2PointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Создание нового объекта ответа на веб-ресурс.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Получение сведений о версии браузера.
 [GetProviderForHwnd](#getproviderforhwnd) | Возвращает поставщик модели автоматизации пользовательского интерфейса для CoreWebView2CompositionController, соответствующего данному дескриптору HWND.
 
 Веб – представления, созданные из среды, выполняются в процессе браузера, указанном в параметрах среды, и объекты, созданные из среды, должны использоваться в одной среде. Использование этой функции в разных средах не гарантирует совместимость и может привести к сбою. 
-
-Веб – представления, созданные из среды, выполняются в процессе браузера, указанном в параметрах среды, и объекты, созданные из среды, должны использоваться в одной среде. Использование этой функции в разных средах не гарантирует совместимость и может привести к сбою.
 
 ## Участников
 
@@ -57,6 +58,34 @@ NewBrowserVersionAvailable активируется, когда установл
 Для использования более новой версии браузера необходимо создать новую среду и WebView. Это событие будет инициировано только для новой версии из того же канала, из которого выполняется код. Если вы не используете установленный EDGE, событие не срабатывает.
 
 Поскольку папка данных пользователя может использоваться только одним процессом браузера за один раз, если вы хотите использовать одну и ту же папку данных пользователя в веб-представлении с помощью новой версии браузера, необходимо сначала закрыть среду и веб-представления, которые используют более старую версию браузера. Или просто запросите пользователя перезапустить приложение.
+
+#### CompareBrowserVersions 
+
+Сравните версии браузеров, чтобы определить, совпадают ли они или различаются.
+
+> общедоступный статический целочисленный [CompareBrowserVersions](#comparebrowserversions)(строковый Version1, строка Version2)
+
+Возвращает значение-1, 0 или 1 в зависимости от того, является ли первая версия меньше, равно или больше, чем Вторая сравниваемая версия.
+
+Входные данные могут напрямую использовать versionInfo, полученный от GetAvailableCoreWebView2BrowserVersionString, сведения о канале будут игнорироваться.
+
+##### Параметры
+* `version1` Первая сравниваемая версия. 
+
+* `version2` Вторая версия для сравнения.
+
+#### CreateAsync 
+
+Создает среду Evergreen WebView2 с помощью установленной версии Microsoft Edge.
+
+> общедоступная статическая асинхронная задача< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)(строка browserExecutableFolder, строка userDataFolder, CoreWebView2EnvironmentOptions параметры)
+
+##### Параметры
+* `browserExecutableFolder` Относительный путь к папке, содержащей фиксированную версию среды выполнения WebView2. 
+
+* `userDataFolder` userDataFolder можно указать, чтобы изменить расположение папки данных пользователя по умолчанию для WebView2. 
+
+* `options` Параметры, используемые для создания среды WebView2.
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
@@ -100,6 +129,17 @@ parentWindow — HWND, в котором нужно отобразить WebView
 
 Заголовки — это строка заголовков необработанного ответа, ограниченная символом новой строки. Кроме того, можно создать этот объект с пустой строкой заголовков, а затем использовать CoreWebView2HttpResponseHeaders для создания заголовков построчно. Сведения о других параметрах смотрите в CoreWebView2WebResourceResponse.
 
+#### GetAvailableBrowserVersionString 
+
+Получение сведений о версии браузера.
+
+> общедоступная статическая строка [GetAvailableBrowserVersionString](#getavailablebrowserversionstring)(String browserExecutableFolder)
+
+Кроме того, вы получаете имя канала, если канал не является стабильным каналом. Если вы используете среду выполнения WebView2, имя канала возвращено не будет.
+
+##### Параметры
+* `browserExecutableFolder` Относительный путь к папке, содержащей фиксированную версию среды выполнения WebView2.
+
 #### GetProviderForHwnd 
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
@@ -107,4 +147,3 @@ parentWindow — HWND, в котором нужно отобразить WebView
 Возвращает поставщик модели автоматизации пользовательского интерфейса для CoreWebView2CompositionController, соответствующего данному дескриптору HWND.
 
 > общедоступный объект [GetProviderForHwnd](#getproviderforhwnd)(IntPtr HWND)
-

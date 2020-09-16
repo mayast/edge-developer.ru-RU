@@ -3,20 +3,22 @@ description: Расширение "Начало работы", часть 1
 title: Создавайте простое расширение, которое выталкивает на картину дня в NASA
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge — Chromium, Web Development, HTML, CSS, JavaScript, разработчик, расширения
-ms.openlocfilehash: dd5c1dab0cb9b54b79be7d2728cb9bfde0945185
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 826401869b98d339e9b156a3727d94bd1182063d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683625"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015767"
 ---
-# Создавайте простое расширение, которое выталкивает на картину дня в NASA  
-
-[Источник пакета расширения для этой части завершен][ArchiveExtensionGettingStartedPart1]  
+# Создавайте простое расширение, которое выталкивает на картину дня в NASA 
+ 
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
+-->  
 
 ## Обзор  
 
@@ -161,10 +163,12 @@ ms.locfileid: "10683625"
         └── popup.html
 ```  
 
+<!--  
 > [!NOTE]
-> `images/stars.jpeg`Файл, указанный в предыдущем изображении, доступен в разделе [Загрузка ZIP][ArchiveExtensionGettingStartedPart1].  
+> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
+-->  
 
-Это все, что нужно для того, чтобы создать рабочее расширение.  Все, что осталось для проверки.  
+Это все, что нужно для того, чтобы создать рабочее расширение.  Все, что осталось сделать, — это проверить его.  
 
 В следующем разделе объясняется, как загрузить расширение \ (иногда называется загрузкой на боковой панели) в браузер Microsoft Edge \ (Chromium \), чтобы протестировать его.  
 

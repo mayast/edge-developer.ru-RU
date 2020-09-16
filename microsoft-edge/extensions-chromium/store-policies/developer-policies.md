@@ -1,20 +1,20 @@
 ---
 description: Политики разработчика каталога надстроек Microsoft Edge.
-title: Политики разработчика каталога надстроек Microsoft Edge
+title: Политики в отношении разработчиков каталога надстроек Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Разработка расширений, расширения браузера, надстройки, центр партнера, разработчик
-ms.openlocfilehash: be159491d892c176a8439393573dc23680fac377
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: f71767cc4cd887ce9351202dd06732760299816d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607435"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015711"
 ---
-# Политики разработчика каталога надстроек Microsoft Edge  
+# Политики в отношении разработчиков каталога надстроек Microsoft Edge  
 
 ## Введение и цель этого документа  
 

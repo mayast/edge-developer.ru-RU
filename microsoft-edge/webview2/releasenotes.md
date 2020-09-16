@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 81855e3caa899f777a0db7bf3789dfa66aa6f267
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 2e5676870ecfb4c02130d61e94e762625a8d903a
+ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010196"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016321"
 ---
 # Заметки о выпуске SDK для WebView2  
 
@@ -367,7 +367,7 @@ WebView2 SDK — это официальная бета-версия C++ для 
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge — политики | Документы Microsoft"  
 
-[DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named.md "Строго именованные сборки | Документы Microsoft"  
+[DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named "Строго именованные сборки | Документы Microsoft"  
 
 [GithubMicrosoftedgeWebviewfeedbackIssue1]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/1 "Репозиторий отзывов для MicrosoftEdge и WebViewFeedback, выпуска 1"  
 [GithubMicrosoftedgeWebviewfeedbackIssue12]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/12 "Репозиторий отзывов для MicrosoftEdge и WebViewFeedback, выпуска 12"  

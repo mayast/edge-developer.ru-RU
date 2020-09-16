@@ -1,22 +1,24 @@
 ---
-description: Расширение "Начало работы", часть 1
+description: Расширение "Начало работы", часть 2
 title: Динамическое добавление изображения NASA под тегом текста страницы с помощью сценариев содержимого
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge — Chromium, Web Development, HTML, CSS, JavaScript, разработчик, расширения
-ms.openlocfilehash: b37184f0188b72ec868ab3de3f2341c0694ee42c
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683646"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015760"
 ---
 # Динамическое добавление изображения NASA под тегом текста страницы с помощью сценариев содержимого  
-  
-[Источник пакета расширения для этой части завершен][ArchiveExtensionGettingStartedPart2]  
+
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Обзор  
 
@@ -61,8 +63,8 @@ ms.locfileid: "10683646"
 
 После того как вы обновите свое расширение и настроили значок запуска расширения, появится следующее всплывающее окно, содержащее кнопку отображения.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="экран Popup. HTML после нажатия на значок расширения":::
-   экран Popup. HTML после нажатия на значок расширения
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="После нажатия значка расширения popup.html":::
+   После нажатия значка расширения popup.html
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
@@ -139,7 +141,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 Теперь вы написали код в `popup.js` файле для отправки сообщения на страницу содержимого, внедренную на текущую активную вкладку, но вы не создали и не добавили эту страницу содержимого.  Сделайте это прямо сейчас.  
 
-## Обновление манифеста. JSON для контента и веб-доступа  
+## Обновление manifest.jsдля контента и веб-доступа  
 
 Обновленный `manifest.json` , который включает в себя `content-scripts` и `web_accessible_resources` следующий.  
 
@@ -219,8 +221,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 Теперь при переходе на любую страницу и выборе значка **расширения** всплывающее меню отображается следующим образом.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="экран Popup. HTML после нажатия на значок расширения":::
-   экран Popup. HTML после нажатия на значок расширения
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="После нажатия значка расширения popup.html":::
+   После нажатия значка расширения popup.html
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  

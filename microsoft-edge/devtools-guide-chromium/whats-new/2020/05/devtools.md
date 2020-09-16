@@ -1,18 +1,18 @@
 ---
-description: Использование DevTools в режиме высокой контрастности Windows, соответствие сочетаний клавиш в коде DevTools и VS и т. д.
+description: Использование DevTools в режиме высокой контрастности Windows, соответствие сочетаний клавиш в коде DevTools и в Visual Studio, а также многое другое.
 title: Новые возможности DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 62f261b381b0382561e166bca67f77f37225b764
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2752dec8bc7c4eec34ddde05a7dedff7bebef05f
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992891"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015491"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10992891"
 
 ## Объявления из группы Microsoft Edge DevTools  
 
-В следующих разделах представлен список извещений, которые вы могли не получить в Microsoft Edge DevTools Teams! Узнайте, как использовать новые функции в DevTools, расширения кода VS и многое другое.  Чтобы оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительной версии Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Twitter][EdgeDevToolsTwitterAccount].  
+В следующих разделах представлен список извещений, которые вы могли не получить в Microsoft Edge DevTools Teams! Узнайте, как использовать новые функции в DevTools, расширения кода Visual Studio и многое другое.  Чтобы оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительной версии Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Использование DevTools в режиме высокой контрастности Windows
 
@@ -49,19 +49,19 @@ Microsoft Edge DevTools теперь отображается в режиме в
 
 [#1048378][CR1048378] проблем с Chromium  
 
-### Сопоставление сочетаний клавиш в DevTools с кодом VS  
+### Соответствие сочетаний клавиш в DevTools с кодом Visual Studio  
 
-Из вашего [отзыва](#getting-in-touch-with-microsoft-edge-devtools-team) и средства [отслеживания общедоступных проблем Chromium][CRIssuesList]в Microsoft Edge DevTools была рассказано о том, что вы решили настроить сочетания клавиш в DevTools.  В Microsoft Edge 84 теперь можно сопоставить сочетания клавиш в [коде][VSCode]DevTools с одним из функций, над которыми работает команда для настройки ярлыков.  
+Из вашего [отзыва](#getting-in-touch-with-microsoft-edge-devtools-team) и средства [отслеживания общедоступных проблем Chromium][CRIssuesList]в Microsoft Edge DevTools была рассказано о том, что вы решили настроить сочетания клавиш в DevTools.  В Microsoft Edge 84 теперь вы можете сопоставить сочетания клавиш в DevTools с [кодом Visual Studio][VSCode], который является только одной из функций, над которыми работает команда для настройки ярлыков.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Сопоставление сочетаний клавиш в DevTools с кодом VS" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Соответствие сочетаний клавиш в DevTools с кодом Visual Studio" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    Microsoft Edge DevTools в режиме высокой контрастности  
 :::image-end:::  
 
 Чтобы попробовать эксперимент, откройте параметры DevTools, нажав `?` или выделив значок ![ параметров DevTools ][ImageSettingsIcon] в правом верхнем углу DevTools.  Перейдите к разделу " **эксперименты** " и установите флажок **включить пользовательские сочетания клавиш (требуется повторная загрузка)**.  Теперь повторно Загрузи DevTools, снова откройте параметры и перейдите к разделу **сочетания клавиш** .  
 
-Выберите **DevTools (по умолчанию)** в раскрывающемся списке **искать сочетания клавиш из предварительной настройки** и выберите **код Visual Studio**.  Сочетания клавиш в DevTools теперь соответствуют сочетаниям клавиш для эквивалентных действий в коде VS.  
+Выберите **DevTools (по умолчанию)** в раскрывающемся списке **искать сочетания клавиш из предварительной настройки** и выберите **код Visual Studio**.  Сочетания клавиш в DevTools теперь соответствуют сочетаниям клавиш для эквивалентных действий в коде Visual Studio.  
 
-Например, с помощью сочетания клавиш можно приостановить или продолжить выполнение сценария в [коде VS][VSCodeShortcuts] `F5` .  В стиле **DevTools (Default)** это же сочетание клавиш в DevTools имеет тот же самый ярлык `F8` , что и в **Visual Studio** , но теперь этот ярлык также доступен `F5` .  
+Например, с помощью сочетания клавиш можно приостановить или продолжить выполнение сценария в [Visual Studio][VSCodeShortcuts] `F5` .  В стиле **DevTools (Default)** это же сочетание клавиш в DevTools имеет тот же самый ярлык `F8` , что и в **Visual Studio** , но теперь этот ярлык также доступен `F5` .  
 
 В настоящее время эта функция доступна в Microsoft Edge 84 в качестве эксперимента, поэтому Поделитесь своим [мнением](#getting-in-touch-with-microsoft-edge-devtools-team) с командой!  
 
@@ -281,10 +281,10 @@ Microsoft Edge DevTools использует новый синтаксис, та
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Значок параметров DevTools"
-[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "DevTools значок "переключить презентацию""
-[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "Значок страницы "Обновить" на панели производительности DevTools"
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "Значок записи на панели производительности DevTools"
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/settings-icon.msft.png  
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/toggle-screencast-icon.msft.png  
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/refresh-page-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/record-icon.msft.png  
 
 <!-- links -->  
 

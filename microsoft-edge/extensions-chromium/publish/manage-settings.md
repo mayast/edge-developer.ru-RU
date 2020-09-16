@@ -3,16 +3,16 @@ description: Руководство по управлению учетной з�
 title: Управление параметрами учетной записи
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Разработка расширений, расширения браузера, надстройки, центр партнера, разработчик
-ms.openlocfilehash: c5dbc4d05dcb91d57ef90553fdf97dae2813ebb4
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 2d7bfa3c33bb7f32745fac13b8f5765c122e975d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607386"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015738"
 ---
 # Управление параметрами учетной записи  
 

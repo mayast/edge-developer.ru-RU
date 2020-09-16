@@ -1,20 +1,20 @@
 ---
 description: Документация по политике предприятия для расширения EDGE (Chromium).
-title: Соответствие шаблонам
+title: Сопоставление шаблонов
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Разработка расширений, расширения браузера, надстройки, центр партнера, разработчик
-ms.openlocfilehash: 16f54fcdc127822e89e050c367a681d886b0c8d0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 59427769a010ca774833a809d3025e7594634202
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10571646"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015662"
 ---
-# Соответствие шаблонам
+# Сопоставление шаблонов
 
 Разрешения узла и сопоставление сценариев содержимого основаны на наборе URL-адресов, определенных в шаблонах соответствия.  Шаблон соответствия — это URL-адрес, который начинается с разрешенной схемы ( `http` ,, `https` `file` или `ftp` и может содержать `*` символы "").  Особый шаблон `<all_urls>` соответствует любому URL-адресу, который начинается с разрешенной схемы.  Каждый шаблон соответствия состоит из трех частей:  
 
