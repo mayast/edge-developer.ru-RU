@@ -38,7 +38,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-110">Группа DevTools изменила 170 в Chromium для устранения проблем с высокой контрастностью цвета, клавиатуры и средства чтения с экрана в DevTools.</span><span class="sxs-lookup"><span data-stu-id="bb25b-110">The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.</span></span>  <span data-ttu-id="bb25b-111">Каждый разработчик, создающий веб-сайт, должен иметь возможность использовать DevTools.</span><span class="sxs-lookup"><span data-stu-id="bb25b-111">Every developer building the web should be able to use the DevTools.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="Средство "производительность" в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
+:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
    <span data-ttu-id="bb25b-113">Средство " **производительность** " в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана</span><span class="sxs-lookup"><span data-stu-id="bb25b-113">The **Performance** tool in the DevTools with the keyboard navigation and screen reader improvements</span></span>  
 :::image-end:::  
 
@@ -117,7 +117,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-140">Расширение веб-подсказки Microsoft EDGE позволяет легко находить и получать отзывы о специальных возможностях, совместимости с браузерами, безопасности, производительности и других средствах в DevTools.</span><span class="sxs-lookup"><span data-stu-id="bb25b-140">The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.</span></span>  <span data-ttu-id="bb25b-141">Узнайте больше о [https://webhint.io][Webhint] .</span><span class="sxs-lookup"><span data-stu-id="bb25b-141">Read more at [https://webhint.io][Webhint].</span></span>  
 
-:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="Вкладка "Подсказка" в DevTools, если установлено расширение браузера веб." lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
+:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="Вкладка &quot;Подсказка&quot; в DevTools, если установлено расширение браузера веб." lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
    <span data-ttu-id="bb25b-143">Вкладка **"Подсказка** " в DevTools, если установлено расширение браузера веб.</span><span class="sxs-lookup"><span data-stu-id="bb25b-143">The **Hints** tab in the DevTools when the webhint browser extension is installed</span></span>  
 :::image-end:::  
 
@@ -145,7 +145,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-161">Используйте инструмент "элементы" в коде Visual Studio, добавив [элементы для расширения кода Microsoft EDGE (Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="bb25b-161">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge (Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="Инструмент "элементы" в коде Visual Studio с использованием элементов для расширения Microsoft Edge" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
+:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="Инструмент &quot;элементы&quot; в коде Visual Studio с использованием элементов для расширения Microsoft Edge" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    <span data-ttu-id="bb25b-163">Инструмент " **элементы** " в коде Visual Studio с использованием элементов для расширения Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="bb25b-163">The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension</span></span>  
 :::image-end:::  
 
@@ -165,7 +165,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-171">Расширение [кода Visual Studio, которое используется][VisualStudioMarketplaceWebhintExtension] `webhint` для усовершенствования веб-страницы во время их написания!</span><span class="sxs-lookup"><span data-stu-id="bb25b-171">The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you're writing it!</span></span> <span data-ttu-id="bb25b-172">Это расширение запускает и сообщает диагностику файлов рабочей области на основе `webhint` анализа.</span><span class="sxs-lookup"><span data-stu-id="bb25b-172">This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="Расширение кода Visual Studio "веб-подсказка" для анализа целевого файла в коде Visual Studio" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
+:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="Расширение кода Visual Studio &quot;веб-подсказка&quot; для анализа целевого файла в коде Visual Studio" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
    <span data-ttu-id="bb25b-174">Расширение кода Visual Studio «веб-подсказка» для анализа `.tsx` файла в коде Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bb25b-174">The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code</span></span>  
 :::image-end:::  
 
@@ -254,7 +254,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-223">После выбора сетевого ресурса для его проверки на панели Network (сеть) размещается синяя рамка вокруг **ресурса.**</span><span class="sxs-lookup"><span data-stu-id="bb25b-223">After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.</span></span>  <span data-ttu-id="bb25b-224">Это поможет определить, является ли сетевой запрос более ранней или более поздней, чем ожидалось.</span><span class="sxs-lookup"><span data-stu-id="bb25b-224">This is able to help you detect if the network request is happening earlier or later than expected.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="Область "Обзор", в которой выделяются проверенные ресурсы" lightbox="../../images/2019/12/overview.msft.png":::
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="Область &quot;Обзор&quot;, в которой выделяются проверенные ресурсы" lightbox="../../images/2019/12/overview.msft.png":::
    <span data-ttu-id="bb25b-226">Область " **Обзор** ", в которой выделяются проверенные ресурсы</span><span class="sxs-lookup"><span data-stu-id="bb25b-226">The **Overview** pane highlighting the inspected resource</span></span>  
 :::image-end:::  
 
@@ -264,7 +264,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-229">С помощью столбцов «новый **путь** » и « **URL-адрес** » на панели **Network (сеть** ) можно просмотреть абсолютный путь к каждому СЕТЕВОМУ ресурсу или полный URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="bb25b-229">Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="Столбцы "новый путь" и "URL-адрес" на панели "сеть"" lightbox="../../images/2019/12/columns.msft.png":::
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="Столбцы &quot;новый путь&quot; и &quot;URL-адрес&quot; на панели &quot;сеть&quot;" lightbox="../../images/2019/12/columns.msft.png":::
    <span data-ttu-id="bb25b-231">Столбцы "новый путь" и "URL-адрес" на панели " **сеть** "</span><span class="sxs-lookup"><span data-stu-id="bb25b-231">The new Path and URL columns in the **Network** panel</span></span>  
 :::image-end:::  
 
@@ -278,7 +278,7 @@ ms.locfileid: "11015470"
 
 <span data-ttu-id="bb25b-236">Предопределенные строки агента пользователя обновлены в соответствии с современными версиями браузера.</span><span class="sxs-lookup"><span data-stu-id="bb25b-236">The predefined User-Agent strings have been updated to reflect modern browser versions.</span></span>  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="Меню агента пользователя на вкладке "условия сети"" lightbox="../../images/2019/12/useragent.msft.png":::
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="Меню агента пользователя на вкладке &quot;условия сети&quot;" lightbox="../../images/2019/12/useragent.msft.png":::
    <span data-ttu-id="bb25b-238">Меню агента пользователя на вкладке " **условия сети** "</span><span class="sxs-lookup"><span data-stu-id="bb25b-238">The User Agent menu in the **Network Conditions** tab</span></span>  
 :::image-end:::  
 
